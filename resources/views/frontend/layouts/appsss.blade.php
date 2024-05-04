@@ -390,6 +390,8 @@
                                 display: none;
                             }
 
+                            
+
                             /*#nk-banner-home .owl-dots{
                                 display: none;
                             }*/
@@ -673,6 +675,10 @@
 
                   .banner_home__ .banner-left{
                     width: 100% !important;
+                }
+
+                .view-all{
+                    text-align: center;
                 }
 
                 .banner_home__.container{
@@ -1457,7 +1463,6 @@
                 margin:10,
                 nav:false,
 
-
                 responsive:{
                     0:{
                         items:1.5
@@ -1469,6 +1474,12 @@
                         items:5
                     }
                 }
+            })
+
+            $('.view-all span').click(function(){
+
+                $('.mobiles-view').remove();
+                $('.show-group-data').removeClass('desktop');
             })
             
             
