@@ -33,6 +33,10 @@ class indexController extends Controller
 
         // }
 
+
+
+        
+
         
 
         $deal_check = Cache::get('deals')->sortByDesc('end');
