@@ -443,7 +443,7 @@ class AjaxController extends Controller
 
         $data = product::whereIn('id', $hot->toArray())->Orderby('orders_hot', 'desc')->get();
 
-        return view('frontend.ajax.showgroupdata', compact('data'));
+        return view('frontend.ajax.showgroupdata', compact('data','id'));
     }
 
     public function getProductSeachValueInput(Request $request)
