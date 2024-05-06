@@ -147,4 +147,43 @@
         $('.mobiles-view').remove();
         $('.show-group-data').removeClass('desktop');
     })
+
+    $('.menu-wrap0 .menu-item').click(function () {
+        
+        $('.menu-wrap0 .menu-item').removeClass('active');
+
+        $(this).addClass('active');
+
+        var id = $(this).attr('data-id')
+
+        $.ajaxSetup({
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            }
+        });
+
+        $.ajax({
+            type: 'POST',
+            url: "{{ route('showGroupData') }}",
+            data: {
+
+                id:id
+               
+            },
+
+           
+            success: function(result){
+
+              
+               // numberCart = result.find("#number-product-cart").text();
+
+                $('.div-group').html(''); 
+
+                $('.div-group').append(result);
+                
+            }
+        });
+
+
+    }); 
 </script>
