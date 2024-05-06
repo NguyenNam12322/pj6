@@ -14,11 +14,17 @@
                 display: none;
             }
             .box-links{
-                display: none;
+                display: block;
             }
 
             .nk_homepage_houseware_best_selling_2020_wrapper{
                 z-index: 0;
+            }
+
+            .lst-quickfilter {
+                display: flex;
+                flex-wrap: unset;
+                overflow-x: auto;
             }
 
         }   
