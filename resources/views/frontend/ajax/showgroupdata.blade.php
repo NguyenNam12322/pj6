@@ -39,7 +39,7 @@
             <div class="product-footer"></div>
         </div>
         <?php 
-            if($dem>4):
+            if($dem>3):
                 break;
             endif;    
 
