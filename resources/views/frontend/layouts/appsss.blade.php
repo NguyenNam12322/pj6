@@ -1006,7 +1006,7 @@
                 height: 70px;
                 display: inline-block;
                 vertical-align: middle;
-                background-image: url(http://localhost:8000/media/category/icon.png);
+                background-image: url({{ asset('media/category/icon.png')}});
                 background-position: 99% .5%;
             }
 
@@ -1015,7 +1015,7 @@
                 height: 70px;
                 display: inline-block;
                 vertical-align: middle;
-                background-image: url(http://localhost:8000/media/category/icon.png);
+                background-image: url({{ asset('media/category/icon.png')}});
                 background-position: 81.5% 14.5%;
             }
             .p_hotline_item .icon_complain {
@@ -1023,7 +1023,7 @@
                 height: 70px;
                 display: inline-block;
                 vertical-align: middle;
-                background-image: url(http://localhost:8000/media/category/icon.png);
+                background-image: url({{ asset('media/category/icon.png')}});
                 background-position: 95.5% 14.5%;
             }
 
