@@ -2079,7 +2079,7 @@
 @endif
 
 
-<script type="text/javascript">
+<script>
 
     function formatMoney(number, decPlaces, decSep, thouSep) {
         decPlaces = isNaN(decPlaces = Math.abs(decPlaces)) ? 2 : decPlaces,
@@ -2432,7 +2432,7 @@
     // });
     
 </script>
-<script type="text/javascript">
+<script>
 
     price_add_address = 0;
    
@@ -2473,19 +2473,21 @@
         }
     });
 
-    $.ajax({
-        type: 'POST',
-        url: "{{ route('show-viewed-product') }}",
-        data: {
-            product_id: view_product_id
+    // $.ajax({
+    //     type: 'POST',
+    //     url: "{{ route('show-viewed-product') }}",
+    //     data: {
+    //         product_id: view_product_id
                
-        },
-        success: function(result){
-           // numberCart = result.find($("#number-product-cart").text());
-           $('.viewer-product').append(result);
+    //     },
+    //     success: function(result){
+    //        // numberCart = result.find($("#number-product-cart").text());
+    //        $('.viewer-product').append(result);
            
-        }
-    });  
+    //     }
+    // });  
+
+
 
     function addToSuport() {
           $('#modal-suport').modal('show'); 
@@ -2553,6 +2555,14 @@
                 
             }
         });
+
+         $(".btn-closemenu").click(function(){
+
+            $('.show-menu').removeClass('active');
+        });
+
+       
+
         
     }
 

@@ -842,10 +842,10 @@
                     font-size: 12px;
                     line-height: 16px;
                     min-height: 40px;
-                    margin: 10px 0px 5px 15px;
+/*                    margin: 10px 0px 5px 15px;*/
                     padding: 4px 0;
                     text-align: center;
-                    width: calc(20% - 0px);
+                    width: 76px;
                 }
                 .nav-list {
                     display: flex;
@@ -896,6 +896,53 @@
                 .nk-header ._nk_main{
                     position: relative;
                 }
+                .show-menu {
+                    background-color: #fff;
+                    height: 100%;
+                    overflow: scroll;
+                    max-width: 640px;
+                    padding: 60px 10px 100px;
+                    position: fixed;
+                    top: 0;
+                    transition: .3s;
+                    right: -100%;
+                    width: 100%;
+                    z-index: 99;
+                }
+
+                .show-menu.active {
+                    left: 0;
+                    margin: auto;
+                    right: 0;
+                }
+
+                .nav-list {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 6px;
+                }
+                .show-bar{
+                            background: #fff;
+
+                        }
+
+                .logo-mobile{
+                    width: 23%;
+                }
+
+                .div-header-cart{
+                    width: 100%;
+                    display: flex;
+                }
+
+                .d .nk-header #nk-cart{
+                    width: 77%;
+                }
+
+                .p_hotline_item span {
+                    width: 100% !important;
+                    text-align: center !important;
+                }
                 
             }
 
@@ -903,8 +950,90 @@
                 .mobile{
                     display: none;
                 }
-             }   
-                </style>
+
+              
+             }
+
+             footer .col-footer h3 {
+                text-transform: uppercase;
+                font-size: 16px;
+                color: #424242;
+                font-weight: bold;
+                margin-top: 0;
+                margin-bottom: 15px;
+            }
+
+            .footer .row {
+                margin-top: 30px;
+            }
+
+            footer .col-footer ul li {
+                margin-bottom: 8px;
+                font-weight: bold;
+            }
+
+             .p_hotline_item span {
+                    width: 45%;
+                    display: inline-block;
+                    vertical-align: middle;
+                    font-family: Arial, Tahoma, sans-serif;
+                    font-size: 14px;
+                    color: #333;
+                    text-align: left;
+                }
+
+            .max-width {
+                max-width: 1200px;
+                width: 100%;
+                margin: 0 auto;
+                position: relative;
+            } 
+
+            .phone_hotline {
+                width: 100%;
+                background: #f5f5f5;
+                display: flex;
+                justify-content: space-between;
+            } 
+            .p_hotline_item {
+                width: 33.34%;
+                text-align: center;
+                position: relative;
+            } 
+
+            .p_hotline_item .icon_security {
+                width: 70px;
+                height: 70px;
+                display: inline-block;
+                vertical-align: middle;
+                background-image: url(http://localhost:8000/media/category/icon.png);
+                background-position: 99% .5%;
+            }
+
+            .p_hotline_item .icon_purchase {
+                width: 70px;
+                height: 70px;
+                display: inline-block;
+                vertical-align: middle;
+                background-image: url(http://localhost:8000/media/category/icon.png);
+                background-position: 81.5% 14.5%;
+            }
+            .p_hotline_item .icon_complain {
+                width: 70px;
+                height: 70px;
+                display: inline-block;
+                vertical-align: middle;
+                background-image: url(http://localhost:8000/media/category/icon.png);
+                background-position: 95.5% 14.5%;
+            }
+
+            .p_hotline_item span strong{
+                display: block;
+                font-weight: 700;
+            }
+
+
+            </style>
 
                  
 
@@ -916,44 +1045,109 @@
                         <div class="span16 _nk_main">
                             <div class="row-fluid mobile">
 
-                                <div id="nk-cart">
-                                    <ul>
-                                        <li class="cart-info-box nk_tooltip" data-toggle=".nk-cart-content" data-overlay="true">
-                                            <a href="javascript:void(0)" class="checkout_header" onclick="showToCart()">
-                                                <div class="icon"><i class="nki-shopping-cart"></i>
-                                                    @if($number_cart>0)
-                                                    <span class="mount">{{$number_cart }}</span>
-                                                    <span class="mount">{{$number_cart }}</span>
-                                                </div>
-                                                @endif
-                                                Giỏ hàng 
-                                            </a>
-                                        </li>
-                                      
-                                        <li id="login_form">
-                                            <a href="login.html?return_url=index.php" class="nk-text-login">
-                                            <i class="nki-user"></i> Tài khoản </a>
-                                        </li>
-                                        <li id="login_form2" class="nk_tooltip" data-toggle=".nk-login-content" data-overlay="overlay" style="display: none;"></li>
-                                        <li class="nk_tooltip" data-toggle=".nk-hotline-content1" data-overlay="true">
-                                            <a href="tel:18006800">
-                                                <div class="icon">
-                                                    <i class="nki-Phone"></i>
-                                                </div>
-                                                <!-- <p>
-                                                    <span>Gọi mua: 1800.6800 (Miễn phí)</span>
-                                                    </p> -->
-                                            </a>
-                                            <div class="nk-hotline-content1">
-                                                <div class="icon-up"></div>
-                                                <p>
-                                                    <span>Thời gian hoạt động</span>
-                                                    <span class="color3">8h00 - 21h00</span>
-                                                </p>
-                                            </div>
-                                        </li>
-                                    </ul>
+                                <div class="div-header-cart">
+
+                                    <div class="logo-mobile"></div>
+
+                                    <div id="nk-cart">
+                                        <ul>
+                                            <li class="cart-info-box nk_tooltip" data-toggle=".nk-cart-content" data-overlay="true">
+                                                <a href="javascript:void(0)" class="checkout_header" onclick="showToCart()">
+                                                    <div class="icon"><i class="nki-shopping-cart"></i>
+                                                        @if($number_cart>0)
+                                                        <span class="mount">{{$number_cart }}</span>
+                                                        <span class="mount">{{$number_cart }}</span>
+                                                    </div>
+                                                    @endif
+                                                    Giỏ hàng 
+                                                </a>
+                                            </li>
+                                          
+                                            <li id="login_form">
+                                                <a href="login.html?return_url=index.php" class="nk-text-login">
+                                                <i class="nki-user"></i> Tài khoản </a>
+                                            </li>
+
+                                             <li id="login_form">
+                                                <a href="#" class="nk-text-login">
+                                                <i class="fa fa-newspaper"></i> Tin tức </a>
+                                            </li>
+
+                                        
+                                            <li class="icons-mobile-bar">
+
+                                                <a class="btn  show-menu-mobile show-bar" href="javascript:void(0)"><i class="fa fa-bars"></i></a>
+                                            </li> 
+                                          
+
+                                        </ul>
+                                    </div>
+
                                 </div>
+
+                                <!-- menu show bar -->
+
+                                <div class="show-menu">
+                                    <div class="box-fixed active">
+                                        <a href="javascript:void(0)" class="btn-closemenu">Đóng</a>
+                                    </div>
+                                    <div class="show-menu__main">
+                                        <nav class="nav-list nav-list--dynamic">
+                                            <a href="/ti-vi">Tivi</a> 
+                                            <a href="/may-giat">Máy giặt</a> 
+                                            <a href="/tu-lanh">Tủ lạnh</a> 
+                                            <a href="/dieu-hoa">Điều hòa</a> 
+                                            <a href="/tu-dong">Tủ đông</a> 
+                                            <a href="/tu-mat">Tủ Mát</a> 
+                                            <a href="/gia-dung">Gia Dụng</a> 
+                                            <a href="/lo-nuong">Lò Nướng</a> <!-- <a href="/may-loc-nuoc">Máy lọc nước</a> --> 
+                                            <a href="/may-say-quan-ao">Máy sấy quần áo</a> 
+                                            <a href="/may-loc-nuoc">A.O.Smith</a> 
+                                            <a href="/quat">Quạt</a> 
+                                            <a href="/may-cu-trung-bay">Máy cũ, Trưng bày</a> 
+                                            <a href="/deal" class="promotion-menu"> Giảm giá <br>đặc biệt <span class="item__label">- 5%</span> </a> 
+                                        </nav>
+
+                                     <!--    <div class="readmore-menu">
+                                            <a href="/danh-muc-nhom-hang" class="txt-readmore"> Xem tất cả nhóm hàng</a>
+                                        </div> -->
+                                        <div class="show-menu__link clearfix">
+                                            <div class="link-item">
+                                                <p>Thông tin</p>
+                                                <ul>
+                                                    <li>
+                                                        <a href="#">Giới thiệu </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Liên hệ  </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Dự án bán buôn </a>
+                                                    </li>
+                                                   
+                                                </ul>
+                                            </div>
+                                            <div class="link-item">
+                                                <p>Hỗ trợ mua hàng</p>
+                                                <ul>
+                                                    <li>
+                                                        <a href="#">Hướng dẫn mua hàng </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Cách thức thanh toán </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Bảng giá lắp đặt </a>
+                                                    </li>
+                                                    
+                                                </ul>
+                                            </div>
+                                        </div>
+                                       
+                                    </div>
+                                </div>
+
+                                <!-- end menu show -->
 
 
                                 <div class="span16 row flexthis _nk_bottom search_center">
@@ -997,35 +1191,7 @@
                                     </div>
                                 </div>
 
-                                <div class="navigation menu-mobile mobile">
-                                    <div class="wrap menu-top">
-                                        <div class="icons-mobile-bar"><button class="show-menu-mobile"><i class="fa fa-bars"></i></button></div>
-                                       
-                                        <div class="clear"></div>
-                                    </div>
-                                </div>
-
-                                <div class="header__main menu-mobiles-show mobile hide">
                                 
-                                    <div class="category">
-                                        <p class="category__txts" style="display:none"> <span class="menu-list"> <i class="fa fa-bars" aria-hidden="true"></i> </span></p>
-                                        <nav class="nav-list">
-                                            <a href="/ti-vi">Tivi</a> 
-                                            <a href="/may-giat">Máy giặt</a> 
-                                            <a href="/tu-lanh">Tủ lạnh</a> 
-                                            <a href="/dieu-hoa">Điều hòa</a> 
-                                            <a href="/tu-dong">Tủ đông</a> 
-                                            <a href="/tu-mat">Tủ Mát</a> 
-                                            <a href="/gia-dung">Gia Dụng</a> 
-                                            <a href="/lo-nuong">Lò Nướng</a> <!-- <a href="/may-loc-nuoc">Máy lọc nước</a> --> 
-                                            <a href="/may-say-quan-ao">Máy sấy quần áo</a> 
-                                            <a href="/may-loc-nuoc">A.O.Smith</a> 
-                                            <a href="/quat">Quạt</a> 
-                                            <a href="/may-cu-trung-bay">Máy cũ, Trưng bày</a> 
-                                            <a href="/deal" class="promotion-menu"> Giảm giá <br>đặc biệt <span class="item__label">- 5%</span> </a> 
-                                        </nav>
-                                    </div>
-                                </div>    
                                 
                             </div>
 
@@ -1360,6 +1526,8 @@
                 </div>
             </div>
         </div>
+
+        @include('frontend.footer')
         <!--  <script src="https://cdn.nguyenkimmall.com/js/addons/nk_mp_core/onesignal.js" async=""></script>
             <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script> -->
         @stack('js')
@@ -1689,16 +1857,16 @@
                 
             } 
 
+            $(".btn-closemenu").click(function(){
+
+                $('.show-menu').removeClass('active');
+            });
+
             $(".show-menu-mobile").click(function(){
 
-                if($('.menu-mobiles-show').hasClass('hide')){
+                $('.show-menu').addClass('active');
 
-                    $('.menu-mobiles-show').removeClass('hide');
-
-                }
-                else{
-                    $('.menu-mobiles-show').addClass('hide');
-                }
+              
              
             });  
 

@@ -543,13 +543,57 @@
             }
 
             @media only screen and (max-width: 768px) {
-                  .menus-banner .strongtitle {
+                .menus-banner .strongtitle {
                     font-size: 12px !important;
                     -webkit-line-clamp: 1;
                       -webkit-box-orient: vertical;
                       overflow: hidden;
                       display: -webkit-box;
-                  }  
+                }
+
+                 .nk-header #nk-searchs {
+                    border-radius: .9em;
+                    background-color: #FFFFFF;
+                    height: 40px;
+                    position: relative;
+                   /* width: 30%;*/
+                    float: left;
+                }
+
+                .nk-header #nk-searchs .nk-search-box input[type="text"] {
+                    height: 40px;
+                    border: none;
+                    padding: 0 10px;
+                    color: #111;
+                    font-size: 15px;
+                    border-radius: .9em;
+                    width: 100%;
+                }
+
+                .nk-header #nk-searchs .nk-search-box button {
+                    background-color: white;
+                    height: 40px;
+                    width: 56px;
+                    border: none;
+                    cursor: pointer;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    border-top-right-radius: .9em;
+                    border-bottom-right-radius: .9em;
+                    outline: none;
+                }
+
+                #nk-searchs {
+                    width: 90% !important;
+                    margin: 0 auto;
+                }
+
+                .search-results{
+                    background: #fff;
+                }
+
+
 
                 .ui-widget-content p{
 
@@ -586,6 +630,15 @@
                 .btn-remove-all-compare{
                     display: none !important;
 
+                }
+
+                .icons-mobile-bar button {
+                    padding: 10px;
+                    border: 1px solid #E9162E;
+                }
+
+               .fa-bars:before {
+                    color: #E9162E;
                 }
                 .btn-compare{
                     top: 0px !important;
@@ -1181,10 +1234,10 @@
                             font-size: 12px;
                             line-height: 16px;
                             min-height: 40px;
-                            margin: 10px 0px 5px 15px;
+                            margin: 0;
                             padding: 4px 0;
                             text-align: center;
-                            width: calc(20% - 0px);
+                            width: 76px;
                         }
                         .nav-list {
                             display: flex;
@@ -1195,7 +1248,7 @@
                             box-shadow: none !important;
                         } 
                         .nk-header{
-                            height: 388px !important;
+                            height: 158px !important;
                         }
 
                         .search_center{
@@ -1216,9 +1269,51 @@
                         }
                         .d .nk-product-cate-homepage .nk-content .item {
                             width: 30% !important;
-                        }    
+                        }   
 
-                        
+                         .show-menu {
+                            background-color: #fff;
+                            height: 100%;
+                            overflow: scroll;
+                            max-width: 640px;
+                            padding: 60px 10px 100px;
+                            position: fixed;
+                            top: 0;
+                            transition: .3s;
+                            right: -100%;
+                            width: 100%;
+                            z-index: 99;
+                        }
+
+                        .show-menu.active {
+                            left: 0;
+                            margin: auto;
+                            right: 0;
+                        }
+
+                        .nav-list {
+                            display: flex;
+                            flex-wrap: wrap;
+                            gap: 6px;
+                        } 
+                        .show-bar{
+                            background: #fff;
+
+                        }
+
+                        .logo-mobile{
+                            width: 23%;
+                        }
+
+                        .div-header-cart{
+                            width: 100%;
+                            display: flex;
+                        }
+
+                        .d .nk-header #nk-cart{
+                            width: 77%;
+                        }
+
                     }
 
              @media only screen and (min-width: 601px) {
@@ -1237,44 +1332,126 @@
                         <div class="span16 _nk_main">
                             <div class="row-fluid ">
 
-                                <div id="nk-cart">
-                                    <ul>
-                                        <li class="cart-info-box nk_tooltip" data-toggle=".nk-cart-content" data-overlay="true">
-                                            <a href="javascript:void(0)" class="checkout_header" onclick="showToCart()">
-                                                <div class="icon"><i class="nki-shopping-cart"></i>
-                                                    @if($number_cart>0)
-                                                    <span class="mount">{{$number_cart }}</span>
-                                                    <span class="mount">{{$number_cart }}</span>
-                                                </div>
-                                                @endif
-                                                Giỏ hàng 
-                                            </a>
-                                        </li>
-                                      
-                                        <li id="login_form">
-                                            <a href="login.html?return_url=index.php" class="nk-text-login">
-                                            <i class="nki-user"></i> Tài khoản </a>
-                                        </li>
-                                        <li id="login_form2" class="nk_tooltip" data-toggle=".nk-login-content" data-overlay="overlay" style="display: none;"></li>
-                                        <li class="nk_tooltip" data-toggle=".nk-hotline-content1" data-overlay="true">
-                                            <a href="tel:18006800">
-                                                <div class="icon">
-                                                    <i class="nki-Phone"></i>
-                                                </div>
-                                                <!-- <p>
-                                                    <span>Gọi mua: 1800.6800 (Miễn phí)</span>
-                                                    </p> -->
-                                            </a>
-                                            <div class="nk-hotline-content1">
-                                                <div class="icon-up"></div>
-                                                <p>
-                                                    <span>Thời gian hoạt động</span>
-                                                    <span class="color3">8h00 - 21h00</span>
-                                                </p>
+                                <div class="div-header-cart">
+
+                                    <div class="logo-mobile"></div>
+
+                                    <div id="nk-cart">
+                                        <ul>
+                                            <li class="cart-info-box nk_tooltip" data-toggle=".nk-cart-content" data-overlay="true">
+                                                <a href="javascript:void(0)" class="checkout_header" onclick="showToCart()">
+                                                    <div class="icon"><i class="nki-shopping-cart"></i>
+                                                        @if($number_cart>0)
+                                                        <span class="mount">{{$number_cart }}</span>
+                                                        <span class="mount">{{$number_cart }}</span>
+                                                    </div>
+                                                    @endif
+                                                    Giỏ hàng 
+                                                </a>
+                                            </li>
+                                          
+                                            <li id="login_form">
+                                                <a href="login.html?return_url=index.php" class="nk-text-login">
+                                                <i class="nki-user"></i> Tài khoản </a>
+                                            </li>
+
+                                             <li id="login_form">
+                                                <a href="#" class="nk-text-login">
+                                                <i class="fa fa-newspaper"></i> Tin tức </a>
+                                            </li>
+
+                                        
+                                            <li class="icons-mobile-bar">
+
+                                                <a class="btn  show-menu-mobile show-bar" href="javascript:void(0)"><i class="fa fa-bars"></i></a>
+                                            </li> 
+                                          
+
+                                        </ul>
+                                    </div>
+
+                                </div>    
+                              
+
+                                 <!-- menu show bar -->
+
+                                <div class="show-menu">
+                                    <div class="box-fixed active">
+                                        <a href="javascript:void(0)" class="btn-closemenu">Đóng</a>
+                                    </div>
+                                    <div class="show-menu__main">
+                                        <nav class="nav-list nav-list--dynamic">
+                                            <a href="/ti-vi">Tivi</a> 
+                                            <a href="/may-giat">Máy giặt</a> 
+                                            <a href="/tu-lanh">Tủ lạnh</a> 
+                                            <a href="/dieu-hoa">Điều hòa</a> 
+                                            <a href="/tu-dong">Tủ đông</a> 
+                                            <a href="/tu-mat">Tủ Mát</a> 
+                                            <a href="/gia-dung">Gia Dụng</a> 
+                                            <a href="/lo-nuong">Lò Nướng</a> <!-- <a href="/may-loc-nuoc">Máy lọc nước</a> --> 
+                                            <a href="/may-say-quan-ao">Máy sấy quần áo</a> 
+                                            <a href="/may-loc-nuoc">A.O.Smith</a> 
+                                            <a href="/quat">Quạt</a> 
+                                            <a href="/may-cu-trung-bay">Máy cũ, Trưng bày</a> 
+                                            <a href="/deal" class="promotion-menu"> Giảm giá <br>đặc biệt <span class="item__label">- 5%</span> </a> 
+                                        </nav>
+                                       <!--  <div class="readmore-menu">
+                                            <a href="/danh-muc-nhom-hang" class="txt-readmore"> Xem tất cả nhóm hàng</a>
+                                        </div>
+                                        <div class="show-menu__link clearfix">
+                                            <div class="link-item">
+                                                <p>Nhóm hàng mới</p>
+                                                <ul>
+                                                    <li>
+                                                        <a href="/hang-cao-cap">Hàng cao cấp </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="/dung-cu-cam-tay">Đồ nghề - Dụng cụ sửa chữa </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="/may-loc-nuoc?g=loc-dien-giai-ion-kiem">Máy lọc nước điện giải </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="https://www.dienmayxanh.com/tho-dien-may-xanh/ve-sinh-may-lanh-tu-1-hp-2-5-hp?itm_source=menu&amp;itm_medium=dich+vu+huu+ich&amp;itm_campaign=vsml">Vệ sinh máy lạnh </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="https://www.thegioididong.com/utilities/thanh-toan-tra-gop"><b> Thu hộ </b> </a>
+                                                    </li>
+                                                </ul>
                                             </div>
-                                        </li>
-                                    </ul>
+                                            <div class="link-item">
+                                                <p>Bài viết &amp; Tin khuyến mãi</p>
+                                                <ul>
+                                                    <li>
+                                                        <a href="https://www.thegioididong.com/sim-so-dep">Thẻ cào giảm đến 3% </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="/khuyen-mai">Săn khuyến mãi trong tháng </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="/kinh-nghiem-hay">Tư vấn chọn mua </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="/vao-bep">Vào bếp </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="box-loginheader"></div>
+                                        <div class="border border--pad"></div>
+                                        <a href="/lich-su-mua-hang" class="txt-history">Lịch sử mua hàng</a>
+                                        <p class="txt-tel">
+                                            Tổng đài <a href="tel:1900232461">1900 232 461</a>
+                                            (7:30 - 22:00)
+                                        </p>
+                                        <p class="txt-tel">
+                                            Xem <a href="/he-thong-sieu-thi-dien-may">3158</a> siêu thị
+                                            (8:00 - 22:00)
+                                        </p> -->
+                                    </div>
                                 </div>
+
+                                <!-- end menu show -->
 
 
                                 <div class="span16 row flexthis _nk_bottom search_center">
@@ -1294,22 +1471,15 @@
 
 
                                                      
-                                                        <div id="nk-search">
+                                                        <div id="nk-searchs">
                                                             <form action="{{ route('search-product-frontend') }}" method="get" class="cm-processed-form">
                                                                 <div class="nk-search-box">
-                                                                    <input type="text" id="tags" name="key"  id="search_input" placeholder="Bạn cần tìm gì hôm nay ?" autocomplete="off">
+                                                                    <input type="text" id="tags_mobile" name="key"  id="search_input" placeholder="Bạn cần tìm gì hôm nay ?" autocomplete="off">
                                                                     <button>
                                                                     <i class="nki-search"></i>
                                                                     </button>
-                                                                    <div class="nk-search-hint">
-                                                                        <div class="search-result" style="display: none;">
-                                                                            <ul class="nk-search-cate">
-                                                                                <li></li>
-                                                                            </ul>
-                                                                            <ul class="nk-search-product-item">
-                                                                                <li></li>
-                                                                            </ul>
-                                                                        </div>
+                                                                    <div class="search-results">
+                                                                       
                                                                     </div>
                                                                 </div>
                                                             </form>
@@ -1323,36 +1493,7 @@
                                     </div>
                                 </div>
 
-                                 <div class="header__main">
-                                
-                                <div class="category mobile">
-                                    <p class="category__txts" style="display:none"> <span class="menu-list"> <i class="fa fa-bars" aria-hidden="true"></i> </span></p>
-                                    <nav class="nav-list">
-                                        <a href="/ti-vi">Tivi</a> 
-                                        <a href="/may-giat">Máy giặt</a> 
-                                        <a href="/tu-lanh">Tủ lạnh</a> 
-                                        <a href="/dieu-hoa">Điều hòa</a> 
-                                        <a href="/tu-dong">Tủ đông</a> 
-                                        <a href="/tu-mat">Tủ Mát</a> 
-                                        <a href="/gia-dung">Gia Dụng</a> 
-                                        <a href="/lo-nuong">Lò Nướng</a> <!-- <a href="/may-loc-nuoc">Máy lọc nước</a> --> 
-                                        <a href="/may-say-quan-ao">Máy sấy quần áo</a> 
-                                        <a href="/may-loc-nuoc">A.O.Smith</a> 
-                                        <a href="/quat">Quạt</a> 
-                                        <a href="/may-cu-trung-bay">Máy cũ, Trưng bày</a> 
-                                        <a href="/deal" class="promotion-menu"> Giảm giá <br>đặc biệt <span class="item__label">- 5%</span> </a> 
-                                    </nav>
-                                </div>
-                                
                             </div>
-
-
-                            </div>
-
-
-
-                           
-
 
                         </div>
                     </div>
@@ -1361,7 +1502,7 @@
             <!-- endheader -->
 
 
-                    @include('frontend.menu_list');
+                    @include('frontend.menu_list')
 
                 </div>
             </div>
@@ -1901,12 +2042,15 @@
   
 
      <!--Start of Tawk.to Script-->
-    <script src="{{asset('js/tawto.js')}}"></script>
+    <!-- <script src="{{asset('js/tawto.js')}}"></script> -->
    
     <!--End of Tawk.to Script-->
 
 
+<?php 
+    $ismobile = preg_match("/(android|avantgo|blackberry|bolt|boost|cricket|docomo|fone|hiptop|mini|mobi|palm|phone|pie|tablet|up\.browser|up\.link|webos|wos)/i", $_SERVER["HTTP_USER_AGENT"]);
 
+    ?>
     <link rel="stylesheet" href="{{asset('css/lib/owl.carousel.min.css')}}">
 
  <script src="{{ asset('js/layout1.js') }}" type="text/javascript"></script>
@@ -1977,43 +2121,110 @@
 
 
 
-    $(function() {
-        $("#tags").autocomplete({
+    <?php 
 
-            minLength: 2,
-            
-            source: function(request, response) {
-                $.ajaxSetup({
-                headers: {
-                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                }
+            if($ismobile){?>
+            // tags_mobile
 
-
-                });
-                $.ajax({
-
-                    url: "{{  route('sugest-click')}}",
-                    type: "POST",
-                    data: {
-                        "_token": "{{ csrf_token() }}",
-                        product:$('#tags').val()
-                    },
-                    dataType: "json",
-                    success: function (data) {
-                        var items = data;
-
-                        response(items);
-
-                        $('#ui-id-1').html();
-
-                        $('#ui-id-1').html(data);
+                $(function() {
+                    $("#tags_mobile").autocomplete({
                     
-                    }
+                        minLength: 2,
+                        
+                        source: function(request, response) {
+                    
+                            $.ajaxSetup({
+                            headers: {
+                                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                            }
+                    
+                    
+                            });
+                            $.ajax({
+                    
+                                url: "{{  route('sugest-click')}}",
+                                type: "POST",
+                                data: {
+                                    "_token": "{{ csrf_token() }}",
+                                    product:$('#tags_mobile').val()
+                                },
+                                dataType: "json",
+                                success: function (data) {
+
+                                    var items = data;
+                    
+                                    response(items);
+
+                                    // console.log(data)
+                                    
+                                    $('#ui-id-1').hide();
+
+                                    $('.search-results').html();
+                    
+                                    $('.search-results').html(data);
+
+                    
+                                 
+                                }
+                            });
+                        },
+                    
+                        
+                        html:true,
+                    });
                 });
-            },
-            html:true,
-        });
-    });
+            <?php    
+
+                } 
+                else{
+            ?>   
+
+            
+            $(function() {
+                $("#tags").autocomplete({
+                
+                    minLength: 2,
+                    
+                    source: function(request, response) {
+                
+                        $.ajaxSetup({
+                        headers: {
+                            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                        }
+                
+                
+                        });
+                        $.ajax({
+                
+                            url: "{{  route('sugest-click')}}",
+                            type: "POST",
+                            data: {
+                                "_token": "{{ csrf_token() }}",
+                                product:$('#tags').val()
+                            },
+                            dataType: "json",
+                            success: function (data) {
+                                var items = data;
+                
+                                response(items);
+            
+                
+                                $('#ui-id-1').html();
+                
+                                $('#ui-id-1').html(data);
+                            
+                            }
+                        });
+                    },
+                
+                    
+                    html:true,
+                });
+            });
+            <?php 
+
+                }
+            ?>
 
     $(function() {
         $("#skw").autocomplete({
@@ -2113,7 +2324,7 @@
 
     @endif
 
-    <script type="text/javascript">
+    <script>
 
     
         $('.register-forms').click(function(){
@@ -2308,50 +2519,48 @@
 
 
         $(function() {
-        $("#tags").autocomplete({
+            $("#tags").autocomplete({
 
-            minLength: 2,
-            
-            source: function(request, response) {
+                minLength: 2,
+                
+                source: function(request, response) {
 
-                $.ajaxSetup({
-                headers: {
-                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                }
-
-
-                });
-                $.ajax({
-
-                    url: "{{  route('sugest-click')}}",
-                    type: "POST",
-                    data: {
-                        "_token": "{{ csrf_token() }}",
-                        product:$('#tags').val()
-                    },
-                    dataType: "json",
-                    success: function (data) {
-                        var items = data;
-
-                        response(items);
-
-                         console.log(1);
-
-                        $('#ui-id-1').html();
-
-                        $('#ui-id-1').html(data);
-                    
+                    $.ajaxSetup({
+                    headers: {
+                        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
                     }
-                });
-            },
-
-            
-            html:true,
-        });
 
 
-        $().ready(function() {
-             jQuery.validator.addMethod("phonenu", function (value, element) {
+                    });
+                    $.ajax({
+
+                        url: "{{  route('sugest-click')}}",
+                        type: "POST",
+                        data: {
+                            "_token": "{{ csrf_token() }}",
+                            product:$('#tags').val()
+                        },
+                        dataType: "json",
+                        success: function (data) {
+                            var items = data;
+
+                            alert(1);
+
+                            $('#ui-id-1').html();
+
+                            $('#ui-id-1').html(data);
+                        
+                        }
+                    });
+                },
+
+                
+                html:true,
+            });
+         });    
+
+        $(document).ready(function() {
+            jQuery.validator.addMethod("phonenu", function (value, element) {
                 if ( /^\d{3}-?\d{3}-?\d{4}$/g.test(value)) {
                     return true;
                 } else {
@@ -2359,7 +2568,7 @@
                 };
             }, "Invalid phone number");
 
-
+            
 
             $("#registers-form-submit").validate({
                 rules: {
@@ -2542,9 +2751,20 @@
             else{
                 $('.client-login').show();
             }
-        })
+        }); 
 
-       
+        $(".btn-closemenu").click(function(){
+
+                $('.show-menu').removeClass('active');
+            });
+ 
+
+        $(".show-menu-mobile").click(function(){
+
+        
+            $('.show-menu').addClass('active');
+
+        });  
     
     </script>
 

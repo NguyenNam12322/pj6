@@ -17,6 +17,10 @@
                 display: none;
             }
 
+            .nk_homepage_houseware_best_selling_2020_wrapper{
+                z-index: 0;
+            }
+
         }   
 
         .box-links img{
