@@ -667,7 +667,7 @@
 
                 $('.show-data-group').remove(''); 
 
-                $('.show-data-group').append(result);
+                $('#payday-block').append(result);
                 
             }
         });
