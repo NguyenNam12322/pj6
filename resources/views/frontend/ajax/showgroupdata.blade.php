@@ -1,9 +1,15 @@
 <div class="nk-product-cate-style-grid nk-product-collection nk-product- clearfix">
-                                <div id="pagination_contents" class="nk-product nks-fs-sync index-index" data-fs-type="0">
+    <div id="pagination_contents" class="nk-product nks-fs-sync index-index" data-fs-type="0">
 
-                                   
+        <?php 
+
+            $dem = 0;
+        ?>
 
         @foreach($data as $key =>$datas)
+        <?php 
+            $dem++;
+        ?>
 
         <div class="product col-md-3 col-xs-6">
             <div class="product-header" href="{{ route('details', $datas->Link) }}">
@@ -32,6 +38,12 @@
             </div>
             <div class="product-footer"></div>
         </div>
+        <?php 
+            if($dem>4):
+                break;
+            endif;    
+
+        ?>
 
         @endforeach
 
