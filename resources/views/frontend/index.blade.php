@@ -481,7 +481,6 @@
                             <div class="nk-product-cate-style-grid nk-product-collection nk-product- clearfix">
                                 <div id="pagination_contents" class="nk-product nks-fs-sync index-index" data-fs-type="0">
 
-                                    
                                     @foreach($data as $key =>$datas)
 
                                         <?php 
@@ -492,8 +491,6 @@
                                                 break;
 
                                             }
-
-
                                         ?>
                                         <div class="product col-md-3 col-xs-6">
                                             <div class="product-header" href="{{ route('details', $datas->Link) }}">
@@ -649,31 +646,31 @@
         var id = $(this).attr('data-id')
 
         $.ajaxSetup({
-                headers: {
-                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                }
-            });
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            }
+        });
 
-            $.ajax({
-                type: 'POST',
-                url: "{{ route('showGroupData') }}",
-                data: {
+        $.ajax({
+            type: 'POST',
+            url: "{{ route('showGroupData') }}",
+            data: {
 
-                    id:id
-                   
-                },
-
+                id:id
                
-                success: function(result){
-                  
-                   // numberCart = result.find("#number-product-cart").text();
+            },
 
-                    $('.show-data-group').html(''); 
+           
+            success: function(result){
+              
+               // numberCart = result.find("#number-product-cart").text();
 
-                    $('.show-data-group').append(result);
-                    
-                }
-            });
+                $('.show-data-group').remove(''); 
+
+                $('.show-data-group').append(result);
+                
+            }
+        });
 
 
     });
