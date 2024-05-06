@@ -432,7 +432,6 @@ class AjaxController extends Controller
             $addProduct->save();
 
             return "thêm thành công sản phẩm có product_id ".$request->product_id;
-0
         }
     }
 

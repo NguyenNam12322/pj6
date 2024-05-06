@@ -139,6 +139,10 @@
                  .filter-desktop{
                     display: none;
                 }
+
+                .nk-menu{
+                    display: none;
+                }
             }  
 
              @media screen and (min-width:777px) {
