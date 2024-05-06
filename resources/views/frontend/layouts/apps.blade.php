@@ -1237,7 +1237,7 @@
                             margin: 0;
                             padding: 4px 0;
                             text-align: center;
-                            width: 76px;
+                            width: 18vw;
                         }
                         .nav-list {
                             display: flex;

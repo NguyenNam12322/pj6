@@ -845,7 +845,7 @@
 /*                    margin: 10px 0px 5px 15px;*/
                     padding: 4px 0;
                     text-align: center;
-                    width: 76px;
+                    width: 18vw;
                 }
                 .nav-list {
                     display: flex;
