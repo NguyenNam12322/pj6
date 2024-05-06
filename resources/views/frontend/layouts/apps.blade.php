@@ -1395,59 +1395,39 @@
                                             <a href="/may-cu-trung-bay">Máy cũ, Trưng bày</a> 
                                             <a href="/deal" class="promotion-menu"> Giảm giá <br>đặc biệt <span class="item__label">- 5%</span> </a> 
                                         </nav>
-                                       <!--  <div class="readmore-menu">
-                                            <a href="/danh-muc-nhom-hang" class="txt-readmore"> Xem tất cả nhóm hàng</a>
-                                        </div>
                                         <div class="show-menu__link clearfix">
                                             <div class="link-item">
-                                                <p>Nhóm hàng mới</p>
+                                                <p>Thông tin</p>
                                                 <ul>
                                                     <li>
-                                                        <a href="/hang-cao-cap">Hàng cao cấp </a>
+                                                        <a href="#">Giới thiệu </a>
                                                     </li>
                                                     <li>
-                                                        <a href="/dung-cu-cam-tay">Đồ nghề - Dụng cụ sửa chữa </a>
+                                                        <a href="#">Liên hệ  </a>
                                                     </li>
                                                     <li>
-                                                        <a href="/may-loc-nuoc?g=loc-dien-giai-ion-kiem">Máy lọc nước điện giải </a>
+                                                        <a href="#">Dự án bán buôn </a>
                                                     </li>
-                                                    <li>
-                                                        <a href="https://www.dienmayxanh.com/tho-dien-may-xanh/ve-sinh-may-lanh-tu-1-hp-2-5-hp?itm_source=menu&amp;itm_medium=dich+vu+huu+ich&amp;itm_campaign=vsml">Vệ sinh máy lạnh </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="https://www.thegioididong.com/utilities/thanh-toan-tra-gop"><b> Thu hộ </b> </a>
-                                                    </li>
+                                                   
                                                 </ul>
                                             </div>
                                             <div class="link-item">
-                                                <p>Bài viết &amp; Tin khuyến mãi</p>
+                                                <p>Hỗ trợ mua hàng</p>
                                                 <ul>
                                                     <li>
-                                                        <a href="https://www.thegioididong.com/sim-so-dep">Thẻ cào giảm đến 3% </a>
+                                                        <a href="#">Hướng dẫn mua hàng </a>
                                                     </li>
                                                     <li>
-                                                        <a href="/khuyen-mai">Săn khuyến mãi trong tháng </a>
+                                                        <a href="#">Cách thức thanh toán </a>
                                                     </li>
                                                     <li>
-                                                        <a href="/kinh-nghiem-hay">Tư vấn chọn mua </a>
+                                                        <a href="#">Bảng giá lắp đặt </a>
                                                     </li>
-                                                    <li>
-                                                        <a href="/vao-bep">Vào bếp </a>
-                                                    </li>
+                                                    
                                                 </ul>
                                             </div>
                                         </div>
-                                        <div class="box-loginheader"></div>
-                                        <div class="border border--pad"></div>
-                                        <a href="/lich-su-mua-hang" class="txt-history">Lịch sử mua hàng</a>
-                                        <p class="txt-tel">
-                                            Tổng đài <a href="tel:1900232461">1900 232 461</a>
-                                            (7:30 - 22:00)
-                                        </p>
-                                        <p class="txt-tel">
-                                            Xem <a href="/he-thong-sieu-thi-dien-may">3158</a> siêu thị
-                                            (8:00 - 22:00)
-                                        </p> -->
+                                        
                                     </div>
                                 </div>
 
