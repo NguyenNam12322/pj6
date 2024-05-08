@@ -943,6 +943,19 @@
                     width: 100% !important;
                     text-align: center !important;
                 }
+
+                .nav-list a span.item__label {
+                    background-color: #f51212;
+                    border-radius: 3px;
+                    color: #fff;
+                    font-size: 9px;
+                    font-weight: normal;
+                    position: absolute;
+                    padding: 0 3px;
+                    right: -2px;
+                    top: 0;
+                    line-height: 11px;
+                }
                 
             }
 
