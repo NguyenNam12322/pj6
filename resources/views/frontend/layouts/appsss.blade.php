@@ -673,6 +673,10 @@
                     min-width: unset !important;
                 }
 
+                .promotion-menu{
+                    position: relative;
+                }
+
                   .banner_home__ .banner-left{
                     width: 100% !important;
                 }
