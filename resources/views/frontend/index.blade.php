@@ -89,6 +89,7 @@
     .div-group{
         width: 100%;
         height: auto;
+        position: sticky;
     }
 
     @media all and (max-width: 768px) {
