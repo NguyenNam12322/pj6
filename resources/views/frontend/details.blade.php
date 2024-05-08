@@ -211,6 +211,9 @@
                 margin-right: 6px;
                 background-size: 330px 330px;
             }
+            .pdetail-info p{
+                text-align: left !important;
+            }
 
             .monopoly_item ul li .icon_guarantee_mb {
                 background-position: 33% 60.4%;
@@ -998,7 +1001,7 @@
                 </div>
             </div> -->
             <div class="view-all-salient_fratured">
-              
+
                 <a id="show-popup-featured-images-gallery" style="display: block" href="javascript:void(0)"  data-color-id="0" data-toggle="modal" data-target="#Salient_Features">Xem tất cả điểm nổi bật</a>
             </div> 
 
