@@ -730,14 +730,23 @@
 
                                 @if(!empty($data->promotion))
 
-                                <fieldset class="p-gift">
-                                    <legend id="data-pricetotal" style="color: #ff0000;font-size: 18px; font-weight: bold" data-pricetotal="0">
-                                        Khuyến mãi kèm theo
-                                    </legend>
+                                <div class="gift_pro">
 
-                                        {!! @$data->promotion !!}
-                                       
-                                </fieldset>
+                                    <span class="ttl"><i class="fa-solid fa-gift"></i> Ưu đãi tặng kèm  @if(!empty($data->GiftPrice)) trị giá {{ str_replace(',' ,'.', number_format($data->GiftPrice)) }}  @endif</span>
+                                   
+                                    <div class="gift_item">
+                                        <ul>
+                                            <li>
+                                                
+                                                <div class="gift_info">
+                                                   {!! @$data->promotion !!}
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                        
+                                
                                 @endif
 
                                <!--  @if($data_cate==4)
@@ -1498,7 +1507,7 @@
                             <div class="sticker buyonline"> <p><strong>Số Lượng Có Hạn</strong></p></div>
                             @endif
 
-                            @if(!empty($data->promotion))
+                             @if(!empty($data->promotion))
 
                             <div class="gift_pro">
 
