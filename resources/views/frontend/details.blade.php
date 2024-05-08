@@ -183,6 +183,7 @@
 
             .share-button .redirectCart{
                 width: 49%;
+                border: 0;
             } 
 
             .share-button .right-cart{
