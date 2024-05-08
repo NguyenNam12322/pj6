@@ -241,9 +241,9 @@
             .option-price-mobile{
                 text-align: right;
             }
-            .pdetail-price {
+           /* .pdetail-price {
                 height: 169px !important;
-            }   
+            }   */
 
             .pdetail-price-box{
                 height: auto !important;
@@ -252,6 +252,33 @@
             .box-select-price{
                 height: 79px;
                 margin-left: 96px;
+            }
+            .pdetail-info, .pdetail-stockavailable{
+                text-align: left;
+                display: flex;
+            }
+
+            .p1{
+                margin-right: 15px;
+            }
+            .pdetail-price-box{
+                text-align: center !important;
+            }
+
+            .box_pro-info .discount {
+                height: auto;
+                margin-top: 5px;
+            }
+
+            .discount .installment {
+                font-family: Arial, Tahoma, sans-serif;
+                font-size: 12px;
+                color: #000;
+                background: #f1f1f1;
+                border-radius: 3px;
+                padding: 2px 7px;
+                width: 25%;
+                margin-top: 15px;
             }
        
         }
@@ -608,9 +635,10 @@
         </li>
         @endif
     </ul>
-    <h1>{{ $data->Name }}</h1>
+   
 
     @endif
+
     <div class="box02">
         <div class="box02__left">
             <div class="detail-rate">
@@ -695,17 +723,57 @@
                     </div>
                 </div>
             </div>
+
+
+             <div class="scrolling_inner mobile">
+                <div class="box01__tab scrolling">
+                    <div id="thumb-featured-images-gallery-0" class="item itemTab active " data-gallery-id="featured-images-gallery" data-color-id="0" data-is-full-spec="False" data-color-order-id="0" data-isfeatureimage="True" data-toggle="modal" data-target="#Salient_Features" class="read-full" data-gallery-id="featured-images-gallery">
+                        <div class="item-border">
+                            <i class="icondetail-noibat"></i>
+                        </div>
+                        <p>Điểm nổi bật</p>
+                    </div>
+                    <div id="thumb-specification-gallery-0" class="item itemTab  is-show-popup" data-gallery-id="specification-gallery" data-color-id="0" data-is-full-spec="True" data-color-order-id="0" data-isfeatureimage="True">
+                        <div class="item-border">
+                            <i class="icondetail-thongso" data-toggle="modal" data-target="#specifications"></i>
+                        </div>
+                        <p data-toggle="modal" data-target="#specifications">Thông số kỹ thuật</p>
+                    </div>
+
+                   <!--  <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                        </div> -->
+
+                    <div id="thumb-article-gallery-0" class="item itemTab  is-show-popup scroll-content" data-gallery-id="article-gallery" data-color-id="0" data-is-full-spec="False" data-color-order-id="0" data-isfeatureimage="True">
+                        <div class="item-border">
+                            <i class="icondetail-danhgia"></i>
+                        </div>
+                        <p>Thông tin sản phẩm</p>
+                    </div>
+                </div>
+            </div>
+
+            @if($mobile ==1)
+             <h1>{{ $data->Name }}</h1>
+            @endif
+
+
             <div class="pay mobile">
                 <div class="col-12 pdetail-des">
                     <div class="clearfix"></div>
                     <div class="info-box">
                         <div class="pdetail-info">
+                            <p class="p1">thương hiệu: <b>{{ @$ar_groups_info[0]['name'] }}</b></p>
+
                             <p>Model: <b>{{ @$data->ProductSku  }}</b></p>
                            
                         </div>
+
+                        <div class="pdetail-stockavailable">
+                            <span>{{ $status }}</span>
+                        </div>
                         <div class="scroll-box">
                             <div class="pdetail-price">
-
                                 @if($data->Quantily>-1)
                                 <div class="pdetail-price-box show-price-mobile">
                                     {!! @$text !!}
@@ -714,12 +782,8 @@
 
 
                                 @endif
-
-                                <div class="pdetail-stockavailable">
-                                    <span>{{ $status }}</span>
-                                </div>
-
                             </div>
+                            <div class="discount"><p class="installment">Trả góp 0%</p></div>
                             <div class="pdetail-status">
                                 
                                 @if($data_cate ===8||$data_cate ===9||$data_cate ===1)
@@ -898,6 +962,8 @@
                                 </div>
                                 @endif
                             </div>
+
+                            
                             
                             <div class="clearfix"></div>
 
@@ -931,9 +997,10 @@
                     </div>
                 </div>
             </div> -->
-            <div class="total-imgslider">
+            <div class="view-all-salient_fratured">
+              
                 <a id="show-popup-featured-images-gallery" style="display: block" href="javascript:void(0)"  data-color-id="0" data-toggle="modal" data-target="#Salient_Features">Xem tất cả điểm nổi bật</a>
-            </div>
+            </div> 
 
 
             <style type="text/css">
@@ -1014,6 +1081,8 @@
                     </div>
                 </div>
             </div>
+
+
             <div class="modal fade" id="Salient_Features" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
