@@ -766,7 +766,7 @@
                     <div class="clearfix"></div>
                     <div class="info-box">
                         <div class="pdetail-info">
-                            <p class="p1">thương hiệu: <b>{{ @$ar_groups_info[0]['name'] }}</b></p>
+                            <p class="p1">Thương hiệu: <b>{{ @$ar_groups_info[0]['name'] }}</b></p>
 
                             <p>Model: <b>{{ @$data->ProductSku  }}</b></p>
                            
