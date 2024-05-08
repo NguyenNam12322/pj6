@@ -134,7 +134,7 @@
         }
 
         .monopoly_item ul li {
-            width: 49.6%;
+            width: 49%;
             padding: 11px 0;
         }
 
@@ -165,6 +165,74 @@
         }
 
          @media only screen and (max-width: 767px) {
+
+            .monopoly_item ul li .icon_change, .monopoly_item ul li .icon_genuine {
+                width: 30px;
+                height: 25px;
+                display: inline-block;
+                vertical-align: middle;
+                background-image: url(//cdn11.dienmaycholon.vn/filewebdmclnew/DMCL21/FE/img/detail-product/icon_detail-2.png);
+                margin-right: 6px;
+                background-size: 330px 330px;
+            }
+
+            .share-button{
+                width: 100%;
+                display: flex;
+            }
+
+            .share-button .redirectCart{
+                width: 49%;
+            } 
+
+            .share-button .right-cart{
+                margin-left: 10px;
+                background: #ffde00;
+                color: #000;
+                border: 0;
+            }
+
+            .monopoly_item ul li .icon_refund {
+                width: 30px;
+                height: 25px;
+                display: inline-block;
+                vertical-align: middle;
+                background-image: url(//cdn11.dienmaycholon.vn/filewebdmclnew/DMCL21/FE/img/detail-product/icon_detail-2.png);
+                background-position: 22% 60.4%;
+                margin-right: 4px;
+                background-size: 330px 330px;
+            }
+            .monopoly_item ul li .icon_delivery, .monopoly_item ul li .icon_guarantee_mb {
+                width: 30px;
+                height: 25px;
+                display: inline-block;
+                vertical-align: middle;
+                background-image: url(//cdn11.dienmaycholon.vn/filewebdmclnew/DMCL21/FE/img/detail-product/icon_detail-2.png);
+                margin-right: 6px;
+                background-size: 330px 330px;
+            }
+
+            .monopoly_item ul li .icon_guarantee_mb {
+                background-position: 33% 60.4%;
+            }
+
+            .monopoly_item ul li .icon_change {
+                background-position: 11.6% 60.4%;
+            }
+
+            .monopoly_item ul li .icon_delivery {
+                background-position: 43% 60.4%;
+            }
+
+            .monopoly_item ul {
+                display: block;
+                flex-wrap: wrap;
+            }
+
+            .monopoly_item ul li {
+                width: 100%;
+                padding: 11px 0;
+            }
 
             .option-price-mobile select{
                 width: 55%;
@@ -787,8 +855,12 @@
                                             </div> -->
                                         <button type="button" class="btn btn-lg btn-add-cart btn-add-cart redirectCart" onclick="addToCart({{ $data->id }})">MUA NGAY <br>(Giao hàng tận nơi - Giá tốt - An toàn)</button>
 
+                                        <div class="share-button">
+                                             <button type="button" class="btn btn-lg btn-add-cart btn-add-cart redirectCart cartSP" onclick="addToSuport(2221)">GỌI LẠI CHO TÔI <br>(Tư vấn tận tình)</button>
 
-                                        <button type="button" class="btn btn-lg btn-add-cart btn-add-cart redirectCart cartSP" onclick="addToSuport(2221)">GỌI LẠI CHO TÔI <br>(Tư vấn tận tình, chu đáo)</button>
+                                            <button type="button" class="btn btn-lg btn-add-cart btn-add-cart redirectCart cartSP right-cart" onclick="addToSuport(2221)">TRẢ GÓP QUA THẺ <br></button>
+                                        </div>
+                                       
                                     </div>
                                     <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
                                         Launch demo modal
@@ -797,14 +869,14 @@
                                 <div class="clearfix"></div>
 
                                 @if((int)$data['Price']>=3000000)
-                                <div class="installment-purchase pdetail-installment">
+                                <!-- <div class="installment-purchase pdetail-installment">
                                    
                                     <a target="_blank"  href="{{ route('details', $data->Link)  }}?show=tra-gop" admicro-data-event="101725" admicro-data-auto="1" admicro-data-order="false" class="but-1-gop">
                                     <strong>TRẢ GÓP QUA THẺ</strong>
                                     <br>
                                     (Visa, Master, JCB)
                                     </a>
-                                </div>
+                                </div>  -->
                                 @endif
 
                                 @else
@@ -828,7 +900,7 @@
 
             <br>
 
-            <div class="col-md-3 mobile">
+            <!-- <div class="col-md-3 mobile">
                 <div class="commitment">
                     <h4>Yên tâm mua sắm</h4>
                     <ul>
@@ -849,7 +921,7 @@
                        
                     </div>
                 </div>
-            </div>
+            </div> -->
             <div class="total-imgslider">
                 <a id="show-popup-featured-images-gallery" style="display: block" href="javascript:void(0)"  data-color-id="0" data-toggle="modal" data-target="#Salient_Features">Xem tất cả điểm nổi bật</a>
             </div>
