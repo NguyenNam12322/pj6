@@ -142,6 +142,8 @@ Route::get('check-pmd',  'giftController@promotionPriceAuto');
 
 Route::post('show-group-data', 'AjaxController@showGroupData')->name('showGroupData');
 
+Route::post('hide-popup', 'Frontend\categoryController@hidePopup')->name('removePopup');
+
 Route::get('update-active-deal',  'dealController@dealCheckTimeToTurnOff');
 
 

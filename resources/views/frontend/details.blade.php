@@ -6,10 +6,15 @@
 
      @media only screen and (max-width: 600px) {
 
-            .nk-menu{
-                display: none;
-            }
+        .nk-menu{
+            display: none;
         }
+
+        .box01 .owl-carousel .owl-item img:not(.monopoly-label) {
+            height: 220px !important;
+
+        }    
+    }
     </style>            
 
     <?php

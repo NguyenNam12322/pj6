@@ -156,6 +156,13 @@
                 overflow-x: hidden;
             }*/
 
+            .icons-shopings{
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                z-index: 99;
+            }
+
 
 
             .category__all{
@@ -1967,6 +1974,22 @@
            
         </div>
 
+        @if(Session::get('show-pop-up')==='1')
+
+        <!-- new -->
+
+        <div class="news position-fixed icons-shopings hide">   
+
+            <a class="closes" href="javascript:void(0)" onclick="closePopup()"><img src="{{ asset('images/template/close.png') }}" alt="hotline" style="height:55px; z-index: 999;"></a>
+
+            <a href="javascript:void(0)"><img src="{{ asset('images/template/shopping.png') }}" alt="hotline" style="height:55px; z-index: 999;"></a>
+              
+            <div class="clear"></div>
+              
+        </div>
+
+       @endif
+
      
 
        <!--  <div class="zalo-mobile">
@@ -2050,6 +2073,36 @@
   <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
 
   <script>
+
+
+    function showPopup() {
+
+        $('.icons-shopings').removeClass('hide')
+      
+    }
+    setTimeout(showPopup, 3000);
+
+    function closePopup() {
+
+        $('.icons-shopings').addClass('hide');
+
+        $.ajaxSetup({
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            }
+        });
+
+        $.ajax({
+            type: 'POST',
+            url: "{{ route('removePopup') }}",
+           
+            success: function(result){
+              
+               console.log(result);
+                
+            }
+        });
+    }
 
     function compare_close() {
 

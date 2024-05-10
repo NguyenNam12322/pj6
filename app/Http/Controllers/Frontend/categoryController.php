@@ -277,6 +277,11 @@ class categoryController extends Controller
        
     }
 
+    public function hidePopup()
+    {
+        Session::put('show-pop-up', '0');
+    }
+
 
 
     public function getDataOfCate($slug)
@@ -686,6 +691,12 @@ class categoryController extends Controller
         }
 
         else{
+
+            if(!Session::has('show-pop-up')){
+
+                Session::put('show-pop-up','1');
+
+            }
 
             $pageCheck = "product";
 
