@@ -172,7 +172,7 @@
 
 
 
-        $('.sub-menu').hide();
+        // $('.sub-menu').hide();
 
         // $('.parent').click(function () {
            
