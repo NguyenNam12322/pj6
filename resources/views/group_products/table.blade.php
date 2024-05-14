@@ -6,6 +6,9 @@
     .position{
         position: static;
     }
+    .card-footer{
+      display: none;
+    }
 </style>
 
 <div class="table-responsive">
@@ -190,7 +193,7 @@
               $('.list-hide').show();
             }
 
-            
+
 
             if(!$('.list-hide').hasClass('paren1')){
               $('.list-hide').addClass(paren1);
