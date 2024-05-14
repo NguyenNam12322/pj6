@@ -187,8 +187,8 @@
             $('.list-hide').hide();
           }
           else{
-
-            $('.sub-menu').hide();
+            $('.list-hide').removeClass('paren1');
+            $('.paren1').hide();
             $('.list-hide').show();
           }
 
