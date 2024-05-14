@@ -179,9 +179,23 @@
         $('.groupProducts').click(function () {
           value = $(this).attr('data-id');
           if(value==1){
+
+            if(!$('.paren1').is(':visible'))
+            {
+              $('.paren1').show();
+            }
+
+            if(!$('.list-hide').hasClass('paren1')){
+              $('.list-hide').addClass(paren1);
+            }
             $('.sub-menu').show();
           }
           else if(value==2){
+
+            if(!$('.paren1').is(':visible'))
+            {
+              $('.paren1').show();
+            }
             // $('.list-hide').removeClass('sub-menu');
             // $('.sub-menu').show();
             $('.list-hide').hide();
