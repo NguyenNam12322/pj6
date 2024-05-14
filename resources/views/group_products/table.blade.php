@@ -193,6 +193,11 @@
               $('.list-hide').show();
             }
 
+             if(!$('.sub-menu').is(':visible'))
+            {
+              $('.sub-menu').show();
+            }
+
 
 
             if(!$('.list-hide').hasClass('paren1')){
