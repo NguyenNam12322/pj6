@@ -182,8 +182,8 @@
             $('.sub-menu').show();
           }
           else if(value==2){
-            $('.list-hide').removeClass('sub-menu');
-            $('.sub-menu').show();
+            // $('.list-hide').removeClass('sub-menu');
+            // $('.sub-menu').show();
             $('.list-hide').hide();
           }
           else{
