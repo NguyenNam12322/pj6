@@ -10,7 +10,11 @@
 
 <div class="table-responsive">
     <div>
-        <button class="groupProduct">Xem toàn bộ danh mục liên quan</button>
+        <button class="groupProduct">Xem toàn bộ danh mục</button>
+
+        <button class="groupProduct">Xem toàn bộ danh mục (loại trừ danh mục ẩn)</button>
+
+         <button class="groupProduct">Xem toàn bộ danh mục ẩn</button>
 
     </div>
 
@@ -172,7 +176,7 @@
 
 
 
-        // $('.sub-menu').hide();
+        $('.sub-menu').hide();
 
         // $('.parent').click(function () {
            
