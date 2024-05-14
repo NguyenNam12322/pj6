@@ -185,6 +185,13 @@
               $('.paren1').show();
             }
 
+            if(!$('.list-hide').is(':visible'))
+            {
+              $('.list-hide').show();
+            }
+
+            
+
             if(!$('.list-hide').hasClass('paren1')){
               $('.list-hide').addClass(paren1);
             }
