@@ -578,7 +578,7 @@
 
                  .help{
                     right: 0;
-                    bottom: 30px
+                    bottom: 10px
                 }
 
                 .nk-header #nk-searchs .nk-search-box input[type="text"] {
@@ -636,7 +636,7 @@
                     text-align: center;
                 }
                 .hotlines{
-                    bottom:100px; 
+                    bottom:120px; 
                     right:0; 
                 }  
                 #myBtn-top {
