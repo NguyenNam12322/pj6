@@ -567,6 +567,20 @@
                     float: left;
                 }
 
+                .re-call, .help{
+                    position: absolute;
+                } 
+
+                .re-call{
+                    right: 0;
+                    bottom: 65px
+                }
+
+                 .help{
+                    right: 0;
+                    bottom: 30px
+                }
+
                 .nk-header #nk-searchs .nk-search-box input[type="text"] {
                     height: 40px;
                     border: none;
@@ -1930,6 +1944,22 @@
             <div class="clear"></div>
               
         </div>
+
+        <div class="re-call">   
+            <a href="tel:02473036336"><img src="{{ asset('images/template/tongdai02473036336.png') }}" alt="hotline" style="height:55px; z-index: 999;"></a>
+              
+            <div class="clear"></div>
+              
+        </div>
+
+        <div class="help">   
+            <a href="tel:02473036336"><img src="{{ asset('images/template/tongdai02473036336.png') }}" alt="hotline" style="height:55px; z-index: 999;"></a>
+              
+            <div class="clear"></div>
+              
+        </div>
+
+
 
         <div class="global-compare-group">
             <div class="title text-22 text-white d-flex align-items-center justify-content-between font-600">
