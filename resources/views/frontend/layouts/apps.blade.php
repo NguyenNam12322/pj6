@@ -568,7 +568,7 @@
                 }
 
                 .re-call, .help{
-                    position: absolute;
+                    position: fixed;
                 } 
 
                 .re-call{
