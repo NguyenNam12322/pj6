@@ -569,6 +569,7 @@
 
                 .re-call, .help{
                     position: fixed;
+                    z-index: 9999;
                 } 
 
                 .re-call{
