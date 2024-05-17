@@ -383,14 +383,14 @@ class crawlController extends Controller
 
         $html = file_get_html(trim($url));
 
-        $link = $html->find('.product a', 0);
+        $link = $html->find('.product a', 0)->href;
 
 
         foreach ($link as $key => $value) {
 
-            $href = $value->href;
+           
 
-            array_push($check, $href);
+            array_push($check, $value);
             
         }
 
