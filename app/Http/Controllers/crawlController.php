@@ -376,7 +376,7 @@ class crawlController extends Controller
     {
         $url = 'https://dienmaycholon.vn/may-lanh/may-lanh-comfee-inverter-15-hp-cfs13vaffv';
 
-        $now = Carbon\Carbon::now();
+        $now = Carbon::now();
 
         $html = file_get_html(trim($url));
 
@@ -414,6 +414,7 @@ class crawlController extends Controller
 
         $data['Salient_Features'] = $feature_item;
         DB::table('products')->insert($data);
+        echo "thành công";
 
         // dd($details);
     }
