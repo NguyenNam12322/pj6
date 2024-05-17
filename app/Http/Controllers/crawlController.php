@@ -469,7 +469,7 @@ class crawlController extends Controller
 
         // tính năng nổi bật
 
-        $feature_item = html_entity_decode($html->find('#tab0 .product_function'));
+        $feature_item = html_entity_decode($html->find('#tab0 .product_function',0));
 
         dd($feature_item);
         die;
