@@ -388,63 +388,68 @@ class crawlController extends Controller
 
         foreach ($link as $key => $value) {
 
-           
-
             array_push($check, $value->href);
             
         }
 
-        dd($check);
+        $this->crawlDmcl('https://dienmaycholon.vn/may-lanh/may-lanh-comfee-inverter-2-hp-cfs18vaffv');
 
         die;
         foreach ($check as $key => $value) {
-            // code...
-       
-            $url = 'https://dienmaycholon.vn'.trim($value);
 
-            $now = Carbon::now();
-
-            $html = file_get_html(trim($url));
-
-            $details = $html->find('.des_pro', 0);
-
-            $specifications = $html->find('.list_specifications', 0);
-
-            $title =  strip_tags($html->find('.name_pro_detail h1', 0));  
-
-            // tính năng nổi bật
-
-            $feature_item = $html->find('.feature_item',0);
-
-            $pattern = '/<a\s+[^>]*>(.*?)<\/a>/i';
-
-            // Replacement string (empty)
-            $replacement = '';
-
-            // Perform the replacement
-            $details = preg_replace($pattern, $replacement, html_entity_decode($details));
-
-            $price = 0;
-
-            // echo(html_entity_decode($feature_item));
-            
-            $data['Name']   = $title;
-            $data['Price']  = $price;
-            $data['Detail'] = $details;
-            $data['Link'] = convertSlug($title);
-            $data['Group_id']= 4;
-            $data['Specifications'] = $specifications;
-            $data['user_id'] = 4;
-            $data['created_at'] = $now;
-            $data['updated_at'] = $now;
-            $data['Salient_Features'] = $feature_item;
-            $data['crawl_link'] = $url;
-            
-            DB::table('products')->insert($data);
+            $this->crawlDmcl($value);
+           
         }     
         echo "thành công";
 
         // dd($details);
+    }
+
+    public function crawlDmcl($value)
+    {
+        $url = 'https://dienmaycholon.vn'.trim($value);
+
+        $now = Carbon::now();
+
+        $html = file_get_html(trim($url));
+
+        $details = $html->find('.des_pro', 0);
+
+        $specifications = $html->find('.list_specifications', 0);
+
+        $title =  strip_tags($html->find('.name_pro_detail h1', 0));  
+
+        // tính năng nổi bật
+
+        $feature_item = $html->find('.feature_item',0);
+
+        $pattern = '/<a\s+[^>]*>(.*?)<\/a>/i';
+
+        // Replacement string (empty)
+        $replacement = '';
+
+        // Perform the replacement
+        $details = preg_replace($pattern, $replacement, html_entity_decode($details));
+
+        $price = 0;
+
+        // echo(html_entity_decode($feature_item));
+        
+        $data['Name']   = $title;
+        $data['Price']  = $price;
+        $data['Detail'] = $details;
+        $data['Link'] = convertSlug($title);
+        $data['Group_id']= 4;
+        $data['Specifications'] = $specifications;
+        $data['user_id'] = 4;
+        $data['created_at'] = $now;
+        $data['updated_at'] = $now;
+        $data['Salient_Features'] = $feature_item;
+        $data['crawl_link'] = $url;
+
+        dd($data);
+        
+        DB::table('products')->insert($data);
     }
     
 
