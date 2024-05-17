@@ -473,13 +473,15 @@ class crawlController extends Controller
 
                 $nameImages = basename($images);
 
+                $image_name = '/uploads/product/'.$nameImages;
+
                 $img = public_path().'/uploads/product/'.$nameImages;
 
                 file_put_contents($img, file_get_contents(trim($images)));
 
 
-                $datas['image'] = $img;
-                $datas['link'] = $img;
+                $datas['image'] = $image_name;
+                $datas['link'] = $image_name;
                 $datas['product_id'] = $value->id;
                 $datas['order'] = 0;
                 $datas['active'] = 0;
