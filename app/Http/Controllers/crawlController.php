@@ -392,7 +392,7 @@ class crawlController extends Controller
             
         }
 
-        $this->crawlDmcl('https://dienmaycholon.vn/may-lanh/may-lanh-comfee-inverter-2-hp-cfs18vaffv');
+        $this->crawlDmcl('/may-lanh/may-lanh-comfee-inverter-2-hp-cfs18vaffv');
 
         die;
         foreach ($check as $key => $value) {
