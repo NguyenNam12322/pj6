@@ -458,9 +458,9 @@ class crawlController extends Controller
 
         $data = DB::table('products')->select('crawl_link','id')->orderBy('id','asc')->get();
 
-        foreach ($data as $key => $value) {
+        foreach ($data as $key => $values) {
 
-            $link = $value->crawl_link;
+            $link = $values->crawl_link;
 
             $html = file_get_html(trim($link));
 
@@ -479,13 +479,13 @@ class crawlController extends Controller
 
                 $file_headers = @get_headers(trim($images));
 
-                if(!$file_headers || $file_headers[0] == 'HTTP/1.1 404 Not Found'){
+                if($file_headers || $file_headers[0] != 'HTTP/1.1 404 Not Found'){
 
                     file_put_contents($img, file_get_contents(trim($images)));
 
                     $datas['image'] = $image_name;
                     $datas['link'] = $image_name;
-                    $datas['product_id'] = $value->id;
+                    $datas['product_id'] = $values->id;
                     $datas['order'] = 0;
                     $datas['active'] = 1;
                     $datas['created_at'] = $now;
@@ -496,6 +496,8 @@ class crawlController extends Controller
                     
                 }    
             }
+
+
 
         }
     }
