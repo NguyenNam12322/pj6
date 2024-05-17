@@ -478,15 +478,17 @@ class crawlController extends Controller
                 file_put_contents($img, file_get_contents(trim($images)));
 
 
-                $data['image'] = $img;
-                $data['link'] = $img;
-                $data['product_id'] = $value->id;
-                $data['order'] = 0;
-                $data['active'] = 0;
-                $data['created_at'] = $now;
-                $data['updated_at'] = $now;
+                $datas['image'] = $img;
+                $datas['link'] = $img;
+                $datas['product_id'] = $value->id;
+                $datas['order'] = 0;
+                $datas['active'] = 0;
+                $datas['created_at'] = $now;
+                $datas['updated_at'] = $now;
 
-                DB::table('images')->insert($data);
+
+
+                DB::table('images')->insert($datas);
 
                 die;
                 
