@@ -454,7 +454,9 @@ class crawlController extends Controller
 
     public function crawlImageDMCL()
     {
-        $data = DB::table('products')->select('crawl_link')->orderBy('id','asc')->get();
+        $now = Carbon::now();
+
+        $data = DB::table('products')->select('crawl_link','id')->orderBy('id','asc')->get();
 
         foreach ($data as $key => $value) {
 
@@ -467,7 +469,24 @@ class crawlController extends Controller
 
             foreach ($src as $key => $value) {
 
-                print_r($value->getAttribute('data-src'));
+                $images = $value->getAttribute('data-src');
+
+                $nameImages = basename($images);
+
+                $img = public_path().'/uploads/product/'.$nameImages;
+
+                file_put_contents($img, file_get_contents(trim($images)));
+
+
+                $data['image'] = $img;
+                $data['link'] = $img;
+                $data['product_id'] = $value->id;
+                $data['order'] = 0;
+                $data['active'] = 0;
+                $data['created_at'] = $now;
+                $data['updated_at'] = $now;
+
+                DB::table('images')->insert($data);
 
                 die;
                 
