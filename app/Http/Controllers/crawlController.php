@@ -392,9 +392,9 @@ class crawlController extends Controller
             
         }
 
-        $this->crawlDmcl('/may-lanh/may-lanh-comfee-inverter-2-hp-cfs18vaffv');
+        // $this->crawlDmcl('/may-lanh/may-lanh-comfee-inverter-2-hp-cfs18vaffv');
 
-        die;
+        // die;
         foreach ($check as $key => $value) {
 
             $this->crawlDmcl($value);
@@ -447,7 +447,6 @@ class crawlController extends Controller
         $data['Salient_Features'] = $feature_item;
         $data['crawl_link'] = $url;
 
-        dd($data);
         
         DB::table('products')->insert($data);
     }
