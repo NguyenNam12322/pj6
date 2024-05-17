@@ -466,7 +466,7 @@ class crawlController extends Controller
 
             foreach ($src as $key => $value) {
 
-                echo $value->src;
+                print_r($value);
 
                 die;
                 
