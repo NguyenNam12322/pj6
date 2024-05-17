@@ -385,9 +385,6 @@ class crawlController extends Controller
 
         $link = $html->find('.product a', 0);
 
-        dd($link);
-
-        die;
 
         foreach ($link as $key => $value) {
 
@@ -397,8 +394,7 @@ class crawlController extends Controller
             
         }
 
-       
-
+    
         dd($check);
 
         die;
