@@ -405,6 +405,7 @@ class crawlController extends Controller
         // dd($details);
     }
 
+
     public function crawlDmcl($value)
     {
         $url = 'https://dienmaycholon.vn'.trim($value);
@@ -449,6 +450,42 @@ class crawlController extends Controller
 
         
         DB::table('products')->insert($data);
+    }
+
+    public function crawlImageDMCL()
+    {
+        $data = DB::table('products')->select('crawl_link')->orderBy('id','asc')->get();
+
+        foreach ($data as $key => $value) {
+
+            $link = $value->crawl_link;
+
+            $html = file_get_html(trim($link));
+
+            $src = $html->find('.box_pro-images .owl-item img');
+
+            foreach ($link as $key => $value) {
+
+                echo $value->src;
+
+                die;
+                
+            }
+            die;
+
+
+             
+
+            // $images  = 'https://dienmaynguoiviet.vn'.$value->image;
+
+            // // $img  = str_replace('https://dienmaynguoiviet.vn/media', '/media', $images);
+
+            // DB::table('imagecrawl')->where('id', $value->id)->update(['active' => 1]);
+
+            // file_put_contents(public_path().$img, file_get_contents(trim($images)));
+
+
+        }
     }
     
 
