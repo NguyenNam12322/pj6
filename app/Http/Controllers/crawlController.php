@@ -411,8 +411,9 @@ class crawlController extends Controller
         $data['user_id'] = 4;
         $data['created_at'] = $now;
         $data['updated_at'] = $now;
-
         $data['Salient_Features'] = $feature_item;
+        $data['crawl_link'] = $url;
+        
         DB::table('products')->insert($data);
         echo "thành công";
 
