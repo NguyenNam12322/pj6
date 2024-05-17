@@ -383,7 +383,7 @@ class crawlController extends Controller
 
         $html = file_get_html(trim($url));
 
-        $link = $html->find('.product a');
+        $link = $html->find('.product_block_img a');
 
 
         foreach ($link as $key => $value) {
