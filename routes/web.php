@@ -109,6 +109,11 @@ Route::get('/404', function () {
     
 });
 
+Route::get('/crawl-blade', function () {
+    return view('frontend.crawl');
+    
+});
+
 
 // Route::any('/ckfinder/connector', '\CKSource\CKFinderBridge\Controller\CKFinderController@requestAction')
 //     ->name('ckfinder_connector');
