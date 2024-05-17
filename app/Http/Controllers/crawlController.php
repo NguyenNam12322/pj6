@@ -385,6 +385,10 @@ class crawlController extends Controller
 
         $link = $html->find('.lable_pro a', 0);
 
+        dd($link);
+
+        die;
+
         foreach ($link as $key => $value) {
 
             $href = $value->href;
