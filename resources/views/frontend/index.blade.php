@@ -30,7 +30,11 @@
         .nk_houseware_best_selling_2020_wrapper .product, .product-slide{
             width: 20% !important;
             margin-top: 6px;
-        }     
+        }    
+        #nk-banner-home img{
+            width: 500px !important;
+            height: 388px !important;
+        } 
     }
 
     }

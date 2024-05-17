@@ -6,11 +6,18 @@
     .position{
         position: static;
     }
+    .card-footer{
+      display: none;
+    }
 </style>
 
 <div class="table-responsive">
     <div>
-        <button class="groupProduct">Xem toàn bộ danh mục liên quan</button>
+        <button class="groupProducts" data-id="1">Xem toàn bộ danh mục</button>
+
+        <button class="groupProducts" data-id="2">Xem toàn bộ danh mục (loại trừ danh mục ẩn)</button>
+
+         <button class="groupProducts" data-id="3">Xem toàn bộ danh mục ẩn</button>
 
     </div>
 
@@ -50,8 +57,8 @@
                  if($item['group_product_id'] == $parent_id){
                     unset($data[$key]);
                   ?>    
-             <li class="paren1">
-              <a href="javascript:void(0)"  class="click1" data-id="{{ $item['id'] }}" data-show="{{ $item['active'] }}"><?php echo $item['name']?></a>   @if($item['level']==0|| $item['level']==1|| $item['level']==2)<span class="clicks{{ $item['id'] }}" onclick="showChild('sub{{ $item['id'] }}', 'clicks{{ $item['id'] }}')">+</span>@endif {{ $item['active']==0?'Danh mục đang ẩn':'' }} &nbsp; &nbsp; &nbsp; <a href="javascript:void(0)" onclick="copy_link('https://dienmaynguoiviet.vn/{{ $item['link'] }}')"><i class="fa fa-clone" aria-hidden="true"></i>
+             <li class="paren1 {{ $item['active']==0?'list-hide':'' }}">
+              <a href="javascript:void(0)"  class="click1" data-id="{{ $item['id'] }}" data-show="{{ $item['active'] }}"><?php echo $item['name']?></a>   @if($item['level']==0|| $item['level']==1|| $item['level']==2)<span class="clicks{{ $item['id'] }}" onclick="showChild('sub{{ $item['id'] }}', 'clicks{{ $item['id'] }}')">+</span>@endif {{ $item['active']==0?'Danh mục đang ẩn':'' }} &nbsp; &nbsp; &nbsp; <a href="javascript:void(0)" onclick="copy_link('https://dienmayhg.vn/{{ $item['link'] }}')"><i class="fa fa-clone" aria-hidden="true"></i>
 </a> 
               
               <?php recursiveMenu($data, $item['id'], false, $item['level']); ?>
@@ -167,10 +174,54 @@
            
            $('#modals-product').modal('show');
 
-        })
+        });
+
+        
+
+
+        $('.groupProducts').click(function () {
+          value = $(this).attr('data-id');
+          if(value==1){
+
+            if(!$('.paren1').is(':visible'))
+            {
+              $('.paren1').show();
+            }
+
+            if(!$('.list-hide').is(':visible'))
+            {
+              $('.list-hide').show();
+            }
+
+             if(!$('.sub-menu').is(':visible'))
+            {
+              $('.sub-menu').show();
+            }
 
 
 
+            if(!$('.list-hide').hasClass('paren1')){
+              $('.list-hide').addClass(paren1);
+            }
+            $('.sub-menu').show();
+          }
+          else if(value==2){
+
+            if(!$('.paren1').is(':visible'))
+            {
+              $('.paren1').show();
+            }
+            // $('.list-hide').removeClass('sub-menu');
+            // $('.sub-menu').show();
+            $('.list-hide').hide();
+          }
+          else{
+            $('.list-hide').removeClass('paren1');
+            $('.paren1').hide();
+            $('.list-hide').show();
+          }
+
+        });  
 
         $('.sub-menu').hide();
 
