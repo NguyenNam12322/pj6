@@ -415,13 +415,13 @@ class crawlController extends Controller
 
         $details = $html->find('.des_pro', 0);
 
-        $specifications = $html->find('.list_specifications', 0);
+        $specifications = html_entity_decode($html->find('.list_specifications', 0));
 
         $title =  strip_tags($html->find('.name_pro_detail h1', 0));  
 
         // tính năng nổi bật
 
-        $feature_item = $html->find('.feature_item',0);
+        $feature_item = html_entity_decode($html->find('.feature_item',0));
 
         $pattern = '/<a\s+[^>]*>(.*?)<\/a>/i';
 
