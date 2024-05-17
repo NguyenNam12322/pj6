@@ -393,9 +393,6 @@ class crawlController extends Controller
             array_push($check, $value->href);
             
         }
-
-    
-       
         foreach ($check as $key => $value) {
             // code...
        
