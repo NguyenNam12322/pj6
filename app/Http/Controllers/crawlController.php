@@ -462,7 +462,7 @@ class crawlController extends Controller
 
             $html = file_get_html(trim($link));
 
-            $src = $html->find('.box_pro-images .owl-item img');
+            $src = $html->find('.box_product .owl-item img');
 
             dd($src);
 
