@@ -379,22 +379,21 @@ class crawlController extends Controller
 
         // $all_model = product::select('ProductSku')->get()->pluck('ProductSku')->toArray();
 
+        $url = 'https://dienmayhg.vn/crawl-blade';
 
-        foreach($data as $val){    
+        $html = file_get_html(trim($url));
 
-            $url = 'https://dienmayhg.vn/crawl-blade';
+        $link = $html->find('.lable_pro a', 0);
 
-            $html = file_get_html(trim($url));
+        foreach ($link as $key => $value) {
 
-            if($html->find('.lable_pro a', 0) ){
+            $href = $value->href;
 
-                $href = $html->find('.lable_pro a', 0)->href;
+            array_push($check, $href);
+            
+        }
 
-                array_push($check, $href);
-               
-            }
-
-        } 
+       
 
         dd($check);
 
