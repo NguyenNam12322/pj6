@@ -395,8 +395,7 @@ class crawlController extends Controller
         }
 
     
-        dd($check);
-
+       
         foreach ($check as $key => $value) {
             // code...
        
