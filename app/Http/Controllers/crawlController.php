@@ -386,11 +386,11 @@ class crawlController extends Controller
         $link = $html->find('.product_block_img a');
 
 
-        foreach ($link as $key => $value) {
+        // foreach ($link as $key => $value) {
 
-            array_push($check, $value->href);
+        //     array_push($check, $value->href);
             
-        }
+        // }
 
         $this->crawlDmcl('https://dienmaycholon.vn/may-lanh/may-lanh-comfee-inverter-2-hp-cfs18vaffv');
 
