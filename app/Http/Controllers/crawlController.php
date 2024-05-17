@@ -477,23 +477,25 @@ class crawlController extends Controller
 
                 $img = public_path().'/uploads/product/'.$nameImages;
 
-                file_put_contents($img, file_get_contents(trim($images)));
+                $file_headers = @get_headers(trim($images));
 
+                if(!$file_headers || $file_headers[0] == 'HTTP/1.1 404 Not Found'){
 
-                $datas['image'] = $image_name;
-                $datas['link'] = $image_name;
-                $datas['product_id'] = $value->id;
-                $datas['order'] = 0;
-                $datas['active'] = 1;
-                $datas['created_at'] = $now;
-                $datas['updated_at'] = $now;
+                    file_put_contents($img, file_get_contents(trim($images)));
 
-                DB::table('images')->insert($datas);
+                    $datas['image'] = $image_name;
+                    $datas['link'] = $image_name;
+                    $datas['product_id'] = $value->id;
+                    $datas['order'] = 0;
+                    $datas['active'] = 1;
+                    $datas['created_at'] = $now;
+                    $datas['updated_at'] = $now;
 
-               
-                
+                    DB::table('images')->insert($datas);
+
+                    
+                }    
             }
-
 
         }
     }
