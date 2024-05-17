@@ -464,7 +464,7 @@ class crawlController extends Controller
 
             $src = $html->find('.box_pro-images .owl-item img');
 
-            foreach ($link as $key => $value) {
+            foreach ($src as $key => $value) {
 
                 echo $value->src;
 
