@@ -484,29 +484,15 @@ class crawlController extends Controller
                 $datas['link'] = $image_name;
                 $datas['product_id'] = $value->id;
                 $datas['order'] = 0;
-                $datas['active'] = 0;
+                $datas['active'] = 1;
                 $datas['created_at'] = $now;
                 $datas['updated_at'] = $now;
 
-
-
                 DB::table('images')->insert($datas);
 
-                die;
+               
                 
             }
-            die;
-
-
-             
-
-            // $images  = 'https://dienmaynguoiviet.vn'.$value->image;
-
-            // // $img  = str_replace('https://dienmaynguoiviet.vn/media', '/media', $images);
-
-            // DB::table('imagecrawl')->where('id', $value->id)->update(['active' => 1]);
-
-            // file_put_contents(public_path().$img, file_get_contents(trim($images)));
 
 
         }
