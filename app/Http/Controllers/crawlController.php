@@ -374,6 +374,31 @@ class crawlController extends Controller
 
     public function test11()
     {
+
+          $check = [];
+
+        // $all_model = product::select('ProductSku')->get()->pluck('ProductSku')->toArray();
+
+
+        foreach($data as $val){    
+
+            $url = 'https://dienmayhg.vn/crawl-blade';
+
+            $html = file_get_html(trim($url));
+
+            if($html->find('.lable_pro a', 0) ){
+
+                $href = $html->find('.lable_pro a', 0)->href;
+
+                array_push($check, $href);
+               
+            }
+
+        } 
+
+        dd($check);
+
+        die;
         $url = 'https://dienmaycholon.vn/may-lanh/may-lanh-comfee-inverter-15-hp-cfs13vaffv';
 
         $now = Carbon::now();
