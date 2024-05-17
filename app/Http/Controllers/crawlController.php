@@ -464,11 +464,10 @@ class crawlController extends Controller
 
             $src = $html->find('.box_pro-images-big img');
 
-            dd($src);
 
             foreach ($src as $key => $value) {
 
-                print_r($value);
+                print_r($value->src);
 
                 die;
                 
