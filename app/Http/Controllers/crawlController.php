@@ -452,6 +452,58 @@ class crawlController extends Controller
         DB::table('products')->insert($data);
     }
 
+
+     public function crawlAO()
+    {
+        $url = 'https://www.aosmith.com.vn/products/may-loc-nuoc-dat-ban-a-o-smith-ross-eco-aoc75pur';
+
+        $now = Carbon::now();
+
+        $html = file_get_html(trim($url));
+
+        $details = $html->find('#tab1');
+
+        $specifications = html_entity_decode($html->find('#tab2', 0));
+
+        $title =  strip_tags($html->find('.name_pro_detail h1', 0));  
+
+        // tính năng nổi bật
+
+        $feature_item = html_entity_decode($html->find('#tab0 .product_function'));
+
+        dd($feature_item);
+        die;
+
+        $pattern = '/<a\s+[^>]*>(.*?)<\/a>/i';
+
+        // Replacement string (empty)
+        $replacement = '';
+
+        // Perform the replacement
+        $details = preg_replace($pattern, $replacement, html_entity_decode($details));
+
+        $price = 0;
+
+        // echo(html_entity_decode($feature_item));
+        
+        $data['Name']   = $title;
+        $data['Price']  = $price;
+        $data['Detail'] = $details;
+        $data['Link'] = convertSlug($title);
+        $data['Group_id']= 4;
+        $data['Specifications'] = $specifications;
+        $data['user_id'] = 4;
+        $data['created_at'] = $now;
+        $data['updated_at'] = $now;
+        $data['Salient_Features'] = $feature_item;
+        $data['crawl_link'] = $url;
+
+        
+        DB::table('products')->insert($data);
+    }
+
+
+
     public function crawlImageDMCL()
     {
         $now = Carbon::now();
