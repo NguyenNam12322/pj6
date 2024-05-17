@@ -383,7 +383,7 @@ class crawlController extends Controller
 
         $html = file_get_html(trim($url));
 
-        $link = $html->find('.lable_pro a', 0);
+        $link = $html->find('.product a', 0);
 
         dd($link);
 
