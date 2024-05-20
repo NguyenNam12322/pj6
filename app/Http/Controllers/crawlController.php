@@ -406,11 +406,11 @@ class crawlController extends Controller
 
     public function updateProduct()
     {
-        $product = DB::table('products')->select('id','Detail')->orderBy('id', 'asc')->get();
+        $product = DB::table('products')->select('id','Detail')->orderBy('id', 'asc')->where('id','>',440)->get();
 
         foreach ($product as $key => $value) {
 
-            $this->convertLinkImageDmclToLinkImageUse($value->Detail, $value->id);
+            $this->convertImageToDetails($value->Detail, $value->id);
 
             echo "update đến product: ".$value->id;
 
