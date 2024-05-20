@@ -528,7 +528,7 @@ class crawlController extends Controller
                     mkdir($directory, 0777, true);
                 }
 
-                $link_crawl = 'https:'.trim($value);
+                $link_crawl = 'http:'.trim($value);
 
 
                 $img = $directory.'/'.basename($value);
