@@ -751,7 +751,10 @@ class crawlController extends Controller
                     echo "update thành công ảnh cho sản phẩm có id = ".$values->id;
 
                     
-                }    
+                }  
+                else{
+                    echo $images;
+                }  
 
                 
             }
