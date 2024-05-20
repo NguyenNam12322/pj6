@@ -495,7 +495,7 @@ class crawlController extends Controller
 
                     $img = $directory.'/'.basename($value);
                     
-                    file_put_contents($img, file_get_contents($link_crawl);
+                    file_put_contents($img, file_get_contents($link_crawl));
 
                     // $replace_img = '/uploads/product/'.$id.'/'.basename($value);
 
