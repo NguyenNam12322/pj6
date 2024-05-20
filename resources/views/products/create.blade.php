@@ -16,7 +16,7 @@
     <div class="btn btn-warning" ><a href="#">Cơ bản</a></div>
 
     <?php
-        $_get_seo = !empty($_GET['seo'])??''; 
+        $_get_seo = !empty($_GET['seo'])?$_GET['seo']:''; 
     ?>
    
 
