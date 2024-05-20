@@ -840,6 +840,10 @@ class categoryController extends Controller
                 $actives_pages_blog = 0;
             }
 
+            dd($data);
+
+            
+
             return view('frontend.details', compact('data', 'images', 'other_product', 'meta', 'pageCheck', 'data_cate', 'actives_pages_blog', 'price_installment', 'sampe_product_price'));
         }
     }
