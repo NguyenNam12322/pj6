@@ -127,15 +127,8 @@ class crawlController extends Controller
 
         foreach ($products as $key => $value) {
             $name = trim($value->Name);
-            $meta = new metaSeo();
-            $meta->meta_content = $name;
-            $meta->meta_title = $name;
-            $meta->meta_key_words = $name;
-            $meta->meta_og_title = $name;
-            $meta->meta_og_content = $name;
-            $meta->save();
-
-            $update = ['Meta_id'=>$meta->id];
+          
+            $update = ['Name'=>$name];
 
             DB::table('products')->where('id',$value->id)->update($update);
 
