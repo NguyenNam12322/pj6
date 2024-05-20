@@ -724,7 +724,7 @@ class crawlController extends Controller
 
             foreach ($src as $key => $value) {
 
-                $images = 'https:'.$value;
+                $images = 'https:'.$value->src;
 
                 echo $images;
 
