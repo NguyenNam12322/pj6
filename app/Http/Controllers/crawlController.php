@@ -465,7 +465,7 @@ class crawlController extends Controller
 
         $specifications = html_entity_decode($html->find('#tab2', 0));
 
-        $title =  strip_tags($html->find('.name_pro_detail h1', 0));  
+        $title =  strip_tags($html->find('.product-title h1', 0));  
 
         // tính năng nổi bật
 
