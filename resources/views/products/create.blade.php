@@ -14,9 +14,13 @@
     </section>
 
     <div class="btn btn-warning" ><a href="#">Cơ bản</a></div>
+
+    <?php
+        $_get_seo = !empty($_GET['seo'])??''; 
+    ?>
    
 
-    @if(Session::get('id'))   
+    @if(!empty($_get_seo))   
 
      <?php $id = Session::get('id') ?>
     <div class="btn btn-info"><a href="{{ route('images.create', $id) }}" style="color:red"> thêm ảnh chi tiết cho sản phẩm</a></div>
