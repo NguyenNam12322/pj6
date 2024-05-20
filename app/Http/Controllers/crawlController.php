@@ -413,6 +413,8 @@ class crawlController extends Controller
         foreach ($product as $key => $value) {
 
             $this->updateCrawlDMCL($value->crawl_link, $value->id);
+
+            echo "update đến link: ".$value->crawl_link;
         }
         echo "thành công";
     }
@@ -421,7 +423,7 @@ class crawlController extends Controller
     {
        
         $now = Carbon::now();
-        
+
         $html = file_get_html(trim($url));
 
         $details = $html->find('.des_pro', 0);
