@@ -748,10 +748,12 @@ class crawlController extends Controller
 
                     DB::table('images')->insert($datas);
 
+                    echo "update thành công ảnh cho sản phẩm có id = ".$values->id;
+
                     
                 }    
 
-                echo $value->src.'<br>';
+                
             }
         }    
 
