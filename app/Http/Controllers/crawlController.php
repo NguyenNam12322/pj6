@@ -423,13 +423,13 @@ class crawlController extends Controller
         // echo $details;
 
         // Sử dụng regex để tìm các giá trị src trong thẻ <img>
-        $pattern = '/<img[^>]+src="([^"]+)"/i';
+        $patterns = '/<img[^>]+src="([^"]+)"/i';
 
         // Tạo một mảng để chứa các kết quả
         $matches = array();
 
         // Thực hiện tìm kiếm
-        preg_match_all($pattern, $details, $matches);
+        preg_match_all($patterns, $details, $matches);
 
         // $matches[1] sẽ chứa các giá trị src
         $srcs = $matches[1];
