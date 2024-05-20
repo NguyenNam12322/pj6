@@ -85,7 +85,12 @@
             </div>
         </div>
     </section>
-     <?php $metaSeo = App\Models\metaSeo::find($product->Meta_id); ?>
+     <?php $metaSeo = App\Models\metaSeo::find($product->Meta_id); 
+
+        dd($metaSeo);
+     ?>
+
+
 
      
     <div class="btn-show"> 
