@@ -653,7 +653,6 @@ class crawlController extends Controller
         $feature_item = html_entity_decode($html->find('#tab0 .product_function',0));
 
         
-        die;
 
         $pattern = '/<a\s+[^>]*>(.*?)<\/a>/i';
 
@@ -678,6 +677,10 @@ class crawlController extends Controller
         $data['updated_at'] = $now;
         $data['Salient_Features'] = strip_tags($feature_item,'<p>');
         $data['crawl_link'] = $url;
+
+        print_r($data);
+
+        die;
 
         
         DB::table('products')->insert($data);
