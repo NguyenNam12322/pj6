@@ -123,14 +123,27 @@ class crawlController extends Controller
 
     public function addMeta()
     {
-        $meta = new metaSeo();
-        $meta->meta_content = '';
-        $meta->meta_title = '';
-        $meta->meta_key_words = '';
-        $meta->meta_og_title = '';
-        $meta->meta_og_content = '';
-        $meta->save();
-        return $meta->id;
+        $products = DB::table('products')->select('Name','id')->get();
+
+        foreach ($products as $key => $value) {
+            $meta = new metaSeo();
+            $meta->meta_content = $value->Name;
+            $meta->meta_title = $value->Name;
+            $meta->meta_key_words = $value->Name;
+            $meta->meta_og_title = $value->Name;
+            $meta->meta_og_content = $value->Name;
+            $meta->save();
+
+            $update = ['Meta_id'=>$meta->id];
+
+            DB::table('products')->where('id',$value->id)->update($update);
+
+            echo "updated product_id ".$value->id;
+
+        }
+        
+        
+       
     }
 
     public function uploadImg($images)
