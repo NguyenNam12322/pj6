@@ -410,7 +410,7 @@ class crawlController extends Controller
 
         foreach ($product as $key => $value) {
 
-            $this->convertImageToDetails($value->Detail, $value->id);
+            $this->convertLinkImageDmclToLinkImageUse($value->Detail, $value->id);
 
             echo "update đến product: ".$value->id;
 
