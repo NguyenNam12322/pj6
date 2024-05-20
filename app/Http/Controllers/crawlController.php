@@ -721,14 +721,15 @@ class crawlController extends Controller
 
             $src = $html->find('#sliderproduct .product-thumb img');
 
+            dd($src);
+
+            
+
 
             foreach ($src as $key => $value) {
 
                 $images = 'http:'.$value->getAttribute('data-image');
 
-                dd($images);
-
-                die;
 
                 $nameImages = basename($images);
 
