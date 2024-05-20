@@ -478,27 +478,29 @@ class crawlController extends Controller
 
                 $directory = public_path().'/uploads/product/'.$id;
 
-                if (!is_dir($directory)) {
-                    // Tạo thư mục và các thư mục con nếu không tồn tại
-                    mkdir($directory, 0777, true);
-                }
+                echo $value;
+
+                // if (!is_dir($directory)) {
+                //     // Tạo thư mục và các thư mục con nếu không tồn tại
+                //     mkdir($directory, 0777, true);
+                // }
 
 
-                $img = $directory.'/'.basename($value);
+                // $img = $directory.'/'.basename($value);
                 
-                file_put_contents($img, file_get_contents('https:'.trim($value)));
+                // file_put_contents($img, file_get_contents('https:'.trim($value)));
 
-                $replace_img = '/uploads/product/'.$id.'/'.basename($value);
+                // $replace_img = '/uploads/product/'.$id.'/'.basename($value);
 
-                $new_details = str_replace(trim($value), $replace_img, $details);
+                // $new_details = str_replace(trim($value), $replace_img, $details);
 
-                echo $new_details;
+                // echo $new_details;
 
-                die;
+                // die;
 
-                $update = ['Detail'=>$new_details, 'updated_at'=>$now];
+                // $update = ['Detail'=>$new_details, 'updated_at'=>$now];
 
-                DB::table('products')->where('id',$id)->update($update);
+                // DB::table('products')->where('id',$id)->update($update);
 
             }
 
