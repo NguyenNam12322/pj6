@@ -726,6 +726,10 @@ class crawlController extends Controller
 
                 $images = 'https:'.$value;
 
+                echo $images;
+
+                die;
+
                 $nameImages = basename($images);
 
                 $image_name = '/uploads/product/'.$nameImages;
