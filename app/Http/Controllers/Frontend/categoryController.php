@@ -779,9 +779,15 @@ class categoryController extends Controller
 
             $max_price = $data->Price+500000;
 
-            $sampe_product_price = product::whereIn('id',  json_decode($data_group_product->product_id))->where('Price', '>', $min_price)
+            $sampe_product_price = [];
+
+            if(!empty($data_group_product)){
+                $sampe_product_price = product::whereIn('id',  json_decode($data_group_product->product_id))->where('Price', '>', $min_price)
                     ->where('Price', '<', $max_price)->take(5)->get();
 
+            }
+
+            
             // dd($sampe_product_price); 
 
 
