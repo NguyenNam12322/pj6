@@ -509,7 +509,7 @@ class crawlController extends Controller
 
                     // DB::table('products')->where('id',$id)->update($update);
 
-                    die;
+                    
                 } 
                 else{
                     echo $value;
