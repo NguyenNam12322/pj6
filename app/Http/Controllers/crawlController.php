@@ -734,7 +734,7 @@ class crawlController extends Controller
 
                 $file_headers = file_exists($images);
 
-                dd($file_headers);
+                dd($images);
 
                 die;
 
