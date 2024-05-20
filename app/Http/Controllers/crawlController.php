@@ -420,8 +420,6 @@ class crawlController extends Controller
 
         $details = preg_replace($pattern, $replacement, html_entity_decode($details));
 
-        
-
         // Sử dụng regex để tìm các giá trị src trong thẻ <img>
         $pattern = '/<img[^>]+src="([^"]+)"/i';
 
