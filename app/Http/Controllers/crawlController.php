@@ -724,7 +724,7 @@ class crawlController extends Controller
 
             foreach ($src as $key => $value) {
 
-                $images = 'https:'.$value->src;
+                $images = 'http:'.$value->src;
 
                 $nameImages = basename($images);
 
@@ -732,21 +732,34 @@ class crawlController extends Controller
 
                 $img = public_path().'/uploads/product/'.$nameImages;
 
-                file_put_contents($img, file_get_contents(trim($images)));
+                $file_headers = file_exists($images);
 
-                $datas['image'] = $image_name;
-                $datas['link'] = $image_name;
-                $datas['product_id'] = $values->id;
-                $datas['order'] = 0;
-                $datas['active'] = 1;
-                $datas['created_at'] = $now;
-                $datas['updated_at'] = $now;
+                dd($file_headers);
 
-                DB::table('images')->insert($datas);
+                die;
 
-                echo "update thành công ảnh cho sản phẩm có id = ".$values->id;
+                if(!empty($file_headers) && $file_headers[0] == 'HTTP/1.1 200 OK'){
 
-        
+                    file_put_contents($img, file_get_contents(trim($images)));
+
+                    $datas['image'] = $image_name;
+                    $datas['link'] = $image_name;
+                    $datas['product_id'] = $values->id;
+                    $datas['order'] = 0;
+                    $datas['active'] = 1;
+                    $datas['created_at'] = $now;
+                    $datas['updated_at'] = $now;
+
+                    DB::table('images')->insert($datas);
+
+                    echo "update thành công ảnh cho sản phẩm có id = ".$values->id;
+
+                    
+                }  
+                else{
+                    echo $images;
+                }  
+
                 
             }
         }    
