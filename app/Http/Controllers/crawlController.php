@@ -486,14 +486,16 @@ class crawlController extends Controller
                     mkdir($directory, 0777, true);
                 }
 
-                $file_headers = @get_headers(trim($value));
+                $link_crawl = 'https:'.trim($value);
+
+                $file_headers = @get_headers($link_crawl);
 
                 if(!empty($file_headers) && $file_headers[0] == 'HTTP/1.1 200 OK') 
                 {
 
                     $img = $directory.'/'.basename($value);
                     
-                    file_put_contents($img, file_get_contents('https:'.trim($value)));
+                    file_put_contents($img, file_get_contents($link_crawl);
 
                     // $replace_img = '/uploads/product/'.$id.'/'.basename($value);
 
