@@ -472,6 +472,10 @@ class crawlController extends Controller
         // $matches[1] sẽ chứa các giá trị src
         $srcs = $matches[1];
 
+        var_dump($srcs);
+
+        die;
+
         if(!empty($srcs) && count($srcs)>0){
 
             foreach ($srcs as $value) {
