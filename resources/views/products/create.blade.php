@@ -17,6 +17,8 @@
 
     <?php
         $_get_seo = !empty($_GET['seo'])?$_GET['seo']:''; 
+
+        dd($_get_seo);
     ?>
    
 
