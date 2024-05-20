@@ -724,7 +724,7 @@ class crawlController extends Controller
 
             foreach ($src as $key => $value) {
 
-                $images = 'http:'.$value->getAttribute('data-src');
+                $images = 'http:'.$value->getAttribute('data-image');
 
                 dd($images);
 
