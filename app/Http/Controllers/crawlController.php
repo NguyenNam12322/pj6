@@ -732,33 +732,24 @@ class crawlController extends Controller
 
                 $img = public_path().'/uploads/product/'.$nameImages;
 
-                $file_headers = file_exists($images);
+              
 
-                dd($images);
+                file_put_contents($img, file_get_contents(trim($images)));
 
-                die;
+                $datas['image'] = $image_name;
+                $datas['link'] = $image_name;
+                $datas['product_id'] = $values->id;
+                $datas['order'] = 0;
+                $datas['active'] = 1;
+                $datas['created_at'] = $now;
+                $datas['updated_at'] = $now;
 
-                if(!empty($file_headers) && $file_headers[0] == 'HTTP/1.1 200 OK'){
+                DB::table('images')->insert($datas);
 
-                    file_put_contents($img, file_get_contents(trim($images)));
-
-                    $datas['image'] = $image_name;
-                    $datas['link'] = $image_name;
-                    $datas['product_id'] = $values->id;
-                    $datas['order'] = 0;
-                    $datas['active'] = 1;
-                    $datas['created_at'] = $now;
-                    $datas['updated_at'] = $now;
-
-                    DB::table('images')->insert($datas);
-
-                    echo "update thành công ảnh cho sản phẩm có id = ".$values->id;
+                echo "update thành công ảnh cho sản phẩm có id = ".$values->id;
 
                     
-                }  
-                else{
-                    echo $images;
-                }  
+               
 
                 
             }
