@@ -719,20 +719,18 @@ class crawlController extends Controller
 
             $html = file_get_html(trim($link));
 
-            $src = $html->find('#product .product-image-feature');
+            $src = $html->find('#sliderproduct .product-thumb img');
 
 
             foreach ($src as $key => $value) {
 
-                $images = 'http:'.$value->src;
+                $images = 'http:'.$value->getAttribute('data-src');
 
                 $nameImages = basename($images);
 
                 $image_name = '/uploads/product/'.$nameImages;
 
                 $img = public_path().'/uploads/product/'.$nameImages;
-
-              
 
                 file_put_contents($img, file_get_contents(trim($images)));
 
@@ -748,11 +746,10 @@ class crawlController extends Controller
 
                 echo "update thành công ảnh cho sản phẩm có id = ".$values->id;
 
-                    
-               
-
                 
             }
+
+            die;
         }    
 
         
