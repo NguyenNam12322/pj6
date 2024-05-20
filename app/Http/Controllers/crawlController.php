@@ -420,7 +420,8 @@ class crawlController extends Controller
     public function updateCrawlDMCL($url, $id)
     {
        
-
+        $now = Carbon::now();
+        
         $html = file_get_html(trim($url));
 
         $details = $html->find('.des_pro', 0);
@@ -431,7 +432,7 @@ class crawlController extends Controller
 
         $details = preg_replace($pattern, $replacement, html_entity_decode($details));
 
-        $data = ['Detail'=>$details];
+        $data = ['Detail'=>$details, 'updated_at'=>$now];
 
         DB::table('products')->where('id', $id)->update($data);
 
@@ -439,7 +440,9 @@ class crawlController extends Controller
     }
 
 
-    public function convertImageToDetails($details)
+
+
+    public function convertImageToDetails($details,$id)
     {
          // Sử dụng regex để tìm các giá trị src trong thẻ <img>
         $patterns = '/<img[^>]+src="([^"]+)"/i';
@@ -453,8 +456,28 @@ class crawlController extends Controller
         // $matches[1] sẽ chứa các giá trị src
         $srcs = $matches[1];
 
-        // Hiển thị kết quả
-        print_r($srcs);
+        if(!empty($srcs) && count($srcs)>0){
+
+            foreach ($srcs as $value) {
+
+                $directory = '/uploads/product/'.$id;
+
+                if (!is_dir($directory)) {
+                    // Tạo thư mục và các thư mục con nếu không tồn tại
+                    mkdir($directory, 0755, true);
+                }
+
+
+                $img = $directory.'/'.basename($value);
+                
+                file_put_contents($img, file_get_contents(trim($images)));
+
+                str_replace(trim($value), $img, $details);
+
+            }
+
+        }
+    
     }
 
 
