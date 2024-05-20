@@ -789,7 +789,7 @@ class categoryController extends Controller
 
             }
 
-            
+            $other_product = [];
             // dd($sampe_product_price); 
             if(!empty($data_group_product) && !empty($data_group_product->product_id)){
 
