@@ -408,7 +408,7 @@ class crawlController extends Controller
 
     public function updateProduct()
     {
-        $product = DB::table('products')->select('id','Detail')->where('id', '>', 48)->get();
+        $product = DB::table('products')->select('id','Detail')->orderBy('id', 'asc')->get();
 
         foreach ($product as $key => $value) {
 
