@@ -3,7 +3,9 @@
 @push('style')
 
     <style>
-
+        .content .gallery{
+            display: block !important;
+        }
      @media only screen and (max-width: 600px) {
 
         .nk-menu{
@@ -1836,7 +1838,7 @@
                     });
 
 
-                    
+
 
 
 
