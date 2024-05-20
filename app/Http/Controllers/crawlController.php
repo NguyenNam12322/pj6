@@ -710,7 +710,7 @@ class crawlController extends Controller
     {
 
         $now = Carbon::now();
-        
+
         $data = DB::table('products')->select('crawl_link','id')->where('id','>',440)->get();
 
         foreach ($data as $key => $values) {
@@ -724,7 +724,7 @@ class crawlController extends Controller
 
             foreach ($src as $key => $value) {
 
-                $images = 'https:'.$value
+                $images = 'https:'.$value;
 
                 $nameImages = basename($images);
 
