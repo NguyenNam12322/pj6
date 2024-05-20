@@ -650,8 +650,13 @@ class crawlController extends Controller
             
         }
 
-        print_r($check);
-       
+        foreach ($check as $key => $value) {
+
+            $link = 'https://aosmith.com.vn'.$value
+            $this->crawlAO($link);
+        }
+
+      
     }
 
 
@@ -697,11 +702,6 @@ class crawlController extends Controller
         $data['updated_at'] = $now;
         $data['Salient_Features'] = strip_tags($feature_item,'<p>');
         $data['crawl_link'] = $url;
-
-        print_r($data);
-
-        die;
-
         
         DB::table('products')->insert($data);
     }
