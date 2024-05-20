@@ -241,7 +241,7 @@
                                         </div>
                                         <div class="product-image">
                                             <a href="{{ route('details', $value->link) }}">
-                                                <img class="lazyload" loading="lazy" width="180px" height="180px" src="{{ $value->image }}" alt="Laptop Lenovo Ideapad 3 14IAU7 i5-1235U/8GB/512GB/Win11 82RJ0019VN">
+                                                <img class="lazyload" loading="lazy" width="180px" height="180px" src="{{ $value->image }}" alt="{{ $value->name }}">
                                             </a>
                                         </div>
                                        
