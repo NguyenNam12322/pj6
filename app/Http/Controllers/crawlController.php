@@ -732,7 +732,11 @@ class crawlController extends Controller
 
                 $img = public_path().'/uploads/product/'.$nameImages;
 
-                $file_headers = @get_headers(trim($images));
+                $file_headers = @get_headers($images);
+
+                dd($file_headers);
+
+                die;
 
                 if(!empty($file_headers) && $file_headers[0] == 'HTTP/1.1 200 OK'){
 
