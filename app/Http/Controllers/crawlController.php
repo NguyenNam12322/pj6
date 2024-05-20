@@ -437,6 +437,27 @@ class crawlController extends Controller
 
     }
 
+    public function test12($value='')
+    {
+        $html = '<p>Đây là một ảnh: <img src="https://example.com/image1.jpg" alt="Ảnh 1"></p>
+         <p>Đây là một ảnh khác: <img src="https://example.com/image2.jpg" alt="Ảnh 2"></p>';
+
+        // Sử dụng regex để tìm các giá trị src trong thẻ <img>
+        $pattern = '/<img[^>]+src="([^"]+)"/i';
+
+        // Tạo một mảng để chứa các kết quả
+        $matches = array();
+
+        // Thực hiện tìm kiếm
+        preg_match_all($pattern, $html, $matches);
+
+        // $matches[1] sẽ chứa các giá trị src
+        $srcs = $matches[1];
+
+        // Hiển thị kết quả
+        print_r($srcs);
+    }
+
 
     public function crawlDmcl($value)
     {
