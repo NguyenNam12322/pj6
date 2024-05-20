@@ -87,7 +87,7 @@
     </section>
      <?php $metaSeo = App\Models\metaSeo::find($product->Meta_id); 
 
-        dd($product->Meta_id);
+        dd($product);
      ?>
 
 
