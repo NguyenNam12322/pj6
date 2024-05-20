@@ -1838,6 +1838,8 @@
 
                      $details = $data->Detail;
 
+                     dd($details);
+
 
 
                     if(isset($check)){
