@@ -481,7 +481,7 @@ class crawlController extends Controller
 
                 $replace_img = '/uploads/product/'.$id.'/'.basename($value);
 
-                array_push($replace, $replace_img)
+                array_push($replace, $replace_img);
 
             }
         }     
