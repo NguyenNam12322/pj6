@@ -719,7 +719,7 @@ class crawlController extends Controller
 
             $html = file_get_html(trim($link));
 
-            $src = $html->find('#sliderproduct .product-thumb img');
+            $src = $html->find('#product .product-image-feature');
 
 
             foreach ($src as $key => $value) {
