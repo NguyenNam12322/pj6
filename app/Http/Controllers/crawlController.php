@@ -490,6 +490,10 @@ class crawlController extends Controller
 
                 $new_details = str_replace(trim($value), $img, $details);
 
+                echo $new_details;
+
+                die;
+
                 $update = ['Detail'=>$new_details, 'updated_at'=>$now];
 
                 DB::table('products')->where('id',$id)->update($update);
