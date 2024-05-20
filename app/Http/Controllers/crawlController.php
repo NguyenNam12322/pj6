@@ -530,6 +530,10 @@ class crawlController extends Controller
 
                 $link_crawl = 'https:'.trim($value);
 
+                dd($link_crawl);
+
+                die;
+
                 $file_headers = @get_headers($link_crawl);
 
                 if(!empty($file_headers) && $file_headers[0] == 'HTTP/1.1 200 OK') 
