@@ -408,7 +408,7 @@ class crawlController extends Controller
 
     public function updateProduct()
     {
-        $product = DB::table('products')->select('id','Detail')->where('id', '>', 49)->get();
+        $product = DB::table('products')->select('id','Detail')->where('id', '>', 238)->get();
 
         foreach ($product as $key => $value) {
 
@@ -486,22 +486,30 @@ class crawlController extends Controller
                     mkdir($directory, 0777, true);
                 }
 
+                $file_headers = @get_headers(trim($value));
 
-                $img = $directory.'/'.basename($value);
-                
-                file_put_contents($img, file_get_contents('https:'.trim($value)));
+                if($file_headers[0] == 'HTTP/1.1 200 OK') 
+                {
 
-                // $replace_img = '/uploads/product/'.$id.'/'.basename($value);
+                    $img = $directory.'/'.basename($value);
+                    
+                    file_put_contents($img, file_get_contents('https:'.trim($value)));
 
-                // $new_details = str_replace(trim($value), $replace_img, $details);
+                    // $replace_img = '/uploads/product/'.$id.'/'.basename($value);
 
-                // echo $new_details;
+                    // $new_details = str_replace(trim($value), $replace_img, $details);
 
-                // die;
+                    // echo $new_details;
 
-                // $update = ['Detail'=>$new_details, 'updated_at'=>$now];
+                    // die;
 
-                // DB::table('products')->where('id',$id)->update($update);
+                    // $update = ['Detail'=>$new_details, 'updated_at'=>$now];
+
+                    // DB::table('products')->where('id',$id)->update($update);
+                } 
+                else{
+                    echo $value;
+                }   
 
             }
             
