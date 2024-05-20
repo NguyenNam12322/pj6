@@ -471,7 +471,7 @@ class crawlController extends Controller
 
         $feature_item = html_entity_decode($html->find('#tab0 .product_function',0));
 
-        dd(strip_tags($feature_item,'<p>'));
+        echo(strip_tags($feature_item,'<p>'));
         die;
 
         $pattern = '/<a\s+[^>]*>(.*?)<\/a>/i';
