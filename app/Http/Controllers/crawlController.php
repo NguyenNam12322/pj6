@@ -412,7 +412,7 @@ class crawlController extends Controller
 
         foreach ($product as $key => $value) {
 
-            $this->updateCrawlDMCL($value->crawl_link, $product->id);
+            $this->updateCrawlDMCL($value->crawl_link, $value->id);
         }
         echo "thành công";
     }
