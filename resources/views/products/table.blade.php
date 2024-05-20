@@ -205,7 +205,7 @@ $search = $_GET['search']??'';
 
                 <?php
 
-                    $check_deal = DB::table('deals')->where('product_id', $product->id)->get();
+                    $check_deal = DB::table('deal')->where('product_id', $product->id)->get();
 
                     $now = \Carbon\Carbon::now();
                    
