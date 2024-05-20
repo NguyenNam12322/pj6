@@ -781,7 +781,9 @@ class categoryController extends Controller
 
             $sampe_product_price = [];
 
-            if(!empty($data_group_product)){
+
+
+            if(!empty($data_group_product) && !empty($data_group_product->product_id)){
                 $sampe_product_price = product::whereIn('id',  json_decode($data_group_product->product_id))->where('Price', '>', $min_price)
                     ->where('Price', '<', $max_price)->take(5)->get();
 
