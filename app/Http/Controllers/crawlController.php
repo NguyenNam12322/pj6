@@ -642,7 +642,7 @@ class crawlController extends Controller
 
         $html = file_get_html(trim($url));
 
-        $details = $html->find('#tab1');
+        $details = $html->find('#tab1',0);
 
         $specifications = html_entity_decode($html->find('#tab2', 0));
 
