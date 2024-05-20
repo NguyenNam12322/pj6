@@ -708,10 +708,13 @@ class crawlController extends Controller
 
     public function crawlImageAo()
     {
+
+        $now = Carbon::now();
+        
         $data = DB::table('products')->select('crawl_link','id')->where('id','>',440)->get();
 
         foreach ($data as $key => $values) {
-            
+
             $link = $values->crawl_link;
 
             $html = file_get_html(trim($link));
