@@ -719,10 +719,7 @@ class crawlController extends Controller
 
             $html = file_get_html(trim($link));
 
-            $src = $html->find('#sliderproduct .product-thumb img')->getAttribute('data-image');
-
-            dd($src);
-
+            $src = $html->find('#sliderproduct .product-thumb img');
 
             foreach ($src as $key => $value) {
 
@@ -748,7 +745,7 @@ class crawlController extends Controller
                 DB::table('images')->insert($datas);
 
                 echo "update thành công ảnh cho sản phẩm có id = ".$values->id;
-                 die;
+                 
 
                 
             }
