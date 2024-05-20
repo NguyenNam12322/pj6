@@ -474,7 +474,7 @@ class crawlController extends Controller
 
                 $img = $directory.'/'.basename($value);
                 
-                file_put_contents($img, file_get_contents(trim($value)));
+                file_put_contents($img, file_get_contents('https:'.trim($value)));
 
                 $new_details = str_replace(trim($value), $img, $details);
 
