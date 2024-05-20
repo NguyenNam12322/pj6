@@ -476,7 +476,7 @@ class crawlController extends Controller
 
             foreach ($srcs as $value) {
 
-                $directory = '/uploads/product/'.$id;
+                $directory = public_path().'/uploads/product/'.$id;
 
                 if (!is_dir($directory)) {
                     // Tạo thư mục và các thư mục con nếu không tồn tại
@@ -488,7 +488,9 @@ class crawlController extends Controller
                 
                 file_put_contents($img, file_get_contents('https:'.trim($value)));
 
-                $new_details = str_replace(trim($value), $img, $details);
+                $replace_img = '/uploads/product/'.$id.'/'.basename($value);
+
+                $new_details = str_replace(trim($value), $replace_img, $details);
 
                 echo $new_details;
 
