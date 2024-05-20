@@ -488,7 +488,7 @@ class crawlController extends Controller
 
                 $file_headers = @get_headers(trim($value));
 
-                if($file_headers[0] == 'HTTP/1.1 200 OK') 
+                if(!empty($file_headers) && $file_headers[0] == 'HTTP/1.1 200 OK') 
                 {
 
                     $img = $directory.'/'.basename($value);
