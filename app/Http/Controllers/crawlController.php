@@ -726,6 +726,10 @@ class crawlController extends Controller
 
                 $images = 'http:'.$value->getAttribute('data-src');
 
+                dd($images);
+
+                die;
+
                 $nameImages = basename($images);
 
                 $image_name = '/uploads/product/'.$nameImages;
@@ -745,11 +749,12 @@ class crawlController extends Controller
                 DB::table('images')->insert($datas);
 
                 echo "update thành công ảnh cho sản phẩm có id = ".$values->id;
+                 die;
 
                 
             }
 
-            die;
+
         }    
 
         
