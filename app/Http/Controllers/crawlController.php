@@ -530,37 +530,25 @@ class crawlController extends Controller
 
                 $link_crawl = 'https:'.trim($value);
 
-                dd($link_crawl);
 
-                die;
+                $img = $directory.'/'.basename($value);
+                
+                file_put_contents($img, file_get_contents($link_crawl));
 
-                $file_headers = @get_headers($link_crawl);
+                // $replace_img = '/uploads/product/'.$id.'/'.basename($value);
 
-                if(!empty($file_headers) && $file_headers[0] == 'HTTP/1.1 200 OK') 
-                {
+                // $new_details = str_replace(trim($value), $replace_img, $details);
 
-                    $img = $directory.'/'.basename($value);
-                    
-                    file_put_contents($img, file_get_contents($link_crawl));
+                // echo $new_details;
 
-                    // $replace_img = '/uploads/product/'.$id.'/'.basename($value);
+                // die;
 
-                    // $new_details = str_replace(trim($value), $replace_img, $details);
+                // $update = ['Detail'=>$new_details, 'updated_at'=>$now];
 
-                    // echo $new_details;
-
-                    // die;
-
-                    // $update = ['Detail'=>$new_details, 'updated_at'=>$now];
-
-                    // DB::table('products')->where('id',$id)->update($update);
+                // DB::table('products')->where('id',$id)->update($update);
 
                     
-                } 
-                else{
-                    echo $value;
-                }   
-
+               
             }
             
 
