@@ -638,7 +638,7 @@ class crawlController extends Controller
 
         $check = [];
 
-        $url = ' https://www.aosmith.com.vn/collections/may-loc-nuoc-ro-side-stream';
+        $url = 'https://www.aosmith.com.vn/collections/may-loc-nuoc-ro-side-stream?page=2';
 
         $html = file_get_html(trim($url));
 
