@@ -479,19 +479,17 @@ class crawlController extends Controller
 
                 $directory = public_path().'/uploads/product/'.$id;
 
-                echo 'https:'.$value.'<br>';
+                // echo 'https:'.$value.'<br>';
 
+                if (!is_dir($directory)) {
+                    // Tạo thư mục và các thư mục con nếu không tồn tại
+                    mkdir($directory, 0777, true);
+                }
+
+
+                $img = $directory.'/'.basename($value);
                 
-
-                // if (!is_dir($directory)) {
-                //     // Tạo thư mục và các thư mục con nếu không tồn tại
-                //     mkdir($directory, 0777, true);
-                // }
-
-
-                // $img = $directory.'/'.basename($value);
-                
-                // file_put_contents($img, file_get_contents('https:'.trim($value)));
+                file_put_contents($img, file_get_contents('https:'.trim($value)));
 
                 // $replace_img = '/uploads/product/'.$id.'/'.basename($value);
 
@@ -506,7 +504,7 @@ class crawlController extends Controller
                 // DB::table('products')->where('id',$id)->update($update);
 
             }
-            die;
+            
 
         }
     
