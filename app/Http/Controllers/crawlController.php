@@ -711,6 +711,7 @@ class crawlController extends Controller
         $data = DB::table('products')->select('crawl_link','id')->where('id','>',440)->get();
 
         foreach ($data as $key => $values) {
+            
             $link = $values->crawl_link;
 
             $html = file_get_html(trim($link));
@@ -719,6 +720,33 @@ class crawlController extends Controller
 
 
             foreach ($src as $key => $value) {
+
+                $images = 'https:'.$value
+
+                $nameImages = basename($images);
+
+                $image_name = '/uploads/product/'.$nameImages;
+
+                $img = public_path().'/uploads/product/'.$nameImages;
+
+                $file_headers = @get_headers(trim($images));
+
+                if(!empty($file_headers) && $file_headers[0] != 'HTTP/1.1 404 Not Found'){
+
+                    file_put_contents($img, file_get_contents(trim($images)));
+
+                    $datas['image'] = $image_name;
+                    $datas['link'] = $image_name;
+                    $datas['product_id'] = $values->id;
+                    $datas['order'] = 0;
+                    $datas['active'] = 1;
+                    $datas['created_at'] = $now;
+                    $datas['updated_at'] = $now;
+
+                    DB::table('images')->insert($datas);
+
+                    
+                }    
 
                 echo $value->src.'<br>';
             }
