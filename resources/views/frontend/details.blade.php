@@ -1849,7 +1849,7 @@
                    
                 ?>
 
-                 {!! html_entity_decode(str_replace('galery','galerys',$details))   !!}
+                 {!! html_entity_decode(str_replace('gallery ','galerys',$details))   !!}
                 
             </div>
 
