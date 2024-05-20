@@ -71,9 +71,6 @@
         }
     ?>   
 
-    {{ $product->Name }}
-
-    
 
     @if(isset($product->id))
     <section class="content-header">
