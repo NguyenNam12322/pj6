@@ -104,7 +104,7 @@ Route::get('sitemap_article.xml', 'sitemapController@sitemapChildBlog');
 
 // Route::get('inCrawl', 'crawlController@allproduct');
 
-Route::get('/test-crawl', 'crawlController@crawl_link_AO');
+Route::get('/test-crawl', 'crawlController@crawlImageAo');
 
 Route::get('/404', function () {
     echo"bạn không có quyền truy cập trang web";

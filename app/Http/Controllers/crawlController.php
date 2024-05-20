@@ -706,6 +706,28 @@ class crawlController extends Controller
         DB::table('products')->insert($data);
     }
 
+    public function crawlImageAo()
+    {
+        $data = DB::table('products')->select('crawl_link','id')->where('id','>',440)->get();
+
+        foreach ($data as $key => $values) {
+            $link = $values->crawl_link;
+
+            $html = file_get_html(trim($link));
+
+            $src = $html->find('#sliderproduct .product-thumb img');
+
+
+            foreach ($src as $key => $value) {
+
+                echo $value->src.'<br>';
+            }
+        }    
+
+        
+
+    }
+
 
 
     public function crawlImageDMCL()
