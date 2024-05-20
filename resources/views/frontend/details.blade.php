@@ -3,7 +3,7 @@
 @push('style')
 
     <style>
-       
+
      @media only screen and (max-width: 600px) {
 
         .nk-menu{
@@ -1836,7 +1836,7 @@
                     });
 
 
-
+                       
 
 
 
@@ -1849,7 +1849,7 @@
                    
                 ?>
 
-                 {!! html_entity_decode($details)   !!}
+                 {!! html_entity_decode(str_replace('galery','galerys',$details))   !!}
                 
             </div>
 
