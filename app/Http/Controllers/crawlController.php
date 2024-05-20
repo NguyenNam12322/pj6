@@ -405,6 +405,25 @@ class crawlController extends Controller
         // dd($details);
     }
 
+    public function updateCrawlDMCL()
+    {
+        $url = 'https://dienmaycholon.vn/may-lanh/may-lanh-comfee-inverter-2-hp-cfs18vaffv';
+
+        $html = file_get_html(trim($url));
+
+
+        $details = $html->find('.des_pro', 0);
+
+        $pattern = '/<a\s+[^>]*>(.*?)<\/a>/i';
+
+        $replacement = '$1';
+
+        $details = preg_replace($pattern, $replacement, html_entity_decode($details));
+
+        echo $details;
+
+    }
+
 
     public function crawlDmcl($value)
     {
@@ -427,7 +446,7 @@ class crawlController extends Controller
         $pattern = '/<a\s+[^>]*>(.*?)<\/a>/i';
 
         // Replacement string (empty)
-        $replacement = '';
+        $replacement = '$1';
 
         // Perform the replacement
         $details = preg_replace($pattern, $replacement, html_entity_decode($details));
@@ -471,7 +490,7 @@ class crawlController extends Controller
 
         $feature_item = html_entity_decode($html->find('#tab0 .product_function',0));
 
-        echo(strip_tags($feature_item,'<p>'));
+        
         die;
 
         $pattern = '/<a\s+[^>]*>(.*?)<\/a>/i';
@@ -495,7 +514,7 @@ class crawlController extends Controller
         $data['user_id'] = 4;
         $data['created_at'] = $now;
         $data['updated_at'] = $now;
-        $data['Salient_Features'] = $feature_item;
+        $data['Salient_Features'] = strip_tags($feature_item,'<p>');
         $data['crawl_link'] = $url;
 
         
