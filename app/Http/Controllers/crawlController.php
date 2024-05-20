@@ -405,12 +405,23 @@ class crawlController extends Controller
         // dd($details);
     }
 
-    public function updateCrawlDMCL()
+
+    public function updateProduct()
     {
-        $url = 'https://dienmaycholon.vn/may-lanh/may-lanh-comfee-inverter-2-hp-cfs18vaffv';
+        $product = DB::table('products')->select('id','crawl_link')->get();
+
+        foreach ($product as $key => $value) {
+
+            $this->updateCrawlDMCL($value->crawl_link, $product->id);
+        }
+        echo "thành công";
+    }
+
+    public function updateCrawlDMCL($url, $id)
+    {
+       
 
         $html = file_get_html(trim($url));
-
 
         $details = $html->find('.des_pro', 0);
 
@@ -420,9 +431,17 @@ class crawlController extends Controller
 
         $details = preg_replace($pattern, $replacement, html_entity_decode($details));
 
-        // echo $details;
+        $data = ['Detail'=>$details];
 
-        // Sử dụng regex để tìm các giá trị src trong thẻ <img>
+        DB::table('products')->where('id', $id)->update($data);
+
+
+    }
+
+
+    public function convertImageToDetails($details)
+    {
+         // Sử dụng regex để tìm các giá trị src trong thẻ <img>
         $patterns = '/<img[^>]+src="([^"]+)"/i';
 
         // Tạo một mảng để chứa các kết quả
@@ -436,8 +455,8 @@ class crawlController extends Controller
 
         // Hiển thị kết quả
         print_r($srcs);
-
     }
+
 
     public function test12($value='')
     {
