@@ -480,6 +480,8 @@ class crawlController extends Controller
 
                 echo $value;
 
+                die;
+
                 // if (!is_dir($directory)) {
                 //     // Tạo thư mục và các thư mục con nếu không tồn tại
                 //     mkdir($directory, 0777, true);
