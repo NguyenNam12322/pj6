@@ -82,10 +82,9 @@
             </div>
         </div>
     </section>
-     <?php $metaSeo = App\Models\metaSeo::find($product->Meta_id); 
-
-        dd($product);
-     ?>
+    <?php 
+        $metaSeo = App\Models\metaSeo::find($product->Meta_id);   
+    ?>
 
 
 
