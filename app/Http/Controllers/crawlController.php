@@ -479,7 +479,7 @@ class crawlController extends Controller
 
                 $directory = public_path().'/uploads/product/'.$id;
 
-                echo $value;
+                echo 'https:'.$value.'<br>';
 
                 
 
