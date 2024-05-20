@@ -652,7 +652,7 @@ class crawlController extends Controller
 
         foreach ($check as $key => $value) {
 
-            $link = 'https://aosmith.com.vn'.$value
+            $link = 'https://aosmith.com.vn'.$value;
             $this->crawlAO($link);
         }
 
