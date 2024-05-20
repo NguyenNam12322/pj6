@@ -419,6 +419,18 @@ class crawlController extends Controller
         echo "thành công";
     }
 
+    public function updateProducts()
+    {
+         $product = DB::table('products')->select('id','crawl_link')->where('id', '<', 48)->get();
+
+        foreach ($product as $key => $value) {
+
+            $this->updateCrawlDMCL($value->crawl_link, $value->id);
+
+            echo "update đến product: ".$value->id;
+        }
+    }
+
     public function updateCrawlDMCL($url, $id)
     {
        
