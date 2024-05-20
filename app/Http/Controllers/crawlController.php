@@ -408,13 +408,13 @@ class crawlController extends Controller
 
     public function updateProduct()
     {
-        $product = DB::table('products')->select('id','crawl_link')->where('id', '>', 238)->get();
+        $product = DB::table('products')->select('id','Detail')->where('id', '<', 238)->get();
 
         foreach ($product as $key => $value) {
 
-            $this->updateCrawlDMCL($value->crawl_link, $value->id);
+            $this->convertImageToDetails($value->Detail, $value->id);
 
-            echo "update đến link: ".$value->crawl_link;
+            echo "update đến product: ".$value->id;
         }
         echo "thành công";
     }
@@ -449,6 +449,8 @@ class crawlController extends Controller
          // Sử dụng regex để tìm các giá trị src trong thẻ <img>
         $patterns = '/<img[^>]+src="([^"]+)"/i';
 
+        $now = Carbon::now();
+
         // Tạo một mảng để chứa các kết quả
         $matches = array();
 
@@ -474,7 +476,11 @@ class crawlController extends Controller
                 
                 file_put_contents($img, file_get_contents(trim($images)));
 
-                str_replace(trim($value), $img, $details);
+                $new_details = str_replace(trim($value), $img, $details);
+
+                $update = ['Detail'=>$new_details, 'updated_at'=>$now];
+
+                DB::table('products')->update($update);
 
             }
 
