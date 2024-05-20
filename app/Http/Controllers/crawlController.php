@@ -508,6 +508,8 @@ class crawlController extends Controller
                     // $update = ['Detail'=>$new_details, 'updated_at'=>$now];
 
                     // DB::table('products')->where('id',$id)->update($update);
+
+                    die;
                 } 
                 else{
                     echo $value;
