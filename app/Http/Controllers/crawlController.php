@@ -472,10 +472,7 @@ class crawlController extends Controller
         // $matches[1] sẽ chứa các giá trị src
         $srcs = $matches[1];
 
-        var_dump($srcs);
-
-        die;
-
+      
         if(!empty($srcs) && count($srcs)>0){
 
             foreach ($srcs as $value) {
@@ -484,7 +481,7 @@ class crawlController extends Controller
 
                 echo $value;
 
-                die;
+                
 
                 // if (!is_dir($directory)) {
                 //     // Tạo thư mục và các thư mục con nếu không tồn tại
@@ -509,6 +506,7 @@ class crawlController extends Controller
                 // DB::table('products')->where('id',$id)->update($update);
 
             }
+            die;
 
         }
     
