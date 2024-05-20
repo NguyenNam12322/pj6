@@ -435,7 +435,7 @@ class crawlController extends Controller
         $srcs = $matches[1];
 
         // Hiển thị kết quả
-        print_r($matches);
+        print_r($srcs);
 
     }
 
