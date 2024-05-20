@@ -392,9 +392,7 @@ class crawlController extends Controller
             
         }
 
-        // $this->crawlDmcl('/may-lanh/may-lanh-comfee-inverter-2-hp-cfs18vaffv');
-
-        // die;
+       
         foreach ($check as $key => $value) {
 
             $this->crawlDmcl($value);
@@ -494,6 +492,8 @@ class crawlController extends Controller
 
 
     }
+
+
 
 
 
@@ -633,11 +633,31 @@ class crawlController extends Controller
         DB::table('products')->insert($data);
     }
 
-
-     public function crawlAO()
+    public function crawl_link_AO()
     {
-        $url = 'https://www.aosmith.com.vn/products/may-loc-nuoc-dat-ban-a-o-smith-ross-eco-aoc75pur';
 
+        $check = [];
+
+        $url = ' https://www.aosmith.com.vn/collections/may-loc-nuoc-ro-side-stream';
+
+        $html = file_get_html(trim($url));
+
+        $link = $html->find('.pro-name a');
+
+        foreach ($link as $key => $value) {
+
+            array_push($check, $value->href);
+            
+        }
+
+        print_r($check);
+       
+    }
+
+
+     public function crawlAO($url)
+    {
+        
         $now = Carbon::now();
 
         $html = file_get_html(trim($url));
