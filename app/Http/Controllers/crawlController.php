@@ -416,7 +416,7 @@ class crawlController extends Controller
 
             echo "update đến product: ".$value->id;
 
-            die;
+            
         }
         echo "thành công";
     }
