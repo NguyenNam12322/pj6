@@ -1836,9 +1836,7 @@
                     });
 
 
-                     $details = $data->Detail;
-
-                     dd($details);
+                    
 
 
 
