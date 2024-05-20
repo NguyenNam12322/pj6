@@ -441,8 +441,8 @@ class crawlController extends Controller
 
     public function test12($value='')
     {
-        $html = '<p>Đây là một ảnh: <img src="https://example.com/image1.jpg" alt="Ảnh 1"></p>
-         <p>Đây là một ảnh khác: <img src="https://example.com/image2.jpg" alt="Ảnh 2"></p>';
+        $html = '<p>Đây là một ảnh: <em><img src="https://example.com/image1.jpg" alt="Ảnh 1"></em></p>
+         <p>Đây là một ảnh khác: <em><img src="https://example.com/image2.jpg" alt="Ảnh 2"></em></p>';
 
         // Sử dụng regex để tìm các giá trị src trong thẻ <img>
         $pattern = '/<img[^>]+src="([^"]+)"/i';
