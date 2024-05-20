@@ -412,9 +412,11 @@ class crawlController extends Controller
 
         foreach ($product as $key => $value) {
 
-            $this->convertImageToDetails($value->Detail, $value->id);
+            $this->convertLinkImageDmclToLinkImageUse($value->Detail, $value->id);
 
             echo "update đến product: ".$value->id;
+
+            die;
         }
         echo "thành công";
     }
@@ -449,6 +451,46 @@ class crawlController extends Controller
         $data = ['Detail'=>$details, 'updated_at'=>$now];
 
         DB::table('products')->where('id', $id)->update($data);
+
+
+    }
+
+    public function convertLinkImageDmclToLinkImageUse($details,$id)
+    {
+         // Sử dụng regex để tìm các giá trị src trong thẻ <img>
+        $patterns = '/<img[^>]+src="([^"]+)"/i';
+
+        $now = Carbon::now();
+
+        // Tạo một mảng để chứa các kết quả
+        $matches = array();
+
+        // Thực hiện tìm kiếm
+
+        preg_match_all($patterns, $details, $matches);
+
+        // $matches[1] sẽ chứa các giá trị src
+
+        $srcs = $matches[1];
+
+        $replace = [];
+
+        if(!empty($srcs) && count($srcs)>0){
+
+            foreach ($srcs as $value) {
+
+                $replace_img = '/uploads/product/'.$id.'/'.basename($value);
+
+                array_push($replace, $replace_img)
+
+            }
+        }     
+
+        $new_details = str_replace($srcs, $replace, $details);
+
+        $update = ['Detail'=>$new_details];
+
+        DB::table('products')->where('id', $id)->update($update);
 
 
     }
