@@ -82,7 +82,7 @@ class productController extends AppBaseController
 
     public function showName()
     {
-        $tv = DB::table('products')->select('Name')->where('id','<',220);
+        $tv = DB::table('products')->select('Name')->where('id','<',220)->get();
 
         foreach ($tv as $key => $value) {
             echo $value->Name.'<br>';
