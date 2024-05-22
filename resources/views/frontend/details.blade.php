@@ -21,6 +21,10 @@
             width: 100%;
             height: 300px !important;
         }
+
+        .pdetail-installment{
+            height: 100px;
+        }
     }   
 
     
