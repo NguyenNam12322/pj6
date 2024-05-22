@@ -97,6 +97,7 @@ class productController extends AppBaseController
 
             
         }
+        echo "thành công";
     }
 
     /**
