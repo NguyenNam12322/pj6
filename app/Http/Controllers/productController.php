@@ -82,19 +82,19 @@ class productController extends AppBaseController
 
     public function showName()
     {
-        $tv = DB::table('group_product')->select('Meta_id','id')->orderBy('id','asc')->get();
 
-        $number = 474;
+        $now = Carbon::now();
 
+        $tv = DB::table('group_product')->select('name','id')->orderBy('id','asc')->get();
+
+       
         foreach ($tv as $key => $value) {
 
-            $number++;
+            $insert = ['meta_title'=>$value->name, 'meta_content'=>$value->name,'meta_key_words'=>$value->name, 'meta_og_title'=>$value->name, 'meta_og_content'=>$value->name, 'updated_at'=>$now, 'created_at'=>$now];
 
-            $update = ['meta_id'=>$number];
+            DB::table('meta_seos')->insert($update);
 
-            DB::table('group_product')->where('id', $value->id)->update($update);
-
-            echo 'update thành công nhóm sản phẩm có id '.$value->id;
+            
         }
     }
 
