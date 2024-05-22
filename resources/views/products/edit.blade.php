@@ -71,7 +71,6 @@
         }
     ?>   
 
-  
 
     @if(isset($product->id))
     <section class="content-header">
@@ -83,7 +82,11 @@
             </div>
         </div>
     </section>
-     <?php $metaSeo = App\Models\metaSeo::find($product->Meta_id); ?>
+    <?php 
+        $metaSeo = App\Models\metaSeo::find($product->Meta_id);   
+    ?>
+
+
 
      
     <div class="btn-show"> 

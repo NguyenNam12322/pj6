@@ -779,16 +779,25 @@ class categoryController extends Controller
 
             $max_price = $data->Price+500000;
 
-            $sampe_product_price = product::whereIn('id',  json_decode($data_group_product->product_id))->where('Price', '>', $min_price)
+            $sampe_product_price = [];
+
+
+
+            if(!empty($data_group_product) && !empty($data_group_product->product_id)){
+                $sampe_product_price = product::whereIn('id',  json_decode($data_group_product->product_id))->where('Price', '>', $min_price)
                     ->where('Price', '<', $max_price)->take(5)->get();
 
+            }
+
+            $other_product = [];
             // dd($sampe_product_price); 
+            if(!empty($data_group_product) && !empty($data_group_product->product_id)){
 
+                $other_product = Cache::rememberForever('other_product_'.$data_group_product->product_id, function() use ($data_group_product){ 
 
-            $other_product = Cache::rememberForever('other_product_'.$data_group_product->product_id, function() use ($data_group_product){ 
-
-                return product::whereIn('id',  json_decode($data_group_product->product_id))->take(10)->get();
-            });  
+                    return product::whereIn('id',  json_decode($data_group_product->product_id))->take(10)->get();
+                }); 
+            }     
             
 
 
@@ -830,6 +839,7 @@ class categoryController extends Controller
             if(empty($data->Image)){
                 $actives_pages_blog = 0;
             }
+
 
             return view('frontend.details', compact('data', 'images', 'other_product', 'meta', 'pageCheck', 'data_cate', 'actives_pages_blog', 'price_installment', 'sampe_product_price'));
         }
