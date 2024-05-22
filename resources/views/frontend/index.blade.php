@@ -52,6 +52,10 @@
         padding: 10px;
     }
 
+    .view-all-desk span{
+        cursor: pointer;
+    }
+
 
     .gift-info .title {
         background: linear-gradient(to right,#F6E4DB,#D09E8A);
