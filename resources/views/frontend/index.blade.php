@@ -243,12 +243,7 @@
 
                         <div class="owl-carousel owl-theme owl-loaded owl-drag" id="payday-blockss">
 
-                            <?php 
-
-                                dd($deal);
-                            ?>
-
-                           
+                          
 
                             @foreach($deal as $key => $value)
                                
