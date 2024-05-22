@@ -247,7 +247,7 @@
 
                             @foreach($deal as $key => $value)
                                
-                            @if( !empty($value->active) && $value->active ==1 && $now->between($value->start, $value->end));
+                            @if( !empty($value->active) && $value->active ==1 && $now->between($value->start, $value->end))
 
                            
                             <?php
@@ -258,7 +258,7 @@
                                         return   App\Models\product::find($value->product_id);
                                     });
 
-                               
+
                             ?>
                             <div class="product-slide">                         
                                 <div class="product">
