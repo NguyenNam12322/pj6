@@ -372,7 +372,14 @@
         return $item->id == $data->Maker;
     })->first();
 
-    $check_deal =  Cache::get('deals')->where('product_id', $data->id);
+    if(!empty(Cache::get('deals'))){
+        $check_deal =  Cache::get('deals')->where('product_id', $data->id);
+    }
+    else{
+        $check_deal = DB::table('deal')->where('product_id', $data->id)->get();
+    }
+
+    
 
     $now = \Carbon\Carbon::now();
    
