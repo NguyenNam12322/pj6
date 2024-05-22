@@ -707,9 +707,9 @@
                             @endif
                             @endif
 
-                             <div class="sakers event-dt">
+                           <!--   <div class="sakers event-dt">
                                     <img src="{{ asset('images/background-image/dao140.png') }}?ver=3"   class="lazyload">
-                            </div>
+                            </div> -->
 
 
                         </div>
