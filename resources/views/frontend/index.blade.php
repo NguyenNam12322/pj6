@@ -247,7 +247,7 @@
 
                             @foreach($deal as $key => $value)
                                
-                            @if( !empty($value->active) && $value->active ==1 && $now->between($value->start, $value->end))
+                            @if( !empty($value->active) && $value->active ==1 && $now->between($value->start, $value->end));
 
                            
                             <?php
