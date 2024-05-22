@@ -1,6 +1,12 @@
 @extends('layouts.app')
 
 @section('content')
+
+    <style type="text/css">
+        .position{
+            position: relative !important;
+        }
+    </style>
     <section class="content-header">
         <div class="container-fluid">
             <div class="row mb-2">
