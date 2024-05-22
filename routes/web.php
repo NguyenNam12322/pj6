@@ -128,6 +128,8 @@ Route::get('/add-property-filter', 'mainController@filterAdd')->name('add-proper
 
 Route::post('filter-search-client', 'Frontend\filterController@filter')->name('client-search');
 
+Route::get('show-data-pd', 'productController@showName');
+
 // Route::get('/cache-clear', function () {
 //      \Artisan::call('key:generate');
 //       \Artisan::call('config:clear');

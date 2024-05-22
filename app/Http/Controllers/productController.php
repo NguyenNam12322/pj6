@@ -80,6 +80,15 @@ class productController extends AppBaseController
             ->with('products', $products);
     }
 
+    public function showName()
+    {
+        $tv = DB::table('products')->select('Name')->where('id','<',220);
+
+        foreach ($tv as $key => $value) {
+            echo $value->Name.'<br>';
+        }
+    }
+
     /**
      * Show the form for creating a new product.
      *
