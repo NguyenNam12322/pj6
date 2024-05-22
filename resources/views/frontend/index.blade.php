@@ -243,7 +243,7 @@
 
                         <div class="owl-carousel owl-theme owl-loaded owl-drag" id="payday-blockss">
 
-                          
+
 
                             @foreach($deal as $key => $value)
                                
@@ -433,7 +433,7 @@
                                 <div class="menu-wrap">
 
                                     <?php 
-                                        $define = ['Nổi bật','Tivi', 'Máy giặt', 'Tủ lạnh', 'Điều hòa'];
+                                        $define = ['Ao Smith','Tivi','Điều hòa', 'Máy giặt', 'Tủ lạnh', ];
 
                                     ?>
 
