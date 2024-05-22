@@ -461,7 +461,15 @@
 
                                         @foreach($data as $key =>$datas)
 
-                                       
+                                            <?php 
+
+                                                $dem++;
+                                                if($dem>4){
+
+                                                    break;
+
+                                                }
+                                            ?>
                                             <div class="product col-md-3 col-xs-6">
                                                 <div class="product-header" href="{{ route('details', $datas->Link) }}">
                                                     <div class="top-right">
@@ -497,6 +505,9 @@
                                     </div>
                                 </div>
                             </div>
+
+                            <div class="view-all-desk desktop"><span>xem tất cả</span></div>
+                                 
                                  
                         </div>
                     </div>
