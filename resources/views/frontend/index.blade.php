@@ -457,14 +457,16 @@
 
                                             $data = App\Models\product::whereIn('id', $hot->toArray())->Orderby('orders_hot', 'desc')->get();
 
+                                            $dems = 0;
+
                                         ?>
 
                                         @foreach($data as $key =>$datas)
 
                                             <?php 
 
-                                                $dem++;
-                                                if($dem>4){
+                                                $dems++;
+                                                if($dems>4){
 
                                                     break;
 
