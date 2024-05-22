@@ -15,6 +15,15 @@
 
         }    
     }
+    @media only screen and (min-width: 601px) {
+
+        .box01 img{
+            width: 100%;
+            height: 300px !important;
+        }
+    }   
+
+    
     </style>            
 
     <?php
