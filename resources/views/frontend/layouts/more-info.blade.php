@@ -1,5 +1,5 @@
 
-
+@if(!empty($value) && !empty($value->promotion))
 <div class="gifts-info" style="display: none;" data-text="{{ strlen($value->promotion) }}">
     <a href="{{ route('details', $value->Link) }}" title="{{ $value->Name }}">
         <div class="title">
@@ -30,3 +30,4 @@
     </div>
     <div class="content"></div>
 </div>
+@endif
