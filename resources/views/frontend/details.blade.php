@@ -25,6 +25,10 @@
         .pdetail-installment{
             height: 100px !important;
         }
+
+        .box01, .box01__show{
+            margin-bottom: 0 !important;
+        }
     }   
 
     
