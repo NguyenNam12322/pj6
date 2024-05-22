@@ -82,11 +82,15 @@ class productController extends AppBaseController
 
     public function showName()
     {
-        $tv = DB::table('group_product')->select('Meta_id','id')->get();
+        $tv = DB::table('group_product')->select('Meta_id','id')->orderBy('id','asc')->get();
+
+        $number = 474;
 
         foreach ($tv as $key => $value) {
 
-            $update = ['meta_id'=>''];
+            $number++;
+
+            $update = ['meta_id'=>$number];
 
             DB::table('group_product')->where('id', $value->id)->update($update);
 
