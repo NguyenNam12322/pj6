@@ -56,6 +56,12 @@
         cursor: pointer;
     }
 
+    .view-all-desk{
+        text-align: center;
+        padding: 10px;
+    }
+
+
 
     .gift-info .title {
         background: linear-gradient(to right,#F6E4DB,#D09E8A);
