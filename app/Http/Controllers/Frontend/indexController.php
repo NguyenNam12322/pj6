@@ -26,12 +26,12 @@ class indexController extends Controller
 
         $now  = Carbon::now();
 
-        // if(!Cache::has('deals')){
-        //     $deal = deal::get();
+        if(!Cache::has('deals')){
+            $deal = deal::get();
 
-        //     Cache::forever('deals',$deal);
+            Cache::forever('deals',$deal);
 
-        // }
+        }
         
         $deal_check =  deal::orderBy('end','desc')->get();
 
@@ -52,19 +52,19 @@ class indexController extends Controller
          $timeDeal_star = Cache::get('deal_start'); 
 
 
-        // if(!Cache::has('groups')||empty($product_sale) ){
+        if(!Cache::has('groups')||empty($product_sale) ){
 
-        //     $this->cache();
+            $this->cache();
 
-        //     $deal = deal::get();
+            $deal = deal::get();
 
-        //     $group = Cache::get('groups');
+            $group = Cache::get('groups');
 
-        //     $timeDeal_star = Cache::get('deal_start'); 
+            $timeDeal_star = Cache::get('deal_start'); 
 
-        //     $product_sale = Cache::get('product_sale');
+            $product_sale = Cache::get('product_sale');
 
-        // }
+        }
         $deal = deal::get();
 
         if(!Cache::has('baners')){
