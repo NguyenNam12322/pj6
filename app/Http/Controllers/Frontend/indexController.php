@@ -69,7 +69,7 @@ class indexController extends Controller
         }
         $deal = deal::get();
 
-        dd($deal);
+        dd(1);
 
         if(!Cache::has('baners')){
 
