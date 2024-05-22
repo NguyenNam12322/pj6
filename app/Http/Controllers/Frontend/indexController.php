@@ -35,6 +35,7 @@ class indexController extends Controller
         
 
         $deal_check =  deal::orderBy('end','desc')->get();
+        
 
         $group = Cache::rememberForever('group_index', function(){
 
