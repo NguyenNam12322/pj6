@@ -819,11 +819,7 @@
                             <div class="discount"><p class="installment">Trả góp 0%</p></div>
                             <div class="pdetail-status">
                                 
-                                @if($data_cate ===8||$data_cate ===9||$data_cate ===1)
-
-                                <a href="tel:02473036336"><div class="buy-button-hotline nhapnhay btn">Gọi 0247.303.6336 để được giảm thêm</div></a>
-
-                                @endif
+                              
 
                                 @if(!empty($data->promotion))
 
