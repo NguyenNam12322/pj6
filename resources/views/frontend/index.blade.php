@@ -37,7 +37,29 @@
         } 
     }
 
+    .gift-info {
+        position: absolute;
+        top: 0;
+        left: 100%;
+        width: 350px;
+        z-index: 999;
+        background: #fff;
+        border: 1px solid #ddd;
+        border-radius: 3px;
+        display: block;
+        color: #111;
+        max-height: 350px;
+        padding: 10px;
     }
+
+
+    .gift-info .title {
+        background: linear-gradient(to right,#F6E4DB,#D09E8A);
+        padding: 10px 10px;
+        font-size: 16px;
+        color: #414042;
+    }
+
     .banner_home__.container{
         padding: 0 80px !important;
     }
@@ -212,7 +234,7 @@
 
 
 
-                <div id="new-flash-sale_3621" class="block_render_falshsale" style="" data-layout="layout_5">
+                <div id="new-flash-sale_3621" class="block_render_falshsale mouse-mover" style="" data-layout="layout_5">
 
                     
 
@@ -286,6 +308,8 @@
                                     </a>
                                 </div>
                             </div>
+
+                            @include('frontend.layouts.more-info', ['value'=>$count_pd, 'deal_price'=>$value->deal_price])
 
                             @endif
 
@@ -638,6 +662,51 @@
             run();
         }, 1000);
     }
+
+
+    // show details khi hover chuot vao san pham
+
+    var movingText = $(".gift-info");
+
+    movingText.hide();
+
+      // Xử lý sự kiện khi chuột di chuyển
+    $(".mouse-mover .item").on("mousemove", function(event) {
+        movingText.show();
+        var id = $(this).attr("id");
+
+        var data = $("#"+id+" .gifts-info").html();
+        // nếu text dài thì add thêm height để chống tràn
+
+        number_text_promotion =  parseInt($("#"+id+" .gifts-info").attr('data-text'));
+
+        if(number_text_promotion >300){
+            $(".gift-info").addClass('max-height');
+        }
+
+        if(number_text_promotion <300 && $(".gift-info").hasClass('max-height')){
+            $(".gift-info").removeClass('max-height');
+        }
+        
+        // end check
+
+
+        $(".gift-info").html('');
+        $(".gift-info").html(data);
+
+        var x = event.pageX+15;
+        var y = event.pageY+15;
+
+        // Cập nhật vị trí của chữ theo vị trí của chuột
+        movingText.css({
+          "left": x,
+          "top": y,
+        });
+      })
+      .on("mouseout", function(event) {
+        // Fade out element when mouse leaves
+        movingText.hide();
+      });
 
 
 
