@@ -252,6 +252,11 @@
                            
                             <?php
                                 $discount_deal =  round(((intval($value->price) - intval($value->deal_price))/intval($value->price))*100)
+
+                                $count_pd  =  Cache::rememberForever('count_pd_'.$value->product_id , function() use($value){
+
+                                        return   App\Models\product::find($value->product_id);
+                                    });
                             ?>
                             <div class="product-slide">                         
                                 <div class="product">
