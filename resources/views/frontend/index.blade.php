@@ -770,10 +770,11 @@
     $('.view-show-all').hide();  
 
 
-    $('.view-show-hide').click(function () {
+    $('.view-all-desk span').click(function () {
         $(this).remove();
         $('.view-show-hide').remove();
         $('.view-show-all').show();  
+
 
     })  
 
