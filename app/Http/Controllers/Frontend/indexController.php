@@ -26,6 +26,8 @@ class indexController extends Controller
 
         $now  = Carbon::now();
 
+        Cache::forget('deals');
+
         if(!Cache::has('deals')){
             $deal = deal::get();
 
