@@ -1,7 +1,7 @@
 <?php 
 
-    dd($value->promotion);
-    
+    dd($value);
+
 ?>
 
 <div class="gifts-info" style="display: none;" data-text="{{ strlen($value->promotion) }}">
