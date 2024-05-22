@@ -92,7 +92,7 @@ class productController extends AppBaseController
 
             $insert = ['meta_title'=>$value->name, 'meta_content'=>$value->name,'meta_key_words'=>$value->name, 'meta_og_title'=>$value->name, 'meta_og_content'=>$value->name, 'updated_at'=>$now, 'created_at'=>$now];
 
-            DB::table('meta_seos')->insert($update);
+            DB::table('meta_seos')->insert($insert);
 
             
         }
