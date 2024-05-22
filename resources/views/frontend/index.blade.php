@@ -258,8 +258,8 @@
 
                                 $count_pd  =  Cache::rememberForever('count_pd_'.$value->product_id , function() use($value){
 
-                                        return   App\Models\product::find($value->product_id);
-                                    });
+                                    return   App\Models\product::find($value->product_id);
+                                });
 
 
                             ?>

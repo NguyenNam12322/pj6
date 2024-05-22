@@ -26,12 +26,12 @@ class indexController extends Controller
 
         $now  = Carbon::now();
 
-        // if(!Cache::has('deals')){
-        //     $deal = deal::get();
+        if(!Cache::has('deals')){
+            $deal = deal::get();
 
-        //     Cache::forever('deals',$deal);
+            Cache::forever('deals',$deal);
 
-        // }
+        }
         
         $deal_check =  deal::orderBy('end','desc')->get();
 
