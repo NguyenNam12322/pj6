@@ -23,7 +23,7 @@
         }
 
         .pdetail-installment{
-            height: 100px;
+            height: 100px !important;
         }
     }   
 
