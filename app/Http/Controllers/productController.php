@@ -82,10 +82,15 @@ class productController extends AppBaseController
 
     public function showName()
     {
-        $tv = DB::table('products')->select('Name')->where('id','<',220)->get();
+        $tv = DB::table('group_product')->select('Meta_id','id')->get();
 
         foreach ($tv as $key => $value) {
-            echo $value->Name.'<br>';
+
+            $update = ['meta_id'=>''];
+
+            DB::table('group_product')->where('id', $value->id)->update($update);
+
+            echo 'update thành công nhóm sản phẩm có id '.$value->id;
         }
     }
 
