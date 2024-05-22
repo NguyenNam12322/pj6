@@ -419,7 +419,7 @@
 
                                         <?php 
 
-                                            $hot = DB::table('hot')->select('product_id')->where('group_id', 1)->orderBy('orders', 'asc')->get()->pluck('product_id');
+                                            $hot = DB::table('hot')->select('product_id')->where('group_id', 9)->orderBy('orders', 'asc')->get()->pluck('product_id');
 
                                             $data = App\Models\product::whereIn('id', $hot->toArray())->Orderby('orders_hot', 'desc')->get();
 
