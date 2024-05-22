@@ -257,6 +257,8 @@
 
                                         return   App\Models\product::find($value->product_id);
                                     });
+
+                                dd($count_pd);
                             ?>
                             <div class="product-slide">                         
                                 <div class="product">
