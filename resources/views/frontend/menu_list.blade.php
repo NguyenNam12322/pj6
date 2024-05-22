@@ -386,7 +386,7 @@
                                                     <i class="nki-menu-air-conditioner icon-new"></i>
                                                 </div>
                                                 <p>
-                                                    <a href="/dieu-hoa">Máy lạnh</a>
+                                                    <a href="/may-lanh">Máy lạnh</a>
                                                     <!-- <a href="/quat">Quạt</a> -->
                                                    
                                                 </p>
