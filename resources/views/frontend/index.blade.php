@@ -251,7 +251,10 @@
 
                            
                             <?php
-                                $discount_deal =  round(((intval($value->price) - intval($value->deal_price))/intval($value->price))*100);
+                                $discount_deal = 0;
+                                if($value->price!=0){
+                                    $discount_deal =  round(((intval($value->price) - intval($value->deal_price))/intval($value->price))*100);
+                                }    
 
                                 $count_pd  =  Cache::rememberForever('count_pd_'.$value->product_id , function() use($value){
 
