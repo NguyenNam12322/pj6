@@ -1190,6 +1190,10 @@
 
 
                 <style type="text/css">
+
+                     .news .right-cart{
+                        background: red !important;
+                     }
                     @media only screen and (max-width: 600px) {
                         body{
                             min-width: unset !important;
