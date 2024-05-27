@@ -943,6 +943,11 @@
                                 }
                             </script>
                             <style>
+
+                                .position-fixed .share-button{
+                                    position: fixed;
+                                    left: 0;
+                                }
                                 .lp-menu ul {
                                     display: inline-block;
                                 }
@@ -1946,7 +1951,7 @@
               
         </div>
 
-        <div class="re-call">   
+       <!--  <div class="re-call">   
             <a href="tel:02473036336"><img src="{{ asset('images/template/tongdai02473036336.png') }}" alt="hotline" style="height:55px; z-index: 999;"></a>
               
             <div class="clear"></div>
@@ -1958,7 +1963,7 @@
               
             <div class="clear"></div>
               
-        </div>
+        </div> -->
 
 
 
@@ -2017,7 +2022,9 @@
               
             <div class="clear"></div>
 
-            <div class="share-button"> <button type="button" class="btn btn-lg btn-add-cart btn-add-cart redirectCart cartSP" onclick="addToSuport(2221)">GỌI LẠI CHO TÔI <br>(Tư vấn tận tình)</button> <button type="button" class="btn btn-lg btn-add-cart btn-add-cart redirectCart cartSP right-cart" onclick="addToSuport(2221)">TRẢ GÓP QUA THẺ <br></button> </div>
+            <div class="share-button"> 
+                <button type="button" class="btn btn-lg btn-add-cart btn-add-cart redirectCart cartSP" onclick="addToSuport(2221)">GỌI LẠI CHO TÔI <br>(Tư vấn tận tình)</button> 
+                <button type="button" class="btn btn-lg btn-add-cart btn-add-cart redirectCart cartSP right-cart">TƯ VẤN MUA SẮM <br></button> </div>
               
         </div>
 
