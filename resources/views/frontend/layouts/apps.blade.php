@@ -946,7 +946,8 @@
 
                                 .position-fixed .share-button{
                                     position: fixed;
-                                    left: 0;
+                                   
+                                    display: flex;
                                 }
                                 .lp-menu ul {
                                     display: inline-block;
@@ -1192,6 +1193,11 @@
                     @media only screen and (max-width: 600px) {
                         body{
                             min-width: unset !important;
+                        }
+
+                        .position-fixed .share-button{
+
+                            left: 0;
                         }
 
                          #nk-cart ul{
