@@ -1193,6 +1193,7 @@
 
                      .news .right-cart{
                         background: red !important;
+                        color: #fff;
                      }
                     @media only screen and (max-width: 600px) {
                         body{
