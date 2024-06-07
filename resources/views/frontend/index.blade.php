@@ -35,6 +35,10 @@
             width: 500px !important;
             height: 388px !important;
         } 
+
+        .banner_home__.container{
+            padding: 0;
+        }
     }
 
     .gift-info {
