@@ -338,7 +338,7 @@
                                     </a>
                                 </div>
                                  <h2>test</h2>
-                            @include('frontend.layouts.more-info', ['value'=>$count_pd, 'deal_price'=>$value->deal_price])
+                            @include('frontend/layouts/more-info', ['value'=>$count_pd, 'deal_price'=>$value->deal_price])
                             </div>
 
 
