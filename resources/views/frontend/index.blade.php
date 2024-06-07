@@ -768,6 +768,8 @@
     $(".mouse-mover .item").on("mousemove", function(event) {
         movingText.show();
 
+        console.log(1);
+
         
         var id = $(this).attr("id");
 
