@@ -32,7 +32,7 @@
             margin-top: 6px;
         }    
         #nk-banner-home img{
-            width: 500px !important;
+            width: 589px !important;
             height: 388px !important;
         } 
 
