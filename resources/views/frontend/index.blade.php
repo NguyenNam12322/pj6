@@ -523,9 +523,11 @@
                                                     </div>
                                                 </div>
                                                 <div class="product-footer"></div>
+
+
                                             </div>
                                           
-                                      
+                                            @include('frontend.layouts.more-info', ['value'=>$datas])
 
                                         @endforeach
 
