@@ -472,7 +472,7 @@
                             </div>
 
 
-                            <div class="product-item show-data-group" data-uid="4133_3386">
+                            <div class="product-item show-data-group mouse-mover" data-uid="4133_3386">
                                 <div class="nk-product-cate-style-grid nk-product-collection nk-product- clearfix">
                                     <div id="pagination_contents" class="nk-product nks-fs-sync index-index" data-fs-type="0">
 
@@ -497,7 +497,7 @@
 
                                                 }
                                             ?>
-                                            <div class="product col-md-3 col-xs-6 view-show-hide">
+                                            <div class="product col-md-3 col-xs-6 view-show-hide item">
                                                 <div class="product-header" href="{{ route('details', $datas->Link) }}">
                                                     <div class="top-right">
                                                         <div class="product-feature-badge-item installment"><span>Trả góp 0%</span></div>
