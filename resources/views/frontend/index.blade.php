@@ -758,51 +758,52 @@
     }
 
 
-    // show details khi hover chuot vao san pham
+    // show details khi hover chuot vao san pham tắt tạm trên trang chủ
 
-    var movingText = $(".gift-info");
 
-    movingText.hide();
+    // var movingText = $(".gift-info");
 
-      // Xử lý sự kiện khi chuột di chuyển
-    $(".mouse-mover .item").on("mousemove", function(event) {
-        movingText.show();
+    // movingText.hide();
 
-        var id = $(this).attr("id");
+    //   // Xử lý sự kiện khi chuột di chuyển
+    // $(".mouse-mover .item").on("mousemove", function(event) {
+    //     movingText.show();
 
-        var data = $("#"+id+" .gifts-info").html();
+    //     var id = $(this).attr("id");
 
-        // nếu text dài thì add thêm height để chống tràn
+    //     var data = $("#"+id+" .gifts-info").html();
 
-        number_text_promotion =  parseInt($("#"+id+" .gifts-info").attr('data-text'));
+    //     // nếu text dài thì add thêm height để chống tràn
 
-        if(number_text_promotion >300){
-            $(".gift-info").addClass('max-height');
-        }
+    //     number_text_promotion =  parseInt($("#"+id+" .gifts-info").attr('data-text'));
 
-        if(number_text_promotion <300 && $(".gift-info").hasClass('max-height')){
-            $(".gift-info").removeClass('max-height');
-        }
+    //     if(number_text_promotion >300){
+    //         $(".gift-info").addClass('max-height');
+    //     }
+
+    //     if(number_text_promotion <300 && $(".gift-info").hasClass('max-height')){
+    //         $(".gift-info").removeClass('max-height');
+    //     }
         
-        // end check
+    //     // end check
 
 
-        $(".gift-info").html('');
-        $(".gift-info").html(data);
+    //     $(".gift-info").html('');
+    //     $(".gift-info").html(data);
 
-        var x = event.pageX+15;
-        var y = event.pageY+15;
+    //     var x = event.pageX+15;
+    //     var y = event.pageY+15;
 
-        // Cập nhật vị trí của chữ theo vị trí của chuột
-        movingText.css({
-          "left": x,
-          "top": y,
-        });
-      })
-      .on("mouseout", function(event) {
-        // Fade out element when mouse leaves
-        movingText.hide();
-      });
+    //     // Cập nhật vị trí của chữ theo vị trí của chuột
+    //     movingText.css({
+    //       "left": x,
+    //       "top": y,
+    //     });
+    //   })
+    //   .on("mouseout", function(event) {
+    //     // Fade out element when mouse leaves
+    //     movingText.hide();
+    //   });
 
     $('.view-show-all').hide();  
 
