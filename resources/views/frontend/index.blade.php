@@ -338,10 +338,7 @@
                                     </a>
                                 </div>
 
-                            <?php
-                            
-                                dd($count_pd);
-                            ?>   
+                           
                                  
                             @include('frontend/layouts/more-info', ['value'=>$count_pd, 'deal_price'=>$value->deal_price])
                             </div>
