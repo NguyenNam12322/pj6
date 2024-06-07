@@ -1,6 +1,6 @@
 
 @if(!empty($value))
-<div class="gifts-info" style="display: block;" data-text="{{ strlen($value->promotion) }}">
+<div class="gifts-info" style="display: none;" data-text="{{ strlen($value->promotion) }}">
     <a href="{{ route('details', $value->Link) }}" title="{{ $value->Name }}">
         <div class="title">
            {{ $value->Name }}
