@@ -78,9 +78,7 @@
         color: #414042;
     }
 
-    .banner_home__.container{
-        padding: 0 80px !important;
-    }
+    
 
     
     .hinh_giamgia{
@@ -159,6 +157,10 @@
         .show-mobile-product{
             height: 728px;
             overflow: hidden;
+        }
+
+        .banner_home__.container{
+            padding: 0 80px !important;
         }
 
     }    
