@@ -340,7 +340,7 @@
 
                             <?php
                             
-                                dd($count_pd);
+                                dd($count_pd->promotion);
                             ?>   
                                  
                             @include('frontend/layouts/more-info', ['value'=>$count_pd, 'deal_price'=>$value->deal_price])
