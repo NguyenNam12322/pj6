@@ -69,7 +69,7 @@
         padding: 10px;
     }
 
-    .listproduct .price {
+    .product-price .price {
         color: #D82A20 !important;
         display: block;
         font-size: 22px;
