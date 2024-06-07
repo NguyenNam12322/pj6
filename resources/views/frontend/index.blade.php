@@ -755,6 +755,8 @@
       // Xử lý sự kiện khi chuột di chuyển
     $(".mouse-mover .item").on("mousemove", function(event) {
         movingText.show();
+
+        console.log(1);
         var id = $(this).attr("id");
 
         var data = $("#"+id+" .gifts-info").html();
