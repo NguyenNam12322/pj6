@@ -169,6 +169,8 @@
 </style>
 
 <link rel="stylesheet" type="text/css" href="{{ asset('css/details.css') }}?ver=25">
+
+<div class="gift-info"></div>
 <div class="row-fluid ">
     <div class="span16 container outstanding">
         <div class="row-fluid ">
