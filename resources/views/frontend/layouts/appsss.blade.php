@@ -1400,9 +1400,9 @@
                                         $data = App\Models\product::whereIn('id', $hot->toArray())->Orderby('orders_hot', 'desc')->get();
                                     
                                     ?>    
-                                <div class=" recent-container">
+                                <div class=" recent-container mouse-mover">
                                     <div class="nk-recent-list product-list owl-carousel owl-loaded owl-drag">
-                                        <div id="sync1" class="owl-carousel mouse-mover">
+                                        <div id="sync1" class="owl-carousel ">
                                             @foreach($data as $key =>$datas)
                                             <div class="product-slide item" id="sugest_pd_{{ $datas->id }}">
                                                 <div class="product-slide">
