@@ -283,7 +283,7 @@
 
 
                             ?>
-                            <div class="product-slide">                         
+                            <div class="product-slide item">                         
                                 <div class="product">
                                     <div class="product-header" href="{{ route('details', $value->link) }}">
                                         <div class="top-right">
