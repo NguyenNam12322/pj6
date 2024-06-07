@@ -39,6 +39,10 @@
         .banner_home__.container{
             padding: 0;
         }
+
+        .outstanding{
+            padding: 0;
+        }
     }
 
     .gift-info {
