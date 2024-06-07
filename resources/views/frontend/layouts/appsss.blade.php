@@ -1402,9 +1402,9 @@
                                     ?>    
                                 <div class=" recent-container">
                                     <div class="nk-recent-list product-list owl-carousel owl-loaded owl-drag">
-                                        <div id="sync1" class="owl-carousel">
+                                        <div id="sync1" class="owl-carousel mouse-mover">
                                             @foreach($data as $key =>$datas)
-                                            <div class="product-slide">
+                                            <div class="product-slide item" id="sugest_pd_{{ $datas->id }}">
                                                 <div class="product-slide">
                                                     <div class="product">
                                                         <div class="product-header" href="https://www.nguyenkim.com/dien-thoai-iphone-15-pro-128gb-blue-titanium.html">
@@ -1430,6 +1430,8 @@
                                                         <div class="product-footer"></div>
                                                     </div>
                                                 </div>
+
+                                                @include('frontend.layouts.more-info', ['value'=>$datas])
                                             </div>
                                             @endforeach
                                         </div>
