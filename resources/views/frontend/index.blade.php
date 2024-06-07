@@ -524,7 +524,7 @@
                                                 </div>
                                                 <div class="product-footer"></div>
 
-                                                <!-- @include('frontend.layouts.more-info', ['value'=>$datas]) -->
+                                                
                                             </div>
                                           
                                             
