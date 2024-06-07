@@ -764,7 +764,6 @@
 
         var data = $("#"+id+" .gifts-info").html();
 
-        console.log(data);
         // nếu text dài thì add thêm height để chống tràn
 
         number_text_promotion =  parseInt($("#"+id+" .gifts-info").attr('data-text'));
