@@ -527,7 +527,7 @@
 
                                             </div>
                                           
-                                            @include('frontend.layouts.more-info', ['value'=>$datas])
+                                            
 
                                         @endforeach
 
