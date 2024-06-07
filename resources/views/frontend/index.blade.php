@@ -69,6 +69,15 @@
         padding: 10px;
     }
 
+    .listproduct .price {
+        color: #D82A20 !important;
+        display: block;
+        font-size: 22px;
+        font-weight: bold;
+        line-height: 18px;
+        margin-bottom: 5px;
+    }
+
 
 
     .gift-info .title {
