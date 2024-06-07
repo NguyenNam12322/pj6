@@ -497,7 +497,7 @@
 
                                                 }
                                             ?>
-                                            <div class="product col-md-3 col-xs-6 view-show-hide item">
+                                            <div class="product col-md-3 col-xs-6 view-show-hide item" id="item_feature-{{ $value->id }}">
                                                 <div class="product-header" href="{{ route('details', $datas->Link) }}">
                                                     <div class="top-right">
                                                         <div class="product-feature-badge-item installment"><span>Trả góp 0%</span></div>
