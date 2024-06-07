@@ -25,7 +25,8 @@
         @endif
         <div class="gift-title sprites">Đặc điểm nổi bật</div>
         <ol>
-            {!!   str_replace(['Xem thêm', 'Đặc điểm nổi bật'], '', $value->Salient_Features)??'' !!}
+
+            {!!   str_replace(['Xem thêm', 'Đặc điểm nổi bật'], '', _substrs($value->Salient_Features,100))??'' !!}
         </ol>
     </div>
     <div class="content"></div>
