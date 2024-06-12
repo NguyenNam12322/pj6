@@ -1567,7 +1567,19 @@
                         items:1
                     }
                 }
-            })
+            });
+
+            $('.left-menu').hover(function() {
+                
+                $(this).find('.sub-menu').show();
+
+                
+
+            }, function() {
+                $(this).find('.sub-menu').hide();
+            });
+
+         
             
             // setTimeout(function() {
             //     run(0);

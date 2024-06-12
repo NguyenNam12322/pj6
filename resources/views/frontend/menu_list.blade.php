@@ -25,7 +25,7 @@
                                                     <i class="nki-menu-television"></i>
                                                 </div>
                                                 <p>
-                                                    <a href="/ti-vi">Tivi</a>
+                                                    <a href="{{route('details','ti-vi')}}">Tivi</a>
                                                     
                                                 </p>
                                             </div>
@@ -34,7 +34,7 @@
                                                     <div class="item row2 bg-white">
                                                         <div class="links">
                                                             <h5 title="Tivi">
-                                                                <a class="a-links" href="/tivi-man-hinh-lcd/?sort_by=position&amp;sort_order=desc">Tivi <span class="nk-sticker">
+                                                                <a class="a-links" href="{{route('details','ti-vi')}}">Tivi <span class="nk-sticker">
                                                                         <span class="path1"></span>
                                                                         <span class="path2"></span>
                                                                     </span>
@@ -43,7 +43,8 @@
                                                         </div>
                                                         <div class="links">
                                                             <h5 title="Thương hiệu">
-                                                                <a class="a-links" href="https://www.nguyenkim.com/tivi-man-hinh-lcd/">Thương hiệu <span class="nk-sticker">
+
+                                                                <a class="a-links" href="{{ route('details', 'thuong-hieu-tivi') }}">Thương hiệu <span class="nk-sticker">
                                                                         <span class="path1"></span>
                                                                         <span class="path2"></span>
                                                                     </span>
@@ -52,7 +53,7 @@
                                                             <ul>
                                                                 <li>
                                                                     <p style="">
-                                                                        <a title="Samsung" class="a-links" href="/tivi-lcd-samsung/">
+                                                                        <a title="Samsung" class="a-links" href="{{route('details','tivi-samsung')}}">
                                                                             <span class="nki-sort-next ">
                                                                                 <span class="path1"></span>
                                                                                 <span class="path2"></span>
@@ -61,7 +62,7 @@
                                                                 </li>
                                                                 <li>
                                                                     <p style="">
-                                                                        <a title="Sony" class="a-links" href="/tivi-lcd-sony/">
+                                                                        <a title="Sony" class="a-links" href="{{route('details','tivi-sony')}}">
                                                                             <span class="nki-sort-next ">
                                                                                 <span class="path1"></span>
                                                                                 <span class="path2"></span>
@@ -70,7 +71,7 @@
                                                                 </li>
                                                                 <li>
                                                                     <p style="">
-                                                                        <a title="LG" class="a-links" href="/tivi-lcd-lg/">
+                                                                        <a title="LG" class="a-links" href="{{route('details','tivi-lg')}}">
                                                                             <span class="nki-sort-next ">
                                                                                 <span class="path1"></span>
                                                                                 <span class="path2"></span>
@@ -79,25 +80,17 @@
                                                                 </li>
                                                                 <li>
                                                                     <p style="">
-                                                                        <a title="TCL" class="a-links" href="/tivi-lcd-tcl/">
+                                                                        <a title="TCL" class="a-links" href="{{route('details','tivi-tcl')}}">
                                                                             <span class="nki-sort-next ">
                                                                                 <span class="path1"></span>
                                                                                 <span class="path2"></span>
                                                                             </span> TCL </a>
                                                                     </p>
                                                                 </li>
+                                                               
                                                                 <li>
                                                                     <p style="">
-                                                                        <a title="Hisense" class="a-links" href="/tivi-hisense/">
-                                                                            <span class="nki-sort-next ">
-                                                                                <span class="path1"></span>
-                                                                                <span class="path2"></span>
-                                                                            </span> Hisense </a>
-                                                                    </p>
-                                                                </li>
-                                                                <li>
-                                                                    <p style="">
-                                                                        <a title="Philips" class="a-links" href="/tivi-philips/">
+                                                                        <a title="Philips" class="a-links" href="{{route('details','tivi-philips')}}">
                                                                             <span class="nki-sort-next ">
                                                                                 <span class="path1"></span>
                                                                                 <span class="path2"></span>
@@ -106,29 +99,21 @@
                                                                 </li>
                                                                 <li>
                                                                     <p style="">
-                                                                        <a title="Sharp" class="a-links" href="/tivi-lcd-sharp/">
+                                                                        <a title="Sharp" class="a-links" href="{{route('details','tivi-sharp')}}">
                                                                             <span class="nki-sort-next ">
                                                                                 <span class="path1"></span>
                                                                                 <span class="path2"></span>
                                                                             </span> Sharp </a>
                                                                     </p>
                                                                 </li>
-                                                                <li>
-                                                                    <p style="">
-                                                                        <a title="Casper" class="a-links" href="/tivi-casper/">
-                                                                            <span class="nki-sort-next ">
-                                                                                <span class="path1"></span>
-                                                                                <span class="path2"></span>
-                                                                            </span> Casper </a>
-                                                                    </p>
-                                                                </li>
+                                                               
                                                             </ul>
                                                         </div>
                                                     </div>
                                                     <div class="item row2 bg-gray">
-                                                        <div class="links">
+                                                        <!-- <div class="links">
                                                             <h5 title="Kích thước">
-                                                                <a class="a-links" href="https://www.nguyenkim.com/tivi-man-hinh-lcd/">Kích thước <span class="nk-sticker">
+                                                                <a class="a-links" href="#">Kích thước <span class="nk-sticker">
                                                                         <span class="path1"></span>
                                                                         <span class="path2"></span>
                                                                     </span>
@@ -137,7 +122,7 @@
                                                             <ul>
                                                                 <li>
                                                                     <p style="">
-                                                                        <a title="Từ 27&quot; - 43&quot;" class="a-links" href="https://www.nguyenkim.com/tivi/?features_hash=76-214430-155065-155062-155057">
+                                                                        <a title="Từ 27&quot; - 43&quot;" class="a-links" href="">
                                                                             <span class="nki-sort-next ">
                                                                                 <span class="path1"></span>
                                                                                 <span class="path2"></span>
@@ -146,7 +131,7 @@
                                                                 </li>
                                                                 <li>
                                                                     <p style="">
-                                                                        <a title="Từ 44&quot; - 55&quot; " class="a-links" href="https://www.nguyenkim.com/tivi/?features_hash=76-155057-155045-155037">
+                                                                        <a title="Từ 44&quot; - 55&quot; " class="a-links" href="">
                                                                             <span class="nki-sort-next ">
                                                                                 <span class="path1"></span>
                                                                                 <span class="path2"></span>
@@ -155,7 +140,7 @@
                                                                 </li>
                                                                 <li>
                                                                     <p style="">
-                                                                        <a title="Từ 56&quot; - 65&quot;" class="a-links" href="https://www.nguyenkim.com/tivi/?features_hash=76-155037-155033">
+                                                                        <a title="Từ 56&quot; - 65&quot;" class="a-links" href="">
                                                                             <span class="nki-sort-next ">
                                                                                 <span class="path1"></span>
                                                                                 <span class="path2"></span>
@@ -164,7 +149,7 @@
                                                                 </li>
                                                                 <li>
                                                                     <p style="">
-                                                                        <a title="Từ 66&quot; - 75&quot;" class="a-links" href="https://www.nguyenkim.com/tivi/?features_hash=76-155033-155040-155030">
+                                                                        <a title="Từ 66&quot; - 75&quot;" class="a-links" href="">
                                                                             <span class="nki-sort-next ">
                                                                                 <span class="path1"></span>
                                                                                 <span class="path2"></span>
@@ -173,7 +158,7 @@
                                                                 </li>
                                                                 <li>
                                                                     <p style="">
-                                                                        <a title="Trên 75&quot;" class="a-links" href="https://www.nguyenkim.com/tivi/?features_hash=76-84770-81471-155025-206067">
+                                                                        <a title="Trên 75&quot;" class="a-links" href="">
                                                                             <span class="nki-sort-next ">
                                                                                 <span class="path1"></span>
                                                                                 <span class="path2"></span>
@@ -181,10 +166,10 @@
                                                                     </p>
                                                                 </li>
                                                             </ul>
-                                                        </div>
+                                                        </div> -->
                                                         <div class="links">
                                                             <h5 title="Loại Tivi">
-                                                                <a class="a-links" href="/tivi/">Loại Tivi <span class="nk-sticker">
+                                                                <a class="a-links" href="/tivi">Loại Tivi <span class="nk-sticker">
                                                                         <span class="path1"></span>
                                                                         <span class="path2"></span>
                                                                     </span>
@@ -193,7 +178,7 @@
                                                             <ul>
                                                                 <li>
                                                                     <p style="">
-                                                                        <a title="Tivi QLED" class="a-links" href="https://www.nguyenkim.com/tivi/?features_hash=36-226338-217896-227718-79004">
+                                                                        <a title="Tivi QLED" class="a-links" href="{{route('details','tivi-qled')}}">
                                                                             <span class="nki-sort-next ">
                                                                                 <span class="path1"></span>
                                                                                 <span class="path2"></span>
@@ -202,166 +187,39 @@
                                                                 </li>
                                                                 <li>
                                                                     <p style="">
-                                                                        <a title="Tivi OLED" class="a-links" href="https://www.nguyenkim.com/tivi/?utm_campaign=dRsTOFDW2NKfTG-5TsQaWA&amp;traffic_id=62abd3b854b4650042b77642&amp;features_hash=36-225299-67778">
+                                                                        <a title="Tivi OLED" class="a-links" href="{{route('details','tivi-oled')}}">
                                                                             <span class="nki-sort-next ">
                                                                                 <span class="path1"></span>
                                                                                 <span class="path2"></span>
                                                                             </span> Tivi OLED </a>
                                                                     </p>
                                                                 </li>
+                                                                
                                                                 <li>
                                                                     <p style="">
-                                                                        <a title="Tivi NanoCell" class="a-links" rel="nofollow" href="https://www.nguyenkim.com/tivi/?utm_campaign=dRsTOFDW2NKfTG-5TsQaWA&amp;traffic_id=62abd3b854b4650042b77642&amp;features_hash=36-228366">
-                                                                            <span class="nki-sort-next ">
-                                                                                <span class="path1"></span>
-                                                                                <span class="path2"></span>
-                                                                            </span> Tivi NanoCell </a>
-                                                                    </p>
-                                                                </li>
-                                                                <li>
-                                                                    <p style="">
-                                                                        <a title="Tivi 8K" class="a-links" rel="nofollow" href="https://www.nguyenkim.com/tivi/?utm_campaign=dRsTOFDW2NKfTG-5TsQaWA&amp;traffic_id=62abd3b854b4650042b77642&amp;features_hash=36-77336">
+                                                                        <a title="Tivi 8K" class="a-links" rel="nofollow" href="{{route('details','8k')}}">
                                                                             <span class="nki-sort-next ">
                                                                                 <span class="path1"></span>
                                                                                 <span class="path2"></span>
                                                                             </span> Tivi 8K </a>
                                                                     </p>
                                                                 </li>
+                                                               
                                                                 <li>
                                                                     <p style="">
-                                                                        <a title="Google/Android Tivi" class="a-links" rel="nofollow" href="https://www.nguyenkim.com/tivi/?utm_campaign=dRsTOFDW2NKfTG-5TsQaWA&amp;traffic_id=62abd3b854b4650042b77642&amp;features_hash=36-195380-72010">
-                                                                            <span class="nki-sort-next ">
-                                                                                <span class="path1"></span>
-                                                                                <span class="path2"></span>
-                                                                            </span> Google/Android Tivi </a>
-                                                                    </p>
-                                                                </li>
-                                                                <li>
-                                                                    <p style="">
-                                                                        <a title="Smart Tivi" class="a-links" href="https://www.nguyenkim.com/tivi/?utm_campaign=dRsTOFDW2NKfTG-5TsQaWA&amp;traffic_id=62abd3b854b4650042b77642&amp;features_hash=36-206168-229788-82928">
+                                                                        <a title="Smart Tivi" class="a-links" href="{{route('details','smart-tivi')}}">
                                                                             <span class="nki-sort-next ">
                                                                                 <span class="path1"></span>
                                                                                 <span class="path2"></span>
                                                                             </span> Smart Tivi </a>
                                                                     </p>
                                                                 </li>
-                                                                <li>
-                                                                    <p style="">
-                                                                        <a title="Tivi thường (Non Smart Tivi)" class="a-links" rel="nofollow">
-                                                                            <span class="nki-sort-next ">
-                                                                                <span class="path1"></span>
-                                                                                <span class="path2"></span>
-                                                                            </span> Tivi thường (Non Smart Tivi) </a>
-                                                                    </p>
-                                                                </li>
-                                                                <li>
-                                                                    <p style="">
-                                                                        <a title="Lifestyle Tivi" class="a-links" href="https://www.nguyenkim.com/tivi/?utm_campaign=dRsTOFDW2NKfTG-5TsQaWA&amp;traffic_id=62abd3b854b4650042b77642&amp;features_hash=36-227973">
-                                                                            <span class="nki-sort-next ">
-                                                                                <span class="path1"></span>
-                                                                                <span class="path2"></span>
-                                                                            </span> Lifestyle Tivi </a>
-                                                                    </p>
-                                                                </li>
-                                                                <li>
-                                                                    <p style="">
-                                                                        <a title="Tivi Máy Chiếu" class="a-links" rel="nofollow" href="https://www.nguyenkim.com/tivi/?utm_campaign=dRsTOFDW2NKfTG-5TsQaWA&amp;traffic_id=62abd3b854b4650042b77642&amp;features_hash=36-230067">
-                                                                            <span class="nki-sort-next ">
-                                                                                <span class="path1"></span>
-                                                                                <span class="path2"></span>
-                                                                            </span> Tivi Máy Chiếu </a>
-                                                                    </p>
-                                                                </li>
+                                                               
+                                                            
                                                             </ul>
                                                         </div>
                                                     </div>
-                                                    <div class="item row1 bg-white">
-                                                        <div class="links">
-                                                            <h5 title="Loa - Âm thanh">
-                                                                <a class="a-links" href="/amply-va-loa/">Loa - Âm thanh <span class="nk-sticker">
-                                                                        <span class="path1"></span>
-                                                                        <span class="path2"></span>
-                                                                    </span>
-                                                                </a>
-                                                            </h5>
-                                                            <ul>
-                                                                <li>
-                                                                    <p style="">
-                                                                        <a title="Loa" class="a-links" href="/loa/"> Loa </a>
-                                                                    </p>
-                                                                </li>
-                                                                <li>
-                                                                    <p style="">
-                                                                        <a title="Micro" class="a-links" href="/micro/"> Micro </a>
-                                                                    </p>
-                                                                </li>
-                                                                <li>
-                                                                    <p style="">
-                                                                        <a title="Amply" class="a-links" href="/amply/"> Amply </a>
-                                                                    </p>
-                                                                </li>
-                                                                <li>
-                                                                    <p style="">
-                                                                        <a title="Micro" class="a-links" rel="nofollow" href="/micro/"> Micro </a>
-                                                                    </p>
-                                                                </li>
-                                                                <li>
-                                                                    <p style="">
-                                                                        <a title="Dàn âm thanh" class="a-links" href="/dan-may-nghe-nhac/"> Dàn âm thanh </a>
-                                                                    </p>
-                                                                </li>
-                                                                <li>
-                                                                    <p style="">
-                                                                        <a title="Loa thanh (Soundbar)" class="a-links" href="/loa-soundbar/"> Loa thanh (Soundbar) </a>
-                                                                    </p>
-                                                                </li>
-                                                                <li>
-                                                                    <p style="">
-                                                                        <a title="Loa kéo" class="a-links" rel="nofollow" href="/loa/?features_hash=399-124415">
-                                                                            <span class="nki-sort-next ">
-                                                                                <span class="path1"></span>
-                                                                                <span class="path2"></span>
-                                                                            </span> Loa kéo </a>
-                                                                    </p>
-                                                                </li>
-                                                                <li>
-                                                                    <p style="">
-                                                                        <a title="Loa Bluetooth" class="a-links" href="/loa-di-dong/"> Loa Bluetooth </a>
-                                                                    </p>
-                                                                </li>
-                                                                <li>
-                                                                    <p style="">
-                                                                        <a title="Đầu DVD Bluray" class="a-links" href="/dau-dia-dvd-bluray/"> Đầu DVD Bluray </a>
-                                                                    </p>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                    <div class="item row2 bg-gray">
-                                                        <div class="links">
-                                                            <h5 title="Phụ kiện cho Tivi và Âm Thanh"> Phụ kiện cho Tivi và Âm Thanh </h5>
-                                                            <ul>
-                                                                <li>
-                                                                    <p style="">
-                                                                        <a title="Cáp HDMI - Cáp Tivi" class="a-links" rel="nofollow" href="/day-cap-chuyen-doi/">
-                                                                            <span class="nki-sort-next ">
-                                                                                <span class="path1"></span>
-                                                                                <span class="path2"></span>
-                                                                            </span> Cáp HDMI - Cáp Tivi </a>
-                                                                    </p>
-                                                                </li>
-                                                                <li>
-                                                                    <p style="">
-                                                                        <a title="Giá treo tivi" class="a-links" rel="nofollow" href="/gia-treo-tivi/">
-                                                                            <span class="nki-sort-next ">
-                                                                                <span class="path1"></span>
-                                                                                <span class="path2"></span>
-                                                                            </span> Giá treo tivi </a>
-                                                                    </p>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
+                                                    
                                                 </div>
                                             </div> 
                                         </li>
@@ -377,6 +235,244 @@
                                                     
                                                 </p>
                                             </div>
+
+                                            <div class="sub-menu tivi-loa-amthanh" style="display: none;">
+                                                <div class=" menu-tivi children_sort">
+                                                    <div class="item row2 bg-white">
+                                                        <div class="links">
+                                                            <h5 title="Tivi">
+                                                                <a class="a-links" href="{{route('details','tu-lanh')}}">Tủ lạnh <span class="nk-sticker">
+                                                                        <span class="path1"></span>
+                                                                        <span class="path2"></span>
+                                                                    </span>
+                                                                </a>
+                                                            </h5>
+                                                        </div>
+                                                        <div class="links">
+                                                            <h5 title="Thương hiệu">
+
+                                                                <a class="a-links" href="{{ route('details', 'thuong-hieu-tivi') }}">Thương hiệu <span class="nk-sticker">
+                                                                        <span class="path1"></span>
+                                                                        <span class="path2"></span>
+                                                                    </span>
+                                                                </a>
+                                                            </h5>
+
+                                                            <ul>
+                                                                <li>
+                                                                    <p style="">
+                                                                        <a title="Tủ lạnh Hitachi" class="a-links" href="{{route('details','tu-lanh-hitachi')}}">
+                                                                            <span class="nki-sort-next ">
+                                                                                <span class="path1"></span>
+                                                                                <span class="path2"></span>
+                                                                            </span> Tủ lạnh Hitachi </a>
+                                                                    </p>
+                                                                </li>
+                                                                <li>
+                                                                    <p style="">
+                                                                        <a title="Tủ lạnh Panasonic" class="a-links" href="{{route('details','tu-lanh-panasonic')}}">
+                                                                            <span class="nki-sort-next ">
+                                                                                <span class="path1"></span>
+                                                                                <span class="path2"></span>
+                                                                            </span> Tủ lạnh Panasonic </a>
+                                                                    </p>
+                                                                </li>
+                                                                <li>
+                                                                    <p style="">
+                                                                        <a title="Tủ lạnh Samsung" class="a-links" href="{{route('details','tu-lanh-samsung')}}">
+                                                                            <span class="nki-sort-next ">
+                                                                                <span class="path1"></span>
+                                                                                <span class="path2"></span>
+                                                                            </span> Tủ lạnh Samsung </a>
+                                                                    </p>
+                                                                </li>
+                                                                <li>
+                                                                    <p style="">
+                                                                        <a title="Tủ lạnh Sharp" class="a-links" href="{{route('details','tu-lanh-sharp')}}">
+                                                                            <span class="nki-sort-next ">
+                                                                                <span class="path1"></span>
+                                                                                <span class="path2"></span>
+                                                                            </span> Tủ lạnh Sharp </a>
+                                                                    </p>
+                                                                </li>
+                                                               
+                                                                <li>
+                                                                    <p style="">
+                                                                        <a title="Philips" class="a-links" href="{{route('details','tu-lanh-lg')}}">
+                                                                            <span class="nki-sort-next ">
+                                                                                <span class="path1"></span>
+                                                                                <span class="path2"></span>
+                                                                            </span> Tủ lạnh LG </a>
+                                                                    </p>
+                                                                </li>
+                                                                <li>
+                                                                    <p style="">
+                                                                        <a title="Sharp" class="a-links" href="{{route('details','tivi-sharp')}}">
+                                                                            <span class="nki-sort-next ">
+                                                                                <span class="path1"></span>
+                                                                                <span class="path2"></span>
+                                                                            </span> Sharp </a>
+                                                                    </p>
+                                                                </li>
+                                                                <li>
+                                                                    <p style="">
+                                                                        <a title="Sharp" class="a-links" href="{{route('details','tu-lanh-funiki')}}">
+                                                                            <span class="nki-sort-next ">
+                                                                                <span class="path1"></span>
+                                                                                <span class="path2"></span>
+                                                                            </span> Tủ lạnh Funiki </a>
+                                                                    </p>
+                                                                </li>
+
+                                                                <li>
+                                                                    <p style="">
+                                                                        <a title="Sharp" class="a-links" href="{{route('details','tu-lanh-mitsubishi')}}">
+                                                                            <span class="nki-sort-next ">
+                                                                                <span class="path1"></span>
+                                                                                <span class="path2"></span>
+                                                                            </span> Tủ lạnh Mitsubishi </a>
+                                                                    </p>
+                                                                </li>
+
+                                                                <li>
+                                                                    <p style="">
+                                                                        <a title="Sharp" class="a-links" href="{{route('details','tu-lanh-hitachi')}}">
+                                                                            <span class="nki-sort-next ">
+                                                                                <span class="path1"></span>
+                                                                                <span class="path2"></span>
+                                                                            </span> Tủ lạnh Hitachi </a>
+                                                                    </p>
+                                                                </li>
+                                                               
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="item row2 bg-gray">
+                                                        <div class="links">
+                                                            <h5 title="Kích thước">
+                                                                <a class="a-links" href="#">Dung tích <span class="nk-sticker">
+                                                                        <span class="path1"></span>
+                                                                        <span class="path2"></span>
+                                                                    </span>
+                                                                </a>
+                                                            </h5>
+
+                                                            <ul>
+                                                                <li>
+                                                                    <p style="">
+                                                                        <a title="Từ 27&quot; - 43&quot;" class="a-links" href="{{route('details','duoi-150-lit')}}">
+                                                                            <span class="nki-sort-next ">
+                                                                                <span class="path1"></span>
+                                                                                <span class="path2"></span>
+                                                                            </span> Dưới 150 lít </a>
+                                                                    </p>
+                                                                </li>
+                                                                <li>
+                                                                    <p style="">
+                                                                        <a title="Từ 44&quot; - 55&quot; " class="a-links" href="{{route('details','tu-150-200-lit')}}">
+                                                                            <span class="nki-sort-next ">
+                                                                                <span class="path1"></span>
+                                                                                <span class="path2"></span>
+                                                                            </span> Từ 150-200 lít </a>
+                                                                    </p>
+                                                                </li>
+                                                                <li>
+                                                                    <p style="">
+                                                                        <a title="Từ 56&quot; - 65&quot;" class="a-links" href="{{route('details','tu-300-400-lit')}}">
+                                                                            <span class="nki-sort-next ">
+                                                                                <span class="path1"></span>
+                                                                                <span class="path2"></span>
+                                                                            </span> Từ 300-400 lít</a>
+                                                                    </p>
+                                                                </li>
+                                                                <li>
+                                                                    <p style="">
+                                                                        <a title="Từ 66&quot; - 75&quot;" class="a-links" href="{{route('details','tu-400-500-lit')}}">
+                                                                            <span class="nki-sort-next ">
+                                                                                <span class="path1"></span>
+                                                                                <span class="path2"></span>
+                                                                            </span> Từ 400-500 lít </a>
+                                                                    </p>
+                                                                </li>
+                                                                <li>
+                                                                    <p style="">
+                                                                        <a title="Trên 75&quot;" class="a-links" href="{{route('details','tu-500-600-lit')}}">
+                                                                            <span class="nki-sort-next ">
+                                                                                <span class="path1"></span>
+                                                                                <span class="path2"></span>
+                                                                            </span> Từ 500-600 lít </a>
+                                                                    </p>
+                                                                </li>
+
+                                                                <li>
+                                                                    <p style="">
+                                                                        <a title="Trên 75&quot;" class="a-links" href="{{route('details','tren-600-lit')}}">
+                                                                            <span class="nki-sort-next ">
+                                                                                <span class="path1"></span>
+                                                                                <span class="path2"></span>
+                                                                            </span> Trên 600 lít </a>
+                                                                    </p>
+                                                                </li>
+
+
+                                                            </ul>
+                                                        </div>
+                                                        <div class="links">
+                                                            <h5 title="Loại Tivi">
+                                                                <a class="a-links" href="/tivi">Loại Tủ <span class="nk-sticker">
+                                                                        <span class="path1"></span>
+                                                                        <span class="path2"></span>
+                                                                    </span>
+                                                                </a>
+                                                            </h5>
+
+                                                            <ul>
+                                                                <li>
+                                                                    <p style="">
+                                                                        <a title="Tivi QLED" class="a-links" href="{{route('details','tu-lanh-mini')}}">
+                                                                            <span class="nki-sort-next ">
+                                                                                <span class="path1"></span>
+                                                                                <span class="path2"></span>
+                                                                            </span> Tủ lạnh mini </a>
+                                                                    </p>
+                                                                </li>
+                                                                <li>
+                                                                    <p style="">
+                                                                        <a title="Tivi OLED" class="a-links" href="{{route('details','tu-lanh-ngan-da-tren')}}">
+                                                                            <span class="nki-sort-next ">
+                                                                                <span class="path1"></span>
+                                                                                <span class="path2"></span>
+                                                                            </span> Tủ lạnh ngăn đá trên </a>
+                                                                    </p>
+                                                                </li>
+                                                                
+                                                                <li>
+                                                                    <p style="">
+                                                                        <a title="Tivi 8K" class="a-links" rel="nofollow" href="{{route('details','tu-lanh-ngan-da-duoi')}}">
+                                                                            <span class="nki-sort-next ">
+                                                                                <span class="path1"></span>
+                                                                                <span class="path2"></span>
+                                                                            </span> Tủ lạnh ngăn đá dưới </a>
+                                                                    </p>
+                                                                </li>
+                                                               
+                                                                <li>
+                                                                    <p style="">
+                                                                        <a title="Smart Tivi" class="a-links" href="{{route('details','tu-lanh-side-by-side')}}">
+                                                                            <span class="nki-sort-next ">
+                                                                                <span class="path1"></span>
+                                                                                <span class="path2"></span>
+                                                                            </span> Tủ lạnh side by side </a>
+                                                                    </p>
+                                                                </li>
+                                                               
+                                                            
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div> 
                                            
                                         </li>
 
@@ -392,7 +488,7 @@
                                                 </p>
                                             </div>
                                             <div class="sub-menu may-lanh" style="display: none;">
-                                                <div class=" menu-maylanh children_sort" style="display: none;">
+                                                <div class=" menu-maylanh children_sort">
                                                     <div class="item row2 bg-white">
                                                         <div class="links">
                                                             <h5 title="Máy lạnh">
@@ -403,9 +499,13 @@
                                                                 </a>
                                                             </h5>
                                                         </div>
+
+                                                         
+
+
                                                         <div class="links">
                                                             <h5 title="Thương hiệu">
-                                                                <span class="js_hidden_link" data-url="L21heS1sYW5oLw==">Thương hiệu <span class="nki-sticker-hot nk-sticker">
+                                                                <span class="js_hidden_link" data-url="L21heS1sYW5oLw==">Thương hiệu 
                                                                         <span class="path1"></span>
                                                                         <span class="path2"></span>
                                                                     </span>
@@ -418,101 +518,71 @@
                                                                             <span class="nki-sort-next ">
                                                                                 <span class="path1"></span>
                                                                                 <span class="path2"></span>
-                                                                            </span> Panasonic </a>
+                                                                            </span> Máy lạnh Daikin </a>
                                                                     </p>
                                                                 </li>
                                                                 <li>
                                                                     <p style="">
-                                                                        <a title="Daikin" class="a-links" href="/may-lanh-daikin/">
+                                                                        <a title="Daikin" class="a-links" href="/may-lanh-mitsubishi">
                                                                             <span class="nki-sort-next ">
                                                                                 <span class="path1"></span>
                                                                                 <span class="path2"></span>
-                                                                            </span> Daikin </a>
+                                                                            </span> Máy lạnh Mitsubishi </a>
                                                                     </p>
                                                                 </li>
                                                                 <li>
                                                                     <p style="">
-                                                                        <a title="Toshiba" class="a-links" href="/may-lanh-toshiba/">
+                                                                        <a title="Toshiba" class="a-links" href="/may-lanh-lg">
                                                                             <span class="nki-sort-next ">
                                                                                 <span class="path1"></span>
                                                                                 <span class="path2"></span>
-                                                                            </span> Toshiba </a>
+                                                                            </span> Máy lạnh LG </a>
                                                                     </p>
                                                                 </li>
                                                                 <li>
                                                                     <p style="">
-                                                                        <a title="Casper" class="a-links" href="/may-lanh-casper/">
+                                                                        <a title="Casper" class="a-links" href="/may-lanh-sharp">
                                                                             <span class="nki-sort-next ">
                                                                                 <span class="path1"></span>
                                                                                 <span class="path2"></span>
-                                                                            </span> Casper </a>
+                                                                            </span> Máy lạnh Sharp </a>
                                                                     </p>
                                                                 </li>
                                                                 <li>
                                                                     <p style="">
-                                                                        <a title="LG" class="a-links" href="/may-lanh-lg/">
+                                                                        <a title="LG" class="a-links" href="/may-lanh-samsung/">
                                                                             <span class="nki-sort-next ">
                                                                                 <span class="path1"></span>
                                                                                 <span class="path2"></span>
-                                                                            </span> LG </a>
+                                                                            </span> Máy lạnh Samsung </a>
                                                                     </p>
                                                                 </li>
                                                                 <li>
                                                                     <p style="">
-                                                                        <a title="Samsung" class="a-links" href="/may-lanh-samsung/">
+                                                                        <a title="Samsung" class="a-links" href="/may-lanh-nagakawa/">
                                                                             <span class="nki-sort-next ">
                                                                                 <span class="path1"></span>
                                                                                 <span class="path2"></span>
-                                                                            </span> Samsung </a>
+                                                                            </span> Máy lạnh Nagakawa </a>
                                                                     </p>
                                                                 </li>
                                                                 <li>
                                                                     <p style="">
-                                                                        <a title="Sharp" class="a-links" href="/may-lanh-sharp/">
+                                                                        <a title="Sharp" class="a-links" href="/may-lanh-midea/">
                                                                             <span class="nki-sort-next ">
                                                                                 <span class="path1"></span>
                                                                                 <span class="path2"></span>
-                                                                            </span> Sharp </a>
+                                                                            </span> Máy lạnh Midea </a>
                                                                     </p>
                                                                 </li>
-                                                                <li>
-                                                                    <p style="">
-                                                                        <a title="Mitsubishi Electric" class="a-links" href="/may-lanh-mitsubishi/">
-                                                                            <span class="nki-sort-next ">
-                                                                                <span class="path1"></span>
-                                                                                <span class="path2"></span>
-                                                                            </span> Mitsubishi Electric </a>
-                                                                    </p>
-                                                                </li>
-                                                                <li>
-                                                                    <p style="">
-                                                                        <span title="AQUA" class="js_hidden_link" rel="nofollow" data-url="L21heS1sYW5oLWFxdWEv">
-                                                                            <span class="nki-sort-next ">
-                                                                                <span class="path1"></span>
-                                                                                <span class="path2"></span>
-                                                                            </span> AQUA </span>
-                                                                    </p>
-                                                                </li>
-                                                                <li>
-                                                                    <p style="">
-                                                                        <span title="Midea" class="js_hidden_link" data-url="L21heS1sYW5oLW1pZGVhLw==">
-                                                                            <span class="nki-sort-next ">
-                                                                                <span class="path1"></span>
-                                                                                <span class="path2"></span>
-                                                                            </span> Midea </span>
-                                                                    </p>
-                                                                </li>
-                                                                <li>
-                                                                    <a title="Thương hiệu" href="/may-lanh/">Xem thêm <i class="text-arrow"> →</i>
-                                                                    </a>
-                                                                </li>
+                                                                
                                                             </ul>
                                                         </div>
                                                     </div>
                                                     <div class="item row2 bg-gray">
                                                         <div class="links">
                                                             <h5 title="Công suất làm lạnh">
-                                                                <span class="js_hidden_link" data-url="L21heS1sYW5oLw==">Công suất làm lạnh <span class="nk-sticker">
+                                                                <span class="js_hidden_link" data-url="L21heS1sYW5oLw==">Công suất làm lạnh
                                                                         <span class="path1"></span>
                                                                         <span class="path2"></span>
                                                                     </span>
@@ -521,7 +591,7 @@
                                                             <ul>
                                                                 <li>
                                                                     <p style="">
-                                                                        <a title="1 HP" class="a-links" href="https://www.nguyenkim.com/may-lanh/?sort_by=position&amp;sort_order=desc&amp;features_hash=70-5407">
+                                                                        <a title="1 HP" class="a-links" href="">
                                                                             <span class="nki-sort-next ">
                                                                                 <span class="path1"></span>
                                                                                 <span class="path2"></span>
@@ -530,7 +600,7 @@
                                                                 </li>
                                                                 <li>
                                                                     <p style="">
-                                                                        <a title="1.5 HP" class="a-links" href="https://www.nguyenkim.com/may-lanh/?sort_by=position&amp;sort_order=desc&amp;features_hash=70-5976">
+                                                                        <a title="1.5 HP" class="a-links" href="">
                                                                             <span class="nki-sort-next ">
                                                                                 <span class="path1"></span>
                                                                                 <span class="path2"></span>
@@ -539,7 +609,7 @@
                                                                 </li>
                                                                 <li>
                                                                     <p style="">
-                                                                        <a title="2 HP" class="a-links" href="https://www.nguyenkim.com/may-lanh/?sort_by=position&amp;sort_order=desc&amp;features_hash=70-5523">
+                                                                        <a title="2 HP" class="a-links" href="">
                                                                             <span class="nki-sort-next ">
                                                                                 <span class="path1"></span>
                                                                                 <span class="path2"></span>
@@ -548,7 +618,7 @@
                                                                 </li>
                                                                 <li>
                                                                     <p style="">
-                                                                        <a title="2.5 HP" class="a-links" href="https://www.nguyenkim.com/may-lanh/?sort_by=position&amp;sort_order=desc&amp;features_hash=70-7334">
+                                                                        <a title="2.5 HP" class="a-links" href="">
                                                                             <span class="nki-sort-next ">
                                                                                 <span class="path1"></span>
                                                                                 <span class="path2"></span>
@@ -558,274 +628,39 @@
                                                             </ul>
                                                         </div>
                                                         <div class="links">
-                                                            <h5 title="Giá bán">
-                                                                <span class="js_hidden_link" data-url="L21heS1sYW5oLw==">Giá bán <span class="nk-sticker">
-                                                                        <span class="path1"></span>
-                                                                        <span class="path2"></span>
+                                                            <div class="links">
+                                                                <h5 title="Quạt - sưởi">
+                                                                    <span class="js_hidden_link" data-url="L3F1YXQtdmkv">Tiết kiệm điện <span class="nk-sticker">
+                                                                            <span class="path1"></span>
+                                                                            <span class="path2"></span>
+                                                                        </span>
                                                                     </span>
-                                                                </span>
-                                                            </h5>
-                                                            <ul>
-                                                                <li>
-                                                                    <p style="">
-                                                                        <a title="Dưới 7 triệu" class="a-links" href="https://www.nguyenkim.com/may-lanh/?features_hash=34-0-6999999-VND">
-                                                                            <span class="nki-sort-next ">
-                                                                                <span class="path1"></span>
-                                                                                <span class="path2"></span>
-                                                                            </span> Dưới 7 triệu </a>
-                                                                    </p>
-                                                                </li>
-                                                                <li>
-                                                                    <p style="">
-                                                                        <a title="Từ 7 - 10 triệu" class="a-links" href="https://www.nguyenkim.com/may-lanh/?sort_by=position&amp;sort_order=desc&amp;features_hash=34-7000000-10000000-VND">
-                                                                            <span class="nki-sort-next ">
-                                                                                <span class="path1"></span>
-                                                                                <span class="path2"></span>
-                                                                            </span> Từ 7 - 10 triệu </a>
-                                                                    </p>
-                                                                </li>
-                                                                <li>
-                                                                    <p style="">
-                                                                        <a title="Từ 10 - 15 triệu" class="a-links" href="https://www.nguyenkim.com/may-lanh/?features_hash=34-10000001-15000000-VND">
-                                                                            <span class="nki-sort-next ">
-                                                                                <span class="path1"></span>
-                                                                                <span class="path2"></span>
-                                                                            </span> Từ 10 - 15 triệu </a>
-                                                                    </p>
-                                                                </li>
-                                                                <li>
-                                                                    <p style="">
-                                                                        <a title="Trên 15 triệu" class="a-links" href="https://www.nguyenkim.com/may-lanh/?features_hash=34-15000001-9999999999.99-VND">
-                                                                            <span class="nki-sort-next ">
-                                                                                <span class="path1"></span>
-                                                                                <span class="path2"></span>
-                                                                            </span> Trên 15 triệu </a>
-                                                                    </p>
-                                                                </li>
-                                                            </ul>
+                                                                </h5>
+                                                                <ul>
+                                                                    <li>
+                                                                        <p style="">
+                                                                            <a title="Quạt điều hòa" class="a-links" rel="nofollow" href="https://www.nguyenkim.com/quat-vi/?features_hash=65-148987-148986-5954">
+                                                                                <span class="nki-sort-next ">
+                                                                                    <span class="path1"></span>
+                                                                                    <span class="path2"></span>
+                                                                                </span> Có tiết kiệm điện </a>
+                                                                        </p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <p style="">
+                                                                            <a title="Quạt đứng" class="a-links" rel="nofollow">
+                                                                                <span class="nki-sort-next ">
+                                                                                    <span class="path1"></span>
+                                                                                    <span class="path2"></span>
+                                                                                </span> Không tiết kiệm </a>
+                                                                        </p>
+                                                                    </li>
+
+                                                                </ul>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                    <div class="item row2 bg-white">
-                                                        <div class="links">
-                                                            <h5 title="Quạt - sưởi">
-                                                                <span class="js_hidden_link" data-url="L3F1YXQtdmkv">Quạt - sưởi <span class="nk-sticker">
-                                                                        <span class="path1"></span>
-                                                                        <span class="path2"></span>
-                                                                    </span>
-                                                                </span>
-                                                            </h5>
-                                                            <ul>
-                                                                <li>
-                                                                    <p style="">
-                                                                        <a title="Quạt điều hòa" class="a-links" rel="nofollow" href="https://www.nguyenkim.com/quat-vi/?features_hash=65-148987-148986-5954">
-                                                                            <span class="nki-sort-next ">
-                                                                                <span class="path1"></span>
-                                                                                <span class="path2"></span>
-                                                                            </span> Quạt điều hòa </a>
-                                                                    </p>
-                                                                </li>
-                                                                <li>
-                                                                    <p style="">
-                                                                        <a title="Quạt đứng" class="a-links" rel="nofollow">
-                                                                            <span class="nki-sort-next ">
-                                                                                <span class="path1"></span>
-                                                                                <span class="path2"></span>
-                                                                            </span> Quạt đứng </a>
-                                                                    </p>
-                                                                </li>
-                                                                <li>
-                                                                    <p style="">
-                                                                        <a title="Quạt bàn" class="a-links" rel="nofollow">
-                                                                            <span class="nki-sort-next ">
-                                                                                <span class="path1"></span>
-                                                                                <span class="path2"></span>
-                                                                            </span> Quạt bàn </a>
-                                                                    </p>
-                                                                </li>
-                                                                <li>
-                                                                    <p style="">
-                                                                        <a title="Quạt lửng" class="a-links" rel="nofollow">
-                                                                            <span class="nki-sort-next ">
-                                                                                <span class="path1"></span>
-                                                                                <span class="path2"></span>
-                                                                            </span> Quạt lửng </a>
-                                                                    </p>
-                                                                </li>
-                                                                <li>
-                                                                    <p style="">
-                                                                        <a title="Quạt tháp" class="a-links" rel="nofollow">
-                                                                            <span class="nki-sort-next ">
-                                                                                <span class="path1"></span>
-                                                                                <span class="path2"></span>
-                                                                            </span> Quạt tháp </a>
-                                                                    </p>
-                                                                </li>
-                                                                <li>
-                                                                    <p style="">
-                                                                        <a title="Quạt trần" class="a-links" rel="nofollow" href="https://www.nguyenkim.com/quat-vi/?features_hash=65-6230">
-                                                                            <span class="nki-sort-next ">
-                                                                                <span class="path1"></span>
-                                                                                <span class="path2"></span>
-                                                                            </span> Quạt trần </a>
-                                                                    </p>
-                                                                </li>
-                                                                <li>
-                                                                    <p style="">
-                                                                        <a title="Quạt sạc" class="a-links" rel="nofollow" href="https://www.nguyenkim.com/quat-vi/?features_hash=65-6097">
-                                                                            <span class="nki-sort-next ">
-                                                                                <span class="path1"></span>
-                                                                                <span class="path2"></span>
-                                                                            </span> Quạt sạc </a>
-                                                                    </p>
-                                                                </li>
-                                                                <li>
-                                                                    <p style="">
-                                                                        <a title="Máy hút ẩm" class="a-links" rel="nofollow" href="/may-hut-am-tao-am/">
-                                                                            <span class="nki-sort-next ">
-                                                                                <span class="path1"></span>
-                                                                                <span class="path2"></span>
-                                                                            </span> Máy hút ẩm </a>
-                                                                    </p>
-                                                                </li>
-                                                                <li>
-                                                                    <p style="">
-                                                                        <a title="Máy sưởi - Đèn sưởi" class="a-links" rel="nofollow" href="/may-suoi-den-suoi/">
-                                                                            <span class="nki-sort-next ">
-                                                                                <span class="path1"></span>
-                                                                                <span class="path2"></span>
-                                                                            </span> Máy sưởi - Đèn sưởi </a>
-                                                                    </p>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                        <div class="links">
-                                                            <h5 title="Máy hút ẩm">
-                                                                <a class="a-links" href="/may-hut-am-tao-am/">Máy hút ẩm <span class="nk-sticker">
-                                                                        <span class="path1"></span>
-                                                                        <span class="path2"></span>
-                                                                    </span>
-                                                                </a>
-                                                            </h5>
-                                                            <ul>
-                                                                <li>
-                                                                    <p style="">
-                                                                        <a title="Stadler Form" class="a-links" href="/may-hut-am-stadler-form/">
-                                                                            <span class="nki-sort-next ">
-                                                                                <span class="path1"></span>
-                                                                                <span class="path2"></span>
-                                                                            </span> Stadler Form </a>
-                                                                    </p>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                    <div class="item row2 bg-gray">
-                                                        <div class="links">
-                                                            <h5 title="Máy lọc không khí">
-                                                                <a class="a-links" href="/may-loc-khong-khi/">Máy lọc không khí <span class="nk-sticker">
-                                                                        <span class="path1"></span>
-                                                                        <span class="path2"></span>
-                                                                    </span>
-                                                                </a>
-                                                            </h5>
-                                                            <ul>
-                                                                <li>
-                                                                    <p style="">
-                                                                        <a title="LG" class="a-links" href="/may-loc-khong-khi-lg/">
-                                                                            <span class="nki-sort-next ">
-                                                                                <span class="path1"></span>
-                                                                                <span class="path2"></span>
-                                                                            </span> LG </a>
-                                                                    </p>
-                                                                </li>
-                                                                <li>
-                                                                    <p style="">
-                                                                        <a title="Dyson" class="a-links" rel="nofollow" href="/may-loc-khong-khi-dyson/">
-                                                                            <span class="nki-sort-next ">
-                                                                                <span class="path1"></span>
-                                                                                <span class="path2"></span>
-                                                                            </span> Dyson </a>
-                                                                    </p>
-                                                                </li>
-                                                                <li>
-                                                                    <p style="">
-                                                                        <a title="Sharp" class="a-links" href="/may-loc-khong-khi-sharp/">
-                                                                            <span class="nki-sort-next ">
-                                                                                <span class="path1"></span>
-                                                                                <span class="path2"></span>
-                                                                            </span> Sharp </a>
-                                                                    </p>
-                                                                </li>
-                                                                <li>
-                                                                    <p style="">
-                                                                        <a title="Hitachi" class="a-links" href="/may-loc-khong-khi-hitachi/">
-                                                                            <span class="nki-sort-next ">
-                                                                                <span class="path1"></span>
-                                                                                <span class="path2"></span>
-                                                                            </span> Hitachi </a>
-                                                                    </p>
-                                                                </li>
-                                                                <li>
-                                                                    <p style="">
-                                                                        <a title="Coway" class="a-links" href="/may-loc-khong-khi-coway/">
-                                                                            <span class="nki-sort-next ">
-                                                                                <span class="path1"></span>
-                                                                                <span class="path2"></span>
-                                                                            </span> Coway </a>
-                                                                    </p>
-                                                                </li>
-                                                                <li>
-                                                                    <p style="">
-                                                                        <span title="Daikin" class="js_hidden_link" data-url="aHR0cHM6Ly93d3cubmd1eWVua2ltLmNvbS9tYXktbG9jLWtob25nLWtoaS1kYWlraW4v">
-                                                                            <span class="nki-sort-next ">
-                                                                                <span class="path1"></span>
-                                                                                <span class="path2"></span>
-                                                                            </span> Daikin </span>
-                                                                    </p>
-                                                                </li>
-                                                                <li>
-                                                                    <p style="">
-                                                                        <a title="Samsung" class="a-links" href="/may-loc-khong-khi-samsung/">
-                                                                            <span class="nki-sort-next ">
-                                                                                <span class="path1"></span>
-                                                                                <span class="path2"></span>
-                                                                            </span> Samsung </a>
-                                                                    </p>
-                                                                </li>
-                                                                <li>
-                                                                    <p style="">
-                                                                        <a title="Electrolux" class="a-links" href="/may-loc-khong-khi-electrolux/">
-                                                                            <span class="nki-sort-next ">
-                                                                                <span class="path1"></span>
-                                                                                <span class="path2"></span>
-                                                                            </span> Electrolux </a>
-                                                                    </p>
-                                                                </li>
-                                                                <li>
-                                                                    <p style="">
-                                                                        <a title="Xiaomi" class="a-links" href="/may-loc-khong-khi-xiaomi/">
-                                                                            <span class="nki-sort-next ">
-                                                                                <span class="path1"></span>
-                                                                                <span class="path2"></span>
-                                                                            </span> Xiaomi </a>
-                                                                    </p>
-                                                                </li>
-                                                                <li>
-                                                                    <p style="">
-                                                                        <span title="Panasonic" class="js_hidden_link" data-url="L21heS1sb2Mta2hvbmcta2hpLXBhbmFzb25pYy8=">
-                                                                            <span class="nki-sort-next ">
-                                                                                <span class="path1"></span>
-                                                                                <span class="path2"></span>
-                                                                            </span> Panasonic </span>
-                                                                    </p>
-                                                                </li>
-                                                                <li>
-                                                                    <a title="Máy lọc không khí" href="/may-loc-khong-khi/">Xem thêm <i class="text-arrow"> →</i>
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
+                                                   
                                                 </div>
                                             </div>
                                         </li>
@@ -842,7 +677,7 @@
                                                 </p>
                                             </div>
                                             <div class="sub-menu may-giat-may-say" style="display: none;">
-                                                <div class=" menu-maygiat children_sort" style="display: none;">
+                                                <div class=" menu-maygiat children_sort">
                                                     <div class="item row2 bg-white">
                                                         <div class="links">
                                                             <h5 title="Máy giặt">
@@ -855,7 +690,7 @@
                                                         </div>
                                                         <div class="links">
                                                             <h5 title="Thương hiệu">
-                                                                <a class="a-links" href="https://www.nguyenkim.com/may-giat/?sort_by=position&amp;sort_order=desc">Thương hiệu <span class="nk-sticker">
+                                                                <a class="a-links" href="#">Thương hiệu <span class="nk-sticker">
                                                                         <span class="path1"></span>
                                                                         <span class="path2"></span>
                                                                     </span>
@@ -864,7 +699,7 @@
                                                             <ul>
                                                                 <li>
                                                                     <p style="">
-                                                                        <a title="LG" class="a-links" href="/may-giat-lg/">
+                                                                        <a title="LG" class="a-links" href="">
                                                                             <span class="nki-sort-next ">
                                                                                 <span class="path1"></span>
                                                                                 <span class="path2"></span>
@@ -873,7 +708,7 @@
                                                                 </li>
                                                                 <li>
                                                                     <p style="">
-                                                                        <a title="Electrolux" class="a-links" href="/may-giat-electrolux/">
+                                                                        <a title="Electrolux" class="a-links" href="">
                                                                             <span class="nki-sort-next ">
                                                                                 <span class="path1"></span>
                                                                                 <span class="path2"></span>
@@ -882,7 +717,7 @@
                                                                 </li>
                                                                 <li>
                                                                     <p style="">
-                                                                        <a title="Samsung" class="a-links" href="/may-giat-samsung/">
+                                                                        <a title="Samsung" class="a-links" href="">
                                                                             <span class="nki-sort-next ">
                                                                                 <span class="path1"></span>
                                                                                 <span class="path2"></span>
@@ -891,7 +726,7 @@
                                                                 </li>
                                                                 <li>
                                                                     <p style="">
-                                                                        <a title="Toshiba" class="a-links" href="/may-giat-toshiba/">
+                                                                        <a title="Toshiba" class="a-links" href="">
                                                                             <span class="nki-sort-next ">
                                                                                 <span class="path1"></span>
                                                                                 <span class="path2"></span>
@@ -925,15 +760,7 @@
                                                                             </span> Whirlpool </a>
                                                                     </p>
                                                                 </li>
-                                                                <li>
-                                                                    <p style="">
-                                                                        <a title="Casper" class="a-links" rel="nofollow" href="/may-giat-casper/">
-                                                                            <span class="nki-sort-next ">
-                                                                                <span class="path1"></span>
-                                                                                <span class="path2"></span>
-                                                                            </span> Casper </a>
-                                                                    </p>
-                                                                </li>
+                                                                
                                                                 <li>
                                                                     <p style="">
                                                                         <a title="Sharp" class="a-links" href="/may-giat-sharp/">
@@ -949,7 +776,7 @@
                                                     <div class="item row2 bg-gray">
                                                         <div class="links">
                                                             <h5 title="Loại máy giặt">
-                                                                <a class="a-links" href="https://www.nguyenkim.com/may-giat/?sort_by=position&amp;sort_order=desc">Loại máy giặt <span class="nk-sticker">
+                                                                <a class="a-links" href="">Loại máy giặt <span class="nk-sticker">
                                                                         <span class="path1"></span>
                                                                         <span class="path2"></span>
                                                                     </span>
@@ -958,7 +785,7 @@
                                                             <ul>
                                                                 <li>
                                                                     <p style="">
-                                                                        <a title="Cửa trước" class="a-links" href="https://www.nguyenkim.com/may-giat/?sort_by=position&amp;sort_order=desc&amp;features_hash=72-6127">
+                                                                        <a title="Cửa trước" class="a-links" href="">
                                                                             <span class="nki-sort-next ">
                                                                                 <span class="path1"></span>
                                                                                 <span class="path2"></span>
@@ -967,7 +794,7 @@
                                                                 </li>
                                                                 <li>
                                                                     <p style="">
-                                                                        <a title="Cửa trên" class="a-links" href="https://www.nguyenkim.com/may-giat/?sort_by=position&amp;sort_order=desc&amp;features_hash=72-5708">
+                                                                        <a title="Cửa trên" class="a-links" href="">
                                                                             <span class="nki-sort-next ">
                                                                                 <span class="path1"></span>
                                                                                 <span class="path2"></span>
@@ -976,7 +803,7 @@
                                                                 </li>
                                                                 <li>
                                                                     <p style="">
-                                                                        <a title="Lồng đôi" class="a-links" href="https://www.nguyenkim.com/may-giat/?sort_by=position&amp;sort_order=desc&amp;features_hash=72-95507">
+                                                                        <a title="Lồng đôi" class="a-links" href="">
                                                                             <span class="nki-sort-next ">
                                                                                 <span class="path1"></span>
                                                                                 <span class="path2"></span>
@@ -985,27 +812,19 @@
                                                                 </li>
                                                                 <li>
                                                                     <p style="">
-                                                                        <a title="Tủ chăm sóc quần áo" class="a-links" href="https://www.nguyenkim.com/may-giat/?features_hash=72-127539">
+                                                                        <a title="Tủ chăm sóc quần áo" class="a-links" href="">
                                                                             <span class="nki-sort-next ">
                                                                                 <span class="path1"></span>
                                                                                 <span class="path2"></span>
                                                                             </span> Tủ chăm sóc quần áo </a>
                                                                     </p>
                                                                 </li>
-                                                                <li>
-                                                                    <p style="">
-                                                                        <a title="Tháp giặt sấy" class="a-links" href="https://www.nguyenkim.com/may-giat/?features_hash=72-293524">
-                                                                            <span class="nki-sort-next ">
-                                                                                <span class="path1"></span>
-                                                                                <span class="path2"></span>
-                                                                            </span> Tháp giặt sấy </a>
-                                                                    </p>
-                                                                </li>
+                                                                
                                                             </ul>
                                                         </div>
                                                         <div class="links">
                                                             <h5 title="Khối lượng">
-                                                                <a class="a-links" href="https://www.nguyenkim.com/may-giat/?sort_by=position&amp;sort_order=desc">Khối lượng <span class="nk-sticker">
+                                                                <a class="a-links" href="#">Khối lượng <span class="nk-sticker">
                                                                         <span class="path1"></span>
                                                                         <span class="path2"></span>
                                                                     </span>
@@ -1014,7 +833,7 @@
                                                             <ul>
                                                                 <li>
                                                                     <p style="">
-                                                                        <a title="Trên 10kg" class="a-links" href="https://www.nguyenkim.com/may-giat/?sort_by=position&amp;sort_order=desc&amp;features_hash=73-73800-10662-86165-8906-16001-86179-8434-25569-10719-104868-9855-24350-119912-6594-24097-96379-90445-79428">
+                                                                        <a title="Trên 10kg" class="a-links" href="">
                                                                             <span class="nki-sort-next ">
                                                                                 <span class="path1"></span>
                                                                                 <span class="path2"></span>
@@ -1023,7 +842,7 @@
                                                                 </li>
                                                                 <li>
                                                                     <p style="">
-                                                                        <a title="Từ 9kg đến 10kg" class="a-links" href="https://www.nguyenkim.com/may-giat/?sort_by=position&amp;sort_order=desc&amp;features_hash=73-5771-97521-6606">
+                                                                        <a title="Từ 9kg đến 10kg" class="a-links" href="">
                                                                             <span class="nki-sort-next ">
                                                                                 <span class="path1"></span>
                                                                                 <span class="path2"></span>
@@ -1032,7 +851,7 @@
                                                                 </li>
                                                                 <li>
                                                                     <p style="">
-                                                                        <a title="Từ 8kg đến 9kg" class="a-links" href="https://www.nguyenkim.com/may-giat/?sort_by=position&amp;sort_order=desc&amp;features_hash=73-6317-6850-5709-7177">
+                                                                        <a title="Từ 8kg đến 9kg" class="a-links" href="">
                                                                             <span class="nki-sort-next ">
                                                                                 <span class="path1"></span>
                                                                                 <span class="path2"></span>
@@ -1041,7 +860,7 @@
                                                                 </li>
                                                                 <li>
                                                                     <p style="">
-                                                                        <a title="Dưới 8kg" class="a-links" href="https://www.nguyenkim.com/may-giat/?sort_by=position&amp;sort_order=desc&amp;features_hash=73-127543-6142-6110-6861-7542-116953">
+                                                                        <a title="Dưới 8kg" class="a-links" href="">
                                                                             <span class="nki-sort-next ">
                                                                                 <span class="path1"></span>
                                                                                 <span class="path2"></span>
@@ -1126,22 +945,22 @@
                                                                 </li>
                                                                 <li>
                                                                     <p style="">
-                                                                        <a title="Máy sấy 8-10kg" class="a-links" href="https://www.nguyenkim.com/may-say-quan-ao/?features_hash=74-86281-12812-9051-41686-10042-80406"> Máy sấy 8-10kg </a>
+                                                                        <a title="Máy sấy 8-10kg" class="a-links" href=""> Máy sấy 8-10kg </a>
                                                                     </p>
                                                                 </li>
                                                                 <li>
                                                                     <p style="">
-                                                                        <a title="Máy sấy trên 10kg" class="a-links" href="/may-say-quan-ao/?features_hash=74-27815-88901-10220"> Máy sấy trên 10kg </a>
+                                                                        <a title="Máy sấy trên 10kg" class="a-links" href=""> Máy sấy trên 10kg </a>
                                                                     </p>
                                                                 </li>
                                                                 <li>
                                                                     <p style="">
-                                                                        <a title="Máy sấy dưới 10 triệu" class="a-links" href="/may-say-quan-ao/?features_hash=34-0-4999999-VND_34-5000000-7000000-VND_34-7000000-10000000-VND"> Máy sấy dưới 10 triệu </a>
+                                                                        <a title="Máy sấy dưới 10 triệu" class="a-links" href=""> Máy sấy dưới 10 triệu </a>
                                                                     </p>
                                                                 </li>
                                                                 <li>
                                                                     <p style="">
-                                                                        <a title="Máy sấy trên 10 triệu" class="a-links" href="https://www.nguyenkim.com/may-say-quan-ao/?features_hash=34-10000001-1000000000-VND"> Máy sấy trên 10 triệu </a>
+                                                                        <a title="Máy sấy trên 10 triệu" class="a-links" href=""> Máy sấy trên 10 triệu </a>
                                                                     </p>
                                                                 </li>
                                                             </ul>
