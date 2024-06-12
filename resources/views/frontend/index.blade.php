@@ -43,6 +43,10 @@
         .outstanding{
             padding: 0;
         }
+
+        .left-menu .left-menu p{
+            margin: 0;
+        }
     }
 
     .gift-info {
