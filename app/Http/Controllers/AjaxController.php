@@ -320,7 +320,7 @@ class AjaxController extends Controller
                 
             }
 
-            $product = $product->take(6)->sortByDesc('id');
+            $product = $product->take(5)->sortByDesc('id');
 
             $sugests =[];
 
@@ -407,7 +407,15 @@ class AjaxController extends Controller
                     $priceInt = number_format($products->Price).'đ';
                 }
 
-                $sugest = '<a href="'.route("details", $products->Link).'"><img src="'.asset($products->Image).'" width="50" style="margin-right:10px;"></a><a class="suggest_link" href="'.route('details', $products->Link).'">'.$products->Name.'</a><br> <p style="color:red; font-weight:bold">Giá: '. str_replace(',', '.',$priceInt) .'</p><br>';
+                $sugest = '<li class="sugests-li">
+
+                            <a href="'.route("details", $products->Link).'">
+                            <img src="'.asset($products->Image).'" width="60" style="margin-right:10px; height:60px; margin-top:10px"></a>
+                            <a class="suggest_link" href="'.route('details', $products->Link).'"><p>'.$products->Name.'</p>
+                             <p style="color:red; font-weight:bold;">Giá: '. str_replace(',', '.',$priceInt) .'</p>
+                            </a>
+                           <br>
+                           </li>';
 
                 array_push($sugests, $sugest);
             }

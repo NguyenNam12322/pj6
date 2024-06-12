@@ -12,7 +12,8 @@
 	    	<img src="{{  asset($products->Image) }}" width="50" style="margin-right:10px;">
 	    </a>
     </td>
-    <td style="vertical-align:top; color:red; line-height:18px;"><a class="suggest_link" href="{{ asset($products->Link) }}">{{ $products->Name }}</a><br>{{ $products->Price }}</td>
+    <td style="vertical-align:top; color:red; line-height:18px;">
+        <a class="suggest_link" href="{{ asset($products->Link) }}">{{ $products->Name }}</a><br>{{ $products->Price }}</td>
 </tr>
 
 @endforeach

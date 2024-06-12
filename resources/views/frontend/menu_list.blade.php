@@ -1304,7 +1304,7 @@
                                         <li class="left-menu">
                                             <div class="menu-item">
                                                 <div class="icon">
-                                                    <img src="https://cdn.nguyenkimmall.com/images/companies/_1/layout/icon/may-loc-nuoc.webp" width="18px" height="18px" alt="may-loc-nuoc">
+                                                    <img src="{{ asset('images/template/supports.jpg') }}" width="18px" height="18px" alt="may-loc-nuoc">
                                                 </div>
                                                 <p>
                                                     <a href="#">Dịch vụ, hỗ trợ</a>
@@ -1330,7 +1330,7 @@
                                         <li class="left-menu">
                                             <div class="menu-item">
                                                 <div class="icon">
-                                                    <img src="https://cdn.nguyenkimmall.com/images/companies/_1/layout/icon/may-loc-nuoc.webp" width="18px" height="18px" alt="may-loc-nuoc">
+                                                    <img src="{{ asset('images/template/ctv.jpg') }}" width="18px" height="18px" alt="Cộng tác viên Affiate">
                                                 </div>
                                                 <p>
                                                     <a href="#">Cộng tác viên Affiate</a>

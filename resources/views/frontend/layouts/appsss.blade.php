@@ -48,7 +48,7 @@
         <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
         <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" type="text/css" href="{{ asset('css/app.css') }}?ver=15 ">
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/app.css') }}?ver=16 ">
         <link rel="stylesheet" href="{{ asset('css/lib/bootstrap.min.css') }}">
         <script type="text/javascript" src="https://dienmaynguoiviet.vn/js/lib/owl.carousel.min.js"></script>
         <link rel="stylesheet" href="https://dienmaynguoiviet.vn/css/lib/owl.carousel.min.css">
@@ -388,6 +388,18 @@
                             }
                             #nk-banner-home .owl-nav{
                                 display: none;
+                            }
+
+                            .sugests-li{
+                                display: flex;
+                            }
+                            .sugests-li p{
+                                margin: 0;
+                                white-space: nowrap;
+                            }
+
+                            .suggest_link{
+                                margin-top: 5%;
                             }
 
                             
@@ -1291,6 +1303,21 @@
                                     .owl-item .owl-lazy {
                                     opacity: 1;
                                     }
+                                    .homenews ul li a {
+                                        overflow: hidden;
+                                        line-height: 1.2em;
+                                        font-size: 14px;
+                                        color: #333;
+                                        word-spacing: .15em;
+                                    }
+                                    .homenews span a {
+                                        padding: 10px 0;
+                                        font-size: 14px;
+                                        color: #414042;
+                                        text-transform: uppercase;
+                                        font-weight: 600;
+                                        line-height: 16px;
+                                    }
                                 </style>
                             </div>
                             <div class="span5 banner-right desktop">
@@ -1303,9 +1330,24 @@
                                     $dems++;
                                     ?>
                                 <div class="{{  $dems ===2?'bottom-image':'top-image' }} ">
+
+                                    @if($dems===1)
+                                        <div class="box-div-slide1">
+                                            <div class="homenews">
+                                                <span><a href="https://dienmaynguoiviet.vn/tu-van-mua-sam">Tư vấn tiêu dùng</a></span> 
+                                                <ul>
+                                                    <li> <a href="https://dienmaynguoiviet.vn/che-do-ngu-dem-tren-dieu-hoa-la-gi-nhung-loi-ich-cho-suc-khoe-la-gi">Chế độ ngủ đêm trên điều hòa là gì? Những...</a> </li>
+                                                    <li> <a href="https://dienmaynguoiviet.vn/vi-sao-chieu-dai-ong-dong-dieu-hoa-toi-thieu-la-3m">Vì sao chiều dài ống đồng điều hòa tối thiểu...</a> </li>
+                                                    <li> <a href="https://dienmaynguoiviet.vn/3-mau-dieu-hoa-18000btu-ban-chay-nhat-thang-3-2024">3 Mẫu Điều Hòa 18000BTU Bán Chạy Nhất Tháng...</a> </li>
+                                                    <li> <a href="https://dienmaynguoiviet.vn/top-3-dieu-hoa-tiet-kiem-dien-nhat-2024-nen-mua-ngay">Top 3 Điều Hòa tiết kiệm điện nhất 2024 nên...</a> </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    @else
                                     <a href="javascript:void(0)">
                                     <img fetchpriority="high" loading="eager" src="{{  asset($value['image'])  }}" width="100%" alt="309x183px_AV1">
                                     </a>
+                                    @endif
                                 </div>
                                 <?php 
                                     if($dems>=2){
@@ -1316,9 +1358,7 @@
                                 @endforeach
                                 @else
                                 <div class="top-image">
-                                    <a href="javascript:void(0)">
-                                    <img fetchpriority="high" loading="eager" src="https://cdn.nguyenkimmall.com/images/companies/_1/MKT_ECM/0124/TET_2024/HOME/309x183px_AV1.jpg" width="100%" alt="309x183px_AV1">
-                                    </a>
+                                    <div class="box-div-slide1"> <div class="homenews"> <span><a href="https://dienmaynguoiviet.vn/tu-van-mua-sam">Tư vấn tiêu dùng</a></span> <ul> <li> <a href="https://dienmaynguoiviet.vn/che-do-ngu-dem-tren-dieu-hoa-la-gi-nhung-loi-ich-cho-suc-khoe-la-gi">Chế độ ngủ đêm trên điều hòa là gì? Những...</a> </li> <li> <a href="https://dienmaynguoiviet.vn/vi-sao-chieu-dai-ong-dong-dieu-hoa-toi-thieu-la-3m">Vì sao chiều dài ống đồng điều hòa tối thiểu...</a> </li> <li> <a href="https://dienmaynguoiviet.vn/3-mau-dieu-hoa-18000btu-ban-chay-nhat-thang-3-2024">3 Mẫu Điều Hòa 18000BTU Bán Chạy Nhất Tháng...</a> </li> <li> <a href="https://dienmaynguoiviet.vn/top-3-dieu-hoa-tiet-kiem-dien-nhat-2024-nen-mua-ngay">Top 3 Điều Hòa tiết kiệm điện nhất 2024 nên...</a> </li> </ul> </div> </div>
                                 </div>
                                 <div class="bottom-image">
                                     <a href="javascript:void(0)">
