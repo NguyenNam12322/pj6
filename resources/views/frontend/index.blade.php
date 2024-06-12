@@ -44,7 +44,7 @@
             padding: 0;
         }
 
-        .left-menu .left-menu p{
+        .left-menu p{
             margin: 0 !important;
         }
     }
