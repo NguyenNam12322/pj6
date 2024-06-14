@@ -25,7 +25,7 @@
 
 
 <style type="text/css">
-
+   
     @media screen and (min-width: 768px) {
         .nk_houseware_best_selling_2020_wrapper .product, .product-slide{
             width: 20% !important;
@@ -154,7 +154,9 @@
     }
 
     @media all and (max-width: 768px) {
-
+         #nk-banner-home{
+        display: none;
+    }
         #countdown li {
             font-size: calc(1.125rem * var(--smaller));
         }
