@@ -810,9 +810,7 @@
                     width: 100% !important;
                     box-shadow: none !important;
                 } 
-                .nk-header{
-                    height: auto !important;
-                }
+               
 
                 .search_center{
                     height: 96px !important;
