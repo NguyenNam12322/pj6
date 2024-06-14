@@ -20,6 +20,9 @@
         .ft-dmca img{
             width: 100%;
         }
+        .div-foot .row{
+            margin: 0;
+        }
     } 
 
     .ft-dmca ul li a, .ft-dmca .title{
