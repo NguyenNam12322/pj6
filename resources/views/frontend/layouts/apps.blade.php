@@ -1294,7 +1294,7 @@
                         }
 
                         .search_center{
-                            height: 96px !important;
+                            height: auto !important;
                         }
 
                         .header__main{
