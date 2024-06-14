@@ -823,7 +823,7 @@
                 }
                /* .nk-header ._nk_main ._nk_bottom{
 
-                  
+
                     margin-top: 40px !important;
                 }*/
                 .d .nk-product-cate-homepage .nk-content .item {
@@ -914,6 +914,10 @@
                 .mobile{
                     display: none;
                 }
+
+                #nk-banner-home .carsl1{
+                    background: #000;
+                } 
                 .head-menu{
                     background: #000;
                 }
