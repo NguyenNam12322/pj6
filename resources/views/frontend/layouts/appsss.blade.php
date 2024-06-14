@@ -821,9 +821,11 @@
                 .nk-header ._nk_main ._nk_bottom{
                     margin-right: 0;
                 }
-                .nk-header ._nk_main ._nk_bottom{
+               /* .nk-header ._nk_main ._nk_bottom{
+
+                  
                     margin-top: 40px !important;
-                }
+                }*/
                 .d .nk-product-cate-homepage .nk-content .item {
                     width: 30% !important;
                 }    
