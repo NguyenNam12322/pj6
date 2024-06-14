@@ -14,7 +14,19 @@
        /* .nk-menu .span16{
             padding: 0;
         }*/
-    }    
+    } 
+
+    @media only screen and (max-width: 601px) {
+        .ft-dmca img{
+            width: 100%;
+        }
+    } 
+
+    .ft-dmca ul li a, .ft-dmca .title{
+        color: #FFFB9C;
+    }
+
+     
     .footer{
         background: #000;
     }
