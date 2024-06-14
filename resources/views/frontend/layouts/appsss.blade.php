@@ -398,10 +398,6 @@
                                 background-color: #000;
                             }
 
-                            ._nk_main .row-fluid{
-                                height: 100%;
-                            }
-
                             .sugests-li{
                                 display: flex;
                             }
@@ -919,7 +915,9 @@
                 .head-menu{
                     background: #000;
                 }
-
+                .._nk_main .row-fluid{
+                    height: 100%;
+                }
 
                 .nk-menu .span16{
                     padding: 0 !important;
