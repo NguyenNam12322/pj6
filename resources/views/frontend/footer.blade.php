@@ -15,6 +15,9 @@
             padding: 0;
         }*/
     }    
+    .footer{
+        background: #000;
+    }
 </style>
 <footer class="footer">
     
