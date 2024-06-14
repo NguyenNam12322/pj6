@@ -1,8 +1,29 @@
 <div class="max-width">
     <div class="phone_hotline"> <a href="tel:0243.687.9145" title="Bảo Hành: 0243.687.9145" class="p_hotline_item"> <i class="icon_security"></i> <span><strong>Bảo Hành: 0243.687.9145</strong> (8h00 - 17h00)</span> </a> <a href="tel:0247.303.6336" title="Mua hàng: 0247.303.6336" class="p_hotline_item"> <i class="icon_purchase"></i> <span><strong>Mua hàng: 0247.303.6336</strong> (8h00 - 17h00)</span> </a> <a href="tel:0916917949" title="Khiếu nại:0916917949" class="p_hotline_item"> <i class="icon_complain"></i> <span><strong>Khiếu nại: 091.691.7949</strong> (8h00 - 17h00)</span> </a> </div>
 </div>
+
+<style type="text/css">
+
+    @media only screen and (min-width: 601px) {
+        .div-foot{
+            margin-left: 330px;
+        }
+        .banner-ads-text .header-menu__navs{
+            height: 40px;
+        }
+       /* .nk-menu .span16{
+            padding: 0;
+        }*/
+    }    
+</style>
 <footer class="footer">
-    <div class="container">
+    
+    <div class="div-foot">
+        <div class="ft-dmca">
+           
+            <img src="{{ asset('images/template/banner-foot.jpg') }}" alt="bg">
+        </div>
+
         <div class="row">
             <div class="col-md-2 col-footer">
                 <h3 class="title">Thông tin</h3>

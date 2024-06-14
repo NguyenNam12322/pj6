@@ -32,8 +32,8 @@
             margin-top: 6px;
         }    
         #nk-banner-home img{
-            width: 589px !important;
-            height: 388px !important;
+            width: 100% !important;
+/*            height: 388px !important;*/
         } 
 
         .banner_home__.container{
@@ -46,6 +46,10 @@
 
         .left-menu p{
             margin: 0 !important;
+        }
+
+        .nk-header ._nk_main{
+            height: 100%;
         }
     }
 
@@ -96,6 +100,8 @@
     
     .hinh_giamgia{
         position: relative;
+
+/*        display: none;*/
     }
 
     .product{

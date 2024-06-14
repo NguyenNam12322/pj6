@@ -48,7 +48,7 @@
         <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
         <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" type="text/css" href="{{ asset('css/app.css') }}?ver=16 ">
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/app.css') }}?ver=23 ">
         <link rel="stylesheet" href="{{ asset('css/lib/bootstrap.min.css') }}">
         <script type="text/javascript" src="https://dienmaynguoiviet.vn/js/lib/owl.carousel.min.js"></script>
         <link rel="stylesheet" href="https://dienmaynguoiviet.vn/css/lib/owl.carousel.min.css">
@@ -390,6 +390,18 @@
                                 display: none;
                             }
 
+                            .nk-menu #nk-danh-muc-san-pham-left>ul li p a{
+                                color: FFFB9C;
+                            }
+
+                            .nk-menu #nk-danh-muc-san-pham-left>ul{
+                                background-color: #000;
+                            }
+
+                            ._nk_main .row-fluid{
+                                height: 100%;
+                            }
+
                             .sugests-li{
                                 display: flex;
                             }
@@ -400,6 +412,22 @@
 
                             .suggest_link{
                                 margin-top: 5%;
+                            }
+
+                            ._nk_main .div-logo{
+                                height: 100%;
+                            }
+
+                            #nk-logo img{
+                                height: 100%;
+                            }
+
+                            .nk-header #nk-cart ul li a, .nk-header #nk-cart ul li#login_form a,.nk-header #nk-cart ul li .icon i,.nk-danh-muc-trang-chu b{
+                                color: #FFFB9C;
+                            }
+
+                            .material-symbols-rounded, .nk-header #nk-cart ul li#login_form i.nki-user{
+                                color: #FFFB9C !important;
                             }
 
                             
@@ -451,6 +479,10 @@
                             .lp-menu ul {
                             display: inline-block;
                             }
+
+                            #nk-logo{
+                                width: 30%;
+                            }
                             .m .lp-menu.menu-type-4 ul li {
                             min-width: 33.33%;
                             max-width: 33.33%;
@@ -489,12 +521,12 @@
                         <div class="row-fluid ">
                             <div class="span16 container _nk_main">
                                 <div class="row-fluid ">
-                                    <div class="span16 row flexthis _nk_bottom">
+                                    <div class="span16 row flexthis div-logo">
                                         <div class="row-fluid ">
                                             <div class="span4 ">
                                                 <h1 id="nk-logo">
                                                     <a href="/">
-                                                    <img fetchpriority="high" loading="eager" src="/images/companies/_1/html/2017/T11/homepage/Logo_NK.svg" width="242px" height="42px" alt="">
+                                                    <img fetchpriority="high" loading="eager" src="{{ asset('images/template/logo2.jpg') }}" alt="">
                                                     </a>
                                                 </h1>
                                             </div>
@@ -503,103 +535,7 @@
                                                 <div class="row-fluid ">
                                                     <div class="span16 ">
                                                         <div class="header-right" id="nk-holine-new">
-                                                            <div id="nk-location" class="nk_tooltip nk_tooltip_ext newstyle">
-                                                                <!-- <ul>
-                                                                    <li class="placeholder-info-box">
-                                                                        <i class="nki-placeholder-3"></i>
-                                                                        <div>
-                                                                            <span class="title">Xem giá tại</span>
-                                                                            <br>
-                                                                            <a class="nk-select-loccation" id="nk-select-loccation">TP.HCM</a>
-                                                                        </div>
-                                                                    </li>
-                                                                    </ul> -->
-                                                                <div id="popUpChangeProvince" class="modal">
-                                                                    <div class="modal-background bnt-close-popup"></div>
-                                                                    <div class="popup_location popup_location_list">
-                                                                        <a class="nki-Vector nk-close-ext bnt-close-popup"></a>
-                                                                        <h2>Chọn tỉnh thành để xem đúng giá &amp; khuyến mãi:</h2>
-                                                                        <div class="nk-search-box">
-                                                                            <input type="text" placeholder="Tìm kiếm tỉnh thành." class="act_search">
-                                                                            <button>
-                                                                            <i class="nki-search"></i>
-                                                                            </button>
-                                                                        </div>
-                                                                        <div class="nk-location-list">
-                                                                            <a data-id="001" data-name="TP.HCM" data-alias="tp.hcm" data-value="001" class="item_area checker">
-                                                                                TP.HCM 
-                                                                                <div class="icon">
-                                                                                    <svg height="15" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="check-circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-check-circle">
-                                                                                        <path fill="currentColor" d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path>
-                                                                                    </svg>
-                                                                                </div>
-                                                                            </a>
-                                                                            <a data-id="027" data-name="Hà Nội" data-alias="ha noi" data-value="027" class="item_area">Hà Nội</a>
-                                                                            <a data-id="002" data-name="Bình Dương" data-alias="binh duong" data-value="002" class="item_area">Bình Dương</a>
-                                                                            <a data-id="031" data-name="Hải Phòng" data-alias="hai phong" data-value="031" class="item_area">Hải Phòng</a>
-                                                                            <a data-id="004" data-name="Đồng Nai" data-alias="dong nai" data-value="004" class="item_area">Đồng Nai</a>
-                                                                            <a data-id="061" data-name="Quảng Ninh" data-alias="quang ninh" data-value="061" class="item_area">Quảng Ninh</a>
-                                                                            <a data-id="012" data-name="Bà Rịa - Vũng Tàu" data-alias="ba ria vung tau" data-value="012" class="item_area">Bà Rịa - Vũng Tàu</a>
-                                                                            <a data-id="054" data-name="Thái Nguyên" data-alias="thai nguyen" data-value="054" class="item_area">Thái Nguyên</a>
-                                                                            <a data-id="040" data-name="Lâm Đồng" data-alias="lam dong" data-value="040" class="item_area">Lâm Đồng</a>
-                                                                            <a data-id="045" data-name="Phú Thọ" data-alias="phu tho" data-value="045" class="item_area">Phú Thọ</a>
-                                                                            <a data-id="018" data-name="Bình Thuận" data-alias="binh thuan" data-value="018" class="item_area">Bình Thuận</a>
-                                                                            <a data-id="041" data-name="Nam Định" data-alias="nam dinh" data-value="041" class="item_area">Nam Định</a>
-                                                                            <a data-id="007" data-name="Tiền Giang" data-alias="tien giang" data-value="007" class="item_area">Tiền Giang</a>
-                                                                            <a data-id="055" data-name="Thanh Hóa" data-alias="thanh hoa" data-value="055" class="item_area">Thanh Hóa</a>
-                                                                            <a data-id="006" data-name="Bến Tre" data-alias="ben tre" data-value="006" class="item_area">Bến Tre</a>
-                                                                            <a data-id="042" data-name="Nghệ An" data-alias="nghe an" data-value="042" class="item_area">Nghệ An</a>
-                                                                            <a data-id="003" data-name="Vĩnh Long" data-alias="vinh long" data-value="003" class="item_area">Vĩnh Long</a>
-                                                                            <a data-id="056" data-name="Thừa Thiên Huế" data-alias="thua thien hue" data-value="056" class="item_area">Thừa Thiên Huế</a>
-                                                                            <a data-id="057" data-name="Trà Vinh" data-alias="tra vinh" data-value="057" class="item_area">Trà Vinh</a>
-                                                                            <a data-id="021" data-name="Đà Nẵng" data-alias="da nang" data-value="021" class="item_area">Đà Nẵng</a>
-                                                                            <a data-id="010" data-name="An Giang" data-alias="an giang" data-value="010" class="item_area">An Giang</a>
-                                                                            <a data-id="049" data-name="Quảng Ngãi" data-alias="quang ngai" data-value="049" class="item_area">Quảng Ngãi</a>
-                                                                            <a data-id="008" data-name="Cần Thơ" data-alias="can tho" data-value="008" class="item_area">Cần Thơ</a>
-                                                                            <a data-id="016" data-name="Bình Định" data-alias="binh dinh" data-value="016" class="item_area">Bình Định</a>
-                                                                            <a data-id="035" data-name="Kiên Giang" data-alias="kien giang" data-value="035" class="item_area">Kiên Giang</a>
-                                                                            <a data-id="024" data-name="Gia Lai" data-alias="gia lai" data-value="024" class="item_area">Gia Lai</a>
-                                                                            <a data-id="011" data-name="Bạc Liêu" data-alias="bac lieu" data-value="011" class="item_area">Bạc Liêu</a>
-                                                                            <a data-id="022" data-name="Đắk Lắk" data-alias="dak lak" data-value="022" class="item_area">Đắk Lắk</a>
-                                                                            <a data-id="020" data-name="Cà Mau" data-alias="ca mau" data-value="020" class="item_area">Cà Mau</a>
-                                                                            <a data-id="034" data-name="Khánh Hòa" data-alias="khanh hoa" data-value="034" class="item_area">Khánh Hòa</a>
-                                                                            <a data-id="014" data-name="Bắc Giang" data-alias="bac giang" data-value="014" class="item_area">Bắc Giang</a>
-                                                                            <a data-id="013" data-name="Bắc Kạn" data-alias="bac kan" data-value="013" class="item_area">Bắc Kạn</a>
-                                                                            <a data-id="015" data-name="Bắc Ninh" data-alias="bac ninh" data-value="015" class="item_area">Bắc Ninh</a>
-                                                                            <a data-id="017" data-name="Bình Phước" data-alias="binh phuoc" data-value="017" class="item_area">Bình Phước</a>
-                                                                            <a data-id="019" data-name="Cao Bằng" data-alias="cao bang" data-value="019" class="item_area">Cao Bằng</a>
-                                                                            <a data-id="025" data-name="Hà Giang" data-alias="ha giang" data-value="025" class="item_area">Hà Giang</a>
-                                                                            <a data-id="026" data-name="Hà Nam" data-alias="ha nam" data-value="026" class="item_area">Hà Nam</a>
-                                                                            <a data-id="029" data-name="Hà Tĩnh" data-alias="ha tinh" data-value="029" class="item_area">Hà Tĩnh</a>
-                                                                            <a data-id="030" data-name="Hải Dương" data-alias="hai duong" data-value="030" class="item_area">Hải Dương</a>
-                                                                            <a data-id="066" data-name="Hậu Giang" data-alias="hau giang" data-value="066" class="item_area">Hậu Giang</a>
-                                                                            <a data-id="032" data-name="Hòa Bình" data-alias="hoa binh" data-value="032" class="item_area">Hòa Bình</a>
-                                                                            <a data-id="033" data-name="Hưng Yên" data-alias="hung yen" data-value="033" class="item_area">Hưng Yên</a>
-                                                                            <a data-id="036" data-name="Kon Tum" data-alias="kon tum" data-value="036" class="item_area">Kon Tum</a>
-                                                                            <a data-id="037" data-name="Lai Châu" data-alias="lai chau" data-value="037" class="item_area">Lai Châu</a>
-                                                                            <a data-id="038" data-name="Lạng Sơn" data-alias="lang son" data-value="038" class="item_area">Lạng Sơn</a>
-                                                                            <a data-id="039" data-name="Lào Cai" data-alias="lao cai" data-value="039" class="item_area">Lào Cai</a>
-                                                                            <a data-id="005" data-name="Long An" data-alias="long an" data-value="005" class="item_area">Long An</a>
-                                                                            <a data-id="043" data-name="Ninh Bình" data-alias="ninh binh" data-value="043" class="item_area">Ninh Bình</a>
-                                                                            <a data-id="044" data-name="Ninh Thuận" data-alias="ninh thuan" data-value="044" class="item_area">Ninh Thuận</a>
-                                                                            <a data-id="046" data-name="Phú Yên" data-alias="phu yen" data-value="046" class="item_area">Phú Yên</a>
-                                                                            <a data-id="047" data-name="Quảng Bình" data-alias="quang binh" data-value="047" class="item_area">Quảng Bình</a>
-                                                                            <a data-id="048" data-name="Quảng Nam" data-alias="quang nam" data-value="048" class="item_area">Quảng Nam</a>
-                                                                            <a data-id="009" data-name="Quảng Trị" data-alias="quang tri" data-value="009" class="item_area">Quảng Trị</a>
-                                                                            <a data-id="051" data-name="Sóc Trăng" data-alias="soc trang" data-value="051" class="item_area">Sóc Trăng</a>
-                                                                            <a data-id="050" data-name="Sơn La" data-alias="son la" data-value="050" class="item_area">Sơn La</a>
-                                                                            <a data-id="052" data-name="Tây Ninh" data-alias="tay ninh" data-value="052" class="item_area">Tây Ninh</a>
-                                                                            <a data-id="053" data-name="Thái Bình" data-alias="thai binh" data-value="053" class="item_area">Thái Bình</a>
-                                                                            <a data-id="058" data-name="Tuyên Quang" data-alias="tuyen quang" data-value="058" class="item_area">Tuyên Quang</a>
-                                                                            <a data-id="059" data-name="Vĩnh Phúc" data-alias="vinh phuc" data-value="059" class="item_area">Vĩnh Phúc</a>
-                                                                            <a data-id="060" data-name="Yên Bái" data-alias="yen bai" data-value="060" class="item_area">Yên Bái</a>
-                                                                            <a data-id="068" data-name="Đắk Nông" data-alias="dak nong" data-value="068" class="item_area">Đắk Nông</a>
-                                                                            <a data-id="067" data-name="Điện Biên" data-alias="dien bien" data-value="067" class="item_area">Điện Biên</a>
-                                                                            <a data-id="023" data-name="Đồng Tháp" data-alias="dong thap" data-value="023" class="item_area">Đồng Tháp</a>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
+                                                            
                                                             <div id="nk-search">
                                                                 <form action="{{ route('search-product-frontend') }}" method="get" class="cm-processed-form">
                                                                     <div class="nk-search-box">
@@ -701,6 +637,7 @@
                     padding: 0 !important;
                 }
 
+
                 .nk-banner-main{
                     height: auto !important;
                     width: auto !important;
@@ -747,7 +684,9 @@
                 }
                 .payday-container .hinh_giamgia{
                     height: auto !important;
+                    display: none;
                 }
+
 
                 .nk-header #nk-searchs {
                     border-radius: .9em;
@@ -979,6 +918,21 @@
                 .mobile{
                     display: none;
                 }
+                .head-menu{
+                    background: #000;
+                }
+
+
+                .nk-menu .span16{
+                    padding: 0 !important;
+                }
+
+                .div-logo .span16{
+                    padding: 24px 0;
+                }
+                .span11{
+                    height: 278px !important;
+                }
 
               
              }
@@ -1195,7 +1149,6 @@
                                                     <div class="header-right" id="nk-holine-new">
 
 
-                                                     
                                                         <div id="nk-searchs">
                                                             <form action="{{ route('search-product-frontend') }}" method="get" class="cm-processed-form">
                                                                 <div class="nk-search-box">
@@ -1320,53 +1273,7 @@
                                     }
                                 </style>
                             </div>
-                            <div class="span5 banner-right desktop">
-                                <?php 
-                                    $dems = 0;
-                                    ?>
-                                @if(!empty($bannersRight))
-                                @foreach($bannersRight as $value)
-                                <?php 
-                                    $dems++;
-                                    ?>
-                                <div class="{{  $dems ===2?'bottom-image':'top-image' }} ">
-
-                                    @if($dems===1)
-                                        <div class="box-div-slide1">
-                                            <div class="homenews">
-                                                <span><a href="https://dienmaynguoiviet.vn/tu-van-mua-sam">Tư vấn tiêu dùng</a></span> 
-                                                <ul>
-                                                    <li> <a href="https://dienmaynguoiviet.vn/che-do-ngu-dem-tren-dieu-hoa-la-gi-nhung-loi-ich-cho-suc-khoe-la-gi">Chế độ ngủ đêm trên điều hòa là gì? Những...</a> </li>
-                                                    <li> <a href="https://dienmaynguoiviet.vn/vi-sao-chieu-dai-ong-dong-dieu-hoa-toi-thieu-la-3m">Vì sao chiều dài ống đồng điều hòa tối thiểu...</a> </li>
-                                                    <li> <a href="https://dienmaynguoiviet.vn/3-mau-dieu-hoa-18000btu-ban-chay-nhat-thang-3-2024">3 Mẫu Điều Hòa 18000BTU Bán Chạy Nhất Tháng...</a> </li>
-                                                    <li> <a href="https://dienmaynguoiviet.vn/top-3-dieu-hoa-tiet-kiem-dien-nhat-2024-nen-mua-ngay">Top 3 Điều Hòa tiết kiệm điện nhất 2024 nên...</a> </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    @else
-                                    <a href="javascript:void(0)">
-                                    <img fetchpriority="high" loading="eager" src="{{  asset($value['image'])  }}" width="100%" alt="309x183px_AV1">
-                                    </a>
-                                    @endif
-                                </div>
-                                <?php 
-                                    if($dems>=2){
-                                    
-                                        break;
-                                    }
-                                    ?>
-                                @endforeach
-                                @else
-                                <div class="top-image">
-                                    <div class="box-div-slide1"> <div class="homenews"> <span><a href="https://dienmaynguoiviet.vn/tu-van-mua-sam">Tư vấn tiêu dùng</a></span> <ul> <li> <a href="https://dienmaynguoiviet.vn/che-do-ngu-dem-tren-dieu-hoa-la-gi-nhung-loi-ich-cho-suc-khoe-la-gi">Chế độ ngủ đêm trên điều hòa là gì? Những...</a> </li> <li> <a href="https://dienmaynguoiviet.vn/vi-sao-chieu-dai-ong-dong-dieu-hoa-toi-thieu-la-3m">Vì sao chiều dài ống đồng điều hòa tối thiểu...</a> </li> <li> <a href="https://dienmaynguoiviet.vn/3-mau-dieu-hoa-18000btu-ban-chay-nhat-thang-3-2024">3 Mẫu Điều Hòa 18000BTU Bán Chạy Nhất Tháng...</a> </li> <li> <a href="https://dienmaynguoiviet.vn/top-3-dieu-hoa-tiet-kiem-dien-nhat-2024-nen-mua-ngay">Top 3 Điều Hòa tiết kiệm điện nhất 2024 nên...</a> </li> </ul> </div> </div>
-                                </div>
-                                <div class="bottom-image">
-                                    <a href="javascript:void(0)">
-                                    <img fetchpriority="high" loading="eager" src="https://cdn.nguyenkimmall.com/images/companies/_1/MKT_ECM/0124/PRE_ORDER_S24/WEB/309x183.jpg" width="100%" alt="309x183">
-                                    </a>
-                                </div>
-                                @endif
-                            </div>
+                            
                         </div>
                     </div>
                 </div>

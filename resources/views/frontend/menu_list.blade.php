@@ -1649,7 +1649,7 @@
                             </div>
                             <div class="span12 wrap-grid-menu-right banner-ads-text">
                                 <div class="" data-block="2864">
-                                    <div class="header-menu">
+                                    <div class="header-menu head-menu">
                                         <div class="header-menu__navs">
                                             <a class="navs-item-link delivery-free" href="javascript:void(0)">
                                                 Giao lắp chuyên nghiệp </a>
