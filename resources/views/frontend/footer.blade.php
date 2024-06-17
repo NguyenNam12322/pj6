@@ -188,6 +188,30 @@
                 opacity: .2;
             }
         }    
+
+        @keyframes coccoc-alo-circle-img-anim {
+            0% {
+                transform: rotate(0) scale(1) skew(1deg);
+            }
+            10% {
+                transform: rotate(-25deg) scale(1) skew(1deg);
+            }
+            20% {
+                transform: rotate(25deg) scale(1) skew(1deg);
+            }
+            30% {
+                transform: rotate(-25deg) scale(1) skew(1deg);
+            }
+            40% {
+                transform: rotate(25deg) scale(1) skew(1deg);
+            }
+            50% {
+                transform: rotate(0) scale(1) skew(1deg);
+            }
+            100% {
+                transform: rotate(0) scale(1) skew(1deg);
+            }
+        }    
     } 
 
     @media only screen and (max-width: 601px) {
