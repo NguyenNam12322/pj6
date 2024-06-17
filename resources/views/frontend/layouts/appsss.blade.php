@@ -57,9 +57,13 @@
         </script>
         <style type="text/css">
             #ui-id-1{
-            background: #fff;
-            z-index: 9999;
-            width: 22%;
+                background: #fff;
+                z-index: 9999;
+                width: 22%;
+            }
+
+            .phones-hotline a{
+                color :#fff;
             }
 
         </style>
@@ -432,16 +436,16 @@
                                 display: none;
                             }*/
                             .empty-cart-message {
-                            font-size: 18px;
-                            color: #555;
-                            margin-top: 30px;
+                                font-size: 18px;
+                                color: #555;
+                                margin-top: 30px;
                             }
                             .cart-icon {
-                            font-size: 40px;
-                            color: #ccc;
+                                font-size: 40px;
+                                color: #ccc;
                             }
                             #exampleModal .modal-body{
-                            min-height: 200px;
+                                min-height: 200px;
                             }
                         </style>
                         <div class="cart-container {{ $number_cart>0?'hide':'' }}">
