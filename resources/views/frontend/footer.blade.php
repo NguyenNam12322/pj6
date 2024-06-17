@@ -18,6 +18,74 @@
        /* .nk-menu .span16{
             padding: 0;
         }*/
+
+        .ring-phone {
+            float: left;
+            position: fixed;
+            left: 10px;
+            bottom: 10px;
+            z-index: 99999;
+        }
+
+        .coccoc-alo-phone {
+            background-color: transparent;
+            width: 100px;
+            height: 100px;
+            cursor: pointer;
+            z-index: 200000 !important;
+            -webkit-backface-visibility: hidden;
+            -webkit-transform: translateZ(0);
+            -webkit-transition: visibility .5s;
+            -moz-transition: visibility .5s;
+            -o-transition: visibility .5s;
+            transition: visibility .5s;
+            position: relative;
+            z-index: 10;
+        }
+
+        .coccoc-alo-phone.coccoc-alo-green .coccoc-alo-ph-circle {
+            background: linear-gradient(90deg, #d1a94e, #fdf5a1, #cfac54);
+            opacity: .5;
+        }
+
+        .coccoc-alo-phone.coccoc-alo-green .coccoc-alo-ph-circle-fill {
+            background: linear-gradient(90deg, #d1a94e, #fdf5a1, #cfac54);
+            opacity: .75 !important;
+        }
+
+        .coccoc-alo-ph-img-circle {
+            width: 50px;
+            height: 50px;
+            top: 25px;
+            left: 25px;
+            position: absolute;
+            background: rgba(30, 30, 30, 0.1) url(https://digicity.vn/template/default/images/phone-fix.png) no-repeat center center;
+            -webkit-border-radius: 100%;
+            -moz-border-radius: 100%;
+            border-radius: 100%;
+            border: 2px solid transparent;
+            opacity: 1;
+            -webkit-animation: coccoc-alo-circle-img-anim 1s infinite ease-in-out;
+            -moz-animation: coccoc-alo-circle-img-anim 1s infinite ease-in-out;
+            -ms-animation: coccoc-alo-circle-img-anim 1s infinite ease-in-out;
+            -o-animation: coccoc-alo-circle-img-anim 1s infinite ease-in-out;
+            animation: coccoc-alo-circle-img-anim 1s infinite ease-in-out;
+            background-size: cover;
+        }
+
+        .list-phone a {
+            float: right;
+            line-height: 30px;
+            margin: 3px 0;
+            border-radius: 15px;
+            padding: 0 10px;
+            text-decoration: none;
+            color: #000;
+            font-size: 16px;
+            font-weight: 700;
+            background: linear-gradient(0deg, #d1a94e, #fdf5a1, #cfac54);
+        }
+
     } 
 
     @media only screen and (max-width: 601px) {
@@ -77,5 +145,18 @@
         </div>
         <!-- <div class="footer-bottom"> <div class="container"> <p> <b>© 2018. Công ty TNHH Thương Mại Phú Tiến. Địa chỉ: : Kho Đóng Tàu, Ngõ 683 Đường Nguyễn Khoái, Quận Hoàng
             Mai, TP HN. GPKD số : 0102011440 do Sở Kế Hoạch và Đầu Tư TP. Hà Nội, cấp ngày 25/02/2004 </b> </p> </div> </div> --> 
+    </div>
+
+    <div class="ring-phone">
+        <div class="coccoc-alo-phone coccoc-alo-green coccoc-alo-show">
+            <div class="coccoc-alo-ph-circle"></div>
+            <div class="coccoc-alo-ph-circle-fill"></div>
+            <div class="coccoc-alo-ph-img-circle"></div>
+            <div class="list-phone">
+                <a href="tel:0904196226">0904.196.226</a>
+                <a href="tel:0942496226">0942.496.226</a>
+                <a href="tel:0945172266">0945.172.266</a>
+            </div>
+        </div>
     </div>
 </footer>
