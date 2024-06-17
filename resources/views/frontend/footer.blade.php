@@ -86,6 +86,29 @@
             background: linear-gradient(0deg, #d1a94e, #fdf5a1, #cfac54);
         }
 
+        .coccoc-alo-ph-circle-fill {
+            width: 70px;
+            height: 70px;
+            top: 15px;
+            left: 15px;
+            position: absolute;
+            background-color: #000;
+            -webkit-border-radius: 100%;
+            -moz-border-radius: 100%;
+            border-radius: 100%;
+            border: 2px solid transparent;
+            opacity: .1;
+            -webkit-animation: coccoc-alo-circle-fill-anim 2.3s infinite ease-in-out;
+            -moz-animation: coccoc-alo-circle-fill-anim 2.3s infinite ease-in-out;
+            -ms-animation: coccoc-alo-circle-fill-anim 2.3s infinite ease-in-out;
+            -o-animation: coccoc-alo-circle-fill-anim 2.3s infinite ease-in-out;
+            animation: coccoc-alo-circle-fill-anim 2.3s infinite ease-in-out;
+            -webkit-transition: all .5s;
+            -moz-transition: all .5s;
+            -o-transition: all .5s;
+            transition: all .5s;
+        }
+
     } 
 
     @media only screen and (max-width: 601px) {
