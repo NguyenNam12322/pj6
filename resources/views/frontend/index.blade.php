@@ -191,6 +191,49 @@
 
     }    
 
+   
+    .countdown-timer label {
+        background-color: #ff0000;
+        color: #ffea00;
+        border: 1px solid #fff;
+    }
+
+    .countdown-timer label {
+        font-size: 22px;
+        line-height: 27px;
+        border-radius: 9px;
+/*                                color: #fff;*/
+        color: #ffcc18;
+        min-width: 36px;
+
+        padding: 5px;
+        margin: 0 5px;
+     /*   color: #fff;
+        background: #000;*/
+        border-radius: 8px;
+/*                                min-width: 30px;*/
+        display: inline-block;
+        text-align: center;
+        position: relative;
+    }
+
+    label#hours::after, label#minutes::after{
+        content: ":";
+        position: absolute;
+        right: -9px;
+        font-size: 18px;
+        color: #fff;
+        font-weight: bold
+    }
+    
+    .title-end {
+        font-size: 20px;
+        line-height: 24px;
+        color: #ffea00;
+    }
+    .hinh_giamgia{
+        height: 100%;
+    }
 
 </style>
 
@@ -206,50 +249,6 @@
                 
                 <div class="payday-header">
                     <div class="hinh_giamgia"> <a href="#" title="banner-sale"> 
-
-
-                        <style type="text/css">
-                            .countdown-timer label {
-                                background-color: #ff0000;
-                                color: #ffea00;
-                                border: 1px solid #fff;
-                            }
-
-                            .countdown-timer label {
-                                font-size: 22px;
-                                line-height: 27px;
-                                border-radius: 9px;
-/*                                color: #fff;*/
-                                color: #ffcc18;
-                                min-width: 36px;
-
-                                padding: 5px;
-                                margin: 0 5px;
-                             /*   color: #fff;
-                                background: #000;*/
-                                border-radius: 8px;
-/*                                min-width: 30px;*/
-                                display: inline-block;
-                                text-align: center;
-                                position: relative;
-                            }
-
-                            label#hours::after, label#minutes::after{
-                                content: ":";
-                                position: absolute;
-                                right: -9px;
-                                font-size: 18px;
-                                color: #fff;
-                                font-weight: bold
-                            }
-                            
-                            .title-end {
-                                font-size: 20px;
-                                line-height: 24px;
-                                color: #ffea00;
-                            }
-
-                        </style>
 
                         <div class="gvdshock">
                             <div class="endtime" data-countdown="" data-begin="">
