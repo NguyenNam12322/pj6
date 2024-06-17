@@ -229,7 +229,7 @@
     .title-end {
         font-size: 20px;
         line-height: 24px;
-        color: #ffea00;
+        color: #000;
     }
     .hinh_giamgia{
         height: 100%;
@@ -260,6 +260,8 @@
                                     <label id="seconds">{{  intval($seconds)<10?'0'.$seconds:$seconds }}</label>
                                 </span>
                             </div>
+
+
                         </div>
 
                     </div>
