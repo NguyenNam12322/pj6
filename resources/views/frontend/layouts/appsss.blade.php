@@ -922,7 +922,7 @@
                 }
 
                 .search-order{
-                    width: 32%;
+                    width: 32% !important;
                 }
 
                 #nk-banner-home .carsl1{
