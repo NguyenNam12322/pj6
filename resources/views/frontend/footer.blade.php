@@ -97,6 +97,28 @@
             z-index: 10;
         }
 
+        .ring-phone:hover .list-phone {
+            width: 160px;
+            transition: .5s;
+            opacity: 1;
+        }
+
+        .list-phone {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            float: left;
+            transform: translateY(-50%);
+            z-index: 1;
+            width: 1px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            transition: .5s;
+            overflow: hidden;
+            opacity: 0;
+        }
+
         .list-phone a {
             float: right;
             line-height: 30px;
