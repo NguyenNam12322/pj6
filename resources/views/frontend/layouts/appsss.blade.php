@@ -932,6 +932,9 @@
                 .div-logo .span16{
                     padding: 24px 0;
                 }
+                .div-logo{
+                    overflow: hidden;
+                }
                 .span11{
                     height: 278px !important;
                 }

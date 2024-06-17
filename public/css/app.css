@@ -1413,7 +1413,7 @@ html,
                }*/
 
                .nk-menu #nk-danh-muc-san-pham-left>h3 {
-                   background-color: #000;
+                   background: linear-gradient(0deg,#d1a94e,#fdf5a1,#cfac54);
                    font-size: 15px;
                    font-weight: bold;
                    padding: 8px 0;
@@ -13193,7 +13193,7 @@ html,
                }
 
                .header-menu__navs .navs-item-link {
-                   color: #FFFB9C;
+                   color: #000;
                    font-weight: 500;
                    transition: all .2s ease;
                    line-height: 44px;
