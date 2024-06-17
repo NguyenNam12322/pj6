@@ -419,7 +419,7 @@
                             }
 
                             .nk-header #nk-cart ul li a, .nk-header #nk-cart ul li#login_form a,.nk-header #nk-cart ul li .icon i,.nk-danh-muc-trang-chu b{
-                                color: #FFFB9C;
+                                color: #000;
                             }
 
                             .material-symbols-rounded, .nk-header #nk-cart ul li#login_form i.nki-user{
