@@ -139,7 +139,7 @@
             top: 25px;
             left: 25px;
             position: absolute;
-            background: rgba(30, 30, 30, 0.1) url(../images/phone-fix.png) no-repeat center center;
+            background: rgba(30, 30, 30, 0.1) url(https://digicity.vn/template/default/images/phone-fix.png) no-repeat center center;
             -webkit-border-radius: 100%;
             -moz-border-radius: 100%;
             border-radius: 100%;
@@ -156,7 +156,21 @@
             -webkit-box-sizing: border-box;
             box-sizing: border-box;
         }
+        @keyframes coccoc-alo-circle-fill-anim {
 
+            0% {
+                transform: rotate(0) scale(.7) skew(1deg);
+                opacity: .2;
+            }
+            50% {
+                transform: rotate(0) scale(1) skew(1deg);
+                opacity: .2;
+            }
+            100% {
+                transform: rotate(0) scale(.7) skew(1deg);
+                opacity: .2;
+            }
+        }    
     } 
 
     @media only screen and (max-width: 601px) {
