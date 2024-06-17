@@ -14649,7 +14649,7 @@ html,
                }
 
                .d .nk-header #nk-cart>ul li {
-                   align-items: inherit
+                   align-items: center;
                }
 
                .d .nk-header #nk-cart>ul li .icon {
