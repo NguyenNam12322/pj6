@@ -31,6 +31,11 @@
             width: 20% !important;
             margin-top: 6px;
         }    
+
+        .payday-header{
+            height: 60px;
+            background: linear-gradient(0deg,#d1a94e,#fdf5a1,#cfac54);
+        }
         #nk-banner-home img{
             width: 100% !important;
 /*            height: 388px !important;*/
