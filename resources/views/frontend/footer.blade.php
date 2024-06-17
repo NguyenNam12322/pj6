@@ -11,6 +11,10 @@
         .banner-ads-text .header-menu__navs{
             height: 40px;
         }
+
+        .ft-dmca img{
+            width: 100%;
+        }
        /* .nk-menu .span16{
             padding: 0;
         }*/
