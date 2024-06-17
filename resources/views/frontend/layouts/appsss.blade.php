@@ -63,7 +63,7 @@
             }
 
             .phones-hotline a{
-                color :#fff;
+                color :#fff !important;
             }
 
         </style>
