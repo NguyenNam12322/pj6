@@ -3964,7 +3964,7 @@ html,
 
                .nk-header #nk-cart ul li {
                    box-sizing: border-box;
-                   width: 25%;
+                   width: auto;
                    margin: 0 2%;
                    display: flex;
                    align-items: center;
