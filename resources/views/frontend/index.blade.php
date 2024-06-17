@@ -400,9 +400,9 @@
                    
                     <div class="payday-header">
                         <div class="hinh_giamgia">
-                            <a href="#" title="Chương trình khuyến mãi giá sốc">
+                            <!-- <a href="#" title="Chương trình khuyến mãi giá sốc">
                                 <img src="{{ $bannerUnderSale[0]['image'] }}" width="1200px" height="45px" alt="Chương trình khuyến mãi giá số">
-                            </a>
+                            </a> -->
                         </div>
                     </div>
 
