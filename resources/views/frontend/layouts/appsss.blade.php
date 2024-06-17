@@ -921,6 +921,10 @@
                     margin: 0 !important;
                 }
 
+                .search-order{
+                    width: 32%;
+                }
+
                 #nk-banner-home .carsl1{
                     background: #000;
                 } 
