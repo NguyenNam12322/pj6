@@ -567,9 +567,7 @@
                                                                         </a>
                                                                     </li>
                                                                     <li class="search-order">
-                                                                        <div class="icon">
-                                                                            <span class="material-symbols-rounded" style=" display: block; color: white; font-size: 26px">history</span>
-                                                                        </div>
+                                                                        <div class="fas-phones phones-hotline"> <a href="tel: 0913011888" class="header__history tin-km">Hotline:0913.011.888</a> </div>
                                                                         <!-- <a href="/tra-cuu.html"> Tra cứu đơn hàng </a> -->
                                                                     </li>
                                                                     <li id="login_form">
