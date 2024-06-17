@@ -15493,7 +15493,8 @@ html,
                    text-transform: uppercase;
                    color: #fff;
                    font-family: Signika, sans-serif;
-                   filter: drop-shadow(0 3px 0 var(--primaryColor));
+/*                   filter: drop-shadow(0 3px 0 var(--primaryColor));*/
+                    color: #000;
                    text-shadow: 3px 0 var(--primaryColor), -2px 0 var(--primaryColor), 0 2px var(--primaryColor), 0 -2px var(--primaryColor), -2px -2px var(--primaryColor), 3px 2px var(--primaryColor), -2px 2px var(--primaryColor), 3px -2px var(--primaryColor)
                }
 
