@@ -133,6 +133,30 @@
             transition: all .5s;
         }
 
+        .coccoc-alo-ph-img-circle {
+            width: 50px;
+            height: 50px;
+            top: 25px;
+            left: 25px;
+            position: absolute;
+            background: rgba(30, 30, 30, 0.1) url(../images/phone-fix.png) no-repeat center center;
+            -webkit-border-radius: 100%;
+            -moz-border-radius: 100%;
+            border-radius: 100%;
+            border: 2px solid transparent;
+            opacity: 1;
+            -webkit-animation: coccoc-alo-circle-img-anim 1s infinite ease-in-out;
+            -moz-animation: coccoc-alo-circle-img-anim 1s infinite ease-in-out;
+            -ms-animation: coccoc-alo-circle-img-anim 1s infinite ease-in-out;
+            -o-animation: coccoc-alo-circle-img-anim 1s infinite ease-in-out;
+            animation: coccoc-alo-circle-img-anim 1s infinite ease-in-out;
+            background-size: cover;
+        }
+        .footer-new * {
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
     } 
 
     @media only screen and (max-width: 601px) {
