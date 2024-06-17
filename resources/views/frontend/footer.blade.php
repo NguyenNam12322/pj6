@@ -156,6 +156,23 @@
             -webkit-box-sizing: border-box;
             box-sizing: border-box;
         }
+
+        @keyframes coccoc-alo-circle-anim {
+            0% {
+                transform: rotate(0) scale(.5) skew(1deg);
+                opacity: .1;
+            }
+            30% {
+                transform: rotate(0) scale(.7) skew(1deg);
+                opacity: .5;
+            }
+
+            100% {
+                transform: rotate(0) scale(1) skew(1deg);
+                opacity: .1;
+            }
+        }    
+
         @keyframes coccoc-alo-circle-fill-anim {
 
             0% {
