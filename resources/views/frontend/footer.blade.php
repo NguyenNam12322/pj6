@@ -73,6 +73,30 @@
             background-size: cover;
         }
 
+        .coccoc-alo-ph-circle {
+            width: 100px;
+            height: 100px;
+            top: 0;
+            left: 0;
+            position: absolute;
+            background-color: transparent;
+            -webkit-border-radius: 100%;
+            -moz-border-radius: 100%;
+            border-radius: 100%;
+            border: 2px solid rgba(30, 30, 30, 0.4);
+            opacity: .1;
+            -webkit-animation: coccoc-alo-circle-anim 1.2s infinite ease-in-out;
+            -moz-animation: coccoc-alo-circle-anim 1.2s infinite ease-in-out;
+            -ms-animation: coccoc-alo-circle-anim 1.2s infinite ease-in-out;
+            -o-animation: coccoc-alo-circle-anim 1.2s infinite ease-in-out;
+            animation: coccoc-alo-circle-anim 1.2s infinite ease-in-out;
+            -webkit-transition: all .5s;
+            -moz-transition: all .5s;
+            -o-transition: all .5s;
+            transition: all .5s;
+            z-index: 10;
+        }
+
         .list-phone a {
             float: right;
             line-height: 30px;
