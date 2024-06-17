@@ -11160,7 +11160,7 @@ html,
                .d .nk-product-cate-homepage .lst-cate-title {
                    margin: 0;
                    color: white;
-                   background: linear-gradient(0deg, #00bb9a, #0072e7 100%, #67d700 0, #7000d7 0, #fff 0);
+                   background: linear-gradient(0deg,#d1a94e,#fdf5a1,#cfac54);
                    border-top-left-radius: 10px;
                    border-top-right-radius: 10px;
                    text-transform: uppercase;
@@ -14528,7 +14528,7 @@ html,
                .nk-recent .nk-recent-title {
                    margin: 0;
                    color: #fff;
-                   background: linear-gradient(0deg, #00bb9a, #0072e7 100%, #67d700 0, #7000d7 0, #fff 0);
+                   background: linear-gradient(0deg,#d1a94e,#fdf5a1,#cfac54);
                    border-top-left-radius: 10px;
                    border-top-right-radius: 10px;
                    text-transform: uppercase;
