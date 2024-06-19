@@ -3,10 +3,7 @@
     $number_cart = count($cart);
     ?>   
 <script>
-    // var code = prompt('Nhập mã để truy cập trang web:');
-    // if (code !== '112233445577') {
-    //     window.location.href = 'https://demo.dienmaynguoiviet.net/404';
-    // }
+ 
 </script>
 <!DOCTYPE html>
 <!--[if lt IE 10]>
@@ -570,17 +567,9 @@
                                                                             Giỏ hàng 
                                                                         </a>
                                                                     </li>
-                                                                    <li class="search-order">
-                                                                        <div class="fas-phones phones-hotline"> <a href="tel: 0913011888" class="header__history tin-km">Hotline:0913.011.888</a> </div>
-                                                                        <!-- <a href="/tra-cuu.html"> Tra cứu đơn hàng </a> -->
-                                                                    </li>
-                                                                    <li id="login_form">
-                                                                        <a href="login.html?return_url=index.php" class="nk-text-login">
-                                                                        <i class="nki-user"></i> Tài khoản </a>
-                                                                    </li>
                                                                     <li id="login_form2" class="nk_tooltip" data-toggle=".nk-login-content" data-overlay="overlay" style="display: none;"></li>
                                                                     <li class="nk_tooltip" data-toggle=".nk-hotline-content1" data-overlay="true">
-                                                                        <a href="tel:18006800">
+                                                                        <a href="#">
                                                                             <div class="icon">
                                                                                 <i class="nki-Phone"></i>
                                                                             </div>
@@ -588,14 +577,17 @@
                                                                                 <span>Gọi mua: 1800.6800 (Miễn phí)</span>
                                                                                 </p> -->
                                                                         </a>
-                                                                        <div class="nk-hotline-content1">
-                                                                            <div class="icon-up"></div>
-                                                                            <p>
-                                                                                <span>Thời gian hoạt động</span>
-                                                                                <span class="color3">8h00 - 21h00</span>
-                                                                            </p>
-                                                                        </div>
+                                                                       
                                                                     </li>
+                                                                    <li class="search-order">
+                                                                        <div class="fas-phones phones-hotline"> <a href="tel: 0913011888" class="header__history tin-km">Hotline:0123.456.789</a> </div>
+                                                                        <!-- <a href="/tra-cuu.html"> Tra cứu đơn hàng </a> -->
+                                                                    </li>
+                                                                    <li id="login_form">
+                                                                        <!-- <a href="login.html?return_url=index.php" class="nk-text-login"> -->
+                                                                        <i class="nki-user"></i> Tin tức </a>
+                                                                    </li>
+                                                                    
                                                                 </ul>
                                                             </div>
 
