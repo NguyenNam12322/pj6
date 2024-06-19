@@ -3,7 +3,7 @@
         font-weight: normal !important;
     }
 
-    .list-show{
+    .list-show b{
         color: #000 !important;
         font-weight: bold !important;
     }
