@@ -1706,7 +1706,7 @@
                         items:1.5
                     },
                     600:{
-                        items:3
+                        items:2
                     },
                     1000:{
                         items:5

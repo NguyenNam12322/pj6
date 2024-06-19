@@ -120,9 +120,7 @@ class indexController extends Controller
 
         $smart_phone = false;
 
-      
-
-
+    
         return view('frontend.index', compact('banners', 'bannersRight', 'bannerUnderSlider', 'bannerUnderSale','deal','product_sale', 'group','timeDeal_star', 'deal_check', 'now','bannerscrollRight', 'bannerscrollLeft'));
 
     }
