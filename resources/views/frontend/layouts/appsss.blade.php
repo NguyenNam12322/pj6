@@ -63,7 +63,7 @@
                 color :#fff !important;
             }
 
-            
+
 
         </style>
         @stack('style')
@@ -586,7 +586,7 @@
                                                                     </li>
                                                                     <li id="login_form">
                                                                         <!-- <a href="login.html?return_url=index.php" class="nk-text-login"> -->
-                                                                        <i class="nki-user"></i> Tin tức </a>
+                                                                       <a href="#">Tin tức </a>
                                                                     </li>
                                                                     
                                                                 </ul>
@@ -615,6 +615,8 @@
                 .promotion-menu{
                     position: relative;
                 }
+
+                
 
                   .banner_home__ .banner-left{
                     width: 100% !important;
@@ -1034,7 +1036,7 @@
             </style>
             <!-- mobile -->
             
-            <div class="row-fluid mobile">
+            <div class="row-fluid mobile search-head">
                 <div class="span16 nk-header">
                     <div class="fluid">
                         <div class="span16 _nk_main">

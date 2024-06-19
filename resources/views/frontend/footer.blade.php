@@ -255,6 +255,14 @@
         .footer{
             height: 587px;
         }
+
+        .title-if{
+            margin-bottom: 10px;
+        }
+
+        .ft-new-info{
+            padding: 0;
+        }
     } 
 
     .ft-dmca ul li a, .ft-dmca .title{
@@ -408,7 +416,7 @@
                 <div class="title-if">ĐỊA CHỈ MUA HÀNG</div>
                 <p>
                     <b>Văn phòng đại diện </b><br>
-                    Địa chỉ: Tòa nhà VXT, số 375 Minh Khai, Hai Bà Trưng, Hà Nội
+                    Địa chỉ: Tòa nhà VXT, số 375 Minh Khai, HBT, Hà Nội
                 </p>
                 <p>
                     <b>Kho hàng</b><br>

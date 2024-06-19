@@ -191,11 +191,17 @@
     }
 
     @media all and (max-width: 768px) {
-         #nk-banner-home{
-        display: none;
-    }
+        
         #countdown li {
             font-size: calc(1.125rem * var(--smaller));
+        }
+
+        .search-head{
+            height: 100px;
+        }
+
+        #nk-banner-home .main-banner{
+            height: 100% !important;
         }
           
         #countdown li span {
@@ -218,7 +224,7 @@
         }
 
         .banner_home__.container{
-            padding: 0 80px !important;
+            padding: 0 !important;
         }
 
     }    
@@ -283,7 +289,7 @@
         line-height: 40px;
     }
 
-    linear-gradient(90deg,#d1a94e,#fdf5a1,#cfac54)
+    
 
 </style>
 
@@ -297,7 +303,7 @@
 
                 @if(!empty($deal))
                 
-                <div class="payday-header">
+                <div class="payday-header desktop">
                     <div class="hinh_giamgia"> 
 
                         <div class="gvdshock">
@@ -321,13 +327,32 @@
 
                     </div>
 
-                   <!--  <div class="header title-block header-block">
-                        <div class="title">
-                            <span class="hot-deal">DEAL NGON MỖI NGÀY</span>
-                           
+                </div>
+
+                <div class="payday-header mobile">
+                    <div class="hinh_giamgia"> 
+
+                        <div class="gvdshock">
+
+                            <div class="deal-mb">
+                                <i class="icons-2022"></i>
+                                <span class="txt">Deal hot hôm nay</span>
+                            </div>
+                            <div class="endtime" data-countdown="" data-begin="">
+                                <span class="title-end">Kết thúc sau</span>
+                                <span class="countdown-timer">
+                                    
+                                    <label id="hours">{{ $hour }}</label>
+                                    <label id="minutes">{{  intval($minutes)<10?'0'.$minutes:$minutes }}</label>
+                                    <label id="seconds">{{  intval($seconds)<10?'0'.$seconds:$seconds }}</label>
+                                </span>
+                            </div>
+
+
                         </div>
-                        
-                    </div> -->
+
+                    </div>
+
                 </div>
 
                 @endif
