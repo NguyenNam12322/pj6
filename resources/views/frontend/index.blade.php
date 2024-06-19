@@ -36,7 +36,7 @@
             vertical-align: middle;
             background: url({{ asset('images/template/sprite-2022.png')  }}) no-repeat;
         }
-        .title-dhn .tt-dhn-l .icons-2022 {
+        .tt-dhn-l .icons-2022 {
             width: 36px;
             height: 40px;
             background-position: -2px -2px;
