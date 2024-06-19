@@ -1452,6 +1452,8 @@ html,
                    width: 240px;
                    z-index: 10;
                    height: auto;
+                   top:44px;
+                   left: 20px;
 /*                   min-height: 384px;*/
                }
 
