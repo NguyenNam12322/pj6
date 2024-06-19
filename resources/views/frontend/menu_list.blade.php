@@ -1311,7 +1311,7 @@
                                         <li class="left-menu">
                                             <div class="menu-item">
                                                 <div class="icon">
-                                                    <img src="{{ asset('images/template/supports.jpg') }}" width="18px" height="18px" alt="may-loc-nuoc">
+                                                    <img src="{{ asset('images/template/tuvan.png') }}" width="18px" height="18px" alt="may-loc-nuoc">
                                                 </div>
                                                 <p>
                                                     <a href="#">Dịch vụ, hỗ trợ</a>
@@ -1337,7 +1337,7 @@
                                         <li class="left-menu">
                                             <div class="menu-item">
                                                 <div class="icon">
-                                                    <img src="{{ asset('images/template/ctv.jpg') }}" width="18px" height="18px" alt="Cộng tác viên Affiate">
+                                                    <img src="{{ asset('images/template/hoptac.png') }}" width="18px" height="18px" alt="Cộng tác viên Affiate">
                                                 </div>
                                                 <p>
                                                     <a href="#">Cộng tác viên Affiate</a>
