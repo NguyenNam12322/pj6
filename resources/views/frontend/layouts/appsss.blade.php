@@ -907,6 +907,9 @@
                 .mobile{
                     display: none;
                 }
+                .nk-banner-main{
+                    padding: 0 !important;
+                }
 
                 #login_form{
                     color: #fff;
