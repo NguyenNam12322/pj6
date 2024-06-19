@@ -152,6 +152,268 @@
 
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
+
+        <style type="text/css">
+            
+            .danh-muc1, .danh-muc2{
+                left: 0px !important;
+            } 
+
+            .hotlines{
+                position:fixed; 
+                z-index:9999
+            }   
+
+            #ui-id-1{
+                font-size: 14px;
+            }
+
+            .submenu strong{
+                font-size: 14px;
+            } 
+
+            .submenu h3{
+                font-size: 14px;
+            } 
+
+             @media only screen and (min-width: 768px) {
+                .hotlines{
+                   
+                    bottom:93px; 
+                    right:8px; 
+                    display: none;   
+                }
+                .nk-banner-main{
+                    padding: 0 !important;
+                }
+
+                .theme-xmas.header:after {
+                content: '';
+                background-size: 90%;
+                width: 12%;
+                height: 18%;
+                position: absolute;
+                z-index: 2;
+                background-image:  url('{{ asset("images/template/header-rope-right-23.png")  }}');
+                top: 0;
+                right: 0;
+                background-repeat: no-repeat;
+            }
+
+            .theme-xmas.header:before {
+                content: '';
+                background-size: 90%;
+                width: 12%;
+                height: 18%;
+                position: absolute;
+                z-index: 2;
+                background-image: url('{{ asset("images/template/header-rope-left-23.png")  }}');
+                left: 0;
+                top: 0;
+                background-repeat: no-repeat;
+            }   
+            .header-pc{
+                height: 80px;
+            } 
+
+
+                .zalo-chat-widget{  
+                    bottom: 28% !important;  
+                    right: 1%!important;  
+                }  
+
+                .hotline{
+                    width: 237px;
+                }
+
+                .hotline p{
+
+                    margin-bottom: 1em;
+                }
+                .global-compare-group{
+                    height: 300px;
+                }
+                .list-menu{
+                    margin-bottom: 0;
+                }
+
+                .submenu {
+
+                    left:240px !important;
+
+               }
+
+               .hotline{
+                    position: absolute;
+                    
+               }
+
+                a.hotline-fix {
+                    background: #FCEF41;
+                    border-radius: 7px 0px 0px 0px;
+                    margin-bottom: 5px;
+                    font-size: 15px;
+                }
+
+                .hotline.position-fixed {
+                    bottom: 21%;
+                    right: 0;
+                    padding: 0.5rem 0.3rem 0.5rem 0.8rem;
+                    border-radius: 13px 0px 0px 13px;
+                    background-color: transparent;
+                    z-index: 99;
+                    transition: 0.3s;
+                }
+
+                .hotline.position-fixed a i {
+                    width: 35px;
+                    height: 35px;
+                    border: 1px solid #002069;
+                    border-radius: 50%;
+                    text-align: center;
+                    line-height: 35px;
+                    margin-right: 10px;
+                    color: #002069;
+                }
+
+                .text-white {
+                    color: #fff!important;
+                }
+
+               /* .zalo-mobile{
+                    display: none;
+                }*/
+
+              /*  .zalo-icon{
+                    left: 73%;
+                }*/
+            }
+
+            @media only screen and (max-width: 768px) {
+                .menus-banner .strongtitle {
+                    font-size: 12px !important;
+                    -webkit-line-clamp: 1;
+                      -webkit-box-orient: vertical;
+                      overflow: hidden;
+                      display: -webkit-box;
+                }
+
+                 .nk-header #nk-searchs {
+                    border-radius: .9em;
+                    background-color: #FFFFFF;
+                    height: 40px;
+                    position: relative;
+                   /* width: 30%;*/
+                    float: left;
+                }
+
+                .re-call, .help{
+                    position: fixed;
+                    z-index: 9999;
+                } 
+
+                .re-call{
+                    right: 0;
+                    bottom: 65px
+                }
+
+                 .help{
+                    right: 0;
+                    bottom: 10px
+                }
+
+                .nk-header #nk-searchs .nk-search-box input[type="text"] {
+                    height: 40px;
+                    border: none;
+                    padding: 0 10px;
+                    color: #111;
+                    font-size: 15px;
+                    border-radius: .9em;
+                    width: 100%;
+                }
+
+                .nk-header #nk-searchs .nk-search-box button {
+                    background-color: white;
+                    height: 40px;
+                    width: 56px;
+                    border: none;
+                    cursor: pointer;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    border-top-right-radius: .9em;
+                    border-bottom-right-radius: .9em;
+                    outline: none;
+                }
+
+                #nk-searchs {
+                    width: 90% !important;
+                    margin: 0 auto;
+                }
+
+                .search-results{
+                    background: #fff;
+                }
+
+
+
+                .ui-widget-content p{
+
+                    font-size: 15px;
+                }
+
+                .zalo-chat-widget{  
+                    bottom: 10% !important;  
+                    left: 10px!important;  
+                }  
+
+
+                .suggest_link{
+                    font-size: 14px;
+                }  
+
+                .p_hotline_item span {
+                    width: 100%;
+                    text-align: center;
+                }
+                .hotlines{
+                    bottom:120px; 
+                    right:0; 
+                }  
+                #myBtn-top {
+                   /* bottom: 28px;
+                    right: 100px*/
+                    display: none !important;
+                }  
+                  #skw{
+                    border: 1px solid #D92548;
+                  }
+
+                .btn-remove-all-compare{
+                    display: none !important;
+
+                }
+
+                .icons-mobile-bar button {
+                    padding: 10px;
+                    border: 1px solid #E9162E;
+                }
+
+               .fa-bars:before {
+                    color: #E9162E;
+                }
+                .btn-compare{
+                    top: 0px !important;
+                    left: 112px !important;
+                    line-height: 28px !important;
+                }
+                .compare-add-mobile{
+                    width: 100% !important;
+                }
+
+            }
+        </style>
+
     
         <style type="text/css">
             /*body.theme-lunar-new-year{
@@ -420,263 +682,7 @@
              body.theme-lunar-new-year {
                 background:'#'{{ asset($background->background_image)  }};
             }  
-            .danh-muc1, .danh-muc2{
-                left: 0px !important;
-            } 
 
-            .hotlines{
-                position:fixed; 
-                z-index:9999
-            }   
-
-            #ui-id-1{
-                font-size: 14px;
-            }
-
-            .submenu strong{
-                font-size: 14px;
-            } 
-
-            .submenu h3{
-                font-size: 14px;
-            } 
-
-             @media only screen and (min-width: 768px) {
-                .hotlines{
-                   
-                    bottom:93px; 
-                    right:8px; 
-                    display: none;   
-                }
-                .nk-banner-main{
-                    padding: 0 !important;
-                }
-
-                .theme-xmas.header:after {
-                content: '';
-                background-size: 90%;
-                width: 12%;
-                height: 18%;
-                position: absolute;
-                z-index: 2;
-                background-image:  url('{{ asset("images/template/header-rope-right-23.png")  }}');
-                top: 0;
-                right: 0;
-                background-repeat: no-repeat;
-            }
-
-            .theme-xmas.header:before {
-                content: '';
-                background-size: 90%;
-                width: 12%;
-                height: 18%;
-                position: absolute;
-                z-index: 2;
-                background-image: url('{{ asset("images/template/header-rope-left-23.png")  }}');
-                left: 0;
-                top: 0;
-                background-repeat: no-repeat;
-            }   
-            .header-pc{
-                height: 80px;
-            } 
-
-
-                .zalo-chat-widget{  
-                    bottom: 28% !important;  
-                    right: 1%!important;  
-                }  
-
-                .hotline{
-                    width: 237px;
-                }
-
-                .hotline p{
-
-                    margin-bottom: 1em;
-                }
-                .global-compare-group{
-                    height: 300px;
-                }
-                .list-menu{
-                    margin-bottom: 0;
-                }
-
-                .submenu {
-
-                    left:240px !important;
-
-               }
-
-               .hotline{
-                    position: absolute;
-                    
-               }
-
-                a.hotline-fix {
-                    background: #FCEF41;
-                    border-radius: 7px 0px 0px 0px;
-                    margin-bottom: 5px;
-                    font-size: 15px;
-                }
-
-                .hotline.position-fixed {
-                    bottom: 21%;
-                    right: 0;
-                    padding: 0.5rem 0.3rem 0.5rem 0.8rem;
-                    border-radius: 13px 0px 0px 13px;
-                    background-color: transparent;
-                    z-index: 99;
-                    transition: 0.3s;
-                }
-
-                .hotline.position-fixed a i {
-                    width: 35px;
-                    height: 35px;
-                    border: 1px solid #002069;
-                    border-radius: 50%;
-                    text-align: center;
-                    line-height: 35px;
-                    margin-right: 10px;
-                    color: #002069;
-                }
-
-                .text-white {
-                    color: #fff!important;
-                }
-
-               /* .zalo-mobile{
-                    display: none;
-                }*/
-
-              /*  .zalo-icon{
-                    left: 73%;
-                }*/
-            }
-
-            @media only screen and (max-width: 768px) {
-                .menus-banner .strongtitle {
-                    font-size: 12px !important;
-                    -webkit-line-clamp: 1;
-                      -webkit-box-orient: vertical;
-                      overflow: hidden;
-                      display: -webkit-box;
-                }
-
-                 .nk-header #nk-searchs {
-                    border-radius: .9em;
-                    background-color: #FFFFFF;
-                    height: 40px;
-                    position: relative;
-                   /* width: 30%;*/
-                    float: left;
-                }
-
-                .re-call, .help{
-                    position: fixed;
-                    z-index: 9999;
-                } 
-
-                .re-call{
-                    right: 0;
-                    bottom: 65px
-                }
-
-                 .help{
-                    right: 0;
-                    bottom: 10px
-                }
-
-                .nk-header #nk-searchs .nk-search-box input[type="text"] {
-                    height: 40px;
-                    border: none;
-                    padding: 0 10px;
-                    color: #111;
-                    font-size: 15px;
-                    border-radius: .9em;
-                    width: 100%;
-                }
-
-                .nk-header #nk-searchs .nk-search-box button {
-                    background-color: white;
-                    height: 40px;
-                    width: 56px;
-                    border: none;
-                    cursor: pointer;
-                    position: absolute;
-                    top: 0;
-                    right: 0;
-                    border-top-right-radius: .9em;
-                    border-bottom-right-radius: .9em;
-                    outline: none;
-                }
-
-                #nk-searchs {
-                    width: 90% !important;
-                    margin: 0 auto;
-                }
-
-                .search-results{
-                    background: #fff;
-                }
-
-
-
-                .ui-widget-content p{
-
-                    font-size: 15px;
-                }
-
-                .zalo-chat-widget{  
-                    bottom: 10% !important;  
-                    left: 10px!important;  
-                }  
-
-
-                .suggest_link{
-                    font-size: 14px;
-                }  
-
-                .p_hotline_item span {
-                    width: 100%;
-                    text-align: center;
-                }
-                .hotlines{
-                    bottom:120px; 
-                    right:0; 
-                }  
-                #myBtn-top {
-                   /* bottom: 28px;
-                    right: 100px*/
-                    display: none !important;
-                }  
-                  #skw{
-                    border: 1px solid #D92548;
-                  }
-
-                .btn-remove-all-compare{
-                    display: none !important;
-
-                }
-
-                .icons-mobile-bar button {
-                    padding: 10px;
-                    border: 1px solid #E9162E;
-                }
-
-               .fa-bars:before {
-                    color: #E9162E;
-                }
-                .btn-compare{
-                    top: 0px !important;
-                    left: 112px !important;
-                    line-height: 28px !important;
-                }
-                .compare-add-mobile{
-                    width: 100% !important;
-                }
-
-            }
         </style>
         @endif
 
