@@ -254,7 +254,7 @@
         background: #000;
     }
 </style>
-<footer class="footer">
+<footer class="footer container">
     
     <div class="div-foot">
         <div class="ft-dmca">

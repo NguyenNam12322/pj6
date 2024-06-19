@@ -32,6 +32,11 @@
             margin-top: 6px;
         }    
 
+        .icons-2022 {
+            vertical-align: middle;
+            background: url({{ asset('images/template/sprite-2022.png')  }}) no-repeat;
+        }
+
         .payday-header{
             height: 60px;
             background: linear-gradient(0deg,#d1a94e,#fdf5a1,#cfac54);
@@ -248,6 +253,8 @@
         color: #010101;
         text-transform: uppercase;
     }
+
+    linear-gradient(90deg,#d1a94e,#fdf5a1,#cfac54)
 
 </style>
 
