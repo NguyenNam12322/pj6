@@ -4,8 +4,8 @@
     }
 
     .list-show{
-        color: #000;
-        font-weight: bold;
+        color: #000 !important;
+        font-weight: bold !important;
     }
 
 </style>
