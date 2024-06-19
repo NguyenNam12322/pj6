@@ -24,6 +24,7 @@
 
         .post-sidebar-img img{
             width: 100%;
+            padding: 10px;
         }
 
         .pdetail-installment{
@@ -1896,7 +1897,7 @@
                                 <img data-lazyloaded="1" src="{{ asset($value->Image) }}">
                             </span>
 
-                            <h3 class="post-sidebar-title">{{ $value->Name }}</h3>
+                            <h4 class="post-sidebar-title">{{ $value->Name }}</h4>
 
                             @if(!empty($value->manuPrice))
 
