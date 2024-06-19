@@ -75,11 +75,7 @@
     
 
     @endpush   
-    @if(count($data) ==0)
 
-        <h3>Không tìm thấy sản phẩm đã chọn</h3>
-
-    @endif
     <?php 
 
          $manu = ['lg'=>'/images/saker/lg.png', 'tcl'=>'/images/saker/tcl.png', 'samsung'=>'/images/saker/samsung.png', 'sharp'=>'/images/saker/sharp.png', 'sony'=>'/images/saker/sony.png', 'panasonic'=>'/images/saker/panasonic.png', 'electrolux'=>'/images/saker/electrolux.png', 'philips'=>'/images/saker/philips.png', 'funiki'=>'/images/saker/funiki.png', 'hitachi'=>'/images/saker/hitachi.png', 'sanaky'=>'/images/saker/sanaky.png', 'nagakawa'=>'/images/saker/nagakawa.png', 'daikin'=>'/images/saker/daikin.png', 'mitsubishi electric'=>'/images/saker/mitsubishi.png', 'kangaroo'=>'/images/saker/kangaroo.png', 'midea'=>'/images/saker/midea.png', 'mitsubishi'=>'/images/saker/mitsubishi.png', 'hisense'=>'/uploads/icon/431.png'];
@@ -88,6 +84,11 @@
     <div class="row-fluid">
         <div class="span16 container outstanding">
             <div class="row-fluid">
+                @if(count($data) ==0)
+        
+                    <h3>Không tìm thấy sản phẩm đã chọn</h3>
+
+                @endif
                 <div class="w100p">
                     <div class="span16 nk_houseware_best_selling_2020_wrapper nk_homepage_houseware_best_selling_2020_wrapper js_done">
                         <!-- <div class="menu-wrap0" style="height: 35px;">
