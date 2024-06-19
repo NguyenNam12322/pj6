@@ -3,11 +3,7 @@
         font-weight: normal !important;
     }
 
-    .list-show b{
-        color: #000 !important;
-        font-weight: bold !important;
-    }
-
+  
 </style>
 
 <div class="row-fluid ">

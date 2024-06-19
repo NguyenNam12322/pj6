@@ -419,8 +419,13 @@
                                 height: 100%;
                             }
 
-                            .nk-header #nk-cart ul li a, .nk-header #nk-cart ul li#login_form a,.nk-header #nk-cart ul li .icon i,.nk-danh-muc-trang-chu b{
+                            .nk-header #nk-cart ul li a, .nk-header #nk-cart ul li#login_form a,.nk-header #nk-cart ul li .icon i{
                                 color: #fff;
+                            }
+
+                            .nk-danh-muc-trang-chu b{
+                                color: #000;
+                                font-weight: bold;
                             }
 
                             .material-symbols-rounded, .nk-header #nk-cart ul li#login_form i.nki-user{
