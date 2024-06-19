@@ -1451,8 +1451,8 @@ html,
                    position: absolute;
                    width: 250px;
                    z-index: 10;
-                   height: auto;
-                   top:48px;
+                   height: 279px;
+                   top:44px;
                    left: 0px;
 /*                   min-height: 384px;*/
                }
