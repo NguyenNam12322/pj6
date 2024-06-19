@@ -23,7 +23,7 @@
         }
 
         .pdetail-installment{
-            height: 100px !important;
+            height: 300px !important;
         }
 
         .box01, .box01__show{
