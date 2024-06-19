@@ -123,7 +123,7 @@
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-        left: 10%;
+        left: 70%;
     }
 
     #countdown li {
@@ -235,6 +235,20 @@
         height: 100%;
     }
 
+    .tt-dhn-l{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 70%;
+    }
+
+    .title-dhn .tt-dhn-l .txt {
+        font-size: 20px;
+        font-weight: 700;
+        color: #010101;
+        text-transform: uppercase;
+    }
+
 </style>
 
 <link rel="stylesheet" type="text/css" href="{{ asset('css/details.css') }}?ver=25">
@@ -251,6 +265,11 @@
                     <div class="hinh_giamgia"> <a href="#" title="banner-sale"> 
 
                         <div class="gvdshock">
+
+                            <div class="tt-dhn-l">
+                                <span class="icons-2022"></span>
+                                <span class="txt">Deal hot hôm nay</span>
+                            </div>
                             <div class="endtime" data-countdown="" data-begin="">
                                 <span class="title-end">Kết thúc sau</span>
                                 <span class="countdown-timer">
