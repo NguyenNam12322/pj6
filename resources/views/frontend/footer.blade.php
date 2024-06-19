@@ -1,4 +1,4 @@
-<div class="max-width">
+<div class="container p-0">
     <div class="phone_hotline"> <a href="tel:#" title="Bảo Hành: 0243.687.9145" class="p_hotline_item"> <i class="icon_security"></i> <span><strong>Bảo Hành: 0123.456.789</strong> (8h00 - 17h00)</span> </a> <a href="tel:#" title="Mua hàng:#" class="p_hotline_item"> <i class="icon_purchase"></i> <span><strong>Mua hàng: 0123.456.789</strong> (8h00 - 17h00)</span> </a> <a href="#" title="Khiếu nại:0916917949" class="p_hotline_item"> <i class="icon_complain"></i> <span><strong>Khiếu nại: 0123.456.789</strong> (8h00 - 17h00)</span> </a> </div>
 </div>
 
@@ -11,6 +11,7 @@
         .banner-ads-text .header-menu__navs{
             height: 40px;
         }
+
 
         .ft-dmca img{
             width: 100%;
@@ -245,6 +246,17 @@
         }
     } 
 
+    @media only screen and (min-width: 601px) {
+       
+        .div-foot{
+            height: 400px;
+        }
+
+        .footer{
+            height: 650px;
+        }
+    } 
+
     .ft-dmca ul li a, .ft-dmca .title{
         color: #FFFB9C;
     }
@@ -253,15 +265,93 @@
     .footer{
         background: #000;
     }
-</style>
-<footer class="footer container">
-    
-    <div class="div-foot">
-        <div class="ft-dmca">
-           
-            <img src="{{ asset('images/template/banner-foot.jpg') }}" alt="bg">
-        </div>
 
+    .ft-new-content {
+        width: 100%;
+        float: left;
+        padding: 0 12px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+    }
+
+    .ft-new-content .ft-new-info {
+        width: 392px;
+        float: left;
+        padding-right: 12px;
+        color: #fff;
+    }
+
+    .ft-new-content .ft-new-menu {
+        width: calc(100% - 392px);
+        float: left;
+    }
+
+    .ft-new-content .ft-new-menu .item-n {
+        width: 254px;
+        float: left;
+        padding-right: 12px;
+    }
+
+    .ft-new-content .ft-new-menu .item-n:last-child {
+        width: 178px;
+        padding-right: 0;
+    }
+
+    .ft-new-content .ft-new-menu .item-n .title {
+        width: 100%;
+        float: left;
+        margin-bottom: 10px;
+        font-size: 13px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #ddcb64;
+    }
+
+    .ft-new-content .ft-new-menu .item-n a {
+        width: 100%;
+        float: left;
+        margin-bottom: 10px;
+        font-size: 13px;
+        color: #fff;
+        line-height: 1.5;
+    }
+
+    .cp-r {
+        width: 100%;
+        float: left;
+        padding: 20px 12px;
+       
+        box-sizing: border-box;
+        background: #121212;
+        margin-top: 20px;
+    }
+
+    .cp-r .cpr-ct {
+        width: 100%;
+        float: left;
+        margin-bottom: 10px;
+        line-height: 26px;
+        font-size: 12px;
+        color: #fff;
+        text-align: center;
+    }
+
+    .cp-r table {
+        width: 100%;
+        float: left;
+        color: #fff;
+        margin-bottom: 10px;
+    }
+</style>
+
+
+<footer class="footer container mobile">
+    <div class="div-foot">
+        <div class="ft-dmca"> <img src="https://muasamtaikho.vn/images/template/banner-foot.jpg" alt="bg"> </div>
         <div class="row">
             <div class="col-md-2 col-footer">
                 <h3 class="title">Thông tin</h3>
@@ -293,6 +383,100 @@
         </div>
         <!-- <div class="footer-bottom"> <div class="container"> <p> <b>© 2018. Công ty TNHH Thương Mại Phú Tiến. Địa chỉ: : Kho Đóng Tàu, Ngõ 683 Đường Nguyễn Khoái, Quận Hoàng
             Mai, TP HN. GPKD số : 0102011440 do Sở Kế Hoạch và Đầu Tư TP. Hà Nội, cấp ngày 25/02/2004 </b> </p> </div> </div> --> 
+    </div>
+    <div class="ring-phone">
+        <div class="coccoc-alo-phone coccoc-alo-green coccoc-alo-show">
+            <div class="coccoc-alo-ph-circle"></div>
+            <div class="coccoc-alo-ph-circle-fill"></div>
+            <div class="coccoc-alo-ph-img-circle"></div>
+            <div class="list-phone"> <a href="tel:0904196226">0123.456.789</a> <a href="tel:0942496226">0123.456.789</a> <a href="tel:0945172266">0123.456.789</a> </div>
+        </div>
+    </div>
+</footer>
+<footer class="footer container desktop">
+    
+    <div class="div-foot">
+        <div class="ft-dmca">
+           
+            <img src="{{ asset('images/template/banner-foot.jpg') }}" alt="bg">
+        </div>
+
+     
+
+        <div class="ft-new-content">
+            <div class="ft-new-info">
+                <div class="title-if">ĐỊA CHỈ MUA HÀNG</div>
+                <p>
+                    <b>Văn phòng đại diện </b><br>
+                    Địa chỉ: Tòa nhà VXT, số 375 Minh Khai, Hai Bà Trưng, Hà Nội
+                </p>
+                <p>
+                    <b>Kho hàng</b><br>
+                    Địa chỉ:  683 Nguyễn Khoái, Thanh Trì, Hoàng Mai, Hà Nội
+                </p>
+               
+            </div>
+            <div class="ft-new-menu">
+                <div class="item-n item-st">
+                    <div class="title">Muasamtaikho.vn</div>
+                    <div class="list">
+                        <a href="#">Giới thiệu</a>
+                        <a href="#">Tin tức</a>
+                        <a href="#">Hướng dẫn tiêu dùng</a>
+                        <a rel="nofollow" href="#">Hướng dẫn mua hàng</a>
+                        <a rel="nofollow" href="#">Hướng dẫn thanh toán</a>
+                        <a rel="nofollow" href="#" target="_blank">Hướng dẫn trả góp với
+                        Insta</a>
+                    </div>
+                </div>
+                <div class="item-n item-st">
+                    <div class="title">Chính sách và quy định</div>
+                    <div class="list">
+                        <a rel="nofollow" href="#">Chính
+                        sách bảo mật</a>
+                        <a rel="nofollow" href="#">Chính sách vận chuyển</a>
+                        <a rel="nofollow" href="#">Chính sách bảo hành</a>
+                        <a rel="nofollow" href="#">Chính sách đổi
+                        hàng</a>
+                    </div>
+                </div>
+                <div class="item-n item-st">
+                    <div class="title">Tổng đài hỗ trợ</div>
+                    <div class="list">
+                        <a href="#" rel="nofollow">Hotline: 0123.456.789</a>
+                        <a href="#" rel="nofollow">Gọi mua: 0123.456.789</a>
+                        <a href="#" rel="nofollow">Kỹ thuật: 0123.456.789</a>
+                        <a href="#" rel="nofollow">Khiếu nại: 0123.456.789</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <!-- <div class="footer-bottom"> <div class="container"> <p> <b>© 2018. Công ty TNHH Thương Mại Phú Tiến. Địa chỉ: : Kho Đóng Tàu, Ngõ 683 Đường Nguyễn Khoái, Quận Hoàng
+            Mai, TP HN. GPKD số : 0102011440 do Sở Kế Hoạch và Đầu Tư TP. Hà Nội, cấp ngày 25/02/2004 </b> </p> </div> </div> --> 
+    </div>
+
+    <div class="cp-r">
+        <div class="cpr-ct">
+            <b>Giao diện website được thiết kế độc quyền bởi Cty ABC</b>
+            <br>
+            375 Minh Khai, Hai Bà Trưng, Hà Nội<br>
+            Điện thoại:(024) 123.4567   |   Email đặt hàng Online: muasamtaikho.vn   |   Chăm sóc khách hàng: cskh@muasamtaikho.vn
+        </div>
+        <!-- <table border="0">
+            <tbody>
+                <tr>
+                   
+                    <td style="text-align:left;">Website đã đăng ký với <a href="http://online.gov.vn/HomePage/CustomWebsiteDisplay.aspx?DocId=28506" style="color:#FFC200;" rel="nofollow">Cục thương mại điện tử, cục công nghệ thông tin - Bộ Công Thương</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table> -->
+       
     </div>
 
     <div class="ring-phone">
