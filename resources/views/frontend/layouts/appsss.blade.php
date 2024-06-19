@@ -45,7 +45,7 @@
         <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
         <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" type="text/css" href="{{ asset('css/app.css') }}?ver=35 ">
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/app.css') }}?ver=37 ">
         <link rel="stylesheet" href="{{ asset('css/lib/bootstrap.min.css') }}">
         <script type="text/javascript" src="https://dienmaynguoiviet.vn/js/lib/owl.carousel.min.js"></script>
         <link rel="stylesheet" href="https://dienmaynguoiviet.vn/css/lib/owl.carousel.min.css">
@@ -802,7 +802,7 @@
                
 
                 .search_center{
-                    height: 96px !important;
+                    height: auto !important;
                 }
 
                 .header__main{
@@ -1040,7 +1040,9 @@
 
                                 <div class="div-header-cart">
 
-                                    <div class="logo-mobile"></div>
+                                    <div class="logo-mobile">
+                                        <h1 id="nk-logo"> <a href="/"> <img fetchpriority="high" loading="eager" src="{{ asset('/images/template/logo2.jpg') }}" alt=""> </a> </h1>
+                                    </div>
 
                                     <div id="nk-cart">
                                         <ul>
@@ -1056,10 +1058,10 @@
                                                 </a>
                                             </li>
                                           
-                                            <li id="login_form">
+                                            <!-- <li id="login_form">
                                                 <a href="login.html?return_url=index.php" class="nk-text-login">
                                                 <i class="nki-user"></i> Tài khoản </a>
-                                            </li>
+                                            </li> -->
 
                                              <li id="login_form">
                                                 <a href="#" class="nk-text-login">

@@ -3242,10 +3242,7 @@ html,
                    line-height: 40px;
                }
 
-               .nk-header ._nk_main ._nk_bottom {
-                   margin-top: 24px;
-               }
-
+             
                .nk-header .span4,
                .nk-header .span12 {
                    float: left;
@@ -11084,6 +11081,9 @@ html,
                        font-size: .75em;
                        padding: 6px;
                        margin-bottom: 5px;
+                   }
+                   .nk-header #nk-logo img{
+                        width: 50%;
                    }
                }
 
