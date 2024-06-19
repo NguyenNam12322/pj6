@@ -476,11 +476,11 @@
                                     <a class="product-render rd" data-product_id="115481" product-id="115481" name="{{ $vals->Name  }}" href="{{ route('details', $vals->Link) }}" ></a>
                                     <div class="product-slide">
                                         <a class="product-render rd" data-product_id="115481" product-id="115481" name="{{ $vals->Name  }}" href="" ></a>
-                                        <div class="product {{ $vals->id }}">
+                                        <div class="product">
 
-                                            <a class="product-render rd" data-product_id="115481" product-id="115481" name="{{ $vals->Name  }}" href="{{ route('details', $vals->Link) }}"></a>
+                                            <a class="product-render rd" data-product_id="{{  $vals->id }}" product-id="115481" name="{{ $vals->Name  }}" href="{{ route('details', $vals->Link) }}"></a>
                                             <div class="product-header">
-                                                <a class="product-render rd" data-product_id="115481" product-id="115481" name="{{ $vals->Name  }}">
+                                                <a class="product-render rd" data-product_id="{{  $vals->id }}" product-id="115481" name="{{ $vals->Name  }}">
                                                     <div class="top-right">
                                                         <div class="product-feature-badge-item installment">
                                                             <span>Trả góp 0%</span>
