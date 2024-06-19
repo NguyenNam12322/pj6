@@ -239,10 +239,10 @@
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-        left: 70%;
+        left: 10%;
     }
 
-    .title-dhn .tt-dhn-l .txt {
+    .tt-dhn-l .txt {
         font-size: 20px;
         font-weight: 700;
         color: #010101;
