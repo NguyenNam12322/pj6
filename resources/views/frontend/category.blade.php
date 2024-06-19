@@ -27,6 +27,12 @@
                 overflow-x: auto;
             }
 
+            .not-found{
+                font-size: 25px;
+                font-weight: bold;
+                color: red;
+            }
+
         }   
 
         .box-links img{
@@ -86,7 +92,7 @@
             <div class="row-fluid">
                 @if(count($data) ==0)
         
-                    <h3>Không tìm thấy sản phẩm đã chọn</h3>
+                    <span class="not-found">Không tìm thấy sản phẩm đã chọn</span>
 
                 @endif
                 <div class="w100p">
