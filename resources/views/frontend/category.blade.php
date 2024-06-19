@@ -31,7 +31,7 @@
         }   
 
         .not-found{
-            font-size: 25px;
+/*            font-size: 25px;*/
             font-weight: bold;
             color: red;
         }
