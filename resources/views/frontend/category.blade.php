@@ -341,6 +341,10 @@
                                     </div>
                                     @endforeach
 
+                                    @else
+
+                                    <h3>Không tìm thấy sản phẩm ở mục đã chọn</h3>
+
                                     @endif
                                     
 
