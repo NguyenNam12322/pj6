@@ -5,9 +5,9 @@
 <style type="text/css">
 
     @media only screen and (min-width: 601px) {
-        .div-foot{
+        /*.div-foot{
             margin-left: 330px;
-        }
+        }*/
         .banner-ads-text .header-menu__navs{
             height: 40px;
         }
