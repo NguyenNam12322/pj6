@@ -674,7 +674,7 @@
                                 </div>
                             </div>
 
-                            <div class="view-all-desk desktop"><span>xem tất cả</span></div>
+                            <div class="view-all-desk desktop"><span>xem toàn bộ sản phẩm</span></div>
                                  
                                  
                         </div>
