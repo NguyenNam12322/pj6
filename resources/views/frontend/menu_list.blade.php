@@ -1661,7 +1661,7 @@
                                                Tổng hợp khuyến mãi </a>
                                             <div class="hr-vertical">|</div>
                                             <a class="navs-item-link" href="javascript:void(0)">
-                                               Bán hàng doanh nghiệp </a>
+                                                Mua hàng Dự Án </a>
                                         </div>
                                     </div>
                                 </div>
