@@ -476,7 +476,8 @@
                                     <a class="product-render rd" data-product_id="115481" product-id="115481" name="{{ $vals->Name  }}" href="{{ route('details', $vals->Link) }}" ></a>
                                     <div class="product-slide">
                                         <a class="product-render rd" data-product_id="115481" product-id="115481" name="{{ $vals->Name  }}" href="" ></a>
-                                        <div class="product">
+                                        <div class="product {{ $vals->id }}">
+
                                             <a class="product-render rd" data-product_id="115481" product-id="115481" name="{{ $vals->Name  }}" href="{{ route('details', $vals->Link) }}"></a>
                                             <div class="product-header">
                                                 <a class="product-render rd" data-product_id="115481" product-id="115481" name="{{ $vals->Name  }}">
