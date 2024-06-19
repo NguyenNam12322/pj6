@@ -22,6 +22,10 @@
             height: 300px !important;
         }
 
+        .post-sidebar-img img{
+            width: 100%;
+        }
+
         .pdetail-installment{
             height: 300px !important;
         }
@@ -1889,7 +1893,7 @@
                     <article class="post-sidebar-item">
                         <a href="{{ route('details', $value->Link) }}">
                             <span class="post-sidebar-img">
-                                <img data-lazyloaded="1" src="{{ asset($value->Image) }}" width="260" height="172">
+                                <img data-lazyloaded="1" src="{{ asset($value->Image) }}">
                             </span>
 
                             <h3 class="post-sidebar-title">{{ $value->Name }}</h3>
