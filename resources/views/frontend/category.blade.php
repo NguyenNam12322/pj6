@@ -304,11 +304,13 @@
 
                         @endif
 
+                        @if(isset($data))
+
                         <div class="product-item" >
                             <div class="nk-product-cate-style-grid nk-product-collection nk-product- clearfix">
                                 <div id="pagination_contents" class="nk-product nks-fs-sync index-index" data-fs-type="0">
 
-                                    @if(isset($data))
+                                   
                                     <?php $arr_id_pro = []; $activeDeal = 0;?>
                                     
                                     @foreach($data as $datas)
@@ -341,17 +343,19 @@
                                     </div>
                                     @endforeach
 
-                                    @else
-
-                                    <h3>Không tìm thấy sản phẩm ở mục đã chọn</h3>
-
-                                    @endif
+                                   
                                     
 
 
                                 </div>
                             </div>
                         </div>
+
+                         @else
+
+                        <h3>Không tìm thấy sản phẩm ở mục đã chọn</h3>
+
+                        @endif
                     </div>
                 </div>
             </div>
