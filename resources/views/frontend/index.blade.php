@@ -223,7 +223,7 @@
 
    
     .countdown-timer label {
-        background-color: #ff0000;
+        background-color: #000;
         color: #ffea00;
         border: 1px solid #fff;
     }
