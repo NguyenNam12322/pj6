@@ -298,7 +298,7 @@
                 @if(!empty($deal))
                 
                 <div class="payday-header">
-                    <div class="hinh_giamgia"> <a href="#" title="banner-sale"> 
+                    <div class="hinh_giamgia"> 
 
                         <div class="gvdshock">
 
@@ -347,7 +347,7 @@
 
                             @foreach($deal as $key => $value)
                                
-                            @if( !empty($value->active) && $value->active ==1 && $now->between($value->start, $value->end))
+                            @if( !empty($value->active) &&  $value->active ==1 && $now->between($value->start, $value->end))
 
                            
                             <?php
@@ -361,8 +361,8 @@
                                     return   App\Models\product::find($value->product_id);
                                 });
 
-
                             ?>
+                           
                             <div class="product-slide item" id="items-{{ $value->id }}">                         
                                 <div class="product">
                                     <div class="product-header" href="{{ route('details', $value->link) }}">

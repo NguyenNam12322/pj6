@@ -253,7 +253,7 @@
         }
 
         .footer{
-            height: 650px;
+            height: 587px;
         }
     } 
 

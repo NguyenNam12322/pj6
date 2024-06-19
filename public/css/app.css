@@ -3985,7 +3985,7 @@ html,
                }
 
                .nk-header #nk-cart ul li a {
-                   font-size: 13px;
+                   font-size: 17px;
                    color: #fff;
                    display: flex;
                    align-items: center;
@@ -14141,7 +14141,7 @@ html,
 
                .product-header .top-right {
                    z-index: 8;
-                   right: 0;
+                   right: 12px;
                    position: absolute
                }
 
@@ -17217,7 +17217,8 @@ html,
                }
 
                .nki-phone:before {
-                   content: "\e90d"
+                   content: "\e90d";
+                   font-size: 22px;
                }
 
                .nki-place-time:before {
