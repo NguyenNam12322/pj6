@@ -10448,17 +10448,17 @@ html,
                }
 
                .nk_houseware_best_selling_2020_wrapper.nk_homepage_houseware_best_selling_2020_wrapper .menu-item {
-                   background: #FFFFFF;
-                   border: 0.5px solid #D8D8D8;
+                   background: linear-gradient(90deg,#d1a94e,#fdf5a1,#cfac54);
+                   
                }
 
                .nk_houseware_best_selling_2020_wrapper.nk_homepage_houseware_best_selling_2020_wrapper .menu-item.active {
-                   background: #EE1E25;
+                   background: #000;
                    border: 0.5px solid #D8D8D8;
                }
 
                .nk_houseware_best_selling_2020_wrapper.nk_homepage_houseware_best_selling_2020_wrapper .menu-item.active span {
-                   color: #fff;
+                   color: #FFF579;
                }
 
                .nk_houseware_best_selling_2020_wrapper.nk_homepage_houseware_best_selling_2020_wrapper .menu-item:hover {
