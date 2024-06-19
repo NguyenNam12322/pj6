@@ -33,6 +33,8 @@
         }    
 
         .icons-2022 {
+
+            display: block;
             vertical-align: middle;
             background: url({{ asset('images/template/sprite-2022.png')  }}) no-repeat;
         }
@@ -42,6 +44,23 @@
             background-position: -2px -2px;
             margin-right: 10px;
         }
+        .title-dhn {
+            width: 100%;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            height: 60px;
+            margin-bottom: 5px;
+            padding: 0 10px;
+        }
+
+
 
         .payday-header{
             height: 60px;
@@ -250,7 +269,8 @@
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-        left: 10%;
+        left: 0;
+        display: flex;
     }
 
     .tt-dhn-l .txt {
@@ -258,6 +278,7 @@
         font-weight: 700;
         color: #010101;
         text-transform: uppercase;
+        line-height: 40px;
     }
 
     linear-gradient(90deg,#d1a94e,#fdf5a1,#cfac54)
@@ -280,7 +301,7 @@
                         <div class="gvdshock">
 
                             <div class="tt-dhn-l">
-                                <span class="icons-2022"></span>
+                                <i class="icons-2022"></i>
                                 <span class="txt">Deal hot hôm nay</span>
                             </div>
                             <div class="endtime" data-countdown="" data-begin="">
