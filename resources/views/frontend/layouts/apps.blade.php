@@ -449,7 +449,7 @@
                     display: none;   
                 }
                 .nk-banner-main{
-                    padding: 0;
+                    padding: 0 !important;
                 }
 
                 .theme-xmas.header:after {
