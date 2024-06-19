@@ -27,13 +27,15 @@
                 overflow-x: auto;
             }
 
-            .not-found{
-                font-size: 25px;
-                font-weight: bold;
-                color: red;
-            }
 
         }   
+
+        .not-found{
+            font-size: 25px;
+            font-weight: bold;
+            color: red;
+        }
+
 
         .box-links img{
             height: 13px !important;
