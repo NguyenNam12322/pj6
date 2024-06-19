@@ -5,7 +5,11 @@
 
     }
 
-   
+    .sub-menu ul{
+        background: #fff !important;
+    }
+
+
 
 </style>
 <div class="row-fluid ">

@@ -1934,16 +1934,7 @@
             
         </script>
 
-        <div class="hotline position-fixed">
-
-           
-            <a href="tel:02473036336" class="d-flex align-items-center position-relative hotline-fix mb-2">
-   
-            <i class="fa fa-phone"></i>
-            <span><b>024 7303 6336</b> <br> <span>Bấm phím 1</span></span>
-
-           
-        </div>
+       
 
         @if(Session::get('show-pop-up')==='1')
 

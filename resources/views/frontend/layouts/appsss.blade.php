@@ -63,6 +63,8 @@
                 color :#fff !important;
             }
 
+            
+
         </style>
         @stack('style')
         <?php  
