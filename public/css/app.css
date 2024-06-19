@@ -13817,7 +13817,7 @@ html,
                        height: 21vw
                    }
 
-                   
+
                }
 
                @media screen and (min-width:1133px) {
@@ -15502,11 +15502,7 @@ html,
                    
                }
 
-               @media screen and (max-width:768px) {
-                   .header-block span {
-                       text-shadow: 0 0 var(--primaryColor), 1px 0 var(--primaryColor), 0 -1px var(--primaryColor), 0 -1px var(--primaryColor), -1px -1px var(--primaryColor), -1px 0 var(--primaryColor), -1px -1px var(--primaryColor), 1px -1px var(--primaryColor)
-                   }
-               }
+              
 
                .nk-recommend {
                    background-color: #fff
