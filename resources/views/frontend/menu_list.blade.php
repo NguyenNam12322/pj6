@@ -3,6 +3,11 @@
         font-weight: normal !important;
     }
 
+    .list-show{
+        color: #000;
+        font-weight: bold;
+    }
+
 </style>
 
 <div class="row-fluid ">
@@ -15,7 +20,7 @@
                             <div class="span4 wrap-grid-menu">
                                 <div id="nk-danh-muc-san-pham-left" class="nk-danh-muc-trang-chu">
                                     <h3>
-                                        <i class="nki-menu"></i>
+                                        <i class="nki-menu list-show"></i>
                                         <b>Danh mục sản phẩm</b>
                                     </h3>
                                     <ul>
