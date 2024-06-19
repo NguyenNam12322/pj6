@@ -1,4 +1,13 @@
+<style type="text/css">
+    #nk-danh-muc-san-pham-left ul{
 
+        background: linear-gradient(0deg,#d1a94e,#fdf5a1,#cfac54);
+
+    }
+
+   
+
+</style>
 <div class="row-fluid ">
     <div class="span16 nk-menu">
         <div class="row-fluid ">

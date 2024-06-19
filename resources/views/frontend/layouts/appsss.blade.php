@@ -392,7 +392,7 @@
                             }
 
                             .nk-menu #nk-danh-muc-san-pham-left>ul li p a{
-                                color: FFFB9C;
+                                color: #000;
                             }
 
                             .nk-menu #nk-danh-muc-san-pham-left>ul{
