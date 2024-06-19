@@ -86,6 +86,13 @@
         .nk-header ._nk_main{
             height: 100%;
         }
+
+        .endtime{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 70%;
+        }
     }
 
     .gift-info {
@@ -149,12 +156,7 @@
          top: 50%;
         transform: translateY(-50%);
     }
-    .endtime{
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        left: 70%;
-    }
+    
 
     #countdown li {
       display: inline-block;
