@@ -24,7 +24,7 @@
 
         .post-sidebar-img img{
             width: 100%;
-            padding: 10px;
+            
         }
 
         .pdetail-installment{
