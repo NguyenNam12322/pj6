@@ -865,6 +865,12 @@
 
         $('#seconds').text(s<10?'0'+s:s);
 
+        $('#hourss').text(hours<10?'0'+hours:hours);
+
+        $('#minutess').text(m<10?'0'+m:m);
+
+        $('#secondss').text(s<10?'0'+s:s);
+
 
 
         // hour =  h.toString();
