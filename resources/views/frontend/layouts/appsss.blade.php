@@ -593,10 +593,10 @@
                     min-width: unset !important;
                 }
 
-                .nk-header #nk-logo img{
-                    display: none;
+                /*.nk-header #nk-logo img{
+                    display: ;
                 }
-
+*/
                 .promotion-menu{
                     position: relative;
                 }
@@ -1032,7 +1032,7 @@
                                 <div class="div-header-cart">
 
                                     <div class="logo-mobile">
-                                        <h1 id="nk-logo"> <a href="/"> <img src="{{ asset('/images/template/logo2.jpg') }}" alt=""> </a> </h1>
+                                        <a href="/"> <img src="{{ asset('/images/template/logo2.jpg') }}" alt=""> </a> 
                                     </div>
 
                                     <div id="nk-cart">
