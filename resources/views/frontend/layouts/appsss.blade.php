@@ -863,6 +863,7 @@
                 .div-header-cart{
                     width: 100%;
                     display: flex;
+                    overflow: hidden;
                 }
 
                 .d .nk-header #nk-cart{
