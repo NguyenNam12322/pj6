@@ -33,13 +33,14 @@
         @endif
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta property="og:type" content="article" />
+
         <meta property="fb:app_id" content="534767553533391" />
         <meta property="fb:pages" content="150921051593902" />
         <meta property="og:image" content="" />
         <meta property="og:description" content="" />
         <meta itemprop="name" content="">
         <meta itemprop="description" content="">
-        <meta itemprop="image" content="">
+        <meta itemprop="image" content="{{ asset('images/template/faviconmuasamtaikho.png') }}">
         <meta name="format-detection" content="telephone=no">
         <meta name="csrf-token" content="{{ csrf_token() }}">
         <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
@@ -1595,7 +1596,7 @@
             
             //     // nhảy time bản mobile khi tắt set giờ riêng
 
-                
+
             //     $('.mobiles .time .hourss').text(h<10?'0'+hour:''+hour);
             //     $('.mobiles .time .secondss').text(s<10?'0'+seconds:''+seconds);
             //     $('.mobiles .time .minutess').text(m<10?'0'+minutes:''+minutes); 
