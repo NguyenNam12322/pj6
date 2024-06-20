@@ -1534,9 +1534,9 @@
 
          
             
-            setTimeout(function() {
-                run(0);
-            }, 1000);
+            // setTimeout(function() {
+            //     run(0);
+            // }, 1000);
             
             // function run(key) {
             //     var hour =  $('.time'+key+' .hourss').text();
