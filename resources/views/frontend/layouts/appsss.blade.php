@@ -593,6 +593,10 @@
                     min-width: unset !important;
                 }
 
+                .nk-header #nk-logo img{
+                    display: none;
+                }
+
                 .promotion-menu{
                     position: relative;
                 }
