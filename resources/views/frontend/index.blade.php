@@ -200,6 +200,14 @@
             height: 100px;
         }
 
+        .gvdshock{
+            display: flex;
+        }
+
+        .title-end{
+            display: none;
+        }
+
        /* #nk-banner-home .main-banner{
             height: 100% !important;
         }*/
