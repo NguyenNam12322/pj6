@@ -855,14 +855,17 @@
                     gap: 6px;
                 }
                 .show-bar{
-                            background: #fff;
+                    background: #fff;
 
-                        }
+                }
 
                 .logo-mobile{
-                    width: 27%;
+                    width: 55%;
                     overflow: hidden;
                 }
+                .logo-mobile img{
+                    width: 100%;
+                } 
 
                 .div-header-cart{
                     width: 100%;
