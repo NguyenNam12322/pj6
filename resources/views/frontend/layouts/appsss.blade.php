@@ -856,7 +856,8 @@
                         }
 
                 .logo-mobile{
-                    width: 23%;
+                    width: 27%;
+                    overflow: hidden;
                 }
 
                 .div-header-cart{
