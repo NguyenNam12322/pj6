@@ -1594,11 +1594,13 @@
                 }
             
                 // nhảy time bản mobile khi tắt set giờ riêng
+
+                
                 $('.mobiles .time .hourss').text(h<10?'0'+hour:''+hour);
                 $('.mobiles .time .secondss').text(s<10?'0'+seconds:''+seconds);
                 $('.mobiles .time .minutess').text(m<10?'0'+minutes:''+minutes); 
 
-                console.log(1);
+                console.log(seconds);
             
                 setTimeout(function() {
                     run(0);
