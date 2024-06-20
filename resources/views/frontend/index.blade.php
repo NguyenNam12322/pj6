@@ -218,6 +218,10 @@
             font-weight: bold;
         }
 
+        .nav1-search{
+            height: 100%;
+        }
+
 
 
         .deal-mb{
