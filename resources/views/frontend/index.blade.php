@@ -201,6 +201,8 @@
 
         .payday-header{
             padding: 10px 0;
+
+             background: linear-gradient(0deg,#d1a94e,#fdf5a1,#cfac54);
         }
 
         .gvdshock{
@@ -211,8 +213,13 @@
         .search-head{
             height: 100px;
         }
+        .gvdshock .txt{
+            line-height: 40px;
+        }
 
-        .gvdshock{
+
+
+        .deal-mb{
             display: flex;
         }
 
@@ -227,9 +234,7 @@
             text-align: right;
             width: 50%;
         }
-        .hinh_giamgia{
-            background: linear-gradient(0deg,#d1a94e,#fdf5a1,#cfac54);
-        }
+       
 
        /* #nk-banner-home .main-banner{
             height: 100% !important;
