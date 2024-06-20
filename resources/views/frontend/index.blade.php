@@ -23,16 +23,8 @@
    
 ?>
 
-
 <style type="text/css">
-   
-    @media screen and (min-width: 768px) {
-        .nk_houseware_best_selling_2020_wrapper .product, .product-slide{
-            width: 20% !important;
-            margin-top: 6px;
-        }    
-
-        .icons-2022 {
+    .icons-2022 {
 
             display: block;
             vertical-align: middle;
@@ -44,6 +36,18 @@
             background-position: -2px -2px;
             margin-right: 10px;
         }
+</style>
+
+
+<style type="text/css">
+   
+    @media screen and (min-width: 768px) {
+        .nk_houseware_best_selling_2020_wrapper .product, .product-slide{
+            width: 20% !important;
+            margin-top: 6px;
+        }    
+
+        
         .title-dhn {
             width: 100%;
             display: -webkit-box;
