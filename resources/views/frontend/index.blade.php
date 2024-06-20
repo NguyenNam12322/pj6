@@ -200,9 +200,9 @@
             height: 100px;
         }
 
-        #nk-banner-home .main-banner{
+       /* #nk-banner-home .main-banner{
             height: 100% !important;
-        }
+        }*/
           
         #countdown li span {
             font-size: calc(3.375rem * var(--smaller));
