@@ -1646,24 +1646,24 @@
             
             
             
-            $('.nk-banner-main').owlCarousel({
-                loop:true,
-                margin:10,
-                dots:false,
-                nav:false,
-                navigation : false,
-                responsive:{
-                    0:{
-                        items:1
-                    },
-                    600:{
-                        items:1
-                    },
-                    1000:{
-                        items:1
-                    }
-                }
-            })
+            // $('.nk-banner-main').owlCarousel({
+            //     loop:true,
+            //     margin:10,
+            //     dots:false,
+            //     nav:false,
+            //     navigation : false,
+            //     responsive:{
+            //         0:{
+            //             items:1
+            //         },
+            //         600:{
+            //             items:1
+            //         },
+            //         1000:{
+            //             items:1
+            //         }
+            //     }
+            // })
             
             
             $('#payday-blocks').owlCarousel({
