@@ -208,6 +208,14 @@
             display: none;
         }
 
+        .deal-mb{
+            width: 50%;
+        }
+        .endtime{
+            text-align: right;
+            width: 50%;
+        }
+
        /* #nk-banner-home .main-banner{
             height: 100% !important;
         }*/
