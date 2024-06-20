@@ -251,7 +251,7 @@
         }
 
         .hinh_giamgia{
-            height: 60px !important;
+            height: 40px !important;
         }
 
         .show-mobile-product{
