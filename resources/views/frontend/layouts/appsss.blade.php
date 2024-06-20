@@ -132,26 +132,7 @@
             element.setAttribute('data-main', '/js/addons/nk_mp_mobile/app/AppLoader.js?t=1805225');
             document.head.appendChild(element);
         }
-        if (location.search.indexOf("phone_app=Y") >= 0) document.cookie = "client=app";
-        var bodyClass = document.body.getAttribute('class');
-        bodyClass += isApp() ? ' app' : '';
-        bodyClass += isIOS() ? ' ios' : isAndroid() ? ' android' : '';
-        document.body.setAttribute('class', bodyClass);
-        if (isApp()) {
-            if (document.addEventListener) {
-                document.addEventListener("DOMContentLoaded", function() {
-                    document.removeEventListener("DOMContentLoaded", arguments.callee, false);
-                    loadAppJS();
-                }, false);
-            } else if (document.attachEvent) {
-                document.attachEvent("onreadystatechange", function() {
-                    if (document.readyState === "complete") {
-                        document.detachEvent("onreadystatechange", arguments.callee);
-                        loadAppJS();
-                    }
-                });
-            }
-        }
+       
     </script>
     <body class="d nk-home-page">
         <!-- Google Tag Manager (noscript) -->
