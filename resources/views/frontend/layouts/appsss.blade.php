@@ -806,7 +806,7 @@
                
 
                 .search_center{
-                    height: auto !important;
+                    height: 40px !important;
                 }
 
                 .header__main{
