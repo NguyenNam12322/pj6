@@ -1525,74 +1525,74 @@
 
          
             
-            // setTimeout(function() {
-            //     run(0);
-            // }, 1000);
+            setTimeout(function() {
+                run(0);
+            }, 1000);
             
-            // function run(key) {
-            //     var hour =  $('.time'+key+' .hourss').text();
-            //     var minutes =  $('.time'+key+' .minutess').text();
-            //     var second =  $('.time'+key+' .secondss').text();
-            //     h =  parseInt(hour);
-            //     m = parseInt(minutes);
-            //     s = parseInt(second);
-            //     s--;
-            //     /*BƯỚC 1: CHUYỂN ĐỔI DỮ LIỆU*/
-            //       // Nếu số giây = -1 tức là đã chạy ngược hết số giây, lúc này:
-            //       //  - giảm số phút xuống 1 đơn vị
-            //       //  - thiết lập số giây lại 59
-            //     if (s === -1){
-            //           m -= 1;
+            function run(key) {
+                var hour =  $('.time'+key+' .hourss').text();
+                var minutes =  $('.time'+key+' .minutess').text();
+                var second =  $('.time'+key+' .secondss').text();
+                h =  parseInt(hour);
+                m = parseInt(minutes);
+                s = parseInt(second);
+                s--;
+                /*BƯỚC 1: CHUYỂN ĐỔI DỮ LIỆU*/
+                  // Nếu số giây = -1 tức là đã chạy ngược hết số giây, lúc này:
+                  //  - giảm số phút xuống 1 đơn vị
+                  //  - thiết lập số giây lại 59
+                if (s === -1){
+                      m -= 1;
                      
-            //           s = 59;
-            //     }
+                      s = 59;
+                }
             
-            //     // Nếu số phút = -1 tức là đã chạy ngược hết số phút, lúc này:
-            //     //  - giảm số giờ xuống 1 đơn vị
-            //     //  - thiết lập số phút lại 59
-            //     if (m === -1){
-            //         h -= 1;
-            //         m = 59;
-            //     }
+                // Nếu số phút = -1 tức là đã chạy ngược hết số phút, lúc này:
+                //  - giảm số giờ xuống 1 đơn vị
+                //  - thiết lập số phút lại 59
+                if (m === -1){
+                    h -= 1;
+                    m = 59;
+                }
             
-            //      if (h < 0){
-            //         $('.time'+key).remove();
+                 if (h < 0){
+                    $('.time'+key).remove();
             
-            //         priceSet =  $('.desc-deal'+key+' .price-old').text();
+                    priceSet =  $('.desc-deal'+key+' .price-old').text();
             
-            //         $('.desc-deal'+key+' .price-old').css('text-decoration','none');
+                    $('.desc-deal'+key+' .price-old').css('text-decoration','none');
             
-            //         $('.desc-deal'+key+' .price-new').text(priceSet);
+                    $('.desc-deal'+key+' .price-new').text(priceSet);
             
-            //       }  
+                  }  
             
-            //     hour =  h.toString();
+                hour =  h.toString();
             
-            //     minutes =  m.toString();
+                minutes =  m.toString();
                 
-            //     seconds =  s.toString();
-            //     // $('.time'+key+' .hourss').text(h<10?'0'+hour:''+hour);
-            //     // $('.time'+key+' .secondss').text(s<10?'0'+seconds:''+seconds);
-            //     // $('.time'+key+' .minutess').text(m<10?'0'+minutes:''+minutes); 
+                seconds =  s.toString();
+                // $('.time'+key+' .hourss').text(h<10?'0'+hour:''+hour);
+                // $('.time'+key+' .secondss').text(s<10?'0'+seconds:''+seconds);
+                // $('.time'+key+' .minutess').text(m<10?'0'+minutes:''+minutes); 
             
-            //     if(key===0){
+                if(key===0){
             
-            //         $('.countdown-timer #hour').text(h<10?'0'+hour:''+hour);
-            //         $('.countdown-timer #second').text(s<10?'0'+seconds:''+seconds);
-            //         $('.countdown-timer #minute').text(m<10?'0'+minutes:''+minutes); 
+                    $('.countdown-timer #hour').text(h<10?'0'+hour:''+hour);
+                    $('.countdown-timer #second').text(s<10?'0'+seconds:''+seconds);
+                    $('.countdown-timer #minute').text(m<10?'0'+minutes:''+minutes); 
             
             
-            //     }
+                }
             
-            //     // nhảy time bản mobile khi tắt set giờ riêng
-            //     $('.mobiles .time .hourss').text(h<10?'0'+hour:''+hour);
-            //     $('.mobiles .time .secondss').text(s<10?'0'+seconds:''+seconds);
-            //     $('.mobiles .time .minutess').text(m<10?'0'+minutes:''+minutes); 
+                // nhảy time bản mobile khi tắt set giờ riêng
+                $('.mobiles .time .hourss').text(h<10?'0'+hour:''+hour);
+                $('.mobiles .time .secondss').text(s<10?'0'+seconds:''+seconds);
+                $('.mobiles .time .minutess').text(m<10?'0'+minutes:''+minutes); 
             
-            //     setTimeout(function() {
-            //         run(0);
-            //     }, 1000);
-            // }
+                setTimeout(function() {
+                    run(0);
+                }, 1000);
+            }
             
         </script>
 
