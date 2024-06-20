@@ -1028,7 +1028,7 @@
                                 <div class="div-header-cart">
 
                                     <div class="logo-mobile">
-                                        <h1 id="nk-logo"> <a href="/"> <img fetchpriority="high" loading="eager" src="{{ asset('/images/template/logo2.jpg') }}" alt=""> </a> </h1>
+                                        <h1 id="nk-logo"> <a href="/"> <img src="{{ asset('/images/template/logo2.jpg') }}" alt=""> </a> </h1>
                                     </div>
 
                                     <div id="nk-cart">
