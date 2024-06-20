@@ -199,6 +199,10 @@
             font-size: calc(1.125rem * var(--smaller));
         }
 
+        .banner-left{
+            padding: 0;
+        }
+
         .payday-header{
             padding: 10px 0;
 
