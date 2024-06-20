@@ -215,6 +215,7 @@
         }
         .gvdshock .txt{
             line-height: 40px;
+            font-weight: bold;
         }
 
 
