@@ -215,7 +215,7 @@
         }
 
         .search-head{
-            height: 100px;
+            height: 130px;
         }
         .gvdshock .txt{
             line-height: 40px;
