@@ -199,6 +199,15 @@
             font-size: calc(1.125rem * var(--smaller));
         }
 
+        .payday-header{
+            padding: 10px 0;
+        }
+
+        .gvdshock{
+            height: 40px;
+            display: flex;
+        }
+
         .search-head{
             height: 100px;
         }
