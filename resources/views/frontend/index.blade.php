@@ -39,19 +39,20 @@
 
 
 <style type="text/css">
-   
-    @media screen and (min-width: 768px) {
-        .nk_houseware_best_selling_2020_wrapper .product, .product-slide{
-            width: 20% !important;
-            margin-top: 6px;
-        }    
-        #new-flash-sale_3621{
+
+     #new-flash-sale_3621{
             margin: 0 !important;
         }
 
         .first-render{
             padding: 0 !important;
         }
+   
+    @media screen and (min-width: 768px) {
+        .nk_houseware_best_selling_2020_wrapper .product, .product-slide{
+            width: 20% !important;
+            margin-top: 6px;
+        }    
 
         .delivery-free{
                 margin-left: 40px;
