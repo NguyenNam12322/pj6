@@ -28,10 +28,10 @@
         }
 
 
-         @if($data->Specifications != '')
+         @if(!empty($data->Specifications))
 
         .pdetail-installment{
-            height: 250px !important;
+            height: 300px !important;
         }
         @else
         .pdetail-installment{
@@ -45,12 +45,7 @@
     }   
 
     
-    </style>    
-
-    <?php
-
-        dd($data->Specifications);
-    ?>      
+    </style>            
 
     <?php
 
