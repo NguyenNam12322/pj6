@@ -45,6 +45,13 @@
             width: 20% !important;
             margin-top: 6px;
         }    
+        #new-flash-sale_3621{
+            margin: 0;
+        }
+
+        .first-render{
+            padding: 0;
+        }
 
         .delivery-free{
                 margin-left: 40px;
