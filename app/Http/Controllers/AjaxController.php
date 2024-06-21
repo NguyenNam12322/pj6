@@ -210,7 +210,7 @@ class AjaxController extends Controller
     public function showCart()
     {   
         $data_cart = Cart::content();
-        $number_cart = count($cart);
+        $number_cart = count($data_cart);
         return view('frontend.cart',compact('data_cart','number_cart'));
     }
 
