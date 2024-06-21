@@ -23,6 +23,20 @@
    
 ?>
 
+<style type="text/css">
+    .icons-2022 {
+
+            display: block;
+            vertical-align: middle;
+            background: url({{ asset('images/template/sprite-2022.png')  }}) no-repeat;
+            width: 36px;
+            height: 40px;
+            background-position: -2px -2px;
+            margin-right: 10px;
+        }
+        
+</style>
+
 
 <style type="text/css">
    
@@ -32,18 +46,7 @@
             margin-top: 6px;
         }    
 
-        .icons-2022 {
-
-            display: block;
-            vertical-align: middle;
-            background: url({{ asset('images/template/sprite-2022.png')  }}) no-repeat;
-        }
-        .tt-dhn-l .icons-2022 {
-            width: 36px;
-            height: 40px;
-            background-position: -2px -2px;
-            margin-right: 10px;
-        }
+        
         .title-dhn {
             width: 100%;
             display: -webkit-box;
@@ -196,13 +199,55 @@
             font-size: calc(1.125rem * var(--smaller));
         }
 
-        .search-head{
-            height: 100px;
+        .banner-left{
+            padding: 0 !important;
         }
 
-        #nk-banner-home .main-banner{
-            height: 100% !important;
+        .payday-header{
+            padding: 10px 0;
+
+             background: linear-gradient(0deg,#d1a94e,#fdf5a1,#cfac54);
         }
+
+        .gvdshock{
+            height: 40px;
+            display: flex;
+        }
+
+        .search-head{
+            height: 130px;
+        }
+        .gvdshock .txt{
+            line-height: 40px;
+            font-weight: bold;
+        }
+
+        .nav1-search{
+            height: 100%;
+        }
+
+
+
+        .deal-mb{
+            display: flex;
+        }
+
+        .title-end{
+            display: none;
+        }
+
+        .deal-mb{
+            width: 50%;
+        }
+        .endtime{
+            text-align: right;
+            width: 50%;
+        }
+       
+
+       /* #nk-banner-home .main-banner{
+            height: 100% !important;
+        }*/
           
         #countdown li span {
             font-size: calc(3.375rem * var(--smaller));
@@ -215,7 +260,7 @@
         }
 
         .hinh_giamgia{
-            height: 60px !important;
+            height: 40px !important;
         }
 
         .show-mobile-product{
@@ -342,9 +387,9 @@
                                 <span class="title-end">Kết thúc sau</span>
                                 <span class="countdown-timer">
                                     
-                                    <label id="hours">{{ $hour }}</label>
-                                    <label id="minutes">{{  intval($minutes)<10?'0'.$minutes:$minutes }}</label>
-                                    <label id="seconds">{{  intval($seconds)<10?'0'.$seconds:$seconds }}</label>
+                                    <label id="hourss">{{ $hour }}</label>
+                                    <label id="minutess">{{  intval($minutes)<10?'0'.$minutes:$minutes }}</label>
+                                    <label id="secondss">{{  intval($seconds)<10?'0'.$seconds:$seconds }}</label>
                                 </span>
                             </div>
 
@@ -819,6 +864,12 @@
         $('#minutes').text(m<10?'0'+m:m);
 
         $('#seconds').text(s<10?'0'+s:s);
+
+        $('#hourss').text(hours<10?'0'+hours:hours);
+
+        $('#minutess').text(m<10?'0'+m:m);
+
+        $('#secondss').text(s<10?'0'+s:s);
 
 
 

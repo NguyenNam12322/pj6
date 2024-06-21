@@ -33,13 +33,15 @@
         @endif
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta property="og:type" content="article" />
+
         <meta property="fb:app_id" content="534767553533391" />
         <meta property="fb:pages" content="150921051593902" />
         <meta property="og:image" content="" />
         <meta property="og:description" content="" />
         <meta itemprop="name" content="">
         <meta itemprop="description" content="">
-        <meta itemprop="image" content="">
+       
+        <link rel="shortcut icon" href="{{ asset('images/template/favicon-muasamtaikho.ico') }}"> 
         <meta name="format-detection" content="telephone=no">
         <meta name="csrf-token" content="{{ csrf_token() }}">
         <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
@@ -132,26 +134,7 @@
             element.setAttribute('data-main', '/js/addons/nk_mp_mobile/app/AppLoader.js?t=1805225');
             document.head.appendChild(element);
         }
-        if (location.search.indexOf("phone_app=Y") >= 0) document.cookie = "client=app";
-        var bodyClass = document.body.getAttribute('class');
-        bodyClass += isApp() ? ' app' : '';
-        bodyClass += isIOS() ? ' ios' : isAndroid() ? ' android' : '';
-        document.body.setAttribute('class', bodyClass);
-        if (isApp()) {
-            if (document.addEventListener) {
-                document.addEventListener("DOMContentLoaded", function() {
-                    document.removeEventListener("DOMContentLoaded", arguments.callee, false);
-                    loadAppJS();
-                }, false);
-            } else if (document.attachEvent) {
-                document.attachEvent("onreadystatechange", function() {
-                    if (document.readyState === "complete") {
-                        document.detachEvent("onreadystatechange", arguments.callee);
-                        loadAppJS();
-                    }
-                });
-            }
-        }
+       
     </script>
     <body class="d nk-home-page">
         <!-- Google Tag Manager (noscript) -->
@@ -612,6 +595,10 @@
                     min-width: unset !important;
                 }
 
+                /*.nk-header #nk-logo img{
+                    display: ;
+                }
+*/
                 .promotion-menu{
                     position: relative;
                 }
@@ -806,7 +793,7 @@
                
 
                 .search_center{
-                    height: auto !important;
+                    height: 40px !important;
                 }
 
                 .header__main{
@@ -870,17 +857,22 @@
                     gap: 6px;
                 }
                 .show-bar{
-                            background: #fff;
+                    background: #fff;
 
-                        }
+                }
 
                 .logo-mobile{
-                    width: 23%;
+                    width: 55%;
+                    overflow: hidden;
                 }
+                .logo-mobile img{
+                    width: 100%;
+                } 
 
                 .div-header-cart{
                     width: 100%;
                     display: flex;
+                    overflow: hidden;
                 }
 
                 .d .nk-header #nk-cart{
@@ -1045,7 +1037,7 @@
                                 <div class="div-header-cart">
 
                                     <div class="logo-mobile">
-                                        <h1 id="nk-logo"> <a href="/"> <img fetchpriority="high" loading="eager" src="{{ asset('/images/template/logo2.jpg') }}" alt=""> </a> </h1>
+                                        <a href="/"> <img src="{{ asset('/images/template/logo2.jpg') }}" alt=""> </a> 
                                     </div>
 
                                     <div id="nk-cart">
@@ -1235,7 +1227,7 @@
                         <div class="row-fluid ">
                             <div class="span11 row banner-left">
                                 <div id="nk-banner-home">
-                                    <div  class="nk-banner-main owl-carousel carsl1 owl-loaded owl-drag" >
+                                    <div  class="nk-banner-mains owl-carousel carsl1 owl-loaded owl-drag" >
                                         @if(isset($banners))
                                         @foreach($banners as $value)
                                         <div data-banner-item="0" class="item">
@@ -1524,7 +1516,7 @@
                         items:1
                     },
                     600:{
-                        items:3
+                        items:1
                     },
                     1000:{
                         items:1
@@ -1604,9 +1596,13 @@
             //     }
             
             //     // nhảy time bản mobile khi tắt set giờ riêng
+
+
             //     $('.mobiles .time .hourss').text(h<10?'0'+hour:''+hour);
             //     $('.mobiles .time .secondss').text(s<10?'0'+seconds:''+seconds);
             //     $('.mobiles .time .minutess').text(m<10?'0'+minutes:''+minutes); 
+
+            //     console.log(seconds);
             
             //     setTimeout(function() {
             //         run(0);
@@ -1646,24 +1642,7 @@
             
             
             
-            $('.nk-banner-main').owlCarousel({
-                loop:true,
-                margin:10,
-                dots:false,
-                nav:false,
-                navigation : false,
-                responsive:{
-                    0:{
-                        items:1
-                    },
-                    600:{
-                        items:1
-                    },
-                    1000:{
-                        items:5
-                    }
-                }
-            })
+           
             
             
             $('#payday-blocks').owlCarousel({
@@ -1868,47 +1847,49 @@
 
     movingText.hide();
 
+    if(window.innerWidth>768){
+
       // Xử lý sự kiện khi chuột di chuyển
-    $(".mouse-mover .item").on("mousemove", function(event) {
-        movingText.show();
+        $(".mouse-mover .item").on("mousemove", function(event) {
+            movingText.show();
 
-        var id = $(this).attr("id");
+            var id = $(this).attr("id");
 
-        var data = $("#"+id+" .gifts-info").html();
+            var data = $("#"+id+" .gifts-info").html();
 
-        // nếu text dài thì add thêm height để chống tràn
+            // nếu text dài thì add thêm height để chống tràn
 
-        number_text_promotion =  parseInt($("#"+id+" .gifts-info").attr('data-text'));
+            number_text_promotion =  parseInt($("#"+id+" .gifts-info").attr('data-text'));
 
-        if(number_text_promotion >300){
-            $(".gift-info").addClass('max-height');
-        }
+            if(number_text_promotion >300){
+                $(".gift-info").addClass('max-height');
+            }
 
-        if(number_text_promotion <300 && $(".gift-info").hasClass('max-height')){
-            $(".gift-info").removeClass('max-height');
-        }
-        
-        // end check
-
-
-        $(".gift-info").html('');
-        $(".gift-info").html(data);
-
-        var x = event.pageX+15;
-        var y = event.pageY+15;
-
-        // Cập nhật vị trí của chữ theo vị trí của chuột
-        movingText.css({
-          "left": x,
-          "top": y,
-        });
-      })
-      .on("mouseout", function(event) {
-        // Fade out element when mouse leaves
-        movingText.hide();
-      });
+            if(number_text_promotion <300 && $(".gift-info").hasClass('max-height')){
+                $(".gift-info").removeClass('max-height');
+            }
+            
+            // end check
 
 
+            $(".gift-info").html('');
+            $(".gift-info").html(data);
+
+            var x = event.pageX+15;
+            var y = event.pageY+15;
+
+            // Cập nhật vị trí của chữ theo vị trí của chuột
+            movingText.css({
+              "left": x,
+              "top": y,
+            });
+          })
+          .on("mouseout", function(event) {
+            // Fade out element when mouse leaves
+            movingText.hide();
+          });
+
+    }      
         
             
         </script>

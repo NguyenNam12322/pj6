@@ -416,11 +416,11 @@
                 <div class="title-if">ĐỊA CHỈ MUA HÀNG</div>
                 <p>
                     <b>Văn phòng đại diện </b><br>
-                    Địa chỉ: Tòa nhà VXT, số 375 Minh Khai, HBT, Hà Nội
+                    Địa chỉ: 
                 </p>
                 <p>
                     <b>Kho hàng</b><br>
-                    Địa chỉ:  683 Nguyễn Khoái, Thanh Trì, Hoàng Mai, Hà Nội
+                    Địa chỉ: 
                 </p>
                
             </div>
