@@ -1409,7 +1409,7 @@
                                 <!-- end menu show -->
 
 
-                                <div class="span16 row flexthis _nk_bottom search_center">
+                                <div class="span16 row flexthis search_center">
                                     <div class="row-fluid nav1-search">
                                        <!--  <div class="span4 ">
                                             <h1 id="nk-logo">
