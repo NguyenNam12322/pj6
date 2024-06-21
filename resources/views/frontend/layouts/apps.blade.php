@@ -1099,6 +1099,10 @@
                             min-width: unset !important;
                         }
 
+                        .search_center{
+                            margin: 0;
+                        }
+
                         .nk-header #nk-cart ul li{
                             width: auto;
                             line-height: 31px;
