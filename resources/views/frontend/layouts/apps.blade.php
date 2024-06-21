@@ -1101,6 +1101,7 @@
 
                         .nk-header #nk-cart ul li{
                             width: auto;
+                            line-height: 31px;
                         }
 
                         .nk-header #nk-cart ul li a{
