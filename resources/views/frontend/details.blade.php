@@ -42,16 +42,12 @@
             
         }
 
-         @if(!empty($data->Specifications))
+        
 
         .pdetail-installment{
-            height: 300px !important;
+            height: 150px !important;
         }
-        @else
-        .pdetail-installment{
-            height: 100px !important;
-        }
-        @endif
+       
 
         .box01, .box01__show{
             margin-bottom: 0 !important;
