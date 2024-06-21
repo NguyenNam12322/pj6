@@ -2691,79 +2691,109 @@
     function addToSuport() {
           $('#modal-suport').modal('show'); 
       }  
-    
+
+      
     function addToCart(id) {
+    
+    $.ajaxSetup({
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        }
+    });
 
-        const value = $("input[name='price-add']:checked").val();
+    $.ajax({
+        type: 'POST',
+        url: "{{ route('cart') }}",
+        data: {
+            product_id: id,
+            gift_check:$('#gift_checked').val()
+               
+        },
+        beforeSend: function() {
+           
+            $('.loader').show();
 
-        ar_val = [];
+        },
+        success: function(result){
 
-        @if(!empty($data_price_show))
-        @foreach($data_price_show as $val)
+           window.location.href = result; 
 
-            ar_val[{{ $val->id }}] = {{ $val->price }};
-        @endforeach
+        }
+    });
+}      
+    
+    // function addToCart(id) {
 
-        @endif
+    //     const value = $("input[name='price-add']:checked").val();
 
-        var transport_cost = ar_val[value];
+    //     ar_val = [];
+
+    //     @if(!empty($data_price_show))
+    //     @foreach($data_price_show as $val)
+
+    //         ar_val[{{ $val->id }}] = {{ $val->price }};
+    //     @endforeach
+
+    //     @endif
+
+    //     var transport_cost = ar_val[value];
 
         
-        $('.form-info-cart').removeClass('hide');
-        $('.cart-container').addClass('hide');
+    //     $('.form-info-cart').removeClass('hide');
+    //     $('.cart-container').addClass('hide');
 
-        $.ajaxSetup({
-            headers: {
-                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-            }
-        });
+    //     $.ajaxSetup({
+    //         headers: {
+    //             'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+    //         }
+    //     });
     
-        $.ajax({
-            type: 'POST',
-            url: "{{ route('cart') }}",
-            data: {
-                product_id: id,
-                gift_check:$('#gift_checked').val(),
+    //     $.ajax({
+    //         type: 'POST',
+    //         url: "{{ route('cart') }}",
+    //         data: {
+    //             product_id: id,
+    //             gift_check:$('#gift_checked').val(),
 
-               transport_cost:transport_cost,
+    //            transport_cost:transport_cost,
                    
-            },
-            beforeSend: function() {
+    //         },
+    //         beforeSend: function() {
                
-                $('.loader').show();
+    //             $('.loader').show();
 
-            },
-            success: function(result){
+    //         },
+    //         success: function(result){
 
-               //  numberProductCart = $(".number-cart").text();
+    //            //  numberProductCart = $(".number-cart").text();
     
-               //  console.log(numberProductCart);
+    //            //  console.log(numberProductCart);
                
-               // numberCart = result.find(numberProductCart);
+    //            // numberCart = result.find(numberProductCart);
 
-                $('#tbl_list_cartss').html('');
+    //             $('#tbl_list_cartss').html('');
     
-                $('#tbl_list_cartss').append(result);
+    //             $('#tbl_list_cartss').append(result);
     
-                const numberCart = $('#number-product-cart').text();
+    //             const numberCart = $('#number-product-cart').text();
     
-                $('.number-cart').text(numberCart);
+    //             $('.number-cart').text(numberCart);
     
-                $('#exampleModal').modal('show'); 
-                $('.loader').hide();
+    //             $('#exampleModal').modal('show'); 
+    //             $('.loader').hide();
                 
-            }
-        });
+    //         }
+    //     });
 
-         $(".btn-closemenu").click(function(){
+    //      $(".btn-closemenu").click(function(){
 
-            $('.show-menu').removeClass('active');
-        });
+    //         $('.show-menu').removeClass('active');
+    //     });
 
        
 
         
-    }
+    // }
 
     function isValid(p) {
         var phoneRe = /(84|0[3|5|7|8|9])+([0-9]{8})\b/;
