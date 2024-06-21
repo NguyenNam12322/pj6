@@ -816,7 +816,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="view-all"><span>xem tất cả</span></div>
+                            <div class="view-all-desk"><span>Xem toàn bộ sản phẩm</span></div>
                                  
                         </div>
                     </div>
