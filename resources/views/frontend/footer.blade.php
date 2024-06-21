@@ -25,7 +25,7 @@
         .ring-phone {
             float: left;
             position: fixed;
-            left: 10px;
+            right: 150px;
             bottom: 10px;
             z-index: 99999;
         }
