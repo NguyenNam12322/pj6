@@ -192,43 +192,39 @@
                     
                     function tru(key, rowId){
                     
-                    if(!$('.add-discount').hasClass('add-click')){
-                        $('.add-discount').addClass('add-click');
-                    }
-                    const val_number = $('.buy-quantity'+key).val();
-                    val_numbers =  parseInt(val_number);
-                    
-                    if(val_numbers>0){
-                        val_numbers = val_numbers-1;
-                    
-                        $.ajaxSetup({
-                        headers: {
-                                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                            }
-                        });
-                    
-                        $.ajax({
-                            type: 'POST',
-                            url: "https://muasamtaikho.vn/add-cart-number",
-                            data: {
-                                rowId: rowId,
-                                number:val_numbers
-                            },
-                            success: function(result){
-                    
-                                const numberCart = $('#number-product-cart').text();
-                    
-                                $('.number-cart').text(numberCart);
-                    
-                    
-                            
-                                
-                            }
-                        });
-                    
-                        $('.buy-quantity'+key).val(val_numbers);
+                        if(!$('.add-discount').hasClass('add-click')){
+                            $('.add-discount').addClass('add-click');
+                        }
+                        const val_number = $('.buy-quantity'+key).val();
+                        val_numbers =  parseInt(val_number);
                         
-                    }
+                        if(val_numbers>0){
+                            val_numbers = val_numbers-1;
+                        
+                            $.ajaxSetup({
+                            headers: {
+                                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                                }
+                            });
+                        
+                            $.ajax({
+                                type: 'POST',
+                                url: "https://muasamtaikho.vn/add-cart-number",
+                                data: {
+                                    rowId: rowId,
+                                    number:val_numbers
+                                },
+                                success: function(result){
+                        
+                                     window.location.href = '{{ route('show-cart') }}'; 
+                        
+                        
+                                }
+                            });
+                        
+                            $('.buy-quantity'+key).val(val_numbers);
+                            
+                        }
                     }
                     
                     function cong(key, rowId){
@@ -252,9 +248,7 @@
                             },
                             success: function(result){
                     
-                                const numberCart = $('#number-product-cart').text();
-                    
-                                $('.number-cart').text(numberCart);
+                                window.location.href = '{{ route('show-cart') }}'; 
                     
                               
                                 
