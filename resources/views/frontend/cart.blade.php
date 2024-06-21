@@ -20,6 +20,11 @@
                         border: 1px solid #dddddd;
                         padding: 5px;
                     }
+
+                    .total-cart-price, .cart-foot span {
+                        color: #c10017;
+                        font-weight: bold;
+                    }
                     .discount-div{
                         border: 0;
                     } 
