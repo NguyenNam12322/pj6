@@ -1099,6 +1099,10 @@
                             min-width: unset !important;
                         }
 
+                        .nk-header #nk-cart ul li a{
+                            font-size: 17px;
+                        }
+
                         .row-head{
                             height: 130px;
                         }
