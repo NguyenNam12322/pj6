@@ -33,6 +33,10 @@
         .pdetail-installment{
             height: 300px !important;
         }
+        @else
+        .pdetail-installment{
+            height: 100px !important;
+        }
         @endif
 
         .box01, .box01__show{
