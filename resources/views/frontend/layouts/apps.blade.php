@@ -1254,9 +1254,7 @@
 
                         }
 
-                        .logo-mobile{
-                            width: 23%;
-                        }
+                       
 
                         .div-header-cart{
                             width: 100%;
