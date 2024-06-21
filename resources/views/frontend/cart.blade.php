@@ -11,17 +11,39 @@
        
             <div id="tbl_list_cartss">
                 <div id="number-product-cart" style="display:none">1</div>
-                <style type="text/css"> .item-form{
-                    text-align: left;
+                <style type="text/css"> 
+                    .item-form{
+                        text-align: left;
                     }
                     #discount_code{
-                    width: 35%;
-                    border: 1px solid #dddddd;
-                    padding: 5px;
+                        width: 35%;
+                        border: 1px solid #dddddd;
+                        padding: 5px;
                     }
                     .discount-div{
-                    border: 0;
+                        border: 0;
                     } 
+                    .c3_box .item-form {
+                        padding: 5px 15px;
+                    }
+
+                    .c3_box textarea {
+                        display: block;
+                        padding: 9px 0;
+                        height: 105px;
+                        border: 1px solid #d9d9d9;
+                        border-radius: 4px;
+                        margin: 10px 0 5px;
+                        text-indent: 10px;
+                        width: 100%;
+                        outline: none;
+                    }
+
+                    .btn-primary {
+                        color: #fff;
+                        background-color: #007bff;
+                        border-color: #007bff;
+                    }
                 </style>
                 <div style="width:100%;">
                     <div class="js-item-row product_list_cart" data-variant_id="0" data-item_id="5804" data-item_type="product">
