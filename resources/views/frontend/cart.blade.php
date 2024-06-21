@@ -21,6 +21,22 @@
                         padding: 5px;
                     }
 
+                    .cart_col_1 {
+                        width: 23%;
+                    }
+
+                    .cart_col_2 {
+                        width: 44%;
+                    }
+
+                    .product_list_cart .cart_col_3 {
+                        width: 36%;
+                        text-align: right;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                    }
+
                     .option-group .step_option {
                         float: left;
                         cursor: pointer;
