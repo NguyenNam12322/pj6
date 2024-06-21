@@ -1191,7 +1191,7 @@
                             margin-left:0;
                         }
                         .nk-header::after{
-                            height: 150px !important;
+                            height: 130px !important;
                         }
                         .nav-list a {
                             align-items: center;
