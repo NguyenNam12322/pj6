@@ -73,7 +73,7 @@
         <meta http-equiv="Cache-control" content="public">
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-         <link rel="stylesheet" type="text/css" href="{{ asset('css/app.css') }}?ver=13 ">
+         <link rel="stylesheet" type="text/css" href="{{ asset('css/app.css') }}?ver=14 ">
 
          <style type="text/css">
             .nk-nav-right ul{
