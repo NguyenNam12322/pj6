@@ -281,7 +281,7 @@
             -webkit-box-pack: center;
             -ms-flex-pack: center;
             justify-content: center;
-            background: #000;
+/*            background: #000;*/
             border-radius: 5px;
             padding: 10px 5px;
         }
