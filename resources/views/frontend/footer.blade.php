@@ -680,8 +680,7 @@
     <div class="cp-r">
         <div class="cpr-ct">
             <b>Giao diện website được thiết kế độc quyền bởi Cty ABC</b>
-            <br>
-            375 Minh Khai, Hai Bà Trưng, Hà Nội<br>
+            
             Điện thoại:(024) 123.4567   |   Email đặt hàng Online: muasamtaikho.vn   |   Chăm sóc khách hàng: cskh@muasamtaikho.vn
         </div>
         <!-- <table border="0">
