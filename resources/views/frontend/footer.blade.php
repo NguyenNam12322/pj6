@@ -545,28 +545,33 @@
             </div>
         </div>
         <div class="ft-new-info">
-            <div class="title-if">HỆ THỐNG SIÊU THỊ ĐIỆN MÁY DIGICITY THUỘC CÔNG TY CP 
-                DIGICARE VIỆT NAM VÀ CÔNG TY CP THÀNH PHỐ ĐIỆN MÁY 
+            <div class="title-if">HỆ THỐNG SIÊU THỊ MUA SẮM TẠI KHO 
             </div>
             <p>
-                <b>DigiCity 1 (HEAD OFFICE)</b><br>
-                Địa chỉ: Số 277 Nguyễn Trãi – Thanh Xuân – Hà Nội
+                <b>Hệ thống 1 (HEAD OFFICE)</b><br>
+               
             </p>
             <p>
-                <b>DigiCity 2</b><br>
-                Địa chỉ: Số 221 Thanh Nhàn – Hai Bà Trưng – Hà Nội
+                <b>Hệ thống 2</b><br>
+                
             </p>
             <p>
-                <b>DigiCity 3</b><br>
-                Địa chỉ: Số 215 Đường Ngọc Hồi – Thanh Trì – Hà Nội
+                <b>Hệ thống 3</b><br>
+               
             </p>
             <p>
-                Hotline: <a href="tel:0945172266"><b>0945.172.266</b></a> Hoặc <a href="tel:0942496226"><b>0942.496.226 -  </b></a><a href="0904196226"><b>0904.196.226</b></a><br>
-                Tiếp nhận bảo hành, chăm sóc khách hàng:  <a href="tel:0942496226"><b>0942.496.226</b></a><br>
-                Phản ánh chất lượng dịch vụ:  <a href="tel:0945172266"><b>0945.172.266</b></a><br>
-                Hỗ trợ kĩ thuật:  <a href="tel:0945172266"><b>0945.172.266</b></a><br>
-                Email Đặt Hàng: <b>banquanly@digicity.vn</b><br>
-                Email Liên Hệ: <b>cskh@digicity.vn</b><br>
+                Hotline: <a href="tel:0945172266"><b>0123.456.789</b>
+                </a> Hoặc 
+                <a href="#"><b>0123.456.789 -  </b></a>
+                <a href="#"><b>0123.456.789</b></a><br>
+                Tiếp nhận bảo hành, chăm sóc khách hàng:  
+                <a href="tel:0942496226"><b>0123.456.789</b></a><br>
+                Phản ánh chất lượng dịch vụ:  
+                <a href="tel:0945172266"><b>0123.456.789</b></a><br>
+                Hỗ trợ kĩ thuật:  <a href="tel:0945172266">
+                    <b>0123.456.789</b></a><br>
+                Email Đặt Hàng: <b></b><br>
+                Email Liên Hệ: <b></b><br>
             </p>
         </div>
     </div>
