@@ -12,7 +12,7 @@
             <div id="tbl_list_cartss">
                 <div id="number-product-cart" style="display:none">1</div>
                 <style type="text/css"> .item-form{
-                    text-align: right;
+                    text-align: left;
                     }
                     #discount_code{
                     width: 35%;
@@ -44,8 +44,8 @@
                         <div class="btn btn-info add-discount add-click">Add</div>
                     </div>
                 </div>
-                <div class="cart-foot discount-div"> <b>chi phí thêm (phí lắp đặt, vận chuyển...):</b> <span style="float: right;"><span class="sub1 discount-price">0  x 2 </span> </span> </div>
-                <div class="cart-foot discount-div"> <b>Mã giảm giá:</b> <span style="float: right;"><span class="sub1 discount-price">0</span> đ</span> </div>
+                <div class="cart-foot discount-div"> <b>chi phí thêm (phí lắp đặt, vận chuyển...):</b> <span style="float: left;"><span class="sub1 discount-price">0  x 2 </span> </span> </div>
+                <div class="cart-foot discount-div"> <b>Mã giảm giá:</b> <span style="float: left;"><span class="sub1 discount-price">0</span> đ</span> </div>
                 <br> 
                 <div class="cart-foot"> <b>Tổng tiền:</b> <span style="float: right;"><span class="sub1 total-cart-price">8.000.000</span> đ</span> </div>
                 <script type="text/javascript"> function removeProductCart(id) {
