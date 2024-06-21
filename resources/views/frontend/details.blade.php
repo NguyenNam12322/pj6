@@ -27,10 +27,6 @@
             
         }
 
-        .item{
-            height: 445px !important;
-        }
-
 
          @if(!empty($data->Specifications))
 
