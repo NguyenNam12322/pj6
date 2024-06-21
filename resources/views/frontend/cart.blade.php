@@ -21,6 +21,30 @@
                         padding: 5px;
                     }
 
+                    .option-group .step_option {
+                        float: left;
+                        cursor: pointer;
+                        text-align: left;
+                        margin-bottom: 0px;
+                        width: auto !important;
+                        margin-right: 25px;
+                    }
+
+                    .st_opt_active {
+                        background: #0e76bd;
+                    }
+
+                    .st_opt {
+                        display: block;
+                        width: 16px;
+                        height: 16px;
+                        cursor: pointer;
+                        float: left;
+                        border: 1px solid #b2b2b2;
+                        margin-right: 10px;
+                        border-radius: 50%;
+                    }
+
                     .total-cart-price, .cart-foot span {
                         color: #c10017;
                         font-weight: bold;
