@@ -27,11 +27,6 @@
             
         }
 
-        .list_specifications p{
-            margin: 0;
-        }
-
-
          @if(!empty($data->Specifications))
 
         .pdetail-installment{
