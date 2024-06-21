@@ -31,7 +31,7 @@
          @if(!empty($data->Specifications))
 
         .pdetail-installment{
-            height: 300px !important;
+            height: 250px !important;
         }
         @else
         .pdetail-installment{
