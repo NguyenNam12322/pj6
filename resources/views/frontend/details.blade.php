@@ -28,7 +28,7 @@
         }
 
         .item{
-            height: 445px;
+            height: 445px !important;
         }
 
 
