@@ -244,6 +244,111 @@
         .div-foot .row{
             margin: 0;
         }
+
+        .ft-new-info .title-if {
+            width: 100%;
+            float: left;
+            margin-bottom: 10px;
+            font-size: 13px;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: #000;
+        }
+
+        .policy-ft {
+            width: 100%;
+            float: left;
+            margin-bottom: 10px;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: stretch;
+            -ms-flex-align: stretch;
+            align-items: stretch;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+        }
+
+        .policy-ft .item {
+            width: calc(20% - 8px);
+            float: left;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            background: #000;
+            border-radius: 5px;
+            padding: 10px 5px;
+        }
+        .policy-ft .item .icons-2022 {
+            width: 31px;
+            height: 36px !important;
+            float: left;
+            background-position: -2px -46px;
+            margin-bottom: 5px;
+        }
+        .policy-ft .item .txt {
+            width: 100%;
+            float: left;
+            font-size: 10px;
+            color: #fff;
+            text-align: center;
+        }
+
+        .ft-new-menu {
+            width: 100%;
+            float: left;
+            margin-bottom: 15px;
+        }
+
+        .ft-new-menu .item-n {
+            width: 100%;
+            float: left;
+            margin-bottom: 5px;
+        }
+
+        .ft-new-menu .item-n .title {
+            width: 100%;
+            float: left;
+            padding: 0 10px;
+            border-radius: 5px;
+            font-size: 13px;
+            background: #f1f1f1;
+            line-height: 40px;
+        }
+
+        .ft-new-menu .item-n .title i {
+            float: right;
+            line-height: 40px;
+        }
+
+        .ft-new-info p {
+            width: 100%;
+            float: left;
+            margin-bottom: 10px;
+            padding-bottom: 10px;
+            border-bottom: dashed 2px #f1f1f1;
+            font-size: 13px;
+            color: #000;
+            line-height: 1.5;
+        }
+
+        .ft-new-info .title-if {
+            width: 100%;
+            float: left;
+            margin-bottom: 10px;
+            font-size: 13px;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: #000;
+        }
+
+      
     } 
 
     @media only screen and (min-width: 601px) {
@@ -358,39 +463,86 @@
 
 
 <footer class="footer container mobile">
-    <div class="div-foot">
-        <div class="ft-dmca"> <img src="https://muasamtaikho.vn/images/template/banner-foot.jpg" alt="bg"> </div>
-        <div class="row">
-            <div class="col-md-2 col-footer">
-                <h3 class="title">Thông tin</h3>
-                <ul class="footer_list-link">
-                    <li> <a href="http://localhost:8000/gioi-thieu">Giới thiệu</a> </li>
-                    <li> <a href="http://localhost:8000/lien-he">Liên hệ</a> </li>
-                    <li> <a href="http://localhost:8000/nha-phan-phoi-dien-may-uy-tin-chuyen-nghiep">Dự án bán buôn</a> </li>
-                    <li class="mobile"> <a href="{slug}?show=pc_view">Xem bản desktop</a> </li>
-                </ul>
+    <div class="footer-new n-n">
+        <div class="policy-ft">
+            <div class="item">
+                <span class="icons-2022"></span>
+                <span class="txt">Sản phẩm chính hãng</span>
             </div>
-            <div class="col-md-3 col-footer">
-                <h3 class="title">Hỗ trợ mua hàng</h3>
-                <ul class="footer_list-link">
-                    <li> <a href="http://localhost:8000/huong-dan-mua-dien-may-tra-gop-online-qua-the-tin-dung-tren-trang-web-dien-may-nguoi-viet">Hướng dẫn trả góp</a> </li>
-                    <li> <a href="http://localhost:8000/page/cach-thuc-thanh-toan">Cách thức thanh toán</a> </li>
-                    <li> <a href="http://localhost:8000/bang-gia-vat-tu-lap-dat">Bảng giá vật tư lắp đặt</a> </li>
-                </ul>
+            <div class="item">
+                <span class="icons-2022"></span>
+                <span class="txt">Miễn phí vận chuyển</span>
             </div>
-            <div class="col-md-4 col-footer">
-                <h3 class="title">Chính sách</h3>
-                <ul class="footer_list-link">
-                    <li> <a href="/page/chinh-sach-quy-dinh-chung">Chính sách &amp; quy định chung</a> </li>
-                    <li> <a href="http://localhost:8000/page/chinh-sach-doi-tra-hang">Chính sách đổi trả sản phẩm</a> </li>
-                    <li> <a href="http://localhost:8000/page/chinh-sach-bao-hanh">Chính sách bảo hành</a> </li>
-                    <li> <a href="http://localhost:8000/page/chinh-sach-van-chuyen">Chính sách giao hàng</a> </li>
-                </ul>
+            <div class="item">
+                <span class="icons-2022"></span>
+                <span class="txt">Bảo dưỡng trọn đời</span>
             </div>
-            <!-- <div class="col-md-3 col-footer"> <form> <input id="email_newsletter" type="text" placeholder="Đăng ký email nhận thông tin khuyến mại"> <span id="now_submit">Gửi</span> </form> <h4 style="margin-top: 20px;margin-bottom: 10px;">Kết nối với chúng tôi</h4> <a class="ft-fb" rel="nofollow" href="https://www.facebook.com/dienmaynguoiviet/"><i class="fab fa-facebook-f"></i></a> <a class="ft-yt" rel="nofollow" href="https://www.youtube.com/channel/UCRVWFSZs8k81B61_hwmkMIA"><i class="fab fa-youtube"></i></a> <a rel="nofollow" href="http://online.gov.vn/HomePage/CustomWebsiteDisplay.aspx?DocId=1180"><img style="max-height: 40px" src="http://localhost:8000/images/template/dathongbao.png"></a> </div> --> 
+            <div class="item">
+                <span class="icons-2022"></span>
+                <span class="txt">Liên hệ thanh toán</span>
+            </div>
+            <div class="item">
+                <span class="icons-2022"></span>
+                <span class="txt">Trả góp<br>với Insta</span>
+            </div>
         </div>
-        <!-- <div class="footer-bottom"> <div class="container"> <p> <b>© 2018. Công ty TNHH Thương Mại Phú Tiến. Địa chỉ: : Kho Đóng Tàu, Ngõ 683 Đường Nguyễn Khoái, Quận Hoàng
-            Mai, TP HN. GPKD số : 0102011440 do Sở Kế Hoạch và Đầu Tư TP. Hà Nội, cấp ngày 25/02/2004 </b> </p> </div> </div> --> 
+        <div class="ft-new-menu">
+            <div class="item-n item-st">
+                <div class="title">Thông tin chung <i class="fa fa-caret-right" aria-hidden="true"></i></div>
+                <div class="list">
+                    <a href="/page/gioi-thieu-digicity">Giới thiệu</a>
+                    <a href="/tin-tuc">Tin tức</a>
+                </div>
+            </div>
+            <div class="item-n item-st">
+                <div class="title">Chính sách và quy định <i class="fa fa-caret-right" aria-hidden="true"></i></div>
+                <div class="list">
+                    <a rel="nofollow" href="/tin-cong-ty/chinh-sach-bao-mat-thong-tin-truc-tuyen-cua-digicity/a245.html">Chính
+                    sách bảo mật</a>
+                    <a rel="nofollow" href="/page/chinh-sach-giao-hang">Chính sách vận chuyển</a>
+                    <a rel="nofollow" href="/page/bao-duong-tron-doi">Chính sách bảo hành</a>
+                    <a rel="nofollow" href="/tin-cong-ty/quy-trinh-doi-tra-hang-hoa-mua-tai-digicity/a89.html">Chính sách đổi
+                    hàng</a>
+                    <a rel="nofollow" href="/tin-cong-ty/quy-trinh-doi-tra-hang-hoa-mua-tai-digicity/a89.html">Chính sách đổi
+                    hàng</a>
+                </div>
+            </div>
+            <div class="item-n item-st">
+                <div class="title">Hướng dẫn sử dụng <i class="fa fa-caret-right" aria-hidden="true"></i></div>
+                <div class="list">
+                    <a href="/huong-dan-tieu-dung.html">Hướng dẫn tiêu dùng</a>
+                    <a rel="nofollow" href="/page/huong-dan-mua-hang-online">Hướng dẫn mua hàng</a>
+                    <a rel="nofollow" href="/lien-he">Hướng dẫn thanh toán</a>
+                    <a rel="nofollow" href="http://insta.vn/how-it-works/" target="_blank">Hướng dẫn trả góp với
+                    Insta</a>
+                </div>
+            </div>
+        </div>
+        <div class="ft-new-info">
+            <div class="title-if">HỆ THỐNG SIÊU THỊ ĐIỆN MÁY DIGICITY THUỘC CÔNG TY CP 
+                DIGICARE VIỆT NAM VÀ CÔNG TY CP THÀNH PHỐ ĐIỆN MÁY 
+            </div>
+            <p>
+                <b>DigiCity 1 (HEAD OFFICE)</b><br>
+                Địa chỉ: Số 277 Nguyễn Trãi – Thanh Xuân – Hà Nội
+            </p>
+            <p>
+                <b>DigiCity 2</b><br>
+                Địa chỉ: Số 221 Thanh Nhàn – Hai Bà Trưng – Hà Nội
+            </p>
+            <p>
+                <b>DigiCity 3</b><br>
+                Địa chỉ: Số 215 Đường Ngọc Hồi – Thanh Trì – Hà Nội
+            </p>
+            <p>
+                Hotline: <a href="tel:0945172266"><b>0945.172.266</b></a> Hoặc <a href="tel:0942496226"><b>0942.496.226 -  </b></a><a href="0904196226"><b>0904.196.226</b></a><br>
+                Tiếp nhận bảo hành, chăm sóc khách hàng:  <a href="tel:0942496226"><b>0942.496.226</b></a><br>
+                Phản ánh chất lượng dịch vụ:  <a href="tel:0945172266"><b>0945.172.266</b></a><br>
+                Hỗ trợ kĩ thuật:  <a href="tel:0945172266"><b>0945.172.266</b></a><br>
+                Email Đặt Hàng: <b>banquanly@digicity.vn</b><br>
+                Email Liên Hệ: <b>cskh@digicity.vn</b><br>
+            </p>
+        </div>
     </div>
     <div class="ring-phone">
         <div class="coccoc-alo-phone coccoc-alo-green coccoc-alo-show">
