@@ -1290,7 +1290,9 @@
 
                                 <div class="div-header-cart">
 
-                                    <div class="logo-mobile"></div>
+                                    <div class="logo-mobile">
+                                        <h1 id="nk-logo"> <a href="/"> <img fetchpriority="high" loading="eager" src="{{ asset('/images/template/logo2.jpg') }}" alt=""> </a> </h1>
+                                    </div>
 
                                     <div id="nk-cart">
                                         <ul>
@@ -1306,10 +1308,10 @@
                                                 </a>
                                             </li>
                                           
-                                            <li id="login_form">
+                                        <!--     <li id="login_form">
                                                 <a href="login.html?return_url=index.php" class="nk-text-login">
                                                 <i class="nki-user"></i> Tài khoản </a>
-                                            </li>
+                                            </li> -->
 
                                              <li id="login_form">
                                                 <a href="#" class="nk-text-login">
