@@ -88,13 +88,13 @@
                         <a href="javascript:void(0)" class="delete-from-cart" onclick="removeProductCart('dcf2f7e04992a5c25e44117f8d0c13ae')"><i class="fa fa-times-circle"></i> Xóa</a> 
                     </div>
                 </div>
-                <div class="item-form">
+                <!-- <div class="item-form">
                     <div> <input type="text" name="discount-code" id="discount_code" value="" placeholder="Mã giảm giá"> </div>
                     <br> 
                     <div>
                         <div class="btn btn-info add-discount add-click">Add</div>
                     </div>
-                </div>
+                </div> -->
                 <!-- <div class="cart-foot discount-div"> <b>chi phí thêm (phí lắp đặt, vận chuyển...):</b> <span style="float: left;"><span class="sub1 discount-price">0  x 2 </span> </span> </div>
                 <div class="cart-foot discount-div"> <b>Mã giảm giá:</b> <span style="float: left;"><span class="sub1 discount-price">0</span> đ</span> </div>
                 <br>  -->
