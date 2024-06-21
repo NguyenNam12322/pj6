@@ -93,6 +93,18 @@
                     .product_list_cart{
                         display: flex;
                     }
+
+                    .product_list_cart .col_input input, .product_list_cart .col_input a {
+                        width: 35px;
+                        height: 30px;
+                        text-align: center;
+                        display: inline-block;
+                        border: 1px solid #ccc;
+                        line-height: 30px;
+                        float: right;
+                        margin-right: -1px;
+                        background-color: transparent;
+                    }
                 </style>
                 <div style="width:100%;">
                     <div class="js-item-row product_list_cart" data-variant_id="0" data-item_id="5804" data-item_type="product">
