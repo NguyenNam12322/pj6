@@ -348,7 +348,7 @@
             color: #000;
         }
 
-      
+
     } 
 
     @media only screen and (min-width: 601px) {
@@ -368,6 +368,9 @@
         .ft-new-info{
             padding: 0;
         }
+        .footer{
+            background: #000;
+        }
     } 
 
     .ft-dmca ul li a, .ft-dmca .title{
@@ -375,9 +378,7 @@
     }
 
      
-    .footer{
-        background: #000;
-    }
+    
 
     .ft-new-content {
         width: 100%;
