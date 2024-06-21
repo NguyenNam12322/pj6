@@ -2,6 +2,8 @@
 
 @section('content')
 
+    <div id="number-product-cart" style="display:none">{{ count($data_cart) }}</div>
+
     <div class="row">
         <div class="span16 container">
 
@@ -115,18 +117,38 @@
                     }
                 </style>
                 <div style="width:100%;">
+
+                    <?php  
+
+                        $arrPrice = [];
+                        $key = 0;
+                        
+                    ?>
+                    @foreach($data_cart as $data)
+
+                        <?php 
+
+                            $price = (int)$data->price*(int)$data->qty;
+                            $key++;
+                            array_push($arrPrice, $price);
+
+                            $infoProducts = App\Models\product::find($data->id);
+
+                        ?>
                     <div class="js-item-row product_list_cart" data-variant_id="0" data-item_id="5804" data-item_type="product">
-                        <div class="cart_col_1"> <a href="https://muasamtaikho.vn/may-loc-nuoc-dat-gam-cong-suat-lon-a-o-smith-ross-lux-aou800hot-new"><img src="https://muasamtaikho.vn/uploads/product/may_lux_aou800-sticker_new_072f4626647b4112bce588ae1035ef82_master.jpg" style="width: 85px;"></a> </div>
+                        <div class="cart_col_1"> <a href="{{ route('details', $infoProducts->Link) }}"><img src="{{ asset($infoProducts->Image) }}" style="width: 85px;"></a> </div>
                         <div class="cart_col_2">
-                            <a href="https://muasamtaikho.vn/may-loc-nuoc-dat-gam-cong-suat-lon-a-o-smith-ross-lux-aou800hot-new"><span class="name">Máy Lọc Nước Đặt Gầm Công Suất Lớn A. O. Smith ROSS™ LUX-AOU800HOT [MODEL MỚI] thương hiệu Mỹ</span></a> <!--//Kiem tra khuyen mai co lua chon--> 
+                            <a href="{{ route('details', $infoProducts->Link) }}"><span class="name">{{ $data->name }}</span></a> <!--//Kiem tra khuyen mai co lua chon--> 
                             <ul style="list-style-type: disc;color: #888888;margin-left: 15px;"> </ul>
                         </div>
                         <div class="cart_col_3">
-                            <div class="col_price code1"> <span class="total-item-price">4.000.000 </span> đ </div>
-                            <div class="col_input"> <a href="javascript:void(0)" class="quantity-change" title="tru" onclick="tru('1', 'dcf2f7e04992a5c25e44117f8d0c13ae')">-</a> <input class="buy-quantity1 quantity-change" value="2" size="5" disabled=""> <a href="javascript:void(0)" class="quantity-change" title="them" onclick="cong('1', 'dcf2f7e04992a5c25e44117f8d0c13ae')">+</a> </div>
+                            <div class="col_price code1"> <span class="total-item-price">{{ number_format($data->price , 0, ',', '.')}} </span> đ </div>
+                            <div class="col_input"> <a href="javascript:void(0)" class="quantity-change" title="tru" onclick="tru('{{ $key  }}', '{{ $data->rowId }}')">-</a> <input class="buy-quantity1 quantity-change" value="2" size="5" disabled=""> <a href="javascript:void(0)" class="quantity-change" title="them" onclick="cong('{{ $key }}', '{{ $data->rowId }}')">+</a> </div>
                         </div>
-                        <a href="javascript:void(0)" class="delete-from-cart" onclick="removeProductCart('dcf2f7e04992a5c25e44117f8d0c13ae')"><i class="fa fa-times-circle"></i> Xóa</a> 
+                        <a href="javascript:void(0)" class="delete-from-cart" onclick="removeProductCart('{{ $data->rowId }}')"><i class="fa fa-times-circle"></i> Xóa</a> 
                     </div>
+
+                    @endforeach
                 </div>
                 <!-- <div class="item-form">
                     <div> <input type="text" name="discount-code" id="discount_code" value="" placeholder="Mã giảm giá"> </div>
@@ -138,7 +160,12 @@
                <!--  <div class="cart-foot discount-div"> <b>chi phí thêm (phí lắp đặt, vận chuyển...):</b><span class="sub1 discount-price">0  x 2 </span> </div>
                 <div class="cart-foot discount-div"> <b>Mã giảm giá:</b><span class="sub1 discount-price">0</span> đ</span> </div> -->
                 <br>  
-                <div class="cart-foot"> <b>Tổng tiền:</b><span class="sub1 total-cart-price">8.000.000</span> đ</span> </div>
+
+                 <?php 
+
+                    $totalPrice = array_sum($arrPrice);
+                ?>
+                <div class="cart-foot"> <b>Tổng tiền:</b><span class="sub1 total-cart-price">{{ number_format($totalPrice , 0, ',', '.')}}</span> đ</span> </div>
                 <script type="text/javascript"> function removeProductCart(id) {
                     $.ajaxSetup({
                         headers: {
