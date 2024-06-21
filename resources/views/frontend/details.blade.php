@@ -28,7 +28,7 @@
         }
 
 
-         @if(!empty($data->Specifications))
+         @if($data->Specifications != '')
 
         .pdetail-installment{
             height: 250px !important;
