@@ -16,7 +16,7 @@
                         text-align: left;
                     }
                     .item-form input{
-                        width: 35%;
+                        width: 100%;
                         border: 1px solid #dddddd;
                         padding: 5px;
                     }
@@ -104,6 +104,10 @@
                         float: right;
                         margin-right: -1px;
                         background-color: transparent;
+                    }
+                    #tbl_list_cartss{
+                        height: 210px;
+                        padding: 5px 15px;
                     }
                 </style>
                 <div style="width:100%;">
