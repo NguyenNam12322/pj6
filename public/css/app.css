@@ -1513,7 +1513,7 @@ html,
                .nk-menu #nk-danh-muc-san-pham-left>ul li .menu-item {
                    display: flex;
                    display: -webkit-flex;
-                   align-items: center;
+/*                   align-items: center;*/
                }
 
                .nk-menu #nk-danh-muc-san-pham-left>ul li .menu-item::after {
