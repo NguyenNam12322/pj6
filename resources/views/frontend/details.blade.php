@@ -45,7 +45,12 @@
     }   
 
     
-    </style>            
+    </style>    
+
+    <?php
+
+        dd($data->Specifications);
+    ?>      
 
     <?php
 
