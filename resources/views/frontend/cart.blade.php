@@ -131,8 +131,8 @@
                         <div class="btn btn-info add-discount add-click">Add</div>
                     </div>
                 </div> -->
-                <div class="cart-foot discount-div"> <b>chi phí thêm (phí lắp đặt, vận chuyển...):</b><span class="sub1 discount-price">0  x 2 </span> </div>
-                <div class="cart-foot discount-div"> <b>Mã giảm giá:</b><span class="sub1 discount-price">0</span> đ</span> </div>
+               <!--  <div class="cart-foot discount-div"> <b>chi phí thêm (phí lắp đặt, vận chuyển...):</b><span class="sub1 discount-price">0  x 2 </span> </div>
+                <div class="cart-foot discount-div"> <b>Mã giảm giá:</b><span class="sub1 discount-price">0</span> đ</span> </div> -->
                 <br>  
                 <div class="cart-foot"> <b>Tổng tiền:</b><span class="sub1 total-cart-price">8.000.000</span> đ</span> </div>
                 <script type="text/javascript"> function removeProductCart(id) {
