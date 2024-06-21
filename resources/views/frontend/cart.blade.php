@@ -143,7 +143,7 @@
                         </div>
                         <div class="cart_col_3">
                             <div class="col_price code1"> <span class="total-item-price">{{ number_format($data->price , 0, ',', '.')}} </span> đ </div>
-                            <div class="col_input"> <a href="javascript:void(0)" class="quantity-change" title="tru" onclick="tru('{{ $key  }}', '{{ $data->rowId }}')">-</a> <input class="buy-quantity1 quantity-change" value="2" size="5" disabled=""> <a href="javascript:void(0)" class="quantity-change" title="them" onclick="cong('{{ $key }}', '{{ $data->rowId }}')">+</a> </div>
+                            <div class="col_input"> <a href="javascript:void(0)" class="quantity-change" title="tru" onclick="tru('{{ $key  }}', '{{ $data->rowId }}')">-</a> <input class="buy-quantity1 quantity-change" value="{{ $data->qty }}" size="5" disabled=""> <a href="javascript:void(0)" class="quantity-change" title="them" onclick="cong('{{ $key }}', '{{ $data->rowId }}')">+</a> </div>
                         </div>
                         <a href="javascript:void(0)" class="delete-from-cart" onclick="removeProductCart('{{ $data->rowId }}')"><i class="fa fa-times-circle"></i> Xóa</a> 
                     </div>
