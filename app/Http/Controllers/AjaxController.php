@@ -207,6 +207,11 @@ class AjaxController extends Controller
  
     }
 
+    public function showCart()
+    {
+        return view('frontend.cart');
+    }
+
     public function getEmail(Request $request)
     {
         if($request->ajax())
