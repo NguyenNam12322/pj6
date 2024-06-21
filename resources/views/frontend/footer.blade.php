@@ -241,6 +241,10 @@
         .ft-dmca img{
             width: 100%;
         }
+
+        .ring-phone{
+            display: none;
+        }
         .div-foot .row{
             margin: 0;
         }
