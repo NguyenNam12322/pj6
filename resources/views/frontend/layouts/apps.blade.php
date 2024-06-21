@@ -1335,8 +1335,7 @@
                                             </li> -->
 
                                              <li id="login_form">
-                                                <a href="#" class="nk-text-login">
-                                                <i class="fa fa-newspaper"></i> Tin tức </a>
+                                                <a href="#" class="nk-text-login"> Tin tức </a>
                                             </li>
 
                                         
