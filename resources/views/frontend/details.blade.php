@@ -1845,42 +1845,41 @@
                         <div class="clearfix"></div>
 
                          <button type="button" class="btn btn-lg" data-toggle="modal" data-target="#specifications">Xem chi tiết thông số kỹ thuật</button>
-                         <div class="content" id="contents-scroll">
-                
-                        <?php
-
-                             $minutes = 1000;
-
-                            $check = Cache::remember('check',$minutes, function() use ($data){
-                                return DB::table('imagecrawl')->select('image')->where('product_id', $data->id)->where('active',0)->get()->pluck('image')->toArray();
-                            });
-
-
-                               
-
-
-
-                            if(isset($check)){
-                                $details = str_replace($check,  asset('/images/product/noimage.png'), $data->Detail);
-                                $details = str_replace(['http://dienmaynguoiviet.net', 'https://dienmaynguoiviet.net'], 'https://dienmaynguoiviet.vn', $details);
-                                $details = preg_replace("/<a(.*?)>/", "<a$1 target=\"_blank\">",  $details);
-
-                            }
-                           
-                        ?>
-
-                         {!! html_entity_decode(str_replace('gallery ','galerys',$details))   !!}
-                        
-                    </div>
-
-                    <div class="show-more">
-                        <span>Đọc thêm</span>
-                    </div>
                        
                         
                     </div>
 
+                    <div class="content" id="contents-scroll">
+                
+                <?php
 
+                     $minutes = 1000;
+
+                    $check = Cache::remember('check',$minutes, function() use ($data){
+                        return DB::table('imagecrawl')->select('image')->where('product_id', $data->id)->where('active',0)->get()->pluck('image')->toArray();
+                    });
+
+
+                       
+
+
+
+                    if(isset($check)){
+                        $details = str_replace($check,  asset('/images/product/noimage.png'), $data->Detail);
+                        $details = str_replace(['http://dienmaynguoiviet.net', 'https://dienmaynguoiviet.net'], 'https://dienmaynguoiviet.vn', $details);
+                        $details = preg_replace("/<a(.*?)>/", "<a$1 target=\"_blank\">",  $details);
+
+                    }
+                   
+                ?>
+
+                 {!! html_entity_decode(str_replace('gallery ','galerys',$details))   !!}
+                
+            </div>
+
+            <div class="show-more">
+                <span>Đọc thêm</span>
+            </div>
                 </div>
             </div>
         </div>
@@ -1888,7 +1887,9 @@
         <div class="clearfix"></div>
 
         
-        
+        <div class="box_left">
+            
+        </div>
 
         <div class="box_right">
 
