@@ -1227,7 +1227,7 @@
                     </div>
                 </div>
                 @endif
-
+                @if(isset($banners))
                 <!-- banner home -->
                 <div class="row-fluid nk-banner-homes">
                     <div class="span16 banner_home__ container">
@@ -1235,7 +1235,7 @@
                             <div class="span11 row banner-left">
                                 <div id="nk-banner-home">
                                     <div  class="nk-banner-mains owl-carousel carsl1 owl-loaded owl-drag" >
-                                        @if(isset($banners))
+                                       
                                         @foreach($banners as $value)
                                         <div data-banner-item="0" class="item">
                                             <a rel="nofollow" href="javascript:void(0)">
@@ -1243,13 +1243,8 @@
                                             </a>
                                         </div>
                                         @endforeach
-                                        @else
-                                        <div data-banner-item="0" class="item">
-                                            <a rel="nofollow" href="javascript:void(0)">
-                                            <img fetchpriority="high" class="main-banner" src="https://cdn.nguyenkimmall.com/images/companies/_1/MKT_ECM/0124/PRE_ORDER_S24/WEB/694x376px.jpg"  alt="ECM_Pre-order S24_0124" style="width: 100%">
-                                            </a>
-                                        </div>
-                                        @endif 
+                                     
+                                        
                                     </div>
                                 </div>
                                 <style>
@@ -1292,6 +1287,7 @@
                         </div>
                     </div>
                 </div>
+                @endif 
 
 
                 @yield('content')
