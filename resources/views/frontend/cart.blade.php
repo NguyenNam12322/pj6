@@ -15,7 +15,7 @@
                     .item-form{
                         text-align: left;
                     }
-                    #discount_code{
+                    .item-form input{
                         width: 35%;
                         border: 1px solid #dddddd;
                         padding: 5px;
