@@ -595,10 +595,7 @@
                     min-width: unset !important;
                 }
 
-                .nki-menu:before{
-                    color: #000 !important;
-                }
-
+                
                 /*.nk-header #nk-logo img{
                     display: ;
                 }
@@ -906,6 +903,9 @@
              @media only screen and (min-width: 601px) {
                 .mobile{
                     display: none;
+                }
+                .nki-menu:before{
+                    color: #000 !important;
                 }
 
 
