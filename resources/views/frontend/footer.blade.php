@@ -245,6 +245,22 @@
             margin: 0;
         }
 
+        .ft-new-info p:last-child {
+            border: none;
+            padding-bottom: 0;
+        }
+
+        .ft-new-info p {
+            width: 100%;
+            float: left;
+            margin-bottom: 10px;
+            padding-bottom: 10px;
+            border-bottom: dashed 2px #f1f1f1;
+            font-size: 13px;
+            color: #000;
+            line-height: 1.5;
+        }
+
         .ft-new-info .title-if {
             width: 100%;
             float: left;
