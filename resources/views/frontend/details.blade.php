@@ -2692,7 +2692,7 @@
           $('#modal-suport').modal('show'); 
       }  
 
-      
+
     function addToCart(id) {
     
     $.ajaxSetup({
@@ -2716,7 +2716,7 @@
         },
         success: function(result){
 
-           window.location.href = result; 
+           window.location.href = '{{ route('show-cart') }}'; 
 
         }
     });
