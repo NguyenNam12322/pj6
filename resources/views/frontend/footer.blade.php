@@ -1,4 +1,4 @@
-<div class="container p-0 mb-20">
+<div class="container p-0 show-footer">
     <div class="phone_hotline"> <a href="tel:#" title="Bảo Hành: 0243.687.9145" class="p_hotline_item"> <i class="icon_security"></i> <span><strong>Bảo Hành: 0123.456.789</strong> (8h00 - 17h00)</span> </a> <a href="tel:#" title="Mua hàng:#" class="p_hotline_item"> <i class="icon_purchase"></i> <span><strong>Mua hàng: 0123.456.789</strong> (8h00 - 17h00)</span> </a> <a href="#" title="Khiếu nại:0916917949" class="p_hotline_item"> <i class="icon_complain"></i> <span><strong>Khiếu nại: 0123.456.789</strong> (8h00 - 17h00)</span> </a> </div>
 </div>
 
@@ -8,6 +8,8 @@
         /*.div-foot{
             margin-left: 330px;
         }*/
+
+
         .banner-ads-text .header-menu__navs{
             height: 40px;
         }
@@ -240,6 +242,10 @@
     @media only screen and (max-width: 601px) {
         .ft-dmca img{
             width: 100%;
+        }
+
+        .show-footer{
+            margin-bottom: 20px;
         }
 
         .ring-phone{
