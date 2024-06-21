@@ -46,11 +46,11 @@
             margin-top: 6px;
         }    
         #new-flash-sale_3621{
-            margin: 0;
+            margin: 0 !important;
         }
 
         .first-render{
-            padding: 0;
+            padding: 0 !important;
         }
 
         .delivery-free{
