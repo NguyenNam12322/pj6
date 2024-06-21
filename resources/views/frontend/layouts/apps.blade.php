@@ -303,6 +303,10 @@
                       display: -webkit-box;
                 }
 
+                .sugests-li{
+                    display: flex;
+                }
+
                  .nk-header #nk-searchs {
                     border-radius: .9em;
                     background-color: #FFFFFF;
