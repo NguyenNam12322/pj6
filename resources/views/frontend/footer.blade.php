@@ -348,6 +348,16 @@
             color: #000;
         }
 
+        .ft-new-menu .item-n .title {
+            width: 100%;
+            float: left;
+            padding: 0 10px;
+            border-radius: 5px;
+            font-size: 13px;
+            background: #f1f1f1;
+            line-height: 40px;
+        }
+
 
     } 
 
