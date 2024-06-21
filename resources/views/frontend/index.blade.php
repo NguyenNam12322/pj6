@@ -115,7 +115,7 @@
 
     }
     .view-all-desk{
-        margin-top: 10px;
+        margin: 10px;
     }
 
     .gift-info {
