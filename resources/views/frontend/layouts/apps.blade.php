@@ -1109,9 +1109,7 @@
                             line-height: 31px;
                         }
 
-                         #nk-cart ul{
-                            padding: 0 !important;
-                         }
+
 
                         .row-head{
                             height: 130px;
@@ -1135,7 +1133,7 @@
                         }
 
                          #nk-cart ul{
-                            padding: 5px 0 0;
+                            padding: 0;
                             width: 57%;
                             position: relative;
                             display: flex;
