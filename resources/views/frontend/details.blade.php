@@ -1845,11 +1845,7 @@
                         <div class="clearfix"></div>
 
                          <button type="button" class="btn btn-lg" data-toggle="modal" data-target="#specifications">Xem chi tiết thông số kỹ thuật</button>
-                       
-                        
-                    </div>
-
-                    <div class="content" id="contents-scroll">
+                         <div class="content" id="contents-scroll">
                 
                         <?php
 
@@ -1880,6 +1876,11 @@
                     <div class="show-more">
                         <span>Đọc thêm</span>
                     </div>
+                       
+                        
+                    </div>
+
+
                 </div>
             </div>
         </div>
