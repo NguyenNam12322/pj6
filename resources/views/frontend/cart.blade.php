@@ -1,13 +1,11 @@
 @extends('frontend.layouts.appsss')
 
 @section('content')
-<div class="modal-content">
-    <div class="loader" style="display: none;"></div>
-    <div class="modal-header">
+
         <h5 class="modal-title" id="exampleModalLabel">Thông tin giỏ hàng</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">×</span> </button> 
-    </div>
-    <div class="modal-body">
+    
+   
         <div id="tbl_list_cartss">
             <div id="number-product-cart" style="display:none">1</div>
             <style type="text/css"> .item-form{
@@ -345,7 +343,6 @@
                 <p>Không có sản phẩm nào trong giỏ hàng</p>
             </div>
         </div>
-    </div>
-</div>
+   
 
 @endsection

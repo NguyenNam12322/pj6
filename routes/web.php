@@ -65,7 +65,7 @@ Route::get('admin','Frontend\indexController@viewLogin');
 
 Route::get('/lien-he', 'mainController@lienhe');
 
-Route::get('cart/index', 'AjaxController@showProductCart')->name('cart');
+Route::get('cart/index', 'AjaxController@showCart')->name('cart');
 
 
 Route::get('/so-sanh-sp','productController@sosanh')->middleware('throttle:60')->name('so-sanh');
