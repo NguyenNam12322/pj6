@@ -36,6 +36,10 @@
             color: red;
         }
 
+        .nk-header .container{
+            height: 100%;
+        }
+
 
         .box-links img{
             height: 13px !important;
