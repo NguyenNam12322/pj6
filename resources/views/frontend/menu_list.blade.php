@@ -9,6 +9,13 @@
         background: #fff !important;
     }
 
+    .delivery-free{
+        margin-left: 40px;
+    }
+    .buy-project{
+        width: 159px;
+    }
+
 
 
 </style>
@@ -1667,7 +1674,7 @@
                                             <a class="navs-item-link" href="javascript:void(0)">
                                                Tổng hợp khuyến mãi </a>
                                             <div class="hr-vertical">|</div>
-                                            <a class="navs-item-link" href="javascript:void(0)">
+                                            <a class="navs-item-link buy-project" href="javascript:void(0)">
                                                 Mua hàng Dự Án </a>
                                         </div>
                                     </div>

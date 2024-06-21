@@ -903,6 +903,9 @@
                 .mobile{
                     display: none;
                 }
+
+                
+
                 .nk-banner-main{
                     padding: 0 !important;
                 }

@@ -46,6 +46,9 @@
             margin-top: 6px;
         }    
 
+        .delivery-free{
+                margin-left: 40px;
+            }
         
         .title-dhn {
             width: 100%;
