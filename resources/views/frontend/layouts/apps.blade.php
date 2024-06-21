@@ -1099,6 +1099,14 @@
                             min-width: unset !important;
                         }
 
+                        .row-head{
+                            height: 130px;
+                        }
+
+                        .div-header-cart{
+                            height: 100%;
+                        }
+
                         .position-fixed .share-button{
 
                             left: 0;
@@ -1277,13 +1285,15 @@
                 .wrap-grid-menu-right{
                     background:linear-gradient(0deg,#d1a94e,#fdf5a1,#cfac54);
                 }
+
+
              }   
                 </style>
 
                  
 
 
-            <div class="row-fluid mobile">
+            <div class="row-fluid mobile row-head">
                 <div class="span16 nk-header">
                     <div class="fluid">
                         <div class="span16 _nk_main">
