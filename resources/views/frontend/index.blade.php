@@ -525,7 +525,7 @@
                     </div>                             
                 </div>
 
-                <div class="view-all-desk desktop"><span>Xem toàn bộ sản phẩm</span></div>
+                <div class="view-all-desk"><span>Xem toàn bộ sản phẩm</span></div>
 
 
                 @if(!empty($product_sale)&&$product_sale->count()>0)
