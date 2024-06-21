@@ -526,7 +526,7 @@
                     </div>                             
                 </div>
 
-                <div class="view-all-desk"><span>Xem toàn bộ sản phẩm</span></div>
+                <div class="view-all-desk"><a href="{{ route('dealFe') }}"><span>Xem toàn bộ sản phẩm</span></a></div>
 
 
                 @if(!empty($product_sale)&&$product_sale->count()>0)
