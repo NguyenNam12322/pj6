@@ -13,7 +13,7 @@
 	    </a>
     </td>
     <td style="vertical-align:top; color:red; line-height:18px;">
-        <a class="suggest_link" href="{{ asset($products->Link) }}">{{ $products->id }}</a><br>{{ $products->Price }}</td>
+        <a class="suggest_link" href="{{ asset($products->Link) }}">{{ _substrs($products->Name, 50) }}</a><br>{{ $products->Price }}</td>
 </tr>
 
 @endforeach

@@ -411,7 +411,7 @@ class AjaxController extends Controller
 
                             <a href="'.route("details", $products->Link).'">
                             <img src="'.asset($products->Image).'" width="60" style="margin-right:10px; height:60px; margin-top:10px"></a>
-                            <a class="suggest_link" href="'.route('details', $products->Link).'"><p>'. _substrs($products->Name, 100).'</p>
+                            <a class="suggest_link" href="'.route('details', $products->Link).'"><p> 112121'. _substrs($products->Name, 100).'</p>
                              <p style="color:red; font-weight:bold;">Giá: '. str_replace(',', '.',$priceInt) .'</p>
                             </a>
                            <br>
