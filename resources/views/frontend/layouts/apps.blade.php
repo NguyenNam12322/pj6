@@ -80,6 +80,10 @@
                 display: flex;
             }
 
+            .nki-menu-air-conditioner{
+                margin-top: -4px;
+            }
+
             .flexthis .row-fluid{
                 display: flex;
             }
