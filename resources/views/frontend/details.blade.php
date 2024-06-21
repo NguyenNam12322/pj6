@@ -1848,8 +1848,15 @@
                        
                         
                     </div>
+                </div>
+            </div>
+        </div>
+        <div class="border7"></div>
+        <div class="clearfix"></div>
 
-                    <div class="content" id="contents-scroll">
+        
+        <div class="box_left">
+            <div class="content" id="contents-scroll">
                 
                 <?php
 
@@ -1880,15 +1887,6 @@
             <div class="show-more">
                 <span>Đọc thêm</span>
             </div>
-                </div>
-            </div>
-        </div>
-        <div class="border7"></div>
-        <div class="clearfix"></div>
-
-        
-        <div class="box_left">
-            
         </div>
 
         <div class="box_right">
