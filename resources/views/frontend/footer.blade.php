@@ -358,6 +358,21 @@
             line-height: 40px;
         }
 
+        .ft-new-menu .item-n .list a {
+            width: 100%;
+            float: left;
+            padding: 10px;
+            font-size: 13px;
+            border-bottom: solid 1px #fff;
+        }
+
+        .ft-new-menu .item-n .list {
+            width: 100%;
+            float: left;
+            background: #f1f1f1;
+            display: none;
+        }
+
 
     } 
 
