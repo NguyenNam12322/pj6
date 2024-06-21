@@ -182,24 +182,7 @@
                         },
                         success: function(result){
                           
-                           // numberCart = result.find("#number-product-cart").text();
-                    
-                           $('#tbl_list_cartss').html('');
-                    
-                            $('#tbl_list_cartss').append(result);
-                    
-                            
-                    
-                            const numberCart = $('#number-product-cart').text();
-                    
-                            if(numberCart==0){
-                                $('.form-info-cart').addClass('hide');
-                                $('.cart-container').removeClass('hide');
-                            }
-                    
-                            $('.number-cart').text(numberCart);
-                    
-                            $('#exampleModal').modal('show'); 
+                            window.location.href = '{{ route('show-cart') }}'; 
                             
                         }
                     });
@@ -233,16 +216,12 @@
                             },
                             success: function(result){
                     
-                                $('#tbl_list_cartss').html('');
-                    
-                                $('#tbl_list_cartss').append(result);
-                    
                                 const numberCart = $('#number-product-cart').text();
                     
                                 $('.number-cart').text(numberCart);
                     
                     
-                                $('#exampleModal').modal('show');
+                            
                                 
                             }
                         });
@@ -273,15 +252,11 @@
                             },
                             success: function(result){
                     
-                                $('#tbl_list_cartss').html('');
-                    
-                                $('#tbl_list_cartss').append(result);
-                    
                                 const numberCart = $('#number-product-cart').text();
                     
                                 $('.number-cart').text(numberCart);
                     
-                                $('#exampleModal').modal('show');         
+                              
                                 
                             }
                         });
