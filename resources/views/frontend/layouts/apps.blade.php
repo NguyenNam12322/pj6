@@ -1110,7 +1110,7 @@
                         }
 
                          #nk-cart ul{
-                            padding: 0;
+                            padding: 0 !important;
                          }
 
                         .row-head{
