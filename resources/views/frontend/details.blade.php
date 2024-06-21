@@ -42,8 +42,6 @@
             
         }
 
-        
-
         .pdetail-installment{
             height: 150px !important;
         }
