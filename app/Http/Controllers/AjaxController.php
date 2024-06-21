@@ -208,8 +208,10 @@ class AjaxController extends Controller
     }
 
     public function showCart()
-    {
-        return view('frontend.cart');
+    {   
+        $cart = Cart::content();
+        $number_cart = count($cart);
+        return view('frontend.cart',compact('cart','number_cart'));
     }
 
     public function getEmail(Request $request)

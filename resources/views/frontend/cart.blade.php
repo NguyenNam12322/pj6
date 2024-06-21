@@ -37,6 +37,10 @@
                         justify-content: space-between;
                     }
 
+                    .product_list_cart .col_price{
+                        color: #c10017;
+                    }
+
                     .option-group .step_option {
                         float: left;
                         cursor: pointer;
