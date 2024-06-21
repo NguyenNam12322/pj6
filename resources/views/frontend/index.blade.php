@@ -518,6 +518,8 @@
                     </div>                             
                 </div>
 
+                <div class="view-all-desk desktop"><span>Xem toàn bộ sản phẩm</span></div>
+
 
                 @if(!empty($product_sale)&&$product_sale->count()>0)
 
@@ -732,7 +734,7 @@
                                 </div>
                             </div>
 
-                            <div class="view-all-desk desktop"><span>xem toàn bộ sản phẩm</span></div>
+                            <div class="view-all-desk desktop"><span>Xem toàn bộ sản phẩm</span></div>
                                  
                                  
                         </div>
