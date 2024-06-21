@@ -1109,6 +1109,10 @@
                             line-height: 31px;
                         }
 
+                         #nk-cart ul{
+                            padding: 0;
+                         }
+
                         .row-head{
                             height: 130px;
                         }
