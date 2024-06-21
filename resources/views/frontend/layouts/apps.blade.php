@@ -81,7 +81,7 @@
             }
 
             .nki-menu-air-conditioner{
-                margin-top: -4px;
+                margin-top: -4px !important;
             }
 
             .flexthis .row-fluid{
