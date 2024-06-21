@@ -595,6 +595,10 @@
                     min-width: unset !important;
                 }
 
+                .nki-menu:before{
+                    color: #000 !important;
+                }
+
                 /*.nk-header #nk-logo img{
                     display: ;
                 }
@@ -904,7 +908,7 @@
                     display: none;
                 }
 
-                
+
 
                 .nk-banner-main{
                     padding: 0 !important;
