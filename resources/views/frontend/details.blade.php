@@ -22,6 +22,21 @@
             height: 300px !important;
         }
 
+        .box-info-name{
+            height: 20px !important;
+        }
+
+        .box-compare{
+            height: 30px !imporant;
+        }
+        hr{
+            margin: 0;
+        }
+
+        .crazy-deal-details pc{
+            height: 38px;
+        }
+
         .post-sidebar-img img{
             width: 100%;
             
