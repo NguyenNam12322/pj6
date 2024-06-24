@@ -888,9 +888,9 @@ class AjaxController extends Controller
 
         Cart::update($rowId, $qualtity);
 
-        $data_cart = Cart::content();
+        // $data_cart = Cart::content();
 
-        return view('frontend.ajax.cart', compact('data_cart'));
+        // return view('frontend.ajax.cart', compact('data_cart'));
        
     }
 

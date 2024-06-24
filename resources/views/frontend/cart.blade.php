@@ -245,7 +245,7 @@
                     
                         $.ajax({
                             type: 'POST',
-                            url: "https://muasamtaikho.vn/add-cart-number",
+                            url: "{{ route('addCartNumber')  }}",
                             data: {
                                 rowId: rowId,
                                 number:val_numbers
