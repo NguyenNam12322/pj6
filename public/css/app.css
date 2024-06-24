@@ -14399,7 +14399,7 @@ html,
 
                @media screen and (max-width:768px) {
                    .product .product-header .product-image a img {
-                       max-width: 180px
+                       max-width: 100%;
                    }
 
                    .product-image {
