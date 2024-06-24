@@ -1361,11 +1361,12 @@
 
                 $data_model = Cache::get('product_search');
 
-                 dd($data_model);
+                 dd($cutModel);
 
                 $relationProduct = collect($data_model)->filter(function ($item) use ($cutModel) {
                   
                     return false !== strpos($item->ProductSku, $cutModel);
+                  
                 });
 
 
