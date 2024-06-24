@@ -436,4 +436,56 @@
         </div>    
     </div>
 
+@push('js')
+
+    <script type="text/javascript">
+        $( "#form-sub" ).submit(function( event ) {
+
+          
+            const numberProduct =  parseInt($('#number-product-cart').text()) ;
+
+            if($('#ship_to_province').val()==0){
+
+                alert('vui lòng lựa chọn thành phố');
+                event.preventDefault();   
+            }
+            else if($('#buyer_tel').val().length<10){
+                alert('vui kiểm tra lại trường số điện thoai');
+                event.preventDefault();  
+            }
+            else if($('#buyer_address').val().length==0){
+                alert('vui kiểm tra lại trường địa chỉ');
+                event.preventDefault(); 
+            }
+
+            else{
+                if(numberProduct<=0){
+                    alert('không thể mua sản phẩm vì trong giỏ hàng ko có sản phẩm')
+                    event.preventDefault();
+                }
+               
+                else{
+                    var click = 0;
+                    click++;
+
+                    $('.order1').remove();
+                    $('#form-sub .btn-secondary').remove();
+
+                    $('#exampleModal .close').hide();
+                    
+                    $('#exampleModal .modal-footer').append('<div  class="btn btn-primary">Đang xử lý đơn hàng</div>')
+                    $('.loader').show();
+                    return;
+                    
+                }
+            }
+
+            
+        });
+        
+    </script>
+
+    
+@endpush    
+
 @endsection
