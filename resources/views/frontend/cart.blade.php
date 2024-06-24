@@ -305,8 +305,8 @@
                 </script> 
             </div>
             <div class="c3_col_1 form-info-cart">
-                <form class="c3_box" id="form-sub" method="post" action="https://muasamtaikho.vn/order-product" novalidate="novalidate">
-                    <input type="hidden" name="_token" value="mOWxQMMXfrzfEUucxjWmvmM3BcG8aHl1JZe1VINv"> 
+                <form class="c3_box" id="form-sub" method="post" action="{{ route('order') }}" novalidate="novalidate">
+                    {{ @csrf }}
                     <div class="title_box_cart"> Thông tin khách hàng</div>
                     <div class="item-form">
                         <div class="option-group clearfix">
