@@ -1366,6 +1366,8 @@
                     return false !== strpos($item->ProductSku, $cutModel);
                 });
 
+                dd($item->ProductSku);
+
                 $relationProduct =  $relationProduct->sortBy('Name');
 
 
