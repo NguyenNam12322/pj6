@@ -736,6 +736,7 @@
                 }
                 .product{
                     max-width:  100% !important;
+                    min-width: auto !important;
                 }
                 .container-fluid{
                     padding: 0;
