@@ -16,11 +16,21 @@
         width: 159px;
     }
 
-    .nk-menu #nk-danh-muc-san-pham-left>h3{
-        color: #000;
-    }
+    @media all and (max-width: 768px) {
 
+        .nk-menu #nk-danh-muc-san-pham-left>h3{
+            color: #000;
+        }
 
+        .fa-navicon:before, .fa-reorder:before, .fa-bars:before{
+            color: #000;
+        }
+
+        .show-bar{
+            background: linear-gradient(0deg,#d1a94e,#fdf5a1,#cfac54);
+        }
+
+    }    
 
 </style>
 <div class="row-fluid ">
