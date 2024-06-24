@@ -1064,7 +1064,7 @@
                                                                                     <span class="mount">{{$number_cart }}</span>
                                                                                 </div>
                                                                                 @endif
-                                                                                
+                                                                                Giỏ hàng 
                                                                             </a>
                                                                         </li>
                                                                        
@@ -1345,7 +1345,7 @@
                                                         <span class="mount">{{$number_cart }}</span>
                                                     </div>
                                                     @endif
-                                                    Giỏ hàng 
+                                                    
                                                 </a>
                                             </li>
                                           
