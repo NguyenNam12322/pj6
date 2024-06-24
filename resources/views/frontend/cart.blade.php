@@ -5,7 +5,7 @@
     <div id="number-product-cart" style="display:none">{{ count($data_cart) }}</div>
 
     <div class="row">
-        <div class="span16 container">
+        <div class="span16 container form-post">
 
             <h5 class="modal-title" id="exampleModalLabel">Thông tin giỏ hàng</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">×</span> </button> 
@@ -21,6 +21,10 @@
                         width: 100%;
                         border: 1px solid #dddddd;
                         padding: 5px;
+                    }
+
+                    .form-post{
+                        margin-bottom: 20px;
                     }
 
                     .cart_col_1 {
