@@ -246,7 +246,12 @@
                         if(val_numbers>=0){
                             val_numbers = val_numbers+1;
 
-                           
+                            $.ajaxSetup({
+                                headers: {
+                                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                                }
+                            });
+
                         
                             $.ajax({
                                 type: 'POST',
