@@ -246,23 +246,23 @@
                         if(val_numbers>=0){
                             val_numbers = val_numbers+1;
 
-                            console.log(val_numbers);
+                           
                         
-                            // $.ajax({
-                            //     type: 'POST',
-                            //     url: "{{ route('addCartNumber')  }}",
-                            //     data: {
-                            //         rowId: rowId,
-                            //         number:val_numbers
-                            //     },
-                            //     success: function(result){
+                            $.ajax({
+                                type: 'POST',
+                                url: "{{ route('addCartNumber')  }}",
+                                data: {
+                                    rowId: rowId,
+                                    number:val_numbers
+                                },
+                                success: function(result){
                         
-                            //         window.location.href = '{{ route('show-cart') }}'; 
+                                    window.location.href = '{{ route('show-cart') }}'; 
                         
                                   
                                     
-                            //     }
-                            // });
+                                }
+                            });
                         
                           
                         }
