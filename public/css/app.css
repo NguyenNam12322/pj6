@@ -16094,7 +16094,9 @@ html,
                }
 
                .nki-Phone:before {
-                   content: "\e9e2"
+                   content: "\e9e2";
+                   font-size: 22px;
+
                }
 
                .nki-Search:before {
