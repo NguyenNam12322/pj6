@@ -457,30 +457,6 @@
                 alert('vui kiểm tra lại trường địa chỉ');
                 event.preventDefault(); 
             }
-
-            else{
-                if(numberProduct<=0){
-                    alert('không thể mua sản phẩm vì trong giỏ hàng ko có sản phẩm')
-                    event.preventDefault();
-                }
-               
-                else{
-                    var click = 0;
-                    click++;
-
-                    $('.order1').remove();
-                    $('#form-sub .btn-secondary').remove();
-
-                    $('#exampleModal .close').hide();
-                    
-                    $('#exampleModal .modal-footer').append('<div  class="btn btn-primary">Đang xử lý đơn hàng</div>')
-                    $('.loader').show();
-                    return;
-                    
-                }
-            }
-
-            
         });
         
     </script>

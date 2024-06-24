@@ -1505,7 +1505,7 @@
                         </div>
 
                         <div class="c3_col_1 form-info-cart {{ $number_cart<=0?'hide':'' }}" >
-                            <form class="c3_box" id="form-sub" method="post"  action="{{ route('order') }}">
+                            <form class="c3_box" id="form-subs" method="post"  action="{{ route('order') }}">
                                 {{ csrf_field() }}
                                 <div class="title_box_cart"> Thông tin khách hàng</div>
                                 <div class="item-form">
@@ -2382,7 +2382,7 @@
 
         // check sub mit
 
-        $( "#form-sub" ).submit(function( event ) {
+        $( "#form-subs" ).submit(function( event ) {
 
           
             const numberProduct =  parseInt($('#number-product-cart').text()) ;
