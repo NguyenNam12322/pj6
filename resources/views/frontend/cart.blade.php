@@ -240,7 +240,7 @@
                         const val_number = $('.buy-quantity'+key).val();
                         val_numbers =  parseInt(val_number);
 
-                        console.log(val_numbers);
+                       
 
                         
                         if(val_numbers>=0){
