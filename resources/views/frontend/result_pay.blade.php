@@ -12,58 +12,63 @@
     .section-form{
         height: 500px;
     }
-    
+
     .middleCart{
         height: 500px;
     }
 </style>
-<section class="section-form">
-    <div class="middleCart">
-        <!---->
-        <div class="alertsuccess-new"><i class="new-cartnew-success"></i><strong>Đặt hàng thành công</strong></div>
-        <div class="ordercontent">
-            <p>Cảm ơn khách hàng <b>{{ @$input['name'] }}</b> đã cho Muasamtaikho cơ hội được phục vụ.</p>
-            <!---->
-            <div>
+
+<div class="row-fluid">
+    <div class="span16">
+        <section class="section-form">
+            <div class="middleCart">
                 <!---->
-                <div class="info-order" style="">
-                    <div class="info-order-header">
-                        <h4>Đơn hàng: <span>{{ @$input['orderId'] }}</span></h4>
-                       <!--  <div class="header-right">
-                            <a href="javascript:void(0)" onclick="modal_show()">Quản lý đơn hàng</a>
-                        </div> -->
+                <div class="alertsuccess-new"><i class="new-cartnew-success"></i><strong>Đặt hàng thành công</strong></div>
+                <div class="ordercontent">
+                    <p>Cảm ơn khách hàng <b>{{ @$input['name'] }}</b> đã cho Muasamtaikho cơ hội được phục vụ.</p>
+                    <!---->
+                    <div>
+                        <!---->
+                        <div class="info-order" style="">
+                            <div class="info-order-header">
+                                <h4>Đơn hàng: <span>{{ @$input['orderId'] }}</span></h4>
+                               <!--  <div class="header-right">
+                                    <a href="javascript:void(0)" onclick="modal_show()">Quản lý đơn hàng</a>
+                                </div> -->
+                            </div>
+                            <label>
+                                <span class="">
+                                    <i class="info-order__dot-icon"></i><span><strong>Người đặt hàng: </strong>{{ @$input['name'] }}, {{ @$input['phone_number']  }}</span><!---->
+                                </span>
+                            </label>
+                            <label>
+                                <span class="">
+                                    <i class="info-order__dot-icon"></i><span><strong>Giao đến: </strong>{{ @$input['address'] }}.</span><!---->
+                                </span>
+                            </label>
+                            <label>
+                                <span class="">
+                                    <i class="info-order__dot-icon"></i><span><strong>Tổng tiền: </strong><b>
+                                   {{ str_replace(',' ,'.', number_format($input['total_price'])) }} ₫</b></span><!---->
+                                </span>
+                            </label>
+                            <!----><!----><!----><!---->
+                        </div>
                     </div>
-                    <label>
-                        <span class="">
-                            <i class="info-order__dot-icon"></i><span><strong>Người đặt hàng: </strong>{{ @$input['name'] }}, {{ @$input['phone_number']  }}</span><!---->
-                        </span>
-                    </label>
-                    <label>
-                        <span class="">
-                            <i class="info-order__dot-icon"></i><span><strong>Giao đến: </strong>{{ @$input['address'] }}.</span><!---->
-                        </span>
-                    </label>
-                    <label>
-                        <span class="">
-                            <i class="info-order__dot-icon"></i><span><strong>Tổng tiền: </strong><b>
-                           {{ str_replace(',' ,'.', number_format($input['total_price'])) }} ₫</b></span><!---->
-                        </span>
-                    </label>
-                    <!----><!----><!----><!---->
+                    <ul class="collection col-md-12">
+                        <li class="collection-item">
+                            <div>
+                                <a href="/">Nhấn Vào Đây Nếu Bạn Muốn Mua Tiếp</a>
+                            </div>
+                        </li>
+                    </ul>
+                   
                 </div>
             </div>
-            <ul class="collection col-md-12">
-                <li class="collection-item">
-                    <div>
-                        <a href="/">Nhấn Vào Đây Nếu Bạn Muốn Mua Tiếp</a>
-                    </div>
-                </li>
-            </ul>
-           
-        </div>
+            
+        </section>
     </div>
-    
-</section>
+</div>
 @else
     
     <section id="categoryPage" class="desktops" data-id="1942" data-name="Tivi" data-template="cate">
