@@ -221,6 +221,14 @@
             font-size: calc(1.125rem * var(--smaller));
         }
 
+        .product .product-title{
+            margin-top: 0 !important;
+        }
+
+        .block_render_falshsale .content .product-body{
+            padding: 0 !important;
+        }
+
         .banner-left{
             padding: 0 !important;
         }
