@@ -1361,7 +1361,7 @@
 
                 $data_model = Cache::get('product_search');
 
-                 dd($item->ProductSku);
+                 dd($data_model);
 
                 $relationProduct = collect($data_model)->filter(function ($item) use ($cutModel) {
                   
