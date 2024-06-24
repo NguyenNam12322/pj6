@@ -19,7 +19,7 @@
 </style>
 
 <div class="row-fluid">
-    <div class="span16">
+    <div class="span16 container">
         <section class="section-form">
             <div class="middleCart">
                 <!---->
