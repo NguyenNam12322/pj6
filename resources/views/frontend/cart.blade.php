@@ -306,7 +306,7 @@
             </div>
             <div class="c3_col_1 form-info-cart">
                 <form class="c3_box" id="form-sub" method="post" action="{{ route('order') }}" novalidate="novalidate">
-                    {{ @csrf }}
+                    {{ csrf_field() }}
                     <div class="title_box_cart"> Thông tin khách hàng</div>
                     <div class="item-form">
                         <div class="option-group clearfix">
