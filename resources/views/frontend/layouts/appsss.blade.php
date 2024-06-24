@@ -1064,7 +1064,7 @@
                                           
                                             <li>
                                                 <a href="#">
-                                                <i class="nki-Phone"></i> 0123.456.789 </a>
+                                                <i class="nki-Phone"></i>  </a>
                                             </li> 
 
                                              <li id="login_form">
