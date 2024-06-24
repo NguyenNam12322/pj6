@@ -1064,7 +1064,7 @@
                                                                                     <span class="mount">{{$number_cart }}</span>
                                                                                 </div>
                                                                                 @endif
-                                                                                Giỏ hàng 
+                                                                                
                                                                             </a>
                                                                         </li>
                                                                        
@@ -1500,8 +1500,6 @@
                         </button>
                     </div>
                     <div class="modal-body">
-
-                        
                         <div id="tbl_list_cartss">
                             
                         </div>
@@ -1672,27 +1670,27 @@
                         
                         <style type="text/css">
                             .cart-container {
-                                    text-align: center;
-                                    padding: 20px;
+                                text-align: center;
+                                padding: 20px;
 /*                                    border: 1px solid #ccc;*/
-                                    border-radius: 8px;
-                                    background-color: #fff;
-                                }
+                                border-radius: 8px;
+                                background-color: #fff;
+                            }
 
-                                .empty-cart-message {
-                                    font-size: 18px;
-                                    color: #555;
-                                    margin-top: 30px;
-                                }
+                            .empty-cart-message {
+                                font-size: 18px;
+                                color: #555;
+                                margin-top: 30px;
+                            }
 
-                                .cart-icon {
-                                    font-size: 40px;
-                                    color: #ccc;
-                                }
+                            .cart-icon {
+                                font-size: 40px;
+                                color: #ccc;
+                            }
 
-                                #exampleModal .modal-body{
-                                    min-height: 200px;
-                                }
+                            #exampleModal .modal-body{
+                                min-height: 200px;
+                            }
                         </style>
 
                         <div class="cart-container {{ $number_cart>0?'hide':'' }}">
