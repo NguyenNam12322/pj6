@@ -1373,7 +1373,10 @@
 
 
                     $relationProduct =  $relationProduct->sortBy('Name');
-                }        
+                }  
+                else{
+                    $relationProduct = collect();
+                }      
 
 
 
