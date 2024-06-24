@@ -1361,17 +1361,19 @@
 
                 $data_model = Cache::get('product_search');
 
-                 dd($cutModel);
+            
+                if(!empty($cutModel)){
 
-                $relationProduct = collect($data_model)->filter(function ($item) use ($cutModel) {
-                  
-                    return false !== strpos($item->ProductSku, $cutModel);
-                  
-                });
+                    $relationProduct = collect($data_model)->filter(function ($item) use ($cutModel) {
+                      
+                        return false !== strpos($item->ProductSku, $cutModel);
+                      
+                    });
 
 
 
-                $relationProduct =  $relationProduct->sortBy('Name');
+                    $relationProduct =  $relationProduct->sortBy('Name');
+                }        
 
 
 
