@@ -1349,10 +1349,10 @@
                                                 </a>
                                             </li>
                                           
-                                        <!--     <li id="login_form">
-                                                <a href="login.html?return_url=index.php" class="nk-text-login">
-                                                <i class="nki-user"></i> Tài khoản </a>
-                                            </li> -->
+                                            <li>
+                                                <a href="#">
+                                                <i class="nki-Phone"></i>  </a>
+                                            </li> 
 
                                              <li id="login_form">
                                                 <a href="#" class="nk-text-login"> Tin tức </a>
