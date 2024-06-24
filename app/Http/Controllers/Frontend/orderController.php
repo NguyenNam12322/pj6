@@ -134,9 +134,7 @@ class orderController extends Controller
                 $request->session()->forget('discount');
             }
                 
-            Session::flash('success', 'Mua thành công sản phẩm!'); 
-
-            return redirect('/');
+          return view('frontend.result_pay',compact('input'));
        
     }
 
