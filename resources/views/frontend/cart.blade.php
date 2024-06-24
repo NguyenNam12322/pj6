@@ -233,35 +233,37 @@
                     
                     function cong(key, rowId){
                     
-                    if(!$('.add-discount').is(':visible')){
-                        $('.add-discount').show();
-                    }
-                    
-                    const val_number = $('.buy-quantity'+key).val();
-                    val_numbers =  parseInt(val_number);
-                    
-                    if(val_numbers>=0){
-                        val_numbers = val_numbers+1;
-                    
-                        $.ajax({
-                            type: 'POST',
-                            url: "{{ route('addCartNumber')  }}",
-                            data: {
-                                rowId: rowId,
-                                number:val_numbers
-                            },
-                            success: function(result){
-                    
-                                window.location.href = '{{ route('show-cart') }}'; 
-                    
-                              
-                                
-                            }
-                        });
-                    
-                        $('.buy-quantity'+key).val(val_numbers);
+                        if(!$('.add-discount').is(':visible')){
+                            $('.add-discount').show();
+                        }
                         
-                    }
+                        const val_number = $('.buy-quantity'+key).val();
+                        val_numbers =  parseInt(val_number);
+
+                        console.log(val_numbers);
+                        
+                        
+                        if(val_numbers>=0){
+                            val_numbers = val_numbers+1;
+                        
+                            $.ajax({
+                                type: 'POST',
+                                url: "{{ route('addCartNumber')  }}",
+                                data: {
+                                    rowId: rowId,
+                                    number:val_numbers
+                                },
+                                success: function(result){
+                        
+                                    window.location.href = '{{ route('show-cart') }}'; 
+                        
+                                  
+                                    
+                                }
+                            });
+                        
+                          
+                        }
                     }
                     
                     $('.add-click').click(function () {
