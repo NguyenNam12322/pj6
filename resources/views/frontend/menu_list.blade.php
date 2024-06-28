@@ -20,6 +20,10 @@
         color: #000 !important;
     }
 
+     .nk-menu #nk-danh-muc-san-pham-left>h3 b{
+        font-weight: 700;
+     }
+
 
 
     @media all and (max-width: 768px) {
