@@ -2,6 +2,10 @@
 @section('content') 
 @push('style')
 
+    <?php 
+         $data_price_show = DB::table('show_price_address')->where('active',1)->get();
+    ?>
+
     <style>
 
      @media only screen and (max-width: 600px) {
@@ -851,7 +855,7 @@
 
                                 @endif
                             </div>
-                            <div class="discount"><p class="installment">Trả góp 0%</p></div>
+                            <!-- <div class="discount"><p class="installment">Trả góp 0%</p></div> -->
                             <div class="pdetail-status">
                                 
                               
@@ -1615,10 +1619,7 @@
 
                         <div>
 
-                            <?php 
-                                 $data_price_show = DB::table('show_price_address')->where('active',1)->get();
-
-                            ?>
+                            
 
                             @if(!empty($data_price_show))
 
