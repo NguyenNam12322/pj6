@@ -1102,7 +1102,7 @@
                         </div>
                         </div> -->
                     <div class="row-fluid ">
-                        <div class="span16 container">
+                        <div class="span16 container box-sugest">
                             <div class="row-fluid ">
                                 <div class="nk-recent">
                                     <div class="nk-recent-title header-block">
