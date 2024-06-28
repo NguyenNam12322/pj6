@@ -52,7 +52,15 @@
         .nk_houseware_best_selling_2020_wrapper .product, .product-slide{
             width: 20% !important;
             margin-top: 6px;
-        }    
+        }   
+
+        #new-flash-sale_3621{
+
+            border: 1px solid #D7BA6C;
+            
+        } 
+
+        
 
         .delivery-free{
                 margin-left: 40px;
