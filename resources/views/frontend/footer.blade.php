@@ -250,9 +250,9 @@
             margin-bottom: 20px;
         }
 
-        /*.ring-phone{
-            display: none;
-        }*/
+        .ring-phone{
+            right: 115px;
+        }
         .div-foot .row{
             margin: 0;
         }
