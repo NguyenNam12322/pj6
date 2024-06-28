@@ -8,7 +8,9 @@ self.addEventListener('install', event => {
     event.waitUntil(
         caches.open(CACHE_NAME)
             .then(cache => {
-                return cache.addAll(urlsToCache);
+                return cache.addAll(urlsToCache).then(() => {
+                    console.log('Các tài nguyên đã được lưu vào cache thành công!');
+                });
             })
     );
 });
@@ -28,17 +30,17 @@ self.addEventListener('fetch', function(event) {
     );
 });
 
-self.addEventListener('activate', function(event) {
-  event.waitUntil(
-    caches.keys().then(function(cacheNames) {
-      return Promise.all(
-        cacheNames.filter(function(cacheName) {
-          // Xóa các bộ nhớ đệm cũ không cần thiết
-          return cacheName !== 'image-cache-v1'; 
-        }).map(function(cacheName) {
-          return caches.delete(cacheName);
-        })
-      );
-    })
-  );
-});
+// self.addEventListener('activate', function(event) {
+//   event.waitUntil(
+//     caches.keys().then(function(cacheNames) {
+//       return Promise.all(
+//         cacheNames.filter(function(cacheName) {
+//           // Xóa các bộ nhớ đệm cũ không cần thiết
+//           return cacheName !== 'image-cache-v1'; 
+//         }).map(function(cacheName) {
+//           return caches.delete(cacheName);
+//         })
+//       );
+//     })
+//   );
+// });
