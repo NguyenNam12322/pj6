@@ -1192,7 +1192,7 @@
                     </div>
                     <div class="row-fluid ">
                         <div class="span16 container">
-                            <div class="nk-product-cate-homepage">
+                            <div class="nk-product-cate-homepage box-fix-css">
                                 <div class="lst-cate-title header-block">
                                     <span>Danh Mục Nổi Bật</span>
                                 </div>
