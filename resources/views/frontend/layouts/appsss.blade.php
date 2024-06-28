@@ -65,6 +65,11 @@
                 color :#fff !important;
             }
 
+            .box-fix-css{
+                margin-left: -15px;
+                margin-right: -15px;
+            }
+
 
 
         </style>
@@ -1103,7 +1108,7 @@
                         </div> -->
                     <div class="row-fluid ">
                         <div class="span16 container box-sugest">
-                            <div class="row-fluid ">
+                            <div class="row-fluid box-fix-css">
                                 <div class="nk-recent">
                                     <div class="nk-recent-title header-block">
                                         <span>Sản phẩm Gợi ý</span>
