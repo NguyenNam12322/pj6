@@ -1169,9 +1169,7 @@
                                 box-shadow: 0 7px 20px 0 rgba(17, 29, 43, 0);
                                 }
 
-                                .box-sugest{
-                                    padding: 0;
-                                }
+                                
                                 .adpopup-close.close-desktop::before,
                                 .adpopup-close.close-desktop::after {
                                 left: 11px;
