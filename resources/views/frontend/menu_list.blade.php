@@ -54,7 +54,7 @@
                                 <div id="nk-danh-muc-san-pham-left" class="nk-danh-muc-trang-chu">
                                     <h3>
                                         <i class="nki-menu list-show"></i>
-                                        <b>Danh mục sản phẩm</b>
+                                        <b>DANH MỤC SẢN PHẨM</b>
                                     </h3>
                                     <ul>
                                         <li class="left-menu">
