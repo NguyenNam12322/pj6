@@ -1192,8 +1192,8 @@
                     </div>
                     <div class="row-fluid ">
                         <div class="span16 container">
-                            <div class="nk-product-cate-homepage box-fix-css">
-                                <div class="lst-cate-title header-block">
+                            <div class="nk-product-cate-homepage row-fluid">
+                                <div class="lst-cate-title header-block box-fix-css">
                                     <span>Danh Mục Nổi Bật</span>
                                 </div>
                                 <div class="categories">
