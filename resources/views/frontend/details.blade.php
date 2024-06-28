@@ -18,6 +18,16 @@
         .post-sidebar-img img{
             width: 100%;
         }  
+
+        .nhapnhay {
+            background: #fddd39;
+            font-size: 18px;
+            font-weight: bold;
+            -webkit-animation: my 1700ms infinite;
+            -moz-animation: my 1700ms infinite;
+            -o-animation: my 1700ms infinite;
+            animation: my 1700ms infinite;
+        }
     }
     @media only screen and (min-width: 601px) {
 
@@ -973,6 +983,10 @@
                               
                                 <!-- mobile -->
                                 @if($data->Quantily>0)
+
+                                <a href="tel:02473036336"><div class="buy-button-hotline nhapnhay btn">Gọi 0123.456.789 để được giảm thêm</div></a>
+
+
                                 <div class="pdetail-add-to-cart add-to-cart">
                                     <div class="inline">
                                         <input type="hidden" name="productId" value="{{ $data->id }}">
