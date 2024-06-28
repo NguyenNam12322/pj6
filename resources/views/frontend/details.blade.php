@@ -377,8 +377,8 @@
             position: absolute;
             top: 0;
             left: 0;
-            width: 92px;
-            height: 65px;
+            width: 89px;
+/*            height: 65px;*/
             overflow: hidden;
             display: block;
         }
