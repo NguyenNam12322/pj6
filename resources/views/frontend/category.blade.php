@@ -272,8 +272,9 @@
                                     <img src="{{ asset('uploads/icon/'.$value->id.'.png') }}" width="30" alt="{{ $value->name }}" />
 
                                     @if($id_cate != 1)
-                                    {{ $value->name }}
 
+                                    <p>{{ $value->name }}</p>
+                                    
                                     @endif
 
                                 </a>
