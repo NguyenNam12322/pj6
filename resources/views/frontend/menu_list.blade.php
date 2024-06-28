@@ -20,7 +20,13 @@
         color: #000 !important;
     }
 
+
+
     @media all and (max-width: 768px) {
+
+         .lst-quickfilter p{
+            width: 91px;
+        }
 
         .nk-menu #nk-danh-muc-san-pham-left>h3{
             color: #000;
