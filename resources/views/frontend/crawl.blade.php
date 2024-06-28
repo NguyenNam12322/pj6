@@ -9453,13 +9453,37 @@
             });
         }
 
-        caches.open('image-cache-v1')
-        .then(function(cache) {
-            cache.keys()
-                .then(function(keys) {
-                    console.log('Các mục trong cache:', keys);
-                    // Kiểm tra xem dữ liệu mong muốn có trong keys không
+        const CACHE_NAME = 'image-cache-v1';
+const urlsToCache = [
+    'https://muasamtaikho.vn/crawl-blade',
+   
+];
+
+self.addEventListener('install', event => {
+    event.waitUntil(
+        caches.open(CACHE_NAME)
+            .then(cache => {
+                return cache.addAll(urlsToCache).then(() => {
+                    console.log('Các tài nguyên đã được lưu vào cache thành công!');
                 });
-        });
+            })
+    );
+});
+
+self.addEventListener('fetch', function(event) {
+    event.respondWith(
+        caches.match(event.request)
+            .then(function(response) {
+                return response || fetch(event.request)
+                    .then(function(response) {
+                        caches.open('image-cache-v1').then(function(cache) {
+                            cache.put(event.request, response.clone());
+                        });
+                        return response;
+                    });
+            })
+    );
+});
+
     </script>
 </div>
