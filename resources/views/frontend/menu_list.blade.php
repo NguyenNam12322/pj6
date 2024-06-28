@@ -17,7 +17,7 @@
     }
 
     .nk-danh-muc-trang-chu h3{
-        color: #000;
+        color: #000 !important;
     }
 
     @media all and (max-width: 768px) {
