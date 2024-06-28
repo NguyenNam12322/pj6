@@ -4,25 +4,7 @@
 
 <style type="text/css">
 
-    @media only screen and (min-width: 601px) {
-        /*.div-foot{
-            margin-left: 330px;
-        }*/
-
-
-        .banner-ads-text .header-menu__navs{
-            height: 40px;
-        }
-
-
-        .ft-dmca img{
-            width: 100%;
-        }
-       /* .nk-menu .span16{
-            padding: 0;
-        }*/
-
-        .ring-phone {
+     .ring-phone {
             float: left;
             position: fixed;
             right: 150px;
@@ -237,6 +219,26 @@
                 transform: rotate(0) scale(1) skew(1deg);
             }
         }    
+
+    @media only screen and (min-width: 601px) {
+        /*.div-foot{
+            margin-left: 330px;
+        }*/
+
+
+        .banner-ads-text .header-menu__navs{
+            height: 40px;
+        }
+
+
+        .ft-dmca img{
+            width: 100%;
+        }
+       /* .nk-menu .span16{
+            padding: 0;
+        }*/
+
+       
     } 
 
     @media only screen and (max-width: 601px) {
@@ -248,9 +250,9 @@
             margin-bottom: 20px;
         }
 
-        .ring-phone{
+        /*.ring-phone{
             display: none;
-        }
+        }*/
         .div-foot .row{
             margin: 0;
         }
