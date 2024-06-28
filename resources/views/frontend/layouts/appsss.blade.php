@@ -354,6 +354,10 @@
                     min-width: unset !important;
                 }
 
+                .box-sugest .fix-pad{
+                    padding: 0 15px;
+                }
+
                 
                 /*.nk-header #nk-logo img{
                     display: ;
