@@ -9452,5 +9452,14 @@
                     });
             });
         }
+
+        caches.open('image-cache-v1')
+        .then(function(cache) {
+            cache.keys()
+                .then(function(keys) {
+                    console.log('Các mục trong cache:', keys);
+                    // Kiểm tra xem dữ liệu mong muốn có trong keys không
+                });
+        });
     </script>
 </div>
