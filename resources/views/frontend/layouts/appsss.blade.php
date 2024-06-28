@@ -1102,7 +1102,7 @@
                         </div>
                         </div> -->
                     <div class="row-fluid ">
-                        <div class="span16 container">
+                        <div class="span16 container outstanding box-sugest">
                             <div class="row-fluid ">
                                 <div class="nk-recent">
                                     <div class="nk-recent-title header-block">
@@ -1167,6 +1167,10 @@
                                 }
                                 .adpopup {
                                 box-shadow: 0 7px 20px 0 rgba(17, 29, 43, 0);
+                                }
+
+                                .box-sugest{
+                                    padding: 0;
                                 }
                                 .adpopup-close.close-desktop::before,
                                 .adpopup-close.close-desktop::after {
