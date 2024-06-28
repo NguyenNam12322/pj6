@@ -2935,6 +2935,8 @@
       
         $('.show-price-mobile h3').text(price_format.replace('đ', '').trim());
 
+        console.log(12);
+
     })
 
 
