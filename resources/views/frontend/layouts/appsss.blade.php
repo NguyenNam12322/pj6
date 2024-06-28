@@ -1103,55 +1103,57 @@
                         </div> -->
                     <div class="row-fluid ">
                         <div class="span16 container">
-                            <div class="nk-recent">
-                                <div class="nk-recent-title header-block">
-                                    <span>Sản phẩm Gợi ý</span>
-                                </div>
-                                <?php
-                                    $hot = DB::table('hot')->select('product_id')->orderBy('orders', 'asc')->get()->pluck('product_id');
-                                    
-                                        $data = App\Models\product::whereIn('id', $hot->toArray())->Orderby('orders_hot', 'desc')->get();
-                                    
-                                    ?>    
-                                <div class=" recent-container mouse-mover">
-                                    <div class="nk-recent-list product-list owl-carousel owl-loaded owl-drag">
-                                        <div id="sync1" class="owl-carousel ">
-                                            @foreach($data as $key =>$datas)
-                                            <div class="product-slide item" id="sugest_pd_{{ $datas->id }}">
-                                                <div class="product-slide">
-                                                    <div class="product">
-                                                        <div class="product-header" href="https://www.nguyenkim.com/dien-thoai-iphone-15-pro-128gb-blue-titanium.html">
-                                                            <div class="top-right">
-                                                                <div class="product-feature-badge-item installment"><span>Trả góp 0%</span></div>
+                            <div class="row-fluid ">
+                                <div class="nk-recent">
+                                    <div class="nk-recent-title header-block">
+                                        <span>Sản phẩm Gợi ý</span>
+                                    </div>
+                                    <?php
+                                        $hot = DB::table('hot')->select('product_id')->orderBy('orders', 'asc')->get()->pluck('product_id');
+                                        
+                                            $data = App\Models\product::whereIn('id', $hot->toArray())->Orderby('orders_hot', 'desc')->get();
+                                        
+                                        ?>    
+                                    <div class=" recent-container mouse-mover">
+                                        <div class="nk-recent-list product-list owl-carousel owl-loaded owl-drag">
+                                            <div id="sync1" class="owl-carousel ">
+                                                @foreach($data as $key =>$datas)
+                                                <div class="product-slide item" id="sugest_pd_{{ $datas->id }}">
+                                                    <div class="product-slide">
+                                                        <div class="product">
+                                                            <div class="product-header" href="https://www.nguyenkim.com/dien-thoai-iphone-15-pro-128gb-blue-titanium.html">
+                                                                <div class="top-right">
+                                                                    <div class="product-feature-badge-item installment"><span>Trả góp 0%</span></div>
+                                                                </div>
+                                                                <div class="product-image">
+                                                                    <a href="{{ route('details', $datas->Link) }}">
+                                                                    <img
+                                                                        class="ls-is-cached lazyloaded"
+                                                                        src="{{ asset($datas->Image) }}"
+                                                                        />
+                                                                    </a>
+                                                                </div>
                                                             </div>
-                                                            <div class="product-image">
-                                                                <a href="{{ route('details', $datas->Link) }}">
-                                                                <img
-                                                                    class="ls-is-cached lazyloaded"
-                                                                    src="{{ asset($datas->Image) }}"
-                                                                    />
-                                                                </a>
+                                                            <div class="product-body">
+                                                                <div class="product-feature-badge"></div>
+                                                                <div class="product-title"><a href="{{ route('details', $datas->Link) }}">{{ $datas->Name }}</a></div>
+                                                                <div class="product-price">
+                                                                    <p class="final-price">{{ @str_replace(',' ,'.', number_format($datas->Price)) }}đ   </p>
+                                                                </div>
                                                             </div>
+                                                            <div class="product-footer"></div>
                                                         </div>
-                                                        <div class="product-body">
-                                                            <div class="product-feature-badge"></div>
-                                                            <div class="product-title"><a href="{{ route('details', $datas->Link) }}">{{ $datas->Name }}</a></div>
-                                                            <div class="product-price">
-                                                                <p class="final-price">{{ @str_replace(',' ,'.', number_format($datas->Price)) }}đ   </p>
-                                                            </div>
-                                                        </div>
-                                                        <div class="product-footer"></div>
                                                     </div>
-                                                </div>
 
-                                                @include('frontend.layouts.more-info', ['value'=>$datas])
+                                                    @include('frontend.layouts.more-info', ['value'=>$datas])
+                                                </div>
+                                                @endforeach
                                             </div>
-                                            @endforeach
+                                            <div class="owl-dots disabled"></div>
                                         </div>
-                                        <div class="owl-dots disabled"></div>
                                     </div>
                                 </div>
-                            </div>
+                            </div>    
                             <style>
                                 a.adpopup-close.close-desktop {
                                 height: 25px;
