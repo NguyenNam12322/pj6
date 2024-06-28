@@ -34,7 +34,7 @@ self.addEventListener('activate', function(event) {
       return Promise.all(
         cacheNames.filter(function(cacheName) {
           // Xóa các bộ nhớ đệm cũ không cần thiết
-          return cacheName !== 'my-cache-v1'; 
+          return cacheName !== 'image-cache-v1'; 
         }).map(function(cacheName) {
           return caches.delete(cacheName);
         })
