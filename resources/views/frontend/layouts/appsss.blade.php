@@ -668,6 +668,10 @@
                     color: #000 !important;
                 }
 
+                .fix-pad{
+                    padding: 0;
+                }
+
 
 
                 .nk-banner-main{
@@ -1191,7 +1195,7 @@
                         </div>
                     </div>
                     <div class="row-fluid ">
-                        <div class="span16 container">
+                        <div class="span16 container fix-pad">
                             <div class="nk-product-cate-homepage row-fluid">
                                 <div class="lst-cate-title header-block box-fix-css">
                                     <span>Danh Mục Nổi Bật</span>
