@@ -13,7 +13,11 @@
         .box01 .owl-carousel .owl-item img:not(.monopoly-label) {
             height: 220px !important;
 
-        }    
+        }  
+
+        .post-sidebar-img img{
+            width: 100%;
+        }  
     }
     @media only screen and (min-width: 601px) {
 
