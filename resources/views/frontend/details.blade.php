@@ -988,6 +988,15 @@
                                 <!-- mobile -->
                                 @if($data->Quantily>0)
 
+                                @if(!empty($data_price_show))
+
+                                @foreach($data_price_show as $key=> $val)
+                                     <input type="radio" id="age{{ $val->id }}" name="price-add" class="price-add" value="{{ $val->id }}" {{ $key===0?'checked':'' }}>
+                                    <label for="age1" > {{  $val->name }} : {{str_replace(',' ,'.', number_format($val->price))  }}đ</label><br>
+                                @endforeach
+
+                                @endif
+
                                 <a href="tel:02473036336"><div class="buy-button-hotline nhapnhay btn">Gọi 0123.456.789 để được giảm thêm</div></a>
 
 
