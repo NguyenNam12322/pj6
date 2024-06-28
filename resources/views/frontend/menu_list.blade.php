@@ -16,6 +16,10 @@
         width: 159px;
     }
 
+    .nk-danh-muc-trang-chu h3{
+        color: #000;
+    }
+
     @media all and (max-width: 768px) {
 
         .nk-menu #nk-danh-muc-san-pham-left>h3{
