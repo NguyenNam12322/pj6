@@ -66,8 +66,8 @@
             }
 
             .box-fix-css{
-                margin-left: -15px;
-                margin-right: -15px;
+                margin-left: -15px !important;
+                margin-right: -15px !important;
             }
 
 
