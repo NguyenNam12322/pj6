@@ -354,7 +354,7 @@
                     min-width: unset !important;
                 }
 
-                .box-sugest .fix-pad{
+                .box-sugest .box-fix-css{
                     padding: 0 15px;
                 }
 
