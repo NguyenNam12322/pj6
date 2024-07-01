@@ -121,6 +121,25 @@ class crawlController extends Controller
         echo "thành công";
     }
 
+    function getLinkCrawl()
+    {
+
+        $url = 'https://dienmaygiakhang.vn/product-category/dien-lanh/tu-lanh/';
+
+        $html = file_get_html(trim($url));
+
+        $check = [];
+
+        $link = $html->find('.title-wrapper .woocommerce-LoopProduct-link');
+
+        foreach ($link as $key => $value) {
+         
+            array_push($check, $value->href);
+            
+        }
+        print_r($check);
+    }
+
     public function addMeta()
     {
         $products = DB::table('products')->select('Name','id')->get();
@@ -499,11 +518,6 @@ class crawlController extends Controller
 
 
     }
-
-
-
-
-
 
     public function convertImageToDetails($details,$id)
     {

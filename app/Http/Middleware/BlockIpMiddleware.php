@@ -42,9 +42,9 @@ class BlockIpMiddleware
     public function handle($request, Closure $next)
     {
        
-        if (in_array($request->ip(), $this->getIpBlock())) {
-            abort(403, "You are restricted to access the site.");
-        }
+        // if (in_array($request->ip(), $this->getIpBlock())) {
+        //     abort(403, "You are restricted to access the site.");
+        // }
   
         return $next($request);
     }
