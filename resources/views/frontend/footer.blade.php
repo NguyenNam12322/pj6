@@ -251,7 +251,7 @@
         }
 
         .ring-phone{
-            right: 115px;
+            left: 0;
         }
         .div-foot .row{
             margin: 0;
