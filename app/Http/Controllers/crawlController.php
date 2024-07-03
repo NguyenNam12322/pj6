@@ -797,7 +797,7 @@ class crawlController extends Controller
 
             $html = file_get_html(trim($link));
 
-            $src = $html->find('.product-images .wp-post-image img', 0);
+            $src = $html->find('.product-images .wp-post-image', 0);
 
             dd($src);
 
