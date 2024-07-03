@@ -802,7 +802,7 @@ class crawlController extends Controller
 
             foreach ($src as $key => $value) {
 
-                echo $value->getAttribute('data-src');
+                print_r($value->getAttribute('data-src'));
 
                 die;
             }    
