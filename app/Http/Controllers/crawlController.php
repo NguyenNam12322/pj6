@@ -790,22 +790,22 @@ class crawlController extends Controller
 
         dd($data);
 
-        // foreach ($data as $key => $values) {
+        foreach ($data as $key => $values) {
 
-        //     $link = $values->crawl_link;
+            $link = $values->crawl_link;
 
-        //     $html = file_get_html(trim($link));
+            $html = file_get_html(trim($link));
 
-        //     $src = $html->find('.flickity-slider img');
+            $src = $html->find('.flickity-slider img');
 
-        //     foreach ($src as $key => $value) {
+            foreach ($src as $key => $value) {
 
-        //         echo $value->img;
+                echo $value->img;
 
-        //         die;
+                die;
+            }    
 
-
-        // }    
+        }    
     }
 
 
