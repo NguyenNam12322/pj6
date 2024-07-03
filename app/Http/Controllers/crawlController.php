@@ -788,7 +788,6 @@ class crawlController extends Controller
 
         $data = DB::table('products')->select('crawl_link','id')->orderBy('id','asc')->where('id','>',471)->get();
 
-        dd($data);
 
         foreach ($data as $key => $values) {
 
