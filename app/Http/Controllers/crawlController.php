@@ -1201,7 +1201,7 @@ class crawlController extends Controller
 
         foreach ($link as $key => $url) {
 
-          
+
             $html = file_get_html(trim($url->link));
 
             $details = $html->find('.tab-panels',0);
@@ -1218,9 +1218,12 @@ class crawlController extends Controller
 
             $model = str_replace('lít', '', $model);
 
-            $data['Name']   = $title;
+            $data['Name']   = trim($title);
             $data['Price']  = $price;
             $data['Detail'] = $details;
+
+            $data['ProductSku'] = $model;
+            
             $data['Link'] = convertSlug($title);
             $data['Group_id']= 3;
             $data['Specifications'] = $tskt;
