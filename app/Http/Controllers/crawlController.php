@@ -788,20 +788,24 @@ class crawlController extends Controller
 
         $data = DB::table('products')->select('crawl_link','id')->orderBy('id','asc')->where('id','>',471)->get();
 
-        foreach ($data as $key => $values) {
+        dd($data);
 
-            $link = $values->crawl_link;
+        // foreach ($data as $key => $values) {
 
-            $html = file_get_html(trim($link));
+        //     $link = $values->crawl_link;
 
-            $src = $html->find('.flickity-slider img');
+        //     $html = file_get_html(trim($link));
 
-            foreach ($src as $key => $value) {
+        //     $src = $html->find('.flickity-slider img');
 
-                echo $value->img;
+        //     foreach ($src as $key => $value) {
 
-                die;
-        }   } 
+        //         echo $value->img;
+
+        //         die;
+
+
+        // }    
     }
 
 
