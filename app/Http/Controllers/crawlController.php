@@ -799,7 +799,7 @@ class crawlController extends Controller
 
             $src = $html->find('.product-images .wp-post-image', 0);
 
-            print_r($src);
+            print_r(strip_tags($src));
 
             // foreach ($src as $key => $value) {
 
