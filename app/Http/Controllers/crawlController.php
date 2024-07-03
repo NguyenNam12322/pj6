@@ -1201,39 +1201,43 @@ class crawlController extends Controller
 
         foreach ($link as $key => $url) {
 
+            $file_headers = @get_headers($url->link);
 
-            $html = file_get_html(trim($url->link));
+            if($file_headers[0] == 'HTTP/1.1 200 OK'){
 
-            $details = $html->find('.tab-panels',0);
 
-            $details = str_replace('src','srcs',$details);
+                $html = file_get_html($url->link);
 
-            $details =  preg_replace('/data-srcs=/', 'src=', $details);
+                $details = $html->find('.tab-panels',0);
 
-            $title =  strip_tags($html->find('.product-title-container h1',0));
+                $details = str_replace('src','srcs',$details);
 
-            $tskt  =  html_entity_decode($html->find('.thongso-container',0));
+                $details =  preg_replace('/data-srcs=/', 'src=', $details);
 
-            $model = strstr(strip_tags($title), "lít");
+                $title =  strip_tags($html->find('.product-title-container h1',0));
 
-            $model = str_replace('lít', '', $model);
+                $tskt  =  html_entity_decode($html->find('.thongso-container',0));
 
-            $data['Name']   = trim($title);
-            $data['Price']  = $price;
-            $data['Detail'] = $details;
+                $model = strstr(strip_tags($title), "lít");
 
-            $data['ProductSku'] = $model;
-            
-            $data['Link'] = convertSlug($title);
-            $data['Group_id']= 3;
-            $data['Specifications'] = $tskt;
-            $data['user_id'] = 4;
-            $data['created_at'] = $now;
-            $data['updated_at'] = $now;
-            $data['Salient_Features'] = '';
-            $data['crawl_link'] = $url->link;
-            DB::table('products')->insert($data);
-            
+                $model = str_replace('lít', '', $model);
+
+                $data['Name']   = trim($title);
+                $data['Price']  = $price;
+                $data['Detail'] = $details;
+
+                $data['ProductSku'] = $model;
+
+                $data['Link'] = convertSlug($title);
+                $data['Group_id']= 3;
+                $data['Specifications'] = $tskt;
+                $data['user_id'] = 4;
+                $data['created_at'] = $now;
+                $data['updated_at'] = $now;
+                $data['Salient_Features'] = '';
+                $data['crawl_link'] = $url->link;
+                DB::table('products')->insert($data);
+            }
         }
 
        
