@@ -123,21 +123,34 @@ class crawlController extends Controller
 
     function getLinkCrawl()
     {
-
-        $url = 'https://dienmaygiakhang.vn/product-category/dien-lanh/tu-lanh/';
-
-        $html = file_get_html(trim($url));
+        $now = Carbon::now();
 
         $check = [];
 
-        $link = $html->find('.title-wrapper .woocommerce-LoopProduct-link');
+        for ($i=0; $i<10; $i++) {
 
-        foreach ($link as $key => $value) {
-         
-            array_push($check, $value->href);
+        if($i!=0){
+            $url = 'https://dienmaygiakhang.vn/product-category/dien-lanh/tu-lanh/page/'.$i.'/';
+
+        }  
+        else{
+            $url = 'https://dienmaygiakhang.vn/product-category/dien-lanh/tu-lanh/';
+        }  
+
+        
+        $html = file_get_html(trim($url));
+
+            $link = $html->find('.title-wrapper .woocommerce-LoopProduct-link');
+
+            foreach ($link as $key => $value) {
+
+                DB::table('crawl_link')->insert(['link'=>trim($value->href), 'cate'=>3, 'updated_at'=>$now, 'created_at'=>$now]);
+            }
             
         }
-        print_r($check);
+
+        echo 'thành công';
+
     }
 
     public function addMeta()
@@ -1175,12 +1188,15 @@ class crawlController extends Controller
         else{
             echo "không tìm thấy nhóm sản phẩm này";
         }
-
-        
-
-       
-
     }
+
+    public function crawlDetailsDMGK()
+    {
+        $title = '.product_title entry-title';
+        $details = '.tab-panels';
+        $tskt = '.custom-scroll-popup-tskt';
+    }
+
     public function checkempty()
     {
         $code = product::select('ProductSku', 'Detail')->get();
