@@ -1201,38 +1201,35 @@ class crawlController extends Controller
 
         foreach ($link as $key => $url) {
 
-            var_dump($url->link);
+          
+            $html = file_get_html(trim($url->link));
 
-            die;
+            $details = $html->find('.tab-panels',0);
 
-            // $html = file_get_html(trim($url->link));
+            $details = str_replace('src','srcs',$details);
 
-            // $details = $html->find('.tab-panels',0);
+            $details =  preg_replace('/data-srcs=/', 'src=', $details);
 
-            // $details = str_replace('src','srcs',$details);
+            $title =  strip_tags($html->find('.product-title-container h1',0));
 
-            // $details =  preg_replace('/data-srcs=/', 'src=', $details);
+            $tskt  =  html_entity_decode($html->find('.thongso-container',0));
 
-            // $title =  strip_tags($html->find('.product-title-container h1',0));
+            $model = strstr(strip_tags($title), "lít");
 
-            // $tskt  =  html_entity_decode($html->find('.thongso-container',0));
+            $model = str_replace('lít', '', $model);
 
-            // $model = strstr(strip_tags($title), "lít");
-
-            // $model = str_replace('lít', '', $model);
-
-            // $data['Name']   = $title;
-            // $data['Price']  = $price;
-            // $data['Detail'] = $details;
-            // $data['Link'] = convertSlug($title);
-            // $data['Group_id']= 3;
-            // $data['Specifications'] = $tskt;
-            // $data['user_id'] = 4;
-            // $data['created_at'] = $now;
-            // $data['updated_at'] = $now;
-            // $data['Salient_Features'] = '';
-            // $data['crawl_link'] = $url;
-            // DB::table('products')->insert($data);
+            $data['Name']   = $title;
+            $data['Price']  = $price;
+            $data['Detail'] = $details;
+            $data['Link'] = convertSlug($title);
+            $data['Group_id']= 3;
+            $data['Specifications'] = $tskt;
+            $data['user_id'] = 4;
+            $data['created_at'] = $now;
+            $data['updated_at'] = $now;
+            $data['Salient_Features'] = '';
+            $data['crawl_link'] = $url->link;
+            DB::table('products')->insert($data);
             
         }
 
