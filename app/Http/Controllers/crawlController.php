@@ -793,16 +793,18 @@ class crawlController extends Controller
 
             $link = $values->crawl_link;
 
-            $html = file_get_html(trim($link));
+            dd($link);
 
-            $src = $html->find('.flickity-slider img');
+            // $html = file_get_html(trim($link));
 
-            foreach ($src as $key => $value) {
+            // $src = $html->find('.flickity-slider img');
 
-                echo $value->img;
+            // foreach ($src as $key => $value) {
 
-                die;
-            }    
+            //     echo $value->img;
+
+            //     die;
+            // }    
 
         }    
     }
