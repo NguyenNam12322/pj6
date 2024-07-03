@@ -1203,44 +1203,53 @@ class crawlController extends Controller
 
             $file_headers = @get_headers($url->link);
 
-            if($file_headers[0] == 'HTTP/1.1 200 OK'){
+            $html = file_get_html($url->link);
 
+            $details = $html->find('.tab-panels',0);
 
-                $html = file_get_html($url->link);
+            $details = str_replace('src','srcs',$details);
 
-                $details = $html->find('.tab-panels',0);
+            $details =  preg_replace('/data-srcs=/', 'src=', $details);
 
-                $details = str_replace('src','srcs',$details);
+            $title =  strip_tags($html->find('.product-title-container h1',0));
 
-                $details =  preg_replace('/data-srcs=/', 'src=', $details);
+            $tskt  =  html_entity_decode($html->find('.thongso-container',0));
 
-                $title =  strip_tags($html->find('.product-title-container h1',0));
+            $model = strstr(strip_tags($title), "lít");
 
-                $tskt  =  html_entity_decode($html->find('.thongso-container',0));
+            $model = str_replace('lít', '', $model);
 
-                $model = strstr(strip_tags($title), "lít");
+            $data['Name']   = trim($title);
+            $data['Price']  = $price;
+            $data['Detail'] = $details;
 
-                $model = str_replace('lít', '', $model);
+            $data['ProductSku'] = $model;
 
-                $data['Name']   = trim($title);
-                $data['Price']  = $price;
-                $data['Detail'] = $details;
-
-                $data['ProductSku'] = $model;
-
-                $data['Link'] = convertSlug($title);
-                $data['Group_id']= 3;
-                $data['Specifications'] = $tskt;
-                $data['user_id'] = 4;
-                $data['created_at'] = $now;
-                $data['updated_at'] = $now;
-                $data['Salient_Features'] = '';
-                $data['crawl_link'] = $url->link;
-                DB::table('products')->insert($data);
-            }
+            $data['Link'] = convertSlug($title);
+            $data['Group_id']= 3;
+            $data['Specifications'] = $tskt;
+            $data['user_id'] = 4;
+            $data['created_at'] = $now;
+            $data['updated_at'] = $now;
+            $data['Salient_Features'] = '';
+            $data['crawl_link'] = $url->link;
+            DB::table('products')->insert($data);
+            
+            sleep(2);
         }
 
        
+    }
+
+    public function updateImageProductDetails()
+    {
+        $content = 
+
+        preg_match_all('/<img.*?src=[\'"](.*?)[\'"].*?>/i', $content, $matches);
+
+
+
+
     }
 
     public function checkempty()
