@@ -1197,7 +1197,7 @@ class crawlController extends Controller
 
         $price = 0;
 
-        $link = DB::table('products')->get();
+        $link = DB::table('link_crawl')->get();
 
         foreach ($link as $key => $url) {
 
