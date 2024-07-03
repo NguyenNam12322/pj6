@@ -115,6 +115,8 @@ Route::get('/404', function () {
     
 });
 
+Route::get('get-image-DMGK', 'crawlController@crawlImageDMGK');
+
 Route::get('/crawl-blade', function () {
     return 1;
     
@@ -205,6 +207,9 @@ Route::post('filter-price-product', 'AjaxController@filterByValue')->name('filte
 Route::post('filter-price-product-by-page', 'AjaxController@filterByPageFilter')->name('filter-option-by-page');
 
 
+
+
+
 Route::group(['prefix' => 'admins','middleware' => 'auth'], function() {
 
     Route::get('test-home', 'Frontend\indexController@testHome')->middleware('throttle:90');
@@ -264,6 +269,9 @@ Route::group(['prefix' => 'admins','middleware' => 'auth'], function() {
     Route::get('product-new-crawl', 'productController@newCrawl')->name('product-new-crawl');
 
     Route::get('add-css', 'mainController@addCss')->name('addcss');
+
+    
+
 
     Route::get('update-fakebuy', 'AjaxController@editbuyfakes')->name('editBuyFake');
 

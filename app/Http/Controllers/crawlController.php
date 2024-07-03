@@ -528,8 +528,6 @@ class crawlController extends Controller
         $update = ['Detail'=>$new_details];
 
         DB::table('products')->where('id', $id)->update($update);
-
-
     }
 
     public function convertImageToDetails($details,$id)
@@ -781,6 +779,29 @@ class crawlController extends Controller
 
         
 
+    }
+
+
+     public function crawlImageDMGK()
+    {
+        $now = Carbon::now();
+
+        $data = DB::table('products')->select('crawl_link','id')->orderBy('id','asc')->where('id','>',471)->get();
+
+        foreach ($data as $key => $values) {
+
+            $link = $values->crawl_link;
+
+            $html = file_get_html(trim($link));
+
+            $src = $html->find('.flickity-slider img');
+
+            foreach ($src as $key => $value) {
+
+                echo $value->img;
+
+                die;
+        }   } 
     }
 
 
