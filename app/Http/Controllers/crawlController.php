@@ -1192,9 +1192,47 @@ class crawlController extends Controller
 
     public function crawlDetailsDMGK()
     {
-        $title = '.product_title entry-title';
-        $details = '.tab-panels';
-        $tskt = '.custom-scroll-popup-tskt';
+
+        $now = Carbon::now();
+
+        $price = 0;
+
+        $link = DB::table('products')->get();
+
+        foreach ($link as $key => $url) {
+
+            $html = file_get_html(trim($url));
+
+            $details = $html->find('.tab-panels',0);
+
+            $details = str_replace('src','srcs',$details);
+
+            $details =  preg_replace('/data-srcs=/', 'src=', $details);
+
+            $title =  strip_tags($html->find('.product-title-container h1',0));
+
+            $tskt  =  html_entity_decode($html->find('.thongso-container',0));
+
+            $model = strstr(strip_tags($title), "lít");
+
+            $model = str_replace('lít', '', $model);
+
+            $data['Name']   = $title;
+            $data['Price']  = $price;
+            $data['Detail'] = $details;
+            $data['Link'] = convertSlug($title);
+            $data['Group_id']= 3;
+            $data['Specifications'] = $tskt;
+            $data['user_id'] = 4;
+            $data['created_at'] = $now;
+            $data['updated_at'] = $now;
+            $data['Salient_Features'] = '';
+            $data['crawl_link'] = $url;
+            DB::table('products')->insert($data);
+            
+        }
+
+       
     }
 
     public function checkempty()
