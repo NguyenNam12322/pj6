@@ -1201,7 +1201,7 @@ class crawlController extends Controller
 
         foreach ($link as $key => $url) {
 
-            $html = file_get_html(trim($url));
+            $html = file_get_html(trim($url->link));
 
             $details = $html->find('.tab-panels',0);
 
