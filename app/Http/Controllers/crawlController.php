@@ -492,6 +492,35 @@ class crawlController extends Controller
 
     }
 
+
+    public function createFolderIdPd()
+    {
+
+        for ($i=472; $i < 917; $i++) { 
+
+            $directory = public_path().'/uploads/product/'.$i;
+
+            // echo 'https:'.$value.'<br>';
+
+            if (!is_dir($directory)) {
+                // Tạo thư mục và các thư mục con nếu không tồn tại
+
+                if(mkdir($directory, 0775, true)){
+
+                    echo "tạo thư mục thành công";
+
+                } 
+                else{
+                    echo "tạo thư mục thất bại";
+                }   
+                    
+            }
+            
+        }
+        
+
+    }
+
     function replaceImageDMGK()
     {
 
