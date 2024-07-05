@@ -799,7 +799,7 @@ class crawlController extends Controller
 
             $src = $html->find('.product-images .woocommerce-product-gallery__image', 0);
 
-            dd($src);
+            dd($src->getAttribute('data-thumb'));
 
             die;
 
