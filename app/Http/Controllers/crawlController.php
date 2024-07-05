@@ -797,9 +797,16 @@ class crawlController extends Controller
 
             $html = file_get_html(trim($link));
 
-            $src = $html->find('.product-images .woocommerce-product-gallery__image', 0);
+            $src = $html->find('.product-images .woocommerce-product-gallery__image');
 
-            dd($src->getAttribute('data-thumb'));
+            foreach ($src as $key => $value) {
+                
+                $image = $src->getAttribute('data-thumb');
+
+                echo $image;
+            }
+
+         
 
             die;
 
