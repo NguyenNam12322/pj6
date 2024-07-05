@@ -121,20 +121,20 @@ class crawlController extends Controller
         echo "thành công";
     }
 
-    function getLinkCrawl()
+    function getLinkCrawlDMGK()
     {
         $now = Carbon::now();
 
         $check = [];
 
-        for ($i=0; $i<10; $i++) {
+        for ($i=0; $i<8; $i++) {
 
         if($i!=0){
-            $url = 'https://dienmaygiakhang.vn/product-category/dien-lanh/tu-lanh/page/'.$i.'/';
+            $url = 'https://dienmaygiakhang.vn/product-category/dien-lanh/may-lanh/may-lanh-gia-dinh/page/'.$i.'/';
 
         }  
         else{
-            $url = 'https://dienmaygiakhang.vn/product-category/dien-lanh/tu-lanh/';
+            $url = 'https://dienmaygiakhang.vn/product-category/dien-lanh/may-lanh/may-lanh-gia-dinh/';
         }  
 
         
