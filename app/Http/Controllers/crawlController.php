@@ -521,6 +521,25 @@ class crawlController extends Controller
 
     }
 
+
+    public function rewriteUrl()
+    {
+        $data = DB::table('products')->select('Detail','id')->orderBy('id','asc')->where('id','>',842)->get();
+
+        foreach ($data as $key => $values) {
+
+            $id = $values->id;
+
+            $details = $values->Detail;
+
+            $new_details = str_replace('/www/wwwroot/dienmayhg.vn/public', '', $details);
+
+            $update = ['Detail'=>$new_details];
+
+            DB::table('products')->where('id', $id)->update($update);
+        }    
+    }
+
     function replaceImageDMGK()
     {
 
