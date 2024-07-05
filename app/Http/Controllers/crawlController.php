@@ -524,7 +524,7 @@ class crawlController extends Controller
     function replaceImageDMGK()
     {
 
-        $data = DB::table('products')->select('Detail','id')->orderBy('id','asc')->where('id','>',827)->get();
+        $data = DB::table('products')->select('Detail','id')->orderBy('id','asc')->where('id','>',842)->get();
 
         foreach ($data as $key => $values) {
 
@@ -570,7 +570,7 @@ class crawlController extends Controller
 
                     $file_headers = @get_headers(trim($vls));
 
-                    if(!empty($file_headers) && $file_headers[0] != 'HTTP/1.1 404 Not Found'){
+                    if(!empty($file_headers) && $file_headers[0] != 'HTTP/1.1 404 Not Found' && $file_headers[0] != 'HTTP/1.1 400 Bad request' ){
 
                         file_put_contents($replace_img, file_get_contents($vls));
                     }    
