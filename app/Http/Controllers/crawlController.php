@@ -799,7 +799,7 @@ class crawlController extends Controller
 
             $src = $html->find('.product-images img', 0);
 
-            print_r(strip_tags($src));
+            dd($src);
 
             die;
 
