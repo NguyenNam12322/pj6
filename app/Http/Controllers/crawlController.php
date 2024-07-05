@@ -801,7 +801,7 @@ class crawlController extends Controller
 
             foreach ($src as $key => $value) {
                 
-                $image = $src->getAttribute('data-thumb');
+                $image = $value->getAttribute('data-thumb');
 
                 echo $image;
             }
