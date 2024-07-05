@@ -801,6 +801,8 @@ class crawlController extends Controller
 
             print_r(strip_tags($src));
 
+            die;
+
             // foreach ($src as $key => $value) {
 
               
