@@ -552,6 +552,8 @@ class crawlController extends Controller
 
             echo "update thành công product_id". $id;
 
+            sleep(1);
+
            
         }
          
