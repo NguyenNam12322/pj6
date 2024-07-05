@@ -570,13 +570,15 @@ class crawlController extends Controller
 
                     $file_headers = @get_headers(trim($vls));
 
-                    if(!empty($file_headers) && $file_headers[0] == 'HTTP/1.1 200 OK'){
-
+                    if(strpos($file_headers[0],"200"))
+                    {
                         file_put_contents($replace_img, file_get_contents($vls));
-                    }    
-                    else{
+                    }
+                    else
+                    {
                         echo $vls,"\n";
                     }
+
                    
                 }
             }
