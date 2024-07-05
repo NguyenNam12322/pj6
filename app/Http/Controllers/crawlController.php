@@ -564,7 +564,7 @@ class crawlController extends Controller
 
                 foreach ($srcs as $vls) {
 
-                    $replace_img = '/uploads/product/'.$id.'/'.basename($vls);
+                    $replace_img = public_path().'/uploads/product/'.$id.'/'.basename($vls);
 
                     array_push($replace, $replace_img);
 
