@@ -492,6 +492,50 @@ class crawlController extends Controller
 
     }
 
+    function replaceImageDMGK()
+    {
+
+        $data = DB::table('products')->select('Detail','id')->orderBy('id','asc')->where('id','>',471)->get();
+
+        foreach ($data as $key => $values) {
+
+            $details = $values->Detail;
+
+            // Sử dụng regex để tìm các giá trị src trong thẻ <img>
+            $patterns = '/<img[^>]+src="([^"]+)"/i';
+
+            $now = Carbon::now();
+
+            // Tạo một mảng để chứa các kết quả
+            $matches = array();
+
+            // Thực hiện tìm kiếm
+
+            preg_match_all($patterns, $details, $matches);
+
+            // $matches[1] sẽ chứa các giá trị src
+
+            $srcs = $matches[1];
+
+            $replace = [];
+
+            if(!empty($srcs) && count($srcs)>0){
+
+                foreach ($srcs as $value) {
+
+                    echo $value.'<br>';
+
+                }
+            }
+
+            die;    
+
+            
+        }
+         
+
+    }
+
     public function convertLinkImageDmclToLinkImageUse($details,$id)
     {
          // Sử dụng regex để tìm các giá trị src trong thẻ <img>
@@ -1437,7 +1481,7 @@ class crawlController extends Controller
                     if(isset($matches[1])){
                         foreach ($matches[1] as $key => $images) {
 
-                             DB::table('imagecrawl')->insert(['image'=>$images]);
+                            DB::table('imagecrawl')->insert(['image'=>$images]);
         
                             // $pos = strpos($images, "/media/lib/");
 

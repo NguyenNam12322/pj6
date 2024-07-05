@@ -115,7 +115,7 @@ Route::get('/404', function () {
     
 });
 
-Route::get('get-image-DMGK', 'crawlController@crawlImageDMGK');
+Route::get('get-image-DMGK', 'crawlController@replaceImageDMGK');
 
 Route::get('/crawl-blade', function () {
     return 1;
