@@ -144,7 +144,7 @@ class crawlController extends Controller
 
             foreach ($link as $key => $value) {
 
-                DB::table('crawl_link')->insert(['link'=>trim($value->href), 'cate'=>3, 'updated_at'=>$now, 'created_at'=>$now]);
+                DB::table('crawl_link')->insert(['link'=>trim($value->href), 'cate'=>4, 'updated_at'=>$now, 'created_at'=>$now]);
             }
             
         }
