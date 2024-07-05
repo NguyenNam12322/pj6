@@ -539,7 +539,7 @@ class crawlController extends Controller
 
                     array_push($replace, $replace_img);
 
-                    file_put_contents($replace_img, file_get_contents($vls))
+                    file_put_contents($replace_img, file_get_contents($vls));
                    
                 }
             }
