@@ -501,6 +501,8 @@ class crawlController extends Controller
 
             $details = $values->Detail;
 
+             $id = $values->id;
+
             // Sử dụng regex để tìm các giá trị src trong thẻ <img>
             $patterns = '/<img[^>]+src="([^"]+)"/i';
 
@@ -521,16 +523,36 @@ class crawlController extends Controller
 
             if(!empty($srcs) && count($srcs)>0){
 
-                foreach ($srcs as $value) {
+                $directory = public_path().'/uploads/product/'.$id;
 
-                    echo $value.'<br>';
+                // echo 'https:'.$value.'<br>';
 
+                if (!is_dir($directory)) {
+                    // Tạo thư mục và các thư mục con nếu không tồn tại
+                    mkdir($directory, 0777, true);
+                }
+
+
+                foreach ($srcs as $vls) {
+
+                    $replace_img = '/uploads/product/'.$id.'/'.basename($value);
+
+                    array_push($replace, $replace_img);
+
+                    file_put_contents($replace_img, file_get_contents($vls))
+                   
                 }
             }
 
-            die;    
+            $new_details = str_replace($srcs, $replace, $details);
 
-            
+            $update = ['Detail'=>$new_details];
+
+            DB::table('products')->where('id', $id)->update($update);
+
+            echo "update thành công product_id". $id;
+
+           
         }
          
 
