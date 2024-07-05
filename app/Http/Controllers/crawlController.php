@@ -568,7 +568,7 @@ class crawlController extends Controller
 
                     array_push($replace, $replace_img);
 
-                    $file_headers = @get_headers(trim($vls));
+                    $file_headers = get_headers(trim($vls));
 
                     if(strpos($file_headers[0],"200"))
                     {
