@@ -568,7 +568,15 @@ class crawlController extends Controller
 
                     array_push($replace, $replace_img);
 
-                    file_put_contents($replace_img, file_get_contents($vls));
+                    $file_headers = @get_headers(trim($vls));
+
+                    if(!empty($file_headers) && $file_headers[0] != 'HTTP/1.1 404 Not Found'){
+
+                        file_put_contents($replace_img, file_get_contents($vls));
+                    }    
+                    else{
+                        echo $vls,"\n";
+                    }
                    
                 }
             }
@@ -580,8 +588,6 @@ class crawlController extends Controller
             DB::table('products')->where('id', $id)->update($update);
 
             echo "update thành công product_id". $id;
-
-            sleep(1);
 
            
         }
