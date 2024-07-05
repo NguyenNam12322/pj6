@@ -570,7 +570,7 @@ class crawlController extends Controller
 
                     $file_headers = @get_headers(trim($vls));
 
-                    if(!empty($file_headers) && $file_headers[0] != 'HTTP/1.1 404 Not Found' && $file_headers[0] != 'HTTP/1.1 400 Bad request' ){
+                    if(!empty($file_headers) && $file_headers[0] == 'HTTP/1.1 200 OK'){
 
                         file_put_contents($replace_img, file_get_contents($vls));
                     }    
