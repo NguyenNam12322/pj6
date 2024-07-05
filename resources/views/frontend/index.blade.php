@@ -229,6 +229,10 @@
             font-size: calc(1.125rem * var(--smaller));
         }
 
+        #new-flash-sale_3621{
+            border:1px solid #D7BA6C
+        }
+
         .product .product-title{
             margin-top: 0 !important;
         }
