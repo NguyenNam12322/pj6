@@ -264,6 +264,10 @@
             font-weight: bold;
         }
 
+        #new-flash-sale_3621{
+            margin-bottom: 10px;
+        }    
+
         .nav1-search{
             height: 100%;
         }
