@@ -554,7 +554,7 @@ class crawlController extends Controller
     function replaceImageDMGK()
     {
 
-        $data = DB::table('products')->select('Detail','id')->orderBy('id','asc')->where('id','>',842)->get();
+        $data = DB::table('products')->select('Detail','id')->orderBy('id','asc')->where('id','>',916)->get();
 
         foreach ($data as $key => $values) {
 
@@ -596,7 +596,9 @@ class crawlController extends Controller
 
                     $replace_img = public_path().'/uploads/product/'.$id.'/'.basename($vls);
 
-                    array_push($replace, $replace_img);
+                    $replace_imgs = '/uploads/product/'.$id.'/'.basename($vls);
+
+                    array_push($replace, $replace_imgs);
 
                     $file_headers = @get_headers(trim($vls));
 
@@ -619,7 +621,7 @@ class crawlController extends Controller
 
             DB::table('products')->where('id', $id)->update($update);
 
-            echo "update thành công product_id". $id;
+            echo "update thành công product_id ". $id;
 
            
         }
