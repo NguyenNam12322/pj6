@@ -50,7 +50,7 @@ Route::get('redirect-update-cache', 'redirectLinkController@createCacheRedirect'
 
 Route::get('remove-cache-image', 'imageController@removeCacheImage')->name('remove-cache-image');
 
-Route::get('show-details', 'crawlController@crawlDetailsDMGK');
+Route::get('show-details', 'crawlController@getDataPD');
 
 
 Route::get('/sale', 'mainController@sale')->name('sale-home');
