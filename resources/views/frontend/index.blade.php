@@ -265,7 +265,7 @@
         }
 
         #new-flash-sale_3621{
-            margin-bottom: 10px;
+            margin-bottom: 10px !important;
         }    
 
         .nav1-search{
