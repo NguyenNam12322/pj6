@@ -194,7 +194,7 @@ class crawlController extends Controller
 
     public function getDataPD()
     {
-        $data = DB::table('products')->select('Name')->where('id','>','470');
+        $data = DB::table('products')->select('Name')->where('id','>','470')->get();
 
         foreach ($data as $key => $value) {
             echo $value->Name.'<br>';
