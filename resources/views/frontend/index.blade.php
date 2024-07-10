@@ -560,20 +560,19 @@
                 ?>
 
                 @if(!empty($product_sale)&&$product_sale->count()>0)
-                <div class="payday-container" id="payday-block-container">
+                <div class="payday-container" id="payday-block-container" style="display:none;">
 
 
                     <!-- banner under sale -->
                     @if(!empty($bannerUnderSale[0]['image']))
                    
-                    <div class="payday-header">
+                   <!--  <div class="payday-header">
                         <div class="hinh_giamgia">
-                            <!-- <a href="#" title="Chương trình khuyến mãi giá sốc">
+                            <a href="#" title="Chương trình khuyến mãi giá sốc">
                                 <img src="{{ $bannerUnderSale[0]['image'] }}" width="1200px" height="45px" alt="Chương trình khuyến mãi giá số">
-                            </a> -->
+                            </a> 
                         </div>
-                    </div>
-
+                    </div> -->
                     @endif
 
                     <div class="payday-new-wrap">
@@ -613,11 +612,7 @@
                                                
                                             </div>
                                             <div class="product-body">
-                                                <!-- <div class="product-feature-badge">
-                                                    <div class="badge-shock-price">
-                                                        <span>Giá Sốc Online</span>
-                                                    </div>
-                                                </div> -->
+                                               
                                                 <div class="product-title">
                                                     <a href="{{ route('details', $vals->Link) }}">{{ $vals->Name }}</a>
                                                 </div>
