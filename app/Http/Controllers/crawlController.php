@@ -591,16 +591,13 @@ class crawlController extends Controller
 
             $details = $values->Detail;
 
-            $new_details = str_replace('https://muasamtaikho.vn/www/wwwroot/dienmayhg.vn/public', '', $details);
+            $new_details = str_replace('/www/wwwroot/dienmayhg.vn/public', '', $details);
 
-            $update = ['Detail'=>$new_details];
+         
 
             $product = product::find($id);
 
-            echo($product->Detail);
-            die;
-
-
+    
             $product->Detail = $new_details;
 
             $product->save();
