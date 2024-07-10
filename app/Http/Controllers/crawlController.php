@@ -503,16 +503,16 @@ class crawlController extends Controller
 
     public function createMetaSeo()
     {
-        $data = DB::table('products')->select('title', 'id')->where('id','>', 471)->get();
+        $data = DB::table('products')->select('Name', 'id')->where('id','>', 471)->get();
 
         foreach ($data as $key => $value) {
-            
+
             $metas = new metaSeo();
-            $metas->meta_title = $value->title; 
-            $metas->meta_content =$value->title; 
-            $metas->meta_key_words = $value->title; 
-            $metas->meta_og_title =$value->title; 
-            $metas->meta_og_content =$value->title; 
+            $metas->meta_title = $value->Name; 
+            $metas->meta_content =$value->Name; 
+            $metas->meta_key_words = $value->Name; 
+            $metas->meta_og_title =$value->Name; 
+            $metas->meta_og_content =$value->Name; 
 
             $update = $metas->save();
 
