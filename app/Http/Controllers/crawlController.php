@@ -502,6 +502,35 @@ class crawlController extends Controller
     }
 
 
+    public function removeLinkinDetails()
+    {
+
+        $data = DB::table('products')->select('Detail', 'id')->where('id','>', 471)->get();
+
+        foreach ($data as $key => $value) {
+            
+            $now = Carbon::now();
+
+            $pattern = '/<a\s+[^>]*>(.*?)<\/a>/i';
+
+            $replacement = '$1';
+
+            echo $value->Detail;.'<br>'
+
+            $details = preg_replace($pattern, $replacement, $value->Detail);
+
+            echo $details;
+
+            die;
+
+            $data = ['Detail'=>$details, 'updated_at'=>$now];
+
+            DB::table('products')->where('id', $value->id)->update($data);
+        }
+        
+    }
+
+
     public function createFolderIdPd()
     {
 
