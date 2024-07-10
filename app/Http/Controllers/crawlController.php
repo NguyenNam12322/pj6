@@ -514,6 +514,8 @@ class crawlController extends Controller
             $metas->meta_og_title =$value->Name; 
             $metas->meta_og_content =$value->Name; 
 
+            $metas->save();
+
             $data = ['Meta_id'=>$metas->id];
 
             DB::table('products')->where('id', $value->id)->update($data);
