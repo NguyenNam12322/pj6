@@ -507,30 +507,26 @@ class crawlController extends Controller
 
         $data = DB::table('products')->select('Detail', 'id')->where('id','>', 471)->get();
 
-        echo "string";
-
-        die;
-
-        // foreach ($data as $key => $value) {
+        foreach ($data as $key => $value) {
             
-        //     $now = Carbon::now();
+            $now = Carbon::now();
 
-        //     $pattern = '/<a\s+[^>]*>(.*?)<\/a>/i';
+            $pattern = '/<a\s+[^>]*>(.*?)<\/a>/i';
 
-        //     $replacement = '$1';
+            $replacement = '$1';
 
-        //     echo $value->Detail;.'<br>'
+            echo $value->Detail.'<br>';
 
-        //     $details = preg_replace($pattern, $replacement, $value->Detail);
+            $details = preg_replace($pattern, $replacement, $value->Detail);
 
-        //     echo $details;
+            echo $details;
 
-        //     die;
+            die;
 
-        //     $data = ['Detail'=>$details, 'updated_at'=>$now];
+            $data = ['Detail'=>$details, 'updated_at'=>$now];
 
-        //     DB::table('products')->where('id', $value->id)->update($data);
-        // }
+            DB::table('products')->where('id', $value->id)->update($data);
+        }
         
     }
 
