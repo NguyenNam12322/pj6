@@ -515,17 +515,13 @@ class crawlController extends Controller
 
             $replacement = '$1';
 
-            echo $value->Detail.'<br>';
-
             $details = preg_replace($pattern, $replacement, $value->Detail);
-
-            echo $details;
-
-            die;
 
             $data = ['Detail'=>$details, 'updated_at'=>$now];
 
             DB::table('products')->where('id', $value->id)->update($data);
+
+            echo "update thành công sản phẩm có id ". $value->id;
         }
         
     }
