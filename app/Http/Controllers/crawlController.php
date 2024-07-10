@@ -597,6 +597,9 @@ class crawlController extends Controller
 
             $product = product::find($id);
 
+            echo($product->Detail);
+            die;
+
 
             $product->Detail = $new_details;
 
