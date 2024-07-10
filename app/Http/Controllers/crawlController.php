@@ -595,14 +595,18 @@ class crawlController extends Controller
 
             $update = ['Detail'=>$new_details];
 
-            $updates = DB::table('products')->where('id', $id)->update($update);
+            
 
-            if($updates){
-                echo "update thành công product_id". $id."\n";
+            //kích hoạt ngoại lệ trong khối "try"
+            try {
+              $updates = DB::table('products')->where('id', $id)->update($update);
+            } catch(Exception $e) { //catch exception
+              echo 'Message: ' .$e->getMessage();
+
+              die;
             }
-            else{
-                echo "update k thành công";
-            }
+
+          
 
             
         }    
