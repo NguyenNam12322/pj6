@@ -514,15 +514,11 @@ class crawlController extends Controller
             $metas->meta_og_title =$value->Name; 
             $metas->meta_og_content =$value->Name; 
 
-            $update = $metas->save();
+            $data = ['Meta_id'=>$metas->id];
 
-            dd($metas);
+            DB::table('products')->where('id', $value->id)->update($data);
 
-            // $data = ['Meta_id'=>$update->id];
-
-            // DB::table('products')->where('id', $value->id)->update($data);
-
-            // echo "update thành công sản phẩm có id ". $value->id."\n";
+            echo "update thành công sản phẩm có id ". $value->id."\n";
 
 
         }    
