@@ -560,6 +560,9 @@
                 ?>
 
                 @if(!empty($product_sale)&&$product_sale->count()>0)
+
+                <!-- tắt tạm sản phẩm sale -->
+                
                 <div class="payday-container" id="payday-block-container" style="display:none;">
 
 
