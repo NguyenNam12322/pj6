@@ -450,7 +450,7 @@
 
 
 
-                <div id="new-flash-sale_3621" class="block_render_falshsale mouse-mover" style="" data-layout="layout_5">
+                <!-- <div id="new-flash-sale_3621" class="block_render_falshsale mouse-mover" style="" data-layout="layout_5">
                     <div class="content first-render owl-carousel owl-loaded owl-drag" data-layout="layout_5" data-items_start="0" data-items_limit="50" data-big_bang="N" data-layout_type_config="Y" data-promotion_ids="" data-not_promotion_ids="">
 
 
@@ -548,7 +548,7 @@
                     </div>
                     <div class="view-all-desk"><a href="{{ route('dealFe') }}"><span>Xem toàn bộ sản phẩm</span></a></div>                             
                 </div>
-
+ -->
                 
 
 

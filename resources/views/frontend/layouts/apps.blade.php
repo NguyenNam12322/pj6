@@ -26,12 +26,12 @@
         <meta name="robots" content="{{ (isset($actives_pages_blog) && $actives_pages_blog ==0)?'noindex':'index' }},follow" />
         @if(!empty($meta))
         <title>{{ $meta->meta_title }}</title>
-        <meta name="description" content="{{ $meta->meta_content }}"/>
-        <meta property="og:title" content="{{ $meta->meta_title }}" />
+        <meta name="description" content="{{ @$meta->meta_content }}"/>
+        <meta property="og:title" content="{{ @$meta->meta_title }}" />
         @if(!empty($data) && !empty($data->Image))
         <meta property="og:image" content="{{ asset($data->Image) }}"/>
         @endif
-        <meta property="og:description" content="{{ $meta->meta_content }}" /> 
+        <meta property="og:description" content="{{ @$meta->meta_content }}" /> 
         <meta name="keywords" content="{{ $meta->meta_key_words??'sieu thi dien may, siêu thị điện máy, mua điện máy giá rẻ, siêu thị điện máy uy tín, siêu thị điện máy trực tuyến' }}"/>
         <link rel="shortcut icon" href="{{ asset('images/template/favicon-muasamtaikho.ico') }}"> 
         @else
