@@ -47,7 +47,7 @@
 
                 if(!Cache::has('meta5959')){
 
-                    $metas = App\Models\metaSeo::find(5959); 
+                    $metas = App\Models\metaSeo::find(1); 
 
                     Cache::put('meta5959', $metas, 100000);
 
