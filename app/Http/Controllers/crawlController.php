@@ -583,7 +583,7 @@ class crawlController extends Controller
 
     public function rewriteUrl()
     {
-        $data = DB::table('products')->select('Detail','id')->orderBy('id','asc')->where('id','>',842)->get();
+        $data = DB::table('products')->select('Detail','id')->orderBy('id','asc')->where('id','>',471)->get();
 
         foreach ($data as $key => $values) {
 
@@ -591,7 +591,7 @@ class crawlController extends Controller
 
             $details = $values->Detail;
 
-            $new_details = str_replace('/www/wwwroot/dienmayhg.vn/public', '', $details);
+            $new_details = str_replace('https://muasamtaikho.vn/www/wwwroot/dienmayhg.vn/public', '', $details);
 
             $update = ['Detail'=>$new_details];
 
