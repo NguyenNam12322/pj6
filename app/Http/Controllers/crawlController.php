@@ -516,11 +516,13 @@ class crawlController extends Controller
 
             $update = $metas->save();
 
-            $data = ['Meta_id'=>$update->id];
+            dd($update);
 
-            DB::table('products')->where('id', $value->id)->update($data);
+            // $data = ['Meta_id'=>$update->id];
 
-            echo "update thành công sản phẩm có id ". $value->id."\n";
+            // DB::table('products')->where('id', $value->id)->update($data);
+
+            // echo "update thành công sản phẩm có id ". $value->id."\n";
 
 
         }    
