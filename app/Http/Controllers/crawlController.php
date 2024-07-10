@@ -516,7 +516,7 @@ class crawlController extends Controller
 
             $update = $metas->save();
 
-            dd($update);
+            dd($metas);
 
             // $data = ['Meta_id'=>$update->id];
 
