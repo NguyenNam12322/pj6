@@ -595,9 +595,16 @@ class crawlController extends Controller
 
             $update = ['Detail'=>$new_details];
 
-            DB::table('products')->where('id', $id)->update($update);
+            $updates = DB::table('products')->where('id', $id)->update($update);
 
-            echo "update thành công product_id". $id;
+            if($updates){
+                echo "update thành công product_id". $id."\n";
+            }
+            else{
+                echo "update k thành công";
+            }
+
+            
         }    
     }
 
