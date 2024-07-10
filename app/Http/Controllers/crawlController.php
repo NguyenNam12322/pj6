@@ -521,7 +521,7 @@ class crawlController extends Controller
 
             DB::table('products')->where('id', $value->id)->update($data);
 
-            echo "update thành công sản phẩm có id ". $value->id;
+            echo "update thành công sản phẩm có id ". $value->id."\n";
         }
         
     }
