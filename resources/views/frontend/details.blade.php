@@ -2982,7 +2982,7 @@
 
     } else {
 
-        const index = fruits.indexOf(values);
+        const index = arval_price.indexOf(values);
         if (index > -1) {
           arval_price.splice(index, 1); 
         }
@@ -2995,7 +2995,7 @@
 
     } else {
 
-        const index = fruits.indexOf(values);
+        const index = arval_price.indexOf(values);
         if (index > -1) {
           arval_price.splice(index, 1); 
         }
