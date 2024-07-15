@@ -41,7 +41,7 @@
 <style type="text/css">
 
      #new-flash-sale_3621{
-            margin: 0 !important;
+            margin: 10px !important;
         }
 
         .first-render{
