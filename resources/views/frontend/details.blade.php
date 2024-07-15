@@ -1643,7 +1643,7 @@
 
                             @if(!empty($data->manuPrice))
 
-                                 <input type="radio" id="inputs-price" name="price-add-2" class="price-add-2" value="{{ $data->InputPrice }}" >
+                                 <input type="radio" id="inputs-price" name="price-add-2" class="price-add-2" value="{{ $data->manuPrice }}" >
 
                                   <label for="age1" >Giá vận chuyển : {{  str_replace(',' ,'.', number_format($data->manuPrice))  }}&#x20AB </label>
 
@@ -2972,16 +2972,19 @@
 
     $('.price-add-2').change(function(){
 
-        if(arval_price.length === 0){
+       
+
+        const values = $("input[name='price-add-2']:checked").val();
+
+        arval_price.push(values);
+
+       
+         if(arval_price.length === 0){
             price_add =0;
         }
         else{
             price_add =arval_price[0];
         }
-
-        const value = $("input[name='price-add-2']:checked").val();
-
-        arval_price.push(value);
 
        
         const price = {{  $data->Price }};
