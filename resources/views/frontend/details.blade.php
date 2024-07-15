@@ -2962,8 +2962,10 @@
             sum = arval_price.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
 
             new_price = parseInt(price)+ parseInt(sum);
+
+            arval_price = [new_price];
             
-             price_format = new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(new_price);
+            price_format = new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(new_price);
 
               
             $('.show-price-desktop h3').text(price_format.replace('đ', '').trim());
@@ -2981,9 +2983,11 @@
             sum = arval_price.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
 
 
-             new_price = parseInt(price)+ parseInt(sum);
+            new_price = parseInt(price)+ parseInt(sum);
 
-             console.log(new_price);
+            arval_price = [new_price];
+
+       
 
             price_format = new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(new_price);
 
