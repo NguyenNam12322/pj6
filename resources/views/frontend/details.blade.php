@@ -2947,7 +2947,9 @@
         const value = $("input[name='price-add-1']:checked").val();
 
         arval_price.push(value);
-        
+
+        console.log(value);
+
         const price = {{  $data->Price }};
 
         new_price   =  parseInt(price) + arval_price[0];
