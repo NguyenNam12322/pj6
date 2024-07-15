@@ -2953,6 +2953,8 @@
 
     $("#inputs-price").change(function(){
 
+        console.log(arval_price);
+
          if ($("#inputs-price").is(":checked")) {
             
             arval_price.push(values);
