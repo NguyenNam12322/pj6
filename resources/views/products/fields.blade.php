@@ -163,8 +163,14 @@
 
 
 <div class="form-group col-sm-6">
-    {!! Form::label('manu Price', 'Giá Hãng:') !!}
+    {!! Form::label('manu Price', 'Giá vận chuyển:') !!}
     {!! Form::text('manuPrice', null, ['id'=>'manuPrice' ,'class' => 'form-control']) !!}
+
+</div>
+
+<div class="form-group col-sm-6">
+    {!! Form::label('input Price', 'Giá lắp đặt:') !!}
+    {!! Form::text('InputPrice', null, ['id'=>'inputPrice' ,'class' => 'form-control']) !!}
 
 </div>
 
