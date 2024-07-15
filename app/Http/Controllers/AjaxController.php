@@ -1092,7 +1092,6 @@ class AjaxController extends Controller
            
         }
 
-        dd($product_search);
         
         return view('frontend.ajax.product', compact('product_search', 'action', 'check_parent','idcate'));
         
