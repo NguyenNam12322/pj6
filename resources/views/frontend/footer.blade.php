@@ -12,6 +12,10 @@
             z-index: 99999;
         }
 
+        h1,h2,h3,h4,h5,h6{
+            font-weight: bold;
+        }
+
         .coccoc-alo-phone {
             background-color: transparent;
             width: 100px;
