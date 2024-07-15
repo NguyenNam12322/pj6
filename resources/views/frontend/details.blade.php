@@ -2953,22 +2953,22 @@
 
     $("#inputs-price").change(function(){
 
-  
-
          if ($("#inputs-price").is(":checked")) {
-            
-            arval_price.push(values);
 
-            sum = 0;
+            if(arval_price.length===0){
 
-            arval_price.forEach(number => {
-              sum += number;
-            });
+                price_add = 0;
 
+            }
+            else{
+                price_add = parseInt(arval_price[0]);
+            }
+            sum = price_add+ parseInt(values);
 
             new_price = parseInt(price)+ parseInt(sum);
 
-            
+            arval_price =[new_price];
+
             price_format = new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(new_price);
 
               
@@ -2976,27 +2976,27 @@
 
         } else {
 
-            const index = arval_price.indexOf(values);
-            if (index > -1) {
-              arval_price.splice(index, 1); 
-            }
+            // const index = arval_price.indexOf(values);
+            // if (index > -1) {
+            //   arval_price.splice(index, 1); 
+            // }
 
-            sum = 0;
+            // sum = 0;
 
-            arval_price.forEach(number => {
-              sum += number;
-            });
+            // arval_price.forEach(number => {
+            //   sum += number;
+            // });
 
-            new_price = parseInt(price)+ parseInt(sum);
+            // new_price = parseInt(price)+ parseInt(sum);
 
-            arval_price = [new_price];
+            // arval_price = [new_price];
 
        
 
-            price_format = new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(new_price);
+            // price_format = new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(new_price);
 
               
-            $('.show-price-desktop h3').text(price_format.replace('đ', '').trim());
+            // $('.show-price-desktop h3').text(price_format.replace('đ', '').trim());
         }
 
 
@@ -3042,46 +3042,48 @@
     val = $("#input-price").val();
     $("#input-price").change(function(){
          if ($("#input-price").is(":checked")) {
-            
 
-            arval_price.push(val);
+            if(arval_price.length===0){
 
-            sum = arval_price.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+                price_add = 0;
+
+            }
+            else{
+                price_add = parseInt(arval_price[0]);
+            }
+            sum = price_add+ parseInt(val);
 
             new_price = parseInt(price)+ parseInt(sum);
 
-             arval_price = [new_price];
+            arval_price =[new_price];
 
+            price_format = new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(new_price);
 
-            
-             price_format = new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(new_price);
-
-              
             $('.show-price-desktop h3').text(price_format.replace('đ', '').trim());
 
         } else {
 
-            const index = arval_price.indexOf(val);
-            if (index > -1) {
-              arval_price.splice(index, 1); 
-            }
+            // const index = arval_price.indexOf(val);
+            // if (index > -1) {
+            //   arval_price.splice(index, 1); 
+            // }
 
-            let sum = 0;
-
-
-            sum = arval_price.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+            // let sum = 0;
 
 
-             new_price = parseInt(price)+ parseInt(sum);
+            // sum = arval_price.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
 
-              arval_price = [new_price];
+
+            //  new_price = parseInt(price)+ parseInt(sum);
+
+            //   arval_price = [new_price];
 
           
 
-            price_format = new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(new_price);
+            // price_format = new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(new_price);
 
               
-            $('.show-price-desktop h3').text(price_format.replace('đ', '').trim());
+            // $('.show-price-desktop h3').text(price_format.replace('đ', '').trim());
         }
 
 
