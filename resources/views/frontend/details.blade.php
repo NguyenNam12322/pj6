@@ -2974,6 +2974,8 @@
 
 
     if ($("#inputs-price").is(":checked")) {
+
+        console.log(1)
         
 
         arval_price.push(values);
