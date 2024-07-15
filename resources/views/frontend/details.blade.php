@@ -1628,22 +1628,24 @@
 
                         <br>
 
-                        <div>
+                        <div class="add-service">
 
+                            <div class="add-service">
                             @if(!empty($data->InputPrice))
 
                                  <input type="radio" id="input-price" name="price-add-1" class="price-add-1" value="{{ $data->InputPrice }}" >
 
-                                  <label for="age1" >Giá lắp đặt :{{  str_replace(',' ,'.', number_format($data->InputPrice))  }}&#x20AB  
+                                  <label for="age1" >Giá lắp đặt :{{  str_replace(',' ,'.', number_format($data->InputPrice))  }}&#x20AB  </label>
 
                             @endif
-                            
+
+                            <br>
 
                             @if(!empty($data->manuPrice))
 
                                  <input type="radio" id="inputs-price" name="price-add-2" class="price-add-2" value="{{ $data->InputPrice }}" >
 
-                                  <label for="age1" >Giá vận chuyển : {{  str_replace(',' ,'.', number_format($data->manuPrice))  }}&#x20AB 
+                                  <label for="age1" >Giá vận chuyển : {{  str_replace(',' ,'.', number_format($data->manuPrice))  }}&#x20AB </label>
 
                             @endif 
 
