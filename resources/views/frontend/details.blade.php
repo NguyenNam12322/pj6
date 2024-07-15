@@ -2991,10 +2991,10 @@
 
 
     // }
-
+      val = $("#input-price").val();
     $("#input-price").change(function(){
          if ($("#input-price").is(":checked")) {
-             val = $("#input-price").val();
+            
 
             arval_price.push(val);
 
@@ -3009,7 +3009,7 @@
 
         } else {
 
-            const index = arval_price.indexOf(values);
+            const index = arval_price.indexOf(val);
             if (index > -1) {
               arval_price.splice(index, 1); 
             }
@@ -3021,6 +3021,8 @@
 
 
              new_price = parseInt(price)+ parseInt(sum);
+
+             console.log(new_price);
 
             price_format = new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(new_price);
 
