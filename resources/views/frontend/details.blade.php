@@ -1632,7 +1632,7 @@
 
                             @if(!empty($data->InputPrice))
 
-                                 <input type="radio" id="input price" name="price-add-1" class="price-add" value="{{ $data->InputPrice }}" >
+                                 <input type="radio" id="input-price" name="price-add-1" class="price-add-1" value="{{ $data->InputPrice }}" >
 
                                   <label for="age1" >Giá lắp đặt :{{  str_replace(',' ,'.', number_format($data->InputPrice))  }}&#x20AB  
 
@@ -1641,23 +1641,13 @@
 
                              @if(!empty($data->manuPrice))
 
-                                 <input type="radio" id="input price" name="price-add-2" class="price-add" value="{{ $data->InputPrice }}" >
+                                 <input type="radio" id="inputs-price" name="price-add-2" class="price-add-2" value="{{ $data->InputPrice }}" >
 
                                   <label for="age1" >Giá vận chuyển : {{  str_replace(',' ,'.', number_format($data->manuPrice))  }}&#x20AB 
 
                             @endif
 
-                            
-                           
-                            
-                           <!--  <input type="radio" id="age1" name="price-add" class="price-add" value="1" checked>
-                            <label for="age1">Giá tại kho: +0 đ</label><br>
-                            <input type="radio" id="age2" class="price-add" name="price-add" value="2">
-                            <label for="age2">Giao hàng > 20km: +100.000 đ</label><br>  
-                            @if(intval($price_installment)>0)
-                            <input type="radio" id="price-add-3" name="price-add" class="price-add" value="3">
-                            <label for="price-add-3">Giá lắp đặt: +{{ str_replace(',' ,'.', number_format(intval($price_installment))) }} đ</label><br><br>
-                            @endif -->
+                        
 
                         </div>
 
@@ -2950,25 +2940,17 @@
     })
 
 
-    $('.price-add').change(function(){
+    arval_price = [];
 
-        const value = $("input[name='price-add']:checked").val();
+    $('.price-add-1').change(function(){
 
-        ar_val = [];
+        const value = $("input[name='price-add-1']:checked").val();
 
-        @if(!empty($data_price_show))
-        @foreach($data_price_show as $val)
-
-            ar_val[{{ $val->id }}] = {{ $val->price }};
-        @endforeach
-
-        @endif
-
-       
-     
+        arval_price.push(value);
+        
         const price = {{  $data->Price }};
 
-        new_price   =  parseInt(price) + ar_val[value];
+        new_price   =  parseInt(price) + arval_price[0];
 
         price_format = new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(new_price);
 
