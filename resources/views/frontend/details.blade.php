@@ -2944,7 +2944,7 @@
 
     arval_price = [];
 
-    $('.price-add-1').change(function(){
+    $('#input-price').change(function(){
 
         const value = $("input[name='price-add-1']:checked").val();
 
@@ -2970,7 +2970,7 @@
 
     });
 
-    $('.price-add-2').change(function(){
+    $('#inputs-price').change(function(){
 
        
 
