@@ -11,6 +11,10 @@
         border-radius: 5px;
         padding: 5px;
     }
+
+    h1,h2,h3,h4,h5,h6{
+        font-weight: bold !important;
+    }
 </style>
 <?php
     $Group = App\Models\groupProduct::select('id', 'name')->get();
