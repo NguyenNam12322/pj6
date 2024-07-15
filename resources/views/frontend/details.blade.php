@@ -1637,15 +1637,15 @@
                                   <label for="age1" >Giá lắp đặt :{{  str_replace(',' ,'.', number_format($data->InputPrice))  }}&#x20AB  
 
                             @endif
-                            <br>
+                            
 
-                             <!-- @if(!empty($data->manuPrice))
+                            @if(!empty($data->manuPrice))
 
                                  <input type="radio" id="inputs-price" name="price-add-2" class="price-add-2" value="{{ $data->InputPrice }}" >
 
                                   <label for="age1" >Giá vận chuyển : {{  str_replace(',' ,'.', number_format($data->manuPrice))  }}&#x20AB 
 
-                            @endif -->
+                            @endif 
 
                         
 
