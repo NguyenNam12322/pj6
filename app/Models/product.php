@@ -99,9 +99,7 @@ class product extends Model
         'sale_order',
         'promotion_box',
         'LinkRedirect',
-        'Quantily',
-        
-
+        'InputPrice',
     ];
 
     /**
@@ -137,7 +135,7 @@ class product extends Model
     public static $rule = [
         'Image' => 'image|mimes:jpeg,png,jpg,gif,svg|max:4096',
         // 'Name' => 'required|max:1000',
-        // 'ProductSku' => 'required',
+        'ProductSku' => 'required',
         // 'Specifications' => 'required',
         // 'Price' => 'required|integer',
         
