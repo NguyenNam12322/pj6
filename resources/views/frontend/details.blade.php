@@ -991,7 +991,7 @@
                                 @if(!empty($data_price_show))
 
                                 @foreach($data_price_show as $key=> $val)
-                                     <input type="radio" id="age{{ $val->id }}" name="price-add-mobile-{{ $val->id }}" class="price-add-mobile" value="{{ $val->id }}" {{ $key===0?'checked':'' }}>
+                                     <input type="radio" id="age{{ $val->id }}" name="price-add-mobile" class="price-add-mobile" value="{{ $val->id }}" {{ $key===0?'checked':'' }}>
                                     <label for="age1" > {{  $val->name }} : {{str_replace(',' ,'.', number_format($val->price))  }}đ</label><br>
                                 @endforeach
 
@@ -1633,7 +1633,7 @@
                             @if(!empty($data_price_show))
 
                             @foreach($data_price_show as $key=> $val)
-                                 <input type="radio" id="age{{ $val->id }}" name="price-add" class="price-add" value="{{ $val->id }}" {{ $key===0?'checked':'' }}>
+                                 <input type="radio" id="age{{ $val->id }}" name="price-add-{{ $val->id }}" class="price-add" value="{{ $val->id }}" {{ $key===0?'checked':'' }}>
                                 <label for="age1" > {{  $val->name }} : {{str_replace(',' ,'.', number_format($val->price))  }}đ</label><br>
                             @endforeach
 
