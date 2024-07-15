@@ -2978,6 +2978,8 @@
 
         arval_price.push(values);
 
+        console.log(values);
+
        
          if(arval_price.length === 0){
             price_add =0;
