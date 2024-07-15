@@ -1628,16 +1628,16 @@
 
                             @if(!empty($data->InputPrice))
 
-                                 <input type="radio" id="input price" name="price-add" class="price-add" value="{{ $data->InputPrice }}" >
+                                 <input type="radio" id="input price" name="price-add-1" class="price-add" value="{{ $data->InputPrice }}" >
 
                                   <label for="age1" >Giá lắp đặt :{{  str_replace(',' ,'.', number_format($data->InputPrice))  }}&#x20AB  
 
                             @endif
-
+                            <br>
 
                              @if(!empty($data->manuPrice))
 
-                                 <input type="radio" id="input price" name="price-add" class="price-add" value="{{ $data->InputPrice }}" >
+                                 <input type="radio" id="input price" name="price-add-2" class="price-add" value="{{ $data->InputPrice }}" >
 
                                   <label for="age1" >Giá vận chuyển : {{  str_replace(',' ,'.', number_format($data->manuPrice))  }}&#x20AB 
 
@@ -1828,7 +1828,10 @@
                                 </div>
                             </div>
                             @endif
+                            <?php 
 
+                                dd($data->Specifications);
+                            ?>
 
 
                             @if($data['Quantily']>0)
