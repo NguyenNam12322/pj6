@@ -6,6 +6,10 @@
 
     <style>
 
+    .productSpecification_table .popup{
+        display: block !important;
+    }   
+
      @media only screen and (max-width: 600px) {
 
         .nk-menu{
@@ -1828,7 +1832,7 @@
                                 </div>
                             </div>
                             @endif
-                            
+
 
 
                             @if($data['Quantily']>0)
