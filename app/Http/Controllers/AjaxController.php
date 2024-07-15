@@ -458,7 +458,7 @@ class AjaxController extends Controller
 
         $hot = DB::table('hot')->select('product_id')->where('group_id', $id)->orderBy('orders', 'asc')->get()->pluck('product_id');
 
-        $data = product::whereIn('id', $hot->toArray())->Orderby('orders_hot', 'desc')->get();
+        $data = product::whereIn('id', $hot->toArray())->Orderby('orders_hot', 'desc')->take(16)->get();
 
         return view('frontend.ajax.showgroupdata', compact('data','id'));
     }
@@ -1092,7 +1092,7 @@ class AjaxController extends Controller
            
         }
 
-        
+
         return view('frontend.ajax.product', compact('product_search', 'action', 'check_parent','idcate'));
         
     }
