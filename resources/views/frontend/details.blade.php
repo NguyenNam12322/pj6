@@ -2996,50 +2996,38 @@
     $("#input-price").change(function(){
          if ($("#input-price").is(":checked")) {
 
-            alert(1);
-            
 
-            // arval_price.push(val);
+            arval_price.push(val);
 
-            // const sum = arval_price
-            //   .filter(value => typeof value === "number")
-            //   .reduce((acc, curr) => acc + curr, 0);
+            const sum = arval_price
+              .filter(value => typeof value === "number")
+              .reduce((acc, curr) => acc + curr, 0);
+            new_price = price+sum
 
-           
-
-            // new_price = price+sum
-
-            //  price_format = new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(new_price);
+             price_format = new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(new_price);
 
               
-            // $('.show-price-desktop h3').text(price_format.replace('đ', '').trim());
+            $('.show-price-desktop h3').text(price_format.replace('đ', '').trim());
 
         } else {
 
-            alert(2);
+            const index = arval_price.indexOf(values);
+            if (index > -1) {
+              arval_price.splice(index, 1); 
+            }
+            const sum = arval_price
+              .filter(value => typeof value === "number")
+              .reduce((acc, curr) => acc + curr, 0);
 
-            // const index = arval_price.indexOf(values);
-            // if (index > -1) {
-            //   arval_price.splice(index, 1); 
-            // }
+            new_price = price+sum
 
-
-
-            // const sum = arval_price
-            //   .filter(value => typeof value === "number")
-            //   .reduce((acc, curr) => acc + curr, 0);
-
-           
-
-            // new_price = price+sum
-
-            //  price_format = new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(new_price);
+             price_format = new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(new_price);
 
               
-            // $('.show-price-desktop h3').text(price_format.replace('đ', '').trim());
+            $('.show-price-desktop h3').text(price_format.replace('đ', '').trim());
         }
 
-        
+
     })
 
    
