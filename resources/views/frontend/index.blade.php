@@ -651,7 +651,7 @@
                                 <div class="menu-wrap">
 
                                     <?php 
-                                        $define = ['Ao Smith','Tivi','Điều hòa', 'Máy giặt', 'Tủ lạnh', ];
+                                        $define = ['Ao Smith','Tivi', 'Máy giặt', 'Tủ lạnh','Điều hòa' ];
 
                                     ?>
 

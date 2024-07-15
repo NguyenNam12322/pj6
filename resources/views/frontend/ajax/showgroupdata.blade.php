@@ -4,7 +4,7 @@
             <div class="menu-wrap">
 
                 <?php 
-                    $define = ['Nổi bật','Tivi', 'Máy giặt', 'Tủ lạnh', 'Điều hòa'];
+                    $define = ['Ao Smith','Tivi', 'Máy giặt', 'Tủ lạnh','Điều hòa' ];
 
                 ?>
 
