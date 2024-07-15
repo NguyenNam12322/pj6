@@ -1103,11 +1103,11 @@ class AjaxController extends Controller
         $idcate = $request->idcate;
 
         if($action =='id'){
-            $product_search   = product::whereIn('id', $list_id)->where('active', 1)->where('Price', '>', 0)->orderBy('id', 'asc')->take(50)->get();
+            $product_search   = product::whereIn('id', $list_id)->where('active', 1)->where('Price', '>', 0)->orderBy('id', 'asc')->take(16)->get();
         }
         else{
 
-           $product_search   = product::whereIn('id', $list_id)->orderBy('Price', $action)->where('Price', '>', 0)->where('active', 1)->take(50)->get();
+           $product_search   = product::whereIn('id', $list_id)->orderBy('Price', $action)->where('Price', '>', 0)->where('active', 1)->take(16)->get();
            
         }
         return view('frontend.ajax.product', compact('product_search', 'action','idcate'));
