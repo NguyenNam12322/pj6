@@ -3045,6 +3045,11 @@
             sum = arval_price.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
 
             new_price = parseInt(price)+ parseInt(sum);
+
+             arval_price = [new_price];
+
+             console.log(arval_price);
+
             
              price_format = new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(new_price);
 
@@ -3066,7 +3071,11 @@
 
              new_price = parseInt(price)+ parseInt(sum);
 
+              arval_price = [new_price];
+
              console.log(new_price);
+
+             console.log(arval_price);
 
             price_format = new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(new_price);
 
