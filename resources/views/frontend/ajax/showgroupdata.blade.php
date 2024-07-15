@@ -61,6 +61,8 @@
                 </div>
             </div>
         </div>
+
+        <div class="view-all-desk desktop"><span>Xem toàn bộ sản phẩm</span></div>
              
     </div>
 </div>
@@ -83,6 +85,7 @@
                 
                
             </div>
+
         </div>
 
 
