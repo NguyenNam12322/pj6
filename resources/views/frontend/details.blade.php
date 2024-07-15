@@ -2947,12 +2947,50 @@
 
     values = $("#inputs-price").val();
 
-   
-
-
     price = {{  $data->Price }};
 
-     arval_price = [];
+    arval_price = [];
+
+    $("#inputs-price").change(function(){
+
+         if ($("#input-price").is(":checked")) {
+            
+            arval_price.push(values);
+
+            sum = arval_price.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+
+            new_price = parseInt(price)+ parseInt(sum);
+            
+             price_format = new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(new_price);
+
+              
+            $('.show-price-desktop h3').text(price_format.replace('đ', '').trim());
+
+        } else {
+
+            const index = arval_price.indexOf(values);
+            if (index > -1) {
+              arval_price.splice(index, 1); 
+            }
+
+            let sum = 0;
+
+
+            sum = arval_price.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+
+
+             new_price = parseInt(price)+ parseInt(sum);
+
+             console.log(new_price);
+
+            price_format = new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(new_price);
+
+              
+            $('.show-price-desktop h3').text(price_format.replace('đ', '').trim());
+        }
+
+
+    })
 
     // if ($("#inputs-price").is(":checked")) {
 
@@ -2991,7 +3029,7 @@
 
 
     // }
-      val = $("#input-price").val();
+    val = $("#input-price").val();
     $("#input-price").change(function(){
          if ($("#input-price").is(":checked")) {
             
