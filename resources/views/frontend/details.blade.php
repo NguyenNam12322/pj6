@@ -1345,7 +1345,7 @@
 
             <div class="box-info-name">
 
-                <h1>{{ _substrs($data->Name,500) }}</h1>
+                <h1>{{ _substrs($data->Name,80) }}</h1>
 
                 
             </div>
