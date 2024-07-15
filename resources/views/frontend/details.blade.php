@@ -2950,11 +2950,18 @@
 
         arval_price.push(value);
 
-        console.log(value);
+        if(arval_price.length === 0){
+            price_add =0;
+        }
+        else{
+            price_add =arval_price[0];
+        }
 
         const price = {{  $data->Price }};
 
-        new_price   =  parseInt(price) + parseInt(arval_price[0]);
+        new_price   =  parseInt(price) + parseInt(price_add);
+
+        arval_price = [price_add];
 
         price_format = new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(new_price);
 
@@ -2962,6 +2969,34 @@
         $('.show-price-desktop h3').text(price_format.replace('đ', '').trim());
 
     });
+
+    $('.price-add-2').change(function(){
+
+        if(arval_price.length === 0){
+            price_add =0;
+        }
+        else{
+            price_add =arval_price[0];
+        }
+
+        const value = $("input[name='price-add-2']:checked").val();
+
+        arval_price.push(value);
+
+       
+        const price = {{  $data->Price }};
+
+        new_price   =  parseInt(price) + parseInt(price_add);
+
+        arval_price = [price_add];
+
+        price_format = new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(new_price);
+
+      
+        $('.show-price-desktop h3').text(price_format.replace('đ', '').trim());
+
+    });
+
 
 
 
