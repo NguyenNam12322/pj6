@@ -328,13 +328,13 @@ class productController extends AppBaseController
         }
 
 
-        if(Auth::user()->id==4 || Auth::user()->id==6){
-            if(!empty($input['InputPrice'])){
+        
+        if(!empty($input['InputPrice'])){
 
-                $input['InputPrice'] = str_replace(',', '', $input['InputPrice']);
-                $input['InputPrice'] = str_replace('.', '', $input['InputPrice']);
-            }
+            $input['InputPrice'] = str_replace(',', '', $input['InputPrice']);
+            $input['InputPrice'] = str_replace('.', '', $input['InputPrice']);
         }
+       
         if(!empty($input['manuPrice'])){
 
             $input['manuPrice'] = str_replace(',', '', $input['manuPrice']);
