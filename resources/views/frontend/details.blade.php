@@ -2975,27 +2975,15 @@
 
         } else {
 
-            // const index = arval_price.indexOf(values);
-            // if (index > -1) {
-            //   arval_price.splice(index, 1); 
-            // }
+            price_pd = arval_price[0];
 
-            // sum = 0;
+             new_price = parseInt(price_pd)- parseInt(values);
 
-            // arval_price.forEach(number => {
-            //   sum += number;
-            // });
+            arval_price =[new_price];
 
-            // new_price = parseInt(price)+ parseInt(sum);
+            price_format = new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(new_price);
 
-            // arval_price = [new_price];
-
-       
-
-            // price_format = new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(new_price);
-
-              
-            // $('.show-price-desktop h3').text(price_format.replace('đ', '').trim());
+            $('.show-price-desktop h3').text(price_format.replace('đ', '').trim());
         }
 
 
@@ -3062,27 +3050,15 @@
 
         } else {
 
-            // const index = arval_price.indexOf(val);
-            // if (index > -1) {
-            //   arval_price.splice(index, 1); 
-            // }
+            price_pd = arval_price[0];
 
-            // let sum = 0;
+            new_price = parseInt(price_pd)- parseInt(val);
 
+            arval_price =[new_price];
 
-            // sum = arval_price.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+            price_format = new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(new_price);
 
-
-            //  new_price = parseInt(price)+ parseInt(sum);
-
-            //   arval_price = [new_price];
-
-          
-
-            // price_format = new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(new_price);
-
-              
-            // $('.show-price-desktop h3').text(price_format.replace('đ', '').trim());
+            $('.show-price-desktop h3').text(price_format.replace('đ', '').trim());
         }
 
 
