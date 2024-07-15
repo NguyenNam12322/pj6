@@ -3003,7 +3003,7 @@
               .reduce((acc, curr) => acc + curr, 0);
             new_price = price+sum;
 
-            console.log(val);
+            console.log(new_price);
 
              price_format = new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(new_price);
 
