@@ -2,9 +2,7 @@
 @section('content') 
 @push('style')
 
-    <?php 
-         $data_price_show = DB::table('show_price_address')->where('active',1)->get();
-    ?>
+   
 
     <style>
 
@@ -1628,16 +1626,24 @@
 
                         <div>
 
-                            
+                            @if(!empty($data->InputPrice))
 
-                            @if(!empty($data_price_show))
+                                 <input type="radio" id="input price" name="price-add" class="price-add" value="{{ $data->InputPrice }}" >
 
-                            @foreach($data_price_show as $key=> $val)
-                                 <input type="radio" id="age{{ $val->id }}" name="price-add-{{ $val->id }}" class="price-add" value="{{ $val->id }}" {{ $key===0?'checked':'' }}>
-                                <label for="age1" > {{  $val->name }} : {{str_replace(',' ,'.', number_format($val->price))  }}đ</label><br>
-                            @endforeach
+                                  <label for="age1" >Giá lắp đặt :{{  str_replace(',' ,'.', number_format($data->InputPrice))  }}&#x20AB  
 
                             @endif
+
+
+                             @if(!empty($data->manuPrice))
+
+                                 <input type="radio" id="input price" name="price-add" class="price-add" value="{{ $data->InputPrice }}" >
+
+                                  <label for="age1" >Giá vận chuyển : {{  str_replace(',' ,'.', number_format($data->manuPrice))  }}&#x20AB 
+
+                            @endif
+
+                            
                            
                             
                            <!--  <input type="radio" id="age1" name="price-add" class="price-add" value="1" checked>
