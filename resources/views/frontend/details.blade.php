@@ -2957,21 +2957,20 @@
 
             if(arval_price.length===0){
 
-                price_add = 0;
+    
+                price_pd = price;
 
             }
             else{
-                price_add = parseInt(arval_price[0]);
+                 price_pd = arval_price[0];
+                
             }
-            sum = price_add+ parseInt(values);
-
-            new_price = parseInt(price)+ parseInt(sum);
+            new_price = parseInt(price_pd)+ parseInt(values);
 
             arval_price =[new_price];
 
             price_format = new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(new_price);
 
-              
             $('.show-price-desktop h3').text(price_format.replace('đ', '').trim());
 
         } else {
@@ -3045,15 +3044,15 @@
 
             if(arval_price.length===0){
 
-                price_add = 0;
+    
+                price_pd = price;
 
             }
             else{
-                price_add = parseInt(arval_price[0]);
+                 price_pd = arval_price[0];
+                
             }
-            sum = price_add+ parseInt(val);
-
-            new_price = parseInt(price)+ parseInt(sum);
+            new_price = parseInt(price_pd)+ parseInt(val);
 
             arval_price =[new_price];
 
