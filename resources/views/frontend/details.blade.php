@@ -2947,7 +2947,7 @@
 
     values = $("#inputs-price").val();
 
-    val = $("#input-price").val();
+   
 
 
     price = {{  $data->Price }};
@@ -2994,7 +2994,7 @@
 
     $("#input-price").change(function(){
          if ($("#input-price").is(":checked")) {
-
+             val = $("#input-price").val();
 
             arval_price.push(val);
 
@@ -3003,7 +3003,7 @@
               .reduce((acc, curr) => acc + curr, 0);
             new_price = price+sum;
 
-            console.log(new_price);
+            console.log(val);
 
              price_format = new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(new_price);
 
