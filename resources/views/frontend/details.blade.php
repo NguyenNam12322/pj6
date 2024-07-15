@@ -2944,31 +2944,7 @@
 
     arval_price = [];
 
-    $('#input-price').change(function(){
-
-        const value = $("input[name='price-add-1']:checked").val();
-
-        arval_price.push(value);
-
-        if(arval_price.length === 0){
-            price_add =0;
-        }
-        else{
-            price_add =arval_price[0];
-        }
-
-        const price = {{  $data->Price }};
-
-        new_price   =  parseInt(price) + parseInt(price_add);
-
-        arval_price = [price_add];
-
-        price_format = new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(new_price);
-
-      
-        $('.show-price-desktop h3').text(price_format.replace('đ', '').trim());
-
-    });
+    
 
     values = $("#inputs-price").val();
 
