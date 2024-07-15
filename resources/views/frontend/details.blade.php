@@ -2952,7 +2952,7 @@
 
         const price = {{  $data->Price }};
 
-        new_price   =  parseInt(price) + arval_price[0];
+        new_price   =  parseInt(price) + parseInt(arval_price[0]);
 
         price_format = new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(new_price);
 
