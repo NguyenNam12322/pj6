@@ -2998,11 +2998,12 @@
 
             arval_price.push(val);
 
-            const sum = arval_price
-              .filter(value => typeof value === "number")
-              .reduce((acc, curr) => acc + curr, 0);
-            new_price = price+sum;
+            let sum = 0;
 
+            arval_price.forEach(number => {
+              sum += number;
+            });
+            new_price = price+sum;
             console.log(new_price);
 
              price_format = new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(new_price);
@@ -3016,6 +3017,10 @@
             if (index > -1) {
               arval_price.splice(index, 1); 
             }
+
+            let sum = 0;
+
+
             const sum = arval_price
               .filter(value => typeof value === "number")
               .reduce((acc, curr) => acc + curr, 0);
