@@ -2970,40 +2970,49 @@
 
     });
 
-    $('#inputs-price').change(function(){
+    const values = $("#inputs-price").val();
 
-       
 
-        const values = $("input[name='price-add-2']:checked").val();
+    if ($("#inputs-price").is(":checked")) {
+        
 
         arval_price.push(values);
 
-        console.log(values);
+    } else {
 
-       
-         if(arval_price.length === 0){
-            price_add =0;
+        const index = fruits.indexOf(values);
+        if (index > -1) {
+          arval_price.splice(index, 1); 
         }
-        else{
-            price_add =arval_price[0];
+    }
+
+    if ($("#input-price").is(":checked")) {
+        
+
+        arval_price.push(values);
+
+    } else {
+
+        const index = fruits.indexOf(values);
+        if (index > -1) {
+          arval_price.splice(index, 1); 
         }
+    }
 
-       
-        const price = {{  $data->Price }};
 
-        new_price   =  parseInt(price) + parseInt(price_add);
+    const sum = arval_price
+      .filter(value => typeof value === "number")
+      .reduce((acc, curr) => acc + curr, 0);
 
-        arval_price = [price_add];
+   
+    const price = {{  $data->Price }};
 
-        price_format = new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(new_price);
+    new_price = price+sum
+
+     price_format = new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(new_price);
 
       
-        $('.show-price-desktop h3').text(price_format.replace('đ', '').trim());
-
-    });
-
-
-
+    $('.show-price-desktop h3').text(price_format.replace('đ', '').trim());
 
 
     
