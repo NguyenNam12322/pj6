@@ -2953,17 +2953,21 @@
 
     $("#inputs-price").change(function(){
 
-        console.log(arval_price);
+  
 
          if ($("#inputs-price").is(":checked")) {
             
             arval_price.push(values);
 
-            sum = arval_price.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+            sum = 0;
+
+            arval_price.forEach(number => {
+              sum += number;
+            });
+
 
             new_price = parseInt(price)+ parseInt(sum);
 
-            arval_price = [new_price];
             
             price_format = new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(new_price);
 
@@ -2977,11 +2981,11 @@
               arval_price.splice(index, 1); 
             }
 
-            let sum = 0;
+            sum = 0;
 
-
-            sum = arval_price.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
-
+            arval_price.forEach(number => {
+              sum += number;
+            });
 
             new_price = parseInt(price)+ parseInt(sum);
 
@@ -3048,7 +3052,6 @@
 
              arval_price = [new_price];
 
-             console.log(arval_price);
 
             
              price_format = new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(new_price);
@@ -3073,9 +3076,7 @@
 
               arval_price = [new_price];
 
-             console.log(new_price);
-
-             console.log(arval_price);
+          
 
             price_format = new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(new_price);
 
