@@ -3000,7 +3000,7 @@
 
             const sum = arval_price.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
 
-            new_price = price+sum;
+            new_price = parseInt(price)+ parseInt(sum);
             
              price_format = new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(new_price);
 
