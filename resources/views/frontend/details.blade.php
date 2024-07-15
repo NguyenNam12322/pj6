@@ -1828,10 +1828,7 @@
                                 </div>
                             </div>
                             @endif
-                            <?php 
-
-                                dd($data->Specifications);
-                            ?>
+                            
 
 
                             @if($data['Quantily']>0)
