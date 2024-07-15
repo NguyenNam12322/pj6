@@ -3031,8 +3031,7 @@
          if ($("#input-price").is(":checked")) {
 
             if(arval_price.length===0){
-
-    
+                
                 price_pd = price;
 
             }
