@@ -191,7 +191,7 @@
 
     }); 
 
-     var movingText = $(".gift-info");
+     var movingText = $(".gifts-info");
 
     movingText.hide();
 
