@@ -1612,16 +1612,7 @@
 
                                 @endif
 
-                                @if(!empty($data->manuPrice) || !empty($price_old))
-                                <b>Rẻ hơn</b>
-
-                                <?php 
-
-                                    $discount = !empty($price_old)?round(((intval($price_old) - intval($data->Price))/intval($price_old))*100):round(((intval($data->manuPrice) - intval($data->Price))/intval($data->manuPrice))*100)
-                                ?>
-
-                                <span class="discount_percent">-{{ $discount }}%</span>
-                                @endif 
+                                
                                  
                             </div>
                         </div>
