@@ -18,7 +18,7 @@
         </div>
 
 
-        <div class="product-item show-data-group" data-uid="4133_3386">
+        <div class="product-item show-data-group mouse-mover" data-uid="4133_3386">
             <div class="nk-product-cate-style-grid nk-product-collection nk-product- clearfix">
                 <div id="pagination_contents" class="nk-product nks-fs-sync index-index" data-fs-type="0">
 
@@ -191,53 +191,53 @@
 
     }); 
 
-     var movingText = $(".gift-info");
+    //  var movingText = $(".gift-info");
 
-    movingText.hide();
+    // movingText.hide();
 
-    if(window.innerWidth>768){
+    // if(window.innerWidth>768){
 
-      // Xử lý sự kiện khi chuột di chuyển
-        $(".mouse-mover .item").on("mousemove", function(event) {
-            movingText.show();
+    //   // Xử lý sự kiện khi chuột di chuyển
+    //     $(".mouse-mover .item").on("mousemove", function(event) {
+    //         movingText.show();
 
-            console.log(1);
+    //         console.log(1);
 
-            var id = $(this).attr("id");
+    //         var id = $(this).attr("id");
 
-            var data = $("#"+id+" .gifts-info").html();
+    //         var data = $("#"+id+" .gifts-info").html();
 
-            // nếu text dài thì add thêm height để chống tràn
+    //         // nếu text dài thì add thêm height để chống tràn
 
-            number_text_promotion =  parseInt($("#"+id+" .gifts-info").attr('data-text'));
+    //         number_text_promotion =  parseInt($("#"+id+" .gifts-info").attr('data-text'));
 
-            if(number_text_promotion >300){
-                $(".gift-info").addClass('max-height');
-            }
+    //         if(number_text_promotion >300){
+    //             $(".gift-info").addClass('max-height');
+    //         }
 
-            if(number_text_promotion <300 && $(".gift-info").hasClass('max-height')){
-                $(".gift-info").removeClass('max-height');
-            }
+    //         if(number_text_promotion <300 && $(".gift-info").hasClass('max-height')){
+    //             $(".gift-info").removeClass('max-height');
+    //         }
             
-            // end check
+    //         // end check
 
 
-            $(".gift-info").html('');
-            $(".gift-info").html(data);
+    //         $(".gift-info").html('');
+    //         $(".gift-info").html(data);
 
-            var x = event.pageX+15;
-            var y = event.pageY+15;
+    //         var x = event.pageX+15;
+    //         var y = event.pageY+15;
 
-            // Cập nhật vị trí của chữ theo vị trí của chuột
-            movingText.css({
-              "left": x,
-              "top": y,
-            });
-          })
-          .on("mouseout", function(event) {
-            // Fade out element when mouse leaves
-            movingText.hide();
-          });
+    //         // Cập nhật vị trí của chữ theo vị trí của chuột
+    //         movingText.css({
+    //           "left": x,
+    //           "top": y,
+    //         });
+    //       })
+    //       .on("mouseout", function(event) {
+    //         // Fade out element when mouse leaves
+    //         movingText.hide();
+    //       });
 
-    }      
+    // }      
 </script>
