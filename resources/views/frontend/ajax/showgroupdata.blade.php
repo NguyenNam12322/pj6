@@ -1,4 +1,4 @@
-<div class="gift-info"></div>
+
 <div class="w100p show-group-data  desktop">
     <div class="span16 nk_houseware_best_selling_2020_wrapper nk_homepage_houseware_best_selling_2020_wrapper js_done ">
         <div class="menu-wrap0" style="height: 35px;">
@@ -27,7 +27,7 @@
                     @foreach($data as $key =>$datas)
 
                    
-                        <div class="product col-md-3 col-xs-6 item">
+                        <div class="product col-md-3 col-xs-6 item" id="item_feature-{{ $datas->id }}">
                             <div class="product-header" href="{{ route('details', $datas->Link) }}">
                                 <div class="top-right">
                                     <div class="product-feature-badge-item installment"><span>Trả góp 0%</span></div>
