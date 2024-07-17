@@ -192,51 +192,5 @@
 
     }); 
 
-     var movingText = $(".gift-info");
-
-    movingText.hide();
-
-    if(window.innerWidth>768){
-
-      // Xử lý sự kiện khi chuột di chuyển
-        $(".mouse-mover .item").on("mousemove", function(event) {
-            movingText.show();
-
-            var id = $(this).attr("id");
-
-            var data = $("#"+id+" .gifts-info").html();
-
-            // nếu text dài thì add thêm height để chống tràn
-
-            number_text_promotion =  parseInt($("#"+id+" .gifts-info").attr('data-text'));
-
-            if(number_text_promotion >300){
-                $(".gift-info").addClass('max-height');
-            }
-
-            if(number_text_promotion <300 && $(".gift-info").hasClass('max-height')){
-                $(".gift-info").removeClass('max-height');
-            }
-            
-            // end check
-
-
-            $(".gift-info").html('');
-            $(".gift-info").html(data);
-
-            var x = event.pageX+15;
-            var y = event.pageY+15;
-
-            // Cập nhật vị trí của chữ theo vị trí của chuột
-            movingText.css({
-              "left": x,
-              "top": y,
-            });
-          })
-          .on("mouseout", function(event) {
-            // Fade out element when mouse leaves
-            movingText.hide();
-          });
-
-    }      
+    
 </script>
