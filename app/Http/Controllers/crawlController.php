@@ -725,7 +725,7 @@ class crawlController extends Controller
     function replaceImageDMCL()
     {
 
-        $data = DB::table('products')->select('Detail','id')->orderBy('id','asc')->where('id','>',1301)->get();
+        $data = DB::table('products')->select('Detail','id')->orderBy('id','asc')->where('id','=',1490)->get();
 
         foreach ($data as $key => $values) {
 
@@ -769,23 +769,23 @@ class crawlController extends Controller
 
                     echo $vls;
 
-                    // $replace_img = public_path().'/uploads/product/'.$id.'/'.basename($vls);
+                    $replace_img = public_path().'/uploads/product/'.$id.'/'.basename($vls);
 
-                    // $replace_imgs = '/uploads/product/'.$id.'/'.basename($vls);
+                    $replace_imgs = '/uploads/product/'.$id.'/'.basename($vls);
 
-                    // array_push($replace, $replace_imgs);
+                    array_push($replace, $replace_imgs);
 
                    
-                    // $file_headers = @get_headers(trim($vls));
+                    $file_headers = @get_headers(trim($vls));
 
-                    // if(!empty($file_headers) && strpos($file_headers[0],"200"))
-                    // {
-                    //     file_put_contents($replace_img, file_get_contents($vls));
-                    // }
-                    // else
-                    // {
-                    //     echo $vls,"\n";
-                    // }
+                    if(!empty($file_headers) && $file_headers[0] != 'HTTP/1.1 404 Not Found')
+                    {
+                        file_put_contents($replace_img, file_get_contents($vls));
+                    }
+                    else
+                    {
+                        echo $vls."\n";
+                    }
 
                    
                 }
