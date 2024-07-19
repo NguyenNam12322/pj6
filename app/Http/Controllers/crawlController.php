@@ -609,6 +609,31 @@ class crawlController extends Controller
         }    
     }
 
+    public function editContentFalse()
+    {
+        
+        $data = DB::table('products')->select('Detail','id', 'crawl_link')->orderBy('id','asc')->where('id','>',1301)->get();
+
+        foreach ($data as $key => $value) {
+            
+            $url = $value->crawl_link;
+
+            $details = $html->find('.des_pro', 0);
+
+            $pattern = '/<a\s+[^>]*>(.*?)<\/a>/i';
+
+            $details = preg_replace($pattern, $replacement, html_entity_decode($details));
+
+            $update = ['Detail'=>$details];
+
+            DB::table('products')->where('id', $id)->update($update);
+
+            echo "update thành công product_id ". $id;
+
+
+        }
+    }
+
     function replaceImageDMGK()
     {
 
@@ -657,6 +682,8 @@ class crawlController extends Controller
                     $replace_imgs = '/uploads/product/'.$id.'/'.basename($vls);
 
                     array_push($replace, $replace_imgs);
+
+                    $image
 
                     $file_headers = @get_headers(trim($vls));
 
