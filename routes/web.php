@@ -125,7 +125,7 @@ Route::get('/crawl-blade', function () {
     
 });
 
-Route::get('/test-crawls', 'crawlController@test11');
+Route::get('/test-crawls', 'crawlController@test_getContent');
 
 
 // Route::any('/ckfinder/connector', '\CKSource\CKFinderBridge\Controller\CKFinderController@requestAction')

@@ -479,6 +479,11 @@ class crawlController extends Controller
         }
     }
 
+    public function test_getContent()
+    {
+        file_get_contents('https://cdn11.dienmaycholon.vn/filewebdmclnew/public/userupload/files/news/may-giat/MAY-GI~1(25).JPG');
+    }
+
     public function updateCrawlDMCL($url, $id)
     {
        
