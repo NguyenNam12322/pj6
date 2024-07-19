@@ -721,6 +721,86 @@ class crawlController extends Controller
 
     }
 
+
+    function replaceImageDMCL()
+    {
+
+        $data = DB::table('products')->select('Detail','id')->orderBy('id','asc')->where('id','>',1301)->get();
+
+        foreach ($data as $key => $values) {
+
+            $details = $values->Detail;
+
+             $id = $values->id;
+
+            // Sử dụng regex để tìm các giá trị src trong thẻ <img>
+            $patterns = '/<img[^>]+src="([^"]+)"/i';
+
+            $now = Carbon::now();
+
+            // Tạo một mảng để chứa các kết quả
+            $matches = array();
+
+            // Thực hiện tìm kiếm
+
+            preg_match_all($patterns, $details, $matches);
+
+            // $matches[1] sẽ chứa các giá trị src
+
+            $srcs = $matches[1];
+
+            $replace = [];
+
+            if(!empty($srcs) && count($srcs)>0){
+
+                $directory = public_path().'/uploads/product/'.$id;
+
+                // echo 'https:'.$value.'<br>';
+
+                if (!is_dir($directory)) {
+                    // Tạo thư mục và các thư mục con nếu không tồn tại
+                    mkdir($directory, 0777, true);
+                }
+
+
+                foreach ($srcs as $vls) {
+
+                    $replace_img = public_path().'/uploads/product/'.$id.'/'.basename($vls);
+
+                    $replace_imgs = '/uploads/product/'.$id.'/'.basename($vls);
+
+                    array_push($replace, $replace_imgs);
+
+                   
+                    $file_headers = @get_headers(trim($vls));
+
+                    if(!empty($file_headers) && strpos($file_headers[0],"200"))
+                    {
+                        file_put_contents($replace_img, file_get_contents($vls));
+                    }
+                    else
+                    {
+                        echo $vls,"\n";
+                    }
+
+                   
+                }
+            }
+
+            $new_details = str_replace($srcs, $replace, $details);
+
+            $update = ['Detail'=>$new_details];
+
+            DB::table('products')->where('id', $id)->update($update);
+
+            echo "update thành công product_id ". $id;
+
+           
+        }
+         
+
+    }
+
     public function convertLinkImageDmclToLinkImageUse($details,$id)
     {
          // Sử dụng regex để tìm các giá trị src trong thẻ <img>
