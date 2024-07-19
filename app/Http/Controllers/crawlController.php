@@ -615,6 +615,8 @@ class crawlController extends Controller
         $data = DB::table('products')->select('Detail','id', 'crawl_link')->orderBy('id','asc')->where('id','>',1301)->get();
 
         foreach ($data as $key => $value) {
+
+            $id = $value->id;
             
             $url = $value->crawl_link;
 
