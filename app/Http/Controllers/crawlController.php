@@ -765,23 +765,27 @@ class crawlController extends Controller
 
                 foreach ($srcs as $vls) {
 
-                    $replace_img = public_path().'/uploads/product/'.$id.'/'.basename($vls);
+                    $vls = 'http:'.$vls."\n";
 
-                    $replace_imgs = '/uploads/product/'.$id.'/'.basename($vls);
+                    echo $vls;
 
-                    array_push($replace, $replace_imgs);
+                    // $replace_img = public_path().'/uploads/product/'.$id.'/'.basename($vls);
+
+                    // $replace_imgs = '/uploads/product/'.$id.'/'.basename($vls);
+
+                    // array_push($replace, $replace_imgs);
 
                    
-                    $file_headers = @get_headers(trim($vls));
+                    // $file_headers = @get_headers(trim($vls));
 
-                    if(!empty($file_headers) && strpos($file_headers[0],"200"))
-                    {
-                        file_put_contents($replace_img, file_get_contents($vls));
-                    }
-                    else
-                    {
-                        echo $vls,"\n";
-                    }
+                    // if(!empty($file_headers) && strpos($file_headers[0],"200"))
+                    // {
+                    //     file_put_contents($replace_img, file_get_contents($vls));
+                    // }
+                    // else
+                    // {
+                    //     echo $vls,"\n";
+                    // }
 
                    
                 }
