@@ -765,7 +765,7 @@ class crawlController extends Controller
 
                 foreach ($srcs as $vls) {
 
-                    $vls = 'http:'.$vls."\n";
+                    $vls = 'https:'.$vls."\n";
 
                     echo $vls;
 
