@@ -469,7 +469,7 @@ class crawlController extends Controller
 
     public function updateProducts()
     {
-         $product = DB::table('products')->select('id','crawl_link')->where('id', '<', 48)->get();
+         $product = DB::table('products')->select('id','crawl_link')->where('id', '>', 1301)->get();
 
         foreach ($product as $key => $value) {
 
