@@ -458,7 +458,7 @@ class crawlController extends Controller
 
         foreach ($product as $key => $value) {
 
-            $this->convertLinkImageDmclToLinkImageUse($value->Detail, $value->id);
+            $this->convertImageToDetails($value->Detail, $value->id);
 
             echo "update đến product: ".$value->id;
 
@@ -612,7 +612,7 @@ class crawlController extends Controller
     function replaceImageDMGK()
     {
 
-        $data = DB::table('products')->select('Detail','id')->orderBy('id','asc')->where('id','>',916)->get();
+        $data = DB::table('products')->select('Detail','id')->orderBy('id','asc')->where('id','>',1301)->get();
 
         foreach ($data as $key => $values) {
 
