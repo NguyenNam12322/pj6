@@ -125,7 +125,7 @@ Route::get('/crawl-blade', function () {
     
 });
 
-Route::get('/test-crawls', 'crawlController@test_getContent');
+Route::get('/test-crawls', 'crawlController@replaceImageDMCL');
 
 
 // Route::any('/ckfinder/connector', '\CKSource\CKFinderBridge\Controller\CKFinderController@requestAction')
