@@ -772,17 +772,12 @@ class crawlController extends Controller
 
                     $vls = 'https:'.$vls."\n";
 
-                    echo $vls;
-
                     $replace_img = public_path().'/uploads/product/'.$id.'/'.basename($vls);
 
                     $replace_imgs = '/uploads/product/'.$id.'/'.basename($vls);
 
                     array_push($replace, $replace_imgs);
 
-                    file_get_contents($vls);
-
-                    die;
                    
                     $file_headers = @get_headers(trim($vls));
 
