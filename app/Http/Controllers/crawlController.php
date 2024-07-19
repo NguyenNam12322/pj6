@@ -454,7 +454,7 @@ class crawlController extends Controller
 
     public function updateProduct()
     {
-        $product = DB::table('products')->select('id','Detail')->orderBy('id', 'asc')->where('id','>',440)->get();
+        $product = DB::table('products')->select('id','Detail')->orderBy('id', 'asc')->where('id','>',1286)->get();
 
         foreach ($product as $key => $value) {
 
@@ -1031,7 +1031,7 @@ class crawlController extends Controller
     {
         $now = Carbon::now();
 
-        $data = DB::table('products')->select('crawl_link','id')->orderBy('id','asc')->get();
+        $data = DB::table('products')->select('crawl_link','id')->orderBy('id','asc')->where('id','>',1286)->get();
 
         foreach ($data as $key => $values) {
 
