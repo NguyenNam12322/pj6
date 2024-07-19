@@ -422,8 +422,8 @@ class crawlController extends Controller
 
     public function test11()
     {
-
-          $check = [];
+        // 1286->
+        $check = [];
 
         // $all_model = product::select('ProductSku')->get()->pluck('ProductSku')->toArray();
 
@@ -432,26 +432,21 @@ class crawlController extends Controller
         $html = file_get_html(trim($url));
 
         $link = $html->find('.product_block_img a');
-
-        dd($link);
-
-        die;
-
+      
         foreach ($link as $key => $value) {
 
-            echo $value;
+            array_push($check, $value->href);
+
             
         }
 
-        die;
 
-       
-        // foreach ($check as $key => $value) {
+        foreach ($check as $key => $value) {
 
-        //     $this->crawlDmcl($value);
+            $this->crawlDmcl($value);
            
-        // }     
-        // echo "thành công";
+        }     
+        echo "thành công";
 
         // dd($details);
     }
@@ -845,7 +840,7 @@ class crawlController extends Controller
         $data['Price']  = $price;
         $data['Detail'] = $details;
         $data['Link'] = convertSlug($title);
-        $data['Group_id']= 4;
+        $data['Group_id']= 2;
         $data['Specifications'] = $specifications;
         $data['user_id'] = 4;
         $data['created_at'] = $now;
