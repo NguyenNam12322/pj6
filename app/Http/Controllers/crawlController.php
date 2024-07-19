@@ -618,6 +618,8 @@ class crawlController extends Controller
             
             $url = $value->crawl_link;
 
+             $html = file_get_html(trim($url));
+
             $details = $html->find('.des_pro', 0);
 
             $pattern = '/<a\s+[^>]*>(.*?)<\/a>/i';
