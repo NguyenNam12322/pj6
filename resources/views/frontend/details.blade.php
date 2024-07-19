@@ -1348,6 +1348,122 @@
             <div class="show-more">
                 <span>Đọc thêm</span>
             </div>
+
+            <div class="related view-more-related viewer-product"></div>
+            <div class="col-md-8 clearfix" id="comment_pro">
+                <article id="article-comment-2131" itemprop="comment" itemscope="" itemtype="https://schema.org/Comment">
+                    <?php 
+                       
+                        if(!Cache::has('comment'.$data->id) ){
+
+                            $comments_id = App\Models\rate::where('product_id', $data->id)->Where('active', 1)->get();
+
+                            Cache::forever('comment'.$data->id, $comments_id);
+
+                        }
+
+                        $comment = Cache::get('comment'.$data->id);
+                        ?>
+                    @if(isset($comment))
+                    @foreach($comment as $comments)
+                    <header class="comment-header">
+                        <p class="comment-author" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+                            <img alt="" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPyGNr2qL63Sfugk2Z1-KBEwMGOfycBribew&usqp=CAU" height="30px" width="30px">
+                            <span class="comment-author-name" itemprop="name">
+                            <a href="#" class="comment-author-link" rel="external nofollow" itemprop="url">{{ $comments->name }}</a>
+                            </span> 
+                        <p class="comment-meta"><time class="comment-time" itemprop="datePublished"><a class="comment-time-link" href="javascript:voi(0)" itemprop="url">{{ $comments->created_at->format('d/m/Y, H:i' )  }}</a></time></p>
+                    </header>
+                    <div class="comment-content" itemprop="text">
+                        <p>{!!  $comments->content  !!}</p>
+                    </div>
+                    @endforeach
+                    @endif
+                </article>
+                <div class="rate-text">
+                    <!-- <h3 style="margin-bottom: 0;margin-top: 40px;"> Đánh giá  {{ $data->Name }}</h3> -->
+                    <p style="background: #f3f3f3;padding: 10px;border-radius: 3px;margin: 10px 0;">Đánh giá sản phẩm nhận Coupon 20.000đ dành cho khách mua hàng tại Điện máy người việt.</p>
+                </div>
+                <div class="p-comment">
+                    <form class="comment-form" name="rate-form" id="rate-form" role="form">
+                        <div class="rate_view">
+                            Chọn đánh giá của bạn:
+                            <div class="stars">
+                                <div>
+                                    <input class="star star-click star-5" id="star-5" type="radio" name="star"/>
+                                    <label class="star star-5" for="star-5"></label>
+                                    <input class="star star-click star-4" id="star-4" type="radio" name="star"/>
+                                    <label class="star star-4" for="star-4"></label>
+                                    <input class="star star-click star-3" id="star-3" type="radio" name="star"/>
+                                    <label class="star star-3" for="star-3"></label>
+                                    <input class="star star-click star-2" id="star-2" type="radio" name="star"/>
+                                    <label class="star star-2" for="star-2"></label>
+                                    <input class="star star-click star-1" id="star-1" type="radio" name="star"/>
+                                    <label class="star star-1" for="star-1"></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="relative">
+                            <div class="left">
+                                <textarea style="padding: 10px;border-radius: 3px; width: 100%;" name="content" placeholder="Nhập đánh giá về sản phẩm " id="content0"></textarea>
+                            </div>
+                            <div class="left">
+                                <div class="form-input">
+                                    <table style="width:100%;" class="tbl-common">
+                                        <tbody>
+                                            <tr>
+                                                <td style="padding-right: 5px;">
+                                                    <input style="border-radius: 3px;height: 43px;" type="text" id="name0" name="name" class="inputText" placeholder="Họ tên" value="">
+                                                </td>
+                                                <td style="padding-left: 5px;">
+                                                    <input style="border-radius: 3px;height: 43px;" type="text" id="email0" name="email" class="inputText" placeholder="Email" value="">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><input style="margin-top: 15px;width: calc(100% - 6px);border-radius: 3px;" type="submit" value="Gửi bình luận" class="btn btn-red comments-rate" ></td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!--form-input-->
+                            </div>
+                        </div>
+                    </form>
+                    <input type="hidden" name="star" id="star_number" value="5">
+                    <!--comment-form-->
+                </div>
+            </div>
+            <!-- end đánh giá -->
+            <div class="related view-more-related">
+                <p class="related__ttl">Xem thêm sản phẩm khác</p>
+                @if(isset($other_product))
+                <div class="listproduct slider-promo owl-carousel">
+                    @foreach($other_product as  $value)
+                    @if($value->active==1 && $value->id != $data->id)
+                    <div class="item">
+                        <a href='{{ route('details', $value->Link) }}' class=" main-contain">
+                        <div class="item-label">
+                        </div>
+                        <div class="item-img">
+                            <img data-src="{{ asset($value->Image) }}" class="lazyload" alt="{{ $value->Name }}" width=210 height=210>
+                        </div>
+                        
+                        <h3>{{ $value->Name }}</h3>
+
+                        <strong class="price">{{  str_replace(',' ,'.', number_format($value->Price))  }}&#x20AB;</strong>
+                        </a>
+                        <a href="javascript:void(0)" class="compare-show" onclick="compareShow({{ $value->id }})">
+                            <i class="fa-solid fa-plus"></i>
+                                so sánh
+                        </a>
+                    </div>
+
+                    @endif
+                    @endforeach
+                </div>
+                @endif
+            </div>
             
         </div>
 
@@ -1929,8 +2045,6 @@
         <div class="clearfix"></div>
 
         
-       
-
         <div class="box_right">
 
             <div class="pdp-box">
@@ -1980,124 +2094,6 @@
                 @endif
 
             </div>
-        </div>
-
-    
-        <div class="related view-more-related viewer-product">
-        </div>
-        <div class="col-md-8 clearfix" id="comment_pro">
-            <article id="article-comment-2131" itemprop="comment" itemscope="" itemtype="https://schema.org/Comment">
-                <?php 
-                   
-                    if(!Cache::has('comment'.$data->id) ){
-
-                        $comments_id = App\Models\rate::where('product_id', $data->id)->Where('active', 1)->get();
-
-                        Cache::forever('comment'.$data->id, $comments_id);
-
-                    }
-
-                    $comment = Cache::get('comment'.$data->id);
-                    ?>
-                @if(isset($comment))
-                @foreach($comment as $comments)
-                <header class="comment-header">
-                    <p class="comment-author" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
-                        <img alt="" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPyGNr2qL63Sfugk2Z1-KBEwMGOfycBribew&usqp=CAU" height="30px" width="30px">
-                        <span class="comment-author-name" itemprop="name">
-                        <a href="#" class="comment-author-link" rel="external nofollow" itemprop="url">{{ $comments->name }}</a>
-                        </span> 
-                    <p class="comment-meta"><time class="comment-time" itemprop="datePublished"><a class="comment-time-link" href="javascript:voi(0)" itemprop="url">{{ $comments->created_at->format('d/m/Y, H:i' )  }}</a></time></p>
-                </header>
-                <div class="comment-content" itemprop="text">
-                    <p>{!!  $comments->content  !!}</p>
-                </div>
-                @endforeach
-                @endif
-            </article>
-            <div class="rate-text">
-                <!-- <h3 style="margin-bottom: 0;margin-top: 40px;"> Đánh giá  {{ $data->Name }}</h3> -->
-                <p style="background: #f3f3f3;padding: 10px;border-radius: 3px;margin: 10px 0;">Đánh giá sản phẩm nhận Coupon 20.000đ dành cho khách mua hàng tại Điện máy người việt.</p>
-            </div>
-            <div class="p-comment">
-                <form class="comment-form" name="rate-form" id="rate-form" role="form">
-                    <div class="rate_view">
-                        Chọn đánh giá của bạn:
-                        <div class="stars">
-                            <div>
-                                <input class="star star-click star-5" id="star-5" type="radio" name="star"/>
-                                <label class="star star-5" for="star-5"></label>
-                                <input class="star star-click star-4" id="star-4" type="radio" name="star"/>
-                                <label class="star star-4" for="star-4"></label>
-                                <input class="star star-click star-3" id="star-3" type="radio" name="star"/>
-                                <label class="star star-3" for="star-3"></label>
-                                <input class="star star-click star-2" id="star-2" type="radio" name="star"/>
-                                <label class="star star-2" for="star-2"></label>
-                                <input class="star star-click star-1" id="star-1" type="radio" name="star"/>
-                                <label class="star star-1" for="star-1"></label>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="relative">
-                        <div class="left">
-                            <textarea style="padding: 10px;border-radius: 3px; width: 100%;" name="content" placeholder="Nhập đánh giá về sản phẩm " id="content0"></textarea>
-                        </div>
-                        <div class="left">
-                            <div class="form-input">
-                                <table style="width:100%;" class="tbl-common">
-                                    <tbody>
-                                        <tr>
-                                            <td style="padding-right: 5px;">
-                                                <input style="border-radius: 3px;height: 43px;" type="text" id="name0" name="name" class="inputText" placeholder="Họ tên" value="">
-                                            </td>
-                                            <td style="padding-left: 5px;">
-                                                <input style="border-radius: 3px;height: 43px;" type="text" id="email0" name="email" class="inputText" placeholder="Email" value="">
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td><input style="margin-top: 15px;width: calc(100% - 6px);border-radius: 3px;" type="submit" value="Gửi bình luận" class="btn btn-red comments-rate" ></td>
-                                            <td></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                            <!--form-input-->
-                        </div>
-                    </div>
-                </form>
-                <input type="hidden" name="star" id="star_number" value="5">
-                <!--comment-form-->
-            </div>
-        </div>
-        <!-- end đánh giá -->
-        <div class="related view-more-related">
-            <p class="related__ttl">Xem thêm sản phẩm khác</p>
-            @if(isset($other_product))
-            <div class="listproduct slider-promo owl-carousel">
-                @foreach($other_product as  $value)
-                @if($value->active==1 && $value->id != $data->id)
-                <div class="item">
-                    <a href='{{ route('details', $value->Link) }}' class=" main-contain">
-                    <div class="item-label">
-                    </div>
-                    <div class="item-img">
-                        <img data-src="{{ asset($value->Image) }}" class="lazyload" alt="{{ $value->Name }}" width=210 height=210>
-                    </div>
-                    
-                    <h3>{{ $value->Name }}</h3>
-
-                    <strong class="price">{{  str_replace(',' ,'.', number_format($value->Price))  }}&#x20AB;</strong>
-                    </a>
-                    <a href="javascript:void(0)" class="compare-show" onclick="compareShow({{ $value->id }})">
-                        <i class="fa-solid fa-plus"></i>
-                            so sánh
-                    </a>
-                </div>
-
-                @endif
-                @endforeach
-            </div>
-            @endif
         </div>
 
         
