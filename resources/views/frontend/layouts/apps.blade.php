@@ -2488,7 +2488,7 @@
                         success: function (data) {
                             var items = data;
 
-                        
+                            console.log(data);
 
                             $('#ui-id-1').html();
 
