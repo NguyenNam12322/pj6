@@ -612,7 +612,7 @@ class crawlController extends Controller
     public function editContentFalse()
     {
         
-        $data = DB::table('products')->select('Detail','id', 'crawl_link')->orderBy('id','asc')->where('id','>',1301)->get();
+        $data = DB::table('products')->select('Detail','id', 'crawl_link')->orderBy('id','asc')->where('id','>',1357)->get();
 
         foreach ($data as $key => $value) {
 
@@ -638,6 +638,8 @@ class crawlController extends Controller
 
 
         }
+
+        sleep(2);
     }
 
     function replaceImageDMGK()
