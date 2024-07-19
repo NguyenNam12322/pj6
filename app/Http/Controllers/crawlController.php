@@ -775,12 +775,17 @@ class crawlController extends Controller
 
                     array_push($replace, $replace_imgs);
 
+                    file_get_contents($vls);
+
+                    die;
                    
                     $file_headers = @get_headers(trim($vls));
 
                     if(!empty($file_headers) && $file_headers[0] != 'HTTP/1.1 404 Not Found')
                     {
                         file_put_contents($replace_img, file_get_contents($vls));
+
+                        die;
                     }
                     else
                     {
