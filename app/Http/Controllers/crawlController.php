@@ -753,6 +753,24 @@ class crawlController extends Controller
 
     }
 
+    public function updateProductName()
+    {
+        $data = DB::table('products')->select('Name','id')->orderBy('id','asc') ->where('id', '>', 1301)->get();
+
+        foreach ($data as $key => $values) {
+
+            $id = $values->id;
+
+            $product = product::find($id);
+
+            $product->Name = trim($product->Name);
+
+            $product->save();
+
+            echo "update thành công product_id ". $id;
+        }
+    }
+
 
     function replaceImageDMCL()
     {
