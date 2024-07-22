@@ -757,7 +757,7 @@ class crawlController extends Controller
     function replaceImageDMCL()
     {
 
-        $data = DB::table('products')->select('Detail','id')->orderBy('id','asc')->where('id','>',1301)->get();
+        $data = DB::table('products')->select('Detail','id')->orderBy('id','asc') ->where('id', '>', 1301)->where('id','<',1489)->get();
 
         foreach ($data as $key => $values) {
 
@@ -825,15 +825,11 @@ class crawlController extends Controller
 
             $new_details = str_replace($srcs, $replace, $details);
 
-    
-
             $product = product::find($id);
 
             $product->Detail = $new_details;
 
             $product->save();
-
-
 
             echo "update thành công product_id ". $id;
 
