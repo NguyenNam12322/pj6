@@ -541,6 +541,23 @@ class crawlController extends Controller
         }    
     }
 
+    public function editMetaSeo()
+    {
+        $data = DB::table('products')->select('Name', 'id', 'Meta_id')->where('id','>', 1301)->get();
+
+        foreach ($data as $key => $value) {
+
+            $metas = metaSeo::find($value->Meta_id);
+
+            $metas->meta_title = trim($metas->meta_title); 
+            $metas->meta_content =trim($metas->meta_content); 
+            $metas->meta_key_words = trim($metas->meta_key_words); 
+            $metas->meta_og_title =trim($metas->meta_og_title); 
+            $metas->meta_og_content =trim($metas->meta_og_content); 
+
+            $metas->save();
+        }    
+    }    
 
     public function removeLinkinDetails()
     {
