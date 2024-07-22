@@ -825,6 +825,10 @@ class crawlController extends Controller
 
             $new_details = str_replace($srcs, $replace, $details);
 
+            print_r($new_details);
+
+            die;
+
             $update = ['Detail'=>$new_details];
 
             DB::table('products')->where('id', $id)->update($update);
