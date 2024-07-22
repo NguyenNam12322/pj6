@@ -797,7 +797,7 @@ class crawlController extends Controller
 
                 foreach ($srcs as $vls) {
 
-                    $vls = 'https:'.$vls."\n";
+                    $vls = 'https:'.$vls;
 
                     $replace_img = public_path().'/uploads/product/'.$id.'/'.basename($vls);
 
@@ -810,7 +810,7 @@ class crawlController extends Controller
 
                     if(!empty($file_headers) && $file_headers[0] != 'HTTP/1.1 404 Not Found')
                     {
-                        file_put_contents($replace_img, file_get_contents($vls));
+                        file_put_contents($replace_img, file_get_contents(trim($vls)));
 
                        
                     }
