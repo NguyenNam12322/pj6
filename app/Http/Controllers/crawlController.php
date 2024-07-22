@@ -757,7 +757,7 @@ class crawlController extends Controller
     function replaceImageDMCL()
     {
 
-        $data = DB::table('products')->select('Detail','id')->orderBy('id','asc')->where('id','=',1490)->get();
+        $data = DB::table('products')->select('Detail','id')->orderBy('id','asc')->where('id','=',1489)->get();
 
         foreach ($data as $key => $values) {
 
