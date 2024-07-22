@@ -518,7 +518,7 @@ class crawlController extends Controller
 
     public function createMetaSeo()
     {
-        $data = DB::table('products')->select('Name', 'id')->where('id','>', 471)->get();
+        $data = DB::table('products')->select('Name', 'id')->where('id','>', 1301)->get();
 
         foreach ($data as $key => $value) {
 
