@@ -237,7 +237,7 @@
                             
 
 
-                        @if(!empty($arr_info_filter[$id_cate]))  
+                        @if(!empty($id_cate) && !empty($arr_info_filter[$id_cate]))  
 
                         <?php 
 
