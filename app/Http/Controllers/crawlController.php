@@ -172,6 +172,16 @@ class crawlController extends Controller
        
     }
 
+    public function showDataCrawl()
+    {
+        $products = DB::table('products')->select('Name','id')->where('id','>', 1301)->get();
+
+        foreach ($products as $key => $value) {
+
+            echo $value->Name.'<br>';
+        }
+    }
+
     public function uploadImg($images)
     {   
         $images = 'http://'.$images;
