@@ -812,7 +812,7 @@ class crawlController extends Controller
                     {
                         file_put_contents($replace_img, file_get_contents($vls));
 
-                        die;
+                       
                     }
                     else
                     {
