@@ -825,13 +825,15 @@ class crawlController extends Controller
 
             $new_details = str_replace($srcs, $replace, $details);
 
-            print_r($new_details);
+    
 
-            die;
+            $product = product::find($id);
 
-            $update = ['Detail'=>$new_details];
+            $product->Detail = $new_details;
 
-            DB::table('products')->where('id', $id)->update($update);
+            $product->save();
+
+
 
             echo "update thành công product_id ". $id;
 
