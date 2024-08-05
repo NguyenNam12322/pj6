@@ -1258,7 +1258,7 @@ class crawlController extends Controller
 
             echo "update thành công post có id crawl là $value->id \n";
 
-            sleep(2);
+            sleep(10);
         }
     }
 
