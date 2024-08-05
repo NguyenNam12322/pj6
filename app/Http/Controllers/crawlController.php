@@ -1262,16 +1262,23 @@ class crawlController extends Controller
 
             unset($data);
 
+            unset($links);
+
+            unset($title);
+
             unset($insert);
+
+            unset($update);
 
             unset($content);
 
             unset($shortContent);
 
             unset($html);
+
             unset($image);
 
-             unset($check_image);
+            unset($check_image);
 
             sleep(2);
         }
