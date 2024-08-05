@@ -1229,7 +1229,10 @@ class crawlController extends Controller
 
     public function createContentPostVtc()
     {
-        $link = DB::table('crawl_link')->select('link')->where('active',0)->get();
+
+        $now = Carbon::now();
+
+        $link = DB::table('crawl_link')->select('link','id')->where('active',0)->get();
 
         foreach ($link as $key => $value) {
 
@@ -1245,7 +1248,13 @@ class crawlController extends Controller
 
             $image = $html->find('.expNoEdit img', 0)->getAttribute('data-src');
 
-            dd($image);
+            $data = ['image'=>$image, 'title'=>$title, 'content'=>$content, 'shortcontent'=>$shortContent, 'id_user'=>1, 'link'=>$links,'active'=>0,'created_at'=>$now,'updated_at'=>$now];
+
+            $insert = DB::table('post1')->insert($data);
+
+            $update = DB::table('crawl_link')->where('id', $value->id)->update(['active' => 1]);
+
+            echo "update thành công post có id crawl là $value->id \n";
         }
     }
 
