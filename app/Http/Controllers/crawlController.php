@@ -1210,11 +1210,9 @@ class crawlController extends Controller
                  $link = 'https://vtcnews.vn/gia-dinh-78/trang-'.$i.'.html';
             }
 
-            
-
             $html = file_get_html(trim($link));
 
-            $link = $html->find('.title-1 a');
+            $link = $html->find('.title-1 a', 0);
 
             $link_href = [];
 
@@ -1227,9 +1225,28 @@ class crawlController extends Controller
             echo "crawl link trang $i thành công \n";
         }
 
-        
+    }
 
+    public function createContentPostVtc()
+    {
+        $link = DB::table('crawl_link')->select('link')->where('active',0)->get();
 
+        foreach ($link as $key => $value) {
+
+            $links = $value->link;
+
+            $html = file_get_html(trim($links));
+
+            $title = $html->find('h1', 0);
+
+            $content = $html->find('.edittor-content', 0);
+
+            $shortContent = $html->find('.content-wrapper h2', 0);
+
+            $image = $html->find('.expNoEdit img', 0)->src;
+
+            dd($image);
+        }
     }
 
 
