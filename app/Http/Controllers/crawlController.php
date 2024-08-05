@@ -1246,7 +1246,9 @@ class crawlController extends Controller
 
             $shortContent = $html->find('.content-wrapper h2', 0);
 
-            $image = $html->find('.expNoEdit img', 0)->getAttribute('data-src');
+            $check_image = !empty($html->find('.expNoEdit img', 0)->getAttribute('data-src'))?$html->find('.expNoEdit img', 0)->getAttribute('data-src'):'';
+
+            $image =  $check_image;
 
             $data = ['image'=>$image, 'title'=>$title, 'content'=>$content, 'shortcontent'=>$shortContent, 'id_user'=>1, 'link'=>$links,'active'=>0,'created_at'=>$now,'updated_at'=>$now];
 
