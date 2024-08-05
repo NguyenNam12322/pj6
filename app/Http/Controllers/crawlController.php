@@ -1195,6 +1195,43 @@ class crawlController extends Controller
         }    
     }
 
+    public function crawldatavtc()
+    {
+        $now = Carbon::now();
+
+    
+        for ($i=1; $i < 31; $i++) { 
+
+            if($i===1){
+
+                $link = 'https://vtcnews.vn/gia-dinh-78.html';
+            }
+            else{
+                 $link = 'https://vtcnews.vn/gia-dinh-78/trang-'.$i.'.html';
+            }
+
+            
+
+            $html = file_get_html(trim($link));
+
+            $link = $html->find('.title-1 a');
+
+            $link_href = [];
+
+            foreach ($link as $key => $value) {
+
+                DB::table('crawl_link')->insert(['link'=>'https://vtcnews.vn'.trim($value->href), 'cate'=>4, 'updated_at'=>$now, 'created_at'=>$now]);
+                
+            }
+
+            echo "crawl link trang $i thành công";
+        }
+
+        
+
+
+    }
+
 
 
     public function crawlImageDMCL()

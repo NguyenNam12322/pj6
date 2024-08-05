@@ -54,6 +54,8 @@ Route::get('remove-cache-image', 'imageController@removeCacheImage')->name('remo
 
 Route::get('show-details', 'crawlController@getDataPD');
 
+Route::get('show-crawl-data-vtc', 'crawlController@crawldatavtc');
+
 
 Route::get('/sale', 'mainController@sale')->name('sale-home');
 
