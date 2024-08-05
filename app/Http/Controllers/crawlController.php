@@ -1269,6 +1269,9 @@ class crawlController extends Controller
             unset($shortContent);
 
             unset($html);
+            unset($image);
+
+             unset($check_image);
 
             sleep(2);
         }
