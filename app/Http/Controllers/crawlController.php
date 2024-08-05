@@ -1262,6 +1262,14 @@ class crawlController extends Controller
 
             unset($data);
 
+            unset($insert);
+
+            unset($content);
+
+            unset($shortContent);
+
+            unset($html);
+
             sleep(2);
         }
     }
