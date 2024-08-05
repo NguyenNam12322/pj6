@@ -1224,7 +1224,7 @@ class crawlController extends Controller
                 
             }
 
-            echo "crawl link trang $i thành công";
+            echo "crawl link trang $i thành công \n";
         }
 
         
