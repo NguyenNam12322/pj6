@@ -1243,7 +1243,7 @@ class crawlController extends Controller
 
             $shortContent = $html->find('.content-wrapper h2', 0);
 
-            $image = $html->find('.expNoEdit img', 0)->src;
+            $image = $html->find('.expNoEdit img', 0)->getAttribute('data-src');
 
             dd($image);
         }
