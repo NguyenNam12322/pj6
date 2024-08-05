@@ -1230,7 +1230,7 @@ class crawlController extends Controller
     public function createContentPostVtc()
     {
 
-        $now = Carbon::now();
+        // $now = Carbon::now();
 
         $link = DB::table('crawl_link')->select('link','id')->where('active',0)->get();
 
@@ -1250,7 +1250,7 @@ class crawlController extends Controller
 
             $image =  $check_image;
 
-            $data = ['image'=>$image, 'title'=>$title, 'content'=>$content, 'shortcontent'=>$shortContent, 'id_user'=>1, 'link'=>$links,'active'=>0,'created_at'=>$now,'updated_at'=>$now];
+            $data = ['image'=>$image, 'title'=>$title, 'content'=>$content, 'shortcontent'=>$shortContent, 'id_user'=>1, 'link'=>$links,'active'=>0];
 
             $insert = DB::table('post1')->insert($data);
 
