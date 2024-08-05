@@ -1246,7 +1246,7 @@ class crawlController extends Controller
 
             $shortContent = $html->find('.content-wrapper h2', 0);
 
-            $check_image = !empty($html->find('.expNoEdit img', 0)->getAttribute('data-src'))?$html->find('.expNoEdit img', 0)->getAttribute('data-src'):'';
+            $check_image = !empty($html->find('.expNoEdit img', 0))?$html->find('.expNoEdit img', 0)->getAttribute('data-src'):'';
 
             $image =  $check_image;
 
