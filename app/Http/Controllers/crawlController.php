@@ -1252,6 +1252,9 @@ class crawlController extends Controller
 
             $data = ['image'=>$image, 'title'=>$title, 'content'=>$content, 'shortcontent'=>$shortContent, 'id_user'=>1, 'link'=>$links,'active'=>0,'created_at'=>$now,'updated_at'=>$now];
 
+            dd($data);
+            
+
             $insert = DB::table('post1')->insert($data);
 
             $update = DB::table('crawl_link')->where('id', $value->id)->update(['active' => 1]);
