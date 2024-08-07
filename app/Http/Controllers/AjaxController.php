@@ -800,7 +800,7 @@ class AjaxController extends Controller
             $price = trim($data_Product->Price);
         }
              
-        Cart::add(['id' => $id, 'name' => $data_Product->Name,  'qty' => 1, 'price' => $price, 'weight' => '500',  'options' => ['link' => $data_Product->Link, 'gift'=>$gift??'', 'transportation_cost'=> intval($price)-intval($newPrice)]]);
+        Cart::add(['id' => $id, 'name' => $data_Product->Name,  'qty' => 1, 'price' => $price, 'weight' => '500',  'options' => ['link' => $data_Product->Link, 'gift'=>$gift??'', 'transportation_cost'=> intval($newPrice)]]);
 
         $data_cart = Cart::content();
 
