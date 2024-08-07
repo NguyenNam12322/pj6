@@ -127,13 +127,17 @@
                         $arrPrice = [];
                         $key = 0;
 
-                        dd($data_cart->all());
+
                         
                     ?>
                     @foreach($data_cart as $data)
 
-                        <?php 
 
+
+                        <?php 
+                            dd($data);
+
+                            
                             $price = (int)$data->price*(int)$data->qty;
                             $key++;
                             array_push($arrPrice, $price);
