@@ -2723,33 +2723,35 @@
 
 
     function addToCart(id) {
+
+        console.log(arval_price);
     
-    $.ajaxSetup({
-        headers: {
-            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-        }
-    });
+        // $.ajaxSetup({
+        //     headers: {
+        //         'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        //     }
+        // });
 
-    $.ajax({
-        type: 'POST',
-        url: "{{ route('cart') }}",
-        data: {
-            product_id: id,
-            gift_check:$('#gift_checked').val()
+        // $.ajax({
+        //     type: 'POST',
+        //     url: "{{ route('cart') }}",
+        //     data: {
+        //         product_id: id,
+        //         gift_check:$('#gift_checked').val()
+                   
+        //     },
+        //     beforeSend: function() {
                
-        },
-        beforeSend: function() {
-           
-            $('.loader').show();
+        //         $('.loader').show();
 
-        },
-        success: function(result){
+        //     },
+        //     success: function(result){
 
-           window.location.href = '{{ route('show-cart') }}'; 
+        //        window.location.href = '{{ route('show-cart') }}'; 
 
-        }
-    });
-}      
+        //     }
+        // });
+    }      
     
     // function addToCart(id) {
 
