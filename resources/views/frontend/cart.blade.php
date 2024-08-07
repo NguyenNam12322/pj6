@@ -150,9 +150,14 @@
                             <ul style="list-style-type: disc;color: #888888;margin-left: 15px;"> </ul>
                         </div>
                         <div class="cart_col_3">
-                            <div class="col_price code1"> <span class="total-item-price">{{ number_format($data->price , 0, ',', '.')}} + 
+                            <div class="col_price code1"> <span class="total-item-price">{{ number_format($data->price , 0, ',', '.')}} 
+                                @if(($data->options)['transportation_cost']>0)
 
-                                {{ number_format(($data->options)['transportation_cost'] , 0, ',', '.') }}</span>
+                                + {{ number_format(($data->options)['transportation_cost'] , 0, ',', '.') }}
+
+                                @endif
+
+                            </span>
 
 
                              đ </div>
