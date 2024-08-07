@@ -127,7 +127,7 @@
                         $arrPrice = [];
                         $key = 0;
 
-                        dd($data_cart);
+                        dd($data_cart->options);
                         
                     ?>
                     @foreach($data_cart as $data)
