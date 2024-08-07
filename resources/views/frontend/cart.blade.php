@@ -135,7 +135,7 @@
 
 
                         <?php 
-                            dd($data->options);
+                            dd(($data->options)['transportation_cost']);
 
 
                             $price = (int)$data->price*(int)$data->qty;
