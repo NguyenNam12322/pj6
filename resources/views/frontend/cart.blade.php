@@ -136,7 +136,7 @@
 
                         <?php 
                            
-                            $price = (int)$data->price*(int)$data->qty;
+                            $price = ( (int)$data->price + (int)($data->options)['transportation_cost']) *(int)$data->qty;
                             $key++;
                             array_push($arrPrice, $price);
 
@@ -150,7 +150,9 @@
                             <ul style="list-style-type: disc;color: #888888;margin-left: 15px;"> </ul>
                         </div>
                         <div class="cart_col_3">
-                            <div class="col_price code1"> <span class="total-item-price">{{ number_format($data->price , 0, ',', '.')}} + {{ ($data->options)['transportation_cost'] }}</span>
+                            <div class="col_price code1"> <span class="total-item-price">{{ number_format($data->price , 0, ',', '.')}} + 
+
+                                {{ number_format(($data->options)['transportation_cost'] , 0, ',', '.') }}</span>
 
 
                              đ </div>
