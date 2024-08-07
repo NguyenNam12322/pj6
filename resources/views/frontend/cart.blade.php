@@ -135,9 +135,9 @@
 
 
                         <?php 
-                            dd($data);
+                            dd($data->options);
 
-                            
+
                             $price = (int)$data->price*(int)$data->qty;
                             $key++;
                             array_push($arrPrice, $price);
