@@ -47,7 +47,7 @@
                 <tr>
                     <td>Logo</td>
                     @if(!empty($info->logo))
-                    <img src="{{ $info->logo }}">
+                    <img src="{{ asset($info->logo) }}">
 
                     @endif
 

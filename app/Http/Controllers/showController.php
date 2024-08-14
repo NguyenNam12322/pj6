@@ -155,7 +155,7 @@ class showController extends Controller
         $input['tdht'] = $tdht;
         $input['kn'] = $kn;
 
-        DB::table('show_info_header_footer')->insert($input);
+        DB::table('show_info_header_footer')->where('id', 1)->update($input);
 
         echo "thành công";
 
