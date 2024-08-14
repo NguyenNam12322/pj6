@@ -576,6 +576,10 @@
                 </div>
             </div>
         </div>
+        <?php
+         $info = DB::table('show_info_header_footer')->where('id',1)->get()->first();
+
+         ?>
         <div class="ft-new-info">
             <div class="title-if">HỆ THỐNG SIÊU THỊ MUA SẮM TẠI KHO 
             </div>
@@ -631,11 +635,11 @@
                 <div class="title-if">ĐỊA CHỈ MUA HÀNG</div>
                 <p>
                     <b>Văn phòng đại diện </b><br>
-                    Địa chỉ: 
+                    Địa chỉ: {{ @$info->vpdd }}
                 </p>
                 <p>
                     <b>Kho hàng</b><br>
-                    Địa chỉ: 
+                    Địa chỉ: {{ @$info->kho }}
                 </p>
                
             </div>
@@ -666,10 +670,10 @@
                 <div class="item-n item-st">
                     <div class="title">Tổng đài hỗ trợ</div>
                     <div class="list">
-                        <a href="#" rel="nofollow">Hotline: 0123.456.789</a>
-                        <a href="#" rel="nofollow">Gọi mua: 0123.456.789</a>
-                        <a href="#" rel="nofollow">Kỹ thuật: 0123.456.789</a>
-                        <a href="#" rel="nofollow">Khiếu nại: 0123.456.789</a>
+                        <a href="#" rel="nofollow">Hotline: {{ @$info->tdht }}</a>
+                        <a href="#" rel="nofollow">Gọi mua: {{ @$info->tdht }}</a>
+                        <a href="#" rel="nofollow">Kỹ thuật: {{ @$info->tdht }}</a>
+                        <a href="#" rel="nofollow">Khiếu nại: {{ @$info->kn }}</a>
                     </div>
                 </div>
             </div>

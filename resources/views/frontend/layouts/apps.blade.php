@@ -20,6 +20,10 @@
     
            
 
+
+            $info = DB::table('show_info_header_footer')->select('logo')->where('id',1)->get()->first();
+   
+   
           ?>
         <meta charset="utf-8" />
 
@@ -1023,7 +1027,7 @@
                                                 <div class="span4 ">
                                                     <h1 id="nk-logo">
                                                         <a href="/">
-                                                        <img fetchpriority="high" loading="eager" src="{{ asset('images/template/logo2.jpg') }}"  alt="">
+                                                        <img fetchpriority="high" loading="eager" src="{{ asset($info->logo) }}"  alt="">
                                                         </a>
                                                     </h1>
                                                 </div>

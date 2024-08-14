@@ -1,6 +1,7 @@
 <?php
     $cart = Gloudemans\Shoppingcart\Facades\Cart::content();
     $number_cart = count($cart);
+     $info = DB::table('show_info_header_footer')->select('logo')->where('id',1)->get()->first();
     ?>   
 <script>
  
@@ -272,7 +273,7 @@
                                             <div class="span4 ">
                                                 <h1 id="nk-logo">
                                                     <a href="/">
-                                                    <img fetchpriority="high" loading="eager" src="{{ asset('images/template/logo2.jpg') }}" alt="">
+                                                    <img fetchpriority="high" loading="eager" src="{{ asset($info->logo) }}" alt="">
                                                     </a>
                                                 </h1>
                                             </div>
