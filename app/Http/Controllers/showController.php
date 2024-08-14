@@ -137,7 +137,7 @@ class showController extends Controller
 
             $name =  $file_upload->getClientOriginalName();
 
-            $filePath = $file_upload->storeAs('uploads', $name, 'public');
+            $filePath = $file_upload->storeAs('images/template/logo', $name, 'public');
 
             $input['logo'] = $filePath;
         }
