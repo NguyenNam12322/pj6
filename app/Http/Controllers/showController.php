@@ -127,5 +127,36 @@ class showController extends Controller
         return view('header_footer.index');
     }
 
+    public function addInfoHeaderFooter(Request $request)
+    {
+        $logo = $request->logo;
+
+        if ($request->hasFile('logo')) {
+
+            $file_upload = $request->file('logo');
+
+            $name =  $file_upload->getClientOriginalName();
+
+            $filePath = $file_upload->storeAs('uploads', $name, 'public');
+
+            $input['logo'] = $filePath;
+        }
+
+        dd($input['logo']);
+
+        $vpdd = $request->vpdd;
+        $kho = $request->kho;
+        $tdht = $request->tdht;
+
+        $kn = $request->kn;
+
+        $input['vpdd'] = $vpdd;
+        $input['kho'] = $kho;
+        $input['tdht'] = $tdht;
+        $input['kn'] = $kn;
+
+
+    }
+
 
 }

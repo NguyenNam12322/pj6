@@ -348,6 +348,10 @@ Route::group(['prefix' => 'admins','middleware' => 'auth'], function() {
     
     Route::post('info-pop-up', 'showController@addPopup')->name('add-popup');
 
+
+    Route::post('info-footer-header', 'showController@addInfoHeaderFooter')->name('info-footer-header');
+
+
     Route::post('user-edit-pass', 'customnUserController@changePassWord')->name('changepass');
 
     Route::post('add-image-background', 'showController@addBackgroundSite')->name('add-image-background');

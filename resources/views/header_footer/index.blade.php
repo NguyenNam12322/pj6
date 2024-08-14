@@ -34,7 +34,8 @@
     </ul> -->
     <p class="sub-section-header">Header footer</p>
    
-    <form method="post" enctype="multipart/form-data">
+    <form method="post" enctype="multipart/form-data" action="{{ route('info-footer-header') }}">
+        @csrf
         <table>
             <tbody>
 
