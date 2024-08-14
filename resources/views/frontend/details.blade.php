@@ -891,7 +891,7 @@
                                 <div class="add-service">
                                     @if(!empty($data->InputPrice))
 
-                                         <input type="checkbox" id="input-price" name="price-add-1" class="price-add-1" value="{{ $data->InputPrice }}" >
+                                         <input type="checkbox" id="input-price-mb" name="price-add-1" class="price-add-1" value="{{ $data->InputPrice }}" >
 
                                           <label for="age1" >Giá lắp đặt :{{  str_replace(',' ,'.', number_format($data->InputPrice))  }}&#x20AB  </label>
 
@@ -901,7 +901,7 @@
 
                                     @if(!empty($data->manuPrice))
 
-                                         <input type="checkbox" id="inputs-price" name="price-add-2" class="price-add-2" value="{{ $data->manuPrice }}" >
+                                         <input type="checkbox" id="inputs-price-mb" name="price-add-2" class="price-add-2" value="{{ $data->manuPrice }}" >
 
                                           <label for="age1" >Giá vận chuyển : {{  str_replace(',' ,'.', number_format($data->manuPrice))  }}&#x20AB </label>
 
@@ -3008,43 +3008,7 @@
 
     })
 
-    // if ($("#inputs-price").is(":checked")) {
-
-    //     arval_price.push(values);
-
-    //     const sum = arval_price
-    //       .filter(value => typeof value === "number")
-    //       .reduce((acc, curr) => acc + curr, 0);
-
-    //     new_price = price+sum;
-
-    //     price_format = new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(new_price);
-
-          
-    //     $('.show-price-desktop h3').text(price_format.replace('đ', '').trim());
-
-    // } else {
-
-    //     const index = arval_price.indexOf(values);
-    //     if (index > -1) {
-    //       arval_price.splice(index, 1); 
-    //     }
-
-    //      const sum = arval_price
-    //       .filter(value => typeof value === "number")
-    //       .reduce((acc, curr) => acc + curr, 0);
-
-       
-
-    //     new_price = price+sum
-
-    //      price_format = new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(new_price);
-
-          
-    //     $('.show-price-desktop h3').text(price_format.replace('đ', '').trim());
-
-
-    // }
+    
     val = $("#input-price").val();
     $("#input-price").change(function(){
          if ($("#input-price").is(":checked")) {
@@ -3082,14 +3046,90 @@
 
     })
 
-   
 
+    values = $("#inputs-price-mb").val();
 
+    price = {{  $data->Price }};
+
+    arval_price = [];
+
+    $("#inputs-price-mb").change(function(){
+
+         if ($("#inputs-price-mb").is(":checked")) {
+
+            if(arval_price.length===0){
 
     
+                price_pd = price;
 
+            }
+            else{
+                 price_pd = arval_price[0];
+                
+            }
+            new_price = parseInt(price_pd)+ parseInt(values);
+
+            arval_price =[new_price];
+
+            price_format = new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(new_price);
+
+            $('.show-price-desktop h3').text(price_format.replace('đ', '').trim());
+
+        } else {
+
+            price_pd = arval_price[0];
+
+             new_price = parseInt(price_pd)- parseInt(values);
+
+            arval_price =[new_price];
+
+            price_format = new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(new_price);
+
+            $('.show-price-desktop h3').text(price_format.replace('đ', '').trim());
+        }
+
+
+    })
 
     
+    val = $("#input-price-mb").val();
+    $("#input-price-mb").change(function(){
+         if ($("#input-price-mb").is(":checked")) {
+
+            if(arval_price.length===0){
+                
+                price_pd = price;
+
+            }
+            else{
+                 price_pd = arval_price[0];
+                
+            }
+            new_price = parseInt(price_pd)+ parseInt(val);
+
+            arval_price =[new_price];
+
+            price_format = new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(new_price);
+
+            $('.show-price-desktop h3').text(price_format.replace('đ', '').trim());
+
+        } else {
+
+            price_pd = arval_price[0];
+
+            new_price = parseInt(price_pd)- parseInt(val);
+
+            arval_price =[new_price];
+
+            price_format = new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(new_price);
+
+            $('.show-price-desktop h3').text(price_format.replace('đ', '').trim());
+        }
+
+
+    })
+
+
     $('#carousel').owlCarousel({
         margin:10,
         nav:false,
