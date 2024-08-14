@@ -34,6 +34,10 @@
             -o-animation: my 1700ms infinite;
             animation: my 1700ms infinite;
         }
+
+        .pdetail-status{
+            margin-top:20px;
+        }
     }
     @media only screen and (min-width: 601px) {
 
