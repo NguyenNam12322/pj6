@@ -1,7 +1,7 @@
 <?php
     $cart = Gloudemans\Shoppingcart\Facades\Cart::content();
     $number_cart = count($cart);
-     $info = DB::table('show_info_header_footer')->select('logo')->where('id',1)->get()->first();
+     $info = DB::table('show_info_header_footer')->select('logo','tdht')->where('id',1)->get()->first();
     ?>   
 <script>
  
@@ -324,7 +324,7 @@
                                                                         <div class="fas-phones phones-hotline"> 
 
 
-                                                                            <a href="tel: 0913011888" class="header__history tin-km"><i class="nki-Phone"></i> Hotline:0123.456.789</a> </div>
+                                                                            <a href="tel: 0913011888" class="header__history tin-km"><i class="nki-Phone"></i> Hotline:{{ $info->tdht }}</a> </div>
                                                                         <!-- <a href="/tra-cuu.html"> Tra cứu đơn hàng </a> -->
                                                                     </li>
                                                                     <li id="login_form">
