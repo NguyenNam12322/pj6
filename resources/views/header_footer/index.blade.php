@@ -36,7 +36,7 @@
 
     <?php 
 
-        $info = DB::table('show_info_header_footer')->where('id',1)-get()->first();
+        $info = DB::table('show_info_header_footer')->where('id',1)->get()->first();
     ?>
    
     <form method="post"  action="{{ route('info-footer-header') }}" enctype="multipart/form-data">
