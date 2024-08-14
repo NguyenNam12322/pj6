@@ -26,14 +26,14 @@
         .tb-setup td{ padding:4px}
     </style>
     <!-- tabs -->
-    <ul id="tabnav">
+    <!-- <ul id="tabnav">
         <li id="tab_1"><a href="?opt=system&amp;view=store-design&amp;section=header">Phần header</a></li>
         <li id="tab_2"><a href="?opt=system&amp;view=store-design&amp;section=popup">Banner Pop-Up</a></li>
         <li id="tab_3" class="tab-select"><a href="?opt=system&amp;view=store-design&amp;section=background">Hình nền website</a></li>
         <li id="tab_4"><a href="?opt=system&amp;view=store-design&amp;section=other">Thông tin khác</a></li>
-    </ul>
-    <p class="sub-section-header">Thay Ảnh nền</p>
-    <p style="color:#F00; margin-bottom:20px">Bạn có thể thay nền website bằng màu hoặc hình ảnh. Với file ảnh, yêu cầu là  .jpg, .gif, hoặc .png và dung lượng tối đa 300KB.</p>
+    </ul> -->
+    <p class="sub-section-header">Header footer</p>
+   
     <form method="post" enctype="multipart/form-data">
         <table>
             <tbody>
@@ -49,7 +49,7 @@
                     <td>Văn phòng đại diện: </td>
                     <td>
                        
-                        <input type="text" class="color" name="vpdd" value="">
+                        <input type="text" class="color" name="vpdd" value="" required>
                     </td>
                 </tr>
 
@@ -57,7 +57,7 @@
                     <td>Kho hàng: </td>
                     <td>
                        
-                        <input type="text" class="color" name="kho" value="">
+                        <input type="text" class="color" name="kho" value="" required>
                     </td>
                 </tr>
 
@@ -65,7 +65,7 @@
                     <td>Tổng đài hỗ trợ: </td>
                     <td>
                        
-                        <input type="text" class="color" name="tdht" value="">
+                        <input type="text" class="color" name="tdht" value="" required>
                     </td>
                 </tr>
 
@@ -73,7 +73,7 @@
                     <td>Khiếu nại: </td>
                     <td>
                        
-                        <input type="text" class="color" name="kn" value="">
+                        <input type="text" class="color" name="kn" value="" required>
                     </td>
                 </tr>
                 
