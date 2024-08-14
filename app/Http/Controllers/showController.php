@@ -157,7 +157,7 @@ class showController extends Controller
 
         DB::table('show_info_header_footer')->where('id', 1)->update($input);
 
-       return->redirect->back();
+       return->redirect()->back();
 
 
     }
