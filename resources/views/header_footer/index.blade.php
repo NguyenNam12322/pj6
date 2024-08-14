@@ -33,26 +33,51 @@
     <form method="post" enctype="multipart/form-data">
         <table>
             <tbody>
+
                 <tr>
-                    <td>Dùng màu nền: </td>
+                    <td>Logo</td>
                     <td>
-                        <script type="text/javascript" src="/includes/js/jscolor/jscolor.js"></script>
-                        <input type="text" class="color" name="background_color" value="FFFFFF" autocomplete="off" style="background-image: none; background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);"> (&lt;- click chuột vào ô để chọn màu)
+                        <input type="file" name="logo" size="50"> 
                     </td>
                 </tr>
+
                 <tr>
-                    <td>Dùng file ảnh</td>
+                    <td>Văn phòng đại diện: </td>
                     <td>
-                        <input type="file" name="background_image" size="50"> 
+                       
+                        <input type="text" class="color" name="vpdd" value="FFFFFF">
                     </td>
                 </tr>
+
+                <tr>
+                    <td>Kho hàng: </td>
+                    <td>
+                       
+                        <input type="text" class="color" name="kho" value="FFFFFF">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Tổng đài hỗ trợ: </td>
+                    <td>
+                       
+                        <input type="text" class="color" name="tdht" value="FFFFFF">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Khiếu nại: </td>
+                    <td>
+                       
+                        <input type="text" class="color" name="kn" value="FFFFFF">
+                    </td>
+                </tr>
+                
             </tbody>
         </table>
-        <p class="group-actions">
-            <span id="status_menu"><input class="btn" id="submit-collection-btn" name="commit" type="submit" value="Cập nhật >>"> </span>
-        </p>
-        <input type="hidden" name="type" value="background">
-        <input type="hidden" name="process" value="yes">
+        
+        <button type="submit">submit</button>
+       
     </form>
     <script>
         function add_form_setting(){
