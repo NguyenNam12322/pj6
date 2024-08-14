@@ -1,5 +1,11 @@
 @extends('layouts.app')
 
+<style type="text/css">
+    .position{
+        position: static !important;
+    }
+</style>
+
 @section('content')
 <div class="paddings">
     <div id="theme-edit-announcement" class="announcement box2 c">
