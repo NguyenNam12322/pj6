@@ -124,6 +124,13 @@
 </li>
 
 <li class="nav-item">
+    <a href="{{ route('header') }}"
+       class="nav-link">
+        <p>Header footer</p>
+    </a>
+</li>
+
+<li class="nav-item">
     <a href="{{ route('makers.index') }}"
        class="nav-link {{ Request::is('makers*') ? 'active' : '' }}">
         <p>Hãng phân phối</p>

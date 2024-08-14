@@ -1,3 +1,6 @@
+@extends('layouts.app')
+
+@section('content')
 <div class="paddings">
     <div id="theme-edit-announcement" class="announcement box2 c">
         <p><b style="color:#F00">Chú ý</b>: Chức năng này chỉ áp dụng với các giao diện đã được cài đặt cho phép thay đổi 1 số thành phần của giao diện. Biến template sử dụng $settings (global)</p>
@@ -62,3 +65,4 @@
         }
     </script>	
 </div>
+@endsection
