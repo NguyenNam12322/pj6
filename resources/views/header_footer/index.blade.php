@@ -4,6 +4,10 @@
     .position{
         position: static !important;
     }
+
+    tr input{
+        width: 100%;
+    }
 </style>
 
 @section('content')
@@ -45,7 +49,7 @@
                     <td>Văn phòng đại diện: </td>
                     <td>
                        
-                        <input type="text" class="color" name="vpdd" value="FFFFFF">
+                        <input type="text" class="color" name="vpdd" value="">
                     </td>
                 </tr>
 
@@ -53,7 +57,7 @@
                     <td>Kho hàng: </td>
                     <td>
                        
-                        <input type="text" class="color" name="kho" value="FFFFFF">
+                        <input type="text" class="color" name="kho" value="">
                     </td>
                 </tr>
 
@@ -61,7 +65,7 @@
                     <td>Tổng đài hỗ trợ: </td>
                     <td>
                        
-                        <input type="text" class="color" name="tdht" value="FFFFFF">
+                        <input type="text" class="color" name="tdht" value="">
                     </td>
                 </tr>
 
@@ -69,7 +73,7 @@
                     <td>Khiếu nại: </td>
                     <td>
                        
-                        <input type="text" class="color" name="kn" value="FFFFFF">
+                        <input type="text" class="color" name="kn" value="">
                     </td>
                 </tr>
                 
