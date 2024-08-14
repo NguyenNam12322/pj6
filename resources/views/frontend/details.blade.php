@@ -3073,7 +3073,7 @@
 
             price_format = new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(new_price);
 
-            $('.show-price-desktop h3').text(price_format.replace('đ', '').trim());
+            $('.show-price-mobile h3').text(price_format.replace('đ', '').trim());
 
         } else {
 
@@ -3085,7 +3085,7 @@
 
             price_format = new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(new_price);
 
-            $('.show-price-desktop h3').text(price_format.replace('đ', '').trim());
+            $('.show-price-mobile h3').text(price_format.replace('đ', '').trim());
         }
 
 
@@ -3111,7 +3111,7 @@
 
             price_format = new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(new_price);
 
-            $('.show-price-desktop h3').text(price_format.replace('đ', '').trim());
+            $('.show-price-mobile h3').text(price_format.replace('đ', '').trim());
 
         } else {
 
@@ -3123,7 +3123,7 @@
 
             price_format = new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(new_price);
 
-            $('.show-price-desktop h3').text(price_format.replace('đ', '').trim());
+            $('.show-price-mobile h3').text(price_format.replace('đ', '').trim());
         }
 
 
