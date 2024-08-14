@@ -342,6 +342,8 @@ Route::group(['prefix' => 'admins','middleware' => 'auth'], function() {
 
     Route::get('delete-link-add', 'showController@deleteLinkAdd')->name('delete-link-add');
 
+    Route::get('header-footer', 'showController@index');
+
     Route::get('changepass', 'mainController@changepass')->name('changepassview');
     
     Route::post('info-pop-up', 'showController@addPopup')->name('add-popup');

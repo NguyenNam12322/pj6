@@ -122,5 +122,10 @@ class showController extends Controller
 
     }
 
+    public function index()
+    {
+        return view('header_footer.index');
+    }
+
 
 }
