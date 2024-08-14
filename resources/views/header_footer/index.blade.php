@@ -33,6 +33,11 @@
         <li id="tab_4"><a href="?opt=system&amp;view=store-design&amp;section=other">Thông tin khác</a></li>
     </ul> -->
     <p class="sub-section-header">Header footer</p>
+
+    <?php 
+
+        $info = DB::table('show_info_header_footer')->where('id',1)-get()->first();
+    ?>
    
     <form method="post"  action="{{ route('info-footer-header') }}" enctype="multipart/form-data">
         @csrf
@@ -41,6 +46,11 @@
 
                 <tr>
                     <td>Logo</td>
+                    @if(!empty($info->logo))
+                    <img src="{{ $info->logo }}">
+
+                    @endif
+
                     <td>
                         <input type="file" name="logo" size="50"> 
                     </td>
@@ -50,7 +60,7 @@
                     <td>Văn phòng đại diện: </td>
                     <td>
                        
-                        <input type="text" class="color" name="vpdd" value="" required>
+                        <input type="text" class="color" name="vpdd" value="{{ @$info->vpdd }}" required>
                     </td>
                 </tr>
 
@@ -58,7 +68,7 @@
                     <td>Kho hàng: </td>
                     <td>
                        
-                        <input type="text" class="color" name="kho" value="" required>
+                        <input type="text" class="color" name="kho" value="{{ @$info->kho }}" required>
                     </td>
                 </tr>
 
@@ -66,7 +76,7 @@
                     <td>Tổng đài hỗ trợ: </td>
                     <td>
                        
-                        <input type="text" class="color" name="tdht" value="" required>
+                        <input type="text" class="color" name="tdht" value="{{ @$info->tdht }}" required>
                     </td>
                 </tr>
 
@@ -74,7 +84,7 @@
                     <td>Khiếu nại: </td>
                     <td>
                        
-                        <input type="text" class="color" name="kn" value="" required>
+                        <input type="text" class="color" name="kn" value="{{ @$info->kn }}" required>
                     </td>
                 </tr>
                 

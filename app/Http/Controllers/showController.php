@@ -142,7 +142,7 @@ class showController extends Controller
             $input['logo'] = $filePath;
         }
 
-        dd($input['logo']);
+       
 
         $vpdd = $request->vpdd;
         $kho = $request->kho;
@@ -154,6 +154,10 @@ class showController extends Controller
         $input['kho'] = $kho;
         $input['tdht'] = $tdht;
         $input['kn'] = $kn;
+
+        DB::table('show_info_header_footer')->insert($input);
+
+        echo "thành công";
 
 
     }
