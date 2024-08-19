@@ -102,6 +102,15 @@
             width: auto !important;
             }
         </style>
+                <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16676362450">
+                </script>
+                <script>
+                  window.dataLayer = window.dataLayer || [];
+                  function gtag(){dataLayer.push(arguments);}
+                  gtag('js', new Date());
+
+                  gtag('config', 'AW-16676362450');
+                </script>
     </head>
     <script>
         function getCookie(name) {

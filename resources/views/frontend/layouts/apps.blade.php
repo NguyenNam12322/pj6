@@ -139,7 +139,16 @@
          });
         </script>
 
-       
+       <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16676362450">
+        </script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'AW-16676362450');
+        </script>
        <!--  <noscript><img height="1" width="1" style="display:none"
           src="https://www.facebook.com/tr?id=481349662401312&ev=PageView&noscript=1"
         /></noscript> -->
