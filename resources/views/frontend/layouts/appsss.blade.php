@@ -102,15 +102,26 @@
             width: auto !important;
             }
         </style>
-                <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16676362450">
-                </script>
-                <script>
-                  window.dataLayer = window.dataLayer || [];
-                  function gtag(){dataLayer.push(arguments);}
-                  gtag('js', new Date());
+        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16676362450">
+        </script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
 
-                  gtag('config', 'AW-16676362450');
-                </script>
+          gtag('config', 'AW-16676362450');
+        </script>
+
+        <!-- Event snippet for Lượt xem trang conversion page -->
+        <script>
+          gtag('event', 'conversion', {
+              'send_to': 'AW-16676362450/4NESCJ6vz8sZENKx9I8-',
+              'value': 1.0,
+              'currency': 'VND'
+          });
+        </script>
+
+
     </head>
     <script>
         function getCookie(name) {

@@ -149,6 +149,15 @@
 
           gtag('config', 'AW-16676362450');
         </script>
+
+        <!-- Event snippet for Lượt xem trang conversion page -->
+        <script>
+          gtag('event', 'conversion', {
+              'send_to': 'AW-16676362450/4NESCJ6vz8sZENKx9I8-',
+              'value': 1.0,
+              'currency': 'VND'
+          });
+        </script>
        <!--  <noscript><img height="1" width="1" style="display:none"
           src="https://www.facebook.com/tr?id=481349662401312&ev=PageView&noscript=1"
         /></noscript> -->
