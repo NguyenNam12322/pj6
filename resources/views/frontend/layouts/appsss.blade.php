@@ -352,7 +352,7 @@
                                                                     </li>
                                                                     <li id="login_form">
                                                                         <!-- <a href="login.html?return_url=index.php" class="nk-text-login"> -->
-                                                                       <a href="#">Tin tức </a>
+                                                                       <a href="#">Tư vấn mua sắm </a>
                                                                     </li>
                                                                     
                                                                 </ul>
