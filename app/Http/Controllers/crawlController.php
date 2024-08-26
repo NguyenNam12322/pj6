@@ -128,14 +128,13 @@ class crawlController extends Controller
 
 
 
-        $arPD = json_decode($pdtv);
+        $arPD = json_decode($pdtv->product_id);
 
        
 
-        $pd = product::select('Name')->whereIn('id', $arPD->product_id)->get();
+        $pd = product::select('Name')->whereIn('id', $arPD)->get();
 
-        dd($pd);
-
+        
         foreach ($pd as $key => $value) {
             echo $value->Name.'<br>';
         }
