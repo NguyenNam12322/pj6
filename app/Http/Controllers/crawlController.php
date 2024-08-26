@@ -134,6 +134,8 @@ class crawlController extends Controller
 
         $pd = product::select('Name')->whereIn('id', $arPD->product_id)->get();
 
+        dd($pd);
+
         foreach ($pd as $key => $value) {
             echo $value->Name.'<br>';
         }
