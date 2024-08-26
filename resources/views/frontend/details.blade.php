@@ -2008,7 +2008,7 @@
 
                             @if($data['Quantily']>0)
                             <div class="pdetail-add-to-cart add-to-cart">
-                                <form class="inline">
+                                <form class="inline" style="width:100%">
                                     <input type="hidden" name="productId" value="19439">
                                     <!-- <div class="product-quantity">
                                         <input type="text" class="quantity-field" readonly="readonly" name="qty" value="1">
@@ -2024,7 +2024,7 @@
                                 @if((int)$data['Price']>0)
                                  <button type="button" class="btn btn-lg btn-add-cart btn-add-cart redirectCart cartSP" onclick="addToSuport({{ $data->id }})">GỌI LẠI CHO TÔI <br>(Tư vấn tận tình, chu đáo)</button>
 
-                                 
+
                                  @endif 
                                 <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
                                     Launch demo modal
