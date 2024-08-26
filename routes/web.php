@@ -110,6 +110,8 @@ Route::get('update-order-flash-deal', 'flashdealController@dealOrder')->name('or
 
 Route::get('sitemap_article.xml', 'sitemapController@sitemapChildBlog');
 
+Route::get('sitemap_product.xml', 'sitemapController@sitemapChildProduct');
+
 // Route::get('inCrawl', 'crawlController@allproduct');
 
 Route::get('/test-crawl', 'crawlController@showDataCrawl');
