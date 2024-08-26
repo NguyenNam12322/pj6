@@ -12,6 +12,6 @@
 	@endforeach    
     @endif
 
-    <url>
+   
 
 </urlset>
