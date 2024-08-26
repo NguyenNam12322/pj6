@@ -2021,7 +2021,11 @@
                                     <button type="button" class="btn btn-lg btn-add-cart btn-add-cart redirectCart">LIÊN HỆ <br></button>
                                     @endif
                                 </form>
+                                @if((int)$data['Price']>0)
                                  <button type="button" class="btn btn-lg btn-add-cart btn-add-cart redirectCart cartSP" onclick="addToSuport({{ $data->id }})">GỌI LẠI CHO TÔI <br>(Tư vấn tận tình, chu đáo)</button>
+
+                                 
+                                 @endif 
                                 <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
                                     Launch demo modal
                                     </button> -->
