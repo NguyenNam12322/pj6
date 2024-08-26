@@ -124,7 +124,10 @@ class crawlController extends Controller
 
     public function showPdTV()
     {
-        $pdtv = groupProduct::find(14);
+
+        $tv = $_GET['id'];
+        
+        $pdtv = groupProduct::find($tv);
 
 
 
