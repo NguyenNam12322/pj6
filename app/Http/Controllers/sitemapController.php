@@ -384,11 +384,11 @@ class sitemapController extends Controller
    {
     $blog = post::take(160)->OrderBy('id', 'desc')->get();
 
-    if($blog->count()>0){
-         return response()->view('sitemap.childs_blog', [
-                'blog' => $blog
-        ])->header('Content-Type', 'text/xml');
-    }
+    
+    return response()->view('sitemap.childs_blog', [
+            'blog' => $blog
+    ])->header('Content-Type', 'text/xml');
+    
    
    }
 }
