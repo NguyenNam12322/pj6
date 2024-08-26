@@ -172,7 +172,7 @@ Route::post('hide-popup', 'Frontend\categoryController@hidePopup')->name('remove
 
 Route::get('update-active-deal',  'dealController@dealCheckTimeToTurnOff');
 
-
+Route::get('show-pd-tv',  'crawlController@showPdTV');
 
 
 Auth::routes(['verify' => true]);
