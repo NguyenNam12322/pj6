@@ -74,7 +74,7 @@
         .box01, .box01__show{
             margin-bottom: 0 !important;
         }
-        h2 a{
+        h3 a{
             font-size: 16px !important;
         }
     }   
