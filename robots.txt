@@ -1,10 +1,10 @@
 User-agent: Googlebot
 
-Disallow:
+Disallow: /admins
 
 User-agent: Googlebot-image
 
-Disallow:
+Disallow: /admins
 
 
 
