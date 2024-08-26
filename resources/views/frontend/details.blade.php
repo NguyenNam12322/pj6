@@ -1632,7 +1632,12 @@
 
                             ?>
 
-                            <a class="one_size  {{ $relationProducts->ProductSku==$data->ProductSku?'act':'' }}" href="{{ route('details', $relationProducts->Link) }}"><label class="container-detail"><span class="size-pro">{{  str_replace( $cutModel, '', $relationProducts->ProductSku)  }} inch</span><span class="price-pro">{{ str_replace(',' ,'.', number_format(@$relationProducts->Price))  }}đ</span></label></a>
+                            <?php 
+
+                                $repadd = 'UA';
+                            ?>
+
+                            <a class="one_size  {{ $relationProducts->ProductSku==$data->ProductSku?'act':'' }}" href="{{ route('details', $relationProducts->Link) }}"><label class="container-detail"><span class="size-pro">{{   str_replace( [$cutModel, $repadd], '', $relationProducts->ProductSku)  }} inch</span><span class="price-pro">{{ str_replace(',' ,'.', number_format(@$relationProducts->Price))  }}đ</span></label></a>
                         
                         @endforeach
                        
