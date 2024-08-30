@@ -61,7 +61,7 @@
                                         <b>DANH MỤC SẢN PHẨM</b>
                                     </h3>
                                     <ul>
-                                       
+                                        <a href="">
                                             <li class="left-menu">
                                                 <div class="menu-item">
                                                     <div class="icon">
@@ -266,6 +266,8 @@
                                                     </div>
                                                 </div> 
                                             </li>
+                                        </a>
+                                            
 
                                        
                                         
