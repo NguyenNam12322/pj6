@@ -87,6 +87,14 @@
                         <input type="text" class="color" name="kn" value="{{ @$info->kn }}" required>
                     </td>
                 </tr>
+
+                <tr>
+                    <td>Text cuối trang: </td>
+                    <td>
+                       
+                        <input type="text" class="color" name="endtext" value="{{ @$info->endtext }}" required>
+                    </td>
+                </tr>
                 
             </tbody>
         </table>

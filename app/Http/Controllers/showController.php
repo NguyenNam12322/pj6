@@ -149,11 +149,13 @@ class showController extends Controller
         $tdht = $request->tdht;
 
         $kn = $request->kn;
+        $endtext = $request->endtext;
 
         $input['vpdd'] = $vpdd;
         $input['kho'] = $kho;
         $input['tdht'] = $tdht;
         $input['kn'] = $kn;
+        $input['endtext'] = $endtext;
 
         DB::table('show_info_header_footer')->where('id', 1)->update($input);
 
