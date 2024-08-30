@@ -14,6 +14,10 @@
         font-weight: 700 !important;
     }
 
+    h2{
+        font-size: initial!important;
+    }
+
      @media only screen and (max-width: 600px) {
 
         .nk-menu{
