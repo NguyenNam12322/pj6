@@ -129,11 +129,14 @@ class crawlController extends Controller
         
         $pdtv = groupProduct::find($tv);
 
+        dd($pdtv);
+        
+
 
 
         $arPD = json_decode($pdtv->product_id);
 
-        dd($arPD);
+
 
        
 
