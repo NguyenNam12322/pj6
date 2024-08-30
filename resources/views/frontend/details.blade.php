@@ -1432,59 +1432,7 @@
                     @endforeach
                     @endif
                 </article>
-                <div class="rate-text">
-                    <!-- <h3 style="margin-bottom: 0;margin-top: 40px;"> Đánh giá  {{ $data->Name }}</h3> -->
-                    <p style="background: #f3f3f3;padding: 10px;border-radius: 3px;margin: 10px 0;">Đánh giá sản phẩm nhận Coupon 20.000đ dành cho khách mua hàng tại Điện máy người việt.</p>
-                </div>
-                <div class="p-comment">
-                    <form class="comment-form" name="rate-form" id="rate-form" role="form">
-                        <div class="rate_view">
-                            Chọn đánh giá của bạn:
-                            <div class="stars">
-                                <div>
-                                    <input class="star star-click star-5" id="star-5" type="radio" name="star"/>
-                                    <label class="star star-5" for="star-5"></label>
-                                    <input class="star star-click star-4" id="star-4" type="radio" name="star"/>
-                                    <label class="star star-4" for="star-4"></label>
-                                    <input class="star star-click star-3" id="star-3" type="radio" name="star"/>
-                                    <label class="star star-3" for="star-3"></label>
-                                    <input class="star star-click star-2" id="star-2" type="radio" name="star"/>
-                                    <label class="star star-2" for="star-2"></label>
-                                    <input class="star star-click star-1" id="star-1" type="radio" name="star"/>
-                                    <label class="star star-1" for="star-1"></label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="relative">
-                            <div class="left">
-                                <textarea style="padding: 10px;border-radius: 3px; width: 100%;" name="content" placeholder="Nhập đánh giá về sản phẩm " id="content0"></textarea>
-                            </div>
-                            <div class="left">
-                                <div class="form-input">
-                                    <table style="width:100%;" class="tbl-common">
-                                        <tbody>
-                                            <tr>
-                                                <td style="padding-right: 5px;">
-                                                    <input style="border-radius: 3px;height: 43px;" type="text" id="name0" name="name" class="inputText" placeholder="Họ tên" value="">
-                                                </td>
-                                                <td style="padding-left: 5px;">
-                                                    <input style="border-radius: 3px;height: 43px;" type="text" id="email0" name="email" class="inputText" placeholder="Email" value="">
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td><input style="margin-top: 15px;width: calc(100% - 6px);border-radius: 3px;" type="submit" value="Gửi bình luận" class="btn btn-red comments-rate" ></td>
-                                                <td></td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                                <!--form-input-->
-                            </div>
-                        </div>
-                    </form>
-                    <input type="hidden" name="star" id="star_number" value="5">
-                    <!--comment-form-->
-                </div>
+              
             </div>
             <!-- end đánh giá -->
             <div class="related view-more-related">
