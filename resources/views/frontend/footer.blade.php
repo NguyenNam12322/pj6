@@ -597,18 +597,16 @@
                
             </p>
             <p>
-                Hotline: <a href="tel:0945172266"><b>{{ @$info->tdht }}</b>
-                </a> Hoặc 
-                <a href="#"><b>0123.456.789 -  </b></a>
-                <a href="#"><b>0123.456.789</b></a><br>
+                Hotline: <a href="tel:{{ @$info->tdht }}"><b>{{ @$info->tdht }}</b>
+                </a> 
+              
                 Tiếp nhận bảo hành, chăm sóc khách hàng:  
-                <a href="tel:0942496226"><b>0123.456.789</b></a><br>
-                Phản ánh chất lượng dịch vụ:  
-                <a href="tel:0945172266"><b>0123.456.789</b></a><br>
-                Hỗ trợ kĩ thuật:  <a href="tel:0945172266">
-                    <b>0123.456.789</b></a><br>
-                Email Đặt Hàng: <b></b><br>
-                Email Liên Hệ: <b></b><br>
+                <a href="tel:{{ @$info->kn }}"><b>{{ @$info->kn }}</b></a><br>
+               
+                <a href="tel:{{ @$info->tdht }}"><b>{{ @$info->tdht }}</b></a><br>
+                Hỗ trợ kĩ thuật:  <a href="tel:{{ @$info->tdht }}">
+                    <b>{{ @$info->tdht }}</b></a><br>
+               
             </p>
         </div>
     </div>
@@ -690,9 +688,7 @@
 
     <div class="cp-r">
         <div class="cpr-ct">
-            <b>Giao diện website được thiết kế độc quyền bởi Cty ABC</b>
-            
-            Điện thoại:(024) 123.4567   |   Email đặt hàng Online: muasamtaikho.vn   |   Chăm sóc khách hàng: cskh@muasamtaikho.vn
+            <b>{{ @info->endtext }}
         </div>
         <!-- <table border="0">
             <tbody>
