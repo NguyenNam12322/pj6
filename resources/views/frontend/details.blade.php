@@ -1548,7 +1548,7 @@
             <div class="box-compare">
 
                 @if(!empty($thuonghieu[$data_cate])&& !empty($ar_groups_info))
-                <span style="font-weight: bold; font-size:17px ">Hãng:  {{ str_replace($namecate->name, '',  $ar_groups_info[0]['name']) }}</span> 
+                <span style="">Hãng:  {{ str_replace($namecate->name, '',  $ar_groups_info[0]['name']) }}</span> 
                 @endif
                 &nbsp
 
