@@ -2338,7 +2338,7 @@
 
 </div>
 @push('style')
-<link rel="stylesheet" type="text/css" href="{{ asset('css/details.css') }}?ver=22">
+<link rel="stylesheet" type="text/css" href="{{ asset('css/details.css') }}?ver=23">
 @endpush
 @push('script')
 

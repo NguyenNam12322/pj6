@@ -1,3 +1,7 @@
+<?php
+    $info = DB::table('show_info_header_footer')->where('id',1)->get()->first();
+
+ ?>
 <div class="container p-0 show-footer">
     <div class="phone_hotline"> <a href="tel:#" title="Bảo Hành: 0243.687.9145" class="p_hotline_item"> <i class="icon_security"></i> <span><strong>Bảo Hành: 0123.456.789</strong> (8h00 - 17h00)</span> </a> <a href="tel:#" title="Mua hàng:#" class="p_hotline_item"> <i class="icon_purchase"></i> <span><strong>Mua hàng: 0123.456.789</strong> (8h00 - 17h00)</span> </a> <a href="#" title="Khiếu nại:0916917949" class="p_hotline_item"> <i class="icon_complain"></i> <span><strong>Khiếu nại: 0123.456.789</strong> (8h00 - 17h00)</span> </a> </div>
 </div>
@@ -576,10 +580,7 @@
                 </div>
             </div>
         </div>
-        <?php
-         $info = DB::table('show_info_header_footer')->where('id',1)->get()->first();
-
-         ?>
+        
         <div class="ft-new-info">
             <div class="title-if">HỆ THỐNG SIÊU THỊ MUA SẮM TẠI KHO 
             </div>
@@ -596,7 +597,7 @@
                
             </p>
             <p>
-                Hotline: <a href="tel:0945172266"><b>0123.456.789</b>
+                Hotline: <a href="tel:0945172266"><b>{{ @$info->tdht }}</b>
                 </a> Hoặc 
                 <a href="#"><b>0123.456.789 -  </b></a>
                 <a href="#"><b>0123.456.789</b></a><br>
