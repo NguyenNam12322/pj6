@@ -3171,6 +3171,23 @@
         }
     });
 
+    document.addEventListener("DOMContentLoaded", function() {
+        // Lấy tất cả các thẻ img trên trang
+        const images = document.querySelectorAll('img');
+
+        // Lặp qua từng ảnh
+        images.forEach(function(img) {
+            // Kiểm tra xem ảnh có thuộc tính alt không
+            if (img.hasAttribute('alt')) {
+                // Lấy giá trị của alt
+                const altText = img.getAttribute('alt');
+                
+                // Sao chép giá trị alt sang title
+                img.setAttribute('title', altText);
+            }
+        });
+    });
+
     
     $('.listproduct').owlCarousel({
         loop:false,
