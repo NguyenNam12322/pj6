@@ -50,6 +50,10 @@
             height: 300px !important;
         }
 
+        .box-info-name h1{
+            width: 100%;
+        }
+
         .box-info-name{
             height: 20px !important;
         }
