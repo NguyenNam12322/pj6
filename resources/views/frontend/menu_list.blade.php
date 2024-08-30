@@ -61,211 +61,214 @@
                                         <b>DANH MỤC SẢN PHẨM</b>
                                     </h3>
                                     <ul>
-                                        <li class="left-menu">
-                                            <div class="menu-item">
-                                                <div class="icon">
-                                                    <i class="nki-menu-television"></i>
-                                                </div>
-                                                <p>
-                                                    <a href="{{route('details','ti-vi')}}">Tivi</a>
-                                                    
-                                                </p>
-                                            </div>
-                                             <div class="sub-menu tivi-loa-amthanh" style="display: none;">
-                                                <div class=" menu-tivi children_sort">
-                                                    <div class="item row2 bg-white">
-                                                        <div class="links">
-                                                            <h5 title="Tivi">
-                                                                <a class="a-links" href="{{route('details','ti-vi')}}">Tivi <span class="nk-sticker">
-                                                                        <span class="path1"></span>
-                                                                        <span class="path2"></span>
-                                                                    </span>
-                                                                </a>
-                                                            </h5>
-                                                        </div>
-                                                        <div class="links">
-                                                            <h5 title="Thương hiệu">
-
-                                                                <a class="a-links" href="{{ route('details', 'thuong-hieu-tivi') }}">Thương hiệu <span class="nk-sticker">
-                                                                        <span class="path1"></span>
-                                                                        <span class="path2"></span>
-                                                                    </span>
-                                                                </a>
-                                                            </h5>
-                                                            <ul>
-                                                                <li>
-                                                                    <p style="">
-                                                                        <a title="Samsung" class="a-links" href="{{route('details','tivi-samsung')}}">
-                                                                            <span class="nki-sort-next ">
-                                                                                <span class="path1"></span>
-                                                                                <span class="path2"></span>
-                                                                            </span> Samsung </a>
-                                                                    </p>
-                                                                </li>
-                                                                <li>
-                                                                    <p style="">
-                                                                        <a title="Sony" class="a-links" href="{{route('details','tivi-sony')}}">
-                                                                            <span class="nki-sort-next ">
-                                                                                <span class="path1"></span>
-                                                                                <span class="path2"></span>
-                                                                            </span> Sony </a>
-                                                                    </p>
-                                                                </li>
-                                                                <li>
-                                                                    <p style="">
-                                                                        <a title="LG" class="a-links" href="{{route('details','tivi-lg')}}">
-                                                                            <span class="nki-sort-next ">
-                                                                                <span class="path1"></span>
-                                                                                <span class="path2"></span>
-                                                                            </span> LG </a>
-                                                                    </p>
-                                                                </li>
-                                                                <li>
-                                                                    <p style="">
-                                                                        <a title="TCL" class="a-links" href="{{route('details','tivi-tcl')}}">
-                                                                            <span class="nki-sort-next ">
-                                                                                <span class="path1"></span>
-                                                                                <span class="path2"></span>
-                                                                            </span> TCL </a>
-                                                                    </p>
-                                                                </li>
-                                                               
-                                                                <li>
-                                                                    <p style="">
-                                                                        <a title="Philips" class="a-links" href="{{route('details','tivi-philips')}}">
-                                                                            <span class="nki-sort-next ">
-                                                                                <span class="path1"></span>
-                                                                                <span class="path2"></span>
-                                                                            </span> Philips </a>
-                                                                    </p>
-                                                                </li>
-                                                                <li>
-                                                                    <p style="">
-                                                                        <a title="Sharp" class="a-links" href="{{route('details','tivi-sharp')}}">
-                                                                            <span class="nki-sort-next ">
-                                                                                <span class="path1"></span>
-                                                                                <span class="path2"></span>
-                                                                            </span> Sharp </a>
-                                                                    </p>
-                                                                </li>
-                                                               
-                                                            </ul>
-                                                        </div>
+                                        <a href="{{route('details','ti-vi')}}">
+                                            <li class="left-menu">
+                                                <div class="menu-item">
+                                                    <div class="icon">
+                                                        <i class="nki-menu-television"></i>
                                                     </div>
-                                                    <div class="item row2 bg-gray">
-                                                        <!-- <div class="links">
-                                                            <h5 title="Kích thước">
-                                                                <a class="a-links" href="#">Kích thước <span class="nk-sticker">
-                                                                        <span class="path1"></span>
-                                                                        <span class="path2"></span>
-                                                                    </span>
-                                                                </a>
-                                                            </h5>
-                                                            <ul>
-                                                                <li>
-                                                                    <p style="">
-                                                                        <a title="Từ 27&quot; - 43&quot;" class="a-links" href="">
-                                                                            <span class="nki-sort-next ">
-                                                                                <span class="path1"></span>
-                                                                                <span class="path2"></span>
-                                                                            </span> Từ 27" - 43" </a>
-                                                                    </p>
-                                                                </li>
-                                                                <li>
-                                                                    <p style="">
-                                                                        <a title="Từ 44&quot; - 55&quot; " class="a-links" href="">
-                                                                            <span class="nki-sort-next ">
-                                                                                <span class="path1"></span>
-                                                                                <span class="path2"></span>
-                                                                            </span> Từ 44" - 55" </a>
-                                                                    </p>
-                                                                </li>
-                                                                <li>
-                                                                    <p style="">
-                                                                        <a title="Từ 56&quot; - 65&quot;" class="a-links" href="">
-                                                                            <span class="nki-sort-next ">
-                                                                                <span class="path1"></span>
-                                                                                <span class="path2"></span>
-                                                                            </span> Từ 56" - 65" </a>
-                                                                    </p>
-                                                                </li>
-                                                                <li>
-                                                                    <p style="">
-                                                                        <a title="Từ 66&quot; - 75&quot;" class="a-links" href="">
-                                                                            <span class="nki-sort-next ">
-                                                                                <span class="path1"></span>
-                                                                                <span class="path2"></span>
-                                                                            </span> Từ 66" - 75" </a>
-                                                                    </p>
-                                                                </li>
-                                                                <li>
-                                                                    <p style="">
-                                                                        <a title="Trên 75&quot;" class="a-links" href="">
-                                                                            <span class="nki-sort-next ">
-                                                                                <span class="path1"></span>
-                                                                                <span class="path2"></span>
-                                                                            </span> Trên 75" </a>
-                                                                    </p>
-                                                                </li>
-                                                            </ul>
-                                                        </div> -->
-                                                        <div class="links">
-                                                            <h5 title="Loại Tivi">
-                                                                <a class="a-links" href="/tivi">Loại Tivi <span class="nk-sticker">
-                                                                        <span class="path1"></span>
-                                                                        <span class="path2"></span>
-                                                                    </span>
-                                                                </a>
-                                                            </h5>
-                                                            <ul>
-                                                                <li>
-                                                                    <p style="">
-                                                                        <a title="Tivi QLED" class="a-links" href="{{route('details','tivi-qled')}}">
-                                                                            <span class="nki-sort-next ">
-                                                                                <span class="path1"></span>
-                                                                                <span class="path2"></span>
-                                                                            </span> Tivi QLED </a>
-                                                                    </p>
-                                                                </li>
-                                                                <li>
-                                                                    <p style="">
-                                                                        <a title="Tivi OLED" class="a-links" href="{{route('details','tivi-oled')}}">
-                                                                            <span class="nki-sort-next ">
-                                                                                <span class="path1"></span>
-                                                                                <span class="path2"></span>
-                                                                            </span> Tivi OLED </a>
-                                                                    </p>
-                                                                </li>
+                                                    <p>
+                                                        <a href="{{route('details','ti-vi')}}">Tivi</a>
+                                                        
+                                                    </p>
+                                                </div>
+                                                 <div class="sub-menu tivi-loa-amthanh" style="display: none;">
+                                                    <div class=" menu-tivi children_sort">
+                                                        <div class="item row2 bg-white">
+                                                            <div class="links">
+                                                                <h5 title="Tivi">
+                                                                    <a class="a-links" href="{{route('details','ti-vi')}}">Tivi <span class="nk-sticker">
+                                                                            <span class="path1"></span>
+                                                                            <span class="path2"></span>
+                                                                        </span>
+                                                                    </a>
+                                                                </h5>
+                                                            </div>
+                                                            <div class="links">
+                                                                <h5 title="Thương hiệu">
+
+                                                                    <a class="a-links" href="{{ route('details', 'thuong-hieu-tivi') }}">Thương hiệu <span class="nk-sticker">
+                                                                            <span class="path1"></span>
+                                                                            <span class="path2"></span>
+                                                                        </span>
+                                                                    </a>
+                                                                </h5>
+                                                                <ul>
+                                                                    <li>
+                                                                        <p style="">
+                                                                            <a title="Samsung" class="a-links" href="{{route('details','tivi-samsung')}}">
+                                                                                <span class="nki-sort-next ">
+                                                                                    <span class="path1"></span>
+                                                                                    <span class="path2"></span>
+                                                                                </span> Samsung </a>
+                                                                        </p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <p style="">
+                                                                            <a title="Sony" class="a-links" href="{{route('details','tivi-sony')}}">
+                                                                                <span class="nki-sort-next ">
+                                                                                    <span class="path1"></span>
+                                                                                    <span class="path2"></span>
+                                                                                </span> Sony </a>
+                                                                        </p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <p style="">
+                                                                            <a title="LG" class="a-links" href="{{route('details','tivi-lg')}}">
+                                                                                <span class="nki-sort-next ">
+                                                                                    <span class="path1"></span>
+                                                                                    <span class="path2"></span>
+                                                                                </span> LG </a>
+                                                                        </p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <p style="">
+                                                                            <a title="TCL" class="a-links" href="{{route('details','tivi-tcl')}}">
+                                                                                <span class="nki-sort-next ">
+                                                                                    <span class="path1"></span>
+                                                                                    <span class="path2"></span>
+                                                                                </span> TCL </a>
+                                                                        </p>
+                                                                    </li>
+                                                                   
+                                                                    <li>
+                                                                        <p style="">
+                                                                            <a title="Philips" class="a-links" href="{{route('details','tivi-philips')}}">
+                                                                                <span class="nki-sort-next ">
+                                                                                    <span class="path1"></span>
+                                                                                    <span class="path2"></span>
+                                                                                </span> Philips </a>
+                                                                        </p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <p style="">
+                                                                            <a title="Sharp" class="a-links" href="{{route('details','tivi-sharp')}}">
+                                                                                <span class="nki-sort-next ">
+                                                                                    <span class="path1"></span>
+                                                                                    <span class="path2"></span>
+                                                                                </span> Sharp </a>
+                                                                        </p>
+                                                                    </li>
+                                                                   
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="item row2 bg-gray">
+                                                            <!-- <div class="links">
+                                                                <h5 title="Kích thước">
+                                                                    <a class="a-links" href="#">Kích thước <span class="nk-sticker">
+                                                                            <span class="path1"></span>
+                                                                            <span class="path2"></span>
+                                                                        </span>
+                                                                    </a>
+                                                                </h5>
+                                                                <ul>
+                                                                    <li>
+                                                                        <p style="">
+                                                                            <a title="Từ 27&quot; - 43&quot;" class="a-links" href="">
+                                                                                <span class="nki-sort-next ">
+                                                                                    <span class="path1"></span>
+                                                                                    <span class="path2"></span>
+                                                                                </span> Từ 27" - 43" </a>
+                                                                        </p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <p style="">
+                                                                            <a title="Từ 44&quot; - 55&quot; " class="a-links" href="">
+                                                                                <span class="nki-sort-next ">
+                                                                                    <span class="path1"></span>
+                                                                                    <span class="path2"></span>
+                                                                                </span> Từ 44" - 55" </a>
+                                                                        </p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <p style="">
+                                                                            <a title="Từ 56&quot; - 65&quot;" class="a-links" href="">
+                                                                                <span class="nki-sort-next ">
+                                                                                    <span class="path1"></span>
+                                                                                    <span class="path2"></span>
+                                                                                </span> Từ 56" - 65" </a>
+                                                                        </p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <p style="">
+                                                                            <a title="Từ 66&quot; - 75&quot;" class="a-links" href="">
+                                                                                <span class="nki-sort-next ">
+                                                                                    <span class="path1"></span>
+                                                                                    <span class="path2"></span>
+                                                                                </span> Từ 66" - 75" </a>
+                                                                        </p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <p style="">
+                                                                            <a title="Trên 75&quot;" class="a-links" href="">
+                                                                                <span class="nki-sort-next ">
+                                                                                    <span class="path1"></span>
+                                                                                    <span class="path2"></span>
+                                                                                </span> Trên 75" </a>
+                                                                        </p>
+                                                                    </li>
+                                                                </ul>
+                                                            </div> -->
+                                                            <div class="links">
+                                                                <h5 title="Loại Tivi">
+                                                                    <a class="a-links" href="/tivi">Loại Tivi <span class="nk-sticker">
+                                                                            <span class="path1"></span>
+                                                                            <span class="path2"></span>
+                                                                        </span>
+                                                                    </a>
+                                                                </h5>
+                                                                <ul>
+                                                                    <li>
+                                                                        <p style="">
+                                                                            <a title="Tivi QLED" class="a-links" href="{{route('details','tivi-qled')}}">
+                                                                                <span class="nki-sort-next ">
+                                                                                    <span class="path1"></span>
+                                                                                    <span class="path2"></span>
+                                                                                </span> Tivi QLED </a>
+                                                                        </p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <p style="">
+                                                                            <a title="Tivi OLED" class="a-links" href="{{route('details','tivi-oled')}}">
+                                                                                <span class="nki-sort-next ">
+                                                                                    <span class="path1"></span>
+                                                                                    <span class="path2"></span>
+                                                                                </span> Tivi OLED </a>
+                                                                        </p>
+                                                                    </li>
+                                                                    
+                                                                    <li>
+                                                                        <p style="">
+                                                                            <a title="Tivi 8K" class="a-links" rel="nofollow" href="{{route('details','8k')}}">
+                                                                                <span class="nki-sort-next ">
+                                                                                    <span class="path1"></span>
+                                                                                    <span class="path2"></span>
+                                                                                </span> Tivi 8K </a>
+                                                                        </p>
+                                                                    </li>
+                                                                   
+                                                                    <li>
+                                                                        <p style="">
+                                                                            <a title="Smart Tivi" class="a-links" href="{{route('details','smart-tivi')}}">
+                                                                                <span class="nki-sort-next ">
+                                                                                    <span class="path1"></span>
+                                                                                    <span class="path2"></span>
+                                                                                </span> Smart Tivi </a>
+                                                                        </p>
+                                                                    </li>
+                                                                   
                                                                 
-                                                                <li>
-                                                                    <p style="">
-                                                                        <a title="Tivi 8K" class="a-links" rel="nofollow" href="{{route('details','8k')}}">
-                                                                            <span class="nki-sort-next ">
-                                                                                <span class="path1"></span>
-                                                                                <span class="path2"></span>
-                                                                            </span> Tivi 8K </a>
-                                                                    </p>
-                                                                </li>
-                                                               
-                                                                <li>
-                                                                    <p style="">
-                                                                        <a title="Smart Tivi" class="a-links" href="{{route('details','smart-tivi')}}">
-                                                                            <span class="nki-sort-next ">
-                                                                                <span class="path1"></span>
-                                                                                <span class="path2"></span>
-                                                                            </span> Smart Tivi </a>
-                                                                    </p>
-                                                                </li>
-                                                               
-                                                            
-                                                            </ul>
+                                                                </ul>
+                                                            </div>
                                                         </div>
+                                                        
                                                     </div>
-                                                    
-                                                </div>
-                                            </div> 
-                                        </li>
+                                                </div> 
+                                            </li>
 
+                                        </a>
+                                        
 
                                         <li class="left-menu">
                                             <div class="menu-item">
