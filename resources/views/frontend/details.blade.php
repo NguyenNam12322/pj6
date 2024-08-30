@@ -724,6 +724,12 @@
             <a href="{{ route('details',$ar_groups_info[0]['link']) }}">{{ $ar_groups_info[0]['name'] }}</a>
             <meta property="position" content="4">
         </li>
+
+        <li>
+            <span>›</span>
+            <a href="{{ route('details',$data->Link) }}">{{ $data->Name }}</a>
+            <meta property="position" content="2">
+        </li>
         @endif
     </ul>
    
