@@ -129,23 +129,23 @@ class crawlController extends Controller
         
         $pdtv = groupProduct::find($tv);
 
-        dd($pdtv);
-        
+        if(!empty(json_decode($pdtv->product_id))){
 
+            $arPD = json_decode($pdtv->product_id);
 
+            $pd = product::select('Name','id')->whereIn('id', $arPD)->get();
 
-        $arPD = json_decode($pdtv->product_id);
+            
+            foreach ($pd as $key => $value) {
+                echo $value->Name.' id là '.$value->id.'<br>';
+            }
 
-
-
-       
-
-        $pd = product::select('Name','id')->whereIn('id', $arPD)->get();
-
-        
-        foreach ($pd as $key => $value) {
-            echo $value->Name.' id là '.$value->id.'<br>';
         }
+        else{
+            echo "không tồn tại sản phẩm";
+        }
+
+        
     }
 
     function getLinkCrawlDMGK()
