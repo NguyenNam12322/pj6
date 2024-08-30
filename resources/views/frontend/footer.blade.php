@@ -758,8 +758,28 @@ function scrollFunction() {
 // When the user clicks on the button, scroll to the top of the document
 scrollToTopBtn.addEventListener("click", function() {
     window.scrollTo({
-        top: 0,
-        behavior: "smooth"
+        const start = document.documentElement.scrollTop || document.body.scrollTop;
+        const duration = 400; // Thời gian của hiệu ứng cuộn (800ms)
+        const startTime = performance.now();
+
+        function animateScroll(currentTime) {
+            const elapsedTime = currentTime - startTime;
+            const progress = Math.min(elapsedTime / duration, 1);
+
+            // Sử dụng hàm easing để tạo hiệu ứng mượt mà
+            const easeOutCubic = (t) => (--t) * t * t + 1;
+
+            const scrollPosition = start * (1 - easeOutCubic(progress));
+            document.documentElement.scrollTop = document.body.scrollTop = scrollPosition;
+
+            if (progress < 1) {
+                requestAnimationFrame(animateScroll);
+            }
+        }
+
+        requestAnimationFrame(animateScroll);
     });
 });
+
+scrollToTopBtn.addEventListener("click", scrollToTop);
 </script>
