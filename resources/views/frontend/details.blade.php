@@ -1124,7 +1124,7 @@
             </div> -->
             <div class="view-all-salient_fratured">
 
-                <a id="show-popup-featured-images-gallery" style="display: block" href="javascript:void(0)"  data-color-id="0" data-toggle="modal" data-target="#Salient_Features">Chính sách mua hàng tại MuaSamTaiKho.vn</a>
+                <a href="#">Chính sách mua hàng tại MuaSamTaiKho.vn</a>
             </div> 
 
 
