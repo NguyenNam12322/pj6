@@ -1134,7 +1134,7 @@
             </div> -->
             <div class="view-all-salient_fratured">
 
-                Chính sách mua hàng tại MuaSamTaiKho.vn
+                <b>Chính sách mua hàng tại MuaSamTaiKho.vn</b>
             </div> 
 
 
