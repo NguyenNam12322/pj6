@@ -1499,7 +1499,7 @@
 
                 <li>
                     <span>›</span>
-                    <a href="{{ route('details', @$data->Link) }}">{{  @$data->Name }}</a>
+                    <a href="{{ route('details', @$data->Link) }}">{{  @$data->Name }}11</a>
                    
                 </li>
 
