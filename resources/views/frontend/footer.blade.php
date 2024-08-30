@@ -26,6 +26,8 @@
             font-weight: bold;
         }
 
+
+
         .coccoc-alo-phone {
             background-color: transparent;
             width: 100px;
@@ -238,6 +240,10 @@
         /*.div-foot{
             margin-left: 330px;
         }*/
+
+        .to-top{
+            right: 50px !important;
+        }
 
 
         .banner-ads-text .header-menu__navs{
@@ -624,6 +630,11 @@
             <div class="list-phone"> <a href="tel:{{ @$info->tdht }}">{{ @$info->tdht }}</a> <a href="tel:0942496226">{{ @$info->tdht }}</a> <a href="tel:{{ @$info->tdht }}">{{ @$info->tdht }}</a> </div>
         </div>
     </div>
+    <div class="ring-phone to-top">
+        <img src="{{ asset('images/template/back-top.png') }}">
+    </div>    
+
+
 </footer>
 <footer class="footer container desktop">
     
