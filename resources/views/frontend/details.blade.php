@@ -44,7 +44,9 @@
         }
     }
     @media only screen and (min-width: 601px) {
-
+        .productSpecification_table{
+            display: none;
+        }
         .box01 img{
             width: 100%;
             height: 300px !important;
@@ -1122,7 +1124,7 @@
             </div> -->
             <div class="view-all-salient_fratured">
 
-                <a id="show-popup-featured-images-gallery" style="display: block" href="javascript:void(0)"  data-color-id="0" data-toggle="modal" data-target="#Salient_Features">Xem tất cả điểm nổi bật</a>
+                <a id="show-popup-featured-images-gallery" style="display: block" href="javascript:void(0)"  data-color-id="0" data-toggle="modal" data-target="#Salient_Features">Chính sách mua hàng tại MuaSamTaiKho.vn</a>
             </div> 
 
 
