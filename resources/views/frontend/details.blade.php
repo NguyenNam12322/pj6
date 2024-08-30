@@ -1777,17 +1777,7 @@
                            
                             <br>
 
-                            @if(!empty($data->manuPrice) || !empty($price_old))
-
-                            @if(!empty($price_old))
-
-                                <div class="price_giaban price_market">Giá niêm yết : <span>{{str_replace(',' ,'.', number_format($price_old))}}đ </span></div>
-                                <br>
-                            @else    
-                            <div class="price_giaban price_market">Giá hãng : <span>{{str_replace(',' ,'.', number_format($data->manuPrice))}}đ </span></div>
-                            <br>
-                            @endif
-                            @endif 
+                           
 
 
                             <!-- ngừng kinh doanh thì ẩn giá -->
