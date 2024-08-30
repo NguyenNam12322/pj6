@@ -10,6 +10,10 @@
         display: block !important;
     }   
 
+    b, strong{
+        font-weight: 700 !important;
+    }
+
      @media only screen and (max-width: 600px) {
 
         .nk-menu{
