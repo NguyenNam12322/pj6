@@ -630,10 +630,7 @@
             <div class="list-phone"> <a href="tel:{{ @$info->tdht }}">{{ @$info->tdht }}</a> <a href="tel:0942496226">{{ @$info->tdht }}</a> <a href="tel:{{ @$info->tdht }}">{{ @$info->tdht }}</a> </div>
         </div>
     </div>
-    <div class="ring-phone to-top">
-        <img src="{{ asset('images/template/back-top.png') }}">
-    </div>    
-
+   
 
 </footer>
 <footer class="footer container desktop">
@@ -725,10 +722,14 @@
             <div class="coccoc-alo-ph-circle-fill"></div>
             <div class="coccoc-alo-ph-img-circle"></div>
             <div class="list-phone">
-                <a href="tel:0904196226">0123.456.789</a>
-                <a href="tel:0942496226">0123.456.789</a>
-                <a href="tel:0945172266">0123.456.789</a>
+                <a href="tel:0904196226">{{ @$info->tdht }}</a>
+                
             </div>
         </div>
     </div>
+
+     <div class="ring-phone to-top">
+        <img src="{{ asset('images/template/back-top.png') }}">
+    </div>    
+
 </footer>
