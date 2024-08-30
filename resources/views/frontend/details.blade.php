@@ -54,9 +54,9 @@
             width: 100%;
         }
 
-        .box-info-name{
+      /*  .box-info-name{
             height: 20px !important;
-        }
+        }*/
 
         .box-compare{
             height: 30px !imporant;
