@@ -28,6 +28,7 @@
 
         .to-top{
             background: #ddd;
+            cursor: pointer;
         }
 
 
