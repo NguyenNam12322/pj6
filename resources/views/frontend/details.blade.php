@@ -1130,7 +1130,7 @@
             </div> -->
             <div class="view-all-salient_fratured">
 
-                <a href="#">Chính sách mua hàng tại MuaSamTaiKho.vn</a>
+                Chính sách mua hàng tại MuaSamTaiKho.vn
             </div> 
 
 
