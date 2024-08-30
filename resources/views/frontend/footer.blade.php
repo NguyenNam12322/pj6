@@ -688,7 +688,7 @@
 
     <div class="cp-r">
         <div class="cpr-ct">
-            <b>{{ @info->endtext }}
+            <b>{{ @$info->endtext }}
         </div>
         <!-- <table border="0">
             <tbody>
