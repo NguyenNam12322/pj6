@@ -1496,6 +1496,14 @@
                     <a href="{{ route('details',$ar_groups_info[0]['link']) }}">{{ $ar_groups_info[0]['name'] }}</a>
                    
                 </li>
+
+                <li>
+                    <span>›</span>
+                    <a href="{{ route('details', $data->Link }}">{{  $data->Name }}</a>
+                   
+                </li>
+
+
                 @endif
             </ul>
 
