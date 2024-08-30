@@ -100,7 +100,7 @@
     }
     @media (min-width: 1200px) {
         .container {
-            max-width: 1270px;
+            max-width: 1270px !important;
         }
     }
 
