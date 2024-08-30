@@ -51,6 +51,10 @@
         .productSpecification_table{
             display: none;
         }
+
+        .list_specifications{
+            display: none;
+        }
         .box01 img{
             width: 100%;
             height: 300px !important;
