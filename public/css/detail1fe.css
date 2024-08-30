@@ -212,7 +212,7 @@ width: auto !important;
 
     .breadcrumb{
 
-        text-overflow: ellipsis;
+/*        text-overflow: ellipsis;*/
         overflow: visible;
         white-space: nowrap;
     }
