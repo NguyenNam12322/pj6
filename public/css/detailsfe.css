@@ -203,12 +203,12 @@
 
     .pdetail-price h3 {
     float: left;
-    font-size: 30px;
-    font-weight: 600;
+    font-size: 30px !important;
+    font-weight: 600 !important;
     color: #c5232b;
     margin: 0;
     padding-right: 15px;
-    line-height: 36px;
+    line-height: 36px !important;
     }
 
     .pdetail-price .product-price-saving {
