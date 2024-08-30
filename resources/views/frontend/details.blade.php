@@ -2067,7 +2067,7 @@
                                     <button type="button" class="btn btn-lg btn-add-cart btn-add-cart redirectCart">Liên hệ</button>
                                 </div>
 
-                                {!!  $data->Specifications  !!} 
+                               
                             </div>
                             @endif
                            
