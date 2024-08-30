@@ -14,7 +14,7 @@
         font-weight: 700 !important;
     }
 
-    h2{
+    h2, h3{
         font-size: initial!important;
     }
 
