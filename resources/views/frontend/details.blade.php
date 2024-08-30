@@ -1142,19 +1142,19 @@
                             </li>
                             <li>
                                 <i class="icon_change"></i>
-                                <div class="monopoly-title">Đổi trả trong <strong>35</strong> ngày <a href="/trang-bao-tri-bao-hanh-doi-tra" target="_blank" title="đổi trả 35 ngày ">(Nếu do lỗi kỹ thuật)</a></div>
+                                <div class="monopoly-title">Đổi trả trong <strong>35</strong> ngày </div>
                             </li>
                             <li>
                                 <i class="icon_refund"></i>
-                                <div class="monopoly-title">Hoàn chênh lệch nếu siêu thị khác rẻ hơn.<a href="/trang-chinh-sach-hoan-tien" target="_blank" title="Hoàn tiền nếu nơi khác bán rẻ hơn">(Chính sách)</a></div>
+                                <div class="monopoly-title">Hoàn chênh lệch nếu siêu thị khác rẻ hơn.</div>
                             </li>
                             <li>
                                 <i class="icon_guarantee_mb"></i>
-                                <div class="monopoly-title">Bảo hành chính hãng <strong>2 năm</strong>, có người đến tận nhà <a href="/trang-bao-tri-bao-hanh-doi-tra" target="_blank" title="Bảo hành chính hãng tới">(Chính sách)</a></div>
+                                <div class="monopoly-title">Bảo hành chính hãng <strong>2 năm</strong>, có người đến tận nhà </div>
                             </li>
                             <li>
                                 <i class="icon_delivery"></i>
-                                <div class="monopoly-title">Giao hàng miễn phí tận nơi <a href="/trang-qui-dinh-giao-hang" target="_blank" title="Giao hàng miễn phí tận nơi ">(Xem chi tiết)</a></div>
+                                <div class="monopoly-title">Giao hàng miễn phí tận nơi </div>
                             </li>
                             <li>
                                 <i class="icon_thung"></i>
@@ -1485,10 +1485,10 @@
 
                         <strong class="price">{{  str_replace(',' ,'.', number_format($value->Price))  }}&#x20AB;</strong>
                         </a>
-                        <a href="javascript:void(0)" class="compare-show" onclick="compareShow({{ $value->id }})">
+                       <!--  <a href="javascript:void(0)" class="compare-show" onclick="compareShow({{ $value->id }})">
                             <i class="fa-solid fa-plus"></i>
                                 so sánh
-                        </a>
+                        </a> -->
                     </div>
 
                     @endif
