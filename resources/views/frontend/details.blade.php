@@ -2076,7 +2076,7 @@
                         </div>
                         <div class="clearfix"></div>
 
-                         <button type="button" class="btn btn-lg" data-toggle="modal" data-target="#specifications">Xem chi tiết thông số kỹ thuật</button>
+                         <!-- <button type="button" class="btn btn-lg" data-toggle="modal" data-target="#specifications">Xem chi tiết thông số kỹ thuật</button> -->
                        
                         
                     </div>
