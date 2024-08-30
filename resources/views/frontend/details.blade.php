@@ -18,6 +18,12 @@
         font-size: initial!important;
     }
 
+     @media (min-width: 1200px) {
+        .container {
+            max-width: 1270px !important;
+        }
+    }
+
      @media only screen and (max-width: 600px) {
 
         .nk-menu{
@@ -98,11 +104,7 @@
     }   
 
     }
-    @media (min-width: 1200px) {
-        .container {
-            max-width: 1270px !important;
-        }
-    }
+   
 
     
     </style>            
