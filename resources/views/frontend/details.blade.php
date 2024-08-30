@@ -1548,13 +1548,13 @@
             <div class="box-compare">
 
                 @if(!empty($thuonghieu[$data_cate])&& !empty($ar_groups_info))
-                <span style="">Hãng:  {{ str_replace($namecate->name, '',  $ar_groups_info[0]['name']) }}</span> 
+                <span >Hãng:  {{ str_replace($namecate->name, '',  $ar_groups_info[0]['name']) }}</span> 
                 @endif
                 &nbsp
 
 
 
-                 <span style="font-weight: bold; font-size:17px ">Model: {{ $data->ProductSku }} </span> 
+                 <span >Model: {{ $data->ProductSku }} </span> 
                 &nbsp
 
                 <!-- <a href="javascript:void(0)" class="compare-show" onclick="compareShow({{ $data->id }})">
