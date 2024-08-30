@@ -133,6 +133,8 @@ class crawlController extends Controller
 
         $arPD = json_decode($pdtv->product_id);
 
+        dd($arPD);
+
        
 
         $pd = product::select('Name','id')->whereIn('id', $arPD)->get();
