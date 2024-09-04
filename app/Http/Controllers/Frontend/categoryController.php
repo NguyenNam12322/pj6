@@ -784,13 +784,15 @@ class categoryController extends Controller
 
             $other_product = [];
             // dd($sampe_product_price); 
-            if(!empty($data_group_product) && !empty($data_group_product->product_id)){
+            // if(!empty($data_group_product) && !empty($data_group_product->product_id)){
 
-                $other_product = Cache::rememberForever('other_product_'.$data_group_product->product_id, function() use ($data_group_product){ 
+            //     $other_product = Cache::rememberForever('other_product_'.$data_group_product->product_id, function() use ($data_group_product){ 
 
-                    return product::whereIn('id',  json_decode($data_group_product->product_id))->take(10)->get();
-                }); 
-            }    
+            //         return product::whereIn('id',  json_decode($data_group_product->product_id))->take(10)->get();
+            //     }); 
+            // }    
+
+            $other_product =product::whereIn('id',  json_decode($data_group_product->product_id))->take(10)->get();
 
             if(!empty($data_group_product) && !empty($data_group_product->product_id)){
                 $sampe_product_price = product::whereIn('id',  json_decode($data_group_product->product_id))->where('Price', '>', $min_price)
