@@ -9,7 +9,7 @@
 
                 $price = !empty($deal_price)?$deal_price:$value->Price;
            ?>
-            <div class="product-price">Giá Bán: <span class="price">{{ @str_replace(',' ,'.', number_format($price)) }} đ</span></div>
+            <div class="product-price">Giá Bán: <span class="price">{{  @convert_price($price) }} </span></div>
         </div>
         
     </a>
