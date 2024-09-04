@@ -19,6 +19,25 @@ if (!function_exists('_substrs')) {
     }
 }
 
+
+if (!function_exists('convert_price')) {
+    function convert_price($price)
+    {
+        $price = "Đang cập nhật tồn";
+        if($price>0){
+
+            $price = @str_replace(',' ,'.', number_format($price)).'đ';
+        
+        }
+
+       
+        return $price;
+    }
+}
+
+
+
+
 if (!function_exists('groupGift')) {
     // id truyền vào là id category của sản phẩm
     function groupGift($id){

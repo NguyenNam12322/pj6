@@ -179,7 +179,7 @@
 
     <?php
     if($data->Quantily==0||$data['Price']==0){
-        $status ='Tạm hết hàng';
+        $status ='Đang cập nhật tồn';
     
     }
     elseif($data->Quantily<=-1){
