@@ -24,7 +24,7 @@ if (!function_exists('convert_price')) {
     function convert_price($price)
     {
         $price = "Đang cập nhật tồn";
-        if($price>0){
+        if(intval($price)>0){
 
             $price = @str_replace(',' ,'.', number_format($price)).'đ';
         
