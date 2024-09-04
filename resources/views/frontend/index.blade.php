@@ -711,7 +711,7 @@
                                                     <div class="product-feature-badge"></div>
                                                     <div class="product-title"><a href="{{ route('details', $datas->Link) }}">{{ $datas->Name }}</a></div>
                                                     <div class="product-price">
-                                                        <p class="final-price">{{ @str_replace(',' ,'.', number_format($datas->Price)) }}đ   </p>
+                                                        <p class="final-price">{{  @convert_price($datas->Price) }}  </p>
                                                         
                                                     </div>
                                                 </div>
@@ -748,7 +748,7 @@
                                                     <div class="product-feature-badge"></div>
                                                     <div class="product-title"><a href="{{ route('details', $datas->Link) }}">{{ $datas->Name }}</a></div>
                                                     <div class="product-price">
-                                                        <p class="final-price">   {{ @str_replace(',' ,'.', number_format($datas->Price)) }}đ   </p>
+                                                        <p class="final-price"> {{  @convert_price($datas->Price) }}    </p>
                                                         
                                                     </div>
                                                 </div>
@@ -826,7 +826,7 @@
                                                     <div class="product-feature-badge"></div>
                                                     <div class="product-title"><a href="{{ route('details', $datas->Link) }}">{{ $datas->Name }}</a></div>
                                                     <div class="product-price">
-                                                        <p class="final-price">{{ @str_replace(',' ,'.', number_format($datas->Price)) }}đ   </p>
+                                                        <p class="final-price">{{  @convert_price($datas->Price) }}   </p>
                                                         
                                                     </div>
                                                 </div>
