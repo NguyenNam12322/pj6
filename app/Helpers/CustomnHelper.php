@@ -23,15 +23,16 @@ if (!function_exists('_substrs')) {
 if (!function_exists('convert_price')) {
     function convert_price($price)
     {
-        $price = "Đang cập nhật tồn";
+        $prices = "Đang cập nhật tồn";
         if(intval($price)>0){
 
-            $price = @str_replace(',' ,'.', number_format($price)).'đ';
+            $prices = @str_replace(',' ,'.', number_format($price)).'đ';
         
         }
 
+
        
-        return $price;
+        return $prices;
     }
 }
 
