@@ -15,7 +15,7 @@
 
 @if(!empty($groupProduct->link))
 <div class="form-group col-sm-6">
-    {!! Form::label('link', 'Link:') !!} https://dienmaynguoiviet.vn/{{  $groupProduct->link }} 
+    {!! Form::label('link', 'Link:') !!} https://muasamtaikho.vn/{{  $groupProduct->link }} 
     <div class="btn btn-primary copy" onclick="copy('https://muasamtaikho.vn/{{  $groupProduct->link }}')">copy</div>
     {!! Form::text('link', null, ['class' => 'form-control','maxlength' => 10000]) !!}
 </div>
@@ -28,10 +28,10 @@
 @if(!empty($groupProduct))
 
 <div class="form-group col-sm-6">
-    {!! Form::label('link', 'Link:') !!} https://dienmaynguoiviet.vn/{{  $groupProduct->link }} 
+    {!! Form::label('link', 'Link:') !!} https://muasamtaikho.vn/{{  $groupProduct->link }} 
     <div class="btn btn-primary copy" onclick="copy('https://muasamtaikho.vn/{{  $groupProduct->link }}')">copy</div>
     {!! Form::text('link', null, ['class' => 'form-control','maxlength' => 10000]) !!}
-    
+
 </div>
 
 @endif
