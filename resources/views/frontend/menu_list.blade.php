@@ -273,7 +273,7 @@
                                         
 
                                         <li class="left-menu">
-                                            <div class="menu-item">
+                                            <!-- <div class="menu-item">
                                                 <div class="icon">
                                                     <i class="nki-menu-fridge"></i>
                                                 </div>
@@ -281,7 +281,7 @@
                                                     <a href="/tu-lanh">Tủ lạnh</a>
                                                     
                                                 </p>
-                                            </div>
+                                            </div> -->
 
                                             <div class="sub-menu tivi-loa-amthanh" style="display: none;">
                                                 <div class=" menu-tivi children_sort">
@@ -537,7 +537,7 @@
                                             <div class="sub-menu may-lanh" style="display: none;">
                                                 <div class=" menu-maylanh children_sort">
                                                     <div class="item row2 bg-white">
-                                                        <div class="links">
+                                                       <!--  <div class="links">
                                                             <h5 title="Máy lạnh">
                                                                 <a class="a-links" href="/may-lanh/">Máy lạnh <span class="nk-sticker">
                                                                         <span class="path1"></span>
@@ -545,7 +545,7 @@
                                                                     </span>
                                                                 </a>
                                                             </h5>
-                                                        </div>
+                                                        </div> -->
 
                                                          
 
@@ -726,7 +726,7 @@
                                             <div class="sub-menu may-giat-may-say" style="display: none;">
                                                 <div class=" menu-maygiat children_sort">
                                                     <div class="item row2 bg-white">
-                                                        <div class="links">
+                                                       <!--  <div class="links">
                                                             <h5 title="Máy giặt">
                                                                 <a class="a-links" href="/may-giat">Máy giặt <span class="nk-sticker">
                                                                         <span class="path1"></span>
@@ -734,7 +734,7 @@
                                                                     </span>
                                                                 </a>
                                                             </h5>
-                                                        </div>
+                                                        </div> -->
                                                         <div class="links">
                                                             <h5 title="Thương hiệu">
                                                                 <a class="a-links" href="#">Thương hiệu <span class="nk-sticker">
@@ -919,13 +919,13 @@
                                                     </div>
                                                     <div class="item row1 bg-white">
                                                         <div class="links">
-                                                            <h5 title="Máy sấy">
+                                                           <!--  <h5 title="Máy sấy">
                                                                 <a class="a-links" href="/may-say-quan-ao/">Máy sấy <span class="nk-sticker">
                                                                         <span class="path1"></span>
                                                                         <span class="path2"></span>
                                                                     </span>
                                                                 </a>
-                                                            </h5>
+                                                            </h5> -->
                                                             <ul>
                                                                 <li>
                                                                     <p style="">
@@ -1015,13 +1015,13 @@
                                                     </div>
                                                     <div class="item row2 bg-gray">
                                                         <div class="links">
-                                                            <h5 title="Máy nước nóng">
+                                                           <!--  <h5 title="Máy nước nóng">
                                                                 <a class="a-links" href="/may-nuoc-nong/">Máy nước nóng <span class="nk-sticker">
                                                                         <span class="path1"></span>
                                                                         <span class="path2"></span>
                                                                     </span>
                                                                 </a>
-                                                            </h5>
+                                                            </h5> -->
                                                             <ul>
                                                                 <li>
                                                                     <p style="">
