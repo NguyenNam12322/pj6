@@ -1076,6 +1076,49 @@ class crawlController extends Controller
     }
 
 
+    function crawlCellphones()
+    {
+        $url = 'https://cellphones.com.vn/smart-tivi-coocaa-hd-32-inch-32s3u-plus.html';
+        
+        $this->crawlCellPhone($url);
+    }
+
+    function crawlCellPhone($url)
+    {
+        $now = Carbon::now();
+
+        $html = file_get_html(trim($url));
+
+        $details = $html->find('#cpsContent',0);
+
+        $specifications = html_entity_decode($html->find('.technical-content-modal', 0));
+
+        $title =  strip_tags($html->find('.box-product-name h1', 0));  
+
+        // tính năng nổi bật
+
+        $feature_item = html_entity_decode($html->find('.ksp-content',0));
+
+        
+
+        $pattern = '/<a\s+[^>]*>(.*?)<\/a>/i';
+
+        // Replacement string (empty)
+        $replacement = '';
+
+        // Perform the replacement
+        $details = preg_replace($pattern, $replacement, html_entity_decode($details));
+
+        $details = str_replace($feature_item, '',  $details);
+
+        echo $details;
+
+        die;
+
+        $price = 0;
+    }
+
+
      public function crawlAO($url)
     {
         
@@ -1774,9 +1817,6 @@ class crawlController extends Controller
         $content = 
 
         preg_match_all('/<img.*?src=[\'"](.*?)[\'"].*?>/i', $content, $matches);
-
-
-
 
     }
 
