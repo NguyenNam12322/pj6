@@ -154,16 +154,7 @@ class crawlController extends Controller
 
         $check = [];
 
-        for ($i=0; $i<8; $i++) {
-
-        if($i!=0){
-            $url = 'https://dienmaygiakhang.vn/product-category/dien-lanh/may-lanh/may-lanh-gia-dinh/page/'.$i.'/';
-
-        }  
-        else{
-            $url = 'https://dienmaygiakhang.vn/product-category/dien-lanh/may-lanh/may-lanh-gia-dinh/';
-        }  
-
+        $url ='https://dienmaygiakhang.vn/product-category/dien-tu/tivi/tivi-coocaa/';
         
         $html = file_get_html(trim($url));
 
@@ -171,7 +162,7 @@ class crawlController extends Controller
 
             foreach ($link as $key => $value) {
 
-                DB::table('crawl_link')->insert(['link'=>trim($value->href), 'cate'=>4, 'updated_at'=>$now, 'created_at'=>$now]);
+                DB::table('crawl_link')->insert(['link'=>trim($value->href), 'cate'=>1, 'updated_at'=>$now, 'created_at'=>$now]);
             }
             
         }
