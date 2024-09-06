@@ -2094,7 +2094,7 @@
 
                             @endif
 
-                            <strong class="price">{{  str_replace(',' ,'.', number_format($value->Price))  }}&#x20AB;</strong>
+                            <strong class="price"> {{ convert_price($value->Price) }} </strong>
                         </a>
 
                         <div class="item-rating">
