@@ -273,7 +273,7 @@
                                         
 
                                         <li class="left-menu">
-                                            <!-- <div class="menu-item">
+                                            <div class="menu-item">
                                                 <div class="icon">
                                                     <i class="nki-menu-fridge"></i>
                                                 </div>
@@ -281,12 +281,12 @@
                                                     <a href="/tu-lanh">Tủ lạnh</a>
                                                     
                                                 </p>
-                                            </div> -->
+                                            </div> 
 
                                             <div class="sub-menu tivi-loa-amthanh" style="display: none;">
                                                 <div class=" menu-tivi children_sort">
                                                     <div class="item row2 bg-white">
-                                                        <div class="links">
+                                                       <!--  <div class="links">
                                                             <h5 title="Tivi">
                                                                 <a class="a-links" href="{{route('details','tu-lanh')}}">Tủ lạnh <span class="nk-sticker">
                                                                         <span class="path1"></span>
@@ -294,7 +294,7 @@
                                                                     </span>
                                                                 </a>
                                                             </h5>
-                                                        </div>
+                                                        </div> -->
                                                         <div class="links">
                                                             <h5 title="Thương hiệu">
 
