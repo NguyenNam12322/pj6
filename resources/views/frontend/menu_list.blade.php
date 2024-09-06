@@ -162,6 +162,11 @@
                                                 
                                         </li>
 
+                                        
+
+                                        @endforeach
+
+                                        @endif
                                         <li class="left-menu">
                                             <div class="menu-item">
                                                 <div class="icon">
@@ -200,10 +205,6 @@
                                             </div>
                                            
                                         </li>
-
-                                        @endforeach
-
-                                        @endif
 
                                     </ul>
                                 </div>
