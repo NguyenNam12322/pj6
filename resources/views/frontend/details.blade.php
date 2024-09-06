@@ -2037,7 +2037,7 @@
                                 @endif
 
                                 <br><br>
-                                {!!  $data->Specifications  !!} 
+                               
                             </div>
                             @else
 
