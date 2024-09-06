@@ -165,7 +165,7 @@ class crawlController extends Controller
                 DB::table('crawl_link')->insert(['link'=>trim($value->href), 'cate'=>1, 'updated_at'=>$now, 'created_at'=>$now]);
             }
             
-        }
+       
 
         echo'thành công';
 
