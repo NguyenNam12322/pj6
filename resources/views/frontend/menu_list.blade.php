@@ -47,6 +47,11 @@
     }    
 
 </style>
+
+<?php 
+
+    $icon_define = ['nki-menu-television', 'nki-menu-fridge', 'nki-menu-air-conditioner icon-new', 'nki-menu-washer', 'nki-menu-television','nki-menu-television','nki-menu-television','nki-menu-television','nki-menu-television'];
+?>
 <div class="row-fluid ">
     <div class="span16 nk-menu">
         <div class="row-fluid ">
@@ -64,6 +69,7 @@
                                         <?php 
 
                                             $menu = DB::table('group_product')->get();
+                                            $dem = 0;
                                         ?>
                                         @if(!empty($menu)  && $menu->count()>0)
 
@@ -73,11 +79,17 @@
                                         ?>
 
                                         @foreach($menu_lv_1 as $val)
+                                       
                                         <li class="left-menu">
                                             <div class="menu-item">
                                                 <div class="icon">
-                                                    <i class="nki-menu-television"></i>
+                                                    <i class="{{ $icon_define[$dem] }}"></i>
                                                 </div>
+
+                                                 <?php 
+
+                                                    $dem++;
+                                                ?>
 
                                                 <!-- level1 -->
 
@@ -148,6 +160,45 @@
                                             </div> 
                                             @endif
                                                 
+                                        </li>
+
+                                        <li class="left-menu">
+                                            <div class="menu-item">
+                                                <div class="icon">
+                                                    <img src="{{ asset('images/template/tuvan.png') }}" width="18px" height="18px" alt="may-loc-nuoc">
+                                                </div>
+                                                <p>
+                                                    <a href="#">Dịch vụ, hỗ trợ</a>
+                                                  
+                                                </p>
+                                            </div>
+                                           
+                                        </li>
+
+                                        <li class="left-menu">
+                                            <div class="menu-item">
+                                                <div class="icon">
+                                                    <img src="https://cdn.nguyenkimmall.com/images/companies/_1/layout/icon/may-loc-nuoc.webp" width="18px" height="18px" alt="may-loc-nuoc">
+                                                </div>
+                                                <p>
+                                                    <a href="#">Thông tin hữu ích</a>
+                                                  
+                                                </p>
+                                            </div>
+                                           
+                                        </li>
+
+                                        <li class="left-menu">
+                                            <div class="menu-item">
+                                                <div class="icon">
+                                                    <img src="{{ asset('images/template/hoptac.png') }}" width="18px" height="18px" alt="Cộng tác viên Affiate">
+                                                </div>
+                                                <p>
+                                                    <a href="#">Cộng tác viên Affiate</a>
+                                                  
+                                                </p>
+                                            </div>
+                                           
                                         </li>
 
                                         @endforeach
