@@ -1729,8 +1729,8 @@ html,
                    position: relative;
                    width: 125px;
                    white-space: nowrap;
-                   text-overflow: ellipsis;
-                   overflow: hidden;
+                  /* text-overflow: ellipsis;
+                   overflow: hidden;*/
                }
 
                .nk-menu #nk-danh-muc-san-pham-left .sub-menu .item.row2 .links .a-links .nki-sort-next {
