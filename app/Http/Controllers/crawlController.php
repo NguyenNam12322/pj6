@@ -1788,7 +1788,7 @@ class crawlController extends Controller
             $data['ProductSku'] = $model;
 
             $data['Link'] = convertSlug($title);
-            $data['Group_id']= 4;
+            $data['Group_id']= 389;
             $data['Specifications'] = $tskt;
             $data['user_id'] = 4;
             $data['created_at'] = $now;
