@@ -775,9 +775,15 @@ class categoryController extends Controller
                 return $data_group_products;
             });  
 
-            $min_price = $data->Price-500000;
+            $data_list_price =[500000,2500000,5000000];
 
-            $max_price = $data->Price+500000;
+            $data_selected_volume_price =  intval($data->Price)<10000000?1:intval($data->Price)<20000000?2:3;
+
+
+
+            $min_price = $data->Price- $data_list_price[$data_selected_volume_price];
+
+            $max_price = $data->Price+$data_list_price[$data_selected_volume_price];
 
             $sampe_product_price = [];
 
