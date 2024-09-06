@@ -63,7 +63,7 @@
                                     <ul>
                                         <a href="">
                                             <li class="left-menu">
-                                                <!-- <div class="menu-item">
+                                                <div class="menu-item">
                                                     <div class="icon">
                                                         <i class="nki-menu-television"></i>
                                                     </div>
@@ -71,11 +71,11 @@
                                                         <a href="{{route('details','ti-vi')}}">Tivi</a>
                                                         
                                                     </p>
-                                                </div> -->
+                                                </div>
                                                  <div class="sub-menu tivi-loa-amthanh" style="display: none;">
                                                     <div class=" menu-tivi children_sort">
                                                         <div class="item row2 bg-white">
-                                                            <div class="links">
+                                                            <!-- <div class="links">
                                                                 <h5 title="Tivi">
                                                                     <a class="a-links" href="{{route('details','ti-vi')}}">Tivi <span class="nk-sticker">
                                                                             <span class="path1"></span>
@@ -83,7 +83,7 @@
                                                                         </span>
                                                                     </a>
                                                                 </h5>
-                                                            </div>
+                                                            </div> -->
                                                             <div class="links">
                                                                 <h5 title="Thương hiệu">
 
