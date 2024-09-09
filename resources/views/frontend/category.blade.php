@@ -36,6 +36,18 @@
             color: red;
         }
 
+        .breadcrumb li::before {
+            border-top: 1px solid #666;
+            border-right: 1px solid #666;
+            content: '';
+            height: 6px;
+            position: absolute;
+            right: 5px;
+            transform: rotate(45deg);
+            top: 7px;
+            width: 6px;
+        }
+
         .nk-header .container{
             height: 100% !important;
         }
@@ -253,7 +265,7 @@
 
                            
                             
-
+                        <div><h4 style="line-height: 26px">{!! @$slogan !!}</h4></div>
 
                         @if(!empty($id_cate) && !empty($arr_info_filter[$id_cate]))  
 
@@ -263,7 +275,7 @@
 
                             $saker_show  = Cache::get('filterId_'.$arr_info_filter[$id_cate][1])
                         ?>
-
+                        
 
                         <div class="box-quicklink block-scroll-main filter-desktop box-links">
                             <p class="quick-filter-title">Chọn  theo loại {{ $name_cate_show }}</p>
