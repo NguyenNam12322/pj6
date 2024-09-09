@@ -42,9 +42,9 @@
             content: '';
             height: 6px;
             position: absolute;
-            right: 5px;
+            right: 2px;
             transform: rotate(45deg);
-            top: 7px;
+            top: 13px;
             width: 6px;
         }
 
@@ -265,7 +265,7 @@
 
                            
                             
-                       
+
 
                         @if(!empty($id_cate) && !empty($arr_info_filter[$id_cate]))  
 
@@ -275,7 +275,7 @@
 
                             $saker_show  = Cache::get('filterId_'.$arr_info_filter[$id_cate][1])
                         ?>
-                        
+
 
                         <div class="box-quicklink block-scroll-main filter-desktop box-links">
                             <p class="quick-filter-title">Chọn  theo loại {{ $name_cate_show }}</p>
