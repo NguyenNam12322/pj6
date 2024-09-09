@@ -57,7 +57,7 @@
         <div class="row-fluid ">
             <div class="span16 container">
                 <div class="row-fluid ">
-                    <div class="span16 row">
+                    <div class="span16">
                         <div class="row-fluid ">
                             <div class="span4 wrap-grid-menu">
                                 <div id="nk-danh-muc-san-pham-left" class="nk-danh-muc-trang-chu">
