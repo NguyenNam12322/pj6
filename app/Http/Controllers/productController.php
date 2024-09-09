@@ -313,7 +313,10 @@ class productController extends AppBaseController
         //     $input['Link'] = convertSlug($input['Name']);
         // }
         // bật  link thay đổi khi đổi title
-        $input['Link'] = convertSlug($input['Name']);
+
+         if(!empty($input['Name'])){
+            $input['Link'] = convertSlug($input['Name']);
+        }
 
         if (empty($product)) {
             Flash::error('Product not found');
