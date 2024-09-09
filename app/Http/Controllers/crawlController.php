@@ -192,11 +192,11 @@ class crawlController extends Controller
 
     public function showDataCrawl()
     {
-        $products = DB::table('products')->select('Name','id')->where('id','>', 1301)->get();
+        $products = DB::table('products')->select('Name','id','crawl_link')->get();
 
         foreach ($products as $key => $value) {
 
-            echo $value->Name.'<br>';
+            echo $value->Name.'-'.$value->crawl_link;
         }
     }
 
