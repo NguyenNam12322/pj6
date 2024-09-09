@@ -103,6 +103,24 @@
                 @endif
                 <div class="w100p">
                     <div class="span16 nk_houseware_best_selling_2020_wrapper nk_homepage_houseware_best_selling_2020_wrapper js_done">
+                        @if(empty($page_search))
+                            <div class="bsc-block">
+                                <section>
+                                    <ul class="breadcrumb">
+                                        <li><a href="{{ route('homeFe') }}">Trang chủ</a></li>
+
+                                        @if(isset($ar_list))
+                                        @foreach($ar_list as $val)
+                                        <li>
+                                            <a href="{{ route('details', @$val['link']) }}">{{ @$val['name'] }}</a>
+                                        </li>
+                                        @endforeach
+                                        @endif
+                                    </ul>
+                                </section>
+                            </div>
+                        @endif    
+
                         <!-- <div class="menu-wrap0" style="height: 35px;">
                             <div class="menu-wrap">
                                 <div class="menu-item active" id="menu_item_4133_3386" data-uid="4133_3386"><span>Nổi bật</span></div>
