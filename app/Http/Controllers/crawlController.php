@@ -580,7 +580,7 @@ class crawlController extends Controller
     public function removeLinkinDetails()
     {
 
-        $data = DB::table('products')->select('Detail', 'id')->where('id','>', 471)->get();
+        $data = DB::table('products')->select('Detail', 'id')->where('id','>', 1491)->get();
 
         foreach ($data as $key => $value) {
             
