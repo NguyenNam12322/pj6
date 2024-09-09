@@ -166,7 +166,7 @@
                             }
             
                         ?>
-                         <div>{!! @$slogan !!}</div>
+                         <!-- <div>{!! @$slogan !!}</div> -->
 
                         @if(isset($filter))
                         @foreach($filter as $filters)
