@@ -629,6 +629,8 @@ class categoryController extends Controller
 
             foreach($infoProductOfGroup as $key => $val){
 
+                dd($val);
+
 
                 if(!empty($val['product_id'])&& in_array($id, json_decode($val['product_id']))){
 
