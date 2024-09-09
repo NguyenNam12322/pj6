@@ -631,6 +631,8 @@ class categoryController extends Controller
 
                 $ar_list_pd = json_decode($val['product_id']);
 
+                dd($ar_list_pd);
+
                
                 // dd(in_array($id, $ar_list_pd,FALSE));
 
