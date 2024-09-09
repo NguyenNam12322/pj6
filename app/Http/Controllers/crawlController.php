@@ -196,7 +196,7 @@ class crawlController extends Controller
 
         foreach ($products as $key => $value) {
 
-            echo $value->Name.'-'.$value->crawl_link.'<br>';
+            echo $value->Name.'-     '.$value->crawl_link.'<br>';
         }
     }
 
