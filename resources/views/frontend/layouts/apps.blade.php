@@ -1040,7 +1040,7 @@
                             <div class="row-fluid ">
                                 <div class="span16 container _nk_main">
                                     <div class="row-fluid ">
-                                        <div class="span16 row flexthis">
+                                        <div class="span16  flexthis">
                                             <div class="row-fluid ">
                                                 <div class="span4 ">
                                                     <h1 id="nk-logo">
