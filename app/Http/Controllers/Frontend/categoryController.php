@@ -629,10 +629,12 @@ class categoryController extends Controller
 
             foreach($infoProductOfGroup as $key => $val){
 
-                dd(json_decode($val['product_id']));
+                $ar_list_pd = json_decode($val['product_id']);
+
+                
 
 
-                if(!empty($val['product_id'])&& in_array($id, json_decode($val['product_id'])) ){
+                if(!empty($val['product_id'])&& in_array($id, $ar_list_pd) ){
 
                     array_push($result, $val['id']);
                 }
