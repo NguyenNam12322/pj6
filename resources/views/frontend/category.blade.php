@@ -162,7 +162,7 @@
                             }
             
                         ?>
-                         <div><h4 style="line-height: 26px">{!! @$slogan !!}</h4></div>
+                         <div>{!! @$slogan !!}</div>
 
                         @if(isset($filter))
                         @foreach($filter as $filters)
