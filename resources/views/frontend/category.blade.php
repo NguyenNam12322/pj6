@@ -27,6 +27,10 @@
                 overflow-x: auto;
             }
 
+            .tygh-content{
+                margin-top: 20px;
+            }
+
 
         }   
 
