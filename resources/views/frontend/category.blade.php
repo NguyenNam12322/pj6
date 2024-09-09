@@ -28,7 +28,7 @@
             }
 
             .tygh-content{
-                margin-top: 20px;
+                margin-top: 64px;
             }
 
 
