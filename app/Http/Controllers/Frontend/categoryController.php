@@ -635,7 +635,7 @@ class categoryController extends Controller
                 // dd(in_array($id, $ar_list_pd,FALSE));
 
 
-                if(!empty($val['product_id'])&& in_array($id, $ar_list_pd, FALSE) ){
+                if(!empty($val['product_id'])&& in_array($id, [1,2,3], FALSE) ){
 
                     array_push($result, $val['id']);
                 }
