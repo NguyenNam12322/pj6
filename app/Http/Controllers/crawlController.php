@@ -2761,32 +2761,22 @@ class crawlController extends Controller
 
     public function getMetaProducts()
     {
-        for($i=4204; $i<4573; $i++){
+        for($i=1491; $i<1515; $i++){
 
             $link = product::find($i);
 
 
             if(isset($link)){
 
+                $title = $link->Name;
 
-                $url = $link->Link;
-
-                $urls = 'http://dienmaynguoiviet.com/'.$url.'/';
-
-        
-                $html = file_get_html(trim($urls));
-
-                $keyword = htmlspecialchars($html->find("meta[name=keywords]",0)->getAttribute('content'));
-                $content = $html->find("meta[name=description]",0) ->getAttribute('content');
-                $title   = $html-> find("title",0)-> plaintext;
-            
                 $meta   = new metaSeo();
 
                 $meta->meta_title =$title; 
-                $meta->meta_content =$content; 
-                $meta->meta_key_words = strip_tags($keyword); 
+                $meta->meta_content =$title; 
+                $meta->meta_key_words = $title; 
                 $meta->meta_og_title =$title; 
-                $meta->meta_og_content =$content; 
+                $meta->meta_og_content =$title; 
 
                 $meta->save();
 
