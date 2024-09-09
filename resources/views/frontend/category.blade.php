@@ -162,7 +162,7 @@
                             }
             
                         ?>
-
+                         <div><h4 style="line-height: 26px">{!! @$slogan !!}</h4></div>
 
                         @if(isset($filter))
                         @foreach($filter as $filters)
@@ -265,7 +265,7 @@
 
                            
                             
-                        <div><h4 style="line-height: 26px">{!! @$slogan !!}</h4></div>
+                       
 
                         @if(!empty($id_cate) && !empty($arr_info_filter[$id_cate]))  
 
