@@ -1020,10 +1020,10 @@ $search = $_GET['search']??'';
 
 
         if(value === '1'){
-            window.location.href = 'https://dienmayhg.vn/admins/products?filter_tick=1';
+            window.location.href = 'https://muasamtaikho.vn/admins/products?filter_tick=1';
         }
         else{
-            window.location.href = 'https://dienmayhg.vn/admins/products';
+            window.location.href = 'https://muasamtaikho.vn/admins/products';
         }
 
          // window.location.href = window.location.href;
