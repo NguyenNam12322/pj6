@@ -631,14 +631,11 @@ class categoryController extends Controller
 
                 $ar_list_pd = json_decode($val['product_id']);
 
-                dd($ar_list_pd);
-
-               
-                // dd(in_array($id, $ar_list_pd,FALSE));
 
 
-                if(!empty($val['product_id'])&& in_array($id, [1,2,3], FALSE) ){
+                if(!empty($val['product_id'])&& !empty($ar_list_pd) && in_array($id, $ar_list_pd, FALSE) ){
 
+                  
                     array_push($result, $val['id']);
                 }
                
