@@ -34,6 +34,9 @@
         <meta property="og:image" content="{{ asset($data->Image) }}"/>
         @endif
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+        <link rel="canonical" href="{{ url()->current() }}" >
+
         <meta property="og:type" content="article" />
 
         <meta property="fb:app_id" content="534767553533391" />
