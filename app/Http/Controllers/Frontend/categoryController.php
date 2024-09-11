@@ -387,10 +387,11 @@ class categoryController extends Controller
 
                 
                 }
+                dd(1);
 
             }
 
-            dd($data);
+
 
             if($parent_cate_id == 8){
 
