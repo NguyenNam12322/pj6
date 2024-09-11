@@ -384,7 +384,7 @@ class categoryController extends Controller
                         return $numberdata;
 
                     });    
-                    dd(1);
+                    dd($Group_product);
 
                 
                 }
