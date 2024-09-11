@@ -384,10 +384,11 @@ class categoryController extends Controller
                         return $numberdata;
 
                     });    
+                    dd(1);
 
                 
                 }
-                dd(1);
+
 
             }
 
