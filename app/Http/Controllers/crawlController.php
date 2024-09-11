@@ -212,7 +212,11 @@ class crawlController extends Controller
 
         foreach ($products as $key => $value) {
 
-            array_push($sku, $value->ProductSku);
+            if(!empty($value->ProductSku)){
+
+                array_push($sku, $value->ProductSku);
+            }
+
             
         }
 
