@@ -48,7 +48,7 @@ class showController extends Controller
 
     public function showChinhSachs()
     {
-        Return view('frontend.header_footer.chinh_sach');
+        Return view('header_footer.chinhsach');
     }
 
     public function deleteLinkAdd(Request $request)
