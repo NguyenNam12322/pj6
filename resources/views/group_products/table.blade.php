@@ -234,7 +234,8 @@
 
         $('.click1').dblclick(function(){
 
-
+            console.log(1)
+            
             dataId = $(this).attr('data-id');
 
             show   = $(this).attr('data-show');
