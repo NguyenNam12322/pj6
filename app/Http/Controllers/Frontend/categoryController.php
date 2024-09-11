@@ -384,7 +384,7 @@ class categoryController extends Controller
                         return $numberdata;
 
                     });    
-                    dd($Group_product);
+                    dd(json_decode($Group_product->product_id));
 
                 
                 }
