@@ -380,7 +380,7 @@ class groupProductController extends AppBaseController
 
         array_push($id_group, $id);
 
-        return 1;
+
 
         if($active==1){
 
@@ -402,6 +402,7 @@ class groupProductController extends AppBaseController
 
                         
                     }
+                     return $data_product_id;
 
                     
 
