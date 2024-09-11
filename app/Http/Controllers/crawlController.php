@@ -222,7 +222,7 @@ class crawlController extends Controller
 
         $duplicates = $this->findDuplicates($sku);
 
-        echo "<pre>";print_r($duplicates); echo"</pre>"
+        echo "<pre>";print_r($duplicates); echo"</pre>";
 
 
         // $products = DB::table('products')->select('Name','id','crawl_link')->get();
