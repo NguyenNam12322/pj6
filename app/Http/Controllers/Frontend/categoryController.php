@@ -390,6 +390,8 @@ class categoryController extends Controller
 
             }
 
+            dd($data);
+
             if($parent_cate_id == 8){
 
                 $parent_cate_id = $id_cate;
