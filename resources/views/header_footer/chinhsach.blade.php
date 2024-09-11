@@ -41,7 +41,7 @@
    
     <form method="post"  action="{{ route('add-chinh-sach') }}" enctype="multipart/form-data">
         @csrf
-        <table>
+        <table style="width: 400px;">
             <tbody>
 
                 <tr>

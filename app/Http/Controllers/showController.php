@@ -134,12 +134,12 @@ class showController extends Controller
 
     public function showChinhSach(Request $request)
     {
-        $input1 = $request->input1;
-        $input2 = $request->input2;
-        $input3 = $request->input3;
-        $input4 = $request->input4;
-        $input5 = $request->input5;
-        $input6 = $request->input6;
+        $input['input1'] = $request->input1;
+        $input['input2'] = $request->input2;
+        $input['input3'] = $request->input3;
+        $input['input4'] = $request->input4;
+        $input['input5'] = $request->input5;
+        $input['input6'] = $request->input6;
         DB::table('chinh_sach')->where('id', 1)->update($input);
 
        return redirect()->back();
