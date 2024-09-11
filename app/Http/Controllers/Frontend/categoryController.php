@@ -296,6 +296,8 @@ class categoryController extends Controller
             return $findID;
         });
 
+        dd($findID);
+
 
         if(empty($findID)){
             return $this->blogDetailView($slug);
