@@ -410,7 +410,7 @@ class groupProductController extends AppBaseController
                     $all_product_group->product_id = json_encode(array_unique($data_product_id));
 
                     $all_product_group->save();
-                     return $value;
+                     
 
                 }
                
