@@ -356,7 +356,7 @@ class categoryController extends Controller
 
                 $Group_product_active = $Group_product->active;
 
-                dd(json_decode($Group_product->product_id));
+                dd($Group_product->product_id);
 
                 
 
