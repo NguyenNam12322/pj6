@@ -1170,29 +1170,33 @@
                     <!-- <span class="ttl"> Độc quyền tại Siêu Thị Điện Máy - Nội Thất Chợ Lớn</span> -->
                     <div class="monopoly_item">
                         <ul>
+                            <?php 
+
+                                $data_cs = DB::table('chinh_sach')->where('id', 1)->get()->first();
+                            ?>
                             <li>
                                 <i class="icon_genuine"></i>
-                                <div class="monopoly-title">Hàng chính hãng <strong>100%</strong></div>
+                                <div class="monopoly-title">{{  $data_cs->input1 }}</div>
                             </li>
                             <li>
                                 <i class="icon_change"></i>
-                                <div class="monopoly-title">Đổi trả trong <strong>35</strong> ngày </div>
+                                <div class="monopoly-title">{{  $data_cs->input2 }} </div>
                             </li>
                             <li>
                                 <i class="icon_refund"></i>
-                                <div class="monopoly-title">Hoàn chênh lệch nếu siêu thị khác rẻ hơn.</div>
+                                <div class="monopoly-title">{{  $data_cs->input3 }}</div>
                             </li>
                             <li>
                                 <i class="icon_guarantee_mb"></i>
-                                <div class="monopoly-title">Bảo hành chính hãng <strong>2 năm</strong>, có người đến tận nhà </div>
+                                <div class="monopoly-title">{{  $data_cs->input4 }} </div>
                             </li>
                             <li>
                                 <i class="icon_delivery"></i>
-                                <div class="monopoly-title">Giao hàng miễn phí tận nơi </div>
+                                <div class="monopoly-title">{{  $data_cs->input5 }}</div>
                             </li>
                             <li>
                                 <i class="icon_thung"></i>
-                                <div class="monopoly-title">Thùng tủ lạnh có: Sách hướng dẫn</div>
+                                <div class="monopoly-title">{{  $data_cs->input6 }}</div>
                             </li>
                         </ul>
                     </div>
