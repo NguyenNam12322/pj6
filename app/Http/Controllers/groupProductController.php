@@ -380,9 +380,11 @@ class groupProductController extends AppBaseController
 
         array_push($id_group, $id);
 
+        return 1;
+
         if($active==1){
 
-            dd(1);
+
 
             if(isset($id_group)){
 
