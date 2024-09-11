@@ -227,6 +227,14 @@ Route::group(['prefix' => 'admins','middleware' => 'auth'], function() {
 
     Route::post('active-promotion-price', 'giftController@activePromotionPrice')->name('active-promotion-price');
 
+    Route::post('show-chinh-sach', 'showController@showChinhSach')->name('add-chinh-sach');
+
+    Route::get('chinh-sach', 'showController@showChinhSachs')->name('show chinh sach');
+
+
+
+    
+
     Route::post('remove-click-active-promotion-price', 'giftController@removeClickActivePromotionPrice')->name('remove-click-active-promotion-price');
 
     Route::get('get-info-order', 'apiController@searchInfoOrder');

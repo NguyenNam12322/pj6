@@ -46,6 +46,11 @@ class showController extends Controller
         
     }
 
+    public function showChinhSachs()
+    {
+        Return view('header_footer.chinh_sach');
+    }
+
     public function deleteLinkAdd(Request $request)
     {
         $id = $request->id;
@@ -125,6 +130,20 @@ class showController extends Controller
     public function index()
     {
         return view('header_footer.index');
+    }
+
+    public function showChinhSach(Request $request)
+    {
+        $input1 = $request->input1;
+        $input2 = $request->input2;
+        $input3 = $request->input3;
+        $input4 = $request->input4;
+        $input5 = $request->input5;
+        $input6 = $request->input6;
+        DB::table('chinh_sach')->where('id', 1)->update($input);
+
+       return redirect()->back();
+
     }
 
     public function addInfoHeaderFooter(Request $request)
