@@ -148,6 +148,8 @@ class crawlController extends Controller
         
     }
 
+
+
     function getLinkCrawlDMGK()
     {
         $now = Carbon::now();
@@ -190,14 +192,41 @@ class crawlController extends Controller
        
     }
 
+    public function findDuplicates($array) {
+        $counts = array_count_values($array);
+        $duplicates = [];
+        foreach ($counts as $value => $count) {
+            if ($count > 1) {
+                $duplicates[] = $value;
+            }
+        }
+        return $duplicates;
+    }
+
     public function showDataCrawl()
     {
-        $products = DB::table('products')->select('Name','id','crawl_link')->get();
+
+        $products = DB::table('products')->select('ProductSku', 'id')->orderBy('ProductSku', 'desc')->get();
+
+        $sku = [];
 
         foreach ($products as $key => $value) {
 
-            echo $value->Name.'-     '.$value->crawl_link.'<br>';
+            array_push($sku, $value->ProductSku);
+            
         }
+
+        $duplicates = findDuplicates($sku);
+
+        print_r($duplicates);
+
+
+        // $products = DB::table('products')->select('Name','id','crawl_link')->get();
+
+        // foreach ($products as $key => $value) {
+
+        //     echo $value->Name.'-     '.$value->crawl_link.'<br>';
+        // }
     }
 
     public function uploadImg($images)
