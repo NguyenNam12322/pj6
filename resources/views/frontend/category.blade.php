@@ -113,10 +113,7 @@
         <div class="span16 container outstanding">
             <div class="row-fluid">
 
-                <?php 
-
-                    dd($data);
-                ?>
+               
                 @if(count($data) ==0)
         
                     <span class="not-found">Không tìm thấy sản phẩm đã chọn</span>

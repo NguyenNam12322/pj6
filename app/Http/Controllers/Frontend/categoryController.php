@@ -356,9 +356,6 @@ class categoryController extends Controller
 
                 $Group_product_active = $Group_product->active;
 
-                dd($Group_product->product_id);
-
-                
 
                 if($Group_product_active==1){
 
