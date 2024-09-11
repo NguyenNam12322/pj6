@@ -382,6 +382,8 @@ class groupProductController extends AppBaseController
 
         if($active==1){
 
+            dd(1);
+
             if(isset($id_group)){
 
                 // nhóm group id của sản phẩm
@@ -399,7 +401,7 @@ class groupProductController extends AppBaseController
                         
                     }
 
-                    dd(1);
+                    
 
                     array_push($data_product_id, $product_id);
 
