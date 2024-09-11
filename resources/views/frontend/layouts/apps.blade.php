@@ -2732,6 +2732,16 @@
             $('.show-menu').addClass('active');
 
         });  
+
+         $('.left-menu').hover(function() {
+                
+                $(this).find('.sub-menu').show();
+
+                
+
+            }, function() {
+                $(this).find('.sub-menu').hide();
+            });
     
     </script>
 
