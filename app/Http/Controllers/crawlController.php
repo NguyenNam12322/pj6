@@ -216,7 +216,7 @@ class crawlController extends Controller
             
         }
 
-        $duplicates = findDuplicates($sku);
+        $duplicates = $this->findDuplicates($sku);
 
         print_r($duplicates);
 
