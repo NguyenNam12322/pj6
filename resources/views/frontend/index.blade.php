@@ -34,6 +34,8 @@
             background-position: -2px -2px;
             margin-right: 10px;
         }
+
+
         
 </style>
 
@@ -59,6 +61,11 @@
             border: 1px solid #D7BA6C;
             
         } 
+
+        .nk-menu #nk-danh-muc-san-pham-left>ul{
+            top: 53px;
+            width: 250px;
+        }    
 
         
 
