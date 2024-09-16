@@ -206,7 +206,7 @@ class crawlController extends Controller
     public function showDataCrawl()
     {
 
-        $products = DB::table('products')->select('ProductSku', 'id')->orderBy('ProductSku', 'desc')->get();
+        $products = DB::table('products')->select('Name', 'id')->orderBy('Name', 'desc')->get();
 
         $sku = [];
 
