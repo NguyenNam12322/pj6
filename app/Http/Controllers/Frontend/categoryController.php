@@ -786,7 +786,7 @@ class categoryController extends Controller
 
             $data_list_price =[500000,2500000,5000000];
 
-            $data_selected_volume_price =  intval($data->Price)<10000000?1:(intval($data->Price)<20000000?2:3);
+            $data_selected_volume_price =  intval($data->Price)<10000000?0:(intval($data->Price)<20000000?1:2);
 
 
 
