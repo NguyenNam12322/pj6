@@ -180,7 +180,7 @@
 
     <?php
     if($data->Quantily==0||$data['Price']==0){
-        $status ='Đang cập nhật tồn';
+        $status ='Đang cập nhật giá';
     
     }
     elseif($data->Quantily<=-1){
