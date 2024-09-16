@@ -418,7 +418,7 @@ class productController extends AppBaseController
 
         Flash::success('Product deleted successfully.');
 
-        return redirect(route('products.index'));
+        return redirect()->back();
     }
 
     public function product_sale_show(Request $request)
