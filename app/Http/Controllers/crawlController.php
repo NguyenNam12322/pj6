@@ -208,11 +208,11 @@ class crawlController extends Controller
 
         $products = DB::table('products')->select('Name', 'id')->orderBy('Name', 'desc')->get();
 
-        foreach ($products as $key => $value) {
+        // foreach ($products as $key => $value) {
 
-            echo $value->Name.'<br>';
-        }    
-        die;
+        //     echo $value->Name.'<br>';
+        // }    
+        // die;
 
 
 
