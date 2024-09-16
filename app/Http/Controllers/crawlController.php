@@ -214,7 +214,7 @@ class crawlController extends Controller
 
             if(!empty($value->crawl_link)){
 
-                array_push($sku, $value->crawl_link);
+                array_push($sku, trim($value->crawl_link));
             }
 
             
