@@ -212,7 +212,7 @@ class crawlController extends Controller
 
         foreach ($products as $key => $value) {
 
-            if(!empty($value->ProductSku)){
+            if(!empty($value->Name)){
 
                 array_push($sku, $value->ProductSku);
             }
@@ -240,6 +240,11 @@ class crawlController extends Controller
         $img  = '/uploads/product/crawl/'.str_replace(strstr(basename($images), '?'), '', basename($images)) ;
         file_put_contents(public_path().$img, file_get_contents($images));
         return $img;
+    }
+
+    public function checkDataCrawl()
+    {
+        // code...
     }
 
 
