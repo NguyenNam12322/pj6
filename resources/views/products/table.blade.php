@@ -288,7 +288,7 @@ $search = $_GET['search']??'';
 
             <td style="width: 124px;">
                 <label>Sửa</label>
-                <input type="" name="sale_order" value="{{ $product->sale_order }}" id="productManuPrice{{ $product->manuPrice }}" style="width: 100%;">
+                <input type="" name="sale_order" value="{{ @str_replace(',' ,'.', number_format($product->manuPrice))}} " id="productManuPrice{{ $product->id }}" style="width: 100%;">
 
               
                 <div class="btn-primary" onclick="productManuPrice('{{ $product->id}}')"  id="productManuPrice_edit{{ $product->id }}">Sửa</div>
