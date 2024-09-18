@@ -43,10 +43,10 @@
 
     @if($page==1)
 
-    <a href="{{ route('get_customn_footer') }}?page=2">Chính sách và quy định</a>
+    <a href="{{ route('get custom footer') }}?page=2">Chính sách và quy định</a>
     @else
 
-    <a href="{{ route('get_customn_footer') }}?page=2">Muasamtaikho.vn</a>
+    <a href="{{ route('get custom footer') }}?page=1">Muasamtaikho.vn</a>
     @endif
    
    
