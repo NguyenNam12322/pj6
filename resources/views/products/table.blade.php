@@ -59,6 +59,10 @@ $search = $_GET['search']??'';
         
         <th>Tồn kho</th>
         <th>Sắp xếp</th>
+
+        <th>Giá lắp đặt</th>
+        <th>Giá vận chuyển</th>
+
         <th>Show</th>
         <!-- <th>chọn danh mục nhanh</th> -->
 
@@ -270,7 +274,25 @@ $search = $_GET['search']??'';
                 <div class="btn-primary" onclick="flashOrderSale('{{ $product->id}}')"  id="sale_order_edit{{ $product->id }}">Sửa</div>
 
 
-               
+            </td>
+
+            <td style="width: 124px;">
+                <label>Sửa</label>
+                <input type="" name="sale_order" value="{{ @str_replace(',' ,'.', number_format($product->InputPrice))}}" id="sale_order{{ $product->id }}" style="width: 100%;">
+
+              
+                <div class="btn-primary" onclick="productInputPrice('{{ $product->id}}')"  id="productInputPrice{{ $product->id }}">Sửa</div>
+
+
+            </td>
+
+            <td style="width: 124px;">
+                <label>Sửa</label>
+                <input type="" name="sale_order" value="{{ $product->sale_order }}" id="sale_order{{ $product->manuPrice }}" style="width: 100%;">
+
+              
+                <div class="btn-primary" onclick="productManuPrice('{{ $product->id}}')"  id="productManuPrice{{ $product->id }}">Sửa</div>
+
 
             </td>
 
@@ -705,6 +727,68 @@ $search = $_GET['search']??'';
         });
 
     }
+
+    
+
+    function productInputPrice(productId) {
+
+         $.ajaxSetup({
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            }
+        });
+
+           
+        $.ajax({
+           
+            type: 'POST',
+            url: "{{ route('edit-input-price') }}",
+            data: {
+                product_id: productId,
+                price:$('#productInputPrice'+productId).val()
+                   
+            },
+            success: function(result){
+
+                $('#productInputPrice'+productId).text('thành công');
+                 
+                setTimeout(location.reload(), 3000);
+            }
+        });
+       
+    }
+
+    function productManuPrice(productId) {
+
+         $.ajaxSetup({
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            }
+        });
+
+           
+        $.ajax({
+           
+            type: 'POST',
+            url: "{{ route('edit-manu-price') }}",
+            data: {
+                product_id: productId,
+                price:$('#productManuPrice'+productId).val()
+                   
+            },
+            success: function(result){
+
+                $('#productManuPrice'+productId).text('thành công');
+                 
+                setTimeout(location.reload(), 3000);
+            }
+        });
+       
+    }
+
+
+
+
 
     function flashQualtily(productId) {
 

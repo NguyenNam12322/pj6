@@ -321,6 +321,12 @@ Route::group(['prefix' => 'admins','middleware' => 'auth'], function() {
 
     Route::post('/edit-fast-Qualtity', 'productController@editFastQualtity')->name('edit-fast-qualtity');
 
+    Route::post('/edit-fast-Qualtity', 'productController@productInputPrice')->name('edit-input-price');
+
+    Route::post('/edit-fast-Qualtity', 'productController@productManuPrice')->name('edit-manu-price');
+
+
+
     Route::post('/edit-sale-order', 'productController@editSaleOrder')->name('edit-sale-order');
 
     Route::get('update-permision', 'customnUserController@updatePermision')->name('updatePermission');

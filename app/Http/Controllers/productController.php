@@ -606,6 +606,34 @@ class productController extends AppBaseController
 
     }
 
+    public function editInputPrice(Request $request)
+    {
+
+        $price = $request->price;
+        $product_id = $request->product_id;
+        $product = product::find($product_id);
+        $product->InputPrice = $price;
+        $product->user_id = Auth::user()->id;
+
+        $product->save();
+        return response('thanh cong');
+
+    }
+
+    public function editManuPrice(Request $request)
+    {
+
+        $price = $request->price;
+        $product_id = $request->product_id;
+        $product = product::find($product_id);
+        $product->manuPrice = $price;
+        $product->user_id = Auth::user()->id;
+
+        $product->save();
+        return response('thanh cong');
+
+    }
+
     public function editSaleOrder(Request $request)
     {
 
