@@ -321,9 +321,9 @@ Route::group(['prefix' => 'admins','middleware' => 'auth'], function() {
 
     Route::post('/edit-fast-Qualtity', 'productController@editFastQualtity')->name('edit-fast-qualtity');
 
-    Route::post('/edit-input-price', 'productController@productInputPrice')->name('edit-input-price');
+    Route::post('/edit-input-price', 'productController@editInputPrice')->name('edit-input-price');
 
-    Route::post('/edit-manu-price', 'productController@productManuPrice')->name('edit-manu-price');
+    Route::post('/edit-manu-price', 'productController@editManuPrice')->name('edit-manu-price');
 
 
 
