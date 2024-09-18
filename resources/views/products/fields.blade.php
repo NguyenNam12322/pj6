@@ -173,6 +173,12 @@
 </div>
 
 <div class="form-group col-sm-6">
+    {!! Form::label('Manus Price', 'Giá hãng:') !!}
+    {!! Form::text('ManusPrice', null, ['id'=>'ManusPrice' ,'class' => 'form-control']) !!}
+
+</div>
+
+<div class="form-group col-sm-6">
     {!! Form::label('input Price', 'Giá lắp đặt:') !!}
     {!! Form::text('InputPrice', null, ['id'=>'inputPrice' ,'class' => 'form-control']) !!}
 
