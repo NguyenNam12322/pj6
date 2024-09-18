@@ -924,7 +924,7 @@
                                 
                                 @endif
 
-
+                                @if(!empty($data->InputPrice))
                                 <div class="add-service">
                                     @if(!empty($data->InputPrice))
 
@@ -947,7 +947,7 @@
                                 
 
                                 </div>
-
+                                @endif
 
                                <!--  @if($data_cate==4)
 
