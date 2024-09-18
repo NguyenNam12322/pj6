@@ -84,7 +84,7 @@ class product extends Model
         'Name',
         'ProductSku',
         'manuPrice',
-        'manusPrice',
+        'ManusPrice',
         'Link',
         'Detail',
         'Salient_Features',
