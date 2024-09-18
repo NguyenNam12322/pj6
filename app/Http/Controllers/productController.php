@@ -330,6 +330,12 @@ class productController extends AppBaseController
             $input['Price'] = str_replace('.', '', $input['Price']);
         }
 
+        if(!empty($input['ManusPrice'])){
+
+            $input['ManusPrice'] = str_replace(',', '', $input['ManusPrice']);
+            $input['ManusPrice'] = str_replace('.', '', $input['ManusPrice']);
+        }
+        
 
         
         if(!empty($input['InputPrice'])){
