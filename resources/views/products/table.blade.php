@@ -278,20 +278,20 @@ $search = $_GET['search']??'';
 
             <td style="width: 124px;">
                 <label>Sửa</label>
-                <input type="" name="sale_order" value="{{ @str_replace(',' ,'.', number_format($product->InputPrice))}}" id="sale_order{{ $product->id }}" style="width: 100%;">
+                <input type="" name="sale_order" value="{{ @str_replace(',' ,'.', number_format($product->InputPrice))}}" id="productInputPrice{{ $product->id }}" style="width: 100%;">
 
               
-                <div class="btn-primary" onclick="productInputPrice('{{ $product->id}}')"  id="productInputPrice{{ $product->id }}">Sửa</div>
+                <div class="btn-primary" onclick="productInputPrice('{{ $product->id}}')"  id="productInputPrice_edit{{ $product->id }}">Sửa</div>
 
 
             </td>
 
             <td style="width: 124px;">
                 <label>Sửa</label>
-                <input type="" name="sale_order" value="{{ $product->sale_order }}" id="sale_order{{ $product->manuPrice }}" style="width: 100%;">
+                <input type="" name="sale_order" value="{{ $product->sale_order }}" id="productManuPrice{{ $product->manuPrice }}" style="width: 100%;">
 
               
-                <div class="btn-primary" onclick="productManuPrice('{{ $product->id}}')"  id="productManuPrice{{ $product->id }}">Sửa</div>
+                <div class="btn-primary" onclick="productManuPrice('{{ $product->id}}')"  id="productManuPrice_edit{{ $product->id }}">Sửa</div>
 
 
             </td>
@@ -750,7 +750,7 @@ $search = $_GET['search']??'';
             },
             success: function(result){
 
-                $('#productInputPrice'+productId).text('thành công');
+                $('#productInputPrice_edit'+productId).text('thành công');
                  
                 setTimeout(location.reload(), 3000);
             }
@@ -778,7 +778,7 @@ $search = $_GET['search']??'';
             },
             success: function(result){
 
-                $('#productManuPrice'+productId).text('thành công');
+                $('#productManuPrice_edit'+productId).text('thành công');
                  
                 setTimeout(location.reload(), 3000);
             }
