@@ -1561,6 +1561,13 @@
 
             </div>
 
+            <div class="info_pro_price">
+               <div class="price_giaban price_market">Giá hãng : 
+                  <span> 11.990.000đ</span>
+               </div>
+               
+            </div>
+
            
             @if(!empty($data_cate) && $data_cate==1 && !empty($show_pd_tv))
 
