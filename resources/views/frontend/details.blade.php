@@ -1560,13 +1560,14 @@
                
 
             </div>
-
+            @if(!empty($value->ManuPrices))
             <div class="info_pro_price">
                <div class="price_giaban price_market">Giá hãng : 
-                  <span> 11.990.000đ</span>
+                  <span> {{  str_replace(',' ,'.', number_format($value->ManuPrices))  }}đ</span>
                </div>
                
             </div>
+            @endif
 
            
             @if(!empty($data_cate) && $data_cate==1 && !empty($show_pd_tv))
