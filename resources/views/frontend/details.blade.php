@@ -1562,7 +1562,7 @@
             </div>
             @if(!empty($data->ManusPrice))
             <div class="info_pro_price">
-               <div class="price_giaban price_market">Giá hãng : 
+               <div class="stock price_giaban price_market">Giá hãng : 
                   <span> {{  str_replace(',' ,'.', number_format($data->ManusPrice))  }}đ</span>
                </div>
                
