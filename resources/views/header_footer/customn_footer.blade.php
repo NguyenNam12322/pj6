@@ -4,7 +4,7 @@
 
         $page = !empty($_GET['page'])?$_GET['page']:1;
 
-        $info = DB::table('chinh_sach')->where('id',$page)->get()->first();
+        $info = DB::table('footer_customn')->where('id',$page)->get()->first();
     ?>
 
 <style type="text/css">
