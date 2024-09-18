@@ -55,7 +55,7 @@
                     </td>
 
                     <td>
-                        <input type="text" class="color" name="input1" value="{{ @$info->link1 }}" required>
+                        <input type="text" class="color" name="link1" value="{{ @$info->link1 }}" required>
                     </td>
                 </tr>
 
@@ -67,7 +67,7 @@
                     </td>
                     <td>
                        
-                        <input type="text" class="color" name="input2" value="{{ @$info->link2 }}" required>
+                        <input type="text" class="color" name="link2" value="{{ @$info->link2 }}" required>
                     </td>
                 </tr>
 
@@ -80,7 +80,7 @@
 
                     <td>
                        
-                        <input type="text" class="color" name="input3" value="{{ @$info->link3 }}" required>
+                        <input type="text" class="color" name="link3" value="{{ @$info->link3 }}" required>
                     </td>
                 </tr>
 
@@ -93,7 +93,7 @@
 
                     <td>
                        
-                        <input type="text" class="color" name="input4" value="{{ @$info->link4 }}" required>
+                        <input type="text" class="color" name="link4" value="{{ @$info->link4 }}" required>
                     </td>
                 </tr>
 
@@ -106,7 +106,7 @@
 
                     <td>
                        
-                        <input type="text" class="color" name="input5" value="{{ @$info->link5 }}" required>
+                        <input type="text" class="color" name="link5" value="{{ @$info->link5 }}" required>
                     </td>
                 </tr>
 
@@ -118,7 +118,7 @@
                     </td>
                     <td>
                        
-                        <input type="text" class="color" name="input6" value="{{ @$info->link6 }}" required>
+                        <input type="text" class="color" name="link6" value="{{ @$info->link6 }}" required>
                     </td>
                 </tr>
                 
