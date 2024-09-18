@@ -1560,10 +1560,10 @@
                
 
             </div>
-            @if(!empty($value->ManuPrices))
+            @if(!empty($value->ManusPrice))
             <div class="info_pro_price">
                <div class="price_giaban price_market">Giá hãng : 
-                  <span> {{  str_replace(',' ,'.', number_format($value->ManuPrices))  }}đ</span>
+                  <span> {{  str_replace(',' ,'.', number_format($value->ManusPrice))  }}đ</span>
                </div>
                
             </div>
