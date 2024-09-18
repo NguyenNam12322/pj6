@@ -41,6 +41,13 @@
     </ul> -->
     <p class="sub-section-header"> <?= $page==1?'Muasamtaikho.vn':'Chính sách và quy định'  ?> </p>
 
+    @if($page==1)
+
+    <a href="{{ route('get_customn_footer') }}?page=2">Chính sách và quy định</a>
+    @else
+
+    <a href="{{ route('get_customn_footer') }}?page=2">Muasamtaikho.vn</a>
+    @endif
    
    
     <form method="post"  action="{{ route('custom footer') }}">
