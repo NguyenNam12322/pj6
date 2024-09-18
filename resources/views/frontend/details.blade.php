@@ -1562,7 +1562,7 @@
             </div>
 
            
-            @if(!empty($data_cate) && $data_cate==1)
+            @if(!empty($data_cate) && $data_cate==1 && !empty($show_pd_tv))
 
             <?php
 
