@@ -1800,9 +1800,10 @@
                             </div>      
                             @endif
 
-                            <br>
+                            
 
                             @if(!empty($data->manuPrice))
+                                <br>
 
                                  <input type="checkbox" id="inputs-price" name="price-add-2" class="price-add-2" value="{{ $data->manuPrice }}" >
 
