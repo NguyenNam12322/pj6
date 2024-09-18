@@ -229,7 +229,7 @@ Route::group(['prefix' => 'admins','middleware' => 'auth'], function() {
 
     Route::post('show-chinh-sach', 'showController@showChinhSach')->name('add-chinh-sach');
 
-    Route::post('customn-footers', 'showController@customn-footers')->name('custom footer');
+    Route::post('customn-footers', 'showController@customn_footers')->name('custom footer');
 
     Route::get('get_customn_footer', 'showController@get_customn_footer')->name('get custom footer');
     
