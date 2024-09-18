@@ -187,7 +187,7 @@
         $status ='Ngừng kinh doanh';
     }
     else{
-        $status = 'Còn hàng';
+        $status = 'CÒN HÀNG';
     }
 
     ?>
@@ -1762,12 +1762,8 @@
                             @endif
 
 
-                           
-                            <br>
-
-                           
-
-
+                          
+                        
                             <!-- ngừng kinh doanh thì ẩn giá -->
 
                             @if($data->Quantily>-1)
@@ -2093,11 +2089,7 @@
 
                             <h4 class="post-sidebar-title">{{ $value->Name }}</h4>
 
-                            @if(!empty($value->manuPrice))
-
-                            <div class="price_giaban price_market">Giá niêm yết : <span>{{ str_replace(',' ,'.', number_format($value->manuPrice)) }} </span></div>
-
-                            @endif
+                            
 
                             <strong class="price"> {{ convert_price($value->Price) }} </strong>
                         </a>
