@@ -540,6 +540,13 @@
     }
 </style>
 
+<?php 
+
+    $csqd = DB::table('footer_customn')->where('id',2)->get()->first();
+
+    $hdmh = DB::table('footer_customn')->where('id',1)->get()->first();
+?>
+
 
 <footer class="footer container mobile">
     <div class="footer-new n-n">
@@ -573,9 +580,13 @@
                     <a href="/tin-tuc">Tin tức</a>
                 </div>
             </div>
+
+
             <div class="item-n item-st">
                 <div class="title">Chính sách và quy định <i class="fa fa-caret-right" aria-hidden="true"></i></div>
                 <div class="list">
+
+
                     <a rel="nofollow" href="/tin-cong-ty/chinh-sach-bao-mat-thong-tin-truc-tuyen-cua-digicity/a245.html">Chính
                     sách bảo mật</a>
                     <a rel="nofollow" href="/page/chinh-sach-giao-hang">Chính sách vận chuyển</a>
@@ -661,28 +672,29 @@
                 </p>
                
             </div>
+
+
+
+
             <div class="ft-new-menu">
                 <div class="item-n item-st">
                     <div class="title">Muasamtaikho.vn</div>
                     <div class="list">
-                        <a href="#">Giới thiệu</a>
-                        <a href="#">Tin tức</a>
-                        <a href="#">Hướng dẫn tiêu dùng</a>
-                        <a rel="nofollow" href="#">Hướng dẫn mua hàng</a>
-                        <a rel="nofollow" href="#">Hướng dẫn thanh toán</a>
-                        <a rel="nofollow" href="#" target="_blank">Hướng dẫn trả góp với
-                        Insta</a>
+                        <a href="{{ $hdmh->link1 }}">{{ $hdmh->input1 }}</a>
+                        <a href="{{ $hdmh->link2 }}">{{ $hdmh->input2 }}</a>
+                        <a href="{{ $hdmh->link3 }}">{{ $hdmh->input3 }}</a>
+                        <a rel="nofollow" href="{{ $hdmh->link4 }}">{{ $hdmh->input4 }}</a>
+                        <a rel="nofollow" href="{{ $hdmh->link5 }}">{{ $hdmh->input5 }}</a>
+                        <a rel="nofollow" href="{{ $hdmh->link6 }}" target="_blank">{{ $hdmh->input6 }}</a>
                     </div>
                 </div>
                 <div class="item-n item-st">
                     <div class="title">Chính sách và quy định</div>
                     <div class="list">
-                        <a rel="nofollow" href="#">Chính
-                        sách bảo mật</a>
-                        <a rel="nofollow" href="#">Chính sách vận chuyển</a>
-                        <a rel="nofollow" href="#">Chính sách bảo hành</a>
-                        <a rel="nofollow" href="#">Chính sách đổi
-                        hàng</a>
+                        <a rel="nofollow" href="{{ $csqd->link1 }}"> {{ $csqd->input1 }} </a>
+                        <a rel="nofollow" href="{{ $csqd->link2 }}"> {{ $csqd->input2 }} </a>
+                        <a rel="nofollow" href="{{ $csqd->link3 }}"> {{ $csqd->input3 }} </a>
+                        <a rel="nofollow" href="{{ $csqd->link4 }}"> {{ $csqd->input4 }} </a>
                     </div>
                 </div>
                 <div class="item-n item-st">
