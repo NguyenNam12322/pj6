@@ -51,6 +51,40 @@ class showController extends Controller
         Return view('header_footer.chinhsach');
     }
 
+    public function get_customn_footer()
+    {
+        $page = $_GET['page'];
+        if(!empty($page)){
+            return view('header_footer.customn_footer');
+        }
+        
+    }
+
+    public function customn_footers(Request $request)
+    {
+       
+        $input['input1'] = $request->input1;
+        $input['input2'] = $request->input2;
+        $input['input3'] = $request->input3;
+        $input['input4'] = $request->input4;
+        $input['input5'] = $request->input5;
+        $input['input6'] = $request->input6;
+        $input['page'] = $request->page;
+
+        $input['link1'] = $request->link1;
+        $input['link2'] = $request->link2;
+        $input['link3'] = $request->link3;
+        $input['link4'] = $request->link4;
+        $input['link5'] = $request->link5;
+        $input['link6'] = $request->link6;
+
+        DB::table('footer_customn')->where('id', $input['page'])->update($input);
+
+       return redirect()->back();
+
+    
+    }
+
     public function deleteLinkAdd(Request $request)
     {
         $id = $request->id;
