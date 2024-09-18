@@ -243,8 +243,8 @@
     }
 
     .pdetail-stockavailable span {
-    color: #218838;
-    font-weight: bold;
+    color: #55A245;
+    font-weight: bold !important;
     }
     .banner-item img {
     width: 100%;

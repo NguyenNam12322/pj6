@@ -660,7 +660,7 @@
     
     ?>
 @push('style')
-<link rel="stylesheet" type="text/css" href="{{ asset('css/detailsfe.css') }}?ver=8">
+<link rel="stylesheet" type="text/css" href="{{ asset('css/detailsfe.css') }}?ver=9">
 @endpush
 
 
@@ -1790,14 +1790,14 @@
                         <br>
 
                         <div class="add-service">
-
-                            <div class="add-service">
                             @if(!empty($data->InputPrice))
+                            <div class="add-service">
+                           
 
                                  <input type="checkbox" id="input-price" name="price-add-1" class="price-add-1" value="{{ $data->InputPrice }}" >
 
                                   <label for="age1" >Giá lắp đặt :{{  str_replace(',' ,'.', number_format($data->InputPrice))  }}&#x20AB  </label>
-
+                            </div>      
                             @endif
 
                             <br>
