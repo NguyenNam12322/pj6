@@ -138,7 +138,7 @@
 </li>
 
 <li class="nav-item">
-    <a href="{{ route('get custom footer') }}"
+    <a href="{{ route('get custom footer') }}?page=1"
        class="nav-link">
         <p>Customn Footer</p>
     </a>
