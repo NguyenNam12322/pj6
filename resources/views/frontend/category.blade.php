@@ -406,6 +406,8 @@
                             
                        
                             @if(!empty($numberdata))
+
+                            <br>
                             <?php 
                                 $pageginates = floor($numberdata/15);
                             ?>
