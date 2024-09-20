@@ -247,8 +247,8 @@
         }*/
 
         .to-top{
-            right: 50px !important;
-            bottom: 32px;
+            right: 110px !important;
+            bottom: 54px;
         }
 
 
