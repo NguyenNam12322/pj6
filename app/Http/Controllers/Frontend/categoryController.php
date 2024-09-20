@@ -364,7 +364,7 @@ class categoryController extends Controller
                     $page = !empty($_GET['page'])?intval($_GET['page']):1;
 
                    
-                    $limit = 15;
+                    $limit = 16;
 
                    
                     // $data = cache()->remember('data_'.$id_cate.'_'.$page, 100, function () use($Group_product, $limit, $page){
