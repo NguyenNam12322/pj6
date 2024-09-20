@@ -1849,7 +1849,7 @@ class crawlController extends Controller
 
         $price = 0;
 
-        $link = DB::table('crawl_link')->get();
+        $link = DB::table('crawl_link')->where('active',0)->get();
 
         foreach ($link as $key => $url) {
 
@@ -1886,8 +1886,12 @@ class crawlController extends Controller
             $data['Salient_Features'] = '';
             $data['crawl_link'] = $url->link;
             DB::table('products')->insert($data);
+
+            DB::table('crawl_link')->where('id', $url->id)->update(['active' => 1]);
             
             sleep(2);
+
+            echo "update thành công link có id là $url->id";
         }
 
        
