@@ -1433,7 +1433,7 @@ class crawlController extends Controller
     {
         $now = Carbon::now();
 
-        $data = DB::table('products')->select('crawl_link','id')->orderBy('id','asc')->where('id','>',1491)->get();
+        $data = DB::table('products')->select('crawl_link','id')->orderBy('id','asc')->where('id','>',1520)->get();
 
 
         foreach ($data as $key => $values) {
