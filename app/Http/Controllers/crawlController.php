@@ -198,7 +198,7 @@ class crawlController extends Controller
         https://dienmaygiakhang.vn/san-pham/may-giat-toshiba-10-5-kg-tw-t25bu115mwvmg/
         https://dienmaygiakhang.vn/san-pham/may-giat-toshiba-inverter-10-5-kg-tw-t25bzu115mwvmg/';
 
-        
+
 
          $codess = explode(PHP_EOL, $code);
 
@@ -1878,7 +1878,7 @@ class crawlController extends Controller
             $data['ProductSku'] = $model;
 
             $data['Link'] = convertSlug($title);
-            $data['Group_id']= 389;
+            $data['Group_id']= $url->cate;
             $data['Specifications'] = $tskt;
             $data['user_id'] = 4;
             $data['created_at'] = $now;
