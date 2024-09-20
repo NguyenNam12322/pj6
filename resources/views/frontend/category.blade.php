@@ -410,7 +410,7 @@
                                 <li class="page-item"><a class="page-link" href="?page=1">1</a></li>
                                 <li class="page-item"><a class="page-link" href="?page=2">2</a></li>
                                 <li class="page-item"><a class="page-link" href="?page=3">3</a></li>
-                                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                                <li class="page-item"><a class="page-link" href="#">{{ $numberdata }}</a></li>
                             </ul>
                         </nav>
 
