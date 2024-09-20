@@ -198,6 +198,8 @@ class crawlController extends Controller
         https://dienmaygiakhang.vn/san-pham/may-giat-toshiba-10-5-kg-tw-t25bu115mwvmg/
         https://dienmaygiakhang.vn/san-pham/may-giat-toshiba-inverter-10-5-kg-tw-t25bzu115mwvmg/';
 
+        
+
          $codess = explode(PHP_EOL, $code);
 
         foreach ($codess as $key => $value) {
