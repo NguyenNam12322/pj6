@@ -412,7 +412,7 @@
                                 @if($pageginates>0)
                                 <nav aria-label="Page navigation example">
                                     <ul class="pagination">
-                                        @for($i=0; $i<$pageginates; $i++)
+                                        @for($i=0; $i<=$pageginates; $i++)
                                         <li class="page-item"><a class="page-link" href="?page={{ $i+1 }}">{{ $i+1 }}</a></li>
                                         @endfor
                                        
