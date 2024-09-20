@@ -248,6 +248,7 @@
 
         .to-top{
             right: 50px !important;
+            bottom: 32px;
         }
 
 
