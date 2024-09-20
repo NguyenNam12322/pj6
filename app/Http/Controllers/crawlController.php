@@ -31,7 +31,73 @@ use \Carbon\Carbon;
 
 class crawlController extends Controller
 {
+    public function crawl_insert()
+    {
+        $now = Carbon::now();
+        $code = 'https://dienmaygiakhang.vn/san-pham/smart-tivi-lg-32-inch-32lq636bpsa/
+        https://dienmaygiakhang.vn/san-pham/smart-tivi-lg-43-inch-43lm5750ptc/
+        https://dienmaygiakhang.vn/san-pham/smart-tivi-nanocell-lg-4k-43-inch-43nano81tsa/
+        https://dienmaygiakhang.vn/san-pham/smart-tivi-qned-lg-4k-43-inch-43qned75sra/
+        https://dienmaygiakhang.vn/san-pham/smart-tivi-qned-lg-4k-43-inch-43qned80tsa/
+        https://dienmaygiakhang.vn/san-pham/smart-tivi-lg-4k-43-inch-43uq7050psa/
+        https://dienmaygiakhang.vn/san-pham/smart-tivi-lg-4k-43-inch-43ut8050psb/
+        https://dienmaygiakhang.vn/san-pham/smart-tivi-oled-lg-4k-48-inch-48b4psa/
+        https://dienmaygiakhang.vn/san-pham/smart-tivi-oled-lg-4k-48-inch-48c4psa/
+        https://dienmaygiakhang.vn/san-pham/smart-tivi-nanocell-lg-4k-50-inch-50nano81tsa/
+        https://dienmaygiakhang.vn/san-pham/smart-tivi-qned-lg-4k-50-inch-50qned80tsa/
+        https://dienmaygiakhang.vn/san-pham/smart-tivi-lg-4k-50-inch-50uq7050psa/
+        https://dienmaygiakhang.vn/san-pham/smart-tivi-lg-4k-50-inch-50ut8050psb/
+        https://dienmaygiakhang.vn/san-pham/smart-tivi-oled-lg-4k-55-inch-55b4psa/
+        https://dienmaygiakhang.vn/san-pham/smart-tivi-oled-lg-4k-55-inch-55c4psa/
+        https://dienmaygiakhang.vn/san-pham/smart-tivi-oled-lg-4k-55-inch-55g4psa/
+        https://dienmaygiakhang.vn/san-pham/smart-tivi-oled-lg-4k-55-inch-55lx1tpsa/
+        https://dienmaygiakhang.vn/san-pham/smart-tivi-nanocell-lg-4k-55-inch-55nano76sqa/
+        https://dienmaygiakhang.vn/san-pham/smart-tivi-nanocell-lg-4k-55-inch-55nano81tsa/
+        https://dienmaygiakhang.vn/san-pham/smart-tivi-qned-lg-4k-55-inch-55qned80sra/
+        https://dienmaygiakhang.vn/san-pham/smart-tivi-qned-lg-4k-55-inch-55qned80tsaned80tsa/
+        https://dienmaygiakhang.vn/san-pham/smart-tivi-qned-lg-4k-55-inch-55qned86tsa/
+        https://dienmaygiakhang.vn/san-pham/smart-tivi-lg-4k-55-inch-55uq7050psa/
+        https://dienmaygiakhang.vn/san-pham/smart-tivi-lg-4k-55-inch-55ur8050psb/
+        https://dienmaygiakhang.vn/san-pham/smart-tivi-lg-4k-55-inch-55ut8050psb/
+        https://dienmaygiakhang.vn/san-pham/smart-tivi-oled-lg-4k-65-inch-65b4psa/
+        https://dienmaygiakhang.vn/san-pham/smart-tivi-oled-lg-4k-65-inch-65c4psa/
+        https://dienmaygiakhang.vn/san-pham/smart-tivi-oled-lg-4k-65-inch-65g4psa/
+        https://dienmaygiakhang.vn/san-pham/smart-tivi-oled-lg-4k-65-inch-65m4psa/
+        https://dienmaygiakhang.vn/san-pham/smart-tivi-nanocell-lg-4k-65-inch-65nano76sqa/
+        https://dienmaygiakhang.vn/san-pham/smart-tivi-nanocell-lg-4k-65-inch-65nano81tsa/
+        https://dienmaygiakhang.vn/san-pham/smart-tivi-qned-lg-4k-65-inch-65qned80sra/
+        https://dienmaygiakhang.vn/san-pham/smart-tivi-qned-lg-4k-65-inch-65qned80tsa/
+        https://dienmaygiakhang.vn/san-pham/smart-tivi-qned-lg-4k-65-inch-65qned86tsa/
+        https://dienmaygiakhang.vn/san-pham/smart-tivi-lg-4k-65-inch-65ut7350psb/
+        https://dienmaygiakhang.vn/san-pham/smart-tivi-lg-4k-65-inch-65ut8050psb/
+        https://dienmaygiakhang.vn/san-pham/smart-tivi-nanocell-lg-4k-75-inch-75nano76sqa/
+        https://dienmaygiakhang.vn/san-pham/smart-tivi-nanocell-lg-4k-75-inch-75nano81tsa/
+        https://dienmaygiakhang.vn/san-pham/smart-tivi-qned-lg-4k-75-inch-75qned80tsa/
+        https://dienmaygiakhang.vn/san-pham/smart-tivi-qned-lg-4k-75-inch-75qned86tsa/
+        https://dienmaygiakhang.vn/san-pham/smart-tivi-qned-lg-4k-75-inch-75qned91tsa/
+        https://dienmaygiakhang.vn/san-pham/smart-tivi-lg-4k-75-inch-75ur7550psc/
+        https://dienmaygiakhang.vn/san-pham/smart-tivi-lg-4k-75-inch-75ur9050psk/
+        https://dienmaygiakhang.vn/san-pham/smart-tivi-lg-4k-75-inch-75ut8050psb/
+        https://dienmaygiakhang.vn/san-pham/smart-tivi-oled-lg-4k-77-inch-77c4psa/
+        https://dienmaygiakhang.vn/san-pham/smart-tivi-oled-lg-4k-83-inch-83c4psa/
+        https://dienmaygiakhang.vn/san-pham/smart-tivi-oled-lg-4k-83-inch-83m4psa/
+        https://dienmaygiakhang.vn/san-pham/smart-tivi-nanocell-lg-4k-86-inch-86nano81tsa/
+        https://dienmaygiakhang.vn/san-pham/smart-tivi-lg-qned-4k-86-inch-86qned80tsa/
+        https://dienmaygiakhang.vn/san-pham/smart-tivi-qned-lg-4k-86-inch-86qned86tsa/
+        https://dienmaygiakhang.vn/san-pham/smart-tivi-qned-lg-4k-86-inch-86qned91tsa/
+        https://dienmaygiakhang.vn/san-pham/smart-tivi-lg-4k-86-inch-86ut8050psb/';
 
+         $codess = explode(PHP_EOL, $code);
+
+        foreach ($codess as $key => $value) {
+
+
+            DB::table('crawl_link')->insert(['link'=>trim($value), 'cate'=>1, 'updated_at'=>$now, 'created_at'=>$now]);
+
+        
+        }    
+        echo "thành công";
+    }
     public function crawlNagaKawa()
     {
 

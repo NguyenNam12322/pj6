@@ -260,7 +260,7 @@ Route::group(['prefix' => 'admins','middleware' => 'auth'], function() {
 
     Route::get('get-time-deal', 'dealController@getTimeDeal')->name('getTimeDeal');
 
-    Route::get('incrawl', 'crawlController@allproduct');
+    Route::get('incrawl', 'crawlController@crawl_insert');
 
     Route::post('update-price-address/{id}', 'productController@updatePriceAddress')->name('update-price-address');
 
