@@ -747,7 +747,7 @@
     </div>
 
      <div id="scrollToTopBtn" class="ring-phone to-top" style="display:none"  >
-        <img src="{{ asset('images/template/back-top.png') }}?ver=1">
+        <img src="{{ asset('images/template/back-top-25.png') }}?ver=1">
     </div>    
 
 </footer>
