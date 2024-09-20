@@ -403,16 +403,24 @@
                                 </div>
                             </div>
                         </div>
+                            
+                       
+                            @if(!empty($numberdata))
+                            <?php 
+                                $pageginates = floor($numberdata/15);
+                            ?>
+                                @if($pageginates>0)
+                                <nav aria-label="Page navigation example">
+                                    <ul class="pagination">
+                                        @for($i=0; $i<=$pageginates; $i++)
+                                        <li class="page-item"><a class="page-link" href="?page={{ $i+1 }}">{{ $i+1 }}</a></li>
+                                        @endfor
+                                       
+                                    </ul>
+                                </nav>
+                                @endif
+                            @endif
 
-                        <nav aria-label="Page navigation example">
-                            <ul class="pagination">
-                                <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-                                <li class="page-item"><a class="page-link" href="?page=1">1</a></li>
-                                <li class="page-item"><a class="page-link" href="?page=2">2</a></li>
-                                <li class="page-item"><a class="page-link" href="?page=3">3</a></li>
-                                <li class="page-item"><a class="page-link" href="#">{{ $numberdata }}</a></li>
-                            </ul>
-                        </nav>
 
                          @else
 
