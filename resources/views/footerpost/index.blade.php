@@ -1,5 +1,11 @@
 @extends('layouts.app')
 
+<style type="text/css">
+     .position{
+        position: static !important;
+    }
+</style>
+
 @section('content')
     <section class="content-header">
         <div class="container-fluid">
