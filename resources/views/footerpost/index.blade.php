@@ -15,7 +15,7 @@
                 </div>
                 <div class="col-sm-6">
                     <a class="btn btn-primary float-right"
-                       href="{{ route('posts.create') }}">
+                       href="{{ route('posts.create') }}?category=5">
                         Add New
                     </a>
                 </div>

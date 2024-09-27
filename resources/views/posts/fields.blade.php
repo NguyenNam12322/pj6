@@ -1,6 +1,10 @@
 
 <?php  $url_domain =  Config::get('app.url') ?>
 
+<?php 
+    $check_category = $_GET['category']??'';
+?>
+
 <style type="text/css">
     .border1{
         border: 2px solid #e74032;
@@ -29,6 +33,8 @@
 </div>
 
 <?php 
+
+
     if(Schema::hasTable('categories')){
         $category =    DB::table('categories')->select('namecategory', 'id')->get();
         $new_category = [];
@@ -39,6 +45,11 @@
         }
         
         $categoryselected = !empty($post)?$post['category']:'1';
+    }
+
+    if(!empty($check_category)){
+
+        $categoryselected = $check_category;
     }
      
         
@@ -409,9 +420,6 @@
     else{
         $('.draft-article').hide();
     }
-
-
-
 
     function getDataform(){
 
