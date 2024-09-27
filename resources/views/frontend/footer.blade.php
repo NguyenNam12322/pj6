@@ -678,7 +678,7 @@
 
 
             <div class="ft-new-menu">
-                <div class="item-n item-st">
+                <div class="item-n item-st" id="footer-show1">
                     <div class="title">Muasamtaikho.vn</div>
                     <div class="list">
                         <a href="{{ $hdmh->link1 }}">{{ $hdmh->input1 }}</a>
@@ -689,7 +689,7 @@
                         <a rel="nofollow" href="{{ $hdmh->link6 }}" target="_blank">{{ $hdmh->input6 }}</a>
                     </div>
                 </div>
-                <div class="item-n item-st">
+                <div class="item-n item-st" id="footer-show2">
                     <div class="title">Chính sách và quy định</div>
                     <div class="list">
                         <a rel="nofollow" href="{{ $csqd->link1 }}"> {{ $csqd->input1 }} </a>
@@ -698,7 +698,7 @@
                         <a rel="nofollow" href="{{ $csqd->link4 }}"> {{ $csqd->input4 }} </a>
                     </div>
                 </div>
-                <div class="item-n item-st">
+                <div class="item-n item-st" id="footer-show3">
                     <div class="title">Tổng đài hỗ trợ</div>
                     <div class="list">
                         <a href="#" rel="nofollow">Hotline: {{ @$info->tdht }}</a>
@@ -775,4 +775,10 @@ scrollToTopBtn.addEventListener("click", function() {
         behavior: "smooth"
     });
 });
+
+$(".item-n.item-st").click(function() {
+    $(this).children(".list").slideToggle(); // Use slideToggle for smooth animation
+  });
+
+
 </script>
