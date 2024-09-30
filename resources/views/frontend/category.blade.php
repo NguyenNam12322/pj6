@@ -134,6 +134,8 @@
                                         </li>
                                         @endforeach
                                         @endif
+
+                                        <li>{{ $meta->meta_title }}</li>
                                     </ul>
                                 </section>
                             </div>
