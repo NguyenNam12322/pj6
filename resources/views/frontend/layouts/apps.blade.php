@@ -41,7 +41,7 @@
         <link rel="canonical" href="{{ url()->current() }}" >
         @else
             @if($nameRoute =='sale-home'||$nameRoute =='dealFe')
-            <title>Khuyến mại lớn, giảm giá mạnh tại Điện Máy Người Việt</title>
+            <title>Mua Sắm Tại Kho - Mua bán điện tử, điện lạnh, gia dụng chính hãng tại kho</title>
             <meta name="description" content="Hàng ngàn khuyến mại hấp dẫn và giảm giá tại Siêu Thị Điện Máy Người Việt. Liên hệ hotline 0247.303.6336 để biết thêm thông tin chi tiết"/>
             <meta property="og:title" content="Khuyến mại lớn, giảm giá mạnh tại Điện Máy Người Việt" />
             <meta property="og:description" content="Hàng ngàn khuyến mại hấp dẫn và giảm giá tại Siêu Thị Điện Máy Người Việt. Liên hệ hotline 0247.303.6336 để biết thêm thông tin chi tiết" /> 
