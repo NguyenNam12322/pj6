@@ -135,7 +135,7 @@
                                         @endforeach
                                         @endif
 
-                                        <li>{{ $meta->id }}</li>
+                                        
                                     </ul>
                                 </section>
                             </div>
