@@ -102,6 +102,45 @@
         <button type="submit">submit</button>
        
     </form>
+    <?php 
+
+        $metaSeo = App\Models\metaSeo::find(2);
+    ?>
+    <section class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-12">
+                    <h1>Seo trang chủ</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="content px-3">
+
+        @include('adminlte-templates::common.errors')
+
+        <div class="card">
+
+            {!! Form::model($metaSeo, ['route' => ['metaSeos.update', $metaSeo->id], 'method' => 'patch']) !!}
+
+            <div class="card-body">
+                <div class="row">
+                    @include('meta_seos.fields')
+                </div>
+            </div>
+
+            <div class="card-footer">
+                {!! Form::submit('Save', ['class' => 'btn btn-primary']) !!}
+                <a href="{{ route('metaSeos.index') }}" class="btn btn-default">Cancel</a>
+            </div>
+
+            {!! Form::close() !!}
+
+        </div>
+    </div>
+
+
     <script>
         function add_form_setting(){
         	var the_form = "";
