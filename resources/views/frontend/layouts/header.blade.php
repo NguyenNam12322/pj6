@@ -12,27 +12,26 @@
 @else
     @if($nameRoute =='sale-home'||$nameRoute =='dealFe')
     <title>Mua Sắm Tại Kho - Mua bán điện tử, điện lạnh, gia dụng chính hãng tại kho</title>
-    <meta name="description" content="Hàng ngàn khuyến mại hấp dẫn và giảm giá tại Siêu Thị Điện Máy Người Việt. Liên hệ hotline 0247.303.6336 để biết thêm thông tin chi tiết"/>
-    <meta property="og:title" content="Khuyến mại lớn, giảm giá mạnh tại Điện Máy Người Việt" />
-    <meta property="og:description" content="Hàng ngàn khuyến mại hấp dẫn và giảm giá tại Siêu Thị Điện Máy Người Việt. Liên hệ hotline 0247.303.6336 để biết thêm thông tin chi tiết" /> 
+    <meta name="description" content=""/>
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="" /> 
     <meta name="keywords" content="Khuyến mại lớn, giảm giá mạnh,"/>
     @else
 
-     <?php 
+        @if($nameRoute =='homeFe')
+            <?php 
 
-        if(!Cache::has('meta5959')){
+                $metaSeo = App\Models\metaSeo::find(2123);
+            ?>
+            <title>{{  $metaSeo->meta_title }}</title>
+            <meta name="description" content="{{ $metaSeo->meta_content??''}}"/>
 
-            $metas = App\Models\metaSeo::find(1); 
+        @else
 
-            Cache::put('meta5959', $metas, 100000);
 
-        }
-        
-        $meta = Cache::get('meta5959');
-     ?>
-
-    <title>{{  !empty($name_cates_cate)?$name_cates_cate:$meta->meta_title }}</title>
-    <meta name="description" content="{{ $meta->meta_content??''}}"/>
+        <title>{{  !empty($name_cates_cate)?$name_cates_cate:$meta->meta_title }}</title>
+        <meta name="description" content="{{ $meta->meta_content??''}}"/>
+        @endif
 
 
     <meta property="og:title" content="{{  !empty($meta->meta_title)?$meta->meta_title:'' }}" />

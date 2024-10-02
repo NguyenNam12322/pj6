@@ -28,7 +28,7 @@
         <meta charset="utf-8" />
 
         <meta name="robots" content="{{ (isset($actives_pages_blog) && $actives_pages_blog ==0)?'noindex':'index' }},follow" />
-        @include('frontend.layouts.header', ['meta'=>$meta])
+        @include('frontend.layouts.header', ['meta'=>$meta,'nameRoute'=>$nameRoute])
 
 
 
