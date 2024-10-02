@@ -282,6 +282,11 @@ class categoryController extends Controller
         Session::put('show-pop-up', '0');
     }
 
+    public function pageMobile($slug)
+    {
+        echo "string";
+    }
+
 
 
     public function getDataOfCate($slug)
