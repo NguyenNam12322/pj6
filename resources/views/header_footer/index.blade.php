@@ -104,7 +104,7 @@
     </form>
     <?php 
 
-        $metaSeo = App\Models\metaSeo::find(2);
+        $metaSeo = App\Models\metaSeo::find(2123);
     ?>
     <section class="content-header">
         <div class="container-fluid">
