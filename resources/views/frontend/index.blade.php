@@ -671,7 +671,7 @@
 
                 ?>
 
-                <div class="lst-cate-title header-block"> <span>ƯU ĐÃI NỔI BẬT</span> </div>
+                <div class="lst-cate-title header-block"> <span>{{ $value }}</span> </div>
 
                 <div class="div-group">
                      <div class="w100p show-group-data  desktop">
