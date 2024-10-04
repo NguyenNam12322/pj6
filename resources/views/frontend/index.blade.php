@@ -660,10 +660,10 @@
                 <?php    
 
                     if($key===4){
-                        $key=9;
+                        $key=8;
                     }
 
-                    $hot = DB::table('hot')->select('product_id')->where('group_id', $key)->orderBy('orders', 'asc')->get()->pluck('product_id');
+                    $hot = DB::table('hot')->select('product_id')->where('group_id', $key+1)->orderBy('orders', 'asc')->get()->pluck('product_id');
 
                     $data = App\Models\product::whereIn('id', $hot->toArray())->Orderby('orders_hot', 'desc')->get();
 
