@@ -15,6 +15,7 @@
     <link href="{{ asset('mobile/css/slick.css')}}" rel="stylesheet">
     <link href="{{ asset('mobile/css/slick-theme.css')}}" rel="stylesheet">
     <link href="{{ asset('mobile/css/site.css')}}" rel="stylesheet">
+     <link rel="stylesheet" type="text/css" href="{{ asset('css/app.css') }}?ver=56 ">
 </head>
 <body>
 
