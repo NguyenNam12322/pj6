@@ -770,7 +770,7 @@
                                 </div>
                             </div>
 
-                            <div class="desktop"><a href="/{{ convertSlug($value) }}"><span>Xem toàn bộ sản phẩm</span></a></div>
+                            <div class="view-all-desk desktop"><a href="/{{ convertSlug($value) }}"><span>Xem toàn bộ sản phẩm</span></a></div>
                                  
                                  
                         </div>
@@ -1005,13 +1005,13 @@
     $('.view-show-all').hide();  
 
 
-    $('.view-all-desk span').click(function () {
-        $(this).remove();
-        $('.view-show-hide').remove();
-        $('.view-show-all').show();  
+    // $('.view-all-desk span').click(function () {
+    //     $(this).remove();
+    //     $('.view-show-hide').remove();
+    //     $('.view-show-all').show();  
 
 
-    })  
+    // })  
 
     
 
