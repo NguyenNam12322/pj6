@@ -655,7 +655,7 @@
               
                 <?php 
 
-                    $define = ['Ti vi','Máy giặt','Tủ lạnh','Điều hòa','Ao Smith'];
+                    $define = ['Tivi','Máy giặt','Tủ lạnh','Điều hòa','Ao Smith'];
 
                 ?>
 
@@ -770,7 +770,7 @@
                                 </div>
                             </div>
 
-                            <div class="view-all-desk desktop"><a href="/{{ convertSlug($value) }}"><span>Xem toàn bộ sản phẩm</span></a></div>
+                            <div class="view-all-desk desktop"><a href="/{{ convertSlug(str_replace('Tivi', 'ti vi',$value)) }}"><span>Xem toàn bộ sản phẩm</span></a></div>
                                  
                                  
                         </div>
