@@ -648,43 +648,40 @@
 
                 @endif
 
+              
+                <?php 
+
+                    $define = ['Tivi','Máy giặt','Tủ lạnh','Điều hòa','Ao Smith'];
+
+                ?>
+
+                @foreach($define as $key => $value)
+                
+                <?php    
+
+                    if($key===4){
+                        $key=9;
+                    }
+
+                    $hot = DB::table('hot')->select('product_id')->where('group_id', $key)->orderBy('orders', 'asc')->get()->pluck('product_id');
+
+                    $data = App\Models\product::whereIn('id', $hot->toArray())->Orderby('orders_hot', 'desc')->get();
+
+                    $dems = 0;
+
+                ?>
 
                 <div class="lst-cate-title header-block"> <span>ƯU ĐÃI NỔI BẬT</span> </div>
 
                 <div class="div-group">
                      <div class="w100p show-group-data  desktop">
                         <div class="span16 nk_houseware_best_selling_2020_wrapper nk_homepage_houseware_best_selling_2020_wrapper js_done ">
-                            <div class="menu-wrap0" style="height: 35px;">
-                                <div class="menu-wrap">
-
-                                    <?php 
-                                        $define = ['Ao Smith','Tivi', 'Máy giặt', 'Tủ lạnh','Điều hòa' ];
-
-                                    ?>
-
-                                    @foreach($define as $key => $value)
-                                    <div class="menu-item {{ $key===0?'active':''  }}" data-id="{{ $key }}" data-uid=""><span>{{ $value }}</span></div>
-                                    @endforeach
-
-                                    
-                                   
-                                </div>
-                            </div>
-
-
+                            
                             <div class="product-item show-data-group mouse-mover" data-uid="4133_3386">
                                 <div class="nk-product-cate-style-grid nk-product-collection nk-product- clearfix">
                                     <div id="pagination_contents" class="nk-product nks-fs-sync index-index" data-fs-type="0">
 
-                                        <?php 
-
-                                            $hot = DB::table('hot')->select('product_id')->where('group_id', 9)->orderBy('orders', 'asc')->get()->pluck('product_id');
-
-                                            $data = App\Models\product::whereIn('id', $hot->toArray())->Orderby('orders_hot', 'desc')->get();
-
-                                            $dems = 0;
-
-                                        ?>
+                                        
 
                                         @foreach($data as $key =>$datas)
 
@@ -851,7 +848,7 @@
                     </div>
                 </div>
             
-                   
+                @endforeach    
 
             </div>    
         </div>    
