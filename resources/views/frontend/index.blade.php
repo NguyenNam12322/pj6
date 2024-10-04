@@ -168,6 +168,10 @@
         margin-bottom: 5px;
     }
 
+    #ui-id-1{
+        padding: 0 15px;
+    }
+
 
 
     .gift-info .title {
@@ -682,7 +686,6 @@
                                     <div id="pagination_contents" class="nk-product nks-fs-sync index-index" data-fs-type="0">
 
                                         
-
                                         @foreach($data as $key =>$datas)
 
                                             <?php 
@@ -767,7 +770,7 @@
                                 </div>
                             </div>
 
-                            <div class="view-all-desk desktop"><span>Xem toàn bộ sản phẩm</span></div>
+                            <div class="view-all-desk desktop"><a href="/"><span>Xem toàn bộ sản phẩm</span></a></div>
                                  
                                  
                         </div>
