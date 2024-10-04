@@ -770,7 +770,7 @@
                                 </div>
                             </div>
 
-                            <div class="view-all-desk desktop"><a href="/"><span>Xem toàn bộ sản phẩm</span></a></div>
+                            <div class="view-all-desk desktop"><a href="/{{ convertSlug($value) }}"><span>Xem toàn bộ sản phẩm</span></a></div>
                                  
                                  
                         </div>
