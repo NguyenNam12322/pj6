@@ -284,7 +284,7 @@ class categoryController extends Controller
 
     public function pageMobile($slug)
     {
-        echo "string";
+        return view('frontend.page_mobile.details');
     }
 
 
