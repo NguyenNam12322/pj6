@@ -1,0 +1,357 @@
+@font-face {
+    font-family: UTMMicra;
+    src: url(../fonts/UTMMicra.ttf);
+    src: url(../fonts/UTMMicra.ttf) format("embedded-opentype"), url(../fonts/UTMMicra.ttf) format("ttf"), url(../fonts/UTMMicra.ttf) format("truetype");
+}
+@font-face {
+    font-family: UTMFacebookBK;
+    src: url(../fonts/UTMFacebookBK&T.ttf);
+    src: url(../fonts/UTMFacebookBK&T.ttf) format("embedded-opentype"), url(../fonts/UTMFacebookBK&T.ttf) format("ttf"), url(../fonts/UTMFacebookBK&T.ttf) format("truetype");
+}
+
+.landing {
+    padding-bottom: 0!important;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.landing ul {
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+.landing ul li {
+    float: left;
+}
+
+.landing img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.mySwiper {
+    height: 20%;
+    box-sizing: border-box;
+    padding: 10px 0;
+}
+
+.mySwiper .swiper-slide {
+    width: 25%;
+    height: 100%;
+    opacity: 0.4;
+}
+
+.mySwiper .swiper-slide-thumb-active {
+    opacity: 1;
+}
+
+.bg-black {
+    background-color: #272624;
+}
+
+.promotion {
+    background-image: url('../images/prx-one/promotion-bg.jpg');
+    background-size: cover;
+    height: 880px;
+}
+
+.prx-one-logo {
+    padding-top: 50px;
+}
+
+.promotion_1 {
+}
+
+.price-headline {
+    padding-top: 40px;
+    font-family: UTMMicra, Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 26px;
+}
+
+.price-animation {
+    line-height: 50px;
+    animation-name: pulse;
+    -webkit-animation-name: pulse;
+    animation-delay: 1s;
+    -webkit-animation-delay: 1s;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+}
+
+.price-animation span {
+    font-family: UTMMicra, Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 50px;
+    color: #F84715;
+
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(.9);
+    }
+    50% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(.9);
+    }
+}
+
+.stage {
+    display: flex;
+    height: 380px;
+    width: 100%;
+}
+.box {
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    transform-origin: bottom;
+    background-color: transparent!important;
+    box-shadow: none!important;
+    height: 100%;
+    display: inherit;
+}
+.bounce-1 {
+    animation-name: bounce-1;
+    animation-timing-function: linear;
+}
+@keyframes bounce-1 {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+}
+.buy-now{
+    background-color: #EF4A23;
+    color: #fff;
+    font-family: UTMMicra, Arial, sans-serif;
+    font-size: 18px;
+    display: block;
+    text-align: center;
+    border-radius: 40px;
+    line-height: 60px;
+    animation-name: pulse;
+    -webkit-animation-name: pulse;
+    animation-delay: 1s;
+    -webkit-animation-delay: 1s;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+}
+.advisory-now{
+    background-color: #295396;
+    color: #fff;
+    font-family: UTMMicra, Arial, sans-serif;
+    font-size: 18px;
+    display: block;
+    text-align: center;
+    border-radius: 70px;
+    line-height: 60px;
+    position: relative;
+    animation-name: pulse;
+    -webkit-animation-name: pulse;
+    animation-delay: 1s;
+    -webkit-animation-delay: 1s;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+}
+.buy-now:hover, .advisory-now:hover{
+    color: #fff;
+}
+.advisory-now .img-fb{
+    position: absolute;
+    width: 70px;
+    left: -5px;
+    top: -5px;
+}
+.advisory-now span{
+    padding-left: 30px;
+}
+.pre-order{
+    padding: 65px 0;
+    background-image: url("../images/prx-one/buy_bg.png");
+}
+.header{
+    background: #EF4A23;
+    display: inline-block;
+    padding: 0 25px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.header h3{
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 28px;
+}
+.header p{
+    text-align: center;
+    line-height: 16px;
+    padding-bottom: 20px;
+}
+#name{
+    display: none!important;
+    color: #fff;
+}
+.paragraph{
+    color: #fff;
+}
+.pre-order button{
+    background: #EF4A23;
+    color: #fff;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 500;
+}
+.positive-unset{
+    position: unset;
+}
+ul.feature{
+    margin-bottom: 0;
+}
+ul.feature li{
+    float: none;
+    font-family: UTMFacebookBK, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    position: relative;
+    padding-left: 20px;
+}
+ul.feature li::before{
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 10px;
+    background: #F84715;
+    vertical-align: middle;
+    display: inline-block;
+    left: 0;
+    top: 8px;
+}
+.h-100{
+    height: 100%;
+}
+.pt-100{
+    padding-top: 100px;
+}
+.pt-20{
+    padding-top: 20px;
+}
+.pt-50{
+    padding-top: 50px;
+}
+.promotion.style-2{
+    height: 990px;
+}
+.slider-for{
+    height: calc(100% - 85px);
+    width: 100%;
+}
+.gallery-view-item{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    position: relative;
+    transition: transform .5s ease-in-out;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-perspective: 1000px;
+    perspective: 1000px;
+    height: 900px;
+}
+.slider-nav .gallery-view-item{
+    height: 150px;
+    margin: 10px;
+    width: 95%;
+}
+@media screen and (min-width: 320px) and (max-width: 504px) {
+    .price-headline{
+        padding-top: 0;
+        font-size: 18px;
+    }
+    .price-animation{
+        line-height: 26px;
+    }
+    .price-animation span{
+        font-size: 22px;
+    }
+    .prx-one-logo{
+        padding-top: 30px;
+    }
+    ul.sub-title li{
+        float: none;
+        font-family: UTMMicra, Arial, sans-serif;
+        position: relative;
+        padding-left: 15px;
+        font-size: 10px;
+    }
+    ul.sub-title li::before{
+        position: absolute;
+        content: "";
+        width: 8px;
+        height: 8px;
+        background: #F84715;
+        vertical-align: middle;
+        display: inline-block;
+        left: 0;
+        top: 5px;
+    }
+    .promotion_1{
+        top:0;
+        position: absolute;
+    }
+    .box{
+        margin: 10px auto 0 auto;
+    }
+    .stage{
+        height: 190px;
+    }
+    .promotion{
+        height: 500px;
+    }
+    .buy-now, .advisory-now{
+        font-size: 8px;
+        line-height: 30px;
+    }
+    .advisory-now .img-fb{
+        width: 40px;
+    }
+    ul.feature li{
+        padding-left: 15px;
+        font-size: 10px;
+        line-height: 16px;
+    }
+    ul.feature li::before{
+        width: 8px;
+        height: 8px;
+    }
+    .promotion.style-2{
+        height: 600px;
+    }
+    .promotion.style-2 .promotion_1{
+        position: unset;
+    }
+    .pre-order input{
+        width: 100%;
+    }
+    .gallery-view-item{
+        height: 300px;
+        margin-top: 10px;
+    }
+    .slider-nav .gallery-view-item {
+        height: 55px;
+        margin: 10px 0;
+        width: 95%;
+    }
+}
