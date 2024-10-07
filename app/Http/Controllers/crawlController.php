@@ -219,9 +219,43 @@ class crawlController extends Controller
 
         $data = json_decode($data);
 
-        dd($data);
+        foreach ($data as $key => $value) {
 
-        
+            $title = $value->Name;
+
+            $price = 0;
+
+            $details = $value->details;
+
+            $pattern = '/<a\s+[^>]*>(.*?)<\/a>/i';
+
+            $replacement = '$1';
+
+            $details = preg_replace($pattern, $replacement, html_entity_decode($details));
+
+            $Salient_Features = $value->Salient_Features;
+
+            $Specifications = $value->Specifications;
+
+            $crawl_link = $value->crawl_link;
+
+            $data['Name']   = $title;
+            $data['Price']  = $price;
+            $data['Detail'] = $details;
+            $data['Link'] = convertSlug($title);
+            $data['Group_id']= 1;
+            $data['Specifications'] = $Specifications;
+            $data['user_id'] = 4;
+            $data['created_at'] = $now;
+            $data['updated_at'] = $now;
+            $data['Salient_Features'] = $Salient_Features;
+            $data['crawl_link'] = $crawl_link;
+            
+            DB::table('products')->insert($data);
+
+        }
+
+    
     }
 
     public function crawlNagaKawa()
