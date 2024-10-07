@@ -28,10 +28,8 @@
         <meta name="robots" content="{{ (isset($actives_pages_blog) && $actives_pages_blog ==0)?'noindex':'index' }},follow" />
 
         @if(!empty($meta))
-        @include('frontend.layouts.header', ['meta'=>$meta,'nameRoute'=>$nameRoute])
-        @else
-
-         @include('frontend.layouts.header', ['nameRoute'=>$nameRoute])
+            @include('frontend.layouts.header', ['meta'=>$meta,'nameRoute'=>$nameRoute])
+       
         @endif
 
         <!-- <link rel="shortcut icon" href="{{ asset('uploads/icon/favicon.ico') }}"/> -->
