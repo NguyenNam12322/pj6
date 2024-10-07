@@ -24,73 +24,7 @@
     <!-- begin main -->
     <main class="bg-fff">
         <!-- Begin menu blog -->
-        <div class="menu_blog">
-            <ul class="dm_container">
-                <li>
-                    <a href="/tu-van-ti-vi">
-                    <img src="{{ asset('images/template/logo/tivi.png') }}" alt="">
-                    <span>Tư vấn
-                    <br> tivi</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="{{ route('details', 'tu-van-tu-lanh') }}">
-                    <img src="{{ asset('images/template/logo/tu-lanh.png') }}" alt="">
-                    <span>Tư vấn
-                    <br> tủ lạnh</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="{{ route('details', 'tu-van-may-giat') }} ">
-                    <img src="{{ asset('images/template/logo/may-giat.png') }}" alt="">
-                    <span> Tư vấn
-                    <br> máy giặt</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="{{ route('details', 'tu-van-dieu-hoa') }}">
-                    <img src="{{ asset('images/template/logo/dieu-hoa.png') }}" alt="">
-                    <span>Tư vấn
-                    <br> điều hòa</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="{{ route('details', 'tu-van-gia-dung') }}">
-                    <img src="{{ asset('images/template/logo/gia-dung.png') }}" alt="">
-                    <span>Tư vấn
-                    <br> gia dụng</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="{{ route('details', 'tu-van-mua-sam') }}">
-                    <img src="{{ asset('images/template/logo/mua-sam.png') }}" alt="">
-                    <span>Tư vấn
-                    <br> mua sắm</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="{{ route('details', 'meo-vat-gia-dinh') }}">
-                    <img src="{{ asset('images/template/logo/meo-vat.png') }}" alt="">
-                    <span>Mẹo vặt
-                    <br> gia đình</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="{{ route('details', 'tin-tuc-khuyen-mai') }}">
-                    <img src="{{ asset('images/template/logo/khuyen-mai.png') }}" alt="">
-                    <span>Tin tức
-                    <br> Khuyến Mại</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                    <img src="{{ asset('images/template/logo/video.png') }}" alt="">
-                    <span>Video
-                    <br>clip</span>
-                    </a>
-                </li>
-            </ul>
-        </div>
+        
         <!-- End menu blog -->
         <div class="blog-list dm_container">
             <div class="row">
