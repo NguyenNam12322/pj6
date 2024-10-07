@@ -255,6 +255,8 @@ class crawlController extends Controller
 
         }
 
+        echo "thành công";
+
     
     }
 
