@@ -31,7 +31,7 @@
         @include('frontend.layouts.header', ['meta'=>$meta,'nameRoute'=>$nameRoute])
         @else
 
-         @include('frontend.layouts.header', ['meta'=>$meta,'nameRoute'=>$nameRoute])
+         @include('frontend.layouts.header', ['nameRoute'=>$nameRoute])
         @endif
 
         <!-- <link rel="shortcut icon" href="{{ asset('uploads/icon/favicon.ico') }}"/> -->
