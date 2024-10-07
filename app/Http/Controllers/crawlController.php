@@ -269,17 +269,14 @@ class crawlController extends Controller
             $data['Group_id']= 1;
             $data['Specifications'] = $Specifications;
             $data['user_id'] = 4;
-            $data['created_at'] = $now;
-            $data['updated_at'] = $now;
+            $data['created_at'] = '';
+            $data['updated_at'] = '';
             $data['Salient_Features'] = $Salient_Features;
             $data['crawl_link'] = $crawl_link;
-
-           
             
-            $insert = DB::table('products')->insert($data);
+            $insert = DB::table('products')->insert(['Name'=>$title, 'Price'=>$price, 'Detail'=>$details, 'Link'=>convertSlug($title), 'Specifications'=>$Specifications, 'user_id'=>4,'created_at'=>$now,'updated_at'=>$now, 'Salient_Features'=>$Salient_Features, 'crawl_link'=>$crawl_link]);
 
-             dd($insert);
-
+         
             echo "<pre>";
 
             echo "crawl thành công $key";
