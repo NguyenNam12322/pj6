@@ -48,6 +48,9 @@ Route::get('/crawl', 'crawlController@removeLinkinDetails');
 Route::get('/landingpage', 'mainController@landingpage')->name('landingpageFe');
 
 
+Route::get('crawl_data_dmnv', 'crawlController@crawl_data_dmnv');
+
+
 // Route::get('removePromotion', 'Frontend\indexController@removePromotion');
 
 Route::get('redirect-update-cache', 'redirectLinkController@createCacheRedirect')->name('redirect-update-cache');
