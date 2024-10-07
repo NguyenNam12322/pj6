@@ -253,7 +253,7 @@ class crawlController extends Controller
                 $details = preg_replace($pattern, $replacement, $details);
             }    
 
-            dd($details);
+
 
             $Salient_Features = $value->Salient_Features;
 
@@ -274,7 +274,7 @@ class crawlController extends Controller
             $data['Salient_Features'] = $Salient_Features;
             $data['crawl_link'] = $crawl_link;
 
-           
+            dd($data);
             
             DB::table('products')->insert($data);
 
