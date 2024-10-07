@@ -253,11 +253,15 @@ class crawlController extends Controller
             
             DB::table('products')->insert($data);
 
+            echo "<pre>";
+
+            echo "crawl thành công $key";
+
+            echo "</pre>";
+
         }
 
-        echo "thành công";
-
-    
+      
     }
 
     public function crawlNagaKawa()
