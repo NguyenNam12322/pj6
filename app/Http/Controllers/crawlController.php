@@ -256,7 +256,6 @@ class crawlController extends Controller
 
             $crawl_link = $value->crawl_link;
 
-            dd($crawl_link);
 
             $data['Name']   = $title;
             $data['Price']  = $price;
@@ -269,6 +268,9 @@ class crawlController extends Controller
             $data['updated_at'] = $now;
             $data['Salient_Features'] = $Salient_Features;
             $data['crawl_link'] = $crawl_link;
+
+            dd($data);
+
             
             DB::table('products')->insert($data);
 
