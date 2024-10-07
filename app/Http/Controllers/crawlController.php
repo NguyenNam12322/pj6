@@ -234,7 +234,7 @@ class crawlController extends Controller
         // echo($details);
 
 
-        die;
+        // die;
 
         foreach ($data as $key => $value) {
 
