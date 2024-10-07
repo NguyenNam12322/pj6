@@ -46,7 +46,7 @@
                         
                         @isset($data)
                         @foreach($data as $value)
-                        @if($value->category!=5)
+                        
                         
                         <div class="blog-list-item">
                             <a href="{{ route('details', $value->link) }}" class="img">
@@ -59,7 +59,7 @@
                                 <a href="{{ route('details', $value->link) }}" class="linkview">Xem chi tiết ›</a>
                             </div>
                         </div>
-                        @endif
+                        
                         @endforeach
                         @endisset
                         
