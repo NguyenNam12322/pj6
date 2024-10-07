@@ -17,6 +17,10 @@
 
             $cart = Gloudemans\Shoppingcart\Facades\Cart::content();
             $number_cart = count($cart);
+
+            if(empty($meta)){
+                $meta ='';
+            }
     
            
 
