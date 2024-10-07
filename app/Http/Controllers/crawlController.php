@@ -225,6 +225,8 @@ class crawlController extends Controller
 
         $pattern = '/<a\s+[^>]*>(.*?)<\/a>/i';
 
+        $replacement = '$1';
+
         
 
         $details = preg_replace($pattern, $replacement, html_entity_decode($details));
