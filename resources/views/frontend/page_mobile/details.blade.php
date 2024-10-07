@@ -315,39 +315,13 @@
                             display: flex;
                         }
 
-                        .d .nk-header #nk-cart{
+                       .nk-header #nk-cart{
                             width: 77%;
                         }
 
                     }
 
-             @media only screen and (min-width: 601px) {
-                .mobile{
-                    display: none;
-                }
-
-                .nk-danh-muc-trang-chu h3 b{
-                    color: #000;
-                }
-
-                .nk-nav-right .row-fluid{
-                    padding: 24px 0;
-                }
-
-                .fas-phones{
-                    border: 0;
-                }
-
-                .search-order{
-                    width: 47% !important;
-                }
-
-                .wrap-grid-menu-right{
-                    background:linear-gradient(0deg,#d1a94e,#fdf5a1,#cfac54);
-                }
-
-
-             }   
+            
                 </style>
 
                 <span class="close_top_banner">✕</span> 
