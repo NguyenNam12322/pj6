@@ -142,6 +142,12 @@
                             line-height: 1.2;
                         }
 
+                        @media (max-width: 768px) {
+                            .fa-navicon:before, .fa-reorder:before, .fa-bars:before {
+                                color: #000;
+                            }
+                        }
+
                         .show-bar {
                             background: linear-gradient(0deg, #d1a94e, #fdf5a1, #cfac54);
                         }

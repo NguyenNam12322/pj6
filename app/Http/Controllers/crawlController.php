@@ -211,6 +211,16 @@ class crawlController extends Controller
         }    
         echo "thành công";
     }
+
+    public function crawl_data_dmnv()
+    {
+        $data = file_get_contents('https://dienmaynguoiviet.vn/show-data-tcl');
+
+        $data = json_decode($data);
+
+        echo"<pre>";  print_r($data);echo"</pre>"; 
+    }
+
     public function crawlNagaKawa()
     {
 
