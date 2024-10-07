@@ -221,7 +221,7 @@ class crawlController extends Controller
 
         $data = json_decode($data);
 
-        dd($data[0]->Name);
+        dd($data[0]);
 
         die;
 
