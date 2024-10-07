@@ -274,9 +274,11 @@ class crawlController extends Controller
             $data['Salient_Features'] = $Salient_Features;
             $data['crawl_link'] = $crawl_link;
 
-            dd($data);
+           
             
-            DB::table('products')->insert($data);
+            $insert = DB::table('products')->insert($data);
+
+             dd($insert);
 
             echo "<pre>";
 
