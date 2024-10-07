@@ -221,17 +221,17 @@ class crawlController extends Controller
 
         $data = json_decode($data);
 
-        $details = $data[0]->details;
+        // $details = $data[0]->details;
 
-        $pattern = '/<a\s+[^>]*>(.*?)<\/a>/i';
+        // $pattern = '/<a\s+[^>]*>(.*?)<\/a>/i';
 
-        $replacement = '$1';
+        // $replacement = '$1';
 
         
 
-        $details = preg_replace($pattern, $replacement, html_entity_decode($details));
+        // $details = preg_replace($pattern, $replacement, html_entity_decode($details));
 
-        echo($details);
+        // echo($details);
 
 
         die;
