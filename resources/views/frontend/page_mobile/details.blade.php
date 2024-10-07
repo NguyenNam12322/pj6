@@ -32,6 +32,20 @@
                     } 
                 </script> 
                 <style> 
+
+                     
+                    .div-header-cart{
+                        width: 100%;
+                        display: flex;
+                        overflow: hidden;
+                    }
+
+                    .d .nk-header #nk-cart{
+                        width: 77%;
+                    }
+
+
+
                     .position-fixed .share-button{
                     position: fixed;
                     display: flex;
