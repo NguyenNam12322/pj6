@@ -216,11 +216,10 @@ class crawlController extends Controller
     {
         $data = file_get_contents('https://dienmaynguoiviet.vn/show-data-tcl');
 
-        dd($data);
 
-        // $data = json_decode($data);
+        $data = json_decode($data);
 
-        // echo"<pre>";  print_r(1);echo"</pre>"; 
+        echo"<pre>";  print_r(1);echo"</pre>"; 
     }
 
     public function crawlNagaKawa()
