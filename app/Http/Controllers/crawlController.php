@@ -218,7 +218,7 @@ class crawlController extends Controller
 
         $data = json_decode($data);
 
-        echo"<pre>";  print_r($data);echo"</pre>"; 
+        echo"<pre>";  print_r(1);echo"</pre>"; 
     }
 
     public function crawlNagaKawa()
