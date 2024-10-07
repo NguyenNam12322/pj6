@@ -221,6 +221,10 @@ class crawlController extends Controller
 
         $data = json_decode($data);
 
+        dd($data[0]['Name']);
+
+        die;
+
         foreach ($data as $key => $value) {
 
             $title = $value->Name;
