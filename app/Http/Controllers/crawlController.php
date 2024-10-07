@@ -244,11 +244,14 @@ class crawlController extends Controller
 
             $details = $value->details;
 
-            $pattern = '/<a\s+[^>]*>(.*?)<\/a>/i';
+            if(!empty($details)){
 
-            $replacement = '$1';
+                $pattern = '/<a\s+[^>]*>(.*?)<\/a>/i';
 
-            $details = preg_replace($pattern, $replacement, html_entity_decode($details));
+                $replacement = '$1';
+
+                $details = preg_replace($pattern, $replacement, html_entity_decode($details));
+            }    
 
             $Salient_Features = $value->Salient_Features;
 
@@ -259,7 +262,7 @@ class crawlController extends Controller
 
             $data['Name']   = $title;
             $data['Price']  = $price;
-            $data['Detail'] = $details;
+            $data['Detail'] = !empty($details;
             $data['Link'] = convertSlug($title);
             $data['Group_id']= 1;
             $data['Specifications'] = $Specifications;
@@ -269,8 +272,7 @@ class crawlController extends Controller
             $data['Salient_Features'] = $Salient_Features;
             $data['crawl_link'] = $crawl_link;
 
-            dd($data);
-
+           
             
             DB::table('products')->insert($data);
 
