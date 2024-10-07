@@ -214,6 +214,8 @@ class crawlController extends Controller
 
     public function crawl_data_dmnv()
     {
+
+        $now = Carbon::now();
         $data = file_get_contents('https://dienmaynguoiviet.vn/show-data-tcl');
 
 
