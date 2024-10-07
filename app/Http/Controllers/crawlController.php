@@ -252,6 +252,8 @@ class crawlController extends Controller
 
             $Salient_Features = $value->Salient_Features;
 
+            dd($Salient_Features);
+
             $Specifications = $value->Specifications;
 
             $crawl_link = $value->crawl_link;
