@@ -133,6 +133,19 @@
 
                     
                     @media only screen and (max-width: 600px) {
+                        
+                        .nk-header #nk-cart ul li a {
+                            font-size: 17px;
+                            color: #fff;
+                            display: flex;
+                            align-items: center;
+                            line-height: 1.2;
+                        }
+
+                        .show-bar {
+                            background: linear-gradient(0deg, #d1a94e, #fdf5a1, #cfac54);
+                        }
+
                         body{
                             min-width: unset !important;
                         }
