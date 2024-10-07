@@ -189,10 +189,10 @@
     <!--<hr>-->
     <!-- begin footer -->
     @push('script')
-     <script type="text/javascript">
+    <!--  <script type="text/javascript">
         $('img').closest('p').css('text-align', 'center');
         
-    </script>
+    </script> -->
 
 
     @endpush
