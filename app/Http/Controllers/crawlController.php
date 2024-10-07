@@ -2932,7 +2932,7 @@ class crawlController extends Controller
 
     public function getMetaProducts()
     {
-        for($i=1521; $i<1735; $i++){
+        for($i=1750; $i<1813; $i++){
 
             $link = product::find($i);
 
