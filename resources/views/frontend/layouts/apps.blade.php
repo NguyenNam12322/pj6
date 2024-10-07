@@ -18,13 +18,7 @@
             $cart = Gloudemans\Shoppingcart\Facades\Cart::content();
             $number_cart = count($cart);
 
-            if(empty($meta)){
-                $meta ='';
-            }
-    
            
-
-
             $info = DB::table('show_info_header_footer')->select('logo','tdht')->where('id',1)->get()->first();
    
    
@@ -32,9 +26,13 @@
         <meta charset="utf-8" />
 
         <meta name="robots" content="{{ (isset($actives_pages_blog) && $actives_pages_blog ==0)?'noindex':'index' }},follow" />
+
+        @if(!empty($meta))
         @include('frontend.layouts.header', ['meta'=>$meta,'nameRoute'=>$nameRoute])
+        @else
 
-
+         @include('frontend.layouts.header', ['meta'=>$meta,'nameRoute'=>$nameRoute])
+        @endif
 
         <!-- <link rel="shortcut icon" href="{{ asset('uploads/icon/favicon.ico') }}"/> -->
         <meta name = "google-site-verify" content = "1AH1fN3G7ygWRcOlEQWJyhginaxmT67zTMPP8wnfFD0" />
