@@ -262,7 +262,7 @@ class crawlController extends Controller
 
             $data['Name']   = $title;
             $data['Price']  = $price;
-            $data['Detail'] = !empty($details;
+            $data['Detail'] = $details;
             $data['Link'] = convertSlug($title);
             $data['Group_id']= 1;
             $data['Specifications'] = $Specifications;
