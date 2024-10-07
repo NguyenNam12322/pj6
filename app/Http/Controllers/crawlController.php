@@ -253,6 +253,8 @@ class crawlController extends Controller
                 $details = preg_replace($pattern, $replacement, $details);
             }    
 
+            dd($details);
+
             $Salient_Features = $value->Salient_Features;
 
             $Specifications = $value->Specifications;
