@@ -663,11 +663,13 @@
                     $define[2]['id'] = '12';
                     $define[3]['name'] = 'Tivi TCL giá rẻ';
                     $define[3]['id'] = '15';
+
+                    
                    
 
                 ?>
 
-                @foreach($define as $key => $value)
+                @foreach($define as  $value)
                 
                 <?php    
 
