@@ -676,9 +676,12 @@
 
                     $hot = DB::table('hot')->select('product_id')->where('group_id', $value['id'])->orderBy('orders', 'asc')->get()->pluck('product_id');
 
+
+                    dd($hot);
+
                     $data = App\Models\product::whereIn('id', $hot->toArray())->Orderby('orders_hot', 'desc')->get();
 
-                    dd($data);
+
 
                     $dems = 0;
 
