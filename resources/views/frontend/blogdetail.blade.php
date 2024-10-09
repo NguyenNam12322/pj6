@@ -6,7 +6,7 @@
 
 
     <link rel="stylesheet" href="{{ asset('css/owl.carousel.min.css') }}?">
-    <link rel="stylesheet" href="{{ asset('css/styles.css') }}?v=8881288.8883.160">
+    <link rel="stylesheet" href="{{ asset('css/styles.css') }}?v=121">
     <link rel="stylesheet" href="{{ asset('css/customs.css') }}?v=245754.75.52928">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&subset=vietnamese" rel="stylesheet">
     
@@ -189,6 +189,24 @@
     <!--<hr>-->
     <!-- begin footer -->
     @push('script')
+    <script type="text/javascript">
+         document.addEventListener("DOMContentLoaded", function() {
+            // Lấy tất cả các thẻ img trên trang
+            const images = document.querySelectorAll('img');
+
+            // Lặp qua từng ảnh
+            images.forEach(function(img) {
+                // Kiểm tra xem ảnh có thuộc tính alt không
+                if (img.hasAttribute('alt')) {
+                    // Lấy giá trị của alt
+                    const altText = img.getAttribute('alt');
+                    
+                    // Sao chép giá trị alt sang title
+                    img.setAttribute('title', altText);
+                }
+            });
+        });
+    </script>
     <!--  <script type="text/javascript">
         $('img').closest('p').css('text-align', 'center');
         
