@@ -783,18 +783,11 @@
 
                     <div class="w100p show-group-data mobiles-view mobile">
                         <div class="span16 nk_houseware_best_selling_2020_wrapper nk_homepage_houseware_best_selling_2020_wrapper js_done ">
-                            <div class="menu-wrap0" style="height: 35px;">
-                                <div class="menu-wrap">
+                            
+                                <?php 
+                                    $dem = 0;
 
-                                    <?php 
-                                        $dem = 0;
-
-
-                                    ?>
-
-                                </div>
-                            </div>
-
+                                ?>
 
                             <div class="product-item show-data-group" data-uid="4133_3386">
                                 <div class="nk-product-cate-style-grid nk-product-collection nk-product- clearfix">
