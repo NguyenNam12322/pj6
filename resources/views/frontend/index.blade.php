@@ -655,7 +655,7 @@
               
                 <?php 
 
-                    $define = ['Tivi','Máy giặt','Tủ lạnh','Điều hòa','Ao Smith'];
+                    $define = ['Tivi giá rẻ','Máy giặt giá rẻ','Tủ lạnh giá rẻ','Điều hòa giá rẻ','Ao Smith'];
 
                 ?>
 
@@ -675,7 +675,7 @@
 
                 ?>
 
-                <div class="lst-cate-title header-block"> <span>{{ $value }}</span> </div>
+                <div class="lst-cate-title header-block"><a href=""><span>{{ $value }}</span></a>  </div>
 
                 <div class="div-group">
                      <div class="w100p show-group-data  desktop">
