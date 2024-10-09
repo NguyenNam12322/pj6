@@ -802,7 +802,7 @@
                                             <?php 
 
                                                 $dem++;
-                                                if($dem>4){
+                                                if($dem>10){
 
                                                     break;
 
