@@ -658,8 +658,7 @@
                     $define[0]['id'] = '389';
                     $define[1]['name'] = 'Tivi LG giá rẻ';
                     $define[1]['id'] = '13';
-                    $define[1]['name'] = 'Tivi LG giá rẻ';
-                    $define[1]['id'] = '13';
+                    
                     $define[2]['name'] = 'Tivi SamSung giá rẻ';
                     $define[2]['id'] = '12';
                     $define[3]['name'] = 'Tivi TCL giá rẻ';
