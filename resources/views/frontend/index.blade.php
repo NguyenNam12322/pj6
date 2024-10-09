@@ -669,13 +669,13 @@
 
                 ?>
 
-                @foreach($define as  $value)
+                @foreach($define as  $values)
                 
                 <?php    
 
                    
 
-                    $hot = DB::table('hot')->select('product_id')->where('group_id', $value['id'])->orderBy('orders', 'asc')->get()->pluck('product_id');
+                    $hot = DB::table('hot')->select('product_id')->where('group_id', $values['id'])->orderBy('orders', 'asc')->get()->pluck('product_id');
 
                     $data = App\Models\product::whereIn('id', $hot->toArray())->Orderby('orders_hot', 'desc')->get();
 
@@ -683,7 +683,7 @@
 
                 ?>
 
-                <div class="lst-cate-title header-block"><a href=""><span>{{ $value['name'] }}</span></a>  </div>
+                <div class="lst-cate-title header-block"><a href=""><span>{{ $values['name'] }}</span></a>  </div>
 
                 <div class="div-group">
                      <div class="w100p show-group-data  desktop">
