@@ -55,8 +55,8 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="{{ asset('css/app.css') }}?ver=56 ">
         <link rel="stylesheet" href="{{ asset('css/lib/bootstrap.min.css') }}">
-        <script type="text/javascript" src="https://dienmaynguoiviet.vn/js/lib/owl.carousel.min.js"></script>
-        <link rel="stylesheet" href="https://dienmaynguoiviet.vn/css/lib/owl.carousel.min.css">
+        <script type="text/javascript" src="{{ asset('js/lib/owl.carousel.min.js')  }}"></script>
+        <link rel="stylesheet" href="{{  asset('css/lib/owl.carousel.min.css') }}">
         <script type="application/javascript">
             var dataRenderProduct = [];
         </script>
