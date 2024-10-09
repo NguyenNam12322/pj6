@@ -758,7 +758,8 @@ class categoryController extends Controller
 
             if(!empty($data) && !empty($_GET['show'])&&($_GET['show']=='tra-gop')){
                 
-                return view('frontend.installment', compact('data'));
+                $actives_pages_blog = 0;
+                return view('frontend.installment', compact('data','actives_pages_blog'));
             }
 
             if(!empty($data->LinkRedirect)){
