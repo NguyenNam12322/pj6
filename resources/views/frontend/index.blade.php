@@ -709,9 +709,6 @@
                     $define[9]['parent_id'] = 2;
 
 
-
-
-
                 ?>
 
                 @foreach($define as  $value)
@@ -747,7 +744,7 @@
                                 <div class="nk-product-cate-style-grid nk-product-collection nk-product- clearfix">
                                     <div id="pagination_contents" class="nk-product nks-fs-sync index-index" data-fs-type="0">
 
-                                        @if($data->count()>0)
+                                        @if($data->count()>0  && !empty($check_id_group_product))
                                         @foreach($data as $key =>$datas)
                                             @if( in_array($datas->id, $check_id_group_product))
                                             <?php 
