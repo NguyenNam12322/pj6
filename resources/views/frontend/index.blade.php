@@ -656,18 +656,24 @@
                 <?php 
 
                     $define = ['Tivi giá rẻ','Máy giặt giá rẻ','Tủ lạnh giá rẻ','Điều hòa giá rẻ','Ao Smith'];
+                    $define[0]['name'] = 'Tivi Cooca Giá rẻ';
+                    $define[0]['id'] = 389;
+                    $define[1]['name'] = 'Tivi LG Giá rẻ';
+                    $define[1]['id'] = 13;
+                    $define[2]['name'] = 'Tivi Samsung Giá rẻ';
+                    $define[2]['id'] = 12;
+                    $define[3]['name'] = 'Tivi TCL Giá rẻ';
+                    $define[3]['id'] = 15;
 
                 ?>
 
-                @foreach($define as $key => $value)
+                @foreach($define as $values)
                 
                 <?php    
 
-                    if($key===4){
-                        $key=8;
-                    }
+                   
 
-                    $hot = DB::table('hot')->select('product_id')->where('group_id', $key+1)->orderBy('orders', 'asc')->get()->pluck('product_id');
+                    $hot = DB::table('hot')->select('product_id')->where('group_id', $values['id'])->orderBy('orders', 'asc')->get()->pluck('product_id');
 
                     $data = App\Models\product::whereIn('id', $hot->toArray())->Orderby('orders_hot', 'desc')->get();
 
@@ -675,7 +681,7 @@
 
                 ?>
 
-                <div class="lst-cate-title header-block"><a href=""><span>{{ $value }}</span></a>  </div>
+                <div class="lst-cate-title header-block"><a href=""><span>{{ $values['name'] }}</span></a>  </div>
 
                 <div class="div-group">
                      <div class="w100p show-group-data  desktop">
