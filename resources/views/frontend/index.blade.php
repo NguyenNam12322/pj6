@@ -730,6 +730,11 @@
 
                                         @endforeach
 
+                                        <?php 
+
+                    dd(1);
+                ?>
+
 
                                         @foreach($data as $key =>$datas)
 
@@ -853,10 +858,7 @@
             
                 @endforeach    
 
-                <?php 
 
-                    dd(1);
-                ?>
 
             </div>    
         </div>    
