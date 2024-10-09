@@ -662,7 +662,7 @@
                     // $define = ['Tivi giá rẻ','Máy giặt giá rẻ','Tủ lạnh giá rẻ','Điều hòa giá rẻ','Ao Smith'];
 
                     $define[0]['name'] = 'Tivi Coocaa giá rẻ';
-                    $define[0]['id'] = 389;
+                    $define[0]['id'] = 12;
                     $define[0]['link'] = 'tivi-coocaa';
 
                     $define[1]['name'] = 'Tivi LG giá rẻ';
