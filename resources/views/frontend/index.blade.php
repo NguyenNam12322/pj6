@@ -708,6 +708,26 @@
                     $define[9]['link'] = 'may-giat-samsung';
                     $define[9]['parent_id'] = 2;
 
+                    // $define[10]['name'] = 'Điều hòa Panasonic giá rẻ';
+                    // $define[10]['id'] = 60;
+                    // $define[10]['link'] = 'dieu-hoa-panasonic';
+                    // $define[10]['parent_id'] = 4;
+
+                    // $define[11]['name'] = 'Điều hòa Daikin giá rẻ';
+                    // $define[11]['id'] = 60;
+                    // $define[11]['link'] = 'dieu-hoa-daikin';
+                    // $define[11]['parent_id'] = 4;
+
+                    // $define[11]['name'] = 'Điều hòa Funiki giá rẻ';
+                    // $define[11]['id'] = 60;
+                    // $define[11]['link'] = 'dieu-hoa-funiki';
+                    // $define[11]['parent_id'] = 4;
+
+                    // $define[12]['name'] = 'Điều hòa LG giá rẻ';
+                    // $define[12]['id'] = 60;
+                    // $define[12]['link'] = 'dieu-hoa-lg';
+                    // $define[12]['parent_id'] = 4;
+
 
                 ?>
 
