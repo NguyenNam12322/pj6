@@ -557,7 +557,7 @@
 
 
                     </div>
-                    <div class="view-all-desk"><a href="{{ route('dealFe') }}"><span>Xem toàn bộ sản phẩm</span></a></div>                             
+                                           
                 </div>
 
                 
@@ -770,7 +770,7 @@
                                 </div>
                             </div>
 
-                            <div class="view-all-desk desktop"><a href="/{{ convertSlug(str_replace('Tivi', 'ti vi',$value)) }}"><span>Xem toàn bộ sản phẩm</span></a></div>
+                           
                                  
                                  
                         </div>
@@ -845,7 +845,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="view-all-desk"><span>Xem toàn bộ sản phẩm</span></div>
+                            
                                  
                         </div>
                     </div>
