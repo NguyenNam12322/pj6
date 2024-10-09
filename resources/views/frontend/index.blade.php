@@ -655,7 +655,7 @@
               
                 <?php 
 
-                    $define = ['name'=>'Tivi giá rẻ','Máy giặt giá rẻ','Tủ lạnh giá rẻ','Điều hòa giá rẻ','Ao Smith'];
+                    $define = ['Tivi giá rẻ','Máy giặt giá rẻ','Tủ lạnh giá rẻ','Điều hòa giá rẻ','Ao Smith'];
 
                 ?>
 
