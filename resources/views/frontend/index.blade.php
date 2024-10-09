@@ -662,7 +662,7 @@
                     $define = ['Tivi giá rẻ','Máy giặt giá rẻ','Tủ lạnh giá rẻ','Điều hòa giá rẻ','Ao Smith'];
 
                     $define[0]['name'] = 'Tivi Coocaa giá rẻ';
-                    $define[1]['id'] = 389;
+                    $define[0]['id'] = 389;
 
                 ?>
 
@@ -677,7 +677,7 @@
                     $hot = DB::table('hot')->select('product_id')->where('group_id', $value['id'])->orderBy('orders', 'asc')->get()->pluck('product_id');
 
 
-                    dd($hot);
+                   
 
                     $data = App\Models\product::whereIn('id', $hot->toArray())->Orderby('orders_hot', 'desc')->get();
 
