@@ -661,9 +661,12 @@
 
                     $define = ['Tivi giá rẻ','Máy giặt giá rẻ','Tủ lạnh giá rẻ','Điều hòa giá rẻ','Ao Smith'];
 
+                    $define[0]['name'] = 'Tivi Coocaa giá rẻ';
+                    $define[1]['id'] = 389;
+
                 ?>
 
-                @foreach($define as $key => $value)
+                @foreach($define as  $value)
                 
                 <?php    
 
@@ -671,7 +674,7 @@
                         $key=8;
                     }
 
-                    $hot = DB::table('hot')->select('product_id')->where('group_id', $key+1)->orderBy('orders', 'asc')->get()->pluck('product_id');
+                    $hot = DB::table('hot')->select('product_id')->where('group_id', $value['id'])->orderBy('orders', 'asc')->get()->pluck('product_id');
 
                     $data = App\Models\product::whereIn('id', $hot->toArray())->Orderby('orders_hot', 'desc')->get();
 
@@ -679,7 +682,7 @@
 
                 ?>
 
-                <div class="lst-cate-title header-block"><a href=""><span>{{ $value }}</span></a>  </div>
+                <div class="lst-cate-title header-block"><a href=""><span>{{ $value['name'] }}</span></a>  </div>
 
                 <div class="div-group">
                      <div class="w100p show-group-data  desktop">
@@ -796,7 +799,7 @@
                             <div class="product-item show-data-group" data-uid="4133_3386">
                                 <div class="nk-product-cate-style-grid nk-product-collection nk-product- clearfix">
                                     <div id="pagination_contents" class="nk-product nks-fs-sync index-index" data-fs-type="0">
-
+                                        @if($data->count()>0)
                                         @foreach($data as $key =>$datas)
 
                                             <?php 
@@ -837,6 +840,7 @@
                                             </div>
                                           
                                         @endforeach
+                                        @endif
 
                                     </div>
                                 </div>
