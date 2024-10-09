@@ -656,24 +656,18 @@
                 <?php 
 
                     $define = ['Tivi giá rẻ','Máy giặt giá rẻ','Tủ lạnh giá rẻ','Điều hòa giá rẻ','Ao Smith'];
-                    $define[0]['name'] = 'Tivi Cooca Giá rẻ';
-                    $define[0]['id'] = 389;
-                    $define[1]['name'] = 'Tivi LG Giá rẻ';
-                    $define[1]['id'] = 13;
-                    $define[2]['name'] = 'Tivi Samsung Giá rẻ';
-                    $define[2]['id'] = 12;
-                    $define[3]['name'] = 'Tivi TCL Giá rẻ';
-                    $define[3]['id'] = 15;
 
                 ?>
 
-                @foreach($define as $values)
+                @foreach($define as $key => $value)
                 
                 <?php    
 
-                   
+                    if($key===4){
+                        $key=8;
+                    }
 
-                    $hot = DB::table('hot')->select('product_id')->where('group_id', $values['id'])->orderBy('orders', 'asc')->get()->pluck('product_id');
+                    $hot = DB::table('hot')->select('product_id')->where('group_id', $key+1)->orderBy('orders', 'asc')->get()->pluck('product_id');
 
                     $data = App\Models\product::whereIn('id', $hot->toArray())->Orderby('orders_hot', 'desc')->get();
 
@@ -681,7 +675,7 @@
 
                 ?>
 
-                <div class="lst-cate-title header-block"><a href=""><span>{{ $values['name'] }}</span></a>  </div>
+                <div class="lst-cate-title header-block"><a href=""><span>{{ $value }}</span></a>  </div>
 
                 <div class="div-group">
                      <div class="w100p show-group-data  desktop">
@@ -787,7 +781,79 @@
                         </div>
                     </div>
 
-                    
+                    <div class="w100p show-group-data mobiles-view mobile">
+                        <div class="span16 nk_houseware_best_selling_2020_wrapper nk_homepage_houseware_best_selling_2020_wrapper js_done ">
+                            <div class="menu-wrap0" style="height: 35px;">
+                                <div class="menu-wrap">
+
+                                    <?php 
+                                        $dem = 0;
+
+
+                                    ?>
+
+                                    @foreach($define as $key => $value)
+                                    <div class="menu-item {{ $key===0?'active':''  }}" data-id="{{ $key }}" data-uid=""><span>{{ $value }}</span></div>
+                                    @endforeach
+
+                                    
+                                   
+                                </div>
+                            </div>
+
+
+                            <div class="product-item show-data-group" data-uid="4133_3386">
+                                <div class="nk-product-cate-style-grid nk-product-collection nk-product- clearfix">
+                                    <div id="pagination_contents" class="nk-product nks-fs-sync index-index" data-fs-type="0">
+
+                                        @foreach($data as $key =>$datas)
+
+                                            <?php 
+
+                                                $dem++;
+                                                if($dem>4){
+
+                                                    break;
+
+                                                }
+                                            ?>
+                                            <div class="product col-md-3 col-xs-6">
+                                                <div class="product-header" href="{{ route('details', $datas->Link) }}">
+                                                    <div class="top-right">
+                                                        <div class="product-feature-badge-item installment"><span>Trả góp 0%</span></div>
+                                                    </div>
+                                                    <div class="product-image">
+                                                        <a href="{{ route('details', $datas->Link) }}">
+                                                            <img
+                                                                class="ls-is-cached lazyloaded"
+                                                                
+                                                                src="{{ asset($datas->Image) }}"
+                                                                
+                                                            />
+                                                        </a>
+                                                    </div>
+                                                    
+                                                </div>
+                                                <div class="product-body">
+                                                    <div class="product-feature-badge"></div>
+                                                    <div class="product-title"><a href="{{ route('details', $datas->Link) }}">{{ $datas->Name }}</a></div>
+                                                    <div class="product-price">
+                                                        <p class="final-price">{{  @convert_price($datas->Price) }}   </p>
+                                                        
+                                                    </div>
+                                                </div>
+                                                <div class="product-footer"></div>
+                                            </div>
+                                          
+                                        @endforeach
+
+                                    </div>
+                                </div>
+                            </div>
+                            
+                                 
+                        </div>
+                    </div>
                 </div>
             
                 @endforeach    
