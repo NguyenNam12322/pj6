@@ -681,12 +681,29 @@
                 <div class="item-n item-st" id="footer-show1">
                     <div class="title">Muasamtaikho.vn</div>
                     <div class="list">
+                        @if(!empty($hdmh->input1))
                         <a href="{{ $hdmh->link1 }}">{{ $hdmh->input1 }}</a>
+                        @endif
+                        @if(!empty($hdmh->input2))
                         <a href="{{ $hdmh->link2 }}">{{ $hdmh->input2 }}</a>
+                        @endif
+
+                         @if(!empty($hdmh->input3))
                         <a href="{{ $hdmh->link3 }}">{{ $hdmh->input3 }}</a>
+                        @endif
+
+                        @if(!empty($hdmh->input4))
                         <a rel="nofollow" href="{{ $hdmh->link4 }}">{{ $hdmh->input4 }}</a>
+
+                        @endif
+
+                        @if(!empty($hdmh->input5))
                         <a rel="nofollow" href="{{ $hdmh->link5 }}">{{ $hdmh->input5 }}</a>
+                        @endif
+
+                        @if(!empty($hdmh->input6))
                         <a rel="nofollow" href="{{ $hdmh->link6 }}" target="_blank">{{ $hdmh->input6 }}</a>
+                        @endif
                     </div>
                 </div>
                 <div class="item-n item-st" id="footer-show2">
