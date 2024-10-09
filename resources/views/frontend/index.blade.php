@@ -792,12 +792,6 @@
 
                                     ?>
 
-                                    @foreach($define as $key => $value)
-                                    <div class="menu-item {{ $key===0?'active':''  }}" data-id="{{ $key }}" data-uid=""><span>{{ $value }}</span></div>
-                                    @endforeach
-
-                                    
-                                   
                                 </div>
                             </div>
 
