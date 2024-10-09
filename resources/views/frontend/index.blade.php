@@ -685,7 +685,7 @@
                                 <div class="nk-product-cate-style-grid nk-product-collection nk-product- clearfix">
                                     <div id="pagination_contents" class="nk-product nks-fs-sync index-index" data-fs-type="0">
 
-                                        
+                                        @if($data->count()>0)
                                         @foreach($data as $key =>$datas)
 
                                             <?php 
@@ -730,12 +730,11 @@
 
                                         @endforeach
 
-                                        <?php 
-
-                    dd(1);
-                ?>
+                                        @endif
 
 
+
+                                         @if($data->count()>0)
                                         @foreach($data as $key =>$datas)
 
                                            
@@ -770,6 +769,7 @@
                                       
 
                                         @endforeach
+                                        @endif
 
                                     </div>
                                 </div>
