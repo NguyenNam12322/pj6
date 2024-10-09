@@ -654,7 +654,7 @@
 
               
                 <?php 
-                
+                    dd(1);
                     $define = ['name'=>'Tivi giá rẻ','Máy giặt giá rẻ','Tủ lạnh giá rẻ','Điều hòa giá rẻ','Ao Smith'];
 
                 ?>
