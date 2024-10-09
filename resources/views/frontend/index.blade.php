@@ -663,15 +663,19 @@
 
                     $define[0]['name'] = 'Tivi Coocaa giá rẻ';
                     $define[0]['id'] = 389;
+                    $define[0]['link'] = 'tivi-coocaa';
 
                     $define[1]['name'] = 'Tivi LG giá rẻ';
                     $define[1]['id'] = 13;
+                    $define[1]['link'] = 'tivi-lg';
 
                     $define[2]['name'] = 'Tivi Samsung giá rẻ';
                     $define[2]['id'] = 12;
+                    $define[2]['link'] = 'tivi-samsung';
 
                     $define[3]['name'] = 'Tivi TCL giá rẻ';
                     $define[3]['id'] = 15;
+                    $define[3]['link'] = 'tivi-tcl';
 
 
 
@@ -682,9 +686,7 @@
                 
                 <?php    
 
-                    if($key===4){
-                        $key=8;
-                    }
+                   
 
                     $hot = DB::table('hot')->select('product_id')->where('group_id', $value['id'])->orderBy('orders', 'asc')->get()->pluck('product_id');
 
@@ -699,7 +701,7 @@
 
                 ?>
 
-                <div class="lst-cate-title header-block"><a href=""><span>{{ $value['name'] }}</span></a>  </div>
+                <div class="lst-cate-title header-block"><a href="/{{ $value['link'] }}"><span>{{ $value['name'] }}</span></a>  </div>
 
                 <div class="div-group">
                      <div class="w100p show-group-data  desktop">
