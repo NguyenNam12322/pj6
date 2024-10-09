@@ -678,10 +678,36 @@
                     $define[2]['parent_id'] = 1;
 
 
-                    $define[3]['name'] = 'Tivi TCL giá rẻ';
-                    $define[3]['id'] = 15;
-                    $define[3]['link'] = 'tivi-tcl';
-                    $define[3]['parent_id'] = 1;
+                    $define[4]['name'] = 'Tủ lạnh Panasonic giá rẻ';
+                    $define[4]['id'] = 37;
+                    $define[4]['link'] = 'tu-lanh-panasonic';
+                    $define[4]['parent_id'] = 3;
+
+                    $define[5]['name'] = 'Tủ lạnh Aqua giá rẻ';
+                    $define[5]['id'] = 388;
+                    $define[5]['link'] = 'tu-lanh-aqua';
+                    $define[5]['parent_id'] = 3;
+
+                    $define[6]['name'] = 'Tủ lạnh Samsung giá rẻ';
+                    $define[6]['id'] = 38;
+                    $define[6]['link'] = 'tu-lanh-samsung';
+                    $define[6]['parent_id'] = 3;
+
+                    $define[7]['name'] = 'Máy giặt LG giá rẻ';
+                    $define[7]['id'] = 58;
+                    $define[7]['link'] = 'may-giat-lg';
+                    $define[7]['parent_id'] = 2;
+
+                    $define[8]['name'] = 'Máy giặt Electrolux giá rẻ';
+                    $define[8]['id'] = 57;
+                    $define[8]['link'] = 'may-giat-electrolux';
+                    $define[8]['parent_id'] = 2;
+
+                    $define[9]['name'] = 'Máy giặt Samsung giá rẻ';
+                    $define[9]['id'] = 60;
+                    $define[9]['link'] = 'may-giat-samsung';
+                    $define[9]['parent_id'] = 2;
+
 
 
 
