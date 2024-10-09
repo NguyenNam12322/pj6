@@ -15455,11 +15455,11 @@ html,
                    font-size: 2.3em;
                    display: flex;
                    align-items: center;
-                   justify-content: center;
+/*                   justify-content: center;*/
                    font-weight: 700;
                    position: relative;
                    background-size: cover;
-                   background: linear-gradient(0deg,#d1a94e,#fdf5a1,#cfac54);
+/*                   background: linear-gradient(0deg,#d1a94e,#fdf5a1,#cfac54);*/
                    border-top-left-radius: 10px;
                    border-top-right-radius: 10px;
                    -webkit-touch-callout: none;
@@ -15500,7 +15500,7 @@ html,
                    color: #fff;
                    font-family: Signika, sans-serif;
 /*                   filter: drop-shadow(0 3px 0 var(--primaryColor));*/
-                    color: #000;
+                    color: #2199D8;
                    
                }
 
