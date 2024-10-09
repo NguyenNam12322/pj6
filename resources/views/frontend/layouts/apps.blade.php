@@ -1057,7 +1057,7 @@
 
                                                                        <li id="login_form">
                                                                        
-                                                                           <a href="#">Tư vấn mua sắm</a>
+                                                                           <a href="/tin-tuc">Tư vấn mua sắm</a>
                                                                         </li>
 
                                                                         <li id="login_form2" class="nk_tooltip" data-toggle=".nk-login-content" data-overlay="overlay" style="display: none;"></li>
