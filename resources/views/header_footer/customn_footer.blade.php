@@ -58,11 +58,11 @@
                 <tr>
                   
                     <td>
-                        <input type="text" class="color" name="input1" value="{{ @$info->input1 }}" required>
+                        <input type="text" class="color" name="input1" value="{{ @$info->input1 }}" >
                     </td>
 
                     <td>
-                        <input type="text" class="color" name="link1" value="{{ @$info->link1 }}" required>
+                        <input type="text" class="color" name="link1" value="{{ @$info->link1 }}" >
                     </td>
                 </tr>
 
@@ -70,24 +70,11 @@
                   
                     <td>
                        
-                        <input type="text" class="color" name="input2" value="{{ @$info->input2 }}" required>
+                        <input type="text" class="color" name="input2" value="{{ @$info->input2 }}" >
                     </td>
                     <td>
                        
-                        <input type="text" class="color" name="link2" value="{{ @$info->link2 }}" required>
-                    </td>
-                </tr>
-
-                <tr>
-                   
-                    <td>
-                       
-                        <input type="text" class="color" name="input3" value="{{ @$info->input3 }}" required>
-                    </td>
-
-                    <td>
-                       
-                        <input type="text" class="color" name="link3" value="{{ @$info->link3 }}" required>
+                        <input type="text" class="color" name="link2" value="{{ @$info->link2 }}" >
                     </td>
                 </tr>
 
@@ -95,12 +82,25 @@
                    
                     <td>
                        
-                        <input type="text" class="color" name="input4" value="{{ @$info->input4 }}" required>
+                        <input type="text" class="color" name="input3" value="{{ @$info->input3 }}" >
                     </td>
 
                     <td>
                        
-                        <input type="text" class="color" name="link4" value="{{ @$info->link4 }}" required>
+                        <input type="text" class="color" name="link3" value="{{ @$info->link3 }}" >
+                    </td>
+                </tr>
+
+                <tr>
+                   
+                    <td>
+                       
+                        <input type="text" class="color" name="input4" value="{{ @$info->input4 }}" >
+                    </td>
+
+                    <td>
+                       
+                        <input type="text" class="color" name="link4" value="{{ @$info->link4 }}" >
                     </td>
                 </tr>
 
