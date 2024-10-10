@@ -48,7 +48,7 @@
                   
                     <td>
                        
-                        <input type="text" class="color" name="input1" value="{{ @$info->input1 }}" required>
+                        <input type="text" class="color" name="input1" value="{{ @$info->input1 }}" >
                     </td>
                 </tr>
 
@@ -56,7 +56,7 @@
                   
                     <td>
                        
-                        <input type="text" class="color" name="input2" value="{{ @$info->input2 }}" required>
+                        <input type="text" class="color" name="input2" value="{{ @$info->input2 }}" >
                     </td>
                 </tr>
 
@@ -64,7 +64,7 @@
                    
                     <td>
                        
-                        <input type="text" class="color" name="input3" value="{{ @$info->input3 }}" required>
+                        <input type="text" class="color" name="input3" value="{{ @$info->input3 }}" >
                     </td>
                 </tr>
 
@@ -72,7 +72,7 @@
                    
                     <td>
                        
-                        <input type="text" class="color" name="input4" value="{{ @$info->input4 }}" required>
+                        <input type="text" class="color" name="input4" value="{{ @$info->input4 }}" >
                     </td>
                 </tr>
 
@@ -80,7 +80,7 @@
                   
                     <td>
                        
-                        <input type="text" class="color" name="input5" value="{{ @$info->input5 }}" required>
+                        <input type="text" class="color" name="input5" value="{{ @$info->input5 }}" >
                     </td>
                 </tr>
 
@@ -88,7 +88,7 @@
                     
                     <td>
                        
-                        <input type="text" class="color" name="input6" value="{{ @$info->input6 }}" required>
+                        <input type="text" class="color" name="input6" value="{{ @$info->input6 }}" >
                     </td>
                 </tr>
                 

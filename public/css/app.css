@@ -15496,7 +15496,7 @@ html,
 
                .header-block span {
                    margin: 15px 0;
-                   text-transform: uppercase;
+/*                   text-transform: uppercase;*/
                    color: #fff;
                    font-family: Signika, sans-serif;
 /*                   filter: drop-shadow(0 3px 0 var(--primaryColor));*/
