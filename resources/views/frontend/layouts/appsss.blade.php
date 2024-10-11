@@ -1088,66 +1088,13 @@
 
                 @yield('content')
                 <div class="row-fluid ">
-                    <!-- <div class="span16 margbt10 ">
-                        <div class="container">
-                            <div class="blog-container">
-                                <div class="header-blog header-block">
-                                    <span>Thông tin hữu ích - Mua sắm thông minh</span>
-                                    <a class="view-more-blog" href="/blog.html">Xem thêm</a>
-                                </div>
-                                <div class="section-news-top ">
-                                    <div class="content_blog">
-                                        <div class="wrap_item_left">
-                                            <div class="item">
-                                                <a href="https://www.nguyenkim.com/ct-giap-thin-vui-bat-thinh-linh.html">
-                                                    <img loading="lazy" class="pict lazy ls-is-cached lazyloaded" src="https://cdn.nguyenkimmall.com/images/thumbnails/580/326/detailed/914/0301-MN-1_1162x652__2_.png" data-src="https://cdn.nguyenkimmall.com/images/thumbnails/580/326/detailed/914/0301-MN-1_1162x652__2_.png" width="285px" height="195px" alt="0301-MN-1_1162x652__2_">
-                                                    <span class="options">
-                                                        <h3 class="truncate-blog-title" data-truncate="Giáp Thìn Vui Bất Thình Lình - Ưu đãi đặc biệt tại Nguyễn Kim mùa Tết 2024"> Giáp Thìn Vui Bất Thình Lình - Ưu đãi đặc biệt tại Nguyễn Kim mùa Tết 2024</h3>
-                                                        <span class="truncate-blog-time">Nguyễn Vũ Chi Mai</span>
-                                                    </span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="wrap_item_right">
-                                            <div class="item">
-                                                <a href="https://www.nguyenkim.com/hang-ngan-san-pham-xa-kho-gia-soc-dang-cho-ban-tai-53-ttms-nguyen-kim.html">
-                                                    <img loading="lazy" class="pict lazy ls-is-cached lazyloaded" src="https://cdn.nguyenkimmall.com/images/thumbnails/160/97/detailed/914/0401-TTT-4_1162x652.png" data-src="https://cdn.nguyenkimmall.com/images/thumbnails/160/97/detailed/914/0401-TTT-4_1162x652.png" width="285px" height="195px" alt="0401-TTT-4_1162x652">
-                                                    <span class="options">
-                                                        <h3 class="truncate-blog-title" data-truncate="Hàng ngàn sản phẩm Xả Kho Giá Sốc đang chờ bạn tại 53 TTMS Nguyễn Kim "> Hàng ngàn sản phẩm Xả Kho Giá Sốc đang chờ bạn tại 53 TTMS Nguyễn Kim </h3>
-                                                        <span class="truncate-blog-time">Trương Thu Thảo </span>
-                                                    </span>
-                                                </a>
-                                            </div>
-                                            <div class="item">
-                                                <a href="https://www.nguyenkim.com/mua-tu-lanh-may-giat-panasonic-ruoc-40-may-giat-say-panasonic-cuc-xin.html">
-                                                    <img loading="lazy" class="pict lazy ls-is-cached lazyloaded" src="https://cdn.nguyenkimmall.com/images/thumbnails/160/97/detailed/914/0901-TTT-1_1162x652.png" data-src="https://cdn.nguyenkimmall.com/images/thumbnails/160/97/detailed/914/0901-TTT-1_1162x652.png" width="285px" height="195px" alt="0901-TTT-1_1162x652">
-                                                    <span class="options">
-                                                        <h3 class="truncate-blog-title" data-truncate="Mua tủ lạnh, máy giặt Panasonic - Rước 40 máy giặt sấy Panasonic cực xịn"> Mua tủ lạnh, máy giặt Panasonic - Rước 40 máy giặt sấy Panasonic cực xịn</h3>
-                                                        <span class="truncate-blog-time">Trương Thu Thảo </span>
-                                                    </span>
-                                                </a>
-                                            </div>
-                                            <div class="item">
-                                                <a href="https://www.nguyenkim.com/dat-truoc-galaxy-s24-series-tai-nguyen-kim-ruoc-uu-dai-cuc-khung.html">
-                                                    <img loading="lazy" class="pict lazy ls-is-cached lazyloaded" src="https://cdn.nguyenkimmall.com/images/thumbnails/160/97/detailed/916/Catepage-Banner_1200x628px_4muz-rc.jpg" data-src="https://cdn.nguyenkimmall.com/images/thumbnails/160/97/detailed/916/Catepage-Banner_1200x628px_4muz-rc.jpg" width="285px" height="195px" alt="Catepage-Banner_1200x628px_4muz-rc">
-                                                    <span class="options">
-                                                        <h3 class="truncate-blog-title" data-truncate="Đặt Trước Galaxy S24 Series Tại Nguyễn Kim Rước Ưu Đãi Cực Khủng"> Đặt Trước Galaxy S24 Series Tại Nguyễn Kim Rước Ưu Đãi Cực Khủng</h3>
-                                                        <span class="truncate-blog-time">Trương Thu Thảo </span>
-                                                    </span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        </div> -->
+                   
                     <div class="row-fluid ">
                         <div class="span16 container box-sugest">
                             <div class="row-fluid box-fix-css">
                                 <div class="nk-recent">
                                     <div class="nk-recent-title header-block">
-                                        <span>Sản phẩm Gợi ý</span>
+                                        <span>Sản phẩm gợi ý</span>
                                     </div>
                                     <?php
                                         $hot = DB::table('hot')->select('product_id')->orderBy('orders', 'asc')->get()->pluck('product_id');
@@ -1230,7 +1177,7 @@
                         <div class="span16 container fix-pad">
                             <div class="nk-product-cate-homepage row-fluid">
                                 <div class="lst-cate-title header-block">
-                                    <span>Danh Mục Nổi Bật</span>
+                                    <span>Danh mục nổi bật</span>
                                 </div>
                                 <div class="categories">
                                     <div class="nk-content">

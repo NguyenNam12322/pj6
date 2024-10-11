@@ -740,31 +740,11 @@ class crawlController extends Controller
 
     function getAll_link()
     {
-        $pd = DB::table('group_product')->select('link','id')->where('parent_id',3)->get();
+        $data = DB::table('products')->select('Name','id')->orderBy('id','asc') ->where('id', '>', 1750)->where('id','>',1749)->get();
 
-        $dem =0;
-
-        $ar = [];
-
-        foreach ($pd as $key => $value) {
-
-            $pds = DB::table('group_product')->select('link','id')->where('parent_id',$value->id)->get();
-
-            array_push($ar, $value->link);
-
-            foreach ($pds as $key => $values) {
-               
-                $data = $values->link;
-
-                array_push($ar, $data);
-            }
-
-           
-        }
-
-        foreach ($ar as $key => $value) {
+        foreach ($data as $key => $value) {
             
-            echo '<pre>'; echo 'https://muasamtaikho.vn/'.$value; echo'</pre>';
+            echo '<pre> id sản phẩm: '.$value->id.', tên sản phẩm là: '.$value->Name.'</pre>';
         }
 
     }
