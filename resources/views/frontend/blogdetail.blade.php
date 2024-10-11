@@ -26,9 +26,9 @@
             color: #000000 !important;
         } 
 
-        .emtry_content strong{
+        /*.emtry_content strong{
             font-size: 17px;
-        } 
+        } */
 
        
     </style>
