@@ -740,7 +740,7 @@ class crawlController extends Controller
 
     function getAll_link()
     {
-        $pd = DB::table('group_product')->select('link','id')->where('parent_id',1)->get();
+        $pd = DB::table('group_product')->select('link','id')->where('parent_id',2)->get();
 
         $dem =0;
 
