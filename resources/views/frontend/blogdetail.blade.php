@@ -15,6 +15,10 @@
     <!-- begin main -->
 
      <style type="text/css">
+
+        em{
+            font-style: italic;
+        }
         .header__top-mobile{
             height: 133px;
         }
@@ -22,9 +26,9 @@
             color: #000000 !important;
         } 
 
-        .emtry_content strong{
+        /*.emtry_content strong{
             font-size: 17px;
-        } 
+        } */
 
        
     </style>
