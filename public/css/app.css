@@ -14533,7 +14533,7 @@ html,
                #new-flash-sale .nk-recent-title,
                .nk-recent .nk-recent-title {
                    margin: 0;
-                   color: #fff;
+                   color: #000;
                    background: linear-gradient(0deg,#d1a94e,#fdf5a1,#cfac54);
                    border-top-left-radius: 10px;
                    border-top-right-radius: 10px;
