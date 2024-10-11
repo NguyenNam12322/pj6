@@ -1094,6 +1094,9 @@
                             <div class="row-fluid box-fix-css">
                                 <div class="nk-recent">
 
+                                    <div class="nk-recent-title header-block">
+                                        <span>Sản phẩm Gợi ý</span>
+
                                     </div>
                                     <?php
                                         $hot = DB::table('hot')->select('product_id')->orderBy('orders', 'asc')->get()->pluck('product_id');
