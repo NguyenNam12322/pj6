@@ -747,7 +747,7 @@ class crawlController extends Controller
         foreach ($pd as $key => $value) {
             $dem++;
 
-            echo'<pre>'; echo $value->Link;echo'</pre>';
+            echo'<pre>'; echo 'https://muasamtaikho.vn/'.$value->Link;echo'</pre>';
            
         }
 
