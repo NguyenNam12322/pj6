@@ -740,15 +740,31 @@ class crawlController extends Controller
 
     function getAll_link()
     {
-        $pd = DB::table('group_product')->select('link')->where('parent_id',1)->get();
+        $pd = DB::table('group_product')->select('link','id')->where('parent_id',1)->get();
 
         $dem =0;
 
-        foreach ($pd as $key => $value) {
-            $dem++;
+        $ar = [];
 
-            echo'<pre>'; echo 'https://muasamtaikho.vn/'.$value->link;echo'</pre>';
+        foreach ($pd as $key => $value) {
+
+            $pds = DB::table('group_product')->select('link','id')->where('parent_id',$value->id)->get();
+
+            array_push($ar, $value->link);
+
+            foreach ($pds as $key => $values) {
+               
+                $data = $values->link;
+
+                array_push($ar, $data);
+            }
+
            
+        }
+
+        foreach ($ar as $key => $value) {
+            
+            echo $value;
         }
 
     }
