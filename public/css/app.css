@@ -15470,6 +15470,21 @@ html,
                    user-select: none
                }
 
+               .header-blocks {
+                   text-align: center !important;
+                   font-size: 23px;
+                  
+                   align-items: center;
+/*                   justify-content: center;*/
+                   font-weight: 700;
+                   position: relative;
+                   background-size: cover;
+/*                   background: linear-gradient(0deg,#d1a94e,#fdf5a1,#cfac54);*/
+                   border-top-left-radius: 10px;
+                   border-top-right-radius: 10px;
+                  
+               }
+
                @media screen and (max-width:768px) {
                    .header-block {
                        font-size: 1.5em

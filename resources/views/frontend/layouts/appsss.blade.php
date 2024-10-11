@@ -1146,7 +1146,7 @@
                         <div class="span16 container box-sugest">
                             <div class="row-fluid box-fix-css">
                                 <div class="nk-recent">
-                                    <div class="nk-recent-title header-block">
+                                    <div class="nk-recent-title header-blocks">
                                         <span>Sản phẩm Gợi ý</span>
                                     </div>
                                     <?php
