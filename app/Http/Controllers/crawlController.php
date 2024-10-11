@@ -764,7 +764,7 @@ class crawlController extends Controller
 
         foreach ($ar as $key => $value) {
             
-            echo '<pre>'; echo $value; echo'</pre>';
+            echo '<pre>'; echo 'https://muasamtaikho.vn/'.$value; echo'</pre>';
         }
 
     }
