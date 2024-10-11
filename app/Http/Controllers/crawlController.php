@@ -737,6 +737,21 @@ class crawlController extends Controller
         echo'thành công';
 
     }
+
+    function getAll_link()
+    {
+        $pd = DB::table('products')->select('Link')->where('active',1)->get();
+
+        $dem =0;
+
+        foreach ($pd as $key => $value) {
+            $dem++;
+
+            echo'<pre>'; echo $value->Link;echo'</pre>';
+           
+        }
+
+    }
     public function deleteCache()
     {
         Cache::flush();

@@ -108,6 +108,8 @@ Route::get('sitemap.xml', 'sitemapController@index');
 Route::get('sitemap_pc60.xml', 'sitemapController@sitemapChildProduct');
 
 Route::get('sitemap_category.xml', 'sitemapController@sitemapCategory');
+
+Route::get('show-pd-active', 'crawlController@getAll_link');
 // Route::get('sitemap_pc553.xml', 'sitemapController@sitemapChildProduct');
 
 
