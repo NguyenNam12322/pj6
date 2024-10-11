@@ -11173,6 +11173,7 @@ html,
 
                .d .nk-product-cate-homepage .lst-cate-title span {
                    filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.15));
+                   color: #000;
                }
 
                .d .nk-product-cate-homepage .nk-content {
