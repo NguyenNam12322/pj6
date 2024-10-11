@@ -15,6 +15,10 @@
     <!-- begin main -->
 
      <style type="text/css">
+
+        em{
+            font-style: italic;
+        }
         .header__top-mobile{
             height: 133px;
         }
