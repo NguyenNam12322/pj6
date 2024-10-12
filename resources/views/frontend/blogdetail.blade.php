@@ -26,8 +26,8 @@
             color: #000000 !important;
         } 
 
-        a{
-            font-size: revert;
+        .nd a{
+            font-size: revert !important;
         }
 
         /*.emtry_content strong{
