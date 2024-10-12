@@ -22,7 +22,7 @@
         <meta property="og:locale" content="vi_VN" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="google-site-verification" content="wJlNdHg4BHXSldM_fBxvDlkFVJyXAFJzFiofL6fDtBs" />
-
+        <link rel="canonical" href="{{ url()->current() }}" >
         @if(!empty($meta))
         <title>{{ $meta->meta_title }}</title>
         <meta name="description" content="{{ $meta->meta_content }}"/>
@@ -36,7 +36,7 @@
         @endif
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-        <link rel="canonical" href="{{ url()->current() }}" >
+        
 
         <meta property="og:type" content="article" />
 
