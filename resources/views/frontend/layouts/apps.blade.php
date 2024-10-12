@@ -36,7 +36,7 @@
         <meta name = "google-site-verify" content = "1AH1fN3G7ygWRcOlEQWJyhginaxmT67zTMPP8wnfFD0" />
         <meta name="google-site-verification" content="P-EnxCkmnXXEDeC0FWq-rSxjbSSyy9HeimO6f2Evtyc" />
         <meta property="zalo-platform-site-verification" content="UTYP5VFbJZ8Yz-G8uFTfDZxws27IX0fyDZK" />
-      
+        <link rel="canonical" href="{{ url()->current() }}" >
         <meta http-equiv="Cache-control" content="public">
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
