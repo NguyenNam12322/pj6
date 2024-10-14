@@ -513,7 +513,7 @@ class crawlController extends Controller
         foreach ($data as $key => $value) {
 
             if($value->id !=48 && $value->id>210){
-                echo 'id là: '.$value->id.' link crawl là: '.$value->crawl_link.' Link web là: '.$value->Link.'<br>'.\n;
+                echo 'id là: '.$value->id.' link crawl là: '.$value->crawl_link.' Link web là: '.$value->Link.'<br>'.'\n';
 
 
                 // $url = $value->crawl_link;
