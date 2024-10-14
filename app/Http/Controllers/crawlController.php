@@ -517,7 +517,7 @@ class crawlController extends Controller
 
                 $url = $value->crawl_link;
 
-                // $now = Carbon::now();
+                $now = Carbon::now();
 
                 $html = file_get_html(trim($url));
 
