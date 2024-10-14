@@ -512,7 +512,7 @@ class crawlController extends Controller
 
         foreach ($data as $key => $value) {
 
-            if($value->id !=48){
+            if($value->id !=48 && $value->id>209){
                 // echo 'id là: '.$value->id.' link crawl là: '.$value->crawl_link.' Link web là: '.$value->Link.'<br>';
 
                 $url = $value->crawl_link;
@@ -559,11 +559,11 @@ class crawlController extends Controller
 
                 $update->save();
 
-                echo "<pre>";
+                
 
-                echo "update thành công sản phẩm có id là: $value->id";
+                echo "update thành công sản phẩm có id là: $value->id \n";
 
-                echo "</pre>";
+                
 
             }
 
