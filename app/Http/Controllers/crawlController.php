@@ -553,7 +553,7 @@ class crawlController extends Controller
             // $data['updated_at'] = $now;
             // $data['Salient_Features'] = $feature_item;
             // $data['crawl_link'] = $url;
-            // }
+            }
 
      
 
