@@ -545,7 +545,7 @@ class crawlController extends Controller
 
                 $update->Name = $title;
 
-                $update->Price = $Price;
+                $update->Price = $price;
 
                 $update->Detail = $details;
 
