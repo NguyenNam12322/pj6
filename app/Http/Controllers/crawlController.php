@@ -512,7 +512,7 @@ class crawlController extends Controller
 
         foreach ($data as $key => $value) {
             
-            echo 'id là: '.$value->id.' link crawl là: '.$value->crawl_link;
+            echo 'id là: '.$value->id.' link crawl là: '.$value->crawl_link.'<br>';
         }
 
      
