@@ -125,6 +125,7 @@ Route::get('sitemap_product.xml', 'sitemapController@sitemapChildProduct');
 
 Route::get('/test-crawl', 'crawlController@checkDataCrawl');
 
+
 Route::get('/404', function () {
     echo"bạn không có quyền truy cập trang web";
     
