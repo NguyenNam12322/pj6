@@ -508,11 +508,11 @@ class crawlController extends Controller
 
     public function checkDataCrawl()
     {
-        $data = product::where('Detail', 'like','%65UR8050PSB%')->select('id', 'ProductSku', ' crawl_link')->get();
+        $data = product::where('Detail', 'like','%65UR8050PSB%')->select('id', 'ProductSku', 'crawl_link')->get();
 
         dd($data);
 
-        
+
     }
 
 
