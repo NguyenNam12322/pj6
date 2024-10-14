@@ -26,6 +26,10 @@
             color: #000000 !important;
         } 
 
+        .nd a{
+            font-size: revert !important;
+        }
+
         /*.emtry_content strong{
             font-size: 17px;
         } */
