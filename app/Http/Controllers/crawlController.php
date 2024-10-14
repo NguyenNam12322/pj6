@@ -541,33 +541,27 @@ class crawlController extends Controller
 
                 $price = 0;
 
-                // echo(html_entity_decode($feature_item));
-                
-                $data['Name']   = $title;
-                $data['Price']  = $price;
-                $data['Detail'] = $details;
-                $data['Link'] = convertSlug($title);
-                $data['Group_id']= 2;
-                $data['Specifications'] = $specifications;
-                $data['user_id'] = 4;
-                $data['created_at'] = $now;
-                $data['updated_at'] = $now;
-                $data['Salient_Features'] = $feature_item;
-                $data['crawl_link'] = $url;
+                $update = product::find($value->id);
 
-                dd($data);
+                $update->Name = $title;
 
+                $update->Price = $Price;
+
+                $update->Detail = $details;
+
+                $update->Specifications = $Specifications;
+
+                $update->user_id = 4;
+
+                $update->updated_at = $now;
+
+                $update->Salient_Features = $feature_item;
+
+                $update->save();
 
             }
-            
-            
 
-            // $url 
-
-            
-            }
-
-     
+        }
 
     }
 
