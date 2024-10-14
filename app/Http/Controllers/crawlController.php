@@ -511,48 +511,60 @@ class crawlController extends Controller
         $data = product::where('Detail', 'like','%65UR8050PSB%')->select('id', 'ProductSku', 'crawl_link', 'Link')->get();
 
         foreach ($data as $key => $value) {
+
+            if($value->id !=48){
+                // echo 'id là: '.$value->id.' link crawl là: '.$value->crawl_link.' Link web là: '.$value->Link.'<br>';
+
+                $url = $value->crawl_link;
+
+                // $now = Carbon::now();
+
+                $html = file_get_html(trim($url));
+
+                $details = $html->find('.des_pro', 0);
+
+                $specifications = html_entity_decode($html->find('.list_specifications', 0));
+
+                $title =  strip_tags($html->find('.name_pro_detail h1', 0));  
+
+                // tính năng nổi bật
+
+                $feature_item = html_entity_decode($html->find('.feature_item',0));
+
+                $pattern = '/<a\s+[^>]*>(.*?)<\/a>/i';
+
+                // Replacement string (empty)
+                $replacement = '$1';
+
+                // Perform the replacement
+                $details = preg_replace($pattern, $replacement, html_entity_decode($details));
+
+                $price = 0;
+
+                // echo(html_entity_decode($feature_item));
+                
+                $data['Name']   = $title;
+                $data['Price']  = $price;
+                $data['Detail'] = $details;
+                $data['Link'] = convertSlug($title);
+                $data['Group_id']= 2;
+                $data['Specifications'] = $specifications;
+                $data['user_id'] = 4;
+                $data['created_at'] = $now;
+                $data['updated_at'] = $now;
+                $data['Salient_Features'] = $feature_item;
+                $data['crawl_link'] = $url;
+
+                dd($data);
+
+
+            }
             
-            echo 'id là: '.$value->id.' link crawl là: '.$value->crawl_link.' Link web là: '.$value->Link.'<br>';
+            
 
             // $url 
 
-            // $now = Carbon::now();
-
-            // $html = file_get_html(trim($url));
-
-            // $details = $html->find('.des_pro', 0);
-
-            // $specifications = html_entity_decode($html->find('.list_specifications', 0));
-
-            // $title =  strip_tags($html->find('.name_pro_detail h1', 0));  
-
-            // // tính năng nổi bật
-
-            // $feature_item = html_entity_decode($html->find('.feature_item',0));
-
-            // $pattern = '/<a\s+[^>]*>(.*?)<\/a>/i';
-
-            // // Replacement string (empty)
-            // $replacement = '$1';
-
-            // // Perform the replacement
-            // $details = preg_replace($pattern, $replacement, html_entity_decode($details));
-
-            // $price = 0;
-
-            // // echo(html_entity_decode($feature_item));
             
-            // $data['Name']   = $title;
-            // $data['Price']  = $price;
-            // $data['Detail'] = $details;
-            // $data['Link'] = convertSlug($title);
-            // $data['Group_id']= 2;
-            // $data['Specifications'] = $specifications;
-            // $data['user_id'] = 4;
-            // $data['created_at'] = $now;
-            // $data['updated_at'] = $now;
-            // $data['Salient_Features'] = $feature_item;
-            // $data['crawl_link'] = $url;
             }
 
      
