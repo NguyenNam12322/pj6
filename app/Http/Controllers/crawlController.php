@@ -549,7 +549,7 @@ class crawlController extends Controller
 
                 $update->Detail = $details;
 
-                $update->Specifications = $Specifications;
+                $update->Specifications = $specifications;
 
                 $update->user_id = 4;
 
