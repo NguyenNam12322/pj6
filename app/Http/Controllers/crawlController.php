@@ -559,9 +559,17 @@ class crawlController extends Controller
 
                 $update->save();
 
+                echo "<pre>";
+
+                echo "update thành công sản phẩm có id là: $value->id";
+
+                echo "</pre>";
+
             }
 
         }
+
+        echo "thành công";
 
     }
 
