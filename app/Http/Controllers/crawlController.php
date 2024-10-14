@@ -510,8 +510,12 @@ class crawlController extends Controller
     {
         $data = product::where('Detail', 'like','%65UR8050PSB%')->select('id', 'ProductSku', 'crawl_link')->get();
 
-        dd($data);
+        foreach ($data as $key => $value) {
+            
+            echo 'id là: '.$value->id.' link crawl là: '.$value->crawl_link
+        }
 
+     
 
     }
 
