@@ -515,56 +515,60 @@ class crawlController extends Controller
             if($value->id !=48 && $value->id>210){
                 // echo 'id là: '.$value->id.' link crawl là: '.$value->crawl_link.' Link web là: '.$value->Link.'<br>'.'\n';
 
+                echo $value->crawl_link.'<br>';
+
+
+
                 // echo "id là $value->id \n";
 
 
-                $url = $value->crawl_link;
+                // $url = $value->crawl_link;
 
-                $now = Carbon::now();
+                // $now = Carbon::now();
 
-                $html = file_get_html(trim($url));
+                // $html = file_get_html(trim($url));
 
-                $details = $html->find('.des_pro', 0);
+                // $details = $html->find('.des_pro', 0);
 
-                $specifications = html_entity_decode($html->find('.list_specifications', 0));
+                // $specifications = html_entity_decode($html->find('.list_specifications', 0));
 
-                $title =  strip_tags($html->find('.name_pro_detail h1', 0));  
+                // $title =  strip_tags($html->find('.name_pro_detail h1', 0));  
 
-                // tính năng nổi bật
+                // // tính năng nổi bật
 
-                $feature_item = html_entity_decode($html->find('.feature_item',0));
+                // $feature_item = html_entity_decode($html->find('.feature_item',0));
 
-                $pattern = '/<a\s+[^>]*>(.*?)<\/a>/i';
+                // $pattern = '/<a\s+[^>]*>(.*?)<\/a>/i';
 
-                // Replacement string (empty)
-                $replacement = '$1';
+                // // Replacement string (empty)
+                // $replacement = '$1';
 
-                // Perform the replacement
-                $details = preg_replace($pattern, $replacement, html_entity_decode($details));
+                // // Perform the replacement
+                // $details = preg_replace($pattern, $replacement, html_entity_decode($details));
 
-                $price = 0;
+                // $price = 0;
 
-                $update = product::find($value->id);
+                // $update = product::find($value->id);
 
-                $update->Name = $title;
+                // $update->Name = $title;
 
-                $update->Price = $price;
+                // $update->Price = $price;
 
-                $update->Detail = $details;
+                // $update->Detail = $details;
 
-                $update->Specifications = $specifications;
+                // $update->Specifications = $specifications;
 
-                $update->user_id = 4;
+                // $update->user_id = 4;
 
-                $update->updated_at = $now;
+                // $update->updated_at = $now;
 
-                $update->Salient_Features = $feature_item;
+                // $update->Salient_Features = $feature_item;
 
-                $update->save();
+                // $update->save();
 
                 
 
-                echo "update thành công sản phẩm có id là: $value->id \n";
+                // echo "update thành công sản phẩm có id là: $value->id \n";
 
                 
 
@@ -572,7 +576,7 @@ class crawlController extends Controller
 
         }
 
-        echo "thành công";
+        // echo "thành công";
 
     }
 
