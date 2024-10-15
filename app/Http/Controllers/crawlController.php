@@ -506,9 +506,499 @@ class crawlController extends Controller
         return $img;
     }
 
+
+    public function runLink()
+    {
+        $link ='https://dienmaycholon.vn/tivi/google-tivi-mini-led-sony-4k-65-inch-k65xr70
+            https://dienmaycholon.vn/tivi/google-tivi-mini-led-sony-4k-75-inch-k75xr70
+            https://dienmaycholon.vn/may-lanh/may-lanh-panasonic-inverter-15-hp-cucspu12akh8
+            https://dienmaycholon.vn/may-lanh/may-lanh-funiki-1-hp-hsc09tmu
+            https://dienmaycholon.vn/may-lanh/may-lanh-casper-inverter-1-hp-tc09is35
+            https://dienmaycholon.vn/may-lanh/may-lanh-daikin-1-hp-atf25xav1varf25xav1v
+            https://dienmaycholon.vn/may-lanh/may-lanh-panasonic-inverter-1-hp-cucspu9akh8
+            https://dienmaycholon.vn/may-lanh/may-lanh-tcl-inverter-1-hp-tac10csdxa73i
+            https://dienmaycholon.vn/may-lanh/may-lanh-lg-inverter-1-hp-v10win1
+            https://dienmaycholon.vn/may-lanh/may-lanh-panasonic-inverter-1-hp-cucsxu9zkh8
+            https://dienmaycholon.vn/may-lanh/may-lanh-comfee-inverter-2-hp-cfs18vaffv
+            https://dienmaycholon.vn/may-lanh/may-lanh-daikin-inverter-1-hp-atkf25xvmvarkf25xvmv
+            https://dienmaycholon.vn/may-lanh/may-lanh-sunhouse-1-hp-shraw09c420
+            https://dienmaycholon.vn/may-lanh/may-lanh-sharp-inverter-1-hp-ahx10zew
+            https://dienmaycholon.vn/may-lanh/may-lanh-sharp-inverter-15-hp-ahx13zew
+            https://dienmaycholon.vn/may-lanh/may-lanh-aqua-inverter-1-hp-aqarv10qc2
+            https://dienmaycholon.vn/may-lanh/may-lanh-aqua-inverter-15-hp-aqarv13qc2
+            https://dienmaycholon.vn/may-lanh/may-lanh-tcl-inverter-2-hp-tac18csdxab1i
+            https://dienmaycholon.vn/may-lanh/may-lanh-toshiba-inverter-1-hp-rash10e2kcvgv
+            https://dienmaycholon.vn/may-lanh/may-lanh-daikin-inverter-1-hp-atkf25yvmvarkf25yvmv
+            https://dienmaycholon.vn/may-lanh/may-lanh-tcl-inverter-1-hp-tac09csdxa73i
+            https://dienmaycholon.vn/may-lanh/may-lanh-casper-inverter-15-hp-gc12is35
+            https://dienmaycholon.vn/may-lanh/may-lanh-toshiba-inverter-1-hp-rash10s4kcv2gv
+            https://dienmaycholon.vn/may-lanh/may-lanh-casper-inverter-1-hp-qc09is36
+            https://dienmaycholon.vn/may-lanh/may-lanh-daikin-inverter-15-hp-atkf35yvmvarkf35yvmv
+            https://dienmaycholon.vn/may-lanh/may-lanh-panasonic-inverter-15-hp-cucsxu12zkh8
+            https://dienmaycholon.vn/may-lanh/may-lanh-casper-inverter-15-hp-qc12is36
+            https://dienmaycholon.vn/may-lanh/may-lanh-lg-inverter-15-hp-v13win1
+            https://dienmaycholon.vn/may-lanh/may-lanh-sunhouse-inverter-15-hp-shraw12ic610
+            https://dienmaycholon.vn/may-lanh/may-lanh-sharp-inverter-1-hp-ahxp10bsw
+            https://dienmaycholon.vn/may-lanh/may-lanh-comfee-inverter-1-hp-cfs10vaffv
+            https://dienmaycholon.vn/may-lanh/may-lanh-daikin-inverter-15-hp-atkb35yvmv
+            https://dienmaycholon.vn/may-lanh/may-lanh-samsung-inverter-1-hp-ar10dyhzawknsv
+            https://dienmaycholon.vn/may-lanh/may-lanh-samsung-inverter-15-hp-ar13dyhzawknsv
+            https://dienmaycholon.vn/may-lanh/may-lanh-toshiba-inverter-15-hp-rash13s4kcv2gv
+            https://dienmaycholon.vn/may-lanh/may-lanh-casper-inverter-2-hp-gc18is33
+            https://dienmaycholon.vn/may-lanh/may-lanh-hitachi-inverter-15-hp-rakracch13pcasv
+            https://dienmaycholon.vn/may-lanh/may-lanh-hitachi-inverter-1-hp-rakracch10pcasv
+            https://dienmaycholon.vn/may-lanh/may-lanh-toshiba-inverter-15-hp-rash13e2kcvgv
+            https://dienmaycholon.vn/may-lanh/may-lanh-sharp-inverter-20-hp-ahx18zew
+            https://dienmaycholon.vn/may-lanh/may-lanh-panasonic-inverter-2-hp-cucspu18akh8
+            https://dienmaycholon.vn/may-lanh/may-lanh-toshiba-inverter-2-hp-rash18s4kcv2gv
+            https://dienmaycholon.vn/may-lanh/may-lanh-samsung-inverter-1-hp-ar10cyfaawknsv
+            https://dienmaycholon.vn/may-lanh/may-lanh-comfee-inverter-15-hp-cfs13vaffv
+            https://dienmaycholon.vn/may-lanh/may-lanh-sharp-inverter-2-hp-ahxp18bsw
+            https://dienmaycholon.vn/may-lanh/may-lanh-daikin-inverter-15-hp-ftky35wmvmvrky35wmvmv
+            https://dienmaycholon.vn/may-lanh/may-lanh-tcl-inverter-15-hp-tac13csdxa73i
+            https://dienmaycholon.vn/may-lanh/may-lanh-lg-inverter-2-hp-v18win1
+            https://dienmaycholon.vn/may-lanh/may-lanh-toshiba-inverter-2-hp-rash18e2kcvgv
+            https://dienmaycholon.vn/may-lanh/may-lanh-panasonic-inverter-2-hp-cucsxu18zkh8
+            https://dienmaycholon.vn/may-lanh/may-lanh-daikin-inverter-2-hp-ftkf50xvmvrkf50xvmv
+            https://dienmaycholon.vn/may-lanh/may-lanh-sharp-inverter-15-hp-ahxp13bsw
+            https://dienmaycholon.vn/may-lanh/may-lanh-daikin-inverter-1-hp-ftkz25vvmv
+            https://dienmaycholon.vn/may-lanh/may-lanh-daikin-inverter-15-hp-atkf35xvmvarkf35xvmv
+            https://dienmaycholon.vn/may-lanh/may-lanh-casper-inverter-25-hp-gc24is35
+            https://dienmaycholon.vn/may-lanh/may-lanh-daikin-inverter-2-hp-ftky50wvmvrky50wvmv
+            https://dienmaycholon.vn/may-lanh/may-lanh-daikin-inverter-15-hp-ftkz35vvmv
+            https://dienmaycholon.vn/may-lanh/may-lanh-tcl-inverter-25-hp-tac24csdxab1
+            https://dienmaycholon.vn/may-lanh/may-lanh-casper-inverter-1-hp-gc09is35
+            https://dienmaycholon.vn/may-lanh/may-lanh-lg-inverter-1-hp-v10api1-pm-25-filter
+            https://dienmaycholon.vn/may-lanh/may-lanh-samsung-inverter-15-hp-ar13cyfaawknsv
+            https://dienmaycholon.vn/may-lanh/may-lanh-lg-inverter-15-hp-v13api1-pm-25-filter
+            https://dienmaycholon.vn/may-lanh/may-lanh-daikin-15-hp-atf35xav1varf35xav1v
+            https://dienmaycholon.vn/may-lanh/may-lanh-aqua-inverter-1-hp-aqaruv10xaw2
+            https://dienmaycholon.vn/may-lanh/may-lanh-toshiba-inverter-25-hp-rash24s4kcv2gv
+            https://dienmaycholon.vn/may-lanh/may-lanh-2-chieu-daikin-inverter-1-hp-athf25xvmvarhf25xvmv
+            https://dienmaycholon.vn/may-lanh/may-lanh-aqua-inverter-2-hp-aqarv18qe
+            https://dienmaycholon.vn/may-lanh/may-lanh-comfee-1-hp-cfs10fwffv
+            https://dienmaycholon.vn/may-lanh/may-lanh-lg-inverter-15-hp-v13apfuv
+            https://dienmaycholon.vn/may-lanh/may-lanh-toshiba-inverter-15-hp-rash13t4kcvrgv
+            https://dienmaycholon.vn/may-lanh/may-lanh-comfee-15-hp-cfs13fwffv
+            https://dienmaycholon.vn/may-lanh/may-lanh-2-chieu-daikin-inverter-15-hp-athf35xvmvarhf35xvmv
+            https://dienmaycholon.vn/may-lanh/may-lanh-sunhouse-inverter-1-hp-shraw09ic610
+            https://dienmaycholon.vn/may-lanh/may-lanh-toshiba-inverter-25-hp-rash24e2kcvgv
+            https://dienmaycholon.vn/may-lanh/may-lanh-aqua-inverter-15-hp-aqaruv13xaw2
+            https://dienmaycholon.vn/may-lanh/may-lanh-aqua-inverter-25-hp-aqarv24qa2
+            https://dienmaycholon.vn/may-lanh/may-lanh-panasonic-inverter-25-hp-cucsxu24zkh8
+            https://dienmaycholon.vn/may-lanh/may-lanh-toshiba-inverter-2-hp-rash18t4kcvrgv
+            https://dienmaycholon.vn/may-lanh/may-lanh-sunhouse-15-hp-shraw12c110
+            https://dienmaycholon.vn/may-lanh/may-lanh-nagakawa-inverter-15-hp-nisc12r2t29
+            https://dienmaycholon.vn/may-lanh/dieu-hoa-di-dong-casper-pc09tl33
+            https://dienmaycholon.vn/may-lanh/may-lanh-daikin-inverter-1-hp-atkb25yvmv
+            https://dienmaycholon.vn/may-lanh/may-lanh-samsung-inverter-2-hp-ar18cyfcawknsv
+            https://dienmaycholon.vn/may-lanh/may-lanh-lg-inverter-25-hp-v24win1
+            https://dienmaycholon.vn/may-lanh/may-lanh-lg-inverter-1-hp-v10win
+            https://dienmaycholon.vn/may-lanh/may-lanh-midea-inverter-1-hp-msagii10crdn8
+            https://dienmaycholon.vn/may-lanh/may-lanh-am-tran-lg-inverter-4-hp-ztnq36lnla0-3-pha
+            https://dienmaycholon.vn/may-lanh/may-lanh-am-tran-panasonic-inverter-3-hp-s2430pu3h-1-pha
+            https://dienmaycholon.vn/may-lanh/may-lanh-toshiba-15-hp-inverter-rash13c4kcvgv
+            https://dienmaycholon.vn/may-lanh/may-lanh-panasonic-inverter-1-hp-cucsvu9ukh8
+            https://dienmaycholon.vn/may-lanh/may-lanh-panasonic-inverter-15-hp-cucsvu12ukh8
+            https://dienmaycholon.vn/may-lanh/may-lanh-2-chieu-daikin-inverter-2-hp-fthf50vvmv
+            https://dienmaycholon.vn/may-lanh/may-lanh-lg-inverter-15-hp-v13apib
+            https://dienmaycholon.vn/may-lanh/may-lanh-aqua-inverter-1-hp-aqakcrv10xaw
+            https://dienmaycholon.vn/may-lanh/may-lanh-aqua-inverter-15-hp-aqaruv13rb
+            https://dienmaycholon.vn/may-lanh/may-lanh-aqua-inverter-1-hp-aqaruv10rb
+            https://dienmaycholon.vn/may-lanh/may-lanh-toshiba-2-hp-inverter-rash18c4kcvgv
+            https://dienmaycholon.vn/may-lanh/may-lanh-2-chieu-daikin-inverter-2-hp-fthf50vavmvrhf50vavmv
+            https://dienmaycholon.vn/may-lanh/may-lanh-aqua-inverter-1-hp-aqarv9qc
+            https://dienmaycholon.vn/may-lanh/may-lanh-panasonic-inverter-15-hp-cucspu12zkh8m
+            https://dienmaycholon.vn/may-lanh/may-lanh-panasonic-inverter-1-hp-cucspu9zkh8m
+            https://dienmaycholon.vn/may-lanh/may-lanh-aqua-inverter-25-hp-aqarv24qa
+            https://dienmaycholon.vn/may-lanh/may-lanh-aqua-inverter-20-hp-aqarv18qa
+            https://dienmaycholon.vn/may-lanh/may-lanh-lg-inverter-15-hp-v13win
+            https://dienmaycholon.vn/may-lanh/may-lanh-daikin-3-hp-ftky71wvmvrky71wvmv
+            https://dienmaycholon.vn/may-lanh/may-lanh-panasonic-inverter-2-hp-cucspu18xkh8m
+            https://dienmaycholon.vn/may-lanh/may-lanh-tcl-inverter-15-hp-tac13csdfbi
+            https://dienmaycholon.vn/may-lanh/may-lanh-tcl-inverter-1-hp-tac10csdfbi
+            https://dienmaycholon.vn/may-lanh/may-lanh-inverter-casper-2-hp-tc18is36
+            https://dienmaycholon.vn/may-lanh/may-lanh-casper-inverter-15-hp-tc12is36
+            https://dienmaycholon.vn/may-lanh/dieu-hoa-2-chieu-casper-inverter-1hp-xh09if35
+            https://dienmaycholon.vn/may-lanh/may-lanh-am-tran-lg-inverter-5-hp-ztnq48lmla0-3-pha
+            https://dienmaycholon.vn/may-lanh/may-lanh-tu-dung-lg-inverter-5-hp-zpnq48lt3a0-3-pha
+            https://dienmaycholon.vn/may-lanh/may-lanh-am-tran-lg-inverter-5-hp-ztnq48gmla0-1-pha
+            https://dienmaycholon.vn/may-lanh/may-lanh-am-tran-lg-inverter-4-hp-ztnq36gnla0-1-pha
+            https://dienmaycholon.vn/may-lanh/may-lanh-am-tran-lg-inverter-25-hp-ztnq24gpla0zuac1ptmcgw0-1-pha
+            https://dienmaycholon.vn/may-lanh/may-lanh-am-tran-lg-inverter-2-hp-ztnq18gpla0-1-pha
+            https://dienmaycholon.vn/may-lanh/may-lanh-tu-dung-lg-inverter-5-hp-zpnq48gt3a0-1-pha
+            https://dienmaycholon.vn/may-lanh/may-lanh-tu-dung-lg-inverter-4-hp-zpnq36lr5a0-3-pha
+            https://dienmaycholon.vn/may-lanh/may-lanh-tu-dung-lg-inverter-4-hp-zpnq36gr5a0-1-pha
+            https://dienmaycholon.vn/may-lanh/may-lanh-tu-dung-lg-3-hp-zpnq30gr5e0-1-pha
+            https://dienmaycholon.vn/may-lanh/may-lanh-am-tran-daikin-inverter-25-hp-fcfc60dvmrzfc60dvm-1-pha-dieu-khien-day
+            https://dienmaycholon.vn/may-lanh/may-lanh-am-tran-daikin-inverter-55-hp-fcfc140dvm-3-pha-dieu-khien-day
+            https://dienmaycholon.vn/may-lanh/may-lanh-am-tran-daikin-inverter-4-hp-fcfc100dvm-3-pha-dieu-khien-day
+            https://dienmaycholon.vn/may-lanh/may-lanh-am-tran-daikin-inverter-35-hp-fcfc85dvm-3-pha-dieu-khien-day
+            https://dienmaycholon.vn/may-lanh/may-lanh-tu-dung-daikin-inverter-4-hp-fva100amvm-3-pha-dieu-khien-day
+            https://dienmaycholon.vn/may-lanh/may-lanh-am-tran-panasonic-inverter-5-hp-s3448pu3h-1-pha
+            https://dienmaycholon.vn/may-lanh/may-lanh-am-tran-panasonic-inverter-45-hp-s3448pu3h-1-pha
+            https://dienmaycholon.vn/may-lanh/may-lanh-am-tran-panasonic-inverter-2-hp-s1821pu3h-1-pha
+            https://dienmaycholon.vn/may-lanh/may-lanh-tu-dung-daikin-inverter-5-hp-fva125amvm-1-pha-dieu-khien-day
+            https://dienmaycholon.vn/may-lanh/may-lanh-tu-dung-daikin-inverter-5-hp-fva125amvm-3-pha-dieu-khien-day
+            https://dienmaycholon.vn/may-lanh/may-lanh-tu-dung-daikin-inverter-3-hp-fva71amvm-3-pha-dieu-khien-day
+            https://dienmaycholon.vn/may-lanh/may-lanh-tu-dung-daikin-inverter-3-hp-fva71amvm1-pha-dieu-khien-day
+            https://dienmaycholon.vn/may-lanh/may-lanh-am-tran-daikin-inverter-35-hp-fcfc85dvm-1-pha-dieu-khien-day
+            https://dienmaycholon.vn/may-lanh/may-lanh-am-tran-daikin-inverter-3-hp-fcfc71dvm-1-pha-dieu-khien-day
+            https://dienmaycholon.vn/may-lanh/may-lanh-am-tran-daikin-inverter-4-hp-fcfc100dvm-1-pha-dieu-khien-day
+            https://dienmaycholon.vn/may-lanh/may-lanh-am-tran-daikin-inverter-3-hp-fcfc71dvm-3-pha-dieu-khien-day
+            https://dienmaycholon.vn/may-lanh/may-lanh-am-tran-panansonic-inverter-5-hp-s3448pu3h-3-pha
+            https://dienmaycholon.vn/may-lanh/may-lanh-am-tran-lg-inverter-3-hp-ztnq30gnle0-1-pha
+            https://dienmaycholon.vn/may-lanh/may-lanh-tu-dung-dk
+            https://dienmaycholon.vn/may-lanh/may-lanh-am-tran-dk
+            https://dienmaycholon.vn/may-lanh/bo-may-lanh-multi-lg-inverter-3-dan-lanh-cassette-5-hp-a5uq48gfa
+            https://dienmaycholon.vn/may-lanh/bo-may-lanh-multi-lg-inverter-2-dan-lanh-cassette-5-hp-a5uq48gfa
+            https://dienmaycholon.vn/may-lanh/bo-may-lanh-multi-lg-inverter-3-dan-lanh-3-hp-a3uq30gfd
+            https://dienmaycholon.vn/may-lanh/may-lanh-am-tran-daikin-inverter-5-hp-fcfc125dvm-3-pha-dieu-khien-day
+            https://dienmaycholon.vn/may-lanh/may-lanh-tu-dung-panasonic-inverter-2-hp-s21pb3h5-1-pha
+            https://dienmaycholon.vn/may-lanh/may-lanh-tu-dung-panasonic-inverter-3-hp-s24pb3h5-1-pha
+            https://dienmaycholon.vn/may-lanh/may-lanh-tu-dung-panasonic-inverter-45-hp-s43pb3h5-1-pha
+            https://dienmaycholon.vn/may-lanh/may-lanh-tu-dung-panasonic-inverter-5-hp-s48pb3h5-1-pha
+            https://dienmaycholon.vn/may-lanh/may-lanh-am-tran-panansonic-inverter-25-hp-s2430pu3h-1-pha
+            https://dienmaycholon.vn/may-lanh/may-lanh-am-tran-panasonic-inverter-45hp-s3448pu3h-3-pha
+            https://dienmaycholon.vn/may-lanh/may-lanh-tu-dung-panansonic-inverter-4-hp-s34pb3h5-1-pha
+            https://dienmaycholon.vn/may-lanh/may-lanh-tu-dung-daikin-inverter-2-hp-fva50amvm-1-pha-dieu-khien-day
+            https://dienmaycholon.vn/may-lanh/may-lanh-tu-dung-daikin-inverter-25-hp-fva60amvm-1-pha-dieu-khien-day
+            https://dienmaycholon.vn/may-lanh/may-lanh-tu-dung-daikin-inverter-55-hp-fva140amvm-1-pha-dieu-khien-day
+            https://dienmaycholon.vn/may-lanh/may-lanh-tu-dung-daikin-inverter-55-hp-fva140amvm-3-pha-dieu-khien-day
+            https://dienmaycholon.vn/may-lanh/may-lanh-tu-dung-samsung-inverter-3-hp-ac030bnpdkctc
+            https://dienmaycholon.vn/may-lanh/may-lanh-tu-dung-samsung-inverter-4-hp-ac036bnpdkctc
+            https://dienmaycholon.vn/may-lanh/may-lanh-tu-dung-samsung-inverter-5-hp-ac048bnpdkctc
+            https://dienmaycholon.vn/may-lanh/may-lanh-tu-dung-samsung-inverter-10-hp-af0akv3saeensg
+            https://dienmaycholon.vn/may-lanh/may-lanh-tu-dung-daikin-inverter-2-hp-fva50amvm-1-pha-dieu-khien-khong-day
+            https://dienmaycholon.vn/may-lanh/may-lanh-tu-dung-daikin-inverter-25-hp-fva60amvm-1-pha-dieu-khien-khong-day
+            https://dienmaycholon.vn/may-lanh/may-lanh-tu-dung-daikin-inverter-3-hp-fva71amvm-1-pha-dieu-khien-khong-day
+            https://dienmaycholon.vn/may-lanh/may-lanh-tu-dung-daikin-inverter-4-hp-fva100amvm-1-pha-dieu-khien-khong-day
+            https://dienmaycholon.vn/may-lanh/may-lanh-tu-dung-daikin-inverter-5-hp-fva125amvm-1-pha-dieu-khien-khong-day
+            https://dienmaycholon.vn/may-lanh/may-lanh-tu-dung-daikin-inverter-55-hp-fva140amvm-1-pha-dieu-khien-khong-day
+            https://dienmaycholon.vn/may-lanh/may-lanh-tu-dung-daikin-inverter-3-hp-fva71amvm-3-pha-dieu-khien-khong-day
+            https://dienmaycholon.vn/may-lanh/may-lanh-tu-dung-daikin-inverter-4-hp-fva100amvm-3-pha-dieu-khien-khong-day
+            https://dienmaycholon.vn/may-lanh/may-lanh-tu-dung-daikin-inverter-5-hp-fva125amvm-3-pha-dieu-khien-khong-day
+            https://dienmaycholon.vn/may-lanh/may-lanh-tu-dung-daikin-inverter-55-hp-fva140amvm-3-pha-dieu-khien-khong-day
+            https://dienmaycholon.vn/may-lanh/may-lanh-am-tran-daikin-inverter-5-hp-fcfc125dvm-3-pha-dieu-khien-khong-day
+            https://dienmaycholon.vn/may-lanh/may-lanh-am-tran-daikin-inverter-55-hp-fcfc140dvm-3-pha-dieu-khien-khong-day
+            https://dienmaycholon.vn/may-lanh/may-lanh-am-tran-daikin-inverter-15-hp-fcfc40dvm-1-pha-dieu-khien-day
+            https://dienmaycholon.vn/may-lanh/may-lanh-am-tran-daikin-inverter-2-hp-fcfc50dvm-1-pha-dieu-khien-day
+            https://dienmaycholon.vn/may-lanh/may-lanh-am-tran-1-huong-samsung-inverter-15-hp-ac035tn1dkcea
+            https://dienmaycholon.vn/may-lanh/may-lanh-am-tran-1-huong-samsung-inverter-2-hp-ac052tn1dkcea
+            https://dienmaycholon.vn/may-lanh/may-lanh-am-tran-1-huong-samsung-inverter-25-hp-ac071tn1dkcea
+            https://dienmaycholon.vn/may-lanh/may-lanh-am-tran-360-do-samsung-inverter-3-hp-ac071tn4pkcea
+            https://dienmaycholon.vn/may-lanh/may-lanh-am-tran-360-do-samsung-inverter-4-hpac100tn4pkcea
+            https://dienmaycholon.vn/may-lanh/may-lanh-am-tran-360-do-samsung-inverter-4-hp-ac100tn4pkcea-3-pha
+            https://dienmaycholon.vn/may-lanh/may-lanh-am-tran-360-do-samsung-inverter-45-hp-ac120tn4pkcea
+            https://dienmaycholon.vn/may-lanh/may-lanh-am-tran-360-do-samsung-inverter-45-hp-ac120tn4pkcea-3-pha
+            https://dienmaycholon.vn/may-lanh/may-lanh-am-tran-360-do-samsung-5-hp-inverter-ac140tn4pkcea
+            https://dienmaycholon.vn/may-lanh/may-lanh-am-tran-360-do-samsung-inverter-5-hp-ac140tn4pkcea-3-pha
+            https://dienmaycholon.vn/may-lanh/may-lanh-am-tran-samsung-inverter-2-hp-ac052tn4dkcea
+            https://dienmaycholon.vn/may-lanh/may-lanh-am-tran-samsung-inverter-3-hp-ac071tn4dkcea
+            https://dienmaycholon.vn/may-lanh/may-lanh-am-tran-samsung-inverter-4-hp-ac100tn4dkcea
+            https://dienmaycholon.vn/may-lanh/may-lanh-am-tran-samsung-inverter-4-hp-ac100tn4dkcea-3-pha
+            https://dienmaycholon.vn/may-lanh/may-lanh-am-tran-samsung-inverter-45-hp-ac120tn4dkcea
+            https://dienmaycholon.vn/may-lanh/may-lanh-am-tran-samsung-inverter-45-hp-ac120tn4dkcea-3-pha
+            https://dienmaycholon.vn/may-lanh/may-lanh-am-tran-samsung-inverter-5-hp-ac140tn4dkcea
+            https://dienmaycholon.vn/may-lanh/may-lanh-am-tran-samsung-inverter-5-hp-ac140tn4dkcea-3-pha
+            https://dienmaycholon.vn/may-lanh/may-lanh-am-tran-daikin-inverter-15-hp-fcfc40dvm-1-pha-dieu-khien-khong-day
+            https://dienmaycholon.vn/may-lanh/may-lanh-am-tran-daikin-inverter-2-hp-fcfc50dvm-1-pha-dieu-khien-khong-day
+            https://dienmaycholon.vn/may-lanh/may-lanh-am-tran-daikin-inverter-25-hp-fcfc60dvm-1-pha-dieu-khien-khong-day
+            https://dienmaycholon.vn/may-lanh/may-lanh-am-tran-daikin-inverter-3-hp-fcfc71dvm-1-pha-dieu-khien-khong-day
+            https://dienmaycholon.vn/may-lanh/may-lanh-am-tran-daikin-inverter-3-hp-fcfc71dvm-3-pha-dieu-khien-khong-day
+            https://dienmaycholon.vn/may-lanh/may-lanh-am-tran-daikin-inverter-35-hp-fcfc85dvm-1-pha-dieu-khien-khong-day
+            https://dienmaycholon.vn/may-lanh/may-lanh-am-tran-daikin-inverter-35-hp-fcfc85dvm-3-pha-dieu-khien-khong-day
+            https://dienmaycholon.vn/may-lanh/may-lanh-am-tran-daikin-inverter-4-hp-fcfc100dvm-3-pha-dieu-khien-khong-day
+            https://dienmaycholon.vn/may-lanh/may-lanh-am-tran-daikin-inverter-4-hp-fcfc100dvm-1-pha-dieu-khien-khong-day
+            https://dienmaycholon.vn/may-lanh/may-lanh-am-tran-casper-inverter-2-hp-cc18is35
+            https://dienmaycholon.vn/may-lanh/may-lanh-am-tran-casper-inverter-25-hp-cc24is35
+            https://dienmaycholon.vn/may-lanh/bo-may-lanh-multi-lg-inverter-3-dan-lanh-4-hp-a4uq36gfd0
+            https://dienmaycholon.vn/may-lanh/bo-may-lanh-multi-lg-inverter-3-dan-lanh-4-hp-a4uq36gfd02
+            https://dienmaycholon.vn/may-lanh/bo-may-lanh-multi-lg-inverter-3-dan-lanh-5-hp-a5uq48gfa
+            https://dienmaycholon.vn/may-lanh/bo-may-lanh-multi-lg-inverter-4-dan-lanh-4-hp-a4uq36gfd0-amnq09gsjb0
+            https://dienmaycholon.vn/may-lanh/may-lanh-am-tran-panasonic-inverter-35-hp-s3448pu3h
+            https://dienmaycholon.vn/may-lanh/bo-may-lanh-multi-lg-inverter-4-dan-lanh-5-hp-a5uq48gfa
+            https://dienmaycholon.vn/may-lanh/bo-may-lanh-multi-lg-inverter-4-dan-lanh-5-hp-a5uq48gfa2
+            https://dienmaycholon.vn/may-lanh/may-lanh-am-tran-casper-inverter-4-hp-cc36is35
+            https://dienmaycholon.vn/may-lanh/may-lanh-am-tran-casper-inverter-5-hp-cc48is35
+            https://dienmaycholon.vn/may-lanh/bo-may-lanh-multi-lg-inverter-5-dan-lanh-5-hp-a5uq48gfa
+            https://dienmaycholon.vn/may-lanh/bo-may-lanh-multi-lg-inverter-2-dan-lanh-cassette-4-hp-a4uq36gfd0
+            https://dienmaycholon.vn/may-lanh/bo-may-lanh-multi-lg-inverter-2-dan-lanh-cassette-4-hp-a4uq36gfd02';
+
+            $data = explode(PHP_EOL, $link);     
+
+            foreach ($data as $key => $value) {
+
+                $url = $value->crawl_link;
+
+                $now = Carbon::now();
+
+                $html = file_get_html(trim($url));
+
+                $details = $html->find('.des_pro', 0);
+
+                $specifications = html_entity_decode($html->find('.list_specifications', 0));
+
+                $title =  strip_tags($html->find('.name_pro_detail h1', 0));  
+
+                // tính năng nổi bật
+
+                $feature_item = html_entity_decode($html->find('.feature_item',0));
+
+                $pattern = '/<a\s+[^>]*>(.*?)<\/a>/i';
+
+                // Replacement string (empty)
+                $replacement = '$1';
+
+                // Perform the replacement
+                $details = preg_replace($pattern, $replacement, html_entity_decode($details));
+
+                $price = 0;
+
+
+                $datas[$key]['Name'] = $title;
+
+                $datas[$key]['Price'] = $title;
+
+                $datas[$key]['Detail'] = $details;
+
+                $datas[$key]['Specifications'] = $specifications;
+
+                $datas[$key]['user_id'] = 4;
+
+                $datas[$key]['updated_at'] = $now;
+
+                $datas[$key]['Salient_Features'] = $feature_item;
+
+            }    
+        $data_json = json_encode($datas);
+        
+
+        print_r($data_json);  
+
+    }
+
     public function checkDataCrawl()
     {
-        $data = product::where('Detail', 'like','%65UR8050PSB%')->select('id', 'ProductSku', 'crawl_link', 'Link')->get();
+        // $data = product::where('Detail', 'like','%65UR8050PSB%')->select('id', 'ProductSku', 'crawl_link', 'Link')->get();
+
+        $link ='https://dienmaycholon.vn/tivi/google-tivi-mini-led-sony-4k-65-inch-k65xr70
+            https://dienmaycholon.vn/tivi/google-tivi-mini-led-sony-4k-75-inch-k75xr70
+            https://dienmaycholon.vn/may-lanh/may-lanh-panasonic-inverter-15-hp-cucspu12akh8
+            https://dienmaycholon.vn/may-lanh/may-lanh-funiki-1-hp-hsc09tmu
+            https://dienmaycholon.vn/may-lanh/may-lanh-casper-inverter-1-hp-tc09is35
+            https://dienmaycholon.vn/may-lanh/may-lanh-daikin-1-hp-atf25xav1varf25xav1v
+            https://dienmaycholon.vn/may-lanh/may-lanh-panasonic-inverter-1-hp-cucspu9akh8
+            https://dienmaycholon.vn/may-lanh/may-lanh-tcl-inverter-1-hp-tac10csdxa73i
+            https://dienmaycholon.vn/may-lanh/may-lanh-lg-inverter-1-hp-v10win1
+            https://dienmaycholon.vn/may-lanh/may-lanh-panasonic-inverter-1-hp-cucsxu9zkh8
+            https://dienmaycholon.vn/may-lanh/may-lanh-comfee-inverter-2-hp-cfs18vaffv
+            https://dienmaycholon.vn/may-lanh/may-lanh-daikin-inverter-1-hp-atkf25xvmvarkf25xvmv
+            https://dienmaycholon.vn/may-lanh/may-lanh-sunhouse-1-hp-shraw09c420
+            https://dienmaycholon.vn/may-lanh/may-lanh-sharp-inverter-1-hp-ahx10zew
+            https://dienmaycholon.vn/may-lanh/may-lanh-sharp-inverter-15-hp-ahx13zew
+            https://dienmaycholon.vn/may-lanh/may-lanh-aqua-inverter-1-hp-aqarv10qc2
+            https://dienmaycholon.vn/may-lanh/may-lanh-aqua-inverter-15-hp-aqarv13qc2
+            https://dienmaycholon.vn/may-lanh/may-lanh-tcl-inverter-2-hp-tac18csdxab1i
+            https://dienmaycholon.vn/may-lanh/may-lanh-toshiba-inverter-1-hp-rash10e2kcvgv
+            https://dienmaycholon.vn/may-lanh/may-lanh-daikin-inverter-1-hp-atkf25yvmvarkf25yvmv
+            https://dienmaycholon.vn/may-lanh/may-lanh-tcl-inverter-1-hp-tac09csdxa73i
+            https://dienmaycholon.vn/may-lanh/may-lanh-casper-inverter-15-hp-gc12is35
+            https://dienmaycholon.vn/may-lanh/may-lanh-toshiba-inverter-1-hp-rash10s4kcv2gv
+            https://dienmaycholon.vn/may-lanh/may-lanh-casper-inverter-1-hp-qc09is36
+            https://dienmaycholon.vn/may-lanh/may-lanh-daikin-inverter-15-hp-atkf35yvmvarkf35yvmv
+            https://dienmaycholon.vn/may-lanh/may-lanh-panasonic-inverter-15-hp-cucsxu12zkh8
+            https://dienmaycholon.vn/may-lanh/may-lanh-casper-inverter-15-hp-qc12is36
+            https://dienmaycholon.vn/may-lanh/may-lanh-lg-inverter-15-hp-v13win1
+            https://dienmaycholon.vn/may-lanh/may-lanh-sunhouse-inverter-15-hp-shraw12ic610
+            https://dienmaycholon.vn/may-lanh/may-lanh-sharp-inverter-1-hp-ahxp10bsw
+            https://dienmaycholon.vn/may-lanh/may-lanh-comfee-inverter-1-hp-cfs10vaffv
+            https://dienmaycholon.vn/may-lanh/may-lanh-daikin-inverter-15-hp-atkb35yvmv
+            https://dienmaycholon.vn/may-lanh/may-lanh-samsung-inverter-1-hp-ar10dyhzawknsv
+            https://dienmaycholon.vn/may-lanh/may-lanh-samsung-inverter-15-hp-ar13dyhzawknsv
+            https://dienmaycholon.vn/may-lanh/may-lanh-toshiba-inverter-15-hp-rash13s4kcv2gv
+            https://dienmaycholon.vn/may-lanh/may-lanh-casper-inverter-2-hp-gc18is33
+            https://dienmaycholon.vn/may-lanh/may-lanh-hitachi-inverter-15-hp-rakracch13pcasv
+            https://dienmaycholon.vn/may-lanh/may-lanh-hitachi-inverter-1-hp-rakracch10pcasv
+            https://dienmaycholon.vn/may-lanh/may-lanh-toshiba-inverter-15-hp-rash13e2kcvgv
+            https://dienmaycholon.vn/may-lanh/may-lanh-sharp-inverter-20-hp-ahx18zew
+            https://dienmaycholon.vn/may-lanh/may-lanh-panasonic-inverter-2-hp-cucspu18akh8
+            https://dienmaycholon.vn/may-lanh/may-lanh-toshiba-inverter-2-hp-rash18s4kcv2gv
+            https://dienmaycholon.vn/may-lanh/may-lanh-samsung-inverter-1-hp-ar10cyfaawknsv
+            https://dienmaycholon.vn/may-lanh/may-lanh-comfee-inverter-15-hp-cfs13vaffv
+            https://dienmaycholon.vn/may-lanh/may-lanh-sharp-inverter-2-hp-ahxp18bsw
+            https://dienmaycholon.vn/may-lanh/may-lanh-daikin-inverter-15-hp-ftky35wmvmvrky35wmvmv
+            https://dienmaycholon.vn/may-lanh/may-lanh-tcl-inverter-15-hp-tac13csdxa73i
+            https://dienmaycholon.vn/may-lanh/may-lanh-lg-inverter-2-hp-v18win1
+            https://dienmaycholon.vn/may-lanh/may-lanh-toshiba-inverter-2-hp-rash18e2kcvgv
+            https://dienmaycholon.vn/may-lanh/may-lanh-panasonic-inverter-2-hp-cucsxu18zkh8
+            https://dienmaycholon.vn/may-lanh/may-lanh-daikin-inverter-2-hp-ftkf50xvmvrkf50xvmv
+            https://dienmaycholon.vn/may-lanh/may-lanh-sharp-inverter-15-hp-ahxp13bsw
+            https://dienmaycholon.vn/may-lanh/may-lanh-daikin-inverter-1-hp-ftkz25vvmv
+            https://dienmaycholon.vn/may-lanh/may-lanh-daikin-inverter-15-hp-atkf35xvmvarkf35xvmv
+            https://dienmaycholon.vn/may-lanh/may-lanh-casper-inverter-25-hp-gc24is35
+            https://dienmaycholon.vn/may-lanh/may-lanh-daikin-inverter-2-hp-ftky50wvmvrky50wvmv
+            https://dienmaycholon.vn/may-lanh/may-lanh-daikin-inverter-15-hp-ftkz35vvmv
+            https://dienmaycholon.vn/may-lanh/may-lanh-tcl-inverter-25-hp-tac24csdxab1
+            https://dienmaycholon.vn/may-lanh/may-lanh-casper-inverter-1-hp-gc09is35
+            https://dienmaycholon.vn/may-lanh/may-lanh-lg-inverter-1-hp-v10api1-pm-25-filter
+            https://dienmaycholon.vn/may-lanh/may-lanh-samsung-inverter-15-hp-ar13cyfaawknsv
+            https://dienmaycholon.vn/may-lanh/may-lanh-lg-inverter-15-hp-v13api1-pm-25-filter
+            https://dienmaycholon.vn/may-lanh/may-lanh-daikin-15-hp-atf35xav1varf35xav1v
+            https://dienmaycholon.vn/may-lanh/may-lanh-aqua-inverter-1-hp-aqaruv10xaw2
+            https://dienmaycholon.vn/may-lanh/may-lanh-toshiba-inverter-25-hp-rash24s4kcv2gv
+            https://dienmaycholon.vn/may-lanh/may-lanh-2-chieu-daikin-inverter-1-hp-athf25xvmvarhf25xvmv
+            https://dienmaycholon.vn/may-lanh/may-lanh-aqua-inverter-2-hp-aqarv18qe
+            https://dienmaycholon.vn/may-lanh/may-lanh-comfee-1-hp-cfs10fwffv
+            https://dienmaycholon.vn/may-lanh/may-lanh-lg-inverter-15-hp-v13apfuv
+            https://dienmaycholon.vn/may-lanh/may-lanh-toshiba-inverter-15-hp-rash13t4kcvrgv
+            https://dienmaycholon.vn/may-lanh/may-lanh-comfee-15-hp-cfs13fwffv
+            https://dienmaycholon.vn/may-lanh/may-lanh-2-chieu-daikin-inverter-15-hp-athf35xvmvarhf35xvmv
+            https://dienmaycholon.vn/may-lanh/may-lanh-sunhouse-inverter-1-hp-shraw09ic610
+            https://dienmaycholon.vn/may-lanh/may-lanh-toshiba-inverter-25-hp-rash24e2kcvgv
+            https://dienmaycholon.vn/may-lanh/may-lanh-aqua-inverter-15-hp-aqaruv13xaw2
+            https://dienmaycholon.vn/may-lanh/may-lanh-aqua-inverter-25-hp-aqarv24qa2
+            https://dienmaycholon.vn/may-lanh/may-lanh-panasonic-inverter-25-hp-cucsxu24zkh8
+            https://dienmaycholon.vn/may-lanh/may-lanh-toshiba-inverter-2-hp-rash18t4kcvrgv
+            https://dienmaycholon.vn/may-lanh/may-lanh-sunhouse-15-hp-shraw12c110
+            https://dienmaycholon.vn/may-lanh/may-lanh-nagakawa-inverter-15-hp-nisc12r2t29
+            https://dienmaycholon.vn/may-lanh/dieu-hoa-di-dong-casper-pc09tl33
+            https://dienmaycholon.vn/may-lanh/may-lanh-daikin-inverter-1-hp-atkb25yvmv
+            https://dienmaycholon.vn/may-lanh/may-lanh-samsung-inverter-2-hp-ar18cyfcawknsv
+            https://dienmaycholon.vn/may-lanh/may-lanh-lg-inverter-25-hp-v24win1
+            https://dienmaycholon.vn/may-lanh/may-lanh-lg-inverter-1-hp-v10win
+            https://dienmaycholon.vn/may-lanh/may-lanh-midea-inverter-1-hp-msagii10crdn8
+            https://dienmaycholon.vn/may-lanh/may-lanh-am-tran-lg-inverter-4-hp-ztnq36lnla0-3-pha
+            https://dienmaycholon.vn/may-lanh/may-lanh-am-tran-panasonic-inverter-3-hp-s2430pu3h-1-pha
+            https://dienmaycholon.vn/may-lanh/may-lanh-toshiba-15-hp-inverter-rash13c4kcvgv
+            https://dienmaycholon.vn/may-lanh/may-lanh-panasonic-inverter-1-hp-cucsvu9ukh8
+            https://dienmaycholon.vn/may-lanh/may-lanh-panasonic-inverter-15-hp-cucsvu12ukh8
+            https://dienmaycholon.vn/may-lanh/may-lanh-2-chieu-daikin-inverter-2-hp-fthf50vvmv
+            https://dienmaycholon.vn/may-lanh/may-lanh-lg-inverter-15-hp-v13apib
+            https://dienmaycholon.vn/may-lanh/may-lanh-aqua-inverter-1-hp-aqakcrv10xaw
+            https://dienmaycholon.vn/may-lanh/may-lanh-aqua-inverter-15-hp-aqaruv13rb
+            https://dienmaycholon.vn/may-lanh/may-lanh-aqua-inverter-1-hp-aqaruv10rb
+            https://dienmaycholon.vn/may-lanh/may-lanh-toshiba-2-hp-inverter-rash18c4kcvgv
+            https://dienmaycholon.vn/may-lanh/may-lanh-2-chieu-daikin-inverter-2-hp-fthf50vavmvrhf50vavmv
+            https://dienmaycholon.vn/may-lanh/may-lanh-aqua-inverter-1-hp-aqarv9qc
+            https://dienmaycholon.vn/may-lanh/may-lanh-panasonic-inverter-15-hp-cucspu12zkh8m
+            https://dienmaycholon.vn/may-lanh/may-lanh-panasonic-inverter-1-hp-cucspu9zkh8m
+            https://dienmaycholon.vn/may-lanh/may-lanh-aqua-inverter-25-hp-aqarv24qa
+            https://dienmaycholon.vn/may-lanh/may-lanh-aqua-inverter-20-hp-aqarv18qa
+            https://dienmaycholon.vn/may-lanh/may-lanh-lg-inverter-15-hp-v13win
+            https://dienmaycholon.vn/may-lanh/may-lanh-daikin-3-hp-ftky71wvmvrky71wvmv
+            https://dienmaycholon.vn/may-lanh/may-lanh-panasonic-inverter-2-hp-cucspu18xkh8m
+            https://dienmaycholon.vn/may-lanh/may-lanh-tcl-inverter-15-hp-tac13csdfbi
+            https://dienmaycholon.vn/may-lanh/may-lanh-tcl-inverter-1-hp-tac10csdfbi
+            https://dienmaycholon.vn/may-lanh/may-lanh-inverter-casper-2-hp-tc18is36
+            https://dienmaycholon.vn/may-lanh/may-lanh-casper-inverter-15-hp-tc12is36
+            https://dienmaycholon.vn/may-lanh/dieu-hoa-2-chieu-casper-inverter-1hp-xh09if35
+            https://dienmaycholon.vn/may-lanh/may-lanh-am-tran-lg-inverter-5-hp-ztnq48lmla0-3-pha
+            https://dienmaycholon.vn/may-lanh/may-lanh-tu-dung-lg-inverter-5-hp-zpnq48lt3a0-3-pha
+            https://dienmaycholon.vn/may-lanh/may-lanh-am-tran-lg-inverter-5-hp-ztnq48gmla0-1-pha
+            https://dienmaycholon.vn/may-lanh/may-lanh-am-tran-lg-inverter-4-hp-ztnq36gnla0-1-pha
+            https://dienmaycholon.vn/may-lanh/may-lanh-am-tran-lg-inverter-25-hp-ztnq24gpla0zuac1ptmcgw0-1-pha
+            https://dienmaycholon.vn/may-lanh/may-lanh-am-tran-lg-inverter-2-hp-ztnq18gpla0-1-pha
+            https://dienmaycholon.vn/may-lanh/may-lanh-tu-dung-lg-inverter-5-hp-zpnq48gt3a0-1-pha
+            https://dienmaycholon.vn/may-lanh/may-lanh-tu-dung-lg-inverter-4-hp-zpnq36lr5a0-3-pha
+            https://dienmaycholon.vn/may-lanh/may-lanh-tu-dung-lg-inverter-4-hp-zpnq36gr5a0-1-pha
+            https://dienmaycholon.vn/may-lanh/may-lanh-tu-dung-lg-3-hp-zpnq30gr5e0-1-pha
+            https://dienmaycholon.vn/may-lanh/may-lanh-am-tran-daikin-inverter-25-hp-fcfc60dvmrzfc60dvm-1-pha-dieu-khien-day
+            https://dienmaycholon.vn/may-lanh/may-lanh-am-tran-daikin-inverter-55-hp-fcfc140dvm-3-pha-dieu-khien-day
+            https://dienmaycholon.vn/may-lanh/may-lanh-am-tran-daikin-inverter-4-hp-fcfc100dvm-3-pha-dieu-khien-day
+            https://dienmaycholon.vn/may-lanh/may-lanh-am-tran-daikin-inverter-35-hp-fcfc85dvm-3-pha-dieu-khien-day
+            https://dienmaycholon.vn/may-lanh/may-lanh-tu-dung-daikin-inverter-4-hp-fva100amvm-3-pha-dieu-khien-day
+            https://dienmaycholon.vn/may-lanh/may-lanh-am-tran-panasonic-inverter-5-hp-s3448pu3h-1-pha
+            https://dienmaycholon.vn/may-lanh/may-lanh-am-tran-panasonic-inverter-45-hp-s3448pu3h-1-pha
+            https://dienmaycholon.vn/may-lanh/may-lanh-am-tran-panasonic-inverter-2-hp-s1821pu3h-1-pha
+            https://dienmaycholon.vn/may-lanh/may-lanh-tu-dung-daikin-inverter-5-hp-fva125amvm-1-pha-dieu-khien-day
+            https://dienmaycholon.vn/may-lanh/may-lanh-tu-dung-daikin-inverter-5-hp-fva125amvm-3-pha-dieu-khien-day
+            https://dienmaycholon.vn/may-lanh/may-lanh-tu-dung-daikin-inverter-3-hp-fva71amvm-3-pha-dieu-khien-day
+            https://dienmaycholon.vn/may-lanh/may-lanh-tu-dung-daikin-inverter-3-hp-fva71amvm1-pha-dieu-khien-day
+            https://dienmaycholon.vn/may-lanh/may-lanh-am-tran-daikin-inverter-35-hp-fcfc85dvm-1-pha-dieu-khien-day
+            https://dienmaycholon.vn/may-lanh/may-lanh-am-tran-daikin-inverter-3-hp-fcfc71dvm-1-pha-dieu-khien-day
+            https://dienmaycholon.vn/may-lanh/may-lanh-am-tran-daikin-inverter-4-hp-fcfc100dvm-1-pha-dieu-khien-day
+            https://dienmaycholon.vn/may-lanh/may-lanh-am-tran-daikin-inverter-3-hp-fcfc71dvm-3-pha-dieu-khien-day
+            https://dienmaycholon.vn/may-lanh/may-lanh-am-tran-panansonic-inverter-5-hp-s3448pu3h-3-pha
+            https://dienmaycholon.vn/may-lanh/may-lanh-am-tran-lg-inverter-3-hp-ztnq30gnle0-1-pha
+            https://dienmaycholon.vn/may-lanh/may-lanh-tu-dung-dk
+            https://dienmaycholon.vn/may-lanh/may-lanh-am-tran-dk
+            https://dienmaycholon.vn/may-lanh/bo-may-lanh-multi-lg-inverter-3-dan-lanh-cassette-5-hp-a5uq48gfa
+            https://dienmaycholon.vn/may-lanh/bo-may-lanh-multi-lg-inverter-2-dan-lanh-cassette-5-hp-a5uq48gfa
+            https://dienmaycholon.vn/may-lanh/bo-may-lanh-multi-lg-inverter-3-dan-lanh-3-hp-a3uq30gfd
+            https://dienmaycholon.vn/may-lanh/may-lanh-am-tran-daikin-inverter-5-hp-fcfc125dvm-3-pha-dieu-khien-day
+            https://dienmaycholon.vn/may-lanh/may-lanh-tu-dung-panasonic-inverter-2-hp-s21pb3h5-1-pha
+            https://dienmaycholon.vn/may-lanh/may-lanh-tu-dung-panasonic-inverter-3-hp-s24pb3h5-1-pha
+            https://dienmaycholon.vn/may-lanh/may-lanh-tu-dung-panasonic-inverter-45-hp-s43pb3h5-1-pha
+            https://dienmaycholon.vn/may-lanh/may-lanh-tu-dung-panasonic-inverter-5-hp-s48pb3h5-1-pha
+            https://dienmaycholon.vn/may-lanh/may-lanh-am-tran-panansonic-inverter-25-hp-s2430pu3h-1-pha
+            https://dienmaycholon.vn/may-lanh/may-lanh-am-tran-panasonic-inverter-45hp-s3448pu3h-3-pha
+            https://dienmaycholon.vn/may-lanh/may-lanh-tu-dung-panansonic-inverter-4-hp-s34pb3h5-1-pha
+            https://dienmaycholon.vn/may-lanh/may-lanh-tu-dung-daikin-inverter-2-hp-fva50amvm-1-pha-dieu-khien-day
+            https://dienmaycholon.vn/may-lanh/may-lanh-tu-dung-daikin-inverter-25-hp-fva60amvm-1-pha-dieu-khien-day
+            https://dienmaycholon.vn/may-lanh/may-lanh-tu-dung-daikin-inverter-55-hp-fva140amvm-1-pha-dieu-khien-day
+            https://dienmaycholon.vn/may-lanh/may-lanh-tu-dung-daikin-inverter-55-hp-fva140amvm-3-pha-dieu-khien-day
+            https://dienmaycholon.vn/may-lanh/may-lanh-tu-dung-samsung-inverter-3-hp-ac030bnpdkctc
+            https://dienmaycholon.vn/may-lanh/may-lanh-tu-dung-samsung-inverter-4-hp-ac036bnpdkctc
+            https://dienmaycholon.vn/may-lanh/may-lanh-tu-dung-samsung-inverter-5-hp-ac048bnpdkctc
+            https://dienmaycholon.vn/may-lanh/may-lanh-tu-dung-samsung-inverter-10-hp-af0akv3saeensg
+            https://dienmaycholon.vn/may-lanh/may-lanh-tu-dung-daikin-inverter-2-hp-fva50amvm-1-pha-dieu-khien-khong-day
+            https://dienmaycholon.vn/may-lanh/may-lanh-tu-dung-daikin-inverter-25-hp-fva60amvm-1-pha-dieu-khien-khong-day
+            https://dienmaycholon.vn/may-lanh/may-lanh-tu-dung-daikin-inverter-3-hp-fva71amvm-1-pha-dieu-khien-khong-day
+            https://dienmaycholon.vn/may-lanh/may-lanh-tu-dung-daikin-inverter-4-hp-fva100amvm-1-pha-dieu-khien-khong-day
+            https://dienmaycholon.vn/may-lanh/may-lanh-tu-dung-daikin-inverter-5-hp-fva125amvm-1-pha-dieu-khien-khong-day
+            https://dienmaycholon.vn/may-lanh/may-lanh-tu-dung-daikin-inverter-55-hp-fva140amvm-1-pha-dieu-khien-khong-day
+            https://dienmaycholon.vn/may-lanh/may-lanh-tu-dung-daikin-inverter-3-hp-fva71amvm-3-pha-dieu-khien-khong-day
+            https://dienmaycholon.vn/may-lanh/may-lanh-tu-dung-daikin-inverter-4-hp-fva100amvm-3-pha-dieu-khien-khong-day
+            https://dienmaycholon.vn/may-lanh/may-lanh-tu-dung-daikin-inverter-5-hp-fva125amvm-3-pha-dieu-khien-khong-day
+            https://dienmaycholon.vn/may-lanh/may-lanh-tu-dung-daikin-inverter-55-hp-fva140amvm-3-pha-dieu-khien-khong-day
+            https://dienmaycholon.vn/may-lanh/may-lanh-am-tran-daikin-inverter-5-hp-fcfc125dvm-3-pha-dieu-khien-khong-day
+            https://dienmaycholon.vn/may-lanh/may-lanh-am-tran-daikin-inverter-55-hp-fcfc140dvm-3-pha-dieu-khien-khong-day
+            https://dienmaycholon.vn/may-lanh/may-lanh-am-tran-daikin-inverter-15-hp-fcfc40dvm-1-pha-dieu-khien-day
+            https://dienmaycholon.vn/may-lanh/may-lanh-am-tran-daikin-inverter-2-hp-fcfc50dvm-1-pha-dieu-khien-day
+            https://dienmaycholon.vn/may-lanh/may-lanh-am-tran-1-huong-samsung-inverter-15-hp-ac035tn1dkcea
+            https://dienmaycholon.vn/may-lanh/may-lanh-am-tran-1-huong-samsung-inverter-2-hp-ac052tn1dkcea
+            https://dienmaycholon.vn/may-lanh/may-lanh-am-tran-1-huong-samsung-inverter-25-hp-ac071tn1dkcea
+            https://dienmaycholon.vn/may-lanh/may-lanh-am-tran-360-do-samsung-inverter-3-hp-ac071tn4pkcea
+            https://dienmaycholon.vn/may-lanh/may-lanh-am-tran-360-do-samsung-inverter-4-hpac100tn4pkcea
+            https://dienmaycholon.vn/may-lanh/may-lanh-am-tran-360-do-samsung-inverter-4-hp-ac100tn4pkcea-3-pha
+            https://dienmaycholon.vn/may-lanh/may-lanh-am-tran-360-do-samsung-inverter-45-hp-ac120tn4pkcea
+            https://dienmaycholon.vn/may-lanh/may-lanh-am-tran-360-do-samsung-inverter-45-hp-ac120tn4pkcea-3-pha
+            https://dienmaycholon.vn/may-lanh/may-lanh-am-tran-360-do-samsung-5-hp-inverter-ac140tn4pkcea
+            https://dienmaycholon.vn/may-lanh/may-lanh-am-tran-360-do-samsung-inverter-5-hp-ac140tn4pkcea-3-pha
+            https://dienmaycholon.vn/may-lanh/may-lanh-am-tran-samsung-inverter-2-hp-ac052tn4dkcea
+            https://dienmaycholon.vn/may-lanh/may-lanh-am-tran-samsung-inverter-3-hp-ac071tn4dkcea
+            https://dienmaycholon.vn/may-lanh/may-lanh-am-tran-samsung-inverter-4-hp-ac100tn4dkcea
+            https://dienmaycholon.vn/may-lanh/may-lanh-am-tran-samsung-inverter-4-hp-ac100tn4dkcea-3-pha
+            https://dienmaycholon.vn/may-lanh/may-lanh-am-tran-samsung-inverter-45-hp-ac120tn4dkcea
+            https://dienmaycholon.vn/may-lanh/may-lanh-am-tran-samsung-inverter-45-hp-ac120tn4dkcea-3-pha
+            https://dienmaycholon.vn/may-lanh/may-lanh-am-tran-samsung-inverter-5-hp-ac140tn4dkcea
+            https://dienmaycholon.vn/may-lanh/may-lanh-am-tran-samsung-inverter-5-hp-ac140tn4dkcea-3-pha
+            https://dienmaycholon.vn/may-lanh/may-lanh-am-tran-daikin-inverter-15-hp-fcfc40dvm-1-pha-dieu-khien-khong-day
+            https://dienmaycholon.vn/may-lanh/may-lanh-am-tran-daikin-inverter-2-hp-fcfc50dvm-1-pha-dieu-khien-khong-day
+            https://dienmaycholon.vn/may-lanh/may-lanh-am-tran-daikin-inverter-25-hp-fcfc60dvm-1-pha-dieu-khien-khong-day
+            https://dienmaycholon.vn/may-lanh/may-lanh-am-tran-daikin-inverter-3-hp-fcfc71dvm-1-pha-dieu-khien-khong-day
+            https://dienmaycholon.vn/may-lanh/may-lanh-am-tran-daikin-inverter-3-hp-fcfc71dvm-3-pha-dieu-khien-khong-day
+            https://dienmaycholon.vn/may-lanh/may-lanh-am-tran-daikin-inverter-35-hp-fcfc85dvm-1-pha-dieu-khien-khong-day
+            https://dienmaycholon.vn/may-lanh/may-lanh-am-tran-daikin-inverter-35-hp-fcfc85dvm-3-pha-dieu-khien-khong-day
+            https://dienmaycholon.vn/may-lanh/may-lanh-am-tran-daikin-inverter-4-hp-fcfc100dvm-3-pha-dieu-khien-khong-day
+            https://dienmaycholon.vn/may-lanh/may-lanh-am-tran-daikin-inverter-4-hp-fcfc100dvm-1-pha-dieu-khien-khong-day
+            https://dienmaycholon.vn/may-lanh/may-lanh-am-tran-casper-inverter-2-hp-cc18is35
+            https://dienmaycholon.vn/may-lanh/may-lanh-am-tran-casper-inverter-25-hp-cc24is35
+            https://dienmaycholon.vn/may-lanh/bo-may-lanh-multi-lg-inverter-3-dan-lanh-4-hp-a4uq36gfd0
+            https://dienmaycholon.vn/may-lanh/bo-may-lanh-multi-lg-inverter-3-dan-lanh-4-hp-a4uq36gfd02
+            https://dienmaycholon.vn/may-lanh/bo-may-lanh-multi-lg-inverter-3-dan-lanh-5-hp-a5uq48gfa
+            https://dienmaycholon.vn/may-lanh/bo-may-lanh-multi-lg-inverter-4-dan-lanh-4-hp-a4uq36gfd0-amnq09gsjb0
+            https://dienmaycholon.vn/may-lanh/may-lanh-am-tran-panasonic-inverter-35-hp-s3448pu3h
+            https://dienmaycholon.vn/may-lanh/bo-may-lanh-multi-lg-inverter-4-dan-lanh-5-hp-a5uq48gfa
+            https://dienmaycholon.vn/may-lanh/bo-may-lanh-multi-lg-inverter-4-dan-lanh-5-hp-a5uq48gfa2
+            https://dienmaycholon.vn/may-lanh/may-lanh-am-tran-casper-inverter-4-hp-cc36is35
+            https://dienmaycholon.vn/may-lanh/may-lanh-am-tran-casper-inverter-5-hp-cc48is35
+            https://dienmaycholon.vn/may-lanh/bo-may-lanh-multi-lg-inverter-5-dan-lanh-5-hp-a5uq48gfa
+            https://dienmaycholon.vn/may-lanh/bo-may-lanh-multi-lg-inverter-2-dan-lanh-cassette-4-hp-a4uq36gfd0
+            https://dienmaycholon.vn/may-lanh/bo-may-lanh-multi-lg-inverter-2-dan-lanh-cassette-4-hp-a4uq36gfd02';
+
+        $data = explode(PHP_EOL, $link);     
 
         foreach ($data as $key => $value) {
 
@@ -547,6 +1037,9 @@ class crawlController extends Controller
                 // $details = preg_replace($pattern, $replacement, html_entity_decode($details));
 
                 // $price = 0;
+
+
+
 
                 // $update = product::find($value->id);
 
