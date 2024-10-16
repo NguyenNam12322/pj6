@@ -1,9 +1,4 @@
-User-agent: Googlebot
-
-Disallow: /admins
-
-User-agent: Googlebot-image
-
+User-agent: *
 Disallow: /admins
 
 
