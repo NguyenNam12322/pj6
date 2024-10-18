@@ -859,7 +859,7 @@
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
                         </div> -->
 
-                    <div id="thumb-article-gallery-0" class="item itemTab  is-show-popup scroll-content" data-gallery-id="article-gallery" data-color-id="0" data-is-full-spec="False" data-color-order-id="0" data-isfeatureimage="True">
+                    <div id="thumb-article-gallery-0" class="item itemTab  is-show-popup scroll-content" data-color-id="0" data-is-full-spec="False" data-color-order-id="0" data-isfeatureimage="True">
                         <div class="item-border">
                             <i class="icondetail-danhgia"></i>
                         </div>
@@ -1421,7 +1421,7 @@
 
             <div class="related view-more-related viewer-product"></div>
             <div class="col-md-8 clearfix" id="comment_pro">
-                <article id="article-comment-2131" itemprop="comment" itemscope="" itemtype="https://schema.org/Comment">
+                <div id="article-comment-213"  >
                     <?php 
                        
                         if(!Cache::has('comment'.$data->id) ){
@@ -1449,7 +1449,7 @@
                     </div>
                     @endforeach
                     @endif
-                </article>
+                </div>
               
             </div>
             <!-- end đánh giá -->
