@@ -122,7 +122,23 @@
           });
         </script>
 
-       
+        <script type="application/ld+json">
+          {
+            "@context": "http://schema.org",
+            "@type": "Product",
+            "headline": "{{ @$data->Name }}",
+            "datePublished": "{{ @$data->created_at->format('Y-m-d') }}",
+            "name": "{{ @$data->Name }}",
+            "image": [
+              "{{ asset(@$data->Image) }}"
+            ],
+            "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "4.6",
+                "reviewCount": "10"
+              }
+          }
+        </script>
        <!--  <noscript><img height="1" width="1" style="display:none"
           src="https://www.facebook.com/tr?id=481349662401312&ev=PageView&noscript=1"
         /></noscript> -->
