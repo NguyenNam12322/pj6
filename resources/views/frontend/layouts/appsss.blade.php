@@ -21,7 +21,7 @@
         <meta name="revisit-after" content="1 days" />
         <meta property="og:locale" content="vi_VN" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-         <meta name="google-site-verification" content="KnEYNkXL593z3C--o3aQaWFzJFdcuj9qDtcnKvSy4aM" />
+        <meta name="google-site-verification" content="wJlNdHg4BHXSldM_fBxvDlkFVJyXAFJzFiofL6fDtBs" />
         <link rel="canonical" href="{{ url()->current() }}" >
         @if(!empty($meta))
         <title>{{ $meta->meta_title }}</title>
@@ -53,51 +53,13 @@
         <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
         <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" type="text/css" href="{{ asset('css/app.css') }}?ver=66">
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/app.css') }}?ver=63">
         <link rel="stylesheet" href="{{ asset('css/lib/bootstrap.min.css') }}">
         <script type="text/javascript" src="{{ asset('js/lib/owl.carousel.min.js')  }}"></script>
         <link rel="stylesheet" href="{{  asset('css/lib/owl.carousel.min.css') }}">
         <script type="application/javascript">
             var dataRenderProduct = [];
         </script>
-
-        <style>
-            #nk-banner-home #sync1 {
-            display: block;
-            visibility: visible;
-            opacity: 1;
-            border-radius: 0.5rem;
-            }
-            .owl-carousel .item {
-            padding: 0;
-            }
-            .wrapper-home-banner .owl-carousel {
-            display: block;
-            visibility: visible;
-            opacity: 1;
-            border-radius: 0.5rem;
-            }
-            .owl-item .owl-lazy {
-            opacity: 1;
-            }
-            .homenews ul li a {
-                overflow: hidden;
-                line-height: 1.2em;
-                font-size: 14px;
-                color: #333;
-                word-spacing: .15em;
-            }
-            .homenews span a {
-                padding: 10px 0;
-                font-size: 14px;
-                color: #414042;
-                text-transform: uppercase;
-                font-weight: 600;
-                line-height: 16px;
-            }
-        </style>
-
-
         <style type="text/css">
             #ui-id-1{
                 background: #fff;
@@ -1076,24 +1038,56 @@
                                        
                                         @foreach($banners as $value)
                                         <div data-banner-item="0" class="item">
-                                          
-                                            <h4>2323</h4>
-                                           
+                                            <a rel="nofollow" href="javascript:void(0)">
+                                            <img fetchpriority="high" class="main-banner" src="{{ asset($value->image) }}"  alt="ECM_Pre-order S24_0124" style="width: 100%">
+                                            </a>
                                         </div>
                                         @endforeach
                                      
                                         
                                     </div>
                                 </div>
-                                
+                                <style>
+                                    #nk-banner-home #sync1 {
+                                    display: block;
+                                    visibility: visible;
+                                    opacity: 1;
+                                    border-radius: 0.5rem;
+                                    }
+                                    .owl-carousel .item {
+                                    padding: 0;
+                                    }
+                                    .wrapper-home-banner .owl-carousel {
+                                    display: block;
+                                    visibility: visible;
+                                    opacity: 1;
+                                    border-radius: 0.5rem;
+                                    }
+                                    .owl-item .owl-lazy {
+                                    opacity: 1;
+                                    }
+                                    .homenews ul li a {
+                                        overflow: hidden;
+                                        line-height: 1.2em;
+                                        font-size: 14px;
+                                        color: #333;
+                                        word-spacing: .15em;
+                                    }
+                                    .homenews span a {
+                                        padding: 10px 0;
+                                        font-size: 14px;
+                                        color: #414042;
+                                        text-transform: uppercase;
+                                        font-weight: 600;
+                                        line-height: 16px;
+                                    }
+                                </style>
                             </div>
                             
                         </div>
                     </div>
                 </div>
                 @endif 
-
-
 
 
                 @yield('content')
@@ -1185,7 +1179,7 @@
                             </style>
                         </div>
                     </div>
-                    <!-- <div class="row-fluid ">
+                    <div class="row-fluid ">
                         <div class="span16 container fix-pad">
                             <div class="nk-product-cate-homepage row-fluid">
                                 <div class="lst-cate-title header-blocks">
@@ -1243,7 +1237,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div> -->
+                    </div>
                   <!--   <div class="row-fluid ">
                         <div class="span16 ">
                             <div id="div_asm_nk_banner_side_pc"></div>
