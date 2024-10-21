@@ -78,6 +78,18 @@
                     .m .custom-dot-carousel.trang-chu.active {
                     min-height: auto;
                     } 
+
+
+
+
+                    .show-bar {
+                        background: linear-gradient(0deg, #d1a94e, #fdf5a1, #cfac54);
+                    }
+
+                    .nk-header #nk-cart ul li {
+                        width: auto;
+                        line-height: 31px;
+                    }
                 </style>
 
                 <style>
