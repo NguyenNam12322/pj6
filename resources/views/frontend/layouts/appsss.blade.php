@@ -1179,7 +1179,7 @@
                             </style>
                         </div>
                     </div>
-                    <div class="row-fluid ">
+                    <!-- <div class="row-fluid ">
                         <div class="span16 container fix-pad">
                             <div class="nk-product-cate-homepage row-fluid">
                                 <div class="lst-cate-title header-blocks">
@@ -1237,7 +1237,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                   <!--   <div class="row-fluid ">
                         <div class="span16 ">
                             <div id="div_asm_nk_banner_side_pc"></div>
