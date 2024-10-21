@@ -1076,9 +1076,9 @@
                                        
                                         @foreach($banners as $value)
                                         <div data-banner-item="0" class="item">
-                                            <a rel="nofollow" href="javascript:void(0)">
+                                          
                                             <img fetchpriority="high" class="main-banner" src="{{ asset($value->image) }}"  alt="ECM_Pre-order S24_0124" style="width: 100%">
-                                            </a>
+                                           
                                         </div>
                                         @endforeach
                                      
@@ -1093,7 +1093,7 @@
                 </div>
                 @endif 
 
-                
+
 
 
                 @yield('content')
