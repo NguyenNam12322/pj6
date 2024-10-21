@@ -2093,7 +2093,7 @@
                     <article class="post-sidebar-item">
                         <a href="{{ route('details', $value->Link) }}">
                             <span class="post-sidebar-img">
-                                <img data-lazyloaded="1" src="{{ asset($value->Image) }}">
+                                <img  src="{{ asset($value->Image) }}">
                             </span>
 
                             <h4 class="post-sidebar-title">{{ $value->Name }}</h4>

@@ -1901,7 +1901,7 @@
                 <aside class="post-sidebar-list ">
                     <article class="post-sidebar-item">
                         <a href="https://muasamtaikho.vn/google-tivi-tcl-65p638-4k-65-inch">
-                            <span class="post-sidebar-img"> <img data-lazyloaded="1" src="https://muasamtaikho.vn/uploads/product/google-tivi-tcl_main_197_1020.png.webp" data-src="https://muasamtaikho.vn/uploads/product/google-tivi-tcl_main_197_1020.png.webp" class=" ls-is-cached lazyloaded"> </span> 
+                            <span class="post-sidebar-img"> <img  src="https://muasamtaikho.vn/uploads/product/google-tivi-tcl_main_197_1020.png.webp" data-src="https://muasamtaikho.vn/uploads/product/google-tivi-tcl_main_197_1020.png.webp" class=" ls-is-cached lazyloaded"> </span> 
                             <h4 class="post-sidebar-title">Google Tivi TCL 65P638 4K 65 inch</h4>
                             <strong class="price"> 9.390.000đ </strong> 
                         </a>
@@ -1913,7 +1913,7 @@
                 <aside class="post-sidebar-list ">
                     <article class="post-sidebar-item">
                         <a href="https://muasamtaikho.vn/smart-tivi-lg-55uq7050psa-4k-55-inch">
-                            <span class="post-sidebar-img"> <img data-lazyloaded="1" src="https://muasamtaikho.vn/uploads/product/1716973490_1.jpg" data-src="https://muasamtaikho.vn/uploads/product/1716973490_1.jpg" class=" ls-is-cached lazyloaded"> </span> 
+                            <span class="post-sidebar-img"> <img src="https://muasamtaikho.vn/uploads/product/1716973490_1.jpg" data-src="https://muasamtaikho.vn/uploads/product/1716973490_1.jpg" class=" ls-is-cached lazyloaded"> </span> 
                             <h4 class="post-sidebar-title">Smart Tivi LG 55UQ7050PSA 4K 55 inch</h4>
                             <strong class="price"> 9.090.000đ </strong> 
                         </a>
