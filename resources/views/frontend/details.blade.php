@@ -203,7 +203,7 @@
     
 
     @endif
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/detail1fe.css') }}?ver=14">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/detail1fe.css') }}">
     <style type="text/css">
         .copy-button{
             position: absolute;
@@ -660,7 +660,7 @@
     
     ?>
 @push('style')
-<link rel="stylesheet" type="text/css" href="{{ asset('css/detailsfe.css') }}?ver=9">
+<link rel="stylesheet" type="text/css" href="{{ asset('css/detailsfe.css') }}">
 @endpush
 
 
@@ -2325,7 +2325,7 @@
 
 </div>
 @push('style')
-<link rel="stylesheet" type="text/css" href="{{ asset('css/details.css') }}?ver=28">
+<link rel="stylesheet" type="text/css" href="{{ asset('css/details.css') }}">
 @endpush
 @push('script')
 
