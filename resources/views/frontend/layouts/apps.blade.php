@@ -128,7 +128,7 @@
           {
             "@context": "http://schema.org",
             "@type": "Product",
-            "headline": "{{ @$data->Name }}",
+            "headline": "{{ !empty($data->Name)?$data->Name:'' }}",
             "datePublished": "{{ @$data->created_at->format('Y-m-d') }}",
             "name": "{{ @$data->Name }}",
             "image": [
