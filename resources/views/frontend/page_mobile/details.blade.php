@@ -428,6 +428,10 @@
                                 width: 77%;
                             }
 
+                            .post-sidebar-img img {
+                                width: 100%;
+                            }
+
                         }
 
                 
