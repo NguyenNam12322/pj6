@@ -69,6 +69,7 @@
         .nk-menu #nk-danh-muc-san-pham-left>ul{
             top: 53px;
             width: 243px;
+            height: 274px;
         }    
 
         
