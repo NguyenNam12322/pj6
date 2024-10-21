@@ -730,11 +730,7 @@
         @endif
 
 
-        <!-- <li>
-            <span>›</span>
-            <a href="/tivi?g=smart-tivi">Smart Tivi</a>
-            <meta property="position" content="3">
-            </li> -->
+       
 
         @if(!empty($ar_groups_info) && !empty($ar_groups_info[0]))    
         <li>
@@ -793,10 +789,7 @@
                             @endif
                             @endif
 
-                           <!--   <div class="sakers event-dt">
-                                    <img src="{{ asset('images/background-image/dao140.png') }}?ver=3"   class="lazyload">
-                            </div> -->
-
+                          
 
                         </div>
 
@@ -855,9 +848,7 @@
                         <p data-toggle="modal" data-target="#specifications">Thông số kỹ thuật</p>
                     </div>
 
-                   <!--  <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
-                        </div> -->
+                  
 
                     <div id="thumb-article-gallery-0" class="item itemTab  is-show-popup scroll-content" data-color-id="0" data-is-full-spec="False" data-color-order-id="0" data-isfeatureimage="True">
                         <div class="item-border">
@@ -1124,28 +1115,7 @@
 
             <br>
 
-            <!-- <div class="col-md-3 mobile">
-                <div class="commitment">
-                    <h4>Yên tâm mua sắm</h4>
-                    <ul>
-                        <li>Bảo hành tại nhà</li>
-                        <li>Lắp đặt miễn phí</li>
-                  (Trừ điều hòa, bình nước nóng)
-                        <li>Thanh toán tại nhà</li>
-                        <li>Giao hàng miễn phí 20km</li>
-                        <li>Giá cạnh tranh nhất thị trường</li>
-                        <li>Đổi mới 100% trong 7 ngày đầu</li>
-                            ( Trừ Sanaky, Sony, tivi Samsung chỉ bảo hành tại nhà )
-                    </ul>
-                    <div class="support">
-                      <h5>Tổng Đài mua hàng</h5>
-                        <a href="tel:02473036336">0247.303.6336</a>
-                      <h5>Tổng Đài mua hàng( Sau 17h )</h5>
-                       <a href="tel:0913011888">091.301.1888</a> 
-                       
-                    </div>
-                </div>
-            </div> -->
+           
             <div class="view-all-salient_fratured">
 
                 <b>Chính sách mua hàng tại MuaSamTaiKho.vn</b>
@@ -1661,22 +1631,10 @@
                 <div class="clearfix"></div>
                 <div>
                     <div class="pdetail-info">
-                        <!-- <p>Model: <b>{{ @$data->ProductSku  }}</b></p> -->
-                        <!-- <p>Bảo hành: <b>24 Tháng, 1 đổi 1 trong vòng 1 tháng</b></p> -->
+                        
                     </div>
                     <div class="scroll-box">
-                        <!-- <div class="boxbanner-32">
-                            <div class="banner-list">
-                                <div class="item banner-item banner-item-1">
-                                    <a target="#" data-id="1022">
-                                        <picture>
-                                           
-                                            <img src="https://thegioidohoacom.s3.ap-southeast-1.amazonaws.com/wp-content/uploads/2019/01/10040348/X4iNCOp-1024x454.jpg" alt="Tết Lớn Khuyến Mại Lớn" width="&quot;640&quot;" height="&quot;150&quot;">
-                                        </picture>
-                                    </a>
-                                </div>
-                            </div>
-                            </div> -->
+                        
                             <style type="text/css">
                                 
                                 .crazy-deal-details-right {
