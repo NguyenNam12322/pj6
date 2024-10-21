@@ -1093,6 +1093,11 @@
                 </div>
                 @endif 
 
+                <?php 
+
+                    die;
+                ?>
+
 
                 @yield('content')
                 <div class="row-fluid ">
