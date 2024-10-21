@@ -1113,13 +1113,13 @@
                                             <div class="" data-block="2864">
                                                 <div class="header-menu head-menu">
                                                     <div class="header-menu__navs">
-                                                        <a class="navs-item-link delivery-free" href="javascript:void(0)"> Giao lắp chuyên nghiệp </a> 
+                                                        <div class="navs-item-link delivery-free"> Giao lắp chuyên nghiệp </div> 
                                                         <div class="hr-vertical">|</div>
-                                                        <a class="navs-item-link" href="javascript:void(0)"> Bảo hành nhanh gọn </a> 
+                                                        <div class="navs-item-link"> Bảo hành nhanh gọn </div> 
                                                         <div class="hr-vertical">|</div>
-                                                        <a class="navs-item-link" href="javascript:void(0)"> Tổng hợp khuyến mãi </a> 
+                                                        <div class="navs-item-link"> Tổng hợp khuyến mãi </div> 
                                                         <div class="hr-vertical">|</div>
-                                                        <a class="navs-item-link buy-project" href="javascript:void(0)"> Mua hàng Dự Án </a> 
+                                                        <div class="navs-item-link buy-project"> Mua hàng Dự Án </div> 
                                                     </div>
                                                 </div>
                                             </div>
