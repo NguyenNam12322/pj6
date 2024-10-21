@@ -90,6 +90,13 @@
                         width: auto;
                         line-height: 31px;
                     }
+
+                    #nk-cart ul {
+                        padding: 0;
+                        width: 57%;
+                        position: relative;
+                        display: flex;
+                    }
                 </style>
 
                 <style>
