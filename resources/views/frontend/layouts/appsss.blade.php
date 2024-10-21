@@ -1003,7 +1003,11 @@
         </div>
         <div class="tygh-content clearfix">
             <div class="container-fluid none-bacground">
-                @if(!empty($bannerscrollRight) && !empty($bannerscrollLeft))
+
+                <?php 
+                    $banner_scroll_lock =0;
+                ?>
+                @if($banner_scroll_lock===1&&!empty($bannerscrollRight) && !empty($bannerscrollLeft))
                 <div class="row-fluid ">
                     <div class="span16 container wrap_banner_scroll">
                         <div class="nk-banner-scroll-home-left">
