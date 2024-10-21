@@ -21,7 +21,7 @@
         <meta name="revisit-after" content="1 days" />
         <meta property="og:locale" content="vi_VN" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="google-site-verification" content="wJlNdHg4BHXSldM_fBxvDlkFVJyXAFJzFiofL6fDtBs" />
+         <meta name="google-site-verification" content="KnEYNkXL593z3C--o3aQaWFzJFdcuj9qDtcnKvSy4aM" />
         <link rel="canonical" href="{{ url()->current() }}" >
         @if(!empty($meta))
         <title>{{ $meta->meta_title }}</title>
@@ -60,6 +60,8 @@
         <script type="application/javascript">
             var dataRenderProduct = [];
         </script>
+
+
         <style type="text/css">
             #ui-id-1{
                 background: #fff;
@@ -1179,7 +1181,7 @@
                             </style>
                         </div>
                     </div>
-                    <div class="row-fluid ">
+                    <!-- <div class="row-fluid ">
                         <div class="span16 container fix-pad">
                             <div class="nk-product-cate-homepage row-fluid">
                                 <div class="lst-cate-title header-blocks">
@@ -1237,7 +1239,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                   <!--   <div class="row-fluid ">
                         <div class="span16 ">
                             <div id="div_asm_nk_banner_side_pc"></div>
