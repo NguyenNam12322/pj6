@@ -122,7 +122,7 @@
           });
         </script>
 
-        @if(!empty($data))
+        @if(!empty($data) && $data->count()>0)
 
         <script type="application/ld+json">
           {
