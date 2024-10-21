@@ -41,6 +41,8 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
          <link rel="stylesheet" type="text/css" href="{{ asset('css/app.css') }} ">
+          <link rel="stylesheet" href="{{asset('css/lib/owl.carousel.min.css')}}">
+            <link rel="stylesheet" href="{{asset('css/lib/owl.theme.default.min.css')}}">
 
          <style type="text/css">
             .nk-nav-right ul{
@@ -1975,10 +1977,10 @@
     $ismobile = preg_match("/(android|avantgo|blackberry|bolt|boost|cricket|docomo|fone|hiptop|mini|mobi|palm|phone|pie|tablet|up\.browser|up\.link|webos|wos)/i", $_SERVER["HTTP_USER_AGENT"]);
 
     ?>
-    <link rel="stylesheet" href="{{asset('css/lib/owl.carousel.min.css')}}">
+   
 
  <script src="{{ asset('js/layout1.js') }}" type="text/javascript"></script>
-    <link rel="stylesheet" href="{{asset('css/lib/owl.theme.default.min.css')}}">
+   
     <script type="text/javascript" src="{{asset('js/lib/owl.carousel.min.js')}}"></script>
 
   
