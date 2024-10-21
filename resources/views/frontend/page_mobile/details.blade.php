@@ -7,7 +7,7 @@
     <link href="{{ asset('assets/75a5fa0c/css/progressive-media.min.css') }}" rel="stylesheet">
     <link href="{{ asset('assets/35deb2b4/css/bootstrap.css') }}" rel="stylesheet">
 
-    <link rel="stylesheet" type="text/css" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/alls.min.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/detailscs.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/detail1fe.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/details.css') }}">
