@@ -1093,10 +1093,7 @@
                 </div>
                 @endif 
 
-                <?php 
-
-                    die;
-                ?>
+                
 
 
                 @yield('content')
