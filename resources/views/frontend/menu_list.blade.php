@@ -170,19 +170,19 @@
                                         @endif
                                         
 
-                                       <!--  <li class="left-menu">
+                                        <li class="left-menu">
                                             <div class="menu-item">
                                                 <div class="icon">
-                                                    <img src="{{ asset('images/template/hoptac.png') }}" width="18px" height="18px" alt="Cộng tác viên Affiate">
+                                                    <img src="{{ asset('images/template/hoptac.png') }}" width="18px" height="18px" alt="Gia dụng">
                                                 </div>
                                                 <p>
-                                                    <a href="#">Cộng tác viên Affiate</a>
+                                                    <a href="/gia-dung">Gia dụng</a>
                                                   
                                                 </p>
                                             </div>
                                            
                                         </li>
- -->
+
                                     </ul>
                                 </div>
 
