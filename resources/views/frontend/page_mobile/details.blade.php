@@ -9,10 +9,10 @@
 
     <link rel="stylesheet" type="text/css" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/detailscs.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/detail1fe.css') }}?ver=14">
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/details.css') }}?ver=26">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/detail1fe.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/details.css') }}">
 
-           <link rel="stylesheet" type="text/css" href="{{asset('css/dienmay.css')}}?ver=107">
+           <link rel="stylesheet" type="text/css" href="{{asset('css/dienmay.css')}}">
    <!--  <link href="{{ asset('mobile/bulma/css/bulma.min.css') }}" rel="stylesheet">
     <link href="{{ asset('mobile/bulma/css/all.min.css') }}" rel="stylesheet">
 
@@ -27,7 +27,7 @@
     <link href="{{ asset('css/slick.css')}}" rel="stylesheet">
     <link href="{{ asset('css/slick-theme.css')}}" rel="stylesheet">
     <link href="{{ asset('css/site.css')}}" rel="stylesheet">
-     <link rel="stylesheet" type="text/css" href="{{ asset('css/app.css') }}?ver=56 ">
+     <link rel="stylesheet" type="text/css" href="{{ asset('css/app.css') }}">
 </head>
 <body class="theme-lunar-new-year d">
 
