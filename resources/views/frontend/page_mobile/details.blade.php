@@ -17,7 +17,7 @@
     <link href="{{ asset('css/site.css')}}" rel="stylesheet">
      <link rel="stylesheet" type="text/css" href="{{ asset('css/app.css') }}?ver=56 ">
 </head>
-<body>
+<body class="theme-lunar-new-year d">
 
     <div class="tygh-top-panel clearfix">
     <div class="container-fluid ">
