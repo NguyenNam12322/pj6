@@ -4,11 +4,11 @@
  ?>
 <div class="container p-0 show-footer">
     <div class="phone_hotline"> 
-        <a href="tel:#" title="Bảo Hành: 0243.687.9145" class="p_hotline_item"> <i class="icon_security"></i> 
+        <a href="tel:0987874334" title="Bảo Hành: 0243.687.9145" class="p_hotline_item"> <i class="icon_security"></i> 
             <span><strong>Bảo Hành: {{ @$info->kn }}</strong> (8h00 - 17h00)</span> 
         </a> 
-        <a href="tel:#" title="Mua hàng:#" class="p_hotline_item"> <i class="icon_purchase"></i> <span><strong>Mua hàng: {{ @$info->tdht }}</strong> (8h00 - 17h00)</span> </a> 
-        <a href="#" title="Khiếu nại:0916917949" class="p_hotline_item"> <i class="icon_complain"></i> <span><strong>Khiếu nại:{{ @$info->tdht }}</strong> (8h00 - 17h00)</span> </a>
+        <a href="tel:{{ @$info->tdht }}" title="Mua hàng:#" class="p_hotline_item"> <i class="icon_purchase"></i> <span><strong>Mua hàng: {{ @$info->tdht }}</strong> (8h00 - 17h00)</span> </a> 
+        <a href="tel:{{ @$info->tdht }}" title="Khiếu nại:0916917949" class="p_hotline_item"> <i class="icon_complain"></i> <span><strong>Khiếu nại:{{ @$info->tdht }}</strong> (8h00 - 17h00)</span> </a>
     </div>
 </div>
 
@@ -718,10 +718,10 @@
                 <div class="item-n item-st" id="footer-show3">
                     <div class="title">Tổng đài hỗ trợ</div>
                     <div class="list">
-                        <a href="#" rel="nofollow">Hotline: {{ @$info->tdht }}</a>
-                        <a href="#" rel="nofollow">Gọi mua: {{ @$info->tdht }}</a>
-                        <a href="#" rel="nofollow">Kỹ thuật: {{ @$info->tdht }}</a>
-                        <a href="#" rel="nofollow">Khiếu nại: {{ @$info->kn }}</a>
+                        <a href="tel:{{ @$info->tdht }}" rel="nofollow">Hotline: {{ @$info->tdht }}</a>
+                        <a href="tel:{{ @$info->tdht }}" rel="nofollow">Gọi mua: {{ @$info->tdht }}</a>
+                        <a href="tel:{{ @$info->tdht }}" rel="nofollow">Kỹ thuật: {{ @$info->tdht }}</a>
+                        <a href="tel:{{ @$info->kn }}" rel="nofollow">Khiếu nại: {{ @$info->kn }}</a>
                     </div>
                 </div>
             </div>
