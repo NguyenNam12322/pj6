@@ -126,6 +126,20 @@
                         border-radius: .25rem;
                         transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
                     }
+
+                    .nk-header #nk-searchs {
+                        border-radius: .9em;
+                        background-color: #FFFFFF;
+                        height: 40px;
+                        position: relative;
+                        /* width: 30%; */
+                        float: left;
+                    }
+
+                    #nk-searchs {
+                        width: 90% !important;
+                        margin: 0 auto;
+                    }
                 </style>
 
                 <style>
