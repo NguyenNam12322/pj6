@@ -168,31 +168,7 @@
                                         @endforeach
 
                                         @endif
-                                        <li class="left-menu">
-                                            <div class="menu-item">
-                                                <div class="icon">
-                                                    <img src="{{ asset('images/template/tuvan.png') }}" width="18px" height="18px" alt="may-loc-nuoc">
-                                                </div>
-                                                <p>
-                                                    <a href="#">Dịch vụ, hỗ trợ</a>
-                                                  
-                                                </p>
-                                            </div>
-                                           
-                                        </li>
-
-                                        <li class="left-menu">
-                                            <div class="menu-item">
-                                                <div class="icon">
-                                                    <img src="https://cdn.nguyenkimmall.com/images/companies/_1/layout/icon/may-loc-nuoc.webp" width="18px" height="18px" alt="may-loc-nuoc">
-                                                </div>
-                                                <p>
-                                                    <a href="#">Thông tin hữu ích</a>
-                                                  
-                                                </p>
-                                            </div>
-                                           
-                                        </li>
+                                        
 
                                         <li class="left-menu">
                                             <div class="menu-item">
@@ -212,7 +188,7 @@
 
                                
                             </div>
-                            <div class="span12 wrap-grid-menu-right banner-ads-text">
+                           <!--  <div class="span12 wrap-grid-menu-right banner-ads-text">
                                 <div class="" data-block="2864">
                                     <div class="header-menu head-menu">
                                         <div class="header-menu__navs">
@@ -230,7 +206,7 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
