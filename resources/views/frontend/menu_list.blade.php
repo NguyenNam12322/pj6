@@ -190,9 +190,9 @@
                             </div>
                             <div class="span12 wrap-grid-menu-right banner-ads-text">
                                 <div class="" data-block="2864">
-                                    <!-- <div class="header-menu head-menu">
+                                    <div class="header-menu head-menu">
                                         <div class="header-menu__navs">
-                                            <a class="navs-item-link delivery-free" href="javascript:void(0)">
+                                            <!-- <a class="navs-item-link delivery-free" href="javascript:void(0)">
                                                 Giao lắp chuyên nghiệp </a>
                                             <div class="hr-vertical">|</div>
                                             <a class="navs-item-link" href="javascript:void(0)">
@@ -202,9 +202,9 @@
                                                Tổng hợp khuyến mãi </a>
                                             <div class="hr-vertical">|</div>
                                             <a class="navs-item-link buy-project" href="javascript:void(0)">
-                                                Mua hàng Dự Án </a>
+                                                Mua hàng Dự Án </a> -->
                                         </div>
-                                    </div> -->
+                                    </div>
                                 </div>
                             </div>
                         </div>
