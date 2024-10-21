@@ -10,6 +10,7 @@
     <link rel="stylesheet" type="text/css" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/detailscs.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('css/detail1fe.css') }}?ver=14">
+           <link rel="stylesheet" type="text/css" href="{{asset('css/dienmay.css')}}?ver=107">
    <!--  <link href="{{ asset('mobile/bulma/css/bulma.min.css') }}" rel="stylesheet">
     <link href="{{ asset('mobile/bulma/css/all.min.css') }}" rel="stylesheet">
 
