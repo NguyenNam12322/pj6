@@ -8,8 +8,11 @@
     <link href="{{ asset('assets/35deb2b4/css/bootstrap.css') }}" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/detailscs.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/detail1fe.css') }}?ver=14">
    <!--  <link href="{{ asset('mobile/bulma/css/bulma.min.css') }}" rel="stylesheet">
     <link href="{{ asset('mobile/bulma/css/all.min.css') }}" rel="stylesheet">
+
 
 
 
