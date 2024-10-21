@@ -405,8 +405,8 @@
 <div class="gift-info"></div>
 <div class="row-fluid ">
     <div class="span16 container outstanding">
-        <div class="row-fluid ">
-            <div class="span16 ">
+        <div class="box-border">
+            <div class="span16">
 
                 @if(!empty($deal))
                 
