@@ -21,7 +21,7 @@
         <meta name="revisit-after" content="1 days" />
         <meta property="og:locale" content="vi_VN" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="google-site-verification" content="wJlNdHg4BHXSldM_fBxvDlkFVJyXAFJzFiofL6fDtBs" />
+         <meta name="google-site-verification" content="KnEYNkXL593z3C--o3aQaWFzJFdcuj9qDtcnKvSy4aM" />
         <link rel="canonical" href="{{ url()->current() }}" >
         @if(!empty($meta))
         <title>{{ $meta->meta_title }}</title>
@@ -60,6 +60,8 @@
         <script type="application/javascript">
             var dataRenderProduct = [];
         </script>
+
+
         <style type="text/css">
             #ui-id-1{
                 background: #fff;
