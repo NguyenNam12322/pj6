@@ -97,6 +97,11 @@
                         position: relative;
                         display: flex;
                     }
+
+                    .nk-header #nk-cart ul li {
+                        width: auto;
+                        line-height: 31px;
+                    }
                 </style>
 
                 <style>
