@@ -140,6 +140,30 @@
                         width: 90% !important;
                         margin: 0 auto;
                     }
+
+                    .nk-header #nk-searchs .nk-search-box input[type="text"] {
+                        height: 40px;
+                        border: none;
+                        padding: 0 10px;
+                        color: #111;
+                        font-size: 15px;
+                        border-radius: .9em;
+                        width: 100%;
+                    }
+
+                    .nk-header #nk-searchs .nk-search-box button {
+                        background-color: white;
+                        height: 40px;
+                        width: 56px;
+                        border: none;
+                        cursor: pointer;
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        border-top-right-radius: .9em;
+                        border-bottom-right-radius: .9em;
+                        outline: none;
+                    }
                 </style>
 
                 <style>
