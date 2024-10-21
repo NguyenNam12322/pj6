@@ -170,7 +170,7 @@
                                         @endif
                                         
 
-                                        <li class="left-menu">
+                                       <!--  <li class="left-menu">
                                             <div class="menu-item">
                                                 <div class="icon">
                                                     <img src="{{ asset('images/template/hoptac.png') }}" width="18px" height="18px" alt="Cộng tác viên Affiate">
@@ -182,7 +182,7 @@
                                             </div>
                                            
                                         </li>
-
+ -->
                                     </ul>
                                 </div>
 
