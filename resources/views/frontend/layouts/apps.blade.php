@@ -40,7 +40,7 @@
         <meta http-equiv="Cache-control" content="public">
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-         <link rel="stylesheet" type="text/css" href="{{ asset('css/app.css') }}?ver=56 ">
+         <link rel="stylesheet" type="text/css" href="{{ asset('css/app.css') }} ">
 
          <style type="text/css">
             .nk-nav-right ul{
@@ -158,11 +158,11 @@
         <link rel="stylesheet" href="{{ asset('css/lib/bootstrap.min.css') }}">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
          
-        <link rel="stylesheet" type="text/css" href="{{ asset('css/main.css') }}?ver=1"> 
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/main.css') }}"> 
         <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
-        <link rel="stylesheet" type="text/css" href="{{ asset('css/apps.css') }}?ver=20">
-        <link rel="stylesheet" type="text/css" href="{{asset('css/dienmay.css')}}?ver=107">
-        <link rel="stylesheet" type="text/css" href="{{asset('css/detailsfe.css')}}?ver=8"> 
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/apps.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{asset('css/dienmay.css')}}">
+        <link rel="stylesheet" type="text/css" href="{{asset('css/detailsfe.css')}}"> 
        
 
         <meta name="csrf-token" content="{{ csrf_token() }}">
