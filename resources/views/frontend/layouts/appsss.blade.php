@@ -61,6 +61,42 @@
             var dataRenderProduct = [];
         </script>
 
+        <style>
+            #nk-banner-home #sync1 {
+            display: block;
+            visibility: visible;
+            opacity: 1;
+            border-radius: 0.5rem;
+            }
+            .owl-carousel .item {
+            padding: 0;
+            }
+            .wrapper-home-banner .owl-carousel {
+            display: block;
+            visibility: visible;
+            opacity: 1;
+            border-radius: 0.5rem;
+            }
+            .owl-item .owl-lazy {
+            opacity: 1;
+            }
+            .homenews ul li a {
+                overflow: hidden;
+                line-height: 1.2em;
+                font-size: 14px;
+                color: #333;
+                word-spacing: .15em;
+            }
+            .homenews span a {
+                padding: 10px 0;
+                font-size: 14px;
+                color: #414042;
+                text-transform: uppercase;
+                font-weight: 600;
+                line-height: 16px;
+            }
+        </style>
+
 
         <style type="text/css">
             #ui-id-1{
@@ -1049,41 +1085,7 @@
                                         
                                     </div>
                                 </div>
-                                <style>
-                                    #nk-banner-home #sync1 {
-                                    display: block;
-                                    visibility: visible;
-                                    opacity: 1;
-                                    border-radius: 0.5rem;
-                                    }
-                                    .owl-carousel .item {
-                                    padding: 0;
-                                    }
-                                    .wrapper-home-banner .owl-carousel {
-                                    display: block;
-                                    visibility: visible;
-                                    opacity: 1;
-                                    border-radius: 0.5rem;
-                                    }
-                                    .owl-item .owl-lazy {
-                                    opacity: 1;
-                                    }
-                                    .homenews ul li a {
-                                        overflow: hidden;
-                                        line-height: 1.2em;
-                                        font-size: 14px;
-                                        color: #333;
-                                        word-spacing: .15em;
-                                    }
-                                    .homenews span a {
-                                        padding: 10px 0;
-                                        font-size: 14px;
-                                        color: #414042;
-                                        text-transform: uppercase;
-                                        font-weight: 600;
-                                        line-height: 16px;
-                                    }
-                                </style>
+                                
                             </div>
                             
                         </div>
