@@ -1077,7 +1077,7 @@
                                         @foreach($banners as $value)
                                         <div data-banner-item="0" class="item">
                                           
-                                            <img fetchpriority="high" class="main-banner" src="{{ asset($value->image) }}"  alt="ECM_Pre-order S24_0124" style="width: 100%">
+                                            <h4>2323</h4>
                                            
                                         </div>
                                         @endforeach
