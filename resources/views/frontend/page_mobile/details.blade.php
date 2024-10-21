@@ -1134,7 +1134,7 @@
         </div>
     </div>
 
-    <div class="locationbox">
+    <!-- <div class="locationbox">
         <div class="locationbox__item locationbox__item--right" onclick="OpenLocation()">
             <p>Chọn địa chỉ nhận hàng</p>
             <a class="cls-location" href="javascript:void(0)">Đóng</a> 
@@ -1154,7 +1154,784 @@
         </div>
         <b id="h-provincename" style="display:none!important" data-provinceid="3">Hồ Chí Minh</b> 
     </div>
+ -->
+    <section data-id="235791" data-cate-id="1942" class="detail ">
+    <ul class="breadcrumb">
+        <li>
+            <a href="https://muasamtaikho.vn">Trang chủ</a> 
+            <meta property="position" content="1">
+        </li>
+        <li>
+            <span>›</span> <a href="https://muasamtaikho.vn/ti-vi">Tivi</a> 
+            <meta property="position" content="2">
+        </li>
+        <!-- <li> <span>›</span> <a href="/tivi?g=smart-tivi">Smart Tivi</a> <meta property="position" content="3"> </li> --> 
+        <li>
+            <span>›</span> <a href="https://muasamtaikho.vn/tivi-coocaa">Tivi Coocaa</a> 
+            <meta property="position" content="4">
+        </li>
+        <li>
+            <span>›</span> <a href="https://muasamtaikho.vn/google-tivi-coocaa-70y72-70-inch-4k">Google Tivi Coocaa 70Y72 70 Inch 4K</a> 
+            <meta property="position" content="2">
+        </li>
+    </ul>
+    <div class="box02">
+        <div class="box02__left">
+            <div class="detail-rate">
+                <p> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> </p>
+            </div>
+        </div>
+    </div>
+    <div class="box_main">
+        <div class="box_left">
+            <div class="box01">
+                <div class="box01__show">
+                    <div class="owl-carousel detail-slider owl-loaded owl-drag" id="carousel">
+                        <div class="owl-stage-outer">
+                            <div class="owl-stage" style="transform: translate3d(-4224px, 0px, 0px); transition: 0.25s; width: 10368px;">
+                                <div class="owl-item cloned" style="width: 374px; margin-right: 10px;">
+                                    <div class="item"> <a href="https://muasamtaikho.vn/uploads/product/google-tivi-coo_multi_5_574_1020.png.webp" data-fancybox="gallery"><img data-src="https://muasamtaikho.vn/uploads/product/google-tivi-coo_multi_5_574_1020.png.webp" alt="Google Tivi Coocaa 70Y72 70 Inch 4K" class="lazyload" title="Google Tivi Coocaa 70Y72 70 Inch 4K"></a> </div>
+                                </div>
+                                <div class="owl-item cloned" style="width: 374px; margin-right: 10px;">
+                                    <div class="item"> <a href="https://muasamtaikho.vn/uploads/product/google-tivi-coo_multi_6_738_1020.png.webp" data-fancybox="gallery"><img data-src="https://muasamtaikho.vn/uploads/product/google-tivi-coo_multi_6_738_1020.png.webp" alt="Google Tivi Coocaa 70Y72 70 Inch 4K" class="lazyload" title="Google Tivi Coocaa 70Y72 70 Inch 4K"></a> </div>
+                                </div>
+                                <div class="owl-item cloned" style="width: 374px; margin-right: 10px;">
+                                    <div class="item"> <a href="https://muasamtaikho.vn/uploads/product/google-tivi-coo_multi_7_358_1020.png.webp" data-fancybox="gallery"><img data-src="https://muasamtaikho.vn/uploads/product/google-tivi-coo_multi_7_358_1020.png.webp" alt="Google Tivi Coocaa 70Y72 70 Inch 4K" class="lazyload" title="Google Tivi Coocaa 70Y72 70 Inch 4K"></a> </div>
+                                </div>
+                                <div class="owl-item cloned" style="width: 374px; margin-right: 10px;">
+                                    <div class="item"> <a href="https://muasamtaikho.vn/uploads/product/google-tivi-coo_multi_8_592_1020.png.webp" data-fancybox="gallery"><img data-src="https://muasamtaikho.vn/uploads/product/google-tivi-coo_multi_8_592_1020.png.webp" alt="Google Tivi Coocaa 70Y72 70 Inch 4K" class="lazyload" title="Google Tivi Coocaa 70Y72 70 Inch 4K"></a> </div>
+                                </div>
+                                <div class="owl-item cloned" style="width: 374px; margin-right: 10px;">
+                                    <div class="item"> <a href="https://muasamtaikho.vn/uploads/product/google-tivi-coo_multi_9_264_1020.png.webp" data-fancybox="gallery"><img data-src="https://muasamtaikho.vn/uploads/product/google-tivi-coo_multi_9_264_1020.png.webp" alt="Google Tivi Coocaa 70Y72 70 Inch 4K" class="lazyload" title="Google Tivi Coocaa 70Y72 70 Inch 4K"></a> </div>
+                                </div>
+                                <div class="owl-item cloned" style="width: 374px; margin-right: 10px;">
+                                    <div class="item"> <a href="https://muasamtaikho.vn/uploads/product/google-tivi-coo_multi_10_565_1020.png.webp" data-fancybox="gallery"><img data-src="https://muasamtaikho.vn/uploads/product/google-tivi-coo_multi_10_565_1020.png.webp" alt="Google Tivi Coocaa 70Y72 70 Inch 4K" class=" ls-is-cached lazyloaded" title="Google Tivi Coocaa 70Y72 70 Inch 4K" src="https://muasamtaikho.vn/uploads/product/google-tivi-coo_multi_10_565_1020.png.webp"></a> </div>
+                                </div>
+                                <div class="owl-item cloned" style="width: 374px; margin-right: 10px;">
+                                    <div class="item"> <a href="https://muasamtaikho.vn/uploads/product/google-tivi-coo_multi_11_871_1020.png.webp" data-fancybox="gallery"><img data-src="https://muasamtaikho.vn/uploads/product/google-tivi-coo_multi_11_871_1020.png.webp" alt="Google Tivi Coocaa 70Y72 70 Inch 4K" class=" ls-is-cached lazyloaded" title="Google Tivi Coocaa 70Y72 70 Inch 4K" src="https://muasamtaikho.vn/uploads/product/google-tivi-coo_multi_11_871_1020.png.webp"></a> </div>
+                                </div>
+                                <div class="owl-item" style="width: 374px; margin-right: 10px;">
+                                    <div class="item img-main">
+                                        <a href="https://muasamtaikho.vn/uploads/product/google-tivi-coo_multi_2_499_1020.png.webp" data-fancybox="gallery"><img data-src="https://muasamtaikho.vn/uploads/product/google-tivi-coo_multi_2_499_1020.png.webp" alt="Google Tivi Coocaa 70Y72 70 Inch 4K" class=" ls-is-cached lazyloaded" title="Google Tivi Coocaa 70Y72 70 Inch 4K" src="https://muasamtaikho.vn/uploads/product/google-tivi-coo_multi_2_499_1020.png.webp"> </a> <!-- <div class="sakers event-dt"> <img src="https://muasamtaikho.vn/images/background-image/dao140.png?ver=3"   class="lazyload"> </div> --> 
+                                    </div>
+                                </div>
+                                <div class="owl-item" style="width: 374px; margin-right: 10px;">
+                                    <div class="item"> <a href="https://muasamtaikho.vn/uploads/product/google-tivi-coo_main_834_1020.png.webp" data-fancybox="gallery"><img data-src="https://muasamtaikho.vn/uploads/product/google-tivi-coo_main_834_1020.png.webp" alt="Google Tivi Coocaa 70Y72 70 Inch 4K" class=" ls-is-cached lazyloaded" title="Google Tivi Coocaa 70Y72 70 Inch 4K" src="https://muasamtaikho.vn/uploads/product/google-tivi-coo_main_834_1020.png.webp"></a> </div>
+                                </div>
+                                <div class="owl-item" style="width: 374px; margin-right: 10px;">
+                                    <div class="item"> <a href="https://muasamtaikho.vn/uploads/product/google-tivi-coo_multi_3_254_1020.png.webp" data-fancybox="gallery"><img data-src="https://muasamtaikho.vn/uploads/product/google-tivi-coo_multi_3_254_1020.png.webp" alt="Google Tivi Coocaa 70Y72 70 Inch 4K" class=" ls-is-cached lazyloaded" title="Google Tivi Coocaa 70Y72 70 Inch 4K" src="https://muasamtaikho.vn/uploads/product/google-tivi-coo_multi_3_254_1020.png.webp"></a> </div>
+                                </div>
+                                <div class="owl-item" style="width: 374px; margin-right: 10px;">
+                                    <div class="item"> <a href="https://muasamtaikho.vn/uploads/product/google-tivi-coo_multi_0_42_1020.png.webp" data-fancybox="gallery"><img data-src="https://muasamtaikho.vn/uploads/product/google-tivi-coo_multi_0_42_1020.png.webp" alt="Google Tivi Coocaa 70Y72 70 Inch 4K" class=" lazyloaded" title="Google Tivi Coocaa 70Y72 70 Inch 4K" src="https://muasamtaikho.vn/uploads/product/google-tivi-coo_multi_0_42_1020.png.webp"></a> </div>
+                                </div>
+                                <div class="owl-item active" style="width: 374px; margin-right: 10px;">
+                                    <div class="item"> <a href="https://muasamtaikho.vn/uploads/product/google-tivi-coo_multi_1_739_1020.png.webp" data-fancybox="gallery"><img data-src="https://muasamtaikho.vn/uploads/product/google-tivi-coo_multi_1_739_1020.png.webp" alt="Google Tivi Coocaa 70Y72 70 Inch 4K" class=" ls-is-cached lazyloaded" title="Google Tivi Coocaa 70Y72 70 Inch 4K" src="https://muasamtaikho.vn/uploads/product/google-tivi-coo_multi_1_739_1020.png.webp"></a> </div>
+                                </div>
+                                <div class="owl-item" style="width: 374px; margin-right: 10px;">
+                                    <div class="item"> <a href="https://muasamtaikho.vn/uploads/product/google-tivi-coo_multi_4_177_1020.png.webp" data-fancybox="gallery"><img data-src="https://muasamtaikho.vn/uploads/product/google-tivi-coo_multi_4_177_1020.png.webp" alt="Google Tivi Coocaa 70Y72 70 Inch 4K" class="lazyload" title="Google Tivi Coocaa 70Y72 70 Inch 4K"></a> </div>
+                                </div>
+                                <div class="owl-item" style="width: 374px; margin-right: 10px;">
+                                    <div class="item"> <a href="https://muasamtaikho.vn/uploads/product/google-tivi-coo_multi_5_574_1020.png.webp" data-fancybox="gallery"><img data-src="https://muasamtaikho.vn/uploads/product/google-tivi-coo_multi_5_574_1020.png.webp" alt="Google Tivi Coocaa 70Y72 70 Inch 4K" class="lazyload" title="Google Tivi Coocaa 70Y72 70 Inch 4K"></a> </div>
+                                </div>
+                                <div class="owl-item" style="width: 374px; margin-right: 10px;">
+                                    <div class="item"> <a href="https://muasamtaikho.vn/uploads/product/google-tivi-coo_multi_6_738_1020.png.webp" data-fancybox="gallery"><img data-src="https://muasamtaikho.vn/uploads/product/google-tivi-coo_multi_6_738_1020.png.webp" alt="Google Tivi Coocaa 70Y72 70 Inch 4K" class="lazyload" title="Google Tivi Coocaa 70Y72 70 Inch 4K"></a> </div>
+                                </div>
+                                <div class="owl-item" style="width: 374px; margin-right: 10px;">
+                                    <div class="item"> <a href="https://muasamtaikho.vn/uploads/product/google-tivi-coo_multi_7_358_1020.png.webp" data-fancybox="gallery"><img data-src="https://muasamtaikho.vn/uploads/product/google-tivi-coo_multi_7_358_1020.png.webp" alt="Google Tivi Coocaa 70Y72 70 Inch 4K" class="lazyload" title="Google Tivi Coocaa 70Y72 70 Inch 4K"></a> </div>
+                                </div>
+                                <div class="owl-item" style="width: 374px; margin-right: 10px;">
+                                    <div class="item"> <a href="https://muasamtaikho.vn/uploads/product/google-tivi-coo_multi_8_592_1020.png.webp" data-fancybox="gallery"><img data-src="https://muasamtaikho.vn/uploads/product/google-tivi-coo_multi_8_592_1020.png.webp" alt="Google Tivi Coocaa 70Y72 70 Inch 4K" class="lazyload" title="Google Tivi Coocaa 70Y72 70 Inch 4K"></a> </div>
+                                </div>
+                                <div class="owl-item" style="width: 374px; margin-right: 10px;">
+                                    <div class="item"> <a href="https://muasamtaikho.vn/uploads/product/google-tivi-coo_multi_9_264_1020.png.webp" data-fancybox="gallery"><img data-src="https://muasamtaikho.vn/uploads/product/google-tivi-coo_multi_9_264_1020.png.webp" alt="Google Tivi Coocaa 70Y72 70 Inch 4K" class="lazyload" title="Google Tivi Coocaa 70Y72 70 Inch 4K"></a> </div>
+                                </div>
+                                <div class="owl-item" style="width: 374px; margin-right: 10px;">
+                                    <div class="item"> <a href="https://muasamtaikho.vn/uploads/product/google-tivi-coo_multi_10_565_1020.png.webp" data-fancybox="gallery"><img data-src="https://muasamtaikho.vn/uploads/product/google-tivi-coo_multi_10_565_1020.png.webp" alt="Google Tivi Coocaa 70Y72 70 Inch 4K" class="lazyload" title="Google Tivi Coocaa 70Y72 70 Inch 4K"></a> </div>
+                                </div>
+                                <div class="owl-item" style="width: 374px; margin-right: 10px;">
+                                    <div class="item"> <a href="https://muasamtaikho.vn/uploads/product/google-tivi-coo_multi_11_871_1020.png.webp" data-fancybox="gallery"><img data-src="https://muasamtaikho.vn/uploads/product/google-tivi-coo_multi_11_871_1020.png.webp" alt="Google Tivi Coocaa 70Y72 70 Inch 4K" class="lazyload" title="Google Tivi Coocaa 70Y72 70 Inch 4K"></a> </div>
+                                </div>
+                                <div class="owl-item cloned" style="width: 374px; margin-right: 10px;">
+                                    <div class="item img-main">
+                                        <a href="https://muasamtaikho.vn/uploads/product/google-tivi-coo_multi_2_499_1020.png.webp" data-fancybox="gallery"><img data-src="https://muasamtaikho.vn/uploads/product/google-tivi-coo_multi_2_499_1020.png.webp" alt="Google Tivi Coocaa 70Y72 70 Inch 4K" class="lazyload" title="Google Tivi Coocaa 70Y72 70 Inch 4K"> </a> <!-- <div class="sakers event-dt"> <img src="https://muasamtaikho.vn/images/background-image/dao140.png?ver=3"   class="lazyload"> </div> --> 
+                                    </div>
+                                </div>
+                                <div class="owl-item cloned" style="width: 374px; margin-right: 10px;">
+                                    <div class="item"> <a href="https://muasamtaikho.vn/uploads/product/google-tivi-coo_main_834_1020.png.webp" data-fancybox="gallery"><img data-src="https://muasamtaikho.vn/uploads/product/google-tivi-coo_main_834_1020.png.webp" alt="Google Tivi Coocaa 70Y72 70 Inch 4K" class="lazyload" title="Google Tivi Coocaa 70Y72 70 Inch 4K"></a> </div>
+                                </div>
+                                <div class="owl-item cloned" style="width: 374px; margin-right: 10px;">
+                                    <div class="item"> <a href="https://muasamtaikho.vn/uploads/product/google-tivi-coo_multi_3_254_1020.png.webp" data-fancybox="gallery"><img data-src="https://muasamtaikho.vn/uploads/product/google-tivi-coo_multi_3_254_1020.png.webp" alt="Google Tivi Coocaa 70Y72 70 Inch 4K" class="lazyload" title="Google Tivi Coocaa 70Y72 70 Inch 4K"></a> </div>
+                                </div>
+                                <div class="owl-item cloned" style="width: 374px; margin-right: 10px;">
+                                    <div class="item"> <a href="https://muasamtaikho.vn/uploads/product/google-tivi-coo_multi_0_42_1020.png.webp" data-fancybox="gallery"><img data-src="https://muasamtaikho.vn/uploads/product/google-tivi-coo_multi_0_42_1020.png.webp" alt="Google Tivi Coocaa 70Y72 70 Inch 4K" class="lazyload" title="Google Tivi Coocaa 70Y72 70 Inch 4K"></a> </div>
+                                </div>
+                                <div class="owl-item cloned" style="width: 374px; margin-right: 10px;">
+                                    <div class="item"> <a href="https://muasamtaikho.vn/uploads/product/google-tivi-coo_multi_1_739_1020.png.webp" data-fancybox="gallery"><img data-src="https://muasamtaikho.vn/uploads/product/google-tivi-coo_multi_1_739_1020.png.webp" alt="Google Tivi Coocaa 70Y72 70 Inch 4K" class="lazyload" title="Google Tivi Coocaa 70Y72 70 Inch 4K"></a> </div>
+                                </div>
+                                <div class="owl-item cloned" style="width: 374px; margin-right: 10px;">
+                                    <div class="item"> <a href="https://muasamtaikho.vn/uploads/product/google-tivi-coo_multi_4_177_1020.png.webp" data-fancybox="gallery"><img data-src="https://muasamtaikho.vn/uploads/product/google-tivi-coo_multi_4_177_1020.png.webp" alt="Google Tivi Coocaa 70Y72 70 Inch 4K" class="lazyload" title="Google Tivi Coocaa 70Y72 70 Inch 4K"></a> </div>
+                                </div>
+                                <div class="owl-item cloned" style="width: 374px; margin-right: 10px;">
+                                    <div class="item"> <a href="https://muasamtaikho.vn/uploads/product/google-tivi-coo_multi_5_574_1020.png.webp" data-fancybox="gallery"><img data-src="https://muasamtaikho.vn/uploads/product/google-tivi-coo_multi_5_574_1020.png.webp" alt="Google Tivi Coocaa 70Y72 70 Inch 4K" class="lazyload" title="Google Tivi Coocaa 70Y72 70 Inch 4K"></a> </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="owl-nav disabled">
+                            <div class="owl-prev"><i class="fa fa-angle-left"></i></div>
+                            <div class="owl-next"><i class="fa fa fa-angle-right"></i></div>
+                        </div>
+                        <div class="owl-dots">
+                            <div class="owl-dot"><span></span></div>
+                            <div class="owl-dot"><span></span></div>
+                            <div class="owl-dot"><span></span></div>
+                            <div class="owl-dot"><span></span></div>
+                            <div class="owl-dot active"><span></span></div>
+                            <div class="owl-dot"><span></span></div>
+                            <div class="owl-dot"><span></span></div>
+                            <div class="owl-dot"><span></span></div>
+                            <div class="owl-dot"><span></span></div>
+                            <div class="owl-dot"><span></span></div>
+                            <div class="owl-dot"><span></span></div>
+                            <div class="owl-dot"><span></span></div>
+                            <div class="owl-dot"><span></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="scrolling_inner mobile">
+                <div class="box01__tab scrolling">
+                    <div id="thumb-featured-images-gallery-0" class="item itemTab active " data-gallery-id="featured-images-gallery" data-color-id="0" data-is-full-spec="False" data-color-order-id="0" data-isfeatureimage="True" data-toggle="modal" data-target="#Salient_Features">
+                        <div class="item-border"> <i class="icondetail-noibat"></i> </div>
+                        <p>Điểm nổi bật</p>
+                    </div>
+                    <div id="thumb-specification-gallery-0" class="item itemTab  is-show-popup" data-gallery-id="specification-gallery" data-color-id="0" data-is-full-spec="True" data-color-order-id="0" data-isfeatureimage="True">
+                        <div class="item-border"> <i class="icondetail-thongso" data-toggle="modal" data-target="#specifications"></i> </div>
+                        <p data-toggle="modal" data-target="#specifications">Thông số kỹ thuật</p>
+                    </div>
+                    <!-- <div class="modal-footer"> <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button> </div> --> 
+                    <div id="thumb-article-gallery-0" class="item itemTab  is-show-popup scroll-content" data-color-id="0" data-is-full-spec="False" data-color-order-id="0" data-isfeatureimage="True">
+                        <div class="item-border"> <i class="icondetail-danhgia"></i> </div>
+                        <p>Thông tin sản phẩm</p>
+                    </div>
+                </div>
+            </div>
+            <h1>Google Tivi Coocaa 70Y72 70 Inch 4K</h1>
+            <div class="pay mobile">
+                <div class="col-12 pdetail-des">
+                    <div class="clearfix"></div>
+                    <div class="info-box">
+                        <div class="pdetail-info">
+                            <p class="p1">Thương hiệu: <b>Tivi Coocaa</b></p>
+                            <p>Model: <b>70Y72</b></p>
+                        </div>
+                        <div class="pdetail-stockavailable"> <span> <img src="https://muasamtaikho.vn/images/template/icon-tick.png" width="18px" height="18px" data-src="https://muasamtaikho.vn/images/template/icon-tick.png" class=" ls-is-cached lazyloaded"> CÒN HÀNG</span> </div>
+                        <div class="scroll-box">
+                            <div class="pdetail-price">
+                                <div class="pdetail-price-box show-price-mobile">
+                                    <h3> 8.990.000 ₫</h3>
+                                </div>
+                            </div>
+                            <!-- <div class="discount"><p class="installment">Trả góp 0%</p></div> --> 
+                            <div class="pdetail-status">
+                                <div class="add-service"> <input type="checkbox" id="input-price-mb" name="price-add-1" class="price-add-1" value="150000"> <label for="age1">Giá lắp đặt :150.000₫ </label> <br> <input type="checkbox" id="inputs-price-mb" name="price-add-2" class="price-add-2" value="350000"> <label for="age1">Giá vận chuyển : 350.000₫ </label> </div>
+                                <!--   --> <!-- nếu tồn tại gift_price thì hiển thị --> <!-- mobile --> 
+                                <a href="tel:02473036336">
+                                    <div class="buy-button-hotline nhapnhay btn">Gọi 0123.456.789 để được giảm thêm</div>
+                                </a>
+                                <div class="pdetail-add-to-cart add-to-cart">
+                                    <div class="inline">
+                                        <input type="hidden" name="productId" value="38"> <input type="hidden" name="gift_checked" id="gift_checked" value=""> <!-- <div class="product-quantity"> <input type="text" class="quantity-field" readonly="readonly" name="qty" value="1"> </div> --> <button type="button" class="btn btn-lg btn-add-cart btn-add-cart redirectCart" onclick="addToCart(38)">MUA NGAY <br>(Giao hàng tận nơi - Giá tốt - An toàn)</button> 
+                                        <div class="share-button"> <button type="button" class="btn btn-lg btn-add-cart btn-add-cart redirectCart cartSP" onclick="addToSuport(2221)">GỌI LẠI CHO TÔI <br>(Tư vấn tận tình)</button> <button type="button" class="btn btn-lg btn-add-cart btn-add-cart redirectCart cartSP right-cart" onclick="addToSuport(2221)">TRẢ GÓP QUA THẺ <br></button> </div>
+                                    </div>
+                                    <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"> Launch demo modal </button> --> 
+                                </div>
+                                <div class="clearfix"></div>
+                                <!-- <div class="installment-purchase pdetail-installment"> <a target="_blank"  href="https://muasamtaikho.vn/google-tivi-coocaa-70y72-70-inch-4k?show=tra-gop" admicro-data-event="101725" admicro-data-auto="1" admicro-data-order="false" class="but-1-gop"> <strong>TRẢ GÓP QUA THẺ</strong> <br> (Visa, Master, JCB) </a> </div> --> 
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br> <!-- <div class="col-md-3 mobile"> <div class="commitment"> <h4>Yên tâm mua sắm</h4> <ul> <li>Bảo hành tại nhà</li> <li>Lắp đặt miễn phí</li> (Trừ điều hòa, bình nước nóng) <li>Thanh toán tại nhà</li> <li>Giao hàng miễn phí 20km</li> <li>Giá cạnh tranh nhất thị trường</li> <li>Đổi mới 100% trong 7 ngày đầu</li> ( Trừ Sanaky, Sony, tivi Samsung chỉ bảo hành tại nhà ) </ul> <div class="support"> <h5>Tổng Đài mua hàng</h5> <a href="tel:02473036336">0247.303.6336</a> <h5>Tổng Đài mua hàng( Sau 17h )</h5> <a href="tel:0913011888">091.301.1888</a> </div> </div> </div> --> 
+            <div class="view-all-salient_fratured"> <b>Chính sách mua hàng tại MuaSamTaiKho.vn</b> </div>
+            <style type="text/css"> .box_pro-benefit{
+                width: 100%;
+                }
+                .app img{
+                width: 100%;
+                }
+                .related__ttl {
+                color: #1053AF;
+                } 
+            </style>
+            <div class="box_pro-benefit">
+                <div class="monopoly">
+                    <!-- <span class="ttl"> Độc quyền tại Siêu Thị Điện Máy - Nội Thất Chợ Lớn</span> --> 
+                    <div class="monopoly_item">
+                        <ul>
+                            <li>
+                                <i class="icon_genuine"></i> 
+                                <div class="monopoly-title">Cam kết sản phẩm chính hãng 100%</div>
+                            </li>
+                            <li>
+                                <i class="icon_change"></i> 
+                                <div class="monopoly-title">Hoàn chênh lệch nếu siêu thị khác rẻ hơn. </div>
+                            </li>
+                            <li>
+                                <i class="icon_refund"></i> 
+                                <div class="monopoly-title">Giao hàng và Lắp đặt tân nơi</div>
+                            </li>
+                            <li>
+                                <i class="icon_guarantee_mb"></i> 
+                                <div class="monopoly-title">Tư vấn thông tin miễn phí </div>
+                            </li>
+                            <li>
+                                <i class="icon_delivery"></i> 
+                                <div class="monopoly-title">Bảo hành chính hãng đến 3 năm, có người đến tận nhà</div>
+                            </li>
+                            <li>
+                                <i class="icon_thung"></i> 
+                                <div class="monopoly-title">Sản phẩm nguyên đai, nguyên kiện.</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <br> 
+            <div class="scrolling_inner desktop">
+                <div class="box01__tab scrolling">
+                    <div id="thumb-featured-images-gallery-0" class="item itemTab active " data-gallery-id="featured-images-gallery" data-color-id="0" data-is-full-spec="False" data-color-order-id="0" data-isfeatureimage="True" data-toggle="modal" data-target="#Salient_Features">
+                        <div class="item-border"> <i class="icondetail-noibat"></i> </div>
+                        <p>Điểm nổi bật</p>
+                    </div>
+                    <div id="thumb-specification-gallery-0" class="item itemTab  is-show-popup" data-gallery-id="specification-gallery" data-color-id="0" data-is-full-spec="True" data-color-order-id="0" data-isfeatureimage="True">
+                        <div class="item-border"> <i class="icondetail-thongso" data-toggle="modal" data-target="#specifications"></i> </div>
+                        <p data-toggle="modal" data-target="#specifications">Thông số kỹ thuật</p>
+                    </div>
+                    <!-- <div class="modal-footer"> <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button> </div> --> 
+                    <div id="thumb-article-gallery-0" class="item itemTab  is-show-popup scroll-content" data-gallery-id="article-gallery" data-color-id="0" data-is-full-spec="False" data-color-order-id="0" data-isfeatureimage="True">
+                        <div class="item-border"> <i class="icondetail-danhgia"></i> </div>
+                        <p>Thông tin sản phẩm</p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="Salient_Features" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5>Đặc điểm nổi bật</h5>
+                        </div>
+                        <div class="modal-body" style="padding:0 15px">
+                            <div class="feature_item">
+                                <span style="font-size:16px"><span style="font-family:Arial,Helvetica,sans-serif">Tính năng nổi bật:</span></span> 
+                                <ul>
+                                    <li><span style="font-size:16px"><span style="font-family:Arial,Helvetica,sans-serif">Kích thước 70 Inch, thiết kế hiện đại&nbsp;</span></span></li>
+                                    <li><span style="font-size:16px"><span style="font-family:Arial,Helvetica,sans-serif">Độ phân giải 4K cho hình ảnh sắc nét</span></span></li>
+                                    <li><span style="font-size:16px"><span style="font-family:Arial,Helvetica,sans-serif">Công nghệ hình ảnh HDR10</span></span></li>
+                                    <li><span style="font-size:16px"><span style="font-family:Arial,Helvetica,sans-serif">Công nghệ âm thanh DTS Studio Sound</span></span></li>
+                                    <li><span style="font-size:16px"><span style="font-family:Arial,Helvetica,sans-serif">Hệ điều hành Google Tv thân thiện, dễ sử dụng</span></span></li>
+                                    <li><span style="font-size:16px"><span style="font-family:Arial,Helvetica,sans-serif">Google Assistant hỗ trợ tìm kiếm bằng giọng nói</span></span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="modal-footer"> <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button> </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="specifications" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5>Thông số kỹ thuật</h5>
+                            <button type="button" class="btn btn-secondary mobiles" data-dismiss="modal">x</button> 
+                        </div>
+                        <div class="modal-body" id="thong-so">
+                            <ul>
+                                <li><span style="font-size:16px"><span style="font-family:Arial,Helvetica,sans-serif"><strong>Tổng quan sản phẩm</strong></span></span></li>
+                                <li>
+                                    <p><span style="font-size:16px"><span style="font-family:Arial,Helvetica,sans-serif">Loại Tivi</span></span></p>
+                                    <p><span style="font-size:16px"><span style="font-family:Arial,Helvetica,sans-serif">Google Tivi</span></span></p>
+                                </li>
+                                <li>
+                                    <p><span style="font-size:16px"><span style="font-family:Arial,Helvetica,sans-serif">Kích cỡ màn hình</span></span></p>
+                                    <p><span style="font-size:16px"><span style="font-family:Arial,Helvetica,sans-serif">70 inch</span></span></p>
+                                </li>
+                                <li>
+                                    <p><span style="font-size:16px"><span style="font-family:Arial,Helvetica,sans-serif">Độ phân giải</span></span></p>
+                                    <p><span style="font-size:16px"><span style="font-family:Arial,Helvetica,sans-serif">4K</span></span></p>
+                                </li>
+                                <li>
+                                    <p><span style="font-size:16px"><span style="font-family:Arial,Helvetica,sans-serif">Hệ điều hành</span></span></p>
+                                    <p><span style="font-size:16px"><span style="font-family:Arial,Helvetica,sans-serif">Google Tv</span></span></p>
+                                </li>
+                                <li>
+                                    <p><span style="font-size:16px"><span style="font-family:Arial,Helvetica,sans-serif">Kích Thước (Khoảng Cách Xem)</span></span></p>
+                                    <p><span style="font-size:16px"><span style="font-family:Arial,Helvetica,sans-serif">Trên 55" (4 - 7 mét)</span></span></p>
+                                </li>
+                                <li><span style="font-size:16px"><span style="font-family:Arial,Helvetica,sans-serif"><strong>Công nghệ hình ảnh</strong></span></span></li>
+                                <li>
+                                    <p><span style="font-size:16px"><span style="font-family:Arial,Helvetica,sans-serif">Công nghệ hình ảnh</span></span></p>
+                                    <p><span style="font-size:16px"><span style="font-family:Arial,Helvetica,sans-serif">- HDR10<br> - HLG</span></span></p>
+                                </li>
+                                <li><span style="font-size:16px"><span style="font-family:Arial,Helvetica,sans-serif"><strong>Công nghệ âm thanh</strong></span></span></li>
+                                <li>
+                                    <p><span style="font-size:16px"><span style="font-family:Arial,Helvetica,sans-serif">Tổng công suất loa</span></span></p>
+                                    <p><span style="font-size:16px"><span style="font-family:Arial,Helvetica,sans-serif">20W</span></span></p>
+                                </li>
+                                <li>
+                                    <p><span style="font-size:16px"><span style="font-family:Arial,Helvetica,sans-serif">Số lượng loa</span></span></p>
+                                    <p><span style="font-size:16px"><span style="font-family:Arial,Helvetica,sans-serif">2</span></span></p>
+                                </li>
+                                <li>
+                                    <p><span style="font-size:16px"><span style="font-family:Arial,Helvetica,sans-serif">Các công nghệ khác</span></span></p>
+                                    <p><span style="font-size:16px"><span style="font-family:Arial,Helvetica,sans-serif">- DTS Studio Sound</span></span></p>
+                                </li>
+                                <li><span style="font-size:16px"><span style="font-family:Arial,Helvetica,sans-serif"><strong>Cổng kết nối</strong></span></span></li>
+                                <li>
+                                    <p><span style="font-size:16px"><span style="font-family:Arial,Helvetica,sans-serif">Kết nối Internet</span></span></p>
+                                    <p><span style="font-size:16px"><span style="font-family:Arial,Helvetica,sans-serif">LAN, Wifi</span></span></p>
+                                </li>
+                                <li>
+                                    <p><span style="font-size:16px"><span style="font-family:Arial,Helvetica,sans-serif">Kết nối không dây</span></span></p>
+                                    <p><span style="font-size:16px"><span style="font-family:Arial,Helvetica,sans-serif">Bluetooth 5.1</span></span></p>
+                                </li>
+                                <li>
+                                    <p><span style="font-size:16px"><span style="font-family:Arial,Helvetica,sans-serif">USB</span></span></p>
+                                    <p><span style="font-size:16px"><span style="font-family:Arial,Helvetica,sans-serif">2(2.0)</span></span></p>
+                                </li>
+                                <li>
+                                    <p><span style="font-size:16px"><span style="font-family:Arial,Helvetica,sans-serif">Cổng nhận hình ảnh, âm thanh</span></span></p>
+                                    <p><span style="font-size:16px"><span style="font-family:Arial,Helvetica,sans-serif">HDMI x 3(2.0)</span></span></p>
+                                </li>
+                                <li>
+                                    <p><span style="font-size:16px"><span style="font-family:Arial,Helvetica,sans-serif">Cổng xuất âm thanh</span></span></p>
+                                    <p><span style="font-size:16px"><span style="font-family:Arial,Helvetica,sans-serif">Composite x 1(3.5mm) , 1(Optical)</span></span></p>
+                                </li>
+                                <li><span style="font-size:16px"><span style="font-family:Arial,Helvetica,sans-serif"><strong>Tiện ích</strong></span></span></li>
+                                <li>
+                                    <p><span style="font-size:16px"><span style="font-family:Arial,Helvetica,sans-serif">Điều khiển bằng giọng nói</span></span></p>
+                                    <p><span style="font-size:16px"><span style="font-family:Arial,Helvetica,sans-serif">Google Assistant</span></span></p>
+                                </li>
+                                <li>
+                                    <p><span style="font-size:16px"><span style="font-family:Arial,Helvetica,sans-serif">Ứng dụng phổ biến</span></span></p>
+                                    <p><span style="font-size:16px"><span style="font-family:Arial,Helvetica,sans-serif">- Netflix<br> - Youtube</span></span></p>
+                                </li>
+                                <li><span style="font-size:16px"><span style="font-family:Arial,Helvetica,sans-serif"><strong>Thông tin lắp đặt</strong></span></span></li>
+                                <li>
+                                    <p><span style="font-size:16px"><span style="font-family:Arial,Helvetica,sans-serif">Kích thước có chân, đặt bàn</span></span></p>
+                                    <p><span style="font-size:16px"><span style="font-family:Arial,Helvetica,sans-serif">Ngang 166.78 - Cao 103.44 - Dày 36.31 cm</span></span></p>
+                                </li>
+                                <li>
+                                    <p><span style="font-size:16px"><span style="font-family:Arial,Helvetica,sans-serif">Khối lượng có chân</span></span></p>
+                                    <p><span style="font-size:16px"><span style="font-family:Arial,Helvetica,sans-serif">29,4 kg</span></span></p>
+                                </li>
+                                <li>
+                                    <p><span style="font-size:16px"><span style="font-family:Arial,Helvetica,sans-serif">Kích thước không chân, treo tường</span></span></p>
+                                    <p><span style="font-size:16px"><span style="font-family:Arial,Helvetica,sans-serif">Ngang 166.78 - Cao 96.48- Dày 8.35 cm</span></span></p>
+                                </li>
+                                <li>
+                                    <p><span style="font-size:16px"><span style="font-family:Arial,Helvetica,sans-serif">Khối lượng không chân</span></span></p>
+                                    <p><span style="font-size:16px"><span style="font-family:Arial,Helvetica,sans-serif">28,8 Kg</span></span></p>
+                                </li>
+                                <li><span style="font-size:16px"><span style="font-family:Arial,Helvetica,sans-serif"><strong>Xuất Xứ &amp; Bảo Hành</strong></span></span></li>
+                                <li>
+                                    <p><span style="font-size:16px"><span style="font-family:Arial,Helvetica,sans-serif">Hãng Sản Xuất</span></span></p>
+                                    <p><span style="font-size:16px"><span style="font-family:Arial,Helvetica,sans-serif">Coocaa</span></span></p>
+                                </li>
+                                <li>
+                                    <p><span style="font-size:16px"><span style="font-family:Arial,Helvetica,sans-serif">Sản Xuất Tại</span></span></p>
+                                    <p><span style="font-size:16px"><span style="font-family:Arial,Helvetica,sans-serif">Indonesia</span></span></p>
+                                </li>
+                                <li>
+                                    <p><span style="font-size:16px"><span style="font-family:Arial,Helvetica,sans-serif">Bảo Hành</span></span></p>
+                                    <p><span style="font-size:16px"><span style="font-family:Arial,Helvetica,sans-serif">24 tháng</span></span></p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="modal-footer"> <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button> </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="modal-suport" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabels" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="loader" style="display: none;"></div>
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabels">Thông tin khách hàng</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">×</span> </button> 
+                        </div>
+                        <div class="modal-body">
+                            <div id="tbl_list_carts" style="text-align: center;">
+                                <div class="cart_col_1"> <a href="https://muasamtaikho.vn/google-tivi-coocaa-70y72-70-inch-4k"><img src="https://muasamtaikho.vn/uploads/product/google-tivi-coo_multi_2_499_1020.png.webp" style="width: 85px;" data-src="https://muasamtaikho.vn/uploads/product/google-tivi-coo_multi_2_499_1020.png.webp" class="lazyload"></a> </div>
+                                <div class="cart_col_2"> <a href="https://muasamtaikho.vn/google-tivi-coocaa-70y72-70-inch-4k"><span class="name">Google Tivi Coocaa 70Y72 70 Inch 4K</span></a> </div>
+                            </div>
+                            <div class="c3_col_1">
+                                <form class="c3_box" id="form-subs">
+                                    <div class="title_box_cart"> Thông tin khách hàng</div>
+                                    <div class="item-form">
+                                        <div class="option-group clearfix">
+                                            <div class="step_option"> <span class="st_opt st_opt_active" data-value="Anh" data-name="sex"></span><span>Anh</span> </div>
+                                            <div class="step_option"> <span class="st_opt" data-value="Chị" data-name="sex"></span><span>Chị</span> </div>
+                                            <input type="hidden" name="sex" id="sexs" value="Nam"> 
+                                        </div>
+                                        <!--option-group--> 
+                                    </div>
+                                    <div class="item-form"> <input type="text" name="name" id="buyer_names_call" placeholder="Họ tên"> </div>
+                                    <div class="item-form"> <input type="text" name="phone_numbers" id="buyer_tels" value="" placeholder="Số điện thoại"> </div>
+                                    <div class="modal-footer">
+                                        <div class="btn btn-primary click-sp" onclick="addCallPhone(38)">Gửi thông tin </div>
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> 
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="block-tab">
+                <div class="bt-overlay"></div>
+                <ul class="block-tab-top">
+                    <li id="tab-featured-images-gallery-0" class="tab-item active" data-is-360-gallery="False" data-gallery-id="featured-images-gallery" data-color-id="0" data-thump-name="Điểm nổi bật"> Điểm nổi bật </li>
+                    <li id="tab-color-images-gallery-11" class="tab-item " data-is-360-gallery="False" data-gallery-id="color-images-gallery" data-color-id="11" data-thump-name="Đen"> Đen </li>
+                    <li id="tab-specification-gallery-0" class="tab-item " data-is-360-gallery="False" data-gallery-id="specification-gallery" data-color-id="0" data-thump-name="Thông số kỹ thuật"> Thông số kỹ thuật </li>
+                    <li id="tab-article-gallery-0" class="tab-item " data-is-360-gallery="False" data-gallery-id="article-gallery" data-color-id="0" data-thump-name="Thông tin sản phẩm"> Thông tin sản phẩm </li>
+                </ul>
+                <div class="block-tab-content">
+                    <div class="content-t active not-load-content" id="tab-content-featured-images-gallery-0"> </div>
+                    <div class="content-t  not-load-content" id="tab-content-color-images-gallery-11"> </div>
+                    <div class="content-t  not-load-content" id="tab-content-specification-gallery-0"> </div>
+                    <div class="content-t  not-load-content" id="tab-content-article-gallery-0"> </div>
+                </div>
+            </div>
+            <div class="wrap_wrtp hide" id="popup-materialsfee">
+                <div class="pop"> </div>
+            </div>
+            <div class="border7"></div>
+            <!-- content --> 
+            <div class="content" id="contents-scroll">
+                <div class="des_pro">
+                    <div class="des_pro_item">
+                        <h3 style="text-align:justify"><span style="font-size:20px"><span style="font-family:Arial,Helvetica,sans-serif"><a href="https://muasamtaikho.vn/google-tivi-coocaa-4k-70-inch-70y72" target="_blank">Google Tivi Coocaa 4K 70 Inch 70Y72</a> - Siêu phẩm tivi màn hình lớn cho mọi trải nghiệm giải trí không giới hạn</span></span><br> &nbsp;</h3>
+                        <p style="text-align:justify"><span style="font-size:16px"><span style="font-family:Arial,Helvetica,sans-serif"><strong>Google Tivi Coocaa 4K 70 Inch 70Y72</strong> hứa hẹn sẽ mang đến trải nghiệm giải trí đẳng cấp hơn trong mọi nội dung khi được chế tác với màn hình 70 inch cực lớn, kết hợp cùng công nghệ hình ảnh tiên tiến và khả năng trình diễn âm thanh với công suất 20W ấn tượng. Đồng thời, sản phẩm cũng được tích hợp nhiều tính năng thông minh như tìm kiếm bằng giọng nói, chế độ giảm ánh sáng xanh,... giúp nâng cao hiệu quả thưởng thức của người dùng.</span></span></p>
+                        <h2 style="text-align:justify">&nbsp;</h2>
+                        <p style="text-align:center"><img alt="Google Tivi Coocaa 4K 70 Inch 70Y72 - Siêu phẩm tivi màn hình lớn cho mọi trải nghiệm giải trí không giới hạn" src="https://muasamtaikho.vn/uploads/product/1725942892_google-tivi-coocaa-4k-70-inch-70y72-1-org.jpg" data-src="https://muasamtaikho.vn/uploads/product/1725942892_google-tivi-coocaa-4k-70-inch-70y72-1-org.jpg" class=" ls-is-cached lazyloaded" title="Google Tivi Coocaa 4K 70 Inch 70Y72 - Siêu phẩm tivi màn hình lớn cho mọi trải nghiệm giải trí không giới hạn"></p>
+                        <p style="text-align:center"><span style="font-size:16px"><span style="font-family:Arial,Helvetica,sans-serif"><em>Google Tivi Coocaa 4K 70 Inch 70Y72</em></span></span></p>
+                        <h3 style="text-align:justify"><br> <span style="font-size:20px"><span style="font-family:Arial,Helvetica,sans-serif">Thiết kế hiện đại cùng kích thước màn hình 70 inch cực lớn</span></span><br> &nbsp;</h3>
+                        <p style="text-align:justify"><span style="font-size:16px"><span style="font-family:Arial,Helvetica,sans-serif"><strong>Google Tivi Coocaa 4K 70 Inch 70Y72</strong> gây ấn tượng với khách hàng từ cái nhìn đầu tiên bởi thiết kế vô cùng sang trọng. Bên cạnh kích thước 70 inch cực lớn, tivi còn được chế tác với màn hình không khung viền hiện đại, giúp nâng tầm phong cách nội thất hiệu quả.</span></span><br> &nbsp;</p>
+                        <p style="text-align:center"><img alt="Thiết kế hiện đại cùng kích thước màn hình 70 inch cực lớn" src="https://muasamtaikho.vn/uploads/product/1725942892_google-tivi-coocaa-4k-70-inch-70y72-2-org.jpg" data-src="https://muasamtaikho.vn/uploads/product/1725942892_google-tivi-coocaa-4k-70-inch-70y72-2-org.jpg" class=" ls-is-cached lazyloaded" title="Thiết kế hiện đại cùng kích thước màn hình 70 inch cực lớn"></p>
+                        <p style="text-align:center"><span style="font-size:16px"><span style="font-family:Arial,Helvetica,sans-serif"><em>Thiết kế tivi Coocaa 70Y72</em></span></span></p>
+                        <p style="text-align:justify"><br> <span style="font-size:16px"><span style="font-family:Arial,Helvetica,sans-serif">Đôi chân đế chữ V úp ngược không phải là thiết kế mới mẻ so với nhiều dòng tivi trên thị trường hiện nay, tuy nhiên chân đế của tivi 70Y72 được chế tác cực kỳ thuôn mảnh, kết hợp liền mạch với màn hình để mang đến vẻ đẹp thanh lịch hơn cho tổng thể sản phẩm.</span></span><br> &nbsp;</p>
+                        <p style="text-align:center"><img alt="Thiết kế hiện đại cùng kích thước màn hình 70 inch cực lớn" src="https://muasamtaikho.vn/uploads/product/1725942892_google-tivi-coocaa-4k-70-inch-70y72-3-org.jpg" data-src="https://muasamtaikho.vn/uploads/product/1725942892_google-tivi-coocaa-4k-70-inch-70y72-3-org.jpg" class=" ls-is-cached lazyloaded" title="Thiết kế hiện đại cùng kích thước màn hình 70 inch cực lớn"></p>
+                        <p style="text-align:center"><span style="font-size:16px"><span style="font-family:Arial,Helvetica,sans-serif"><em>Tivi Coocaa 70Y72 và remote</em></span></span></p>
+                        <h3 style="text-align:justify"><span style="font-size:20px"><span style="font-family:Arial,Helvetica,sans-serif"><a href="https://muasamtaikho.vn/tivi-coocaa" target="_blank">Tivi coocaa</a> tái tạo hình ảnh chuẩn HDR10 &amp; HLG ấn tượng</span></span><br> &nbsp;</h3>
+                        <p style="text-align:justify"><span style="font-size:16px"><span style="font-family:Arial,Helvetica,sans-serif">Màn hình <strong>Google Tivi Coocaa 4K 70 Inch 70Y72</strong> được trang bị công nghệ cải tiến hình ảnh theo chuẩn HDR10 &amp; HLG với khả năng tăng cường độ sáng và độ tương phản trên khung hình.</span></span><br> &nbsp;</p>
+                        <p style="text-align:center"><img alt="Tivi coocaa tái tạo hình ảnh chuẩn HDR10 &amp; HLG ấn tượng" src="https://muasamtaikho.vn/uploads/product/1725942892_google-tivi-coocaa-4k-70-inch-70y72-4-org.jpg" data-src="https://muasamtaikho.vn/uploads/product/1725942892_google-tivi-coocaa-4k-70-inch-70y72-4-org.jpg" class=" ls-is-cached lazyloaded" title="Tivi coocaa tái tạo hình ảnh chuẩn HDR10 &amp; HLG ấn tượng"></p>
+                        <p style="text-align:center"><span style="font-size:16px"><span style="font-family:Arial,Helvetica,sans-serif"><em>Hình ảnh được tối ưu bằng HDR10 và HLG</em></span></span></p>
+                        <p style="text-align:justify"><span style="font-size:16px"><span style="font-family:Arial,Helvetica,sans-serif">Thay vì chỉ hiển thị 8 bit màu thông thường, HDR10 sử dụng 10 bit, cho phép hiển thị dải màu sắc rộng hơn và chi tiết hơn, mang đến những khung hình sinh động và rực rỡ cho người xem.</span></span></p>
+                        <h3 style="text-align:justify"><br> <span style="font-size:20px"><span style="font-family:Arial,Helvetica,sans-serif">Tự động điều chỉnh chất lượng hình ảnh Picture Quality Tuning</span></span><br> &nbsp;</h3>
+                        <p style="text-align:justify"><span style="font-size:16px"><span style="font-family:Arial,Helvetica,sans-serif">Hơn 30 năm làm việc để tích lũy những công nghệ điều chỉnh hình ảnh chất lượng, Coocaa đã tổng hợp được kho dữ liệu 10GB hình ảnh, 10TB video cùng 3000 nội dung về phim ảnh có độ sắc nét cao. Đây chính là cơ sở để Coocaa nghiên cứu và cho ra đời công nghệ có khả năng điều chỉnh các thông số trên khung hình, tái tạo hình ảnh với chất lượng cao cấp một cách tự động ứng dụng trên tivi 70Y72.</span></span></p>
+                        <p style="text-align:center"><img alt="Tự động điều chỉnh chất lượng hình ảnh Picture Quality Tuning" src="https://muasamtaikho.vn/uploads/product/1725942892_google-tivi-coocaa-4k-70-inch-70y72-5-org.jpg" data-src="https://muasamtaikho.vn/uploads/product/1725942892_google-tivi-coocaa-4k-70-inch-70y72-5-org.jpg" class=" ls-is-cached lazyloaded" title="Tự động điều chỉnh chất lượng hình ảnh Picture Quality Tuning"></p>
+                        <p style="text-align:center"><span style="font-size:16px"><span style="font-family:Arial,Helvetica,sans-serif"><em>Điều chỉnh chất lượng hình ảnh tự động</em></span></span></p>
+                        <h3 style="text-align:justify"><br> <span style="font-size:20px"><span style="font-family:Arial,Helvetica,sans-serif">Filmmaker Mode cho trải nghiệm xem phim chuẩn điện ảnh</span></span><br> &nbsp;</h3>
+                        <p style="text-align:justify"><span style="font-size:16px"><span style="font-family:Arial,Helvetica,sans-serif">Filmmaker Mode - Chế độ Nhà làm phim là một trong những công nghệ hiện đại được Coocaa tích hợp trên tivi 70Y72 để cung cấp cho người dùng trải nghiệm xem chuẩn điện ảnh ngay tại nhà. Hoạt động bằng cách loại bỏ các hiệu ứng xử lý hậu kỳ, chế độ này sẽ hiển thị những cảnh phim đúng với những ý định mà đạo diễn muốn truyền tải đến cho khán giả.</span></span><br> &nbsp;</p>
+                        <p style="text-align:center"><img alt="Filmmaker Mode cho trải nghiệm xem phim chuẩn điện ảnh" src="https://muasamtaikho.vn/uploads/product/1725942892_google-tivi-coocaa-4k-70-inch-70y72-6-org.jpg" data-src="https://muasamtaikho.vn/uploads/product/1725942892_google-tivi-coocaa-4k-70-inch-70y72-6-org.jpg" class="lazyload" title="Filmmaker Mode cho trải nghiệm xem phim chuẩn điện ảnh"></p>
+                        <p style="text-align:center"><span style="font-size:16px"><span style="font-family:Arial,Helvetica,sans-serif"><em>Filmmaker Mode trên tivi Coocaa 70Y72</em></span></span></p>
+                        <h3 style="text-align:justify"><br> <span style="font-size:20px"><span style="font-family:Arial,Helvetica,sans-serif">Màn hình không đèn flash và ánh sáng xanh thấp</span></span><br> &nbsp;</h3>
+                        <p style="text-align:justify"><span style="font-size:16px"><span style="font-family:Arial,Helvetica,sans-serif"><strong>Tivi Coocaa 4K 70 Inch 70Y72 </strong>sở hữu màn hình chất lượng với các bóng đèn đặc biệt, hoạt động để làm giảm thiểu việc phát ra ánh sáng xanh có hại cho mắt trong dải tần 415nm - 455nm. Đặc điểm này giúp làm dịu mắt và giúp chúng ta thoải mái hơn khi xem tivi trong thời gian dài.</span></span><br> &nbsp;</p>
+                        <p style="text-align:center"><img alt="Màn hình không đèn flash và ánh sáng xanh thấp" src="https://muasamtaikho.vn/uploads/product/1725942892_google-tivi-coocaa-4k-70-inch-70y72-7-org.jpg" data-src="https://muasamtaikho.vn/uploads/product/1725942892_google-tivi-coocaa-4k-70-inch-70y72-7-org.jpg" class="lazyload" title="Màn hình không đèn flash và ánh sáng xanh thấp"></p>
+                        <p style="text-align:center"><span style="font-size:16px"><span style="font-family:Arial,Helvetica,sans-serif"><em>Chế độ ánh sáng xanh thấp</em></span></span></p>
+                        <p style="text-align:justify"><br> <span style="font-size:16px"><span style="font-family:Arial,Helvetica,sans-serif">Bên cạnh đó, bằng cách thay đổi chế độ mờ, tivi có khả năng làm giảm thiếu độ nhấp nháy màn hình và giúp người xem tránh được hiệu quả các tác hại từ đèn flash.</span></span><br> &nbsp;</p>
+                        <p style="text-align:center"><img alt="Màn hình không đèn flash và ánh sáng xanh thấp" src="https://muasamtaikho.vn/uploads/product/1725942892_google-tivi-coocaa-4k-70-inch-70y72-8-org.jpg" data-src="https://muasamtaikho.vn/uploads/product/1725942892_google-tivi-coocaa-4k-70-inch-70y72-8-org.jpg" class="lazyload" title="Màn hình không đèn flash và ánh sáng xanh thấp"></p>
+                        <p style="text-align:center"><span style="font-size:16px"><span style="font-family:Arial,Helvetica,sans-serif"><em>Hạn chế tình trạng nhấp nháy trên màn hình</em></span></span></p>
+                        <h3 style="text-align:justify"><br> <span style="font-size:20px"><span style="font-family:Arial,Helvetica,sans-serif">Đa dạng chế độ hiển thị giúp bảo vệ đôi mắt người xem tốt hơn</span></span><br> &nbsp;</h3>
+                        <p style="text-align:justify"><span style="font-size:16px"><span style="font-family:Arial,Helvetica,sans-serif">Bên cạnh màn hình ánh sáng xanh yếu và không đèn flash thì Tivi Coocaa 70Y72 cũng mang đến những cách tốt hơn nữa để bạn thưởng thức chương trình yêu thích mà vẫn bảo vệ được đôi mắt một cách tốt nhất, đó là nhờ các chế độ hiển thị khác nhau.</span></span></p>
+                        <p style="text-align:justify"><span style="font-size:16px"><span style="font-family:Arial,Helvetica,sans-serif">Việc lựa chọn Night Mode (chế độ ban đêm), Eye Protection Mode (chế độ bảo vệ mắt) và Auto Volume Control (chế độ điều khiển âm lượng tự động) theo từng nhu cầu sử dụng khác nhau sẽ mang đến cho người dùng những phương thức trải nghiệm tốt hơn, hiệu quả hơn trên tivi 70Y72.</span></span><br> &nbsp;</p>
+                        <h3 style="text-align:justify"><span style="font-size:20px"><span style="font-family:Arial,Helvetica,sans-serif">Công nghệ âm thanh DTS Studio Sound và Dolby Audio</span></span><br> &nbsp;</h3>
+                        <p style="text-align:justify"><span style="font-size:16px"><span style="font-family:Arial,Helvetica,sans-serif">Tivi Coocaa 4K 70 Inch 70Y72 sở hữu hệ thống loa chất lượng với tổng công suất 20W kết hợp cùng những công nghệ trình diễn âm thanh tiên tiến hiện nay, tiêu biểu là DTS Studio Sound và Dolby Audio.</span></span><br> &nbsp;</p>
+                        <p style="text-align:center"><img alt="Đa dạng chế độ hiển thị giúp bảo vệ đôi mắt người xem tốt hơn" src="https://muasamtaikho.vn/uploads/product/1725942892_google-tivi-coocaa-4k-70-inch-70y72-9-org.jpg" data-src="https://muasamtaikho.vn/uploads/product/1725942892_google-tivi-coocaa-4k-70-inch-70y72-9-org.jpg" class="lazyload" title="Đa dạng chế độ hiển thị giúp bảo vệ đôi mắt người xem tốt hơn"></p>
+                        <p style="text-align:center"><span style="font-size:16px"><span style="font-family:Arial,Helvetica,sans-serif"><em>Tái tạo âm thanh vòm chất lượng</em></span></span></p>
+                        <p style="text-align:justify"><span style="font-size:16px"><span style="font-family:Arial,Helvetica,sans-serif">Với khả năng nâng cấp chất âm thông thường thành âm thanh vòm ảo, sản phẩm sẽ tái tạo một không gian âm nhạc đẳng cấp ngay tại phòng khách để bạn trải nghiệm những bữa tiệc âm thanh cao cấp đúng chuẩn.</span></span></p>
+                        <h3 style="text-align:justify"><br> <span style="font-size:20px"><span style="font-family:Arial,Helvetica,sans-serif">Hệ điều hành Google TV thân thiện và kho giải trí khổng lồ</span></span><br> &nbsp;</h3>
+                        <p style="text-align:justify"><span style="font-size:16px"><span style="font-family:Arial,Helvetica,sans-serif">Google Tivi Coocaa 4K 70 Inch 70Y72 cho phép bạn trải nghiệm kho tài nguyên khổng lồ từ Google với hơn 700.000 tập phim, chương trình truyền hình, bài hát,... Tivi cũng có thể duyệt nội dung một cách nhanh chóng để trình phát cho người xem.</span></span></p>
+                        <p style="text-align:center"><img alt="Hệ điều hành Google TV thân thiện và kho giải trí khổng lồ" src="https://muasamtaikho.vn/uploads/product/1725942892_google-tivi-coocaa-4k-70-inch-70y72-10-org.jpg" data-src="https://muasamtaikho.vn/uploads/product/1725942892_google-tivi-coocaa-4k-70-inch-70y72-10-org.jpg" class="lazyload" title="Hệ điều hành Google TV thân thiện và kho giải trí khổng lồ"></p>
+                        <p style="text-align:center"><span style="font-size:16px"><span style="font-family:Arial,Helvetica,sans-serif"><em>Tivi Coocaa chạy hệ điều hành Google TV</em></span></span></p>
+                        <p style="text-align:justify"><span style="font-size:16px"><span style="font-family:Arial,Helvetica,sans-serif">Bên cạnh đó, với giao diện trực quan, thân thiện và dễ sử dụng của hệ điều hành Google TV, chúng ta cũng có thể tìm được những chương trình muốn xem nhanh hơn và nhận về những đề xuất được cá nhân hóa.</span></span></p>
+                        <h3 style="text-align:justify"><br> <span style="font-size:20px"><span style="font-family:Arial,Helvetica,sans-serif">Tìm kiếm bằng giọng nói với Google Assistant</span></span><br> &nbsp;</h3>
+                        <p style="text-align:justify"><span style="font-size:16px"><span style="font-family:Arial,Helvetica,sans-serif"><strong>Tivi Coocaa 4K 70 Inch 70Y72</strong> đi kèm chiếc remote với thiết kế đẹp mắt, nhỏ gọn cùng hệ thống nút chức năng tiện lợi được tích hợp một cách logic để người dùng điều khiển tivi dễ dàng. Ngoài ra, Coocaa còn trang bị cho 70Y72 tính năng điều khiển bằng giọng nói cực kỳ hiện đại thông qua sự hỗ trợ của<strong> Google Assistant</strong>.</span></span><br> &nbsp;</p>
+                        <p style="text-align:center"><img alt="Tìm kiếm bằng giọng nói với Google Assistant" src="https://muasamtaikho.vn/uploads/product/1725942892_google-tivi-coocaa-4k-70-inch-70y72-11-org.jpg" data-src="https://muasamtaikho.vn/uploads/product/1725942892_google-tivi-coocaa-4k-70-inch-70y72-11-org.jpg" class="lazyload" title="Tìm kiếm bằng giọng nói với Google Assistant"></p>
+                        <p style="text-align:center"><span style="font-size:16px"><span style="font-family:Arial,Helvetica,sans-serif"><em>Tính năng tìm kiếm bằng giọng nói</em></span></span></p>
+                        <p style="text-align:justify"><span style="font-size:16px"><span style="font-family:Arial,Helvetica,sans-serif">Chỉ cần bắt đầu bằng cụm “Hey Google”, trợ lý Google sẽ sẵn sàng để nhận mọi lệnh điều khiển, tìm kiếm chương trình giải trí,... bằng giọng nói của bạn.</span></span></p>
+                        <p style="text-align:justify"><span style="font-size:16px"><span style="font-family:Arial,Helvetica,sans-serif">Với những đặc điểm trên, Google Tivi Coocaa 4K 70 Inch 70Y72 hứa hẹn sẽ mang đến làn gió mới cho phong cách nội thất. Đồng thời, tivi cũng chính là chiếc chìa khóa mang đến những khoảnh khắc giải trí chất lượng vượt trội cùng trải nghiệm sử dụng tiện ích cho cuộc sống hiện đại của mỗi người dùng. Bên cạnh đó, các bạn cũng có thể tham khảo thêm mẫu Smart Tivi Coocaa 4K 55 Inch 55S3U Pro với mức giá vô cùng hấp dẫn tại chuỗi hệ thống Siêu thị Điện Máy Nội Thất Chợ Lớn trên toàn quốc.</span></span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="show-more"> <span>Đọc thêm</span> </div>
+            <div class="related view-more-related viewer-product"></div>
+            <div class="col-md-8 clearfix" id="comment_pro">
+                <div id="article-comment-213"> </div>
+            </div>
+            <!-- end đánh giá --> 
+            <div class="related view-more-related">
+                <p class="related__ttl">Xem thêm sản phẩm khác</p>
+                <div class="listproduct slider-promo owl-carousel owl-loaded owl-drag">
+                    <div class="owl-stage-outer">
+                        <div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all; width: 2560px;">
+                            <div class="owl-item active" style="width: 246px; margin-right: 10px;">
+                                <div class="item">
+                                    <a href="https://muasamtaikho.vn/smart-tivi-oled-lg-55a3psa-4k-55-inch" class=" main-contain">
+                                        <div class="item-label"> </div>
+                                        <div class="item-img"> <img data-src="https://muasamtaikho.vn/uploads/product/1716364033_1.jpg" class=" lazyloaded" alt="Smart Tivi OLED LG 55A3PSA 4K 55 Inch" width="210" height="210" title="Smart Tivi OLED LG 55A3PSA 4K 55 Inch" src="https://muasamtaikho.vn/uploads/product/1716364033_1.jpg"> </div>
+                                        <h3>Smart Tivi OLED LG 55A3PSA 4K 55 Inch</h3>
+                                        <strong class="price">0₫</strong> 
+                                    </a>
+                                    <!-- <a href="javascript:void(0)" class="compare-show" onclick="compareShow(1)"> <i class="fa-solid fa-plus"></i> so sánh </a> --> 
+                                </div>
+                            </div>
+                            <div class="owl-item active" style="width: 246px; margin-right: 10px;">
+                                <div class="item">
+                                    <a href="https://muasamtaikho.vn/smart-tivi-coocaa-43-inch-43s3u-full-hd" class=" main-contain">
+                                        <div class="item-label"> </div>
+                                        <div class="item-img"> <img data-src="https://muasamtaikho.vn/uploads/product/1729220503_smart-tivi-cooc_main_48_1020.png.webp" class=" ls-is-cached lazyloaded" alt="Smart tivi Coocaa 43 inch  43S3U Full HD" width="210" height="210" title="Smart tivi Coocaa 43 inch  43S3U Full HD" src="https://muasamtaikho.vn/uploads/product/1729220503_smart-tivi-cooc_main_48_1020.png.webp"> </div>
+                                        <h3>Smart tivi Coocaa 43 inch  43S3U Full HD</h3>
+                                        <strong class="price">3.590.000₫</strong> 
+                                    </a>
+                                    <!-- <a href="javascript:void(0)" class="compare-show" onclick="compareShow(2)"> <i class="fa-solid fa-plus"></i> so sánh </a> --> 
+                                </div>
+                            </div>
+                            <div class="owl-item" style="width: 246px; margin-right: 10px;">
+                                <div class="item">
+                                    <a href="https://muasamtaikho.vn/smart-tivi-samsung-4k-uhd-43-inch-ua43au7002" class=" main-contain">
+                                        <div class="item-label"> </div>
+                                        <div class="item-img"> <img data-src="https://muasamtaikho.vn/uploads/product/1716364936_1.jpg" class=" lazyloaded" alt="Smart tivi Samsung UA43AU7002 43 inch 4K" width="210" height="210" title="Smart tivi Samsung UA43AU7002 43 inch 4K" src="https://muasamtaikho.vn/uploads/product/1716364936_1.jpg"> </div>
+                                        <h3>Smart tivi Samsung UA43AU7002 43 inch 4K</h3>
+                                        <strong class="price">0₫</strong> 
+                                    </a>
+                                    <!-- <a href="javascript:void(0)" class="compare-show" onclick="compareShow(3)"> <i class="fa-solid fa-plus"></i> so sánh </a> --> 
+                                </div>
+                            </div>
+                            <div class="owl-item" style="width: 246px; margin-right: 10px;">
+                                <div class="item">
+                                    <a href="https://muasamtaikho.vn/smart-tivi-samsung-4k-43-inch-ua43bu8000" class=" main-contain">
+                                        <div class="item-label"> </div>
+                                        <div class="item-img"> <img data-src="https://muasamtaikho.vn/uploads/product/1716365214_1.jpg" class=" ls-is-cached lazyloaded" alt="Smart Tivi Samsung UA43BU8000 43 Inch 4K" width="210" height="210" title="Smart Tivi Samsung UA43BU8000 43 Inch 4K" src="https://muasamtaikho.vn/uploads/product/1716365214_1.jpg"> </div>
+                                        <h3>Smart Tivi Samsung UA43BU8000 43 Inch 4K</h3>
+                                        <strong class="price">0₫</strong> 
+                                    </a>
+                                    <!-- <a href="javascript:void(0)" class="compare-show" onclick="compareShow(4)"> <i class="fa-solid fa-plus"></i> so sánh </a> --> 
+                                </div>
+                            </div>
+                            <div class="owl-item" style="width: 246px; margin-right: 10px;">
+                                <div class="item">
+                                    <a href="https://muasamtaikho.vn/smart-tivi-lg-75ur7550psc-4k-75-inch" class=" main-contain">
+                                        <div class="item-label"> </div>
+                                        <div class="item-img"> <img data-src="https://muasamtaikho.vn/uploads/product/1716365773_1.jpg" class="lazyload" alt="Smart tivi LG 75UR7550PSC 4K 75 inch" width="210" height="210" title="Smart tivi LG 75UR7550PSC 4K 75 inch"> </div>
+                                        <h3>Smart tivi LG 75UR7550PSC 4K 75 inch</h3>
+                                        <strong class="price">16.390.000₫</strong> 
+                                    </a>
+                                    <!-- <a href="javascript:void(0)" class="compare-show" onclick="compareShow(5)"> <i class="fa-solid fa-plus"></i> so sánh </a> --> 
+                                </div>
+                            </div>
+                            <div class="owl-item" style="width: 246px; margin-right: 10px;">
+                                <div class="item">
+                                    <a href="https://muasamtaikho.vn/smart-tivi-samsung-qled-4k-43-inch-qa43q60b" class=" main-contain">
+                                        <div class="item-label"> </div>
+                                        <div class="item-img"> <img data-src="https://muasamtaikho.vn/uploads/product/1716366160_1.jpg" class="lazyload" alt="Smart Tivi QLED Samsung QA43Q60B 43 inch 4K" width="210" height="210" title="Smart Tivi QLED Samsung QA43Q60B 43 inch 4K"> </div>
+                                        <h3>Smart Tivi QLED Samsung QA43Q60B 43 inch 4K</h3>
+                                        <strong class="price">0₫</strong> 
+                                    </a>
+                                    <!-- <a href="javascript:void(0)" class="compare-show" onclick="compareShow(6)"> <i class="fa-solid fa-plus"></i> so sánh </a> --> 
+                                </div>
+                            </div>
+                            <div class="owl-item" style="width: 246px; margin-right: 10px;">
+                                <div class="item">
+                                    <a href="https://muasamtaikho.vn/smart-tivi-qned-lg-65qned80sra-4k-65-inch" class=" main-contain">
+                                        <div class="item-label"> </div>
+                                        <div class="item-img"> <img data-src="https://muasamtaikho.vn/uploads/product/smart-tivi-lg-q_multi_0_501_1020.png.webp" class="lazyload" alt="Smart Tivi QNED LG 65QNED80SRA 4K 65 inch" width="210" height="210" title="Smart Tivi QNED LG 65QNED80SRA 4K 65 inch"> </div>
+                                        <h3>Smart Tivi QNED LG 65QNED80SRA 4K 65 inch</h3>
+                                        <strong class="price">16.090.000₫</strong> 
+                                    </a>
+                                    <!-- <a href="javascript:void(0)" class="compare-show" onclick="compareShow(7)"> <i class="fa-solid fa-plus"></i> so sánh </a> --> 
+                                </div>
+                            </div>
+                            <div class="owl-item" style="width: 246px; margin-right: 10px;">
+                                <div class="item">
+                                    <a href="https://muasamtaikho.vn/smart-tivi-samsung-4k-uhd-55-inch-ua55au7002" class=" main-contain">
+                                        <div class="item-label"> </div>
+                                        <div class="item-img"> <img data-src="https://muasamtaikho.vn/uploads/product/1716367363_1.jpg" class="lazyload" alt="Smart Tivi Samsung UA55AU7002 55 inch 4K" width="210" height="210" title="Smart Tivi Samsung UA55AU7002 55 inch 4K"> </div>
+                                        <h3>Smart Tivi Samsung UA55AU7002 55 inch 4K</h3>
+                                        <strong class="price">0₫</strong> 
+                                    </a>
+                                    <!-- <a href="javascript:void(0)" class="compare-show" onclick="compareShow(8)"> <i class="fa-solid fa-plus"></i> so sánh </a> --> 
+                                </div>
+                            </div>
+                            <div class="owl-item" style="width: 246px; margin-right: 10px;">
+                                <div class="item">
+                                    <a href="https://muasamtaikho.vn/smart-tivi-samsung-4k-55-inch-ua55bu8000" class=" main-contain">
+                                        <div class="item-label"> </div>
+                                        <div class="item-img"> <img data-src="https://muasamtaikho.vn/uploads/product/1716367586_1.jpg" class="lazyload" alt="Smart Tivi Samsung UA55BU8000 55 inch 4K" width="210" height="210" title="Smart Tivi Samsung UA55BU8000 55 inch 4K"> </div>
+                                        <h3>Smart Tivi Samsung UA55BU8000 55 inch 4K</h3>
+                                        <strong class="price">12.190.000₫</strong> 
+                                    </a>
+                                    <!-- <a href="javascript:void(0)" class="compare-show" onclick="compareShow(9)"> <i class="fa-solid fa-plus"></i> so sánh </a> --> 
+                                </div>
+                            </div>
+                            <div class="owl-item" style="width: 246px; margin-right: 10px;">
+                                <div class="item">
+                                    <a href="https://muasamtaikho.vn/smart-tivi-samsung-qled-4k-55-inch-qa55q60b" class=" main-contain">
+                                        <div class="item-label"> </div>
+                                        <div class="item-img"> <img data-src="https://muasamtaikho.vn/uploads/product/1716367869_1.jpg" class="lazyload" alt="Smart Tivi QLED Samsung QA55Q60B 55 inch 4K" width="210" height="210" title="Smart Tivi QLED Samsung QA55Q60B 55 inch 4K"> </div>
+                                        <h3>Smart Tivi QLED Samsung QA55Q60B 55 inch 4K</h3>
+                                        <strong class="price">0₫</strong> 
+                                    </a>
+                                    <!-- <a href="javascript:void(0)" class="compare-show" onclick="compareShow(10)"> <i class="fa-solid fa-plus"></i> so sánh </a> --> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="owl-nav disabled">
+                        <div class="owl-prev">prev</div>
+                        <div class="owl-next">next</div>
+                    </div>
+                    <div class="owl-dots">
+                        <div class="owl-dot active"><span></span></div>
+                        <div class="owl-dot"><span></span></div>
+                        <div class="owl-dot"><span></span></div>
+                        <div class="owl-dot"><span></span></div>
+                        <div class="owl-dot"><span></span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box_right desktop">
+            <div class="col-12 pdetail-des">
+                <div class="clearfix"></div>
+                <div>
+                    <div class="pdetail-info">
+                        <!-- <p>Model: <b>70Y72</b></p> --> <!-- <p>Bảo hành: <b>24 Tháng, 1 đổi 1 trong vòng 1 tháng</b></p> --> 
+                    </div>
+                    <div class="scroll-box">
+                        <!-- <div class="boxbanner-32"> <div class="banner-list"> <div class="item banner-item banner-item-1"> <a target="#" data-id="1022"> <picture> <img src="https://thegioidohoacom.s3.ap-southeast-1.amazonaws.com/wp-content/uploads/2019/01/10040348/X4iNCOp-1024x454.jpg" alt="Tết Lớn Khuyến Mại Lớn" width="&quot;640&quot;" height="&quot;150&quot;"> </picture> </a> </div> </div> </div> --> 
+                        <style type="text/css"> .crazy-deal-details-right {
+                            position: relative;
+                            margin-left: 113px;
+                            height: 100%;
+                            display: flex;
+                            align-items: center;
+                            flex-direction: row;
+                            justify-content: space-between;
+                            }
+                            .crazy-deal-details-procressbar{
+                            width: 90px;
+                            height: 8px;
+                            background: #ffd1c2;
+                            border-radius: 4px;
+                            display: inline-block;
+                            margin-right: 6px;
+                            margin-left: 6px;
+                            }
+                            .crazy-deal-details-process{
+                            font-weight: bold;
+                            margin-right: 10px;
+                            }
+                            .crazy-deal-details.pc {
+                            margin: 8px;
+                            height: 29px;
+                            overflow: hidden;
+                            background-position: 0 0;
+                            background-repeat: no-repeat;
+                            background-size: 100% 100%;
+                            }    
+                            .crazy-deal-details-countdown{
+                            font-weight: bold;
+                            }
+                            .buy-button-hotline {
+                            text-align: center;
+                            margin-top: 1em;
+                            }
+                            .show-litmits{
+                            color: #FF1D25;
+                            } 
+                        </style>
+                        <div class="pdetail-price">
+                            <!-- ngừng kinh doanh thì ẩn giá --> <b>GIÁ TẠI KHO</b> 
+                            <div class="pdetail-price-box show-price-desktop">
+                                <h3> 8.990.000₫ </h3>
+                            </div>
+                        </div>
+                        <br> 
+                        <div class="add-service">
+                            <div class="add-service"> <input type="checkbox" id="input-price" name="price-add-1" class="price-add-1" value="150000"> <label for="age1">Giá lắp đặt :150.000₫ </label> </div>
+                            <br> <input type="checkbox" id="inputs-price" name="price-add-2" class="price-add-2" value="350000"> <label for="age1">Giá vận chuyển : 350.000₫ </label> 
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="pdetail-status">
+                            <div class="pdetail-add-to-cart add-to-cart">
+                                <form class="inline" style="width:100%">
+                                    <input type="hidden" name="productId" value="19439"> <!-- <div class="product-quantity"> <input type="text" class="quantity-field" readonly="readonly" name="qty" value="1"> </div> --> <button type="button" class="btn btn-lg btn-add-cart btn-add-cart redirectCart" onclick="addToCart(38)">MUA NGAY <br>(Giao hàng tận nơi - Giá tốt)</button> 
+                                </form>
+                                <button type="button" class="btn btn-lg btn-add-cart btn-add-cart redirectCart cartSP" onclick="addToSuport(38)">GỌI LẠI CHO TÔI <br>(Tư vấn tận tình, chu đáo)</button> <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"> Launch demo modal </button> --> 
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="installment-purchase pdetail-installment specifications-img"> <a class="but-tra-gop add-cart-button" href="javascript:void(0)" onclick="addCartFast(38)" admicro-data-event="101725" admicro-data-auto="1" admicro-data-order="false"> <strong>THÊM VÀO </strong> <br> <strong>GIỎ HÀNG</strong> </a> <a target="_blank" class="but-tra-gop installments-but" href="https://muasamtaikho.vn/google-tivi-coocaa-70y72-70-inch-4k?show=tra-gop" admicro-data-event="101725" admicro-data-auto="1" admicro-data-order="false"> <strong>TRẢ GÓP QUA THẺ</strong> <br> (Visa, Master, JCB) </a> <br><br> </div>
+                        </div>
+                        <div class="clearfix"></div>
+                        <!-- <button type="button" class="btn btn-lg" data-toggle="modal" data-target="#specifications">Xem chi tiết thông số kỹ thuật</button> --> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="border7"></div>
+        <div class="clearfix"></div>
+        <div class="box_right">
+            <div class="pdp-box">
+                <div class="nk-title">
+                    <h2><b>Sản phẩm cùng tầm giá</b></h2>
+                </div>
+                <aside class="post-sidebar-list ">
+                    <article class="post-sidebar-item">
+                        <a href="https://muasamtaikho.vn/google-tivi-tcl-65p638-4k-65-inch">
+                            <span class="post-sidebar-img"> <img data-lazyloaded="1" src="https://muasamtaikho.vn/uploads/product/google-tivi-tcl_main_197_1020.png.webp" data-src="https://muasamtaikho.vn/uploads/product/google-tivi-tcl_main_197_1020.png.webp" class=" ls-is-cached lazyloaded"> </span> 
+                            <h4 class="post-sidebar-title">Google Tivi TCL 65P638 4K 65 inch</h4>
+                            <strong class="price"> 9.390.000đ </strong> 
+                        </a>
+                        <div class="item-rating">
+                            <p> <i class="icon-star"></i> <i class="icon-star"></i> <i class="icon-star"></i> <i class="icon-star"></i> <i class="icon-star"></i> </p>
+                        </div>
+                    </article>
+                </aside>
+                <aside class="post-sidebar-list ">
+                    <article class="post-sidebar-item">
+                        <a href="https://muasamtaikho.vn/smart-tivi-lg-55uq7050psa-4k-55-inch">
+                            <span class="post-sidebar-img"> <img data-lazyloaded="1" src="https://muasamtaikho.vn/uploads/product/1716973490_1.jpg" data-src="https://muasamtaikho.vn/uploads/product/1716973490_1.jpg" class=" ls-is-cached lazyloaded"> </span> 
+                            <h4 class="post-sidebar-title">Smart Tivi LG 55UQ7050PSA 4K 55 inch</h4>
+                            <strong class="price"> 9.090.000đ </strong> 
+                        </a>
+                        <div class="item-rating">
+                            <p> <i class="icon-star"></i> <i class="icon-star"></i> <i class="icon-star"></i> <i class="icon-star"></i> <i class="icon-star"></i> </p>
+                        </div>
+                    </article>
+                </aside>
+                <aside class="post-sidebar-list ">
+                    <article class="post-sidebar-item">
+                        <a href="https://muasamtaikho.vn/smart-tivi-samsung-ua43du8000-4k-43-inch">
+                            <span class="post-sidebar-img"> <img data-lazyloaded="1" src="https://muasamtaikho.vn/uploads/product/1727144099_DU8000.jpg" data-src="https://muasamtaikho.vn/uploads/product/1727144099_DU8000.jpg" class=" ls-is-cached lazyloaded"> </span> 
+                            <h4 class="post-sidebar-title">Smart Tivi Samsung UA43DU8000 4K 43 Inch</h4>
+                            <strong class="price"> 8.990.000đ </strong> 
+                        </a>
+                        <div class="item-rating">
+                            <p> <i class="icon-star"></i> <i class="icon-star"></i> <i class="icon-star"></i> <i class="icon-star"></i> <i class="icon-star"></i> </p>
+                        </div>
+                    </article>
+                </aside>
+            </div>
+        </div>
+    </div>
+    <div class="border7"></div>
+    <div class="watched"></div>
+    <div class="errorcompare" style="display:none;"></div>
+    <!--#endregion--> <!--#region BreadcrumbList--> <!--#endregion--> <!--#region Organization--> <!--#endregion--> 
+</section>
 
-    
 </body>
 </html>
