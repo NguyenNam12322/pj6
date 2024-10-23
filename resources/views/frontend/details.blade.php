@@ -2285,554 +2285,92 @@
 @push('style')
 <link rel="stylesheet" type="text/css" href="{{ asset('css/details.css') }}">
 @endpush
-@push('script')
 
-@if($browserIsMobileSafari)
-<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.7/js/jquery.fancybox.min.js"></script>
-@else
-<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
-@endif
+@if(empty($_GET['test']))
 
+    @push('script')
 
-<script>
-
-    function formatMoney(number, decPlaces, decSep, thouSep) {
-        decPlaces = isNaN(decPlaces = Math.abs(decPlaces)) ? 2 : decPlaces,
-        decSep = typeof decSep === "undefined" ? "." : decSep;
-        thouSep = typeof thouSep === "undefined" ? "," : thouSep;
-        var sign = number < 0 ? "-" : "";
-        var i = String(parseInt(number = Math.abs(Number(number) || 0).toFixed(decPlaces)));
-        var j = (j = i.length) > 3 ? j % 3 : 0;
-
-        return sign +
-            (j ? i.substr(0, j) + thouSep : "") +
-            i.substr(j).replace(/(\decSep{3})(?=\decSep)/g, "$1" + thouSep) +
-            (decPlaces ? decSep + Math.abs(number - i).toFixed(decPlaces).slice(2) : "");
-    }
-
-
-    $('.option-price-mobile').change(function(){
-
-        value = $('#option-price_change_mobile').val();
-
-        ar_val = [];
-
-        ar_val[1] = 0;
-
-        ar_val[2] = 100000;
-
-        ar_val[3] = 150000;
-
-        ar_val[4] = 250000;
-     
-        const price = {{  $data->Price }};
-
-        new_price   =  parseInt(price) + ar_val[value];
-
-        price_format = new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(new_price);
-
-        $('.show-price-mobile h3').text(price_format.replace('đ', '').trim());
-
-
-
-    });
-
-
-    $('.option-price').change(function(){
-
-        value = $('#option-price_change').val();
-
-        ar_val = [];
-
-        ar_val[1] = 0;
-
-        ar_val[2] = 100000;
-
-        ar_val[3] = 150000;
-
-        ar_val[4] = 250000;
-     
-        const price = {{  $data->Price }};
-
-        new_price   =  parseInt(price) + ar_val[value];
-
-        price_format = new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(new_price);
-
-      
-        $('.show-price-desktop h3').text(price_format.replace('đ', '').trim());
-
-    });
-
-
-
-    let ar_product = [];
-
-    function compare_link() {
-
-        $.ajaxSetup({
-            headers: {
-                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-            }
-        });
-
-        $.ajax({
-            type: 'POST',
-            url: "{{ route('check-unique-cate') }}",
-            data: {
-                ar_product_id: JSON.stringify(ar_product),
-                  
-            },
-            success: function(result){
-                if(result == 0){
-
-                    alert('có sản phẩm không cùng nhóm, không thể so sánh');
-                }
-                else{
-
-                   
-                    var link = '{{ route("so-sanh") }}?list='+ar_product+'&cate='+result;
-        
-                    location.href = link;
-                }
-               
-            }
-        });         
-    }
-
-    $('.scroll-content').click(function(){
-
-        $('html, body').animate({
-            scrollTop: $("#contents-scroll").offset().top
-        }, 1000);
-    })
-
-    function compareShow(id) {
-       
-        if($(this).find('.fa-solid').hasClass('fa-check')){
-
-            $(this).find('.fa-solid').removeClass('fa-check');
-
-            $(this).find('.fa-solid').addClass('fa-plus');
-
-            $(this).css('color','#59A0DA');
-
-            index = ar_product.indexOf(id);
-
-            if (index !== -1) {
-                ar_product.splice(index, 1);
-            }
-        }
-        else{
-            $(this).css('color','red');
-
-            $(this).find('.fa-solid').removeClass('fa-plus');
-
-            $(this).find('.fa-solid').addClass('fa-check');
-
-            if(ar_product.length<3){
-
-                ar_product.push(id);
-            } 
-            else{
-                alert('không thể thêm sản phẩm nữa');
-            }    
-        }
-
-       
-        $.ajaxSetup({
-            headers: {
-                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-            }
-        });
-
-        $.ajax({
-            type: 'POST',
-            url: "{{ route('compare-show') }}",
-            data: {
-                ar_product_id: JSON.stringify(ar_product),
-                   
-            },
-            success: function(result){
-               $('#js-compare-holder').html('');
-               $('#js-compare-holder').append(result);
-            }
-        });         
-    
-        $('.global-compare-group').show();
-
-    }
-
-    
-
-    @if(!empty($gift) && $gifts->type ==1)
-    $("input:checkbox").on('click', function() {
-        // in the handler, 'this' refers to the box clicked on
-        var $box = $(this);
-        if ($box.is(":checked")) {
-            // the name of the box is retrieved using the .attr() method
-            // as it is assumed and expected to be immutable
-            var group = "input:checkbox[name='" + $box.attr("name") + "']";
-            // the checked state of the group/box on the other hand will change
-            // and the current value is retrieved using .prop() method
-            $(group).prop("checked", false);
-            $box.prop("checked", true);
-          } else {
-            $box.prop("checked", false);
-          }
-    });
-    @endif
-    var gift_check = ''
-    @if(!empty($gift) && $data->Quantily>0 && $deal_check_add==false)  
-    gift_check  = '{{ $gift[0]->name }}';
-    $('#gift_checked').val(gift_check);
-    $('input[type="checkbox"]').click(function(){
-            if($(this).is(":checked")){
-                gift_check = $(this).val();
-               
-            }
-
-            $('#gift_checked').val(gift_check);
-           
-        });
+    @if($browserIsMobileSafari)
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.7/js/jquery.fancybox.min.js"></script>
+    @else
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
     @endif
 
-    $( document ).ready(function() {
-    
-        $('[data-fancybox]').fancybox({
-            clickContent: 'close',
-             buttons: ['close']
-        });
-       
-        $('.item-ss').bind('click',function(){
-            $('.listcompare-click').show();
-        })    
-    
-        $('.star-click').bind('click',function(){
-            id_star = $(this).attr('id');    
-            number_star = id_star.substr(5, 6);
-            $('#star_number').val(number_star);
-            // console.log(number_star);
-           
-        });
-    
-        $("#rate-form").validate({
-            rules: {
-                name: "required",
-                content: "required",
-                email: {
-                    required: true,
-                    email: true
-                },
-               
-            },
-             messages: {
-                name: "vui lòng nhập tên",
-                content: "vui lòng nhập đánh giá",
-               
-                email: {
-                    required: "vui lòng nhập địa chỉ email",
-                    email: "vui lòng nhập đúng định dạng email"
-                },
-              
-            },
-            submitHandler: function(form) {
-                
-              postComment();
-    
-            }
-           
-        }); 
-    
-    });  
-    
-    
-    function postComment() {
-        $.ajaxSetup({
-            headers: {
-                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-            }
-        });
-    
-        $.ajax({
-            type: 'POST',
-            url: "{{ route('rate-form') }}",
-            data: {
-                product_id: {{ $data->id }},
-                email:$('#email0').val(),
-                name:$('#name0').val(),
-                content:$('#content0').val(),
-                star:$('#star_number').val(),
-                   
-            },
-            success: function(result){
-    
-                $('.comments-rate').text('Đã gửi bình luận');
-                $('.comments-rate').val('Đã gửi bình luận');
-    
-                $('#email0').val('');
-                $('#name0').val('');
-                $('#content0').val('');
-              
-              alert(result);
-            }
-        });
-    
-    }  
-    
-    
-    // chức năng sản phẩm đã xem
-    
-    
-    function toUniqueArray(a){
-        var newArr = [];
-        for (var i = 0; i < a.length; i++) {
-            if (newArr.indexOf(a[i]) === -1) {
-                newArr.push(a[i]);
-            }
+
+    <script>
+
+        function formatMoney(number, decPlaces, decSep, thouSep) {
+            decPlaces = isNaN(decPlaces = Math.abs(decPlaces)) ? 2 : decPlaces,
+            decSep = typeof decSep === "undefined" ? "." : decSep;
+            thouSep = typeof thouSep === "undefined" ? "," : thouSep;
+            var sign = number < 0 ? "-" : "";
+            var i = String(parseInt(number = Math.abs(Number(number) || 0).toFixed(decPlaces)));
+            var j = (j = i.length) > 3 ? j % 3 : 0;
+
+            return sign +
+                (j ? i.substr(0, j) + thouSep : "") +
+                i.substr(j).replace(/(\decSep{3})(?=\decSep)/g, "$1" + thouSep) +
+                (decPlaces ? decSep + Math.abs(number - i).toFixed(decPlaces).slice(2) : "");
         }
-      return newArr;
-    }
-    
-    product_id_item_viewer = [];
-    
-    const item_local_store =  JSON.parse(localStorage.getItem('viewed_product'));
-    
-    if(item_local_store !=null){
-    
-        product_id_item_viewer = item_local_store;
-    }
-    
-    product_id_item_viewer.push('{{ $data->id }}');
-    
-    product_id_item_viewer = toUniqueArray(product_id_item_viewer);
-
-     product_id_item_viewer.slice(0, 6);
-
-    
-    localStorage.setItem('viewed_product', JSON.stringify(product_id_item_viewer));
-    
-    view_product_id = localStorage.getItem('viewed_product');
-
-    if(view_product_id.length>=30){
-
-         localStorage.clear();
-
-    }
-
-    button_buy_height = $('.scroll-box').offset().top;
-    view_more_height  = ($('.view-more-related').offset().top)+1600;
- 
-                
-    $(".show-more span").bind("click", function(){
-        $('.content').css({'height':'auto', 'overflow':'auto' });
-        $(this).hide();
-        view_more_height  = $('.view-more-related').offset().top-100;
-    });
-    
-    // $(function(){
-    //     $(window).scroll(function(){
-    //         const scroll_result = $('.total-imgslider').offset().top;
-    //         const scroll_browser = $(this).scrollTop();
-    
-    //         if(scroll_browser>= scroll_result &&scroll_browser <= view_more_height){
-    
-    //             $(".prod-info").show();
-                
-    //         }
-    //         else{
-    //             $(".prod-info").hide();
-    //         }
-    
-    //     });
-    // });
-    
-</script>
-<script>
-
-    price_add_address = 0;
-   
-    $('.bar-top-left').hide();
-
-    $("img").each(function() {
-    
-        $(this).attr("data-src",$(this).attr("src"));
-
-        $(this).addClass('lazyload');
-        
-        
-    });
 
 
-    // copy image to clipbroad
+        $('.option-price-mobile').change(function(){
 
-    const copyImage = (imageSrc) => {
-        const image = new Image();
-        image.src = imageSrc;
-        const canvas = document.createElement('canvas');
-        canvas.width = image.width;
-        canvas.height = image.height;
-        canvas.getContext('2d').drawImage(image, 0, 0);
-        const dataURI = canvas.toDataURL('image/png').replace('image/png', 'image/octet-stream');
-        navigator.clipboard.writeText(dataURI).then(() => {
-            alert('Image copied to clipboard successfully.');
-        }, () => {
-            alert('Failed to copy image to clipboard.');
-      });
-    }    
+            value = $('#option-price_change_mobile').val();
+
+            ar_val = [];
+
+            ar_val[1] = 0;
+
+            ar_val[2] = 100000;
+
+            ar_val[3] = 150000;
+
+            ar_val[4] = 250000;
+         
+            const price = {{  $data->Price }};
+
+            new_price   =  parseInt(price) + ar_val[value];
+
+            price_format = new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(new_price);
+
+            $('.show-price-mobile h3').text(price_format.replace('đ', '').trim());
 
 
 
-    $.ajaxSetup({
-        headers: {
-            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-        }
-    });
-
-    // $.ajax({
-    //     type: 'POST',
-    //     url: "{{ route('show-viewed-product') }}",
-    //     data: {
-    //         product_id: view_product_id
-               
-    //     },
-    //     success: function(result){
-    //        // numberCart = result.find($("#number-product-cart").text());
-    //        $('.viewer-product').append(result);
-           
-    //     }
-    // });  
-
-
-
-    function addToSuport() {
-          $('#modal-suport').modal('show'); 
-      }  
-
-
-    function addToCart(id) {
-    
-        $.ajaxSetup({
-            headers: {
-                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-            }
         });
 
-        $.ajax({
-            type: 'POST',
-            url: "{{ route('cart') }}",
-            data: {
-                product_id: id,
-                gift_check:$('#gift_checked').val(),
-                price_new : arval_price
-                   
-            },
-            beforeSend: function() {
-               
-                $('.loader').show();
 
-            },
-            success: function(result){
+        $('.option-price').change(function(){
 
-               window.location.href = '{{ route('show-cart') }}'; 
+            value = $('#option-price_change').val();
 
-            }
+            ar_val = [];
+
+            ar_val[1] = 0;
+
+            ar_val[2] = 100000;
+
+            ar_val[3] = 150000;
+
+            ar_val[4] = 250000;
+         
+            const price = {{  $data->Price }};
+
+            new_price   =  parseInt(price) + ar_val[value];
+
+            price_format = new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(new_price);
+
+          
+            $('.show-price-desktop h3').text(price_format.replace('đ', '').trim());
+
         });
-    }      
-    
-    // function addToCart(id) {
-
-    //     const value = $("input[name='price-add']:checked").val();
-
-    //     ar_val = [];
-
-    //     @if(!empty($data_price_show))
-    //     @foreach($data_price_show as $val)
-
-    //         ar_val[{{ $val->id }}] = {{ $val->price }};
-    //     @endforeach
-
-    //     @endif
-
-    //     var transport_cost = ar_val[value];
-
-        
-    //     $('.form-info-cart').removeClass('hide');
-    //     $('.cart-container').addClass('hide');
-
-    //     $.ajaxSetup({
-    //         headers: {
-    //             'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-    //         }
-    //     });
-    
-    //     $.ajax({
-    //         type: 'POST',
-    //         url: "{{ route('cart') }}",
-    //         data: {
-    //             product_id: id,
-    //             gift_check:$('#gift_checked').val(),
-
-    //            transport_cost:transport_cost,
-                   
-    //         },
-    //         beforeSend: function() {
-               
-    //             $('.loader').show();
-
-    //         },
-    //         success: function(result){
-
-    //            //  numberProductCart = $(".number-cart").text();
-    
-    //            //  console.log(numberProductCart);
-               
-    //            // numberCart = result.find(numberProductCart);
-
-    //             $('#tbl_list_cartss').html('');
-    
-    //             $('#tbl_list_cartss').append(result);
-    
-    //             const numberCart = $('#number-product-cart').text();
-    
-    //             $('.number-cart').text(numberCart);
-    
-    //             $('#exampleModal').modal('show'); 
-    //             $('.loader').hide();
-                
-    //         }
-    //     });
-
-    //      $(".btn-closemenu").click(function(){
-
-    //         $('.show-menu').removeClass('active');
-    //     });
-
-       
-
-        
-    // }
-
-    function isValid(p) {
-        var phoneRe = /(84|0[3|5|7|8|9])+([0-9]{8})\b/;
-        var digits = p.replace(/\D/g, "");
-        return phoneRe.test(digits);
-    }
 
 
-    function addCallPhone(id){
 
-        if($('#buyer_names_call').val()==''){
-            alert('vui lòng nhập họ tên');
-        }
-        else if($('#buyer_tels').val()==''){
-            alert('vui lòng nhập số điện thoại')
-        }
-        else if(!isValid($('#buyer_tels').val())){
-            alert('số điện thoại không đúng định dạng');
-        }
-        else{
-            name = $('#buyer_names_call').val();
-            phone = $('#buyer_tels').val();
+        let ar_product = [];
+
+        function compare_link() {
 
             $.ajaxSetup({
                 headers: {
@@ -2842,570 +2380,1037 @@
 
             $.ajax({
                 type: 'POST',
-                url: "{{ route('callphone') }}",
+                url: "{{ route('check-unique-cate') }}",
                 data: {
-                    name: name,
-                    phone:phone,
-                    product_id:id,
+                    ar_product_id: JSON.stringify(ar_product),
+                      
+                },
+                success: function(result){
+                    if(result == 0){
+
+                        alert('có sản phẩm không cùng nhóm, không thể so sánh');
+                    }
+                    else{
+
+                       
+                        var link = '{{ route("so-sanh") }}?list='+ar_product+'&cate='+result;
+            
+                        location.href = link;
+                    }
+                   
+                }
+            });         
+        }
+
+        $('.scroll-content').click(function(){
+
+            $('html, body').animate({
+                scrollTop: $("#contents-scroll").offset().top
+            }, 1000);
+        })
+
+        function compareShow(id) {
+           
+            if($(this).find('.fa-solid').hasClass('fa-check')){
+
+                $(this).find('.fa-solid').removeClass('fa-check');
+
+                $(this).find('.fa-solid').addClass('fa-plus');
+
+                $(this).css('color','#59A0DA');
+
+                index = ar_product.indexOf(id);
+
+                if (index !== -1) {
+                    ar_product.splice(index, 1);
+                }
+            }
+            else{
+                $(this).css('color','red');
+
+                $(this).find('.fa-solid').removeClass('fa-plus');
+
+                $(this).find('.fa-solid').addClass('fa-check');
+
+                if(ar_product.length<3){
+
+                    ar_product.push(id);
+                } 
+                else{
+                    alert('không thể thêm sản phẩm nữa');
+                }    
+            }
+
+           
+            $.ajaxSetup({
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                }
+            });
+
+            $.ajax({
+                type: 'POST',
+                url: "{{ route('compare-show') }}",
+                data: {
+                    ar_product_id: JSON.stringify(ar_product),
+                       
+                },
+                success: function(result){
+                   $('#js-compare-holder').html('');
+                   $('#js-compare-holder').append(result);
+                }
+            });         
+        
+            $('.global-compare-group').show();
+
+        }
+
+        
+
+        @if(!empty($gift) && $gifts->type ==1)
+        $("input:checkbox").on('click', function() {
+            // in the handler, 'this' refers to the box clicked on
+            var $box = $(this);
+            if ($box.is(":checked")) {
+                // the name of the box is retrieved using the .attr() method
+                // as it is assumed and expected to be immutable
+                var group = "input:checkbox[name='" + $box.attr("name") + "']";
+                // the checked state of the group/box on the other hand will change
+                // and the current value is retrieved using .prop() method
+                $(group).prop("checked", false);
+                $box.prop("checked", true);
+              } else {
+                $box.prop("checked", false);
+              }
+        });
+        @endif
+        var gift_check = ''
+        @if(!empty($gift) && $data->Quantily>0 && $deal_check_add==false)  
+        gift_check  = '{{ $gift[0]->name }}';
+        $('#gift_checked').val(gift_check);
+        $('input[type="checkbox"]').click(function(){
+                if($(this).is(":checked")){
+                    gift_check = $(this).val();
+                   
+                }
+
+                $('#gift_checked').val(gift_check);
+               
+            });
+        @endif
+
+        $( document ).ready(function() {
+        
+            $('[data-fancybox]').fancybox({
+                clickContent: 'close',
+                 buttons: ['close']
+            });
+           
+            $('.item-ss').bind('click',function(){
+                $('.listcompare-click').show();
+            })    
+        
+            $('.star-click').bind('click',function(){
+                id_star = $(this).attr('id');    
+                number_star = id_star.substr(5, 6);
+                $('#star_number').val(number_star);
+                // console.log(number_star);
+               
+            });
+        
+            $("#rate-form").validate({
+                rules: {
+                    name: "required",
+                    content: "required",
+                    email: {
+                        required: true,
+                        email: true
+                    },
+                   
+                },
+                 messages: {
+                    name: "vui lòng nhập tên",
+                    content: "vui lòng nhập đánh giá",
+                   
+                    email: {
+                        required: "vui lòng nhập địa chỉ email",
+                        email: "vui lòng nhập đúng định dạng email"
+                    },
+                  
+                },
+                submitHandler: function(form) {
+                    
+                  postComment();
+        
+                }
+               
+            }); 
+        
+        });  
+        
+        
+        function postComment() {
+            $.ajaxSetup({
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                }
+            });
+        
+            $.ajax({
+                type: 'POST',
+                url: "{{ route('rate-form') }}",
+                data: {
+                    product_id: {{ $data->id }},
+                    email:$('#email0').val(),
+                    name:$('#name0').val(),
+                    content:$('#content0').val(),
+                    star:$('#star_number').val(),
                        
                 },
                 success: function(result){
         
-                    $('#modal-suport').modal('hide'); 
-
-                    alert('Gửi thành công!')
-                    
+                    $('.comments-rate').text('Đã gửi bình luận');
+                    $('.comments-rate').val('Đã gửi bình luận');
+        
+                    $('#email0').val('');
+                    $('#name0').val('');
+                    $('#content0').val('');
+                  
+                  alert(result);
                 }
             });
+        
+        }  
+        
+        
+        // chức năng sản phẩm đã xem
+        
+        
+        function toUniqueArray(a){
+            var newArr = [];
+            for (var i = 0; i < a.length; i++) {
+                if (newArr.indexOf(a[i]) === -1) {
+                    newArr.push(a[i]);
+                }
+            }
+          return newArr;
+        }
+        
+        product_id_item_viewer = [];
+        
+        const item_local_store =  JSON.parse(localStorage.getItem('viewed_product'));
+        
+        if(item_local_store !=null){
+        
+            product_id_item_viewer = item_local_store;
+        }
+        
+        product_id_item_viewer.push('{{ $data->id }}');
+        
+        product_id_item_viewer = toUniqueArray(product_id_item_viewer);
+
+         product_id_item_viewer.slice(0, 6);
+
+        
+        localStorage.setItem('viewed_product', JSON.stringify(product_id_item_viewer));
+        
+        view_product_id = localStorage.getItem('viewed_product');
+
+        if(view_product_id.length>=30){
+
+             localStorage.clear();
+
         }
 
-    }
+        button_buy_height = $('.scroll-box').offset().top;
+        view_more_height  = ($('.view-more-related').offset().top)+1600;
+     
+                    
+        $(".show-more span").bind("click", function(){
+            $('.content').css({'height':'auto', 'overflow':'auto' });
+            $(this).hide();
+            view_more_height  = $('.view-more-related').offset().top-100;
+        });
+        
+        // $(function(){
+        //     $(window).scroll(function(){
+        //         const scroll_result = $('.total-imgslider').offset().top;
+        //         const scroll_browser = $(this).scrollTop();
+        
+        //         if(scroll_browser>= scroll_result &&scroll_browser <= view_more_height){
+        
+        //             $(".prod-info").show();
+                    
+        //         }
+        //         else{
+        //             $(".prod-info").hide();
+        //         }
+        
+        //     });
+        // });
+        
+    </script>
+    <script>
 
-    function addCartFast(id) {
-    
+        price_add_address = 0;
+       
+        $('.bar-top-left').hide();
+
+        $("img").each(function() {
+        
+            $(this).attr("data-src",$(this).attr("src"));
+
+            $(this).addClass('lazyload');
+            
+            
+        });
+
+
+        // copy image to clipbroad
+
+        const copyImage = (imageSrc) => {
+            const image = new Image();
+            image.src = imageSrc;
+            const canvas = document.createElement('canvas');
+            canvas.width = image.width;
+            canvas.height = image.height;
+            canvas.getContext('2d').drawImage(image, 0, 0);
+            const dataURI = canvas.toDataURL('image/png').replace('image/png', 'image/octet-stream');
+            navigator.clipboard.writeText(dataURI).then(() => {
+                alert('Image copied to clipboard successfully.');
+            }, () => {
+                alert('Failed to copy image to clipboard.');
+          });
+        }    
+
+
+
         $.ajaxSetup({
             headers: {
                 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
             }
         });
-    
-        $.ajax({
-            type: 'POST',
-            url: "{{ route('addcartfast') }}",
-            data: {
-                product_id: id,
-                   
-            },
-            success: function(result){
-    
-                $('.number-cart').text(result);
-                alert('Thêm sản phẩm vào giỏ hàng thành công !');
 
+        // $.ajax({
+        //     type: 'POST',
+        //     url: "{{ route('show-viewed-product') }}",
+        //     data: {
+        //         product_id: view_product_id
+                   
+        //     },
+        //     success: function(result){
+        //        // numberCart = result.find($("#number-product-cart").text());
+        //        $('.viewer-product').append(result);
+               
+        //     }
+        // });  
+
+
+
+        function addToSuport() {
+              $('#modal-suport').modal('show'); 
+          }  
+
+
+        function addToCart(id) {
+        
+            $.ajaxSetup({
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                }
+            });
+
+            $.ajax({
+                type: 'POST',
+                url: "{{ route('cart') }}",
+                data: {
+                    product_id: id,
+                    gift_check:$('#gift_checked').val(),
+                    price_new : arval_price
+                       
+                },
+                beforeSend: function() {
+                   
+                    $('.loader').show();
+
+                },
+                success: function(result){
+
+                   window.location.href = '{{ route('show-cart') }}'; 
+
+                }
+            });
+        }      
+        
+        // function addToCart(id) {
+
+        //     const value = $("input[name='price-add']:checked").val();
+
+        //     ar_val = [];
+
+        //     @if(!empty($data_price_show))
+        //     @foreach($data_price_show as $val)
+
+        //         ar_val[{{ $val->id }}] = {{ $val->price }};
+        //     @endforeach
+
+        //     @endif
+
+        //     var transport_cost = ar_val[value];
+
+            
+        //     $('.form-info-cart').removeClass('hide');
+        //     $('.cart-container').addClass('hide');
+
+        //     $.ajaxSetup({
+        //         headers: {
+        //             'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        //         }
+        //     });
+        
+        //     $.ajax({
+        //         type: 'POST',
+        //         url: "{{ route('cart') }}",
+        //         data: {
+        //             product_id: id,
+        //             gift_check:$('#gift_checked').val(),
+
+        //            transport_cost:transport_cost,
+                       
+        //         },
+        //         beforeSend: function() {
+                   
+        //             $('.loader').show();
+
+        //         },
+        //         success: function(result){
+
+        //            //  numberProductCart = $(".number-cart").text();
+        
+        //            //  console.log(numberProductCart);
+                   
+        //            // numberCart = result.find(numberProductCart);
+
+        //             $('#tbl_list_cartss').html('');
+        
+        //             $('#tbl_list_cartss').append(result);
+        
+        //             const numberCart = $('#number-product-cart').text();
+        
+        //             $('.number-cart').text(numberCart);
+        
+        //             $('#exampleModal').modal('show'); 
+        //             $('.loader').hide();
+                    
+        //         }
+        //     });
+
+        //      $(".btn-closemenu").click(function(){
+
+        //         $('.show-menu').removeClass('active');
+        //     });
+
+           
+
+            
+        // }
+
+        function isValid(p) {
+            var phoneRe = /(84|0[3|5|7|8|9])+([0-9]{8})\b/;
+            var digits = p.replace(/\D/g, "");
+            return phoneRe.test(digits);
+        }
+
+
+        function addCallPhone(id){
+
+            if($('#buyer_names_call').val()==''){
+                alert('vui lòng nhập họ tên');
+            }
+            else if($('#buyer_tels').val()==''){
+                alert('vui lòng nhập số điện thoại')
+            }
+            else if(!isValid($('#buyer_tels').val())){
+                alert('số điện thoại không đúng định dạng');
+            }
+            else{
+                name = $('#buyer_names_call').val();
+                phone = $('#buyer_tels').val();
+
+                $.ajaxSetup({
+                    headers: {
+                        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                    }
+                });
+
+                $.ajax({
+                    type: 'POST',
+                    url: "{{ route('callphone') }}",
+                    data: {
+                        name: name,
+                        phone:phone,
+                        product_id:id,
+                           
+                    },
+                    success: function(result){
+            
+                        $('#modal-suport').modal('hide'); 
+
+                        alert('Gửi thành công!')
+                        
+                    }
+                });
+            }
+
+        }
+
+        function addCartFast(id) {
+        
+            $.ajaxSetup({
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                }
+            });
+        
+            $.ajax({
+                type: 'POST',
+                url: "{{ route('addcartfast') }}",
+                data: {
+                    product_id: id,
+                       
+                },
+                success: function(result){
+        
+                    $('.number-cart').text(result);
+                    alert('Thêm sản phẩm vào giỏ hàng thành công !');
+
+                }
+            });
+            
+        }
+
+        
+
+
+        $('.price-add-mobile').change(function(){
+
+            const value = $("input[name='price-add-mobile']:checked").val();
+
+            ar_val = [];
+            @if(!empty($data_price_show))
+            @foreach($data_price_show as $val)
+
+                ar_val[{{ $val->id }}] = {{ $val->price }};
+            @endforeach
+
+            @endif
+
+            const price = {{  $data->Price }};
+
+            // console.log(ar_val[value]);
+
+            new_price   =  parseInt(price) + ar_val[value];
+
+
+            price_format = new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(new_price);
+
+          
+            $('.show-price-mobile h3').text(price_format.replace('đ', '').trim());
+
+            console.log(12);
+
+        })
+
+
+       
+        
+
+        values = $("#inputs-price").val();
+
+        price = {{  $data->Price }};
+
+        arval_price = [];
+
+        $("#inputs-price").change(function(){
+
+             if ($("#inputs-price").is(":checked")) {
+
+                if(arval_price.length===0){
+
+        
+                    price_pd = price;
+
+                }
+                else{
+                     price_pd = arval_price[0];
+                    
+                }
+                new_price = parseInt(price_pd)+ parseInt(values);
+
+                arval_price =[new_price];
+
+                price_format = new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(new_price);
+
+                $('.show-price-desktop h3').text(price_format.replace('đ', '').trim());
+
+            } else {
+
+                price_pd = arval_price[0];
+
+                 new_price = parseInt(price_pd)- parseInt(values);
+
+                arval_price =[new_price];
+
+                price_format = new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(new_price);
+
+                $('.show-price-desktop h3').text(price_format.replace('đ', '').trim());
+            }
+
+
+        })
+
+        
+        val = $("#input-price").val();
+        $("#input-price").change(function(){
+             if ($("#input-price").is(":checked")) {
+
+                if(arval_price.length===0){
+                    
+                    price_pd = price;
+
+                }
+                else{
+                     price_pd = arval_price[0];
+                    
+                }
+                new_price = parseInt(price_pd)+ parseInt(val);
+
+                arval_price =[new_price];
+
+                price_format = new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(new_price);
+
+                $('.show-price-desktop h3').text(price_format.replace('đ', '').trim());
+
+            } else {
+
+                price_pd = arval_price[0];
+
+                new_price = parseInt(price_pd)- parseInt(val);
+
+                arval_price =[new_price];
+
+                price_format = new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(new_price);
+
+                $('.show-price-desktop h3').text(price_format.replace('đ', '').trim());
+            }
+
+
+        })
+
+
+        values = $("#inputs-price-mb").val();
+
+        price = {{  $data->Price }};
+
+        arval_price = [];
+
+        $("#inputs-price-mb").change(function(){
+
+             if ($("#inputs-price-mb").is(":checked")) {
+
+                if(arval_price.length===0){
+
+        
+                    price_pd = price;
+
+                }
+                else{
+                     price_pd = arval_price[0];
+                    
+                }
+                new_price = parseInt(price_pd)+ parseInt(values);
+
+                arval_price =[new_price];
+
+                price_format = new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(new_price);
+
+                $('.show-price-mobile h3').text(price_format.replace('đ', '').trim());
+
+            } else {
+
+                price_pd = arval_price[0];
+
+                 new_price = parseInt(price_pd)- parseInt(values);
+
+                arval_price =[new_price];
+
+                price_format = new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(new_price);
+
+                $('.show-price-mobile h3').text(price_format.replace('đ', '').trim());
+            }
+
+
+        })
+
+        
+        val = $("#input-price-mb").val();
+        $("#input-price-mb").change(function(){
+             if ($("#input-price-mb").is(":checked")) {
+
+                if(arval_price.length===0){
+                    
+                    price_pd = price;
+
+                }
+                else{
+                     price_pd = arval_price[0];
+                    
+                }
+                new_price = parseInt(price_pd)+ parseInt(val);
+
+                arval_price =[new_price];
+
+                price_format = new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(new_price);
+
+                $('.show-price-mobile h3').text(price_format.replace('đ', '').trim());
+
+            } else {
+
+                price_pd = arval_price[0];
+
+                new_price = parseInt(price_pd)- parseInt(val);
+
+                arval_price =[new_price];
+
+                price_format = new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(new_price);
+
+                $('.show-price-mobile h3').text(price_format.replace('đ', '').trim());
+            }
+
+
+        })
+
+
+        $('#carousel').owlCarousel({
+            margin:10,
+            nav:false,
+            autoplay:true,
+            dots:true,
+            autoWidth: false,
+            loop:true,
+           
+            dotsEach:1,
+
+            
+            navText: ["<i class='fa fa-angle-left'></i>","<i class='fa fa fa-angle-right'></i>"],
+           
+            responsive:{
+                0:{
+                    items:1
+        
+                },
+                600:{
+                    items:1
+                },
+                
+                1000:{
+                    items:1
+                }
             }
         });
+
+        document.addEventListener("DOMContentLoaded", function() {
+            // Lấy tất cả các thẻ img trên trang
+            const images = document.querySelectorAll('img');
+
+            // Lặp qua từng ảnh
+            images.forEach(function(img) {
+                // Kiểm tra xem ảnh có thuộc tính alt không
+                if (img.hasAttribute('alt')) {
+                    // Lấy giá trị của alt
+                    const altText = img.getAttribute('alt');
+                    
+                    // Sao chép giá trị alt sang title
+                    img.setAttribute('title', altText);
+                }
+            });
+        });
+
         
-    }
+        $('.listproduct').owlCarousel({
+            loop:false,
+        
+            margin:10,
+            nav:false,
+            responsive:{
+                0:{
+                    items:1.5
+                },
+                600:{
+                    items:3
+                },
+                1000:{
+                    items:3
+                }
+            }
+        });
 
-    
+
+        @if(!empty($timestamp_check))
+
+             // đếm thời gian 
+
+             //document.getElementById('svg').innerHTML = xmlSvg;
+                                            
+            time = '{{ @$timestamp_check }}';
+            number_deal_product =10;
+            //in time 
+            var h = 12;
+            var i = 0;
+            var s = 0;
+        
+            amount = time //calc milliseconds between dates
+            days = 0;
+            hours = 0;
+            mins = 0;
+            secs = 0;
+            out = "";
+        
+        
+            hours = Math.floor(amount / 3600);
+            amount = amount % 3600;
+            mins = Math.floor(amount / 60);
+            amount = amount % 60;
+            secs = Math.floor(amount);
+                
+                
+        
+        
+            //time run 
+            if(parseInt(time)>0 && parseInt(number_deal_product)>0){
+             h = hours;
+              m = mins;
+              s = secs;
+            }   
+            else{
+                let today =  new Date();
+                h = 99 - parseInt(today.getHours());
+                m = 59 - parseInt(today.getMinutes());
+                s = 59 - parseInt(today.getSeconds());
+                
+            }
+
+            start();    
+            function start()
+            {
+
+                  /*BƯỚC 1: LẤY GIÁ TRỊ BAN ĐẦU*/
+                  if (h === null)
+                  {
+                      h = parseInt($('.hour').text());
+
+                  }
+
+                  /*BƯỚC 1: CHUYỂN ĐỔI DỮ LIỆU*/
+                  // Nếu số giây = -1 tức là đã chạy ngược hết số giây, lúc này:
+                  //  - giảm số phút xuống 1 đơn vị
+                  //  - thiết lập số giây lại 59
+                  if (s === -1){
+                      m -= 1;
+                      s = 59;
+                  }
+
+                  // Nếu số phút = -1 tức là đã chạy ngược hết số phút, lúc này:
+                  //  - giảm số giờ xuống 1 đơn vị
+                  //  - thiết lập số phút lại 59
+                  if (m === -1){
+                      h -= 1;
+                      m = 59;
+                  }
+
+                  // Nếu số giờ = -1 tức là đã hết giờ, lúc này:
+                  //  - Dừng chương trình
+                  if (h == -1){
+
+                    $('.crazy-deal-details').remove();
+
+                    $('.pdetail-price b').remove();
+                    $('.pdetail-price-box b').remove();
+                    
+
+                  }
 
 
-    $('.price-add-mobile').change(function(){
 
-        const value = $("input[name='price-add-mobile']:checked").val();
+                  /*BƯỚC 1: HIỂN THỊ ĐỒNG HỒ*/
 
-        ar_val = [];
-        @if(!empty($data_price_show))
-        @foreach($data_price_show as $val)
 
-            ar_val[{{ $val->id }}] = {{ $val->price }};
-        @endforeach
+
+                  var hour =  h.toString();
+
+                  var seconds =  s.toString();
+
+                  var minutes =  m.toString();
+
+
+
+                  // $('.hourss').text(h<10?'0'+hour:''+hour);
+                  // $('.secondss').text(s<10?'0'+seconds:''+seconds);
+                  // $('.minutess').text(m<10?'0'+minutes:''+minutes);
+
+                let currentHour = h<10?'0'+hour:''+hour;
+                let currentMinutes = m<10?'0'+minutes:''+minutes;
+                let currentSeconds = s<10?'0'+seconds:''+seconds;
+
+        
+                let currentTimeStr =currentHour + ":" + currentMinutes + ":" + currentSeconds;
+
+              
+
+                $('.clock-start').html(currentTimeStr);
+
+                  // Insert the time string inside the DOM
+               
+
+                  /*BƯỚC 1: GIẢM PHÚT XUỐNG 1 GIÂY VÀ GỌI LẠI SAU 1 GIÂY */
+                  timeout = setTimeout(function(){
+                      s--;
+                      start();
+
+
+                  }, 1000);
+            }
 
         @endif
 
-        const price = {{  $data->Price }};
+        @if(!empty($text))
 
-        // console.log(ar_val[value]);
+            // đếm thời gian 
 
-        new_price   =  parseInt(price) + ar_val[value];
-
-
-        price_format = new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(new_price);
-
-      
-        $('.show-price-mobile h3').text(price_format.replace('đ', '').trim());
-
-        console.log(12);
-
-    })
-
-
-   
-    
-
-    values = $("#inputs-price").val();
-
-    price = {{  $data->Price }};
-
-    arval_price = [];
-
-    $("#inputs-price").change(function(){
-
-         if ($("#inputs-price").is(":checked")) {
-
-            if(arval_price.length===0){
-
-    
-                price_pd = price;
-
-            }
+             //document.getElementById('svg').innerHTML = xmlSvg;
+                                            
+            time = '{{ @$timestamp }}';
+            number_deal_product =10;
+            //in time 
+            var h = 12;
+            var i = 0;
+            var s = 0;
+        
+            amount = time //calc milliseconds between dates
+            days = 0;
+            hours = 0;
+            mins = 0;
+            secs = 0;
+            out = "";
+        
+        
+            hours = Math.floor(amount / 3600);
+            amount = amount % 3600;
+            mins = Math.floor(amount / 60);
+            amount = amount % 60;
+            secs = Math.floor(amount);
+                
+                
+        
+        
+            //time run 
+            if(parseInt(time)>0 && parseInt(number_deal_product)>0){
+             h = hours;
+              m = mins;
+              s = secs;
+            }   
             else{
-                 price_pd = arval_price[0];
+                let today =  new Date();
+                h = 99 - parseInt(today.getHours());
+                m = 59 - parseInt(today.getMinutes());
+                s = 59 - parseInt(today.getSeconds());
                 
             }
-            new_price = parseInt(price_pd)+ parseInt(values);
 
-            arval_price =[new_price];
+            start();    
+            function start()
+            {
 
-            price_format = new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(new_price);
+                  /*BƯỚC 1: LẤY GIÁ TRỊ BAN ĐẦU*/
+                  if (h === null)
+                  {
+                      h = parseInt($('.hour').text());
 
-            $('.show-price-desktop h3').text(price_format.replace('đ', '').trim());
+                  }
 
-        } else {
+                  /*BƯỚC 1: CHUYỂN ĐỔI DỮ LIỆU*/
+                  // Nếu số giây = -1 tức là đã chạy ngược hết số giây, lúc này:
+                  //  - giảm số phút xuống 1 đơn vị
+                  //  - thiết lập số giây lại 59
+                  if (s === -1){
+                      m -= 1;
+                      s = 59;
+                  }
 
-            price_pd = arval_price[0];
+                  // Nếu số phút = -1 tức là đã chạy ngược hết số phút, lúc này:
+                  //  - giảm số giờ xuống 1 đơn vị
+                  //  - thiết lập số phút lại 59
+                  if (m === -1){
+                      h -= 1;
+                      m = 59;
+                  }
 
-             new_price = parseInt(price_pd)- parseInt(values);
+                  // Nếu số giờ = -1 tức là đã hết giờ, lúc này:
+                  //  - Dừng chương trình
+                  if (h == -1){
 
-            arval_price =[new_price];
+                    $('.crazy-deal-details').remove();
 
-            price_format = new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(new_price);
+                    $('.pdetail-price b').remove();
+                    $('.pdetail-price-box b').remove();
+                    priceChange = '{{  str_replace(',' ,'.', number_format($price_old))  }}'   ;
+                    $('.pdetail-price-box h3').text(priceChange);
 
-            $('.show-price-desktop h3').text(price_format.replace('đ', '').trim());
-        }
-
-
-    })
-
-    
-    val = $("#input-price").val();
-    $("#input-price").change(function(){
-         if ($("#input-price").is(":checked")) {
-
-            if(arval_price.length===0){
-                
-                price_pd = price;
-
-            }
-            else{
-                 price_pd = arval_price[0];
-                
-            }
-            new_price = parseInt(price_pd)+ parseInt(val);
-
-            arval_price =[new_price];
-
-            price_format = new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(new_price);
-
-            $('.show-price-desktop h3').text(price_format.replace('đ', '').trim());
-
-        } else {
-
-            price_pd = arval_price[0];
-
-            new_price = parseInt(price_pd)- parseInt(val);
-
-            arval_price =[new_price];
-
-            price_format = new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(new_price);
-
-            $('.show-price-desktop h3').text(price_format.replace('đ', '').trim());
-        }
+                  }
 
 
-    })
+
+                  /*BƯỚC 1: HIỂN THỊ ĐỒNG HỒ*/
 
 
-    values = $("#inputs-price-mb").val();
 
-    price = {{  $data->Price }};
+                  var hour =  h.toString();
 
-    arval_price = [];
+                  var seconds =  s.toString();
 
-    $("#inputs-price-mb").change(function(){
-
-         if ($("#inputs-price-mb").is(":checked")) {
-
-            if(arval_price.length===0){
-
-    
-                price_pd = price;
-
-            }
-            else{
-                 price_pd = arval_price[0];
-                
-            }
-            new_price = parseInt(price_pd)+ parseInt(values);
-
-            arval_price =[new_price];
-
-            price_format = new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(new_price);
-
-            $('.show-price-mobile h3').text(price_format.replace('đ', '').trim());
-
-        } else {
-
-            price_pd = arval_price[0];
-
-             new_price = parseInt(price_pd)- parseInt(values);
-
-            arval_price =[new_price];
-
-            price_format = new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(new_price);
-
-            $('.show-price-mobile h3').text(price_format.replace('đ', '').trim());
-        }
+                  var minutes =  m.toString();
 
 
-    })
 
-    
-    val = $("#input-price-mb").val();
-    $("#input-price-mb").change(function(){
-         if ($("#input-price-mb").is(":checked")) {
+                  // $('.hourss').text(h<10?'0'+hour:''+hour);
+                  // $('.secondss').text(s<10?'0'+seconds:''+seconds);
+                  // $('.minutess').text(m<10?'0'+minutes:''+minutes);
 
-            if(arval_price.length===0){
-                
-                price_pd = price;
-
-            }
-            else{
-                 price_pd = arval_price[0];
-                
-            }
-            new_price = parseInt(price_pd)+ parseInt(val);
-
-            arval_price =[new_price];
-
-            price_format = new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(new_price);
-
-            $('.show-price-mobile h3').text(price_format.replace('đ', '').trim());
-
-        } else {
-
-            price_pd = arval_price[0];
-
-            new_price = parseInt(price_pd)- parseInt(val);
-
-            arval_price =[new_price];
-
-            price_format = new Intl.NumberFormat('vi-VN', { style: 'currency', currency: 'VND' }).format(new_price);
-
-            $('.show-price-mobile h3').text(price_format.replace('đ', '').trim());
-        }
-
-
-    })
-
-
-    $('#carousel').owlCarousel({
-        margin:10,
-        nav:false,
-        autoplay:true,
-        dots:true,
-        autoWidth: false,
-        loop:true,
-       
-        dotsEach:1,
+                let currentHour = h<10?'0'+hour:''+hour;
+                let currentMinutes = m<10?'0'+minutes:''+minutes;
+                let currentSeconds = s<10?'0'+seconds:''+seconds;
 
         
-        navText: ["<i class='fa fa-angle-left'></i>","<i class='fa fa fa-angle-right'></i>"],
-       
-        responsive:{
-            0:{
-                items:1
-    
-            },
-            600:{
-                items:1
-            },
-            
-            1000:{
-                items:1
+                let currentTimeStr =currentHour + ":" + currentMinutes + ":" + currentSeconds;
+
+              
+
+                $('.clock').html(currentTimeStr);
+
+                  // Insert the time string inside the DOM
+               
+
+                  /*BƯỚC 1: GIẢM PHÚT XUỐNG 1 GIÂY VÀ GỌI LẠI SAU 1 GIÂY */
+                  timeout = setTimeout(function(){
+                      s--;
+                      start();
+
+
+                  }, 1000);
             }
-        }
-    });
+        @endif    
+    </script>
+    @endpush
+@endif
 
-    document.addEventListener("DOMContentLoaded", function() {
-        // Lấy tất cả các thẻ img trên trang
-        const images = document.querySelectorAll('img');
-
-        // Lặp qua từng ảnh
-        images.forEach(function(img) {
-            // Kiểm tra xem ảnh có thuộc tính alt không
-            if (img.hasAttribute('alt')) {
-                // Lấy giá trị của alt
-                const altText = img.getAttribute('alt');
-                
-                // Sao chép giá trị alt sang title
-                img.setAttribute('title', altText);
-            }
-        });
-    });
-
-    
-    $('.listproduct').owlCarousel({
-        loop:false,
-    
-        margin:10,
-        nav:false,
-        responsive:{
-            0:{
-                items:1.5
-            },
-            600:{
-                items:3
-            },
-            1000:{
-                items:3
-            }
-        }
-    });
-
-
-    @if(!empty($timestamp_check))
-
-         // đếm thời gian 
-
-         //document.getElementById('svg').innerHTML = xmlSvg;
-                                        
-        time = '{{ @$timestamp_check }}';
-        number_deal_product =10;
-        //in time 
-        var h = 12;
-        var i = 0;
-        var s = 0;
-    
-        amount = time //calc milliseconds between dates
-        days = 0;
-        hours = 0;
-        mins = 0;
-        secs = 0;
-        out = "";
-    
-    
-        hours = Math.floor(amount / 3600);
-        amount = amount % 3600;
-        mins = Math.floor(amount / 60);
-        amount = amount % 60;
-        secs = Math.floor(amount);
-            
-            
-    
-    
-        //time run 
-        if(parseInt(time)>0 && parseInt(number_deal_product)>0){
-         h = hours;
-          m = mins;
-          s = secs;
-        }   
-        else{
-            let today =  new Date();
-            h = 99 - parseInt(today.getHours());
-            m = 59 - parseInt(today.getMinutes());
-            s = 59 - parseInt(today.getSeconds());
-            
-        }
-
-        start();    
-        function start()
-        {
-
-              /*BƯỚC 1: LẤY GIÁ TRỊ BAN ĐẦU*/
-              if (h === null)
-              {
-                  h = parseInt($('.hour').text());
-
-              }
-
-              /*BƯỚC 1: CHUYỂN ĐỔI DỮ LIỆU*/
-              // Nếu số giây = -1 tức là đã chạy ngược hết số giây, lúc này:
-              //  - giảm số phút xuống 1 đơn vị
-              //  - thiết lập số giây lại 59
-              if (s === -1){
-                  m -= 1;
-                  s = 59;
-              }
-
-              // Nếu số phút = -1 tức là đã chạy ngược hết số phút, lúc này:
-              //  - giảm số giờ xuống 1 đơn vị
-              //  - thiết lập số phút lại 59
-              if (m === -1){
-                  h -= 1;
-                  m = 59;
-              }
-
-              // Nếu số giờ = -1 tức là đã hết giờ, lúc này:
-              //  - Dừng chương trình
-              if (h == -1){
-
-                $('.crazy-deal-details').remove();
-
-                $('.pdetail-price b').remove();
-                $('.pdetail-price-box b').remove();
-                
-
-              }
-
-
-
-              /*BƯỚC 1: HIỂN THỊ ĐỒNG HỒ*/
-
-
-
-              var hour =  h.toString();
-
-              var seconds =  s.toString();
-
-              var minutes =  m.toString();
-
-
-
-              // $('.hourss').text(h<10?'0'+hour:''+hour);
-              // $('.secondss').text(s<10?'0'+seconds:''+seconds);
-              // $('.minutess').text(m<10?'0'+minutes:''+minutes);
-
-            let currentHour = h<10?'0'+hour:''+hour;
-            let currentMinutes = m<10?'0'+minutes:''+minutes;
-            let currentSeconds = s<10?'0'+seconds:''+seconds;
-
-    
-            let currentTimeStr =currentHour + ":" + currentMinutes + ":" + currentSeconds;
-
-          
-
-            $('.clock-start').html(currentTimeStr);
-
-              // Insert the time string inside the DOM
-           
-
-              /*BƯỚC 1: GIẢM PHÚT XUỐNG 1 GIÂY VÀ GỌI LẠI SAU 1 GIÂY */
-              timeout = setTimeout(function(){
-                  s--;
-                  start();
-
-
-              }, 1000);
-        }
-
-    @endif
-
-    @if(!empty($text))
-
-        // đếm thời gian 
-
-         //document.getElementById('svg').innerHTML = xmlSvg;
-                                        
-        time = '{{ @$timestamp }}';
-        number_deal_product =10;
-        //in time 
-        var h = 12;
-        var i = 0;
-        var s = 0;
-    
-        amount = time //calc milliseconds between dates
-        days = 0;
-        hours = 0;
-        mins = 0;
-        secs = 0;
-        out = "";
-    
-    
-        hours = Math.floor(amount / 3600);
-        amount = amount % 3600;
-        mins = Math.floor(amount / 60);
-        amount = amount % 60;
-        secs = Math.floor(amount);
-            
-            
-    
-    
-        //time run 
-        if(parseInt(time)>0 && parseInt(number_deal_product)>0){
-         h = hours;
-          m = mins;
-          s = secs;
-        }   
-        else{
-            let today =  new Date();
-            h = 99 - parseInt(today.getHours());
-            m = 59 - parseInt(today.getMinutes());
-            s = 59 - parseInt(today.getSeconds());
-            
-        }
-
-        start();    
-        function start()
-        {
-
-              /*BƯỚC 1: LẤY GIÁ TRỊ BAN ĐẦU*/
-              if (h === null)
-              {
-                  h = parseInt($('.hour').text());
-
-              }
-
-              /*BƯỚC 1: CHUYỂN ĐỔI DỮ LIỆU*/
-              // Nếu số giây = -1 tức là đã chạy ngược hết số giây, lúc này:
-              //  - giảm số phút xuống 1 đơn vị
-              //  - thiết lập số giây lại 59
-              if (s === -1){
-                  m -= 1;
-                  s = 59;
-              }
-
-              // Nếu số phút = -1 tức là đã chạy ngược hết số phút, lúc này:
-              //  - giảm số giờ xuống 1 đơn vị
-              //  - thiết lập số phút lại 59
-              if (m === -1){
-                  h -= 1;
-                  m = 59;
-              }
-
-              // Nếu số giờ = -1 tức là đã hết giờ, lúc này:
-              //  - Dừng chương trình
-              if (h == -1){
-
-                $('.crazy-deal-details').remove();
-
-                $('.pdetail-price b').remove();
-                $('.pdetail-price-box b').remove();
-                priceChange = '{{  str_replace(',' ,'.', number_format($price_old))  }}'   ;
-                $('.pdetail-price-box h3').text(priceChange);
-
-              }
-
-
-
-              /*BƯỚC 1: HIỂN THỊ ĐỒNG HỒ*/
-
-
-
-              var hour =  h.toString();
-
-              var seconds =  s.toString();
-
-              var minutes =  m.toString();
-
-
-
-              // $('.hourss').text(h<10?'0'+hour:''+hour);
-              // $('.secondss').text(s<10?'0'+seconds:''+seconds);
-              // $('.minutess').text(m<10?'0'+minutes:''+minutes);
-
-            let currentHour = h<10?'0'+hour:''+hour;
-            let currentMinutes = m<10?'0'+minutes:''+minutes;
-            let currentSeconds = s<10?'0'+seconds:''+seconds;
-
-    
-            let currentTimeStr =currentHour + ":" + currentMinutes + ":" + currentSeconds;
-
-          
-
-            $('.clock').html(currentTimeStr);
-
-              // Insert the time string inside the DOM
-           
-
-              /*BƯỚC 1: GIẢM PHÚT XUỐNG 1 GIÂY VÀ GỌI LẠI SAU 1 GIÂY */
-              timeout = setTimeout(function(){
-                  s--;
-                  start();
-
-
-              }, 1000);
-        }
-    @endif    
-</script>
-@endpush
 @endsection
