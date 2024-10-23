@@ -1943,7 +1943,7 @@
     <!--#endregion--> <!--#region BreadcrumbList--> <!--#endregion--> <!--#region Organization--> <!--#endregion--> 
 </section>
 
-<script src="{{ asset('js/layout1.js') }}" type="text/javascript"></script>
+<!-- <script src="{{ asset('js/layout1.js') }}" type="text/javascript"></script>
    
     <script type="text/javascript" src="{{asset('js/lib/owl.carousel.min.js')}}"></script>
 
@@ -1951,7 +1951,7 @@
     <script src="{{ asset('js/lib/bootstrap.min.js') }}"></script>
 
     <script src="{{asset('js/lib/jquery.validate.min.js')}}"></script>
-    <script src="{{ asset('js/lib/lazyload.js') }}"></script>
+    <script src="{{ asset('js/lib/lazyload.js') }}"></script> -->
 
 </body>
 </html>
