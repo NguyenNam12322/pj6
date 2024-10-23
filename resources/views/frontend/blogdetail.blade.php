@@ -42,7 +42,7 @@
             <ul class="dm_container">
                 <li>
                     <a href="/tu-van-ti-vi/">
-                    <img src="{{ asset('images/template/logo/ti-vi.png') }}" alt="">
+                    <img src="{{ asset('images/template/logo/tivi.png') }}" alt="">
                     <span>Tư vấn 
                     <br> tivi</span>
                     </a>
