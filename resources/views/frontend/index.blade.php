@@ -43,7 +43,7 @@
 <style type="text/css">
 
      #new-flash-sale_3621{
-            margin: 10px !important;
+            margin: 0 !important;
         }
 
         .first-render{
@@ -405,7 +405,7 @@
 <div class="gift-info"></div>
 <div class="row-fluid ">
     <div class="span16 container outstanding">
-        <div class="box-borders">
+        <div class="div-box-2">
             <div class="span16">
 
                 @if(!empty($deal))

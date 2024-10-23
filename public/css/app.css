@@ -1459,7 +1459,7 @@ html,
                }
 
                .nk-menu #nk-danh-muc-san-pham-left>ul li {
-                   height: 27.5px;
+                   height: 35.5px;
                    display: flex;
                    display: -webkit-flex;
                    align-items: center;
@@ -4985,7 +4985,7 @@ html,
                }
 
                .banner_home__ .banner-left {
-                   width: 100%;
+                   width: 102%;
                    padding-left: 0;
                    margin-right: 5px;
                    height: auto;
@@ -5055,7 +5055,7 @@ html,
                }
 
                #nk-banner-home {
-/*                   width: 100%;*/
+                   width: 100%;
                    position: relative;
                    min-height: 384px;
                    background-color: transparent;
