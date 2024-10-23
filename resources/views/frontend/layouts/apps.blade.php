@@ -1613,44 +1613,7 @@
                                     </select>
                                 </div>
                                 <div id="district-holder-login" style="width: 49%;display: inline-block;color: #0083d1;"></div>
-                                <!-- <div id="ajxTaxInvoice" class="item-form">
-                                    <div class="ng_ml">
-                                        <input type="checkbox" onclick="showTap('pnlTaxInvoice')" name="chkTaxInvoice" id="chkTaxInvoice">
-                                        <label id="bale_ml" for="chkTaxInvoice">Xuất hóa đơn công ty</label>
-                                    </div>
-                                    <div style="width: 100%; margin-top:10px; padding: 0px;display: none;" id="pnlTaxInvoice">
-                                        <table width="100%" cellspacing="0" cellpadding="0" border="0">
-                                            <tbody>
-                                                <tr>
-                                                    <td width="120" align="left">Công ty/Tổ chức:
-                                                    </td>
-                                                    <td align="left">
-                                                        <input type="text" id="txtTaxName" value="" size="50" name="user_info[tax_company]">
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td width="120" align="left">Địa chỉ:
-                                                    </td>
-                                                    <td align="left">
-                                                        <input type="text" id="txtTaxAddress" value="" size="50" name="user_info[tax_address]">
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td width="120" align="left">Mã số thuế:
-                                                    </td>
-                                                    <td align="left">
-                                                        <input type="text" id="txtTaxCode" name="user_info[tax_code]" value="">
-                                                        <span class="cmt" id="txtTaxCodeView">&nbsp;</span>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div> -->
-                                <!--ajxTaxInvoice-->
-
                                
-
                                 <div class="item-form">
                                     
                                     <table style="width:100%;">
@@ -1667,19 +1630,14 @@
                                         </tbody>
                                     </table>
                                 </div>
-                                
                                 <div class="clear"></div>
-
                                 <div class="modal-footer">
                                     <button type="submit" class="btn btn-primary order1">Đặt hàng</button>
                                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                                     
                                 </div>
-
-
                             </form>
                         </div>
-                        
                         <style type="text/css">
                             .cart-container {
                                 text-align: center;
