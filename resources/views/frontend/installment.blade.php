@@ -4,6 +4,7 @@
         <title>Trả góp online</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
         <meta name="robots" content="noindex">
+        <link rel="canonical" href="{{ url()->current() }}" >
 
         <meta name="description" content="Trả góp online">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">

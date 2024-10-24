@@ -1992,11 +1992,11 @@
                                 <strong>GIỎ HÀNG</strong>
                                 </a>
 
-                                 <a target="_blank" class="but-tra-gop installments-but" href="{{ route('details', $data->Link)  }}?show=tra-gop" admicro-data-event="101725" admicro-data-auto="1" admicro-data-order="false">
+                                 <!-- <a target="_blank" class="but-tra-gop installments-but" href="{{ route('details', $data->Link)  }}?show=tra-gop" admicro-data-event="101725" admicro-data-auto="1" admicro-data-order="false">
                                 <strong>TRẢ GÓP QUA THẺ</strong>
                                 <br>
                                 (Visa, Master, JCB)
-                                </a>
+                                </a> -->
                                 @else
                                 <a class="add-card-buttons add-cart-button" href="javascript:void(0)" onclick="addCartFast({{ $data->id }})">
                                     <strong>THÊM VÀO GIỎ HÀNG </strong>
