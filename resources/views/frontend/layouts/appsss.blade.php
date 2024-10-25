@@ -703,6 +703,10 @@
                     color: #000 !important;
                 }
 
+                .footer-blocks{
+                    padding: 20px;
+                }
+
                 .fix-pad{
                     padding: 0;
                 }
@@ -1278,7 +1282,7 @@
                             <div class="row-fluid box-fix-css">
                                 <div class="nk-recent">
 
-                                    <div class="nk-recent-title header-blocks">
+                                    <div class="nk-recent-title header-blocks footer-blocks">
                                         <span>Sản phẩm Gợi ý</span>
 
                                     </div>
