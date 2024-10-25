@@ -65,6 +65,11 @@
             background: orange;
         }
 
+        .btn-add-carts{
+            margin: 0 !important;
+            width: 100% !important;
+        }
+
         .list_specifications{
             display: none;
         }
@@ -1969,17 +1974,17 @@
                                         <input type="text" class="quantity-field" readonly="readonly" name="qty" value="1">
                                         </div> -->
                                     @if((int)$data['Price']>0)
-                                    <button type="button" class="btn btn-lg btn-add-cart btn-add-cart redirectCart" onclick="addToCart({{ $data->id }})">MUA NGAY <br>(Giao hàng tận nơi - Giá tốt)</button>
+                                    <button type="button" class="btn btn-lg  btn-add-cart redirectCart" onclick="addToCart({{ $data->id }})">MUA NGAY <br>(Giao hàng tận nơi - Giá tốt)</button>
 
                                     
                                     @else
-                                    <button type="button" class="btn btn-lg btn-add-cart btn-add-cart redirectCart">LIÊN HỆ <br></button>
+                                    <button type="button" class="btn btn-lg  btn-add-cart redirectCart">LIÊN HỆ <br></button>
                                     @endif
                                 </form>
                                 @if((int)$data['Price']>0)
 
                                 
-                                 <button type="button" class="btn btn-lg btn-add-cart btn-add-cart redirectCart cartSPs" onclick="addToCart({{ $data->id }})">Thêm vào giỏ hàng</button>
+                                 <button type="button" class="btn btn-lg  btn-add-cart redirectCart cartSPs" onclick="addToCart({{ $data->id }})">Thêm vào giỏ hàng</button>
 
 
                                  @endif 
@@ -1994,7 +1999,7 @@
                                 
                                 @if((int)$data['Price']>=3000000)
                                
-                               <button type="button" class="btn btn-lg btn-add-cart btn-add-cart redirectCart cartSP" onclick="addToSuport({{ $data->id }})">GỌI LẠI CHO TÔI <br>(Tư vấn tận tình, chu đáo)</button>
+                               <button type="button" class="btn btn-lg btn-add-carts btn-add-cart redirectCart cartSP" onclick="addToSuport({{ $data->id }})">GỌI LẠI CHO TÔI <br>(Tư vấn tận tình, chu đáo)</button>
 
                                  <!-- <a target="_blank" class="but-tra-gop installments-but" href="{{ route('details', $data->Link)  }}?show=tra-gop" admicro-data-event="101725" admicro-data-auto="1" admicro-data-order="false">
                                 <strong>TRẢ GÓP QUA THẺ</strong>
