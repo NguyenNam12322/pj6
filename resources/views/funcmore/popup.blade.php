@@ -276,46 +276,6 @@
 
 
 
-<div class="modal fade" id="meta" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Thay Meta trang Home</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <div class="content px-3">
-
-                    <?php $metaSeo = App\Models\metaSeo::find(5959); ?>
-
-                    @include('adminlte-templates::common.errors')
-
-                    <div class="card seo">
-
-                        {!! Form::model($metaSeo, ['route' => ['metaSeos.update', $metaSeo->id], 'method' => 'patch']) !!}
-
-                        <div class="card-body">
-                            <div class="row">
-                                @include('meta_seos.fields')
-                            </div>
-                        </div>
-
-                        <div class="card-footer">
-                            {!! Form::submit('Save', ['class' => 'btn btn-primary']) !!}
-                            <a href="{{ route('metaSeos.index') }}" class="btn btn-default">Cancel</a>
-                        </div>
-
-                        {!! Form::close() !!}
-
-                    </div>
-                </div>
-            </div>
-            
-        </div>
-    </div>
-</div>
 
 
 <script type="text/javascript">
