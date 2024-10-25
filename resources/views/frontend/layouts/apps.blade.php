@@ -2410,51 +2410,7 @@
         }); 
 
 
-        $(function() {
-            $("#tags").autocomplete({
-
-                minLength: 2,
-                
-                source: function(request, response) {
-
-                    $.ajaxSetup({
-                    headers: {
-                        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                    }
-
-
-                    });
-                    $.ajax({
-
-                        url: "{{  route('sugest-click')}}",
-                        type: "POST",
-                        data: {
-                            "_token": "{{ csrf_token() }}",
-                            product:$('#tags').val()
-                        },
-                        dataType: "json",
-                        success: function (data) {
-                            var items = data;
-
-                            console.log(data);
-
-                            $('.search-resultss').html();
-
-                            $('.search-resultss').html(data);
-
-                            // $('.search-results').html();
-                    
-                            // $('.search-results').html(data);
-
-                        
-                        }
-                    });
-                },
-
-                
-                html:true,
-            });
-         });    
+         
 
         $(document).ready(function() {
             jQuery.validator.addMethod("phonenu", function (value, element) {
