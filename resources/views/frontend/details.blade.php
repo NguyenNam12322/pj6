@@ -1972,11 +1972,7 @@
                                 </form>
                                 @if((int)$data['Price']>0)
 
-                                <a  class="but-tra-gop add-cart-button" href="javascript:void(0)" onclick="addCartFast({{ $data->id }})" admicro-data-event="101725" admicro-data-auto="1" admicro-data-order="false">
-                                <strong>THÊM VÀO </strong>
-                                <br>
-                                <strong>GIỎ HÀNG</strong>
-                                </a>
+                               
                                  <button type="button" class="btn btn-lg btn-add-cart btn-add-cart redirectCart cartSP" onclick="addToSuport({{ $data->id }})">Thêm vào giỏ hàng</button>
 
 
