@@ -1053,7 +1053,7 @@
                                                                             <i class="nki-search"></i>
                                                                             </button>
                                                                             <div class="nk-search-hint">
-                                                                                <div class="search-result">
+                                                                                <div class="search-resultss">
                                                                                     <ul class="nk-search-cate">
                                                                                         <li></li>
                                                                                     </ul>
