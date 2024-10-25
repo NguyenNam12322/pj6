@@ -2441,6 +2441,11 @@
                             $('#ui-id-1').html();
 
                             $('#ui-id-1').html(data);
+
+                            $('.search-results').html();
+                    
+                            $('.search-results').html(data);
+
                         
                         }
                     });
