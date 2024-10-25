@@ -926,30 +926,7 @@
                                 
                                 @endif
 
-                                @if(!empty($data->InputPrice))
-                                <div class="add-service">
-                                    @if(!empty($data->InputPrice))
-
-                                         <input type="checkbox" id="input-price-mb" name="price-add-1" class="price-add-1" value="{{ $data->InputPrice }}" >
-
-                                          <label for="age1" >Giá lắp đặt :{{  str_replace(',' ,'.', number_format($data->InputPrice))  }}&#x20AB  </label>
-
-                                    @endif
-
-                                   
-
-                                    @if(!empty($data->manuPrice))
-                                         <br>
-                                         <input type="checkbox" id="inputs-price-mb" name="price-add-2" class="price-add-2" value="{{ $data->manuPrice }}" >
-
-                                          <label for="age1" >Giá vận chuyển : {{  str_replace(',' ,'.', number_format($data->manuPrice))  }}&#x20AB </label>
-
-                                    @endif 
-
                                 
-
-                                </div>
-                                @endif
 
                                <!--  @if($data_cate==4)
 
@@ -1766,31 +1743,7 @@
 
                         <br>
 
-                        <div class="add-service">
-                            @if(!empty($data->InputPrice))
-                            <div class="add-service">
-                           
-
-                                 <input type="checkbox" id="input-price" name="price-add-1" class="price-add-1" value="{{ $data->InputPrice }}" >
-
-                                  <label for="age1" >Giá lắp đặt :{{  str_replace(',' ,'.', number_format($data->InputPrice))  }}&#x20AB  </label>
-                            </div>      
-                            @endif
-
-                            
-
-                            @if(!empty($data->manuPrice))
-                                <br>
-
-                                 <input type="checkbox" id="inputs-price" name="price-add-2" class="price-add-2" value="{{ $data->manuPrice }}" >
-
-                                  <label for="age1" >Giá vận chuyển : {{  str_replace(',' ,'.', number_format($data->manuPrice))  }}&#x20AB </label>
-
-                            @endif 
-
-                        
-
-                        </div>
+                       
 
                         <div class="clearfix"></div>
                         <div class="pdetail-status">
