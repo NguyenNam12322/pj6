@@ -1978,8 +1978,10 @@
                                 </form>
                                 @if((int)$data['Price']>0)
 
-                               
-                                 <button type="button" class="btn btn-lg btn-add-cart btn-add-cart redirectCart cartSPs" onclick="addToSuport({{ $data->id }})">Thêm vào giỏ hàng</button>
+                                <a href="{{ route('show-cart') }}">
+                                    <button type="button" class="btn btn-lg btn-add-cart btn-add-cart redirectCart cartSPs" onclick="addToSuport({{ $data->id }})">Thêm vào giỏ hàng</button>
+                                </a>
+                                 
 
 
                                  @endif 
