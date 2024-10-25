@@ -62,7 +62,7 @@
         }
 
         .cartSPs{
-            background: yellow;
+            background: orange;
         }
 
         .list_specifications{
