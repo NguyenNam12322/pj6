@@ -2438,13 +2438,13 @@
 
                             console.log(data);
 
-                            $('#ui-id-1').html();
+                            $('.search-result').html();
 
-                            $('#ui-id-1').html(data);
+                            $('.search-result').html(data);
 
-                            $('.search-results').html();
+                            // $('.search-results').html();
                     
-                            $('.search-results').html(data);
+                            // $('.search-results').html(data);
 
                         
                         }
