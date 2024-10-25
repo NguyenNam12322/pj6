@@ -1971,8 +1971,13 @@
                                     @endif
                                 </form>
                                 @if((int)$data['Price']>0)
-                                 <button type="button" class="btn btn-lg btn-add-cart btn-add-cart redirectCart cartSP" onclick="addToSuport({{ $data->id }})">GỌI LẠI CHO TÔI <br>(Tư vấn tận tình, chu đáo)</button>
 
+                                <a  class="but-tra-gop add-cart-button" href="javascript:void(0)" onclick="addCartFast({{ $data->id }})" admicro-data-event="101725" admicro-data-auto="1" admicro-data-order="false">
+                                <strong>THÊM VÀO </strong>
+                                <br>
+                                <strong>GIỎ HÀNG</strong>
+                                </a>
+                                
 
                                  @endif 
                                 <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
@@ -1984,30 +1989,15 @@
 
                             <div class="installment-purchase pdetail-installment specifications-img">
                                 
-                                @if((int)$data['Price']>=3000000)
                                
-                                <a  class="but-tra-gop add-cart-button" href="javascript:void(0)" onclick="addCartFast({{ $data->id }})" admicro-data-event="101725" admicro-data-auto="1" admicro-data-order="false">
-                                <strong>THÊM VÀO </strong>
-                                <br>
-                                <strong>GIỎ HÀNG</strong>
-                                </a>
-
-                                 <!-- <a target="_blank" class="but-tra-gop installments-but" href="{{ route('details', $data->Link)  }}?show=tra-gop" admicro-data-event="101725" admicro-data-auto="1" admicro-data-order="false">
-                                <strong>TRẢ GÓP QUA THẺ</strong>
-                                <br>
-                                (Visa, Master, JCB)
-                                </a> -->
-                                @else
-                                <a class="add-card-buttons add-cart-button" href="javascript:void(0)" onclick="addCartFast({{ $data->id }})">
-                                    <strong>THÊM VÀO GIỎ HÀNG </strong>
-                                </a>
+                                 <button type="button" class="btn btn-lg btn-add-cart btn-add-cart redirectCart cartSP" onclick="addToSuport({{ $data->id }})">GỌI LẠI CHO TÔI <br>(Tư vấn tận tình, chu đáo)</button>
                                 
                                 @endif
 
-                                <br><br>
+                                <br>
                                
                             </div>
-                            @else
+                          
 
                             @if(!empty($data->Specifications))
 
