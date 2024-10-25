@@ -23,6 +23,8 @@
         .container {
             max-width: 1270px !important;
         }
+
+
     }
 
      @media only screen and (max-width: 600px) {
@@ -57,6 +59,10 @@
     @media only screen and (min-width: 601px) {
         .productSpecification_table{
             display: none;
+        }
+
+        .cartSPs{
+            background: yellow;
         }
 
         .list_specifications{
@@ -1973,7 +1979,7 @@
                                 @if((int)$data['Price']>0)
 
                                
-                                 <button type="button" class="btn btn-lg btn-add-cart btn-add-cart redirectCart cartSP" onclick="addToSuport({{ $data->id }})">Thêm vào giỏ hàng</button>
+                                 <button type="button" class="btn btn-lg btn-add-cart btn-add-cart redirectCart cartSPs" onclick="addToSuport({{ $data->id }})">Thêm vào giỏ hàng</button>
 
 
                                  @endif 
