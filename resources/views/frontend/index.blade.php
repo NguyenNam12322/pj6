@@ -678,6 +678,11 @@
                     $define[2]['link'] = 'tivi-samsung';
                     $define[2]['parent_id'] = 1;
 
+                    $define[3]['name'] = 'Tivi TCL giá rẻ';
+                    $define[3]['id'] = 15;
+                    $define[3]['link'] = 'tivi-tcl';
+                    $define[3]['parent_id'] = 1;
+
 
                     $define[4]['name'] = 'Tủ lạnh Panasonic giá rẻ';
                     $define[4]['id'] = 37;
