@@ -1851,28 +1851,6 @@
 
        
 
-        @if(Session::get('show-pop-up')==='0')
-
-        <!-- new -->
-
-        <div class="news position-fixed icons-shopings hide">   
-
-            <a class="closes" href="javascript:void(0)" onclick="closePopup()"><img src="{{ asset('images/template/close.png') }}" alt="hotline" style="height:55px; z-index: 999;"></a>
-
-            <a href="javascript:void(0)"><img src="{{ asset('images/template/shopping.png') }}" alt="hotline" style="height:55px; z-index: 999;"></a>
-              
-            <div class="clear"></div>
-
-            <div class="share-button"> 
-                <button type="button" class="btn btn-lg btn-add-cart btn-add-cart redirectCart cartSP" onclick="addToSuport(2221)">GỌI LẠI CHO TÔI <br>(Tư vấn tận tình)</button> 
-                <button type="button" class="btn btn-lg btn-add-cart btn-add-cart redirectCart cartSP right-cart">TƯ VẤN MUA SẮM <br></button> </div>
-              
-        </div>
-
-       @endif
-
-     
-
        <div class="zalo-mobile">
 
             <a href="https://zalo.me/0987874334" target="_blank">
