@@ -1851,7 +1851,7 @@
 
        
 
-        @if(Session::get('show-pop-up')==='1')
+        @if(Session::get('show-pop-up')==='0')
 
         <!-- new -->
 
