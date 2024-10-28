@@ -664,12 +664,15 @@
             <div class="ft-new-info">
                 <div class="title-if">ĐỊA CHỈ MUA HÀNG</div>
                 <p>
-                    <b>Văn phòng đại diện </b><br>
-                    Địa chỉ: {{ @$info->vpdd }}
+                    <b>Văn phòng đại diện: </b><br>
+                    HCM: {{ @$info->vpdd }}
+                    HN: Số 35 Ngõ 683 Nguyễn Khoái, phường Thanh Trì, Quận Hoàng Mai, HN
+
                 </p>
                 <p>
                     <b>Kho hàng</b><br>
-                    Địa chỉ: {{ @$info->kho }}
+                    HCM: {{ @$info->kho }}
+                    HN: Số 35 Ngõ 683 Nguyễn Khoái, phường Thanh Trì, Quận Hoàng Mai, HN
                 </p>
                
             </div>
