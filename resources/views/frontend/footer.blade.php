@@ -666,12 +666,14 @@
                 <p>
                     <b>Văn phòng đại diện: </b><br>
                     HCM: {{ @$info->vpdd }}
+                    <br>
                     HN: Số 35 Ngõ 683 Nguyễn Khoái, phường Thanh Trì, Quận Hoàng Mai, HN
 
                 </p>
                 <p>
                     <b>Kho hàng</b><br>
                     HCM: {{ @$info->kho }}
+                    <br>
                     HN: Số 35 Ngõ 683 Nguyễn Khoái, phường Thanh Trì, Quận Hoàng Mai, HN
                 </p>
                
