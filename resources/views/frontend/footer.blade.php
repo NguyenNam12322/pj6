@@ -604,8 +604,7 @@
                     <a href="/huong-dan-tieu-dung.html">Hướng dẫn tiêu dùng</a>
                     <a rel="nofollow" href="/page/huong-dan-mua-hang-online">Hướng dẫn mua hàng</a>
                     <a rel="nofollow" href="/lien-he">Hướng dẫn thanh toán</a>
-                    <a rel="nofollow" href="http://insta.vn/how-it-works/" target="_blank">Hướng dẫn trả góp với
-                    Insta</a>
+                   
                 </div>
             </div>
         </div>

@@ -28,8 +28,14 @@
         <meta name="description" content="{{ $meta->meta_content }}"/>
         <meta property="og:title" content="{{ $meta->meta_title }}" />
         @else
-        <title>Mua Sắm Tại Kho - Mua bán điện tử, điện lạnh, gia dụng chính hãng tại kho</title>
-        <meta name="description" content="Mua Sắm tại kho - mua bán thiết bị điện tử, điện lạnh, gia dụng chính hãng tại kho. Mua online tại muasamtaikho.vn giá tốt phục vụ chuyên nghiệp tận tâm."/>
+        <?php 
+         $meta = metaSeo::find(2123);
+
+         ?>
+        <title>{{ $meta->meta_title }}</title>
+        <meta name="description" content="{{ $meta->meta_content }}"/>
+        <meta property="og:title" content="{{ $meta->meta_title }}" />
+        
         @endif 
         @if(!empty($data) && !empty($data->Image))
         <meta property="og:image" content="{{ asset($data->Image) }}"/>
