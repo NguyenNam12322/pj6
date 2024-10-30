@@ -1960,9 +1960,7 @@
                                 (Visa, Master, JCB)
                                 </a> -->
                                 @else
-                                <a class="add-card-buttons add-cart-button" href="javascript:void(0)" onclick="addCartFast({{ $data->id }})">
-                                    <strong>GỌI LẠI CHO TÔI <br>(Tư vấn tận tình, chu đáo) </strong>
-                                </a>
+                                 <button type="button" class="btn btn-lg btn-add-carts btn-add-cart redirectCart cartSP" onclick="addToSuport({{ $data->id }})">GỌI LẠI CHO TÔI <br>(Tư vấn tận tình, chu đáo)</button>
                                 
                                 @endif
 
@@ -2115,7 +2113,7 @@
             </a>
 
             <a class="btn-buy txt_center cor5px"  href="javascript:void(0)" style="border-bottom: 0;" onclick="addCartFast({{ $data->id }})">
-            <i class="fa fa-shopping-cart"></i> <span class="txt_15">Thêm vào giỏ hàng</span>
+            <i class="fa fa-shopping-cart"></i> <span class="txt_15">THÊM VÀO GIỎ HÀNG</span>
             </a>
         </div>
         @endif
