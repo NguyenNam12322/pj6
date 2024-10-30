@@ -35,7 +35,7 @@
         <!-- <link rel="shortcut icon" href="{{ asset('uploads/icon/favicon.ico') }}"/> -->
         <meta name = "google-site-verify" content = "1AH1fN3G7ygWRcOlEQWJyhginaxmT67zTMPP8wnfFD0" />
          <meta name="google-site-verification" content="KnEYNkXL593z3C--o3aQaWFzJFdcuj9qDtcnKvSy4aM" />
-        <meta property="zalo-platform-site-verification" content="UTYP5VFbJZ8Yz-G8uFTfDZxws27IX0fyDZK" />
+        
         <link rel="canonical" href="{{ url()->current() }}" >
         <meta http-equiv="Cache-control" content="public">
         <meta charset="utf-8">

@@ -36,12 +36,7 @@
         @endif
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-        
-
         <meta property="og:type" content="article" />
-
-        <meta property="fb:app_id" content="534767553533391" />
-        <meta property="fb:pages" content="150921051593902" />
         <meta property="og:image" content="" />
         <meta property="og:description" content="" />
         <meta itemprop="name" content="">
