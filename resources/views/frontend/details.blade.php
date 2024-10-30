@@ -22,6 +22,10 @@
         text-transform: uppercase;
     }    
 
+    .pdetail-status{
+        overflow: hidden;
+    }
+
     
      @media (min-width: 1200px) {
         .container {
