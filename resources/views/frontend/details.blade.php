@@ -18,6 +18,10 @@
         font-size: initial!important;
     }
 
+    .redirectCart {
+        text-transform: uppercase;
+    }    
+
     
      @media (min-width: 1200px) {
         .container {
