@@ -29,11 +29,11 @@
         <meta property="og:title" content="{{ $meta->meta_title }}" />
         @else
         <?php 
-         $meta = metaSeo::find(2123);
+         $meta = App\Models\metaSeo::find(2123);
 
          ?>
-        <title>{{ $meta->meta_title }}</title>
-        <meta name="description" content="{{ $meta->meta_content }}"/>
+        <title>{{ @$meta->meta_title }}</title>
+        <meta name="description" content="{{ @$meta->meta_content }}"/>
         <meta property="og:title" content="{{ $meta->meta_title }}" />
         
         @endif 
