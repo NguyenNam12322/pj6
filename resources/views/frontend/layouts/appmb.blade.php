@@ -56,9 +56,20 @@
         <link rel="preload" href="{{asset('css/lib/owl.theme.default.min.css')}}" as="style" onload="this.onload=null;this.rel='stylesheet'">
         <link rel="preload" href="{{ asset('css/lib/bootstrap.min.css') }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
 
-        <link rel="preload" href="https://code.jquery.com/ui/1.13.1/jquery-ui.js" as="script">
 
-        
+
+        <link rel="preload" href="https://code.jquery.com/ui/1.13.1/jquery-ui.js" as="script" onload="this.onload=null;document.body.appendChild(Object.assign(document.createElement('script'), {src: this.href}));">
+
+        <link rel="preload" href="{{ asset('js/layout1.js') }}" as="script">
+   
+        <link rel="preload" href="{{asset('js/lib/owl.carousel.min.js')}}" as="script">
+
+      
+        <link rel="preload" href="{{ asset('js/lib/bootstrap.min.js') }}" as="script">
+
+        <link rel="preload" href="{{asset('js/lib/jquery.validate.min.js')}}" as="script">
+        <link rel="preload" href="{{ asset('js/lib/lazyload.js') }}" as="script">
+
 
          <style type="text/css">
             .nk-nav-right ul{
@@ -1927,16 +1938,7 @@
     ?>
    
 
-    <link rel="preload" href="{{ asset('js/layout1.js') }}" as="script">
-   
-        <link rel="preload" href="{{asset('js/lib/owl.carousel.min.js')}}" as="script">
-
-      
-        <link rel="preload" href="{{ asset('js/lib/bootstrap.min.js') }}" as="script">
-
-        <link rel="preload" href="{{asset('js/lib/jquery.validate.min.js')}}" as="script">
-        <link rel="preload" href="{{ asset('js/lib/lazyload.js') }}" as="script">
-
+    
     <!-- <script src="{{ asset('js/lib/sweetalert2.all.min.js') }}"></script> -->
 
 
