@@ -890,7 +890,7 @@
             @endif
 
 
-            <div class="pay mobile">
+            <div class="col-sm-12 pay mobile">
                 <div class="pdetail-des col-xs-12">
                     <div class="clearfix"></div>
                     <div class="info-box">
