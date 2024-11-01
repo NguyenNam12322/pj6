@@ -41,6 +41,10 @@
             display: none;
         }
 
+        .title{
+            height: 58px;
+        }
+
         .box01 .owl-carousel .owl-item img:not(.monopoly-label) {
             height: 220px !important;
 
@@ -879,7 +883,7 @@
             </div>
 
             @if($mobile ==1)
-            <div class="col-sm-12">
+            <div class="col-sm-12 title">
                 <h1>{{ $data->Name }}</h1>
             </div>
              
