@@ -40,7 +40,15 @@
         <meta http-equiv="Cache-control" content="public">
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-         <link  rel="preload" type="text/css" href="{{ asset('css/app.css') }} "  as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <link  rel="preload" type="text/css" href="{{ asset('css/app.css') }} " as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+        <link rel="preload" type="text/css" href="{{ asset('css/main.css') }}" as="style" onload="this.onload=null;this.rel='stylesheet'"> 
+        
+        <link rel="preload" type="text/css" href="{{ asset('css/apps.css') }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <link rel="preload" type="text/css" href="{{asset('css/dienmay.css')}}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <link rel="preload" type="text/css" href="{{asset('css/detailsfe.css')}}" as="style" onload="this.onload=null;this.rel='stylesheet'"> 
+        <link rel="preload" type="text/css" href="{{ asset('css/detail1fe.css') }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
           <link rel="stylesheet" href="{{asset('css/lib/owl.carousel.min.css')}}">
             <link rel="stylesheet" href="{{asset('css/lib/owl.theme.default.min.css')}}">
             <script rel="preload" src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
@@ -161,11 +169,7 @@
         <link rel="stylesheet" href="{{ asset('css/lib/bootstrap.min.css') }}">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
          
-        <link rel="stylesheet" type="text/css" href="{{ asset('css/main.css') }}"> 
-        <!-- <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script> -->
-        <link rel="stylesheet" type="text/css" href="{{ asset('css/apps.css') }}">
-        <link rel="stylesheet" type="text/css" href="{{asset('css/dienmay.css')}}">
-        <link rel="stylesheet" type="text/css" href="{{asset('css/detailsfe.css')}}"> 
+        
        
 
         <meta name="csrf-token" content="{{ csrf_token() }}">
