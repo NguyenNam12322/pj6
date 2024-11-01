@@ -1016,7 +1016,7 @@
                                                 <div class="span4 ">
                                                     <h1 id="nk-logo">
                                                         <a href="/">
-                                                        <img fetchpriority="high" loading="eager" src="{{ asset($info->logo) }}"  alt="">
+                                                        <img  src="{{ asset($info->logo) }}"  alt="">
                                                         </a>
                                                     </h1>
                                                 </div>
@@ -1899,12 +1899,9 @@
 
     <script  async src="{{ asset('js/layout1.js') }}" ></script>
 
-     <link rel="preload" href="{{asset('js/lib/owl.carousel.min.js')}}" as="script">
-    
+    <link rel="preload" href="{{asset('js/lib/owl.carousel.min.js')}}" as="script">
   
     <link rel="preload" href="{{ asset('js/lib/bootstrap.min.js') }}" as="script">
-
-   
 
     <link rel="preload" href="{{asset('js/lib/jquery.validate.min.js')}}" as="script">
     <link rel="preload" href="{{ asset('js/lib/lazyload.js') }}" as="script">
