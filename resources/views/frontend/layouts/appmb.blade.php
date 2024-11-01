@@ -1933,8 +1933,8 @@
   
     <script src="{{ asset('js/lib/bootstrap.min.js') }}"></script>
 
-    <script src="{{asset('js/lib/jquery.validate.min.js')}}"></script>
-    <script src="{{ asset('js/lib/lazyload.js') }}"></script>
+    <link rel="preload" href="{{asset('js/lib/jquery.validate.min.js')}}" as="script">
+        <link rel="preload" href="{{ asset('js/lib/lazyload.js') }}" as="script">
     <!-- <script src="{{ asset('js/lib/sweetalert2.all.min.js') }}"></script> -->
 
 
