@@ -1284,202 +1284,204 @@
 
                     }
 
-             @media only screen and (min-width: 601px) {
-                .mobile{
-                    display: none;
-                }
+                 @media only screen and (min-width: 601px) {
+                    .mobile{
+                        display: none;
+                    }
 
-                .nk-danh-muc-trang-chu h3 b{
-                    color: #000;
-                }
+                    .nk-danh-muc-trang-chu h3 b{
+                        color: #000;
+                    }
 
-                .nk-nav-right .row-fluid{
-                    padding: 24px 0;
-                }
+                    .nk-nav-right .row-fluid{
+                        padding: 24px 0;
+                    }
 
-                .fas-phones{
-                    border: 0;
-                }
+                    .fas-phones{
+                        border: 0;
+                    }
 
-                .search-order{
-                    width: 47% !important;
-                }
+                    .search-order{
+                        width: 47% !important;
+                    }
 
-                .wrap-grid-menu-right{
-                    background:linear-gradient(0deg,#d1a94e,#fdf5a1,#cfac54);
-                }
+                    .wrap-grid-menu-right{
+                        background:linear-gradient(0deg,#d1a94e,#fdf5a1,#cfac54);
+                    }
 
 
-             }   
-                </style>
+                 }   
+                    </style>
 
                  
 
 
-            <div class="row-fluid mobile row-head">
-                <div class="span16 nk-header">
-                    <div class="fluid">
-                        <div class="span16 _nk_main">
-                            <div class="row-fluid ">
+                <div class="row-fluid mobile row-head">
+                    <div class="span16 nk-header">
+                        <div class="fluid">
+                            <div class="span16 _nk_main">
+                                <div class="row-fluid ">
 
-                                <div class="div-header-cart">
+                                    <div class="div-header-cart">
 
-                                    <div class="logo-mobile">
-                                         <a href="/"> <img  src="{{ asset('/images/template/logo2.jpg') }}" alt=""> </a>
-                                    </div>
-
-                                    <div id="nk-cart">
-                                        <ul>
-                                            <li class="cart-info-box nk_tooltip" data-toggle=".nk-cart-content" data-overlay="true">
-                                                
-                                                <a href="javascript:void(0)" class="checkout_header" onclick="showToCart()">
-                                                    <div class="icon">
-                                                        <i class="nki-shopping-cart"></i>
-                                                        @if($number_cart>0)
-                                                        <span class="mount">{{$number_cart }}</span>
-                                                        @endif
-                                                    </div>
-                                                </a>
-                                                
-                                            </li>
-                                          
-                                            <li>
-                                                <a href="#">
-                                                <i class="nki-Phone"></i>  </a>
-                                            </li> 
-
-                                             <li id="login_form">
-                                                <a href="#" class="nk-text-login"> Tin tức </a>
-                                            </li>
-
-                                        
-                                            <li class="icons-mobile-bar">
-
-                                                <a class="btn  show-menu-mobile show-bar" href="javascript:void(0)"><i class="fa fa-bars"></i></a>
-                                            </li> 
-                                          
-
-                                        </ul>
-                                    </div>
-
-                                </div>    
-                              
-
-                                 <!-- menu show bar -->
-
-                                <div class="show-menu">
-                                    <div class="box-fixed active">
-                                        <a href="javascript:void(0)" class="btn-closemenu">Đóng</a>
-                                    </div>
-                                    <div class="show-menu__main">
-                                        <nav class="nav-list nav-list--dynamic">
-                                            <a href="/ti-vi">Tivi</a> 
-                                            <a href="/may-giat">Máy giặt</a> 
-                                            <a href="/tu-lanh">Tủ lạnh</a> 
-                                            <a href="/dieu-hoa">Điều hòa</a> 
-                                            <a href="/tu-dong">Tủ đông</a> 
-                                            <a href="/tu-mat">Tủ Mát</a> 
-                                            <a href="/gia-dung">Gia Dụng</a> 
-                                            <a href="/lo-nuong">Lò Nướng</a> <!-- <a href="/may-loc-nuoc">Máy lọc nước</a> --> 
-                                            <a href="/may-say-quan-ao">Máy sấy quần áo</a> 
-                                            <a href="/may-loc-nuoc">A.O.Smith</a> 
-                                            <a href="/quat">Quạt</a> 
-                                            <a href="/may-cu-trung-bay">Máy cũ, Trưng bày</a> 
-                                            <a href="/deal" class="promotion-menu"> Giảm giá <br>đặc biệt <span class="item__label">- 5%</span> </a> 
-                                        </nav>
-                                        <div class="show-menu__link clearfix">
-                                            <div class="link-item">
-                                                <p>Thông tin</p>
-                                                <ul>
-                                                    <li>
-                                                        <a href="#">Giới thiệu </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">Liên hệ  </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">Dự án bán buôn </a>
-                                                    </li>
-                                                   
-                                                </ul>
-                                            </div>
-                                            <div class="link-item">
-                                                <p>Hỗ trợ mua hàng</p>
-                                                <ul>
-                                                    <li>
-                                                        <a href="#">Hướng dẫn mua hàng </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">Cách thức thanh toán </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">Bảng giá lắp đặt </a>
-                                                    </li>
-                                                    
-                                                </ul>
-                                            </div>
+                                        <div class="logo-mobile">
+                                             <a href="/"> <img  src="{{ asset('/images/template/logo2.jpg') }}" alt=""> </a>
                                         </div>
-                                        
-                                    </div>
-                                </div>
 
-                                <!-- end menu show -->
-
-
-                                <div class="span16 row flexthis search_center">
-                                    <div class="row-fluid nav1-search">
-                                       <!--  <div class="span4 ">
-                                            <h1 id="nk-logo">
-                                                <a href="/">
-                                                <img fetchpriority="high" loading="eager" src="/images/companies/_1/html/2017/T11/homepage/Logo_NK.svg" width="242px" height="42px" alt="">
-                                                </a>
-                                            </h1>
-                                        </div> -->
-                                        
-                                        <div class="span12 nk-nav-right nav-search">
-                                            <div class="row-fluid ">
-                                                <div class="span16 ">
-                                                    <div class="header-right" id="nk-holine-new">
-
-
-                                                     
-                                                        <div id="nk-searchs">
-                                                            <form action="{{ route('search-product-frontend') }}" method="get" class="cm-processed-form">
-                                                                <div class="nk-search-box">
-                                                                    <input type="text" id="tags_mobile" name="key"  id="search_input" placeholder="Bạn cần tìm gì hôm nay ?" autocomplete="off">
-                                                                    <button>
-                                                                    <i class="nki-search"></i>
-                                                                    </button>
-                                                                    <div class="search-results">
-                                                                       
-                                                                    </div>
-                                                                </div>
-                                                            </form>
+                                        <div id="nk-cart">
+                                            <ul>
+                                                <li class="cart-info-box nk_tooltip" data-toggle=".nk-cart-content" data-overlay="true">
+                                                    
+                                                    <a href="javascript:void(0)" class="checkout_header" onclick="showToCart()">
+                                                        <div class="icon">
+                                                            <i class="nki-shopping-cart"></i>
+                                                            @if($number_cart>0)
+                                                            <span class="mount">{{$number_cart }}</span>
+                                                            @endif
                                                         </div>
+                                                    </a>
+                                                    
+                                                </li>
+                                              
+                                                <li>
+                                                    <a href="#">
+                                                    <i class="nki-Phone"></i>  </a>
+                                                </li> 
 
+                                                 <li id="login_form">
+                                                    <a href="#" class="nk-text-login"> Tin tức </a>
+                                                </li>
+
+                                            
+                                                <li class="icons-mobile-bar">
+
+                                                    <a class="btn  show-menu-mobile show-bar" href="javascript:void(0)"><i class="fa fa-bars"></i></a>
+                                                </li> 
+                                              
+
+                                            </ul>
+                                        </div>
+
+                                    </div>    
+                                  
+
+                                     <!-- menu show bar -->
+
+                                    <div class="show-menu">
+                                        <div class="box-fixed active">
+                                            <a href="javascript:void(0)" class="btn-closemenu">Đóng</a>
+                                        </div>
+                                        <div class="show-menu__main">
+                                            <nav class="nav-list nav-list--dynamic">
+                                                <a href="/ti-vi">Tivi</a> 
+                                                <a href="/may-giat">Máy giặt</a> 
+                                                <a href="/tu-lanh">Tủ lạnh</a> 
+                                                <a href="/dieu-hoa">Điều hòa</a> 
+                                                <a href="/tu-dong">Tủ đông</a> 
+                                                <a href="/tu-mat">Tủ Mát</a> 
+                                                <a href="/gia-dung">Gia Dụng</a> 
+                                                <a href="/lo-nuong">Lò Nướng</a> <!-- <a href="/may-loc-nuoc">Máy lọc nước</a> --> 
+                                                <a href="/may-say-quan-ao">Máy sấy quần áo</a> 
+                                                <a href="/may-loc-nuoc">A.O.Smith</a> 
+                                                <a href="/quat">Quạt</a> 
+                                                <a href="/may-cu-trung-bay">Máy cũ, Trưng bày</a> 
+                                                <a href="/deal" class="promotion-menu"> Giảm giá <br>đặc biệt <span class="item__label">- 5%</span> </a> 
+                                            </nav>
+                                            <div class="show-menu__link clearfix">
+                                                <div class="link-item">
+                                                    <p>Thông tin</p>
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#">Giới thiệu </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Liên hệ  </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Dự án bán buôn </a>
+                                                        </li>
+                                                       
+                                                    </ul>
+                                                </div>
+                                                <div class="link-item">
+                                                    <p>Hỗ trợ mua hàng</p>
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#">Hướng dẫn mua hàng </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Cách thức thanh toán </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Bảng giá lắp đặt </a>
+                                                        </li>
+                                                        
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+
+                                    <!-- end menu show -->
+
+
+                                    <div class="span16 row flexthis search_center">
+                                        <div class="row-fluid nav1-search">
+                                           <!--  <div class="span4 ">
+                                                <h1 id="nk-logo">
+                                                    <a href="/">
+                                                    <img fetchpriority="high" loading="eager" src="/images/companies/_1/html/2017/T11/homepage/Logo_NK.svg" width="242px" height="42px" alt="">
+                                                    </a>
+                                                </h1>
+                                            </div> -->
+                                            
+                                            <div class="span12 nk-nav-right nav-search">
+                                                <div class="row-fluid ">
+                                                    <div class="span16 ">
+                                                        <div class="header-right" id="nk-holine-new">
+
+
+                                                         
+                                                            <div id="nk-searchs">
+                                                                <form action="{{ route('search-product-frontend') }}" method="get" class="cm-processed-form">
+                                                                    <div class="nk-search-box">
+                                                                        <input type="text" id="tags_mobile" name="key"  id="search_input" placeholder="Bạn cần tìm gì hôm nay ?" autocomplete="off">
+                                                                        <button>
+                                                                        <i class="nki-search"></i>
+                                                                        </button>
+                                                                        <div class="search-results">
+                                                                           
+                                                                        </div>
+                                                                    </div>
+                                                                </form>
+                                                            </div>
+
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
 
+                                        </div>
                                     </div>
+
                                 </div>
 
                             </div>
-
                         </div>
                     </div>
                 </div>
-            </div>
-            <!-- endheader -->
+                <!-- endheader -->
 
 
                     @include('frontend.menu_list')
 
                 </div>
+
+                 @yield('content')
             </div>
 
-        @yield('content')
+       
 
 
         <!-- Modal -->
