@@ -60,6 +60,71 @@
 
         <link rel="preload" href="https://code.jquery.com/ui/1.13.1/jquery-ui.js" as="script">
 
+        <style>
+
+            .position-fixed .share-button{
+                position: fixed;
+               
+                display: flex;
+            }
+            .lp-menu ul {
+                display: inline-block;
+            }
+
+            .m .lp-menu.menu-type-4 ul li {
+                min-width: 33.33%;
+                max-width: 33.33%;
+            }
+
+            .m .nk-main-content-checkout .nk-tra-gop-bang-the-tin-dung .item-content ul li img {
+                object-fit: cover;
+            }
+
+            .m .nk-main-content-checkout .nk-tra-gop-bang-the-tin-dung .item-content ul li {
+                height: 46px;
+            }
+
+            .m .flash-product .position-top-left {
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+
+            .m .flash-product .position-top-left img {
+                height: 41px;
+                object-fit: contain;
+            }
+
+            .m #nk-banner-home {
+                margin-top: 6px;
+            }
+
+            .m .custom-dot-carousel.trang-chu.active {
+                min-height: auto;
+            }
+        </style>
+
+        <style type="text/css">
+            .cart-container {
+                text-align: center;
+                padding: 20px;
+/*                                    border: 1px solid #ccc;*/
+                border-radius: 8px;
+                background-color: #fff;
+            }
+            .empty-cart-message {
+                font-size: 18px;
+                color: #555;
+                margin-top: 30px;
+            }
+            .cart-icon {
+                font-size: 40px;
+                color: #ccc;
+            }
+            #exampleModal .modal-body{
+                min-height: 200px;
+            }
+        </style>
 
          <style type="text/css">
             .nk-nav-right ul{
@@ -859,235 +924,8 @@
             @endif
 
         </style>
-        @stack('style')
 
-
-        
-    </head>
-    <body class="col-sm-12 theme-lunar-new-year d">
-        <div class="banner-media desktop">
-            <div class="" data-size="1">
-                <div class="item" data-background-color="#CF1F2F" data-order="1">
-
-                    <?php 
-
-                        if(!Cache::has('banners12')) {
-
-                            $banners = App\Models\banners::where('option', 1)->get()->last();
-
-                            Cache::put('banners12',$banners,10000);
-                        }
-
-
-                        $banner = Cache::get('banners12');
-                    ?>
-
-                    @if(!empty($banner)&& $banner->active ==1)
-                    <a aria-label="slide" data-cate="0" data-place="1295" href="#"><img  src="{{ asset($banner->image) }}" alt="BF"  ></a>
-                    @endif
-                </div>
-            </div>
-            
-        </div>
-
-       
-        <?php  
-
-
-            $userClient = session()->get('status-login');
-
-            if(!Cache::has('popup1') ){
-
-                $popups = App\Models\popup::find(4);
-
-                Cache::put('popup1', $popups,10000);
-            }
-
-
-            $popup = Cache::get('popup1');
-            
-        ?>
-        <!-- popup quảng cáo  -->
-
-        @if($popup->active==1)
-
-        @if($popup->option ==0)
-
-        <div id="box-promotion" class="box-promotion box-promotion-active">
-            <div class="box-promotion-item" style="width: 500px;height: 500px;left: 34%;top: 23%;">
-                <div class="box-banner">
-                    <a href="{{ $popup->link }}" target="_blank" rel="nofollow"><img src="{{ asset( $popup->image) }}" alt="pop-up"></a>
-                </div>
-                <a class="box-promotion-close" href="javascript:void(0)" title="Đóng lại">x</a>
-            </div>
-        </div>
-        @else
-
-        @if(!empty($requestcheck)&& \Request::route()->getName() =="homeFe")
-        <div id="box-promotion" class="box-promotion box-promotion-active">
-            <div class="box-promotion-item" style="width: 500px;height: 500px;left: 34%;top: 23%;">
-                <div class="box-banner">
-                    <a href="{{ $popup->link }}" target="_blank" rel="nofollow"><img src="{{ asset( $popup->image) }}" alt="pop-up"></a>
-                </div>
-                <a class="box-promotion-close" href="javascript:void(0)" title="Đóng lại">[x]</a>
-            </div>
-        </div>
-
-        @endif
-
-        @endif
-        
-        @endif
-
-     
-
-
-        <div class="tygh-top-panel clearfix">
-                <div class="container-fluid ">
-                    <div class="row-fluid ">
-                        <div class="span16 nk-banner-top">
-                            <script>
-                                let _cdp365JourneySetting = {
-                                    jrequest_events: [{
-                                        event_category: "pageview",
-                                        event_action: "view"
-                                    }],
-                                    jrequest_zones: "none"
-                                }
-                            </script>
-                            <style>
-
-                                .position-fixed .share-button{
-                                    position: fixed;
-                                   
-                                    display: flex;
-                                }
-                                .lp-menu ul {
-                                    display: inline-block;
-                                }
-
-                                .m .lp-menu.menu-type-4 ul li {
-                                    min-width: 33.33%;
-                                    max-width: 33.33%;
-                                }
-
-                                .m .nk-main-content-checkout .nk-tra-gop-bang-the-tin-dung .item-content ul li img {
-                                    object-fit: cover;
-                                }
-
-                                .m .nk-main-content-checkout .nk-tra-gop-bang-the-tin-dung .item-content ul li {
-                                    height: 46px;
-                                }
-
-                                .m .flash-product .position-top-left {
-                                    position: absolute;
-                                    top: 0;
-                                    left: 0;
-                                }
-
-                                .m .flash-product .position-top-left img {
-                                    height: 41px;
-                                    object-fit: contain;
-                                }
-
-                                .m #nk-banner-home {
-                                    margin-top: 6px;
-                                }
-
-                                .m .custom-dot-carousel.trang-chu.active {
-                                    min-height: auto;
-                                }
-                            </style>
-                                                                                                                                                                                                                                        
-                            <span class="close_top_banner">✕</span>
-                        </div>
-                    </div>
-
-
-
-                    <!-- header -->
-                    <div class="row-fluid desktop">
-                        <div class="span16 nk-header">
-                            <div class="row-fluid ">
-                                <div class="span16 container _nk_main">
-                                    <div class="row-fluid ">
-                                        <div class="span16  flexthis">
-                                            <div class="row-fluid ">
-                                                <div class="span4 ">
-                                                    <h1 id="nk-logo">
-                                                        <a href="/">
-                                                        <img  src="{{ asset($info->logo) }}"  alt="">
-                                                        </a>
-                                                    </h1>
-                                                </div>
-
-                                                <div class="span12 nk-nav-right">
-                                                    <div class="row-fluid ">
-                                                        <div class="span16 ">
-                                                            <div class="header-right" id="nk-holine-new">
-                                                               
-                                                                <div id="nk-search">
-                                                                    <form action="{{ route('search-product-frontend') }}" method="get" class="cm-processed-form">
-                                                                        <div class="nk-search-box">
-                                                                            <input type="text" id="tags" name="key"  id="search_input" placeholder="Bạn cần tìm gì hôm nay ?" autocomplete="off">
-                                                                            <button>
-                                                                            <i class="nki-search"></i>
-                                                                            </button>
-                                                                            <div class="nk-search-hint">
-                                                                                <div class="search-resultss">
-                                                                                    <ul class="nk-search-cate">
-                                                                                        <li></li>
-                                                                                    </ul>
-                                                                                    <ul class="nk-search-product-item">
-                                                                                        <li></li>
-                                                                                    </ul>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </form>
-                                                                </div>
-
-                                                                <div id="nk-cart">
-                                                                    <ul>
-                                                                        <li class="cart-info-box nk_tooltip" data-toggle=".nk-cart-content" data-overlay="true">
-                                                                            <a href="{{ route('show-cart') }}" class="checkout_header" >
-                                                                                <div class="icon"><i class="nki-shopping-cart"></i>
-                                                                                    @if($number_cart>0)
-                                                                                    <span class="mount">{{$number_cart }}</span>
-                                                                                    <span class="mount">{{$number_cart }}</span>
-                                                                                </div>
-                                                                                @endif
-                                                                                Giỏ hàng 
-                                                                            </a>
-                                                                        </li>
-                                                                       
-                                                                       <li class="search-order"> <div class="fas-phones phones-hotline"> <a href="tel: 0913011888" class="header__history tin-km"><i class="nki-Phone"></i> Hotline:{{ $info->tdht }}</a> </div> <!-- <a href="/tra-cuu.html"> Tra cứu đơn hàng </a> --> </li>
-
-                                                                       <li id="login_form">
-                                                                       
-                                                                           <a href="/tin-tuc">Tư vấn mua sắm</a>
-                                                                        </li>
-
-                                                                        <li id="login_form2" class="nk_tooltip" data-toggle=".nk-login-content" data-overlay="overlay" style="display: none;"></li>
-                                                                      
-                                                                </div>
-
-
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                <style type="text/css">
+        <style type="text/css">
 
                      .news .right-cart{
                         background: red !important;
@@ -1313,9 +1151,180 @@
                  }   
                     </style>
 
-                 
+                @stack('style')
 
 
+        
+    </head>
+    <body class="col-sm-12 theme-lunar-new-year d">
+        <div class="banner-media desktop">
+            <div class="" data-size="1">
+                <div class="item" data-background-color="#CF1F2F" data-order="1">
+
+                    <?php 
+
+                        if(!Cache::has('banners12')) {
+
+                            $banners = App\Models\banners::where('option', 1)->get()->last();
+
+                            Cache::put('banners12',$banners,10000);
+                        }
+
+
+                        $banner = Cache::get('banners12');
+                    ?>
+
+                    @if(!empty($banner)&& $banner->active ==1)
+                    <a aria-label="slide" data-cate="0" data-place="1295" href="#"><img  src="{{ asset($banner->image) }}" alt="BF"  ></a>
+                    @endif
+                </div>
+            </div>
+            
+        </div>
+
+       
+        <?php  
+            $userClient = session()->get('status-login');
+
+            if(!Cache::has('popup1') ){
+
+                $popups = App\Models\popup::find(4);
+
+                Cache::put('popup1', $popups,10000);
+            }
+            $popup = Cache::get('popup1');
+        ?>
+        <!-- popup quảng cáo  -->
+
+        @if($popup->active==1)
+
+        @if($popup->option ==0)
+
+        <div id="box-promotion" class="box-promotion box-promotion-active">
+            <div class="box-promotion-item" style="width: 500px;height: 500px;left: 34%;top: 23%;">
+                <div class="box-banner">
+                    <a href="{{ $popup->link }}" target="_blank" rel="nofollow"><img src="{{ asset( $popup->image) }}" alt="pop-up"></a>
+                </div>
+                <a class="box-promotion-close" href="javascript:void(0)" title="Đóng lại">x</a>
+            </div>
+        </div>
+        @else
+
+        @if(!empty($requestcheck)&& \Request::route()->getName() =="homeFe")
+        <div id="box-promotion" class="box-promotion box-promotion-active">
+            <div class="box-promotion-item" style="width: 500px;height: 500px;left: 34%;top: 23%;">
+                <div class="box-banner">
+                    <a href="{{ $popup->link }}" target="_blank" rel="nofollow"><img src="{{ asset( $popup->image) }}" alt="pop-up"></a>
+                </div>
+                <a class="box-promotion-close" href="javascript:void(0)" title="Đóng lại">[x]</a>
+            </div>
+        </div>
+
+        @endif
+
+        @endif
+        
+        @endif
+
+        <div class="tygh-top-panel clearfix">
+            <div class="container-fluid ">
+                <div class="row-fluid ">
+                    <div class="span16 nk-banner-top">
+                        <script>
+                            let _cdp365JourneySetting = {
+                                jrequest_events: [{
+                                    event_category: "pageview",
+                                    event_action: "view"
+                                }],
+                                jrequest_zones: "none"
+                            }
+                        </script>
+                        
+                                                                                                                                                                                                                                    
+                        <span class="close_top_banner">✕</span>
+                    </div>
+                </div>
+                <!-- header -->
+                <div class="row-fluid desktop">
+                    <div class="span16 nk-header">
+                        <div class="row-fluid ">
+                            <div class="span16 container _nk_main">
+                                <div class="row-fluid ">
+                                    <div class="span16  flexthis">
+                                        <div class="row-fluid ">
+                                            <div class="span4 ">
+                                                <h1 id="nk-logo">
+                                                    <a href="/">
+                                                    <img  src="{{ asset($info->logo) }}"  alt="">
+                                                    </a>
+                                                </h1>
+                                            </div>
+
+                                            <div class="span12 nk-nav-right">
+                                                <div class="row-fluid ">
+                                                    <div class="span16 ">
+                                                        <div class="header-right" id="nk-holine-new">
+                                                           
+                                                            <div id="nk-search">
+                                                                <form action="{{ route('search-product-frontend') }}" method="get" class="cm-processed-form">
+                                                                    <div class="nk-search-box">
+                                                                        <input type="text" id="tags" name="key"  id="search_input" placeholder="Bạn cần tìm gì hôm nay ?" autocomplete="off">
+                                                                        <button>
+                                                                        <i class="nki-search"></i>
+                                                                        </button>
+                                                                        <div class="nk-search-hint">
+                                                                            <div class="search-resultss">
+                                                                                <ul class="nk-search-cate">
+                                                                                    <li></li>
+                                                                                </ul>
+                                                                                <ul class="nk-search-product-item">
+                                                                                    <li></li>
+                                                                                </ul>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </form>
+                                                            </div>
+
+                                                            <div id="nk-cart">
+                                                                <ul>
+                                                                    <li class="cart-info-box nk_tooltip" data-toggle=".nk-cart-content" data-overlay="true">
+                                                                        <a href="{{ route('show-cart') }}" class="checkout_header" >
+                                                                            <div class="icon"><i class="nki-shopping-cart"></i>
+                                                                                @if($number_cart>0)
+                                                                                <span class="mount">{{$number_cart }}</span>
+                                                                                <span class="mount">{{$number_cart }}</span>
+                                                                            </div>
+                                                                            @endif
+                                                                            Giỏ hàng 
+                                                                        </a>
+                                                                    </li>
+                                                                   
+                                                                   <li class="search-order"> <div class="fas-phones phones-hotline"> <a href="tel: 0913011888" class="header__history tin-km"><i class="nki-Phone"></i> Hotline:{{ $info->tdht }}</a> </div> <!-- <a href="/tra-cuu.html"> Tra cứu đơn hàng </a> --> </li>
+
+                                                                   <li id="login_form">
+                                                                   
+                                                                       <a href="/tin-tuc">Tư vấn mua sắm</a>
+                                                                    </li>
+
+                                                                    <li id="login_form2" class="nk_tooltip" data-toggle=".nk-login-content" data-overlay="overlay" style="display: none;"></li>
+                                                                  
+                                                            </div>
+
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>           
+            
                 <div class="row-fluid mobile row-head">
                     <div class="span16 nk-header">
                         <div class="fluid">
@@ -1473,19 +1482,12 @@
                 </div>
                 <!-- endheader -->
 
+                @include('frontend.menu_list')
 
-                    @include('frontend.menu_list')
-
-                </div>
-
-                 @yield('content')
-
-               
             </div>
 
-       
-
-
+             @yield('content')
+        </div>
         <!-- Modal -->
         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
@@ -1616,27 +1618,6 @@
                                 </div>
                             </form>
                         </div>
-                        <style type="text/css">
-                            .cart-container {
-                                text-align: center;
-                                padding: 20px;
-/*                                    border: 1px solid #ccc;*/
-                                border-radius: 8px;
-                                background-color: #fff;
-                            }
-                            .empty-cart-message {
-                                font-size: 18px;
-                                color: #555;
-                                margin-top: 30px;
-                            }
-                            .cart-icon {
-                                font-size: 40px;
-                                color: #ccc;
-                            }
-                            #exampleModal .modal-body{
-                                min-height: 200px;
-                            }
-                        </style>
                         <div class="cart-container {{ $number_cart>0?'hide':'' }}">
                             <div class="cart-icon">🛒</div>
                             <div class="empty-cart-message">
@@ -1742,36 +1723,7 @@
                 </div>
             </div>
         </div>
-
        <!--  Endmodal -->
-
-      
-
-    <!-- <div class="max-width">
-        <div class="phone_hotline"> <a href="tel:0243.687.9145" title="Bảo Hành: 0243.687.9145" class="p_hotline_item"> <i class="icon_security"></i> <span><strong>Bảo Hành: 0243.687.9145</strong> (8h00 - 17h00)</span> </a> <a href="tel:0247.303.6336" title="Mua hàng: 0247.303.6336" class="p_hotline_item"> <i class="icon_purchase"></i> <span><strong>Mua hàng: 0247.303.6336</strong> (8h00 - 17h00)</span> </a> <a href="tel:0916917949" title="Khiếu nại:0916917949" class="p_hotline_item"> <i class="icon_complain"></i> <span><strong>Khiếu nại: 091.691.7949</strong> (8h00 - 17h00)</span> </a> </div>
-    </div> -->
-
-   
-       
-
-        
-
-       <!--  <div class="re-call">   
-            <a href="tel:02473036336"><img src="{{ asset('images/template/tongdai02473036336.png') }}" alt="hotline" style="height:55px; z-index: 999;"></a>
-              
-            <div class="clear"></div>
-              
-        </div>
-
-        <div class="help">   
-            <a href="tel:02473036336"><img src="{{ asset('images/template/tongdai02473036336.png') }}" alt="hotline" style="height:55px; z-index: 999;"></a>
-              
-            <div class="clear"></div>
-              
-        </div> -->
-
-
-
         <div class="global-compare-group">
             <div class="title text-22 text-white d-flex align-items-center justify-content-between font-600">
                 <p>SO SÁNH SẢN PHẨM</p>
@@ -1791,22 +1743,12 @@
                 
             </div>
         </div>
-
-
-       <!--  <button onclick="topFunction()" id="myBtn-top" title="Go to top"><i class="fas fa-angle-up"></i></button> -->
-        
+      
         <script>
             window.dataLayer = window.dataLayer || [];
-            
             dataLayer.push({ 'pageType':'Home','pagePlatform':'Web','pageStatus':'Kinh doanh'})
-            
-            
-            
         </script>
-
-       
-
-       <div class="zalo-mobile">
+        <div class="zalo-mobile">
 
             <a href="https://zalo.me/0987874334" target="_blank">
                 <div style="position: fixed; bottom: 52px; right: 52px; transform: translate(0px, 0px) !important; z-index: 2147483644; border: none; visibility: visible; right: 0px; width: 60px; height: 60px;" class="zalo-chat-widget"data-welcome-message="Điện Máy Người Việt rất vui khi được hỗ trợ bạn!" data-autopopup="0" data-width="" data-height="">
@@ -1814,56 +1756,7 @@
                 </div>
             </a>
         </div> 
-          
-            
-
         
-       <!--  <div  class="zalo-chat-widget" data-oaid="1329456933344915716" data-welcome-message="Điện Máy Người Việt rất vui khi được hỗ trợ bạn!" data-autopopup="0" data-width="" data-height=""></div>
-
-         <script src="{{ asset('/js/zalo.js') }}"></script>  -->
-       
-        
-        
- 
-<!-- Messenger Plugin chat Code -->
-   <!--  <div id="fb-root"></div> -->
-
-    <!-- Your Plugin chat code -->
-   <!--  <div id="fb-customer-chat" class="fb-customerchat">
-    </div>
-
-    <script>
-      var chatbox = document.getElementById('fb-customer-chat');
-      chatbox.setAttribute("page_id", "101251095983613");
-      chatbox.setAttribute("attribution", "biz_inbox");
-    </script> -->
-
-    <!-- Your SDK code -->
-   <!--  <script>
-      window.fbAsyncInit = function() {
-        FB.init({
-          xfbml            : true,
-          version          : 'v14.0'
-        });
-      };
-
-      (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));
-    </script> -->
-
-  
-
-     <!--Start of Tawk.to Script-->
-    <!-- <script src="{{asset('js/tawto.js')}}"></script> -->
-   
-    <!--End of Tawk.to Script-->
-
-
 <?php 
     $ismobile = preg_match("/(android|avantgo|blackberry|bolt|boost|cricket|docomo|fone|hiptop|mini|mobi|palm|phone|pie|tablet|up\.browser|up\.link|webos|wos)/i", $_SERVER["HTTP_USER_AGENT"]);
 
@@ -1881,14 +1774,8 @@
     <link rel="preload" href="{{ asset('js/lib/lazyload.js') }}" as="script">
     <!-- <script src="{{ asset('js/lib/sweetalert2.all.min.js') }}"></script> -->
 
-
     @stack('script')
-
-  
-
   <script>
-
-
     function showPopup() {
 
         $('.icons-shopings').removeClass('hide')
