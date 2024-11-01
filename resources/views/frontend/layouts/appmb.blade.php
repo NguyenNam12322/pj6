@@ -1480,7 +1480,7 @@
 
                  @yield('content')
 
-                 @include('frontend.footer') 
+               
             </div>
 
        
@@ -1596,12 +1596,9 @@
                                     </select>
                                 </div>
                                 <div id="district-holder-login" style="width: 49%;display: inline-block;color: #0083d1;"></div>
-                               
                                 <div class="item-form">
-                                    
                                     <table style="width:100%;">
                                         <tbody>
-                                          
                                             <tr class="item-paymethod">
                                                 <td><input type="radio" style="width:initial; padding:0; margin:0; height:auto;" name="pay_method" value="3" class="pay_option" id="paymethod_3" checked></td>
                                                 <td>
@@ -1609,7 +1606,6 @@
                                                     <div id="pay_2" style="display:none;" class="pay_content">Trả tiền khi nhận hàng</div>
                                                 </td>
                                             </tr>
-                                            
                                         </tbody>
                                     </table>
                                 </div>
@@ -1617,7 +1613,6 @@
                                 <div class="modal-footer">
                                     <button type="submit" class="btn btn-primary order1">Đặt hàng</button>
                                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                    
                                 </div>
                             </form>
                         </div>
@@ -1629,37 +1624,29 @@
                                 border-radius: 8px;
                                 background-color: #fff;
                             }
-
                             .empty-cart-message {
                                 font-size: 18px;
                                 color: #555;
                                 margin-top: 30px;
                             }
-
                             .cart-icon {
                                 font-size: 40px;
                                 color: #ccc;
                             }
-
                             #exampleModal .modal-body{
                                 min-height: 200px;
                             }
                         </style>
-
                         <div class="cart-container {{ $number_cart>0?'hide':'' }}">
                             <div class="cart-icon">🛒</div>
                             <div class="empty-cart-message">
                                 <p>Không có sản phẩm nào trong giỏ hàng</p>
-                                
                             </div>
                         </div>
-                        
                     </div>
-                    
                 </div>
             </div>
         </div>
-
         <!-- Modal -->
         <div class="modal fade" id="Modal-register" tabindex="-1" role="dialog" aria-labelledby="Modal-register" aria-hidden="true">
             <div class="modal-dialog" role="document">
@@ -1694,8 +1681,6 @@
                                 <label class="col-md-4 col-form-label" for="number-phone">Số điện thoại </label>
                                 <div class="col-md-8"><input class="form-control" data-val="true" data-val-required="Số điện thoại là bắt buộc" id="number-phone-customer" name="number-phone-register"> <span class="text-danger field-validation-valid" data-valmsg-for="FullName" data-valmsg-replace="true"></span></div>
                             </div>
-
-
                             <div class="form-group row">
                                 <label class="col-md-4 col-form-label" for="Password">Mật khẩu</label>
                                 <div class="col-md-8"><input class="form-control" type="password"></span></div>
@@ -1704,21 +1689,14 @@
                                 <label class="col-md-4 col-form-label" for="ConfirmPassword">Xác nhận mật khẩu</label>
                                 <div class="col-md-8"><input class="form-control" type="password"  id="ConfirmPassword" name="ConfirmPassword" autocomplete="on"> <span class="text-danger field-validation-valid"></span></div>
                             </div>
-
-                             
                             <button type="submit" class="btn btn-primary">Đăng ký</button>
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                            
-                            
                         </form>
                     </div>
-                    
                 </div>
             </div>
         </div>
-
        <!--  Endmodal -->
-
        <!-- Modal -->
         <div class="modal fade" id="Modal-login" tabindex="-1" role="dialog" aria-labelledby="Modal-login" aria-hidden="true">
             <div class="modal-dialog" role="document">
@@ -1732,7 +1710,6 @@
                     <div class="modal-body">
                         <form method="post" action="{{ route('login-Fe') }}"  id="login-forms-fe">
                             {{ csrf_field() }}
-
                             <h2>Đăng nhập</h2>
                             <div class="clearfix pt-3"></div>
                             <h4>Sử dụng tài khoản của bạn để đăng nhập</h4>
@@ -1758,11 +1735,7 @@
                                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                                 </div>
                             </div>
-                            <p><a href="javascript::void(0)" class="register-forms">Đăng ký người dùng mới</a></p>
-
-
-                            
-                            
+                            <p><a href="javascript::void(0)" class="register-forms">Đăng ký người dùng mới</a></p>                            
                         </form>
                     </div>
                     
