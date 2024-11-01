@@ -131,7 +131,21 @@
    
 
     
-    </style>            
+    </style>   
+
+    <style type="text/css">
+                
+        .box_pro-benefit{
+            width: 100%;
+        }
+        .app img{
+            width: 100%;
+        }
+
+        .related__ttl {
+            color: #1053AF;
+        }
+    </style>         
 
     <?php
 
@@ -1116,28 +1130,14 @@
                 </div>
             </div>
 
-            <br>
-
-           
+          
             <div class="view-all-salient_fratured">
 
                 <b>Chính sách mua hàng tại MuaSamTaiKho.vn</b>
             </div> 
 
 
-            <style type="text/css">
-                
-                .box_pro-benefit{
-                    width: 100%;
-                }
-                .app img{
-                    width: 100%;
-                }
-
-                .related__ttl {
-                    color: #1053AF;
-                }
-            </style>
+            
             <div class="box_pro-benefit">
                 <div class="monopoly">
                     <!-- <span class="ttl"> Độc quyền tại Siêu Thị Điện Máy - Nội Thất Chợ Lớn</span> -->
