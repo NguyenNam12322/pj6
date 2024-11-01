@@ -284,7 +284,202 @@ class categoryController extends Controller
 
     public function pageMobile($slug)
     {
-        return view('frontend.page_mobile.details');
+
+        // redirect to https auto
+        if (!$request->secure() && env('APP_NAME') != 'local') {
+            return redirect()->secure($request->getRequestUri());
+        }
+        $slug = strip_tags(trim($slug));
+
+        $link = strip_tags(trim($slug));
+
+        // $link_redirect = redirectLink::where('request_path', '/'.$slug)->first();
+
+        // if(!empty($link_redirect)){
+
+    
+        //     return redirect($link_redirect->target_path, 301);
+
+        //     die();
+        // }
+
+        $cache = 'findID'.$link;
+
+        $findID = Cache::rememberForever($cache, function() use ($link) {
+
+            $findID = product::select('id')->where('Link', $link)->first()??'';
+            return  $findID;
+        });
+
+
+        // $findID = product::where('Link', $link)->first();
+        
+        // chuyển sang category check
+
+        if(empty($findID)){
+
+            return($this->categoryView($slug));
+
+        }
+        else{
+            if(!Session::has('show-pop-up')){
+
+                Session::put('show-pop-up','1');
+
+            }
+
+            $pageCheck = "product";
+
+            $images = Cache::get('image_product'.$findID->id);
+
+            if(!Cache::has('image_product'.$findID->id)){
+                
+                $image_cache = image::where('product_id', $findID->id)->where('active', 1)->select('image')->get();
+
+                Cache::forever('image_product'.$findID->id,$image_cache);
+            }
+
+            if(!empty($_GET['cache'])){
+
+                $image_cache = image::where('product_id', $findID->id)->select('image')->get();
+
+                Cache::forget('image_product'.$findID->id);
+
+                Cache::forever('image_product'.$findID->id,$image_cache);
+            }
+
+            $data = Cache::rememberForever('data-detail'.$slug, function() use($slug) {
+
+                return product::where('Link',$slug)->first();
+            });
+
+            // kiểm tra link cache có tồn tại hay k
+
+            
+
+            if(empty($data)|| $data->ProductSku ==='4T-C65EK2X'||$data->ProductSku ==='4T-C75EK2X'){
+                return abort('404');
+            }
+
+            // end kiem tra check cẩn thận
+
+            // dd($data->Meta_id);
+
+            //end check cache
+
+
+            if(!empty($data) && !empty($_GET['show'])&&($_GET['show']=='tra-gop')){
+                
+                $actives_pages_blog = 0;
+                return view('frontend.installment', compact('data','actives_pages_blog'));
+            }
+
+            if(!empty($data->LinkRedirect)){
+
+                return redirect($data->LinkRedirect, 301); 
+            }
+
+            $group_product = Cache::rememberForever('group_product_cache_'.$findID->id, function() use ($findID){
+
+                $group_products = $this->get_Group_Product($findID->id)??0;
+
+                return $group_products;
+            });
+
+           
+            $data_cate = 1;
+
+            if(!empty($group_product && $group_product[0])){
+
+                $data_cate = $group_product[0];
+
+            } 
+
+            // $data_cate_child = $this->get_Group_Product_Child($findID->id);
+
+    
+            $data_group_product = Cache::rememberForever('data_group_product_'.$data_cate, function() use ($data_cate){ 
+
+                $data_group_products = groupProduct::find($data_cate);
+
+                return $data_group_products;
+            });  
+
+            $data_list_price =[500000,2500000,5000000];
+
+            $data_selected_volume_price =  intval($data->Price)<10000000?0:(intval($data->Price)<20000000?1:2);
+
+
+
+            $min_price = $data->Price- $data_list_price[$data_selected_volume_price];
+
+            $max_price = $data->Price+$data_list_price[$data_selected_volume_price];
+
+            $sampe_product_price = [];
+
+
+            $other_product = [];
+            // dd($sampe_product_price); 
+            // if(!empty($data_group_product) && !empty($data_group_product->product_id)){
+
+            //     $other_product = Cache::rememberForever('other_product_'.$data_group_product->product_id, function() use ($data_group_product){ 
+
+            //         return product::whereIn('id',  json_decode($data_group_product->product_id))->take(10)->get();
+            //     }); 
+            // }    
+
+            $other_product =product::whereIn('id',  json_decode($data_group_product->product_id))->take(10)->get();
+
+            if(!empty($data_group_product) && !empty($data_group_product->product_id)){
+                $sampe_product_price = product::whereIn('id',  json_decode($data_group_product->product_id))->where('Price', '>', $min_price)
+                    ->where('Price', '<', $max_price)->take(5)->get();
+
+            } 
+            
+            $meta = Cache::remember('metaseo-detail'.$data->Meta_id,100, function() use ($data){
+                return metaSeo::find($data->Meta_id);
+            }); 
+
+            // nếu là bài viết trong nhóm sản phẩm khuyến mãi thì đổi view
+
+            if($data_cate===333){
+
+                return view('frontend.combo', compact('data', 'images', 'other_product', 'meta', 'pageCheck', 'data_cate'));
+            }
+
+            $price_installment = groupProduct::find($data_cate)->price_installation;
+
+            if($price_installment==0){
+
+                $data_cates = $this->get_Group_Product_Child($data->id);
+
+                $price_installment = groupProduct::select('price_installation')->whereIn('id', $data_cates)->where('price_installation','>',0)->first();
+
+                if(!empty($price_installment)){
+
+                    $price_installment = $price_installment->price_installation;
+
+                    
+                }
+                else{
+                    $price_installment = 0;
+                }
+
+            }
+
+            // nếu không có ảnh đại diện thì không cho index
+
+            $actives_pages_blog = 1;
+
+            if(empty($data->Image)){
+                $actives_pages_blog = 0;
+            }
+
+        echo "string";    
+
+
+        //     return view('frontend.details', compact('data', 'images', 'other_product', 'meta', 'pageCheck', 'data_cate', 'actives_pages_blog', 'price_installment', 'sampe_product_price'));
+        // return view('frontend.page_mobile.details');
     }
 
 
@@ -666,18 +861,14 @@ class categoryController extends Controller
     {
 
         // redirect to https auto
-
-
         if (!$request->secure() && env('APP_NAME') != 'local') {
             return redirect()->secure($request->getRequestUri());
         }
-
         $slug = strip_tags(trim($slug));
 
         $link = strip_tags(trim($slug));
 
         // $link_redirect = redirectLink::where('request_path', '/'.$slug)->first();
-
 
         // if(!empty($link_redirect)){
 
@@ -686,7 +877,6 @@ class categoryController extends Controller
 
         //     die();
         // }
-
 
         $cache = 'findID'.$link;
 
@@ -706,9 +896,7 @@ class categoryController extends Controller
             return($this->categoryView($slug));
 
         }
-
         else{
-
             if(!Session::has('show-pop-up')){
 
                 Session::put('show-pop-up','1');
@@ -725,7 +913,6 @@ class categoryController extends Controller
 
                 Cache::forever('image_product'.$findID->id,$image_cache);
             }
-
 
             if(!empty($_GET['cache'])){
 
