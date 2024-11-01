@@ -476,7 +476,7 @@ class categoryController extends Controller
             }
         }    
 
-        return view('frontend.details', compact('data', 'images', 'other_product', 'meta', 'pageCheck', 'data_cate', 'actives_pages_blog', 'price_installment', 'sampe_product_price'));
+        return view('frontend.details_mb', compact('data', 'images', 'other_product', 'meta', 'pageCheck', 'data_cate', 'actives_pages_blog', 'price_installment', 'sampe_product_price'));
         // return view('frontend.page_mobile.details');
     }
 
