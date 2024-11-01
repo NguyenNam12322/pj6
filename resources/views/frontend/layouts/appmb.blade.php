@@ -56,9 +56,9 @@
         <link rel="preload" href="{{asset('css/lib/owl.theme.default.min.css')}}" as="style" onload="this.onload=null;this.rel='stylesheet'">
         <link rel="preload" href="{{ asset('css/lib/bootstrap.min.css') }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
 
+        <script rel="preload" href="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
 
-
-        <link rel="preload" href="https://code.jquery.com/ui/1.13.1/jquery-ui.js" as="script" onload="this.onload=null;document.body.appendChild(Object.assign(document.createElement('script'), {src: this.href}));">
+        <!-- <link rel="preload" href="https://code.jquery.com/ui/1.13.1/jquery-ui.js" as="script" onload="this.onload=null;document.body.appendChild(Object.assign(document.createElement('script'), {src: this.href}));"> -->
 
         <link rel="preload" href="{{ asset('js/layout1.js') }}" as="script">
    
