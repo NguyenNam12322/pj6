@@ -474,6 +474,7 @@ class categoryController extends Controller
             if(empty($data->Image)){
                 $actives_pages_blog = 0;
             }
+        }    
 
         echo "string";    
 
