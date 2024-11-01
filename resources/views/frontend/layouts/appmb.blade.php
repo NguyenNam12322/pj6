@@ -1897,7 +1897,7 @@
 
 
 
-    <script   src="{{ asset('js/layout1.js') }}" ></script>
+    <script   src="{{ asset('js/layout1.js') }}" defer></script>
 
     <link rel="preload" href="{{asset('js/lib/owl.carousel.min.js')}}" as="script">
   
