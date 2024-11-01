@@ -40,10 +40,10 @@
         <meta http-equiv="Cache-control" content="public">
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-         <link rel="stylesheet" type="text/css" href="{{ asset('css/app.css') }} ">
-          <link rel="stylesheet" href="{{asset('css/lib/owl.carousel.min.css')}}">
-            <link rel="stylesheet" href="{{asset('css/lib/owl.theme.default.min.css')}}">
-            <script rel="preload" src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+         <link rel="preload" type="text/css" href="{{ asset('css/app.css') }} ">
+          <link rel="preload" href="{{asset('css/lib/owl.carousel.min.css')}}">
+            <link rel="preload" href="{{asset('css/lib/owl.theme.default.min.css')}}">
+            <script rel="" src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
 
          <style type="text/css">
             .nk-nav-right ul{
