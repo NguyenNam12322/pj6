@@ -282,7 +282,7 @@ class categoryController extends Controller
         Session::put('show-pop-up', '0');
     }
 
-    public function pageMobile($slug)
+    public function pageMobile(Request $request,$slug)
     {
 
         // redirect to https auto
