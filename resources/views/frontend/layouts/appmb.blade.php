@@ -1479,6 +1479,8 @@
                 </div>
 
                  @yield('content')
+
+                 @include('frontend.footer') 
             </div>
 
        
@@ -1496,10 +1498,7 @@
                         </button>
                     </div>
                     <div class="modal-body">
-                        <div id="tbl_list_cartss">
-                            
-                        </div>
-
+                        <div id="tbl_list_cartss"></div>
                         <div class="c3_col_1 form-info-cart {{ $number_cart<=0?'hide':'' }}" >
                             <form class="c3_box" id="form-subs" method="post"  action="{{ route('order') }}">
                                 {{ csrf_field() }}
@@ -1661,7 +1660,6 @@
             </div>
         </div>
 
-
         <!-- Modal -->
         <div class="modal fade" id="Modal-register" tabindex="-1" role="dialog" aria-labelledby="Modal-register" aria-hidden="true">
             <div class="modal-dialog" role="document">
@@ -1780,7 +1778,7 @@
         <div class="phone_hotline"> <a href="tel:0243.687.9145" title="Bảo Hành: 0243.687.9145" class="p_hotline_item"> <i class="icon_security"></i> <span><strong>Bảo Hành: 0243.687.9145</strong> (8h00 - 17h00)</span> </a> <a href="tel:0247.303.6336" title="Mua hàng: 0247.303.6336" class="p_hotline_item"> <i class="icon_purchase"></i> <span><strong>Mua hàng: 0247.303.6336</strong> (8h00 - 17h00)</span> </a> <a href="tel:0916917949" title="Khiếu nại:0916917949" class="p_hotline_item"> <i class="icon_complain"></i> <span><strong>Khiếu nại: 091.691.7949</strong> (8h00 - 17h00)</span> </a> </div>
     </div> -->
 
-    @include('frontend.footer')
+   
        
 
         
