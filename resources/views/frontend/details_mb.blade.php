@@ -710,8 +710,7 @@
     </div>
     <b id="h-provincename" style="display:none!important" data-provinceid="3">Hồ Chí Minh</b>
 </div>
-<section  class="detail ">
-
+<section>
 
     <?php 
 
@@ -885,7 +884,7 @@
 
 
             <div class="pay mobile">
-                <div class="col-12 pdetail-des">
+                <div class="pdetail-des col-12">
                     <div class="clearfix"></div>
                     <div class="info-box">
                         <div class="pdetail-info">
