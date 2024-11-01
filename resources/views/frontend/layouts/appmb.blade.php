@@ -42,21 +42,21 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <!-- <link  rel="preload" type="text/css" href="{{ asset('css/app.css') }} " as="style" onload="this.onload=null;this.rel='stylesheet'"> -->
 
-        <link rel="preload" type="text/css" href="{{ asset('css/main.css') }}" as="style" onload="this.onload=null;this.rel='stylesheet'"> 
+        <!-- <link rel="preload" type="text/css" href="{{ asset('css/main.css') }}" as="style" onload="this.onload=null;this.rel='stylesheet'">  -->
         
-        <link rel="preload" type="text/css" href="{{ asset('css/apps.css') }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
-        <link rel="preload" type="text/css" href="{{asset('css/dienmay.css')}}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <!-- <link rel="preload" type="text/css" href="{{ asset('css/apps.css') }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <link rel="preload" type="text/css" href="{{asset('css/dienmay.css')}}" as="style" onload="this.onload=null;this.rel='stylesheet'"> -->
         <!-- <link rel="preload" type="text/css" href="{{asset('css/detailsfe.css')}}" as="style" onload="this.onload=null;this.rel='stylesheet'">  -->
-        <link rel="preload" type="text/css" href="{{ asset('css/detail1fe.css') }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <!-- <link rel="preload" type="text/css" href="{{ asset('css/detail1fe.css') }}" as="style" onload="this.onload=null;this.rel='stylesheet'"> -->
 
-        <link rel="preload" type="text/css" href="{{ asset('css/details.css') }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
-        <link rel="preload" type="text/css" href="{{ asset('css/detailscs.css') }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+      <!--   <link rel="preload" type="text/css" href="{{ asset('css/details.css') }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <link rel="preload" type="text/css" href="{{ asset('css/detailscs.css') }}" as="style" onload="this.onload=null;this.rel='stylesheet'"> -->
 
-        <link rel="preload" href="{{asset('css/lib/owl.carousel.min.css')}}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+      <!--   <link rel="preload" href="{{asset('css/lib/owl.carousel.min.css')}}" as="style" onload="this.onload=null;this.rel='stylesheet'">
         <link rel="preload" href="{{asset('css/lib/owl.theme.default.min.css')}}" as="style" onload="this.onload=null;this.rel='stylesheet'">
-        <link rel="preload" href="{{ asset('css/lib/bootstrap.min.css') }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <link rel="preload" href="{{ asset('css/lib/bootstrap.min.css') }}" as="style" onload="this.onload=null;this.rel='stylesheet'"> -->
 
-        <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <!-- <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> -->
 
         <link rel="preload" href="https://code.jquery.com/ui/1.13.1/jquery-ui.js" as="script">
 
