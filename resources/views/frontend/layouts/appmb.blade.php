@@ -1926,15 +1926,15 @@
     ?>
    
 
-    <script src="{{ asset('js/layout1.js') }}" type="text/javascript"></script>
+    <link rel="preload" href="{{ asset('js/layout1.js') }}" as="script">
    
-    <script type="text/javascript" src="{{asset('js/lib/owl.carousel.min.js')}}"></script>
+        <link rel="preload" href="{{asset('js/lib/owl.carousel.min.js')}}" as="script">
 
-  
-    <script src="{{ asset('js/lib/bootstrap.min.js') }}"></script>
+      
+        <link rel="preload" href="{{ asset('js/lib/bootstrap.min.js') }}" as="script">
 
-    <script src="{{asset('js/lib/jquery.validate.min.js')}}"></script>
-    <script src="{{ asset('js/lib/lazyload.js') }}"></script>
+        <link rel="preload" href="{{asset('js/lib/jquery.validate.min.js')}}" as="script">
+        <link rel="preload" href="{{ asset('js/lib/lazyload.js') }}" as="script">
     <!-- <script src="{{ asset('js/lib/sweetalert2.all.min.js') }}"></script> -->
 
 
