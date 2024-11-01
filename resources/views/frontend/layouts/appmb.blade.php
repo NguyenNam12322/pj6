@@ -49,9 +49,12 @@
         <link rel="preload" type="text/css" href="{{asset('css/detailsfe.css')}}" as="style" onload="this.onload=null;this.rel='stylesheet'"> 
         <link rel="preload" type="text/css" href="{{ asset('css/detail1fe.css') }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
 
-          <link rel="stylesheet" href="{{asset('css/lib/owl.carousel.min.css')}}">
-            <link rel="stylesheet" href="{{asset('css/lib/owl.theme.default.min.css')}}">
-            <script rel="preload" src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+        <link rel="preload" type="text/css" href="{{ asset('css/details.css') }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <link rel="preload" type="text/css" href="{{ asset('css/detailscs.css') }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+        <link rel="preload" href="{{asset('css/lib/owl.carousel.min.css')}}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <link rel="preload" href="{{asset('css/lib/owl.theme.default.min.css')}}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <script rel="preload" src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
 
          <style type="text/css">
             .nk-nav-right ul{
