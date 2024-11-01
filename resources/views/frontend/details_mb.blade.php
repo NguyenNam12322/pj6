@@ -710,7 +710,7 @@
     </div>
     <b id="h-provincename" style="display:none!important" data-provinceid="3">Hồ Chí Minh</b>
 </div>
-<div class="section">
+<section>
 
     <?php 
 
@@ -2063,7 +2063,7 @@
     <!--#region Organization-->
     <!--#endregion-->
 
-</div>
+</section>
 <div class="prod-info txt_555 fix">
     <span class="name-scroll"> {{ $data->Name }} </span>
     <div class="vote" id="vote_avg">
