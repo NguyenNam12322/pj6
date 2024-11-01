@@ -879,7 +879,10 @@
             </div>
 
             @if($mobile ==1)
-             <h1>{{ $data->Name }}</h1>
+            <div class="col-sm-12">
+                <h1>{{ $data->Name }}</h1>
+            </div>
+             
             @endif
 
 
