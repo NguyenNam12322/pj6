@@ -217,14 +217,10 @@
 
     @if($browserIsMobileSafari===true)
 
-    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.7/css/jquery.fancybox.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 
-   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.7/css/jquery.fancybox.min.css" media="print">
     @else
-
-    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-
-   
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css" media="print">
     @endif
     
     <style type="text/css">
