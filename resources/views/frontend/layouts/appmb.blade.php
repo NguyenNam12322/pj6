@@ -1924,7 +1924,7 @@
 
     <script src="{{asset('js/lib/jquery.validate.min.js')}}"></script>
     <script src="{{ asset('js/lib/lazyload.js') }}"></script>
-    <script src="{{ asset('js/lib/sweetalert2.all.min.js') }}"></script>
+    <!-- <script src="{{ asset('js/lib/sweetalert2.all.min.js') }}"></script> -->
 
 
     @stack('script')
