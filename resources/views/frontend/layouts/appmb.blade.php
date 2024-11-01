@@ -1929,7 +1929,7 @@
 
     @stack('script')
 
-  <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+  <script rel="preload" src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
 
   <script>
 
