@@ -56,8 +56,6 @@
         <link rel="preload" href="{{asset('css/lib/owl.theme.default.min.css')}}" as="style" onload="this.onload=null;this.rel='stylesheet'">
         <link rel="preload" href="{{ asset('css/lib/bootstrap.min.css') }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
 
-        <link rel="preload"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-
         <link rel="preload" href="https://code.jquery.com/ui/1.13.1/jquery-ui.js" as="script">
 
 
@@ -170,6 +168,15 @@
         /></noscript> -->
         <!-- End Facebook Pixel Code -->
           
+         
+
+
+
+       
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+         
+        
+       
 
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
@@ -1920,7 +1927,7 @@
    
     <link rel="preload" href="{{ asset('js/layout1.js') }}" as="script">
     
-    <script type="text/javascript" src="{{asset('js/lib/owl.carousel.min.js')}}" ></script>
+    <script type="text/javascript" src="{{asset('js/lib/owl.carousel.min.js')}}"></script>
 
     <link rel="preload" href="{{ asset('js/lib/bootstrap.min.js') }}" as="script">
 
