@@ -1918,9 +1918,9 @@
 
     ?>
 
-   <link rel="preload" href="="{{ asset('js/layout1.js') }}" as="script" onload="this.onload=null;document.body.appendChild(Object.assign(document.createElement('script'), {src: this.href}));">
-
    
+
+    <script  src="{{ asset('js/layout1.js') }}" ></script>
     
     <script type="text/javascript" src="{{asset('js/lib/owl.carousel.min.js')}}"></script>
 
