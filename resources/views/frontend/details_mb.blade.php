@@ -798,7 +798,7 @@
                         ?>
                         <div class="item img-main">
                            
-                             <a href="{{ asset($data->Image) }}" data-fancybox="gallery"><img  data-src ="{{ asset($data->Image) }}" alt="{{ @$data->Name }}" class="lazyload" srcset="image-320w.jpg 320w,image-640w.jpg 640w,image-1280w.jpg 1280w"sizes="(max-width: 600px) 320px, (max-width: 1200px) 640px, 1280px">
+                             <a href="{{ asset($data->Image) }}" data-fancybox="gallery"><img  data-src ="{{ asset($data->Image) }}" alt="{{ @$data->Name }}" class="lazyload">
 
                             </a>
                            
