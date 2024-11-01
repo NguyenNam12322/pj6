@@ -43,7 +43,7 @@
          <link rel="preload" type="text/css" href="{{ asset('css/app.css') }} ">
           <link rel="preload" href="{{asset('css/lib/owl.carousel.min.css')}}">
             <link rel="preload" href="{{asset('css/lib/owl.theme.default.min.css')}}">
-            <script rel="" src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+            <script rel="preload" src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
 
          <style type="text/css">
             .nk-nav-right ul{
