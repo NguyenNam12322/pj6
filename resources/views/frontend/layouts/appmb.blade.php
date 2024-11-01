@@ -58,16 +58,7 @@
 
         <link rel="preload" href="https://code.jquery.com/ui/1.13.1/jquery-ui.js" as="script">
 
-        <link rel="preload" href="{{ asset('js/layout1.js') }}" as="script">
-   
-        <link rel="preload" href="{{asset('js/lib/owl.carousel.min.js')}}" as="script">
-
-      
-        <link rel="preload" href="{{ asset('js/lib/bootstrap.min.js') }}" as="script">
-
-        <link rel="preload" href="{{asset('js/lib/jquery.validate.min.js')}}" as="script">
-        <link rel="preload" href="{{ asset('js/lib/lazyload.js') }}" as="script">
-
+        
 
          <style type="text/css">
             .nk-nav-right ul{
@@ -1936,7 +1927,16 @@
     ?>
    
 
-    
+    <link rel="preload" href="{{ asset('js/layout1.js') }}" as="script">
+   
+        <link rel="preload" href="{{asset('js/lib/owl.carousel.min.js')}}" as="script">
+
+      
+        <link rel="preload" href="{{ asset('js/lib/bootstrap.min.js') }}" as="script">
+
+        <link rel="preload" href="{{asset('js/lib/jquery.validate.min.js')}}" as="script">
+        <link rel="preload" href="{{ asset('js/lib/lazyload.js') }}" as="script">
+
     <!-- <script src="{{ asset('js/lib/sweetalert2.all.min.js') }}"></script> -->
 
 
