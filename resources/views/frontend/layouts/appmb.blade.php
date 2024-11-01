@@ -1920,9 +1920,9 @@
 
 
 
-    <script  async src="{{ asset('js/layout1.js') }}" ></script>
+    <script   src="{{ asset('js/layout1.js') }}" ></script>
     
-    <script async src="{{asset('js/lib/owl.carousel.min.js')}}"></script>
+    <script  src="{{asset('js/lib/owl.carousel.min.js')}}"></script>
 
     <link rel="preload" href="{{ asset('js/lib/bootstrap.min.js') }}" as="script">
 
