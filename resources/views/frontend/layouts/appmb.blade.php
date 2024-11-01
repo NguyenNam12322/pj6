@@ -97,29 +97,6 @@
        
         <meta property="og:image" content="{{ asset('images/template/logo.png') }}" />
       
-        <script>
-        function gtag_report_conversion(url) {
-          var callback = function () {
-            if (typeof(url) != 'undefined') {
-              window.location = url;
-            }
-          };
-          gtag('event', 'conversion', {
-              'send_to': 'AW-971664599/BsqZCL6p_cYCENfZqc8D',
-              'event_callback': callback
-          });
-          return false;
-        }
-        </script>
-
-        <script>
-         gtag('event', 'page_view', {
-           'send_to': 'AW-971664599',
-           'dynx_itemid':'',
-           'dynx_pagetype':'home',
-           'dynx_totalvalue':0
-         });
-        </script>
 
        <!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16676362450">
