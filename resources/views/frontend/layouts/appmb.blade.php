@@ -1339,8 +1339,6 @@
                                                         <span class="mount">{{$number_cart }}</span>
                                                         @endif
                                                     </div>
-                                                    
-                                                    
                                                 </a>
                                                 
                                             </li>

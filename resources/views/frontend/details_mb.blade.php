@@ -714,7 +714,7 @@
     </div>
     <b id="h-provincename" style="display:none!important" data-provinceid="3">Hồ Chí Minh</b>
 </div>
-<section class="col-sm-12">
+<section style="width: 100%;">
 
     <?php 
 
