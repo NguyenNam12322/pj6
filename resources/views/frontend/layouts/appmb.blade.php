@@ -1918,7 +1918,7 @@
 
     ?>
    
-    <link rel="preload" href="{{ asset('js/layout1.js') }}" as="script">
+    <script  src="{{ asset('js/layout1.js') }}" ></script>
     
     <script type="text/javascript" src="{{asset('js/lib/owl.carousel.min.js')}}"></script>
 
