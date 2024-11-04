@@ -321,7 +321,7 @@
                 background-size: 330px 330px;
             }
 
-            
+
 
             .share-button{
                 width: 100%;
@@ -1059,10 +1059,9 @@
 
             @endif
 
-            <a href="tel:02473036336"><div class="buy-button-hotline nhapnhay btn">Gọi 0123.456.789 để được giảm thêm</div></a>
+          
 
-
-           
+    
            
             <input type="hidden" name="productId" value="{{ $data->id }}">
             <input type="hidden" name="gift_checked"  id="gift_checked" value="">
