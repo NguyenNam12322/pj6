@@ -810,7 +810,7 @@
     </div>
     
    
-    <div class="box_left">
+    
         <div class="box01">
             <div class="box01__show">
                 <div class="owl-carousel detail-slider" id="carousel">
@@ -1441,7 +1441,7 @@
             @endif
         </div>
         
-    </div>
+ 
 
 
     <div class="box_right desktop">
