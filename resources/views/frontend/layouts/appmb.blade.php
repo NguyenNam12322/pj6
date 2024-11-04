@@ -161,10 +161,34 @@
         @endif
        
         <meta property="og:image" content="{{ asset('images/template/logo.png') }}" />
+
+        <script type="text/javascript">
+            requestIdleCallback(() => {
+                    const script = document.createElement("script");
+                    script.src = "https://www.googletagmanager.com/gtag/js?id=AW-16676362450";
+                    document.body.appendChild(script);
+
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+
+                    gtag('config', 'AW-16676362450');
+
+                    gtag('event', 'conversion', {
+                      'send_to': 'AW-16676362450/4NESCJ6vz8sZENKx9I8-',
+                      'value': 1.0,
+                      'currency': 'VND'
+                    });
+
+                });
+            
+        </script>
+
+        
       
 
        <!-- Google tag (gtag.js) -->
-        <script defer  src="https://www.googletagmanager.com/gtag/js?id=AW-16676362450">
+        <!-- <script defer  src="https://www.googletagmanager.com/gtag/js?id=AW-16676362450">
         </script>
         <script defer >
           window.dataLayer = window.dataLayer || [];
@@ -174,14 +198,8 @@
           gtag('config', 'AW-16676362450');
         </script>
 
-        <!-- Event snippet for Lượt xem trang conversion page -->
-        <script defer>
-          gtag('event', 'conversion', {
-              'send_to': 'AW-16676362450/4NESCJ6vz8sZENKx9I8-',
-              'value': 1.0,
-              'currency': 'VND'
-          });
-        </script>
+         Event snippet for Lượt xem trang conversion page -->
+        
 
 
 
