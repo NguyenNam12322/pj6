@@ -365,6 +365,10 @@
                       display: -webkit-box;
                 }
 
+                #nk-cart{
+                    width: 100%;
+                }
+
                 .sugests-li{
                     display: flex;
                 }
