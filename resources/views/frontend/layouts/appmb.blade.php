@@ -164,9 +164,9 @@
       
 
        <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16676362450">
+        <script defer  src="https://www.googletagmanager.com/gtag/js?id=AW-16676362450">
         </script>
-        <script>
+        <script defer >
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
@@ -175,7 +175,7 @@
         </script>
 
         <!-- Event snippet for Lượt xem trang conversion page -->
-        <script>
+        <script defer>
           gtag('event', 'conversion', {
               'send_to': 'AW-16676362450/4NESCJ6vz8sZENKx9I8-',
               'value': 1.0,
