@@ -812,7 +812,7 @@
                         ?>
                         <div class="item img-main">
                            
-                             <a href="{{ asset($data->Image) }}" data-fancybox="gallery"><img  data-src ="{{ asset('images/may-giat-invert_main_371_1020.png') }}" alt="{{ @$data->Name }}" class="lazyload" loading="lazy">
+                             <a href="{{ asset($data->Image) }}" data-fancybox="gallery"><img  src ="{{ asset('images/may-giat-invert_main_371_1020.png') }}" alt="{{ @$data->Name }}" >
 
                             </a>
                            
