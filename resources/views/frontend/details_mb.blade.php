@@ -45,6 +45,10 @@
             height: 58px;
         }
 
+        .title h1{
+            font-size: 20px;
+        }
+
         .box01 .owl-carousel .owl-item img:not(.monopoly-label) {
             height: 220px !important;
 
