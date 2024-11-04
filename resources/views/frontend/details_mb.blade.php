@@ -918,12 +918,12 @@
         
         <div class="clearfix"></div>
 
-        <div class="pdetail-info">
-            <p class="p1">Thương hiệu: <b>{{ @$ar_groups_info[0]['name'] }}</b></p>
+       
+        <p class="p1">Thương hiệu: <b>{{ @$ar_groups_info[0]['name'] }}</b></p>
 
-            <p>Model: <b>{{ @$data->ProductSku  }}</b></p>
+        <p>Model: <b>{{ @$data->ProductSku  }}</b></p>
            
-        </div>
+        
 
         <div class="pdetail-stockavailable">
             <span>  @if($status==="CÒN HÀNG") <img src="{{ asset('images/template/icon-tick.png') }}" width="18px" height="18px" > @endif {{ $status }}</span>
