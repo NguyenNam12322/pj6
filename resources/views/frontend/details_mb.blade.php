@@ -1064,24 +1064,24 @@
             <a href="tel:02473036336"><div class="buy-button-hotline nhapnhay btn">Gọi 0123.456.789 để được giảm thêm</div></a>
 
 
-            <div class="pdetail-add-to-cart add-to-cart">
-                <div class="inline">
-                    <input type="hidden" name="productId" value="{{ $data->id }}">
-                    <input type="hidden" name="gift_checked"  id="gift_checked" value="">
-                    <!-- <div class="product-quantity">
-                        <input type="text" class="quantity-field" readonly="readonly" name="qty" value="1">
-                        </div> -->
-                    <button type="button" class="btn btn-lg btn-add-cart btn-add-cart redirectCart" onclick="addToCart({{ $data->id }})">MUA NGAY <br>(Giao hàng tận nơi - Giá tốt - An toàn)</button>
+           
+            <div class="inline">
+                <input type="hidden" name="productId" value="{{ $data->id }}">
+                <input type="hidden" name="gift_checked"  id="gift_checked" value="">
+                <!-- <div class="product-quantity">
+                    <input type="text" class="quantity-field" readonly="readonly" name="qty" value="1">
+                    </div> -->
+                <button type="button" class="btn btn-lg btn-add-cart btn-add-cart redirectCart" onclick="addToCart({{ $data->id }})">MUA NGAY <br>(Giao hàng tận nơi - Giá tốt - An toàn)</button>
 
-                    <div class="share-button">
-                         <button type="button" class="btn btn-lg btn-add-cart btn-add-cart redirectCart cartSP" onclick="addToSuport(2221)">GỌI LẠI CHO TÔI <br>(Tư vấn tận tình)</button>
+                <div class="share-button">
+                     <button type="button" class="btn btn-lg btn-add-cart btn-add-cart redirectCart cartSP" onclick="addToSuport(2221)">GỌI LẠI CHO TÔI <br>(Tư vấn tận tình)</button>
 
-                        <button type="button" class="btn btn-lg btn-add-cart btn-add-cart redirectCart cartSP right-cart" onclick="addToSuport(2221)">TRẢ GÓP QUA THẺ <br></button>
-                    </div>
-                   
+                    <button type="button" class="btn btn-lg btn-add-cart btn-add-cart redirectCart cartSP right-cart" onclick="addToSuport(2221)">TRẢ GÓP QUA THẺ <br></button>
                 </div>
                
             </div>
+               
+            
             <div class="clearfix"></div>
 
             @if((int)$data['Price']>=3000000)
