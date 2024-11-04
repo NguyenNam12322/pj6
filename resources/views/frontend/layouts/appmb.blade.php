@@ -124,6 +124,11 @@
             #exampleModal .modal-body{
                 min-height: 200px;
             }
+
+            .nki-shopping-cart{
+                width: 20px;
+                height: 20px;
+            }
         </style>
 
          <style type="text/css">
