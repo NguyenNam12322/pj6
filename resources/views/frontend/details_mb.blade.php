@@ -43,6 +43,7 @@
 
         .title{
             height: 58px;
+            width: 450px;
         }
 
         .title h1{
