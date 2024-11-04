@@ -1568,6 +1568,14 @@
 
     @stack('script')
   <script>
+
+    window.addEventListener("load", function() {
+        const images = document.querySelectorAll("img.lazyload");
+        images.forEach((img) => {
+            img.src = img.getAttribute("data-src");
+        });
+    });
+    
     function showPopup() {
 
         $('.icons-shopings').removeClass('hide')
