@@ -1,4 +1,6 @@
-
+@extends('frontend.layouts.appmb')
+@section('content') 
+@push('style')
 
    
 
@@ -3358,3 +3360,7 @@
         }
     @endif    
 </script>
+@endpush
+
+
+@endsection
