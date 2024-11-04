@@ -1365,7 +1365,7 @@
                                                 </li> 
 
                                                  <li>
-                                                    <a href="#" class="nk-text-login"> Tin tức </a>
+                                                    <a href="#" > Tin tức </a>
                                                 </li>
 
                                             
