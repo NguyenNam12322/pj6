@@ -1526,7 +1526,7 @@
 
             <a href="https://zalo.me/0987874334" target="_blank">
                 <div style="position: fixed; bottom: 52px; right: 52px; transform: translate(0px, 0px) !important; z-index: 2147483644; border: none; visibility: visible; right: 0px; width: 60px; height: 60px;" class="zalo-chat-widget"data-welcome-message="Điện Máy Người Việt rất vui khi được hỗ trợ bạn!" data-autopopup="0" data-width="" data-height="">
-                    <img src="{{ asset('public/images/template/image.png') }}" width="30" height="30" class="lazyload" data-src="{{ asset('public/images/template/Logo.svg') }}">
+                    <img src="{{ asset('public/images/template/image.png') }}" width="30" height="30" class="lazyload" data-src="{{ asset('public/images/template/Logo.svg') }}" loading="lazy">
                 </div>
             </a>
         </div> 
