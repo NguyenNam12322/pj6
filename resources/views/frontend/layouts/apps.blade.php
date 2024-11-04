@@ -39,7 +39,7 @@
         <link rel="canonical" href="{{ url()->current() }}" >
         <meta http-equiv="Cache-control" content="public">
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       
          <link rel="stylesheet" type="text/css" href="{{ asset('css/app.css') }} ">
           <link rel="stylesheet" href="{{asset('css/lib/owl.carousel.min.css')}}">
             <link rel="stylesheet" href="{{asset('css/lib/owl.theme.default.min.css')}}">

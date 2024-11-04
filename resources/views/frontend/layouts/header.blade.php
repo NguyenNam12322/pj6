@@ -7,7 +7,7 @@
 @endif
 <meta property="og:description" content="{{ @$meta->meta_content }}" /> 
 <meta name="keywords" content="{{ $meta->meta_key_words??'sieu thi dien may, siêu thị điện máy, mua điện máy giá rẻ, siêu thị điện máy uy tín, siêu thị điện máy trực tuyến' }}"/>
-<link rel="shortcut icon" href="{{ asset('images/template/favicon-muasamtaikho.ico') }}">  
+<link rel="shortcut icon" href="{{ asset('images/template/favicon-muasamtaikho.ico') }}" type="image/x-icon">  
 <link rel="canonical" href="{{ url()->current() }}" >
 @else
     @if($nameRoute =='sale-home'||$nameRoute =='dealFe')
