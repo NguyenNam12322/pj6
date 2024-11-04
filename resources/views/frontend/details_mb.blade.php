@@ -894,14 +894,12 @@
         <p data-toggle="modal" data-target="#specifications">Thông số kỹ thuật</p>
         
 
-      
-
-        <div id="thumb-article-gallery-0" class="item itemTab  is-show-popup scroll-content" data-color-id="0" data-is-full-spec="False" data-color-order-id="0" data-isfeatureimage="True">
-            <div class="item-border">
-                <i class="icondetail-danhgia"></i>
-            </div>
-            <p>Thông tin sản phẩm</p>
+        
+        <div class="item-border">
+            <i class="icondetail-danhgia"></i>
         </div>
+        <p>Thông tin sản phẩm</p>
+        
         
         
 
