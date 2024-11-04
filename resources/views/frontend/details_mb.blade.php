@@ -810,7 +810,26 @@
                         <?php 
                             $image_product = strstr(basename($data->Image), '_');
                         ?>
-                        
+                        <div class="item img-main">
+                           
+                             <a href="{{ asset($data->Image) }}" data-fancybox="gallery"><img  data-src ="{{ asset('images/may-giat-invert_main_371_1020.png') }}" alt="{{ @$data->Name }}" class="lazyload" loading="lazy">
+
+                            </a>
+                           
+                            @if($data->id>4720)
+
+                            @if(!empty($logoSaker->maker))
+
+                            <div class="saker">
+                                    <img src="{{ asset('images/saker/'.strtolower($logoSaker->maker).'.png') }}"  data-src ="{{ asset($data->Image) }}" class="lazyload" loading="lazy">
+                            </div>
+                            @endif
+                            @endif
+
+                          
+
+                        </div>
+
                         <?php 
                             $images_products = Cache::rememberForever('image_product'.$data->id, function() use ($data) {
 
@@ -833,7 +852,7 @@
                         @if( basename($image->image) != basename($data->Image) )
 
                         <div class="item">
-                            <a href="{{ asset($image->image) }}" data-fancybox="gallery"><img  data-src ="{{ asset($image->image) }}"  alt="{{ @$data->Name }}" class="lazyload"></a>
+                            <a href="{{ asset($image->image) }}" data-fancybox="gallery"><img  data-src ="{{ asset('images/may-giat-invert_main_371_1020.png') }}"  alt="{{ @$data->Name }}" class="lazyload"></a>
                             
                         </div>
                       
