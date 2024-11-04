@@ -1363,11 +1363,6 @@
                                                     <a href="#">
                                                     <i class="nki-Phone"></i>  </a>
                                                 </li> 
-
-                                                 <li>
-                                                    <a href="#" > Tin tức </a>
-                                                </li>
-
                                             
                                                 <li class="icons-mobile-bar">
 
