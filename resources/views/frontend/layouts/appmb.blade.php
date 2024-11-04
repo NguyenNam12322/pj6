@@ -1342,7 +1342,7 @@
                                         </amp-img> </a>
                                         </div>
 
-                                        <!-- <div id="nk-cart">
+                                        <div id="nk-cart">
                                             <ul>
                                                 <li class="cart-info-box nk_tooltip" data-toggle=".nk-cart-content" data-overlay="true">
                                                     
@@ -1369,7 +1369,7 @@
                                               
 
                                             </ul>
-                                        </div> -->
+                                        </div>
 
                                     </div>    
                                   
@@ -1486,7 +1486,7 @@
 
             </div>
 
-             @yield('content')
+             
         </div>
         
         <div class="global-compare-group">

@@ -321,7 +321,9 @@
                 background-size: 330px 330px;
             }
 
-
+            .box01{
+                width: 300px;
+            }
 
             .share-button{
                 width: 100%;
@@ -864,10 +866,10 @@
 
                     @if( basename($image->image) != basename($data->Image) )
 
-                    <!-- <div class="item">
+                    <div class="item">
                         <a href="{{ asset($image->image) }}" data-fancybox="gallery"><img  data-src ="{{ asset('images/may-giat-invert_main_371_1020.png') }}"  alt="{{ @$data->Name }}"></a>
                         
-                    </div> -->
+                    </div>
                   
                     @endif
 
@@ -1059,16 +1061,24 @@
 
             @endif
 
-          
+            <a href="tel:02473036336"><div class="buy-button-hotline nhapnhay btn">Gọi 0123.456.789 để được giảm thêm</div></a>
 
-    
+
+           
            
             <input type="hidden" name="productId" value="{{ $data->id }}">
             <input type="hidden" name="gift_checked"  id="gift_checked" value="">
             <!-- <div class="product-quantity">
                 <input type="text" class="quantity-field" readonly="readonly" name="qty" value="1">
                 </div> -->
-           
+            <button type="button" class="btn btn-lg btn-add-cart btn-add-cart redirectCart" onclick="addToCart({{ $data->id }})">MUA NGAY <br>(Giao hàng tận nơi - Giá tốt - An toàn)</button>
+
+            <div class="share-button">
+                 <button type="button" class="btn btn-lg btn-add-cart btn-add-cart redirectCart cartSP" onclick="addToSuport(2221)">GỌI LẠI CHO TÔI <br>(Tư vấn tận tình)</button>
+
+                <button type="button" class="btn btn-lg btn-add-cart btn-add-cart redirectCart cartSP right-cart" onclick="addToSuport(2221)">TRẢ GÓP QUA THẺ <br></button>
+            </div>
+               
             
                
             
@@ -1106,9 +1116,9 @@
 
 
         
-       <!--  <div class="box_pro-benefit">
+        <div class="box_pro-benefit">
             <div class="monopoly">
-              
+                <!-- <span class="ttl"> Độc quyền tại Siêu Thị Điện Máy - Nội Thất Chợ Lớn</span> -->
                 <div class="monopoly_item">
                     <ul>
                         <?php 
@@ -1142,7 +1152,7 @@
                     </ul>
                 </div>
             </div>
-        </div> -->
+        </div>
 
        
 
