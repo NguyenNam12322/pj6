@@ -707,7 +707,7 @@
     $gift_Price = pricesPromotion($data->Price, $data->id);
 ?>
 
-<div class="locationbox__overlay"></div>
+<!-- <div class="locationbox__overlay"></div>
 <div class="locationbox">
     <div class="locationbox__item locationbox__item--right" onclick="OpenLocation()">
         <p>Chọn địa chỉ nhận hàng</p>
@@ -727,8 +727,8 @@
         </div>
     </div>
     <b id="h-provincename" style="display:none!important" data-provinceid="3">Hồ Chí Minh</b>
-</div>
-<section style="width: 100%;">
+</div> -->
+<section>
 
     <?php 
 
