@@ -1156,7 +1156,7 @@
 
         
     </head>
-    <body>
+    <body class="d">
         <div class="banner-media desktop">
             <div class="" data-size="1">
                 <div class="item" data-background-color="#CF1F2F" data-order="1">
