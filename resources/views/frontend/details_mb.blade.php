@@ -905,7 +905,7 @@
 
 
             <div class="pay mobile">
-                <div class="pdetail-des col-xs-12">
+                <div class="pdetail-des">
                     <div class="clearfix"></div>
                     <div class="info-box">
                         <div class="pdetail-info">
