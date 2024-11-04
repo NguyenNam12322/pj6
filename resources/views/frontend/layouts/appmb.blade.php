@@ -239,6 +239,10 @@
                 font-size: 14px;
             } 
 
+            .nk-header ._nk_main{
+                min-width: 300px;
+            }
+
              @media only screen and (min-width: 768px) {
                 .hotlines{
                    
