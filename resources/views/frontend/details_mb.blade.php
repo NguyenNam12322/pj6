@@ -2606,14 +2606,14 @@
    
     $('.bar-top-left').hide();
 
-    $("img").each(function() {
+    // $("img").each(function() {
     
-        $(this).attr("data-src");
+    //     $(this).attr("data-src");
 
-        $(this).addClass('lazyload');
+    //     $(this).addClass('lazyload');
         
         
-    });
+    // });
 
 
     // copy image to clipbroad
