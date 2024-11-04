@@ -1333,8 +1333,18 @@
 
                                     <div class="div-header-cart">
 
+
+                                        
+
                                         <div class="logo-mobile">
-                                             <a href="/"> <img  src="{{ asset('/images/template/logo2.jpg') }}" height="52" alt="" loading="lazy"> </a>
+                                             <a href="/"> <amp-img
+                                        
+                                          src="{{ asset('/images/template/logo2.jpg') }}"
+                                          width="156"
+                                          height="52"
+                                          layout="responsive"
+                                        >
+                                        </amp-img> </a>
                                         </div>
 
                                         <div id="nk-cart">
