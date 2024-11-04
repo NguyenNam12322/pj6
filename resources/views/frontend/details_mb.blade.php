@@ -46,7 +46,7 @@
             width: 450px;
         }
 
-        .title h1{
+        h1{
             font-size: 20px;
         }
 
