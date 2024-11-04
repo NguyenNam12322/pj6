@@ -321,6 +321,10 @@
                 background-size: 330px 330px;
             }
 
+            .box01{
+                width: 500px;
+            }
+
             .share-button{
                 width: 100%;
                 display: flex;
