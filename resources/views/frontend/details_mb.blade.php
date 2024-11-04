@@ -730,7 +730,6 @@
 </div> -->
 
 
-<section>
 
     <?php 
 
@@ -785,7 +784,6 @@
         </li>
         @endif
     </ul>
-   
 
     @endif
 
@@ -2049,7 +2047,7 @@
     <!--#region Organization-->
     <!--#endregion-->
 
-</section>
+
 <div class="prod-info txt_555 fix">
     <span class="name-scroll"> {{ $data->Name }} </span>
     <div class="vote" id="vote_avg">
