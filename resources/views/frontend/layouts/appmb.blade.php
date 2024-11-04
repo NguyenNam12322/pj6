@@ -938,6 +938,7 @@
 
                         .search_center{
                             margin: 0;
+                            display: none;
                         }
 
                         .nk-header #nk-cart ul li{
