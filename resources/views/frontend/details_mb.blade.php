@@ -322,7 +322,7 @@
             }
 
             .box01{
-                width: 500px;
+                width: 300px;
             }
 
             .share-button{
