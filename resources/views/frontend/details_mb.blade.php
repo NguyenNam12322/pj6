@@ -890,10 +890,10 @@
             <p>Điểm nổi bật</p>
         </div>
        
-            <div class="item-border">
-                <i class="icondetail-thongso" data-toggle="modal" data-target="#specifications"></i>
-            </div>
-            <p data-toggle="modal" data-target="#specifications">Thông số kỹ thuật</p>
+        <div class="item-border">
+            <i class="icondetail-thongso" data-toggle="modal" data-target="#specifications"></i>
+        </div>
+        <p data-toggle="modal" data-target="#specifications">Thông số kỹ thuật</p>
         
 
       
