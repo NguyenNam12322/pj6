@@ -46,6 +46,10 @@
             height: 20px;
         }
 
+        .nk-header #nk-cart ul li .icon{
+            margin: 0 !important;
+        }
+
         .title{
             height: 58px;
             width: 450px;
