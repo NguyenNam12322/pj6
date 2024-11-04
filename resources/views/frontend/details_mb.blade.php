@@ -939,7 +939,7 @@
 
             @endif
         </div>
-        <div class="pdetail-status">
+       
             
             @if(!empty($data->promotion))
 
@@ -1103,7 +1103,7 @@
                
             </div>
             @endif
-        </div>
+       
         <div class="clearfix"></div>
        
        
@@ -1738,10 +1738,7 @@
                    
 
                     <div class="clearfix"></div>
-                    <div class="pdetail-status">
-        
-                       
-
+                    
                         @if($data->limits ==1)
                         <div class="sticker buyonline"> <p><strong>Số Lượng Có Hạn</strong></p></div>
                         @endif
@@ -1974,7 +1971,7 @@
                        
                         @endif
 
-                    </div>
+                    
                     <div class="clearfix"></div>
 
                      <!-- <button type="button" class="btn btn-lg" data-toggle="modal" data-target="#specifications">Xem chi tiết thông số kỹ thuật</button> -->
