@@ -934,9 +934,7 @@
 
                     
                     @media only screen and (max-width: 600px) {
-                        body{
-                            min-width: unset !important;
-                        }
+                        
 
                         .search_center{
                             margin: 0;

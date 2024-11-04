@@ -321,9 +321,7 @@
                 background-size: 330px 330px;
             }
 
-            .box01{
-                width: 300px;
-            }
+            
 
             .share-button{
                 width: 100%;
@@ -866,10 +864,10 @@
 
                     @if( basename($image->image) != basename($data->Image) )
 
-                    <div class="item">
+                    <!-- <div class="item">
                         <a href="{{ asset($image->image) }}" data-fancybox="gallery"><img  data-src ="{{ asset('images/may-giat-invert_main_371_1020.png') }}"  alt="{{ @$data->Name }}"></a>
                         
-                    </div>
+                    </div> -->
                   
                     @endif
 
