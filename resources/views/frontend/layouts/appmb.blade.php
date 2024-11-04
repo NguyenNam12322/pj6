@@ -1544,7 +1544,7 @@
 
             <a href="https://zalo.me/0987874334" target="_blank">
                 <div style="position: fixed; bottom: 52px; right: 52px; transform: translate(0px, 0px) !important; z-index: 2147483644; border: none; visibility: visible; right: 0px; width: 30px; height: 30px;" class="zalo-chat-widget" data-welcome-message="Điện Máy Người Việt rất vui khi được hỗ trợ bạn!" data-autopopup="0" data-width="" data-height="">
-                    <img class="lazyloads" src="{{ asset('public/images/template/image.png') }}" width="30" height="30"  data-src="{{ asset('public/images/template/Logo.svg') }}" >
+                    <img class="lazyload" src="{{ asset('public/images/template/image.png') }}" width="30" height="30"  data-src="{{ asset('public/images/template/Logo.svg') }}" >
                 </div>
             </a>
         </div> 
@@ -1569,12 +1569,12 @@
     @stack('script')
   <script>
 
-    window.addEventListener("load", function() {
-        const images = document.querySelectorAll("img.lazyloads");
-        images.forEach((img) => {
-            img.src = img.getAttribute("data-src");
-        });
-    });
+    // window.addEventListener("load", function() {
+    //     const images = document.querySelectorAll("img.lazyloads");
+    //     images.forEach((img) => {
+    //         img.src = img.getAttribute("data-src");
+    //     });
+    // });
 
     function showPopup() {
 
