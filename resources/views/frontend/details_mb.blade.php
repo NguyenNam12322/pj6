@@ -812,7 +812,15 @@
                         ?>
                         <div class="item img-main">
                            
-                             <a href="{{ asset($data->Image) }}" data-fancybox="gallery"><img  src ="{{ asset('images/may-giat-invert_main_371_1020.png') }}" alt="{{ @$data->Name }}" >
+                             <a href="{{ asset($data->Image) }}" data-fancybox="gallery">
+
+                                <picture>
+                                    <source media="(max-width: 600px)" srcset="{{ asset('images/may-giat-invert_main_371_1020.png') }}">
+                                    <source media="(min-width: 601px)" srcset="{{ asset('images/may-giat-invert_main_371_1020.png') }}">
+                                
+                                </picture>
+
+                                
 
                             </a>
                            

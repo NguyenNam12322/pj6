@@ -1333,9 +1333,6 @@
 
                                     <div class="div-header-cart">
 
-
-                                        
-
                                         <div class="logo-mobile">
                                              <a href="/"> <amp-img
                                         
