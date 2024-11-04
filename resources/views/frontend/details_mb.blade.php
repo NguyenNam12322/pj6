@@ -41,6 +41,11 @@
             display: none;
         }
 
+        .nki-shopping-cart{
+            width: 20px;
+            height: 20px;
+        }
+
         .title{
             height: 58px;
             width: 450px;
