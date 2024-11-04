@@ -1522,7 +1522,7 @@
 
             <a href="https://zalo.me/0987874334" target="_blank">
                 <div style="position: fixed; bottom: 52px; right: 52px; transform: translate(0px, 0px) !important; z-index: 2147483644; border: none; visibility: visible; right: 0px; width: 60px; height: 60px;" class="zalo-chat-widget"data-welcome-message="Điện Máy Người Việt rất vui khi được hỗ trợ bạn!" data-autopopup="0" data-width="" data-height="">
-                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 300 200'%3E%3Crect width='30' height='30' fill='%23ddd'/%3E%3Ctext x='150' y='100' font-size='20' text-anchor='middle' fill='%23666'%3EPlaceholder%3C/text%3E%3C/svg%3E" width="30" height="30" class="lazyload">
+                    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 300 200'%3E%3Crect width='30' height='30' fill='%23ddd'/%3E%3Ctext x='150' y='100' font-size='20' text-anchor='middle' fill='%23666'%3EPlaceholder%3C/text%3E%3C/svg%3E" width="30" height="30" class="lazyload" data-src="{{ asset('public/images/template/Logo.svg') }}">
                 </div>
             </a>
         </div> 
