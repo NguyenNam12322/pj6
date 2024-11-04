@@ -260,73 +260,7 @@
 
     
 
-    <section>
-
-        <div class="gift-info">
-           
-        </div>
-  
-        <div class="row div-slide">
-            <div class="box-left-2 left-banner"></div>
-            <div class="col-md-7 box-div-slide">
-                <div class="homebanner-container">
-                    <!-- Banner chính -->
-                    <aside class="homebanner">
-                        <div id="sync1" class="slider-banner owl-carousel homebanners">
-
-                            @if(isset($banners))
-
-                            @foreach($banners as $value)
-                            <div class="item" data-dot="<span>{{ $value->title }}</span>">
-                                <a aria-label="slide" data-cate="0" data-place="1535" href="{{ $value->link }}" ><img  data-src="{{ asset($value->image) }}" alt="{{ $value->title }}" class="lazyload"></a>
-                            </div>
-                            @endforeach
-                            @endif 
-                        </div>
-                        <div id="sync2" class="slider-banner owl-carousel">
-                            @if(isset($banners))
-                            @foreach($banners as $value)
-                            <div class="item">
-                                <h3>
-                                    {{  $value->title }}
-                                </h3>
-                            </div>
-                            @endforeach
-                            @endif
-                            
-                        </div>
-                    </aside>
-
-                    <!-- End -->
-                </div>
-            </div>
-
-            <div class="box-div-slide1">
-               
-                <div class="homenews">
-                    <span><a href="{{ route('details', 'tu-van-mua-sam') }}">Tư vấn tiêu dùng</a></span>
-                    <ul>
-                         @if($post_advice->count()>0)
-
-                            @foreach($post_advice as $value)
-
-                            <li>
-                                <a href="{{ route('details', $value->link) }}">{{ @_substrs($value->title, 55) }}</a>
-                            </li>
-
-                            @endforeach
-
-                            @endif
-                    </ul>
-                </div>
-
-            </div>
-            
-        </div>
-        
-        
-    </section>
-
+   
 
     <section>
 
