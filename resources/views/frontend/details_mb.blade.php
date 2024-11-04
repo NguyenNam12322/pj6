@@ -908,9 +908,9 @@
         
 
         @if($mobile ==1)
-        <div class="title">
-            <h1>{{ $data->Name }}</h1>
-        </div>
+       
+        <h1>{{ $data->Name }}</h1>
+        
          
         @endif
 
