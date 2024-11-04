@@ -1334,7 +1334,7 @@
                                     <div class="div-header-cart">
 
                                         <div class="logo-mobile">
-                                             <a href="/"> <img  src="{{ asset('/images/template/logo2.jpg') }}" alt="" loading="lazy"> </a>
+                                             <a href="/"> <img  src="{{ asset('/images/template/logo2.jpg') }}" height="52" alt="" loading="lazy"> </a>
                                         </div>
 
                                         <div id="nk-cart">
