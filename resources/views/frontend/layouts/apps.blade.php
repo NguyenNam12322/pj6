@@ -1119,6 +1119,10 @@
                             min-width: unset !important;
                         }
 
+                        #nk-cart ul{
+                            margin-top: 20px;
+                        }
+
                         .search_center{
                             margin: 0;
                         }
