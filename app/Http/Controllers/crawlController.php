@@ -782,7 +782,14 @@ class crawlController extends Controller
     {
         
         $products = product::find(210);
-        echo $products->Detail;
+
+        $viTri = strpos($products->Detail, 'https://cdn11.dienmaycholon.vn/');
+        if ($viTri !== false) {
+            echo "Tìm thấy từ '$tuCanTim' ở vị trí $viTri trong chuỗi.";
+        } else {
+            echo "Không tìm thấy từ '$tuCanTim' trong chuỗi.";
+        }
+       
            
     }
 
