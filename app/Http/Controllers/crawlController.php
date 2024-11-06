@@ -875,11 +875,11 @@ class crawlController extends Controller
 
             $product->save();
 
-            echo "update thành công product_id ". $id.' còn ' count($data_id).' Link nữa';
+            echo "update thành công product_id ". $id.' còn '.count($data_id).' Link nữa';
 
         }
         else{
-            echo "có lỗi link ko crawl được còn "count($data_id) "Link nữa";
+            echo "có lỗi link ko crawl được còn "count($data_id) " Link nữa";
         }
 
 
