@@ -324,7 +324,8 @@
                 }
 
                 .nki-Phone:before{
-                    font-size: 15px;
+                    font-size: 24px;
+                    color: #fff;
                 }
 
                 #nk-cart{
@@ -913,7 +914,7 @@
 
                         .nki-shopping-cart:before {
                             color: #fff;
-                            font-size: 20px;
+                            font-size: 24px;
                         }
 
                         .nk-header #nk-cart ul li{
