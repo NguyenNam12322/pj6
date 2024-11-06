@@ -2141,25 +2141,38 @@
 
      <script type="text/javascript">
             requestIdleCallback(() => {
-                    const script = document.createElement("script");
-                    script.src = "https://www.googletagmanager.com/gtag/js?id=AW-16676362450";
-                    document.body.appendChild(script);
+                const script = document.createElement("script");
+                script.src = "https://www.googletagmanager.com/gtag/js?id=AW-16676362450";
+                document.body.appendChild(script);
 
-                    window.dataLayer = window.dataLayer || [];
-                    function gtag(){dataLayer.push(arguments);}
-                    gtag('js', new Date());
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
 
-                    gtag('config', 'AW-16676362450');
+                gtag('config', 'AW-16676362450');
 
-                    gtag('event', 'conversion', {
-                      'send_to': 'AW-16676362450/4NESCJ6vz8sZENKx9I8-',
-                      'value': 1.0,
-                      'currency': 'VND'
-                    });
-
+                gtag('event', 'conversion', {
+                  'send_to': 'AW-16676362450/4NESCJ6vz8sZENKx9I8-',
+                  'value': 1.0,
+                  'currency': 'VND'
                 });
+
+            });
+
+            if ('serviceWorker' in navigator) {
+                window.addEventListener('load', () => {
+                  navigator.serviceWorker.register('/service-worker.js')
+                    .then((registration) => {
+                      console.log('Service Worker registered with scope:', registration.scope);
+                    })
+                    .catch((error) => {
+                      console.error('Service Worker registration failed:', error);
+                    });
+                });
+              }
             
         </script>
+
 
 
         @if(!empty($data) && !empty($data->Price))
