@@ -782,13 +782,15 @@ class crawlController extends Controller
     {
         // $products = product::select('Detail','id')->get();
 
-        // foreach ($products as  $value) {
-        //     $viTri = strpos($value->Detail, 'https://cdn11.dienmaycholon.vn/');
-        //     if ($viTri !== false) {
-        //        echo $value->id.'<br>';
-        //     } 
+        foreach ($products as  $value) {
+            $viTri = strpos($value->Detail, 'https://cdn11.dienmaycholon.vn/');
+            if ($viTri !== false) {
+               echo $value->id.'<br>';
+            } 
 
-        // }
+        }
+
+        die;
         $values = product::find(37);
 
         $details = $values->Detail;
