@@ -1415,13 +1415,7 @@
 
                                     <div class="span16 row flexthis search_center">
                                         <div class="row-fluid nav1-search">
-                                           <!--  <div class="span4 ">
-                                                <h1 id="nk-logo">
-                                                    <a href="/">
-                                                    <img fetchpriority="high" loading="eager" src="/images/companies/_1/html/2017/T11/homepage/Logo_NK.svg" width="242px" height="42px" alt="">
-                                                    </a>
-                                                </h1>
-                                            </div> -->
+                                           
                                             
                                             <div class="span12 nk-nav-right nav-search">
                                                 <div class="row-fluid ">
