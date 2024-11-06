@@ -1239,8 +1239,7 @@
                                     <div class="div-header-cart">
 
                                         <div class="logo-mobile">
-                                            <img src="{{ asset('/images/template/logo4.jpg') }}"   srcset="{{ asset('/images/template/logo4.jpg') }}"
-     sizes="(max-width: 600px) 167px, 200px" 
+                                            <img src="{{ asset('/images/template/logo4.jpg') }}" loading="lazy"  
                                         >
                                         
                                         </div>
