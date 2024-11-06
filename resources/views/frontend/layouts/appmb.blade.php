@@ -1257,7 +1257,7 @@
                                             
                                                 <li class="icons-mobile-bar">
 
-                                                    <i class="fa fa-bars"></i>
+                                                    <i class="nki-menu"></i>
                                                 </li> 
                                               
 
