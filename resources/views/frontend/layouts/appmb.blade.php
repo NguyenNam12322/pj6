@@ -1002,9 +1002,9 @@
                             width: 55%;
                         }
 
-                        .logo-mobile img{
+                        /*.logo-mobile img{
                             width: 100%;
-                        }
+                        }*/
 
                         .div-header-cart{
                             height: 100%;
