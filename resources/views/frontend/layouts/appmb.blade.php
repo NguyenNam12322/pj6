@@ -385,6 +385,11 @@
                       display: -webkit-box;
                 }
 
+                .nki-Phone{
+                    width: 100%;
+                    height: 100%
+                }
+
                 #nk-cart{
                     width: 100%;
                 }
