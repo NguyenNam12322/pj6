@@ -1307,11 +1307,8 @@
                                     <div class="div-header-cart">
 
                                         <div class="logo-mobile">
-                                             <img
-                                        
-                                          src="{{ asset('/images/template/logo3.jpg') }}"
-                                          width="156"
-                                          height="52"
+                                            
+                                             <img src="{{ asset('/images/template/logo3.jpg') }}"
                                           
                                         >
                                         
