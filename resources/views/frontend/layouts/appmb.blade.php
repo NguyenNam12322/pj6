@@ -164,49 +164,7 @@
        
         <meta property="og:image" content="{{ asset('images/template/logo.png') }}" />
 
-        <script type="text/javascript">
-            requestIdleCallback(() => {
-                    const script = document.createElement("script");
-                    script.src = "https://www.googletagmanager.com/gtag/js?id=AW-16676362450";
-                    document.body.appendChild(script);
-
-                    window.dataLayer = window.dataLayer || [];
-                    function gtag(){dataLayer.push(arguments);}
-                    gtag('js', new Date());
-
-                    gtag('config', 'AW-16676362450');
-
-                    gtag('event', 'conversion', {
-                      'send_to': 'AW-16676362450/4NESCJ6vz8sZENKx9I8-',
-                      'value': 1.0,
-                      'currency': 'VND'
-                    });
-
-                });
-            
-        </script>
-
-
-        @if(!empty($data) && !empty($data->Price))
-
-        <script type="application/ld+json">
-          {
-            "@context": "http://schema.org",
-            "@type": "Product",
-            "headline": "{{ !empty($data->Name)?$data->Name:'' }}",
-            "datePublished": "{{ @$data->created_at->format('Y-m-d') }}",
-            "name": "{{ @$data->Name }}",
-            "image": [
-              "{{ asset(@$data->Image) }}"
-            ],
-            "aggregateRating": {
-                "@type": "AggregateRating",
-                "ratingValue": "4.6",
-                "reviewCount": "10"
-              }
-          }
-
-        </script>
+        
 
         @endif
       
@@ -977,7 +935,7 @@
                         }
 
                         .logo-mobile{
-                            width: 55%;
+                            width: auto;
                         }
 
                         /*.logo-mobile img{
@@ -2264,6 +2222,50 @@
             });
     
     </script>
+
+    <script type="text/javascript">
+            requestIdleCallback(() => {
+                    const script = document.createElement("script");
+                    script.src = "https://www.googletagmanager.com/gtag/js?id=AW-16676362450";
+                    document.body.appendChild(script);
+
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
+
+                    gtag('config', 'AW-16676362450');
+
+                    gtag('event', 'conversion', {
+                      'send_to': 'AW-16676362450/4NESCJ6vz8sZENKx9I8-',
+                      'value': 1.0,
+                      'currency': 'VND'
+                    });
+
+                });
+            
+        </script>
+
+
+        @if(!empty($data) && !empty($data->Price))
+
+        <script type="application/ld+json">
+          {
+            "@context": "http://schema.org",
+            "@type": "Product",
+            "headline": "{{ !empty($data->Name)?$data->Name:'' }}",
+            "datePublished": "{{ @$data->created_at->format('Y-m-d') }}",
+            "name": "{{ @$data->Name }}",
+            "image": [
+              "{{ asset(@$data->Image) }}"
+            ],
+            "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "4.6",
+                "reviewCount": "10"
+              }
+          }
+
+        </script>
 </body>
     
 </html>
