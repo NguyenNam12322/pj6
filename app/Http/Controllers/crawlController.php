@@ -785,9 +785,9 @@ class crawlController extends Controller
 
         $viTri = strpos($products->Detail, 'https://cdn11.dienmaycholon.vn/');
         if ($viTri !== false) {
-            echo "Tìm thấy từ '$tuCanTim' ở vị trí $viTri trong chuỗi.";
+           echo "tìm thấy từ trong chuỗi";
         } else {
-            echo "Không tìm thấy từ '$tuCanTim' trong chuỗi.";
+           echo "không tìm thấy từ trong chuỗi";
         }
        
            
