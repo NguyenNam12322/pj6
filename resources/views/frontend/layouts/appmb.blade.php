@@ -1330,7 +1330,7 @@
                                                                 <ul>
                                                                     <li class="cart-info-box nk_tooltip" data-toggle=".nk-cart-content" data-overlay="true">
                                                                         <a href="{{ route('show-cart') }}" class="checkout_header" >
-                                                                            <div class="icon"><i class="nki-shopping-cart"></i>
+                                                                            <div class="icon"><i class="fa-light fa-cart-shopping"></i>
                                                                                 @if($number_cart>0)
                                                                                 <span class="mount">{{$number_cart }}</span>
                                                                                 <span class="mount">{{$number_cart }}</span>
