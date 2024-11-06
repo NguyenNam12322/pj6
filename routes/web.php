@@ -123,7 +123,7 @@ Route::get('sitemap_product.xml', 'sitemapController@sitemapChildProduct');
 
 // Route::get('inCrawl', 'crawlController@allproduct');
 
-Route::get('/test-crawl', 'crawlController@checkDataCrawl');
+Route::get('/test-crawl', 'crawlController@checkDataCrawls_tv');
 
 
 Route::get('/404', function () {

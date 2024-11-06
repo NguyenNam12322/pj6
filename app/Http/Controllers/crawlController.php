@@ -778,6 +778,19 @@ class crawlController extends Controller
 
     }
 
+    public function checkDataCrawls_tv()
+    {
+        $data = groupProduct::find(12);
+        $id   = json_decode($data->product_id);
+
+        foreach ($id as $key => $value) {
+            $products = product::find($value);
+            if($products->active===1){
+                echo $products->Name.' ,id sản phẩm là '.$products->id.'<br>' ;
+            }
+        }
+    }
+
     public function checkDataCrawl()
     {
         // $data = product::where('Detail', 'like','%65UR8050PSB%')->select('id', 'ProductSku', 'crawl_link', 'Link')->get();
