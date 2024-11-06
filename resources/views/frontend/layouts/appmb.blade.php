@@ -1264,7 +1264,7 @@
 
         <div class="tygh-top-panel clearfix">
             <div class="container-fluid ">
-                <!-- <div class="row-fluid ">
+                <div class="row-fluid ">
                     <div class="span16 nk-banner-top">
                         <script>
                             let _cdp365JourneySetting = {
@@ -1279,7 +1279,7 @@
                                                                                                                                                                                                                                     
                         <span class="close_top_banner">✕</span>
                     </div>
-                </div> -->
+                </div>
                 <!-- header -->
                 <div class="row-fluid desktop">
                     <div class="span16 nk-header">
