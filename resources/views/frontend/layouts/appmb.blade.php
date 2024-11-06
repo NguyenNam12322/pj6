@@ -186,24 +186,6 @@
             
         </script>
 
-        
-      
-
-       <!-- Google tag (gtag.js) -->
-        <!-- <script defer  src="https://www.googletagmanager.com/gtag/js?id=AW-16676362450">
-        </script>
-        <script defer >
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-
-          gtag('config', 'AW-16676362450');
-        </script>
-
-         Event snippet for Lượt xem trang conversion page -->
-        
-
-
 
         @if(!empty($data) && !empty($data->Price))
 
@@ -227,11 +209,7 @@
         </script>
 
         @endif
-       <!--  <noscript><img height="1" width="1" style="display:none"
-          src="https://www.facebook.com/tr?id=481349662401312&ev=PageView&noscript=1"
-        /></noscript> -->
-        <!-- End Facebook Pixel Code -->
-          
+      
 
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
