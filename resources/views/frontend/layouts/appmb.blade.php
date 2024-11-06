@@ -912,7 +912,6 @@
                         }
 
                         .nki-shopping-cart:before {
-                            content: "\e911";
                             color: #fff;
                             font-size: 20px;
                         }
