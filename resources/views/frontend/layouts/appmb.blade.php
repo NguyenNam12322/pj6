@@ -1317,7 +1317,8 @@
                                         <div id="nk-cart">
                                             <ul>
                                                 <li class="cart-info-box nk_tooltip" data-toggle=".nk-cart-content" data-overlay="true">
-                                                    <i class="cart-info-box nk_tooltip"></i>
+                                                    
+                                                    <i class="nki-shopping-cart"></i>
                                                     @if($number_cart>0)
                                                     <span class="mount">{{$number_cart }}</span>
                                                     @endif
