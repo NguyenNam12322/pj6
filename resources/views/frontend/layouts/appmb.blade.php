@@ -988,6 +988,9 @@
                             line-height: 31px;
                             width: 100%;
                         }
+                        .fluid{
+                            min-height: 100%;
+                        }
 
 
 
