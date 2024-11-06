@@ -1376,7 +1376,7 @@
                                         <div class="logo-mobile">
                                              <a href="/"> <img
                                         
-                                          src="{{ asset('/images/template/logo2.jpg') }}"
+                                          src="{{ asset('/images/template/logo3.jpg') }}"
                                           width="156"
                                           height="52"
                                           layout="responsive"
