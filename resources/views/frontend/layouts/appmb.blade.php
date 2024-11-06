@@ -164,10 +164,7 @@
        
         <meta property="og:image" content="{{ asset('images/template/logo.png') }}" />
 
-        
-
-        @endif
-      
+       
 
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
@@ -2217,7 +2214,7 @@
     
     </script>
 
-    <script type="text/javascript">
+     <script type="text/javascript">
             requestIdleCallback(() => {
                     const script = document.createElement("script");
                     script.src = "https://www.googletagmanager.com/gtag/js?id=AW-16676362450";
@@ -2260,6 +2257,9 @@
           }
 
         </script>
+
+        @endif
+      
 </body>
     
 </html>
