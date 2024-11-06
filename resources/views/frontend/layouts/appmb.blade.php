@@ -1312,7 +1312,7 @@
                                           src="{{ asset('/images/template/logo3.jpg') }}"
                                           width="156"
                                           height="52"
-                                          layout="responsive"
+                                          
                                         >
                                         
                                         </div>
