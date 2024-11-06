@@ -2145,9 +2145,10 @@
     </script>
 
      <script type="text/javascript">
-            requestIdleCallback(() => {
-                const script = document.createElement("script");
-                script.src = "https://www.googletagmanager.com/gtag/js?id=AW-16676362450";
+
+            setTimeout(() => {
+              const script = document.createElement("script");
+              script.src = "https://www.googletagmanager.com/gtag/js?id=AW-16676362450";
                 document.body.appendChild(script);
 
                 window.dataLayer = window.dataLayer || [];
@@ -2161,20 +2162,9 @@
                   'value': 1.0,
                   'currency': 'VND'
                 });
-
-            });
-
-            if ('serviceWorker' in navigator) {
-                window.addEventListener('load', () => {
-                  navigator.serviceWorker.register('{{ asset("js/servicewk.js")}}')
-                    .then((registration) => {
-                      console.log('Service Worker registered with scope:', registration.scope);
-                    })
-                    .catch((error) => {
-                      console.error('Service Worker registration failed:', error);
-                    });
-                });
-              }
+              document.body.appendChild(script);
+            }, 20000);
+           
             
         </script>
 
