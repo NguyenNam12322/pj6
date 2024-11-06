@@ -784,104 +784,108 @@ class crawlController extends Controller
 
         $data_id =[];
 
-        foreach ($products as  $value) {
+        if($products->count()>0){
+            foreach ($products as  $value) {
 
-            if($value->id<1600){
-                $viTri = strpos($value->Detail, 'https://cdn11.dienmaycholon.vn/');
-                if ($viTri !== false) {
+                if($value->id<1600){
+                    $viTri = strpos($value->Detail, 'https://cdn11.dienmaycholon.vn/');
+                    if ($viTri !== false) {
 
-                    array_push($data_id, $value->id);
-                   
-                } 
-            }
-            
+                        array_push($data_id, $value->id);
+                       
+                    } 
+                }
+                
 
-        }
-
-        // die;
-        $values = product::find($data_id[0]);
-
-        $details = $values->Detail;
-
-        $id = $values->id;
-
-        // Sử dụng regex để tìm các giá trị src trong thẻ <img>
-        $patterns = '/<img[^>]+src="([^"]+)"/i';
-
-        $now = Carbon::now();
-
-        // Tạo một mảng để chứa các kết quả
-        $matches = array();
-
-        // Thực hiện tìm kiếm
-
-        preg_match_all($patterns, $details, $matches);
-
-        // $matches[1] sẽ chứa các giá trị src
-
-        $srcs = $matches[1];
-
-        $replace = [];
-
-        $error = [];
-
-        if(!empty($srcs) && count($srcs)>0){
-
-            $directory = public_path().'/uploads/product/'.$id;
-
-            // echo 'https:'.$value.'<br>';
-
-            if (!is_dir($directory)) {
-                // Tạo thư mục và các thư mục con nếu không tồn tại
-                mkdir($directory, 0777, true);
             }
 
+            // die;
+            $values = product::find($data_id[0]);
 
-            foreach ($srcs as $vls) {
+            $details = $values->Detail;
 
-               
-                $replace_img = public_path().'/uploads/product/'.$id.'/'.basename($vls);
+            $id = $values->id;
 
-                $replace_imgs = '/uploads/product/'.$id.'/'.basename($vls);
+            // Sử dụng regex để tìm các giá trị src trong thẻ <img>
+            $patterns = '/<img[^>]+src="([^"]+)"/i';
 
-                 array_push($replace, $replace_imgs);
+            $now = Carbon::now();
 
-               
-                 $file_headers = @get_headers(trim($vls));
+            // Tạo một mảng để chứa các kết quả
+            $matches = array();
 
-                if(!empty($file_headers) && $file_headers[0] != 'HTTP/1.1 404 Not Found')
-                {
-                     file_put_contents($replace_img, file_get_contents(trim($vls)));
+            // Thực hiện tìm kiếm
 
-                   
-                 }
-                else
-                {
+            preg_match_all($patterns, $details, $matches);
 
-                    array_push($error, $vls);
-                    echo $vls.'<br>';
+            // $matches[1] sẽ chứa các giá trị src
+
+            $srcs = $matches[1];
+
+            $replace = [];
+
+            $error = [];
+
+            if(!empty($srcs) && count($srcs)>0){
+
+                $directory = public_path().'/uploads/product/'.$id;
+
+                // echo 'https:'.$value.'<br>';
+
+                if (!is_dir($directory)) {
+                    // Tạo thư mục và các thư mục con nếu không tồn tại
+                    mkdir($directory, 0777, true);
                 }
 
-               
+
+                foreach ($srcs as $vls) {
+
+                   
+                    $replace_img = public_path().'/uploads/product/'.$id.'/'.basename($vls);
+
+                    $replace_imgs = '/uploads/product/'.$id.'/'.basename($vls);
+
+                     array_push($replace, $replace_imgs);
+
+                   
+                     $file_headers = @get_headers(trim($vls));
+
+                    if(!empty($file_headers) && $file_headers[0] != 'HTTP/1.1 404 Not Found')
+                    {
+                         file_put_contents($replace_img, file_get_contents(trim($vls)));
+
+                       
+                     }
+                    else
+                    {
+
+                        array_push($error, $vls);
+                        echo $vls.'<br>';
+                    }
+
+                   
+                }
             }
+            if(count($error)==0){   
+
+                $new_details = str_replace($srcs, $replace, $details);
+
+                $product = product::find($id);
+
+                $product->Detail = $new_details;
+
+                $product->save();
+
+                echo "update thành công product_id ". $id.' còn '.count($data_id).' Link nữa';
+
+            }
+            else{
+                echo 'có lỗi link ko crawl được còn '.count($data_id).' Link nữa';
+            }
+
         }
-        if(count($error)==0){   
 
-            $new_details = str_replace($srcs, $replace, $details);
-
-            $product = product::find($id);
-
-            $product->Detail = $new_details;
-
-            $product->save();
-
-            echo "update thành công product_id ". $id.' còn '.count($data_id).' Link nữa';
-
-        }
-        else{
-            echo 'có lỗi link ko crawl được còn '.count($data_id).' Link nữa';
-        }
-
+        
 
     }
 
