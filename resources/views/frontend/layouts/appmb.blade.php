@@ -318,6 +318,10 @@
                       display: -webkit-box;
                 }
 
+                .logo-mobile img{
+                    min-width: 100%;
+                }
+
                 .nki-Phone, .nki-menu{
                     width: 100%;
                     height: 100%
@@ -1239,7 +1243,7 @@
                                     <div class="div-header-cart">
 
                                         <div class="logo-mobile">
-                                            <img src="{{ asset('/public/images/template/logo4.webp') }}" width="167" height="61" loading="lazy" 
+                                            <img src="{{ asset('/public/images/template/logo4.webp') }}"  loading="lazy" 
                                         >
                                         
                                         </div>
