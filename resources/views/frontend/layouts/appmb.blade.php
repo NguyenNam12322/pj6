@@ -1243,8 +1243,8 @@
                                     <div class="div-header-cart">
 
                                         <div class="logo-mobile">
-                                            <img src="{{ asset('/public/images/template/logo4.webp') }}"  loading="lazy" 
-                                        >
+                                            <link rel="preload" href="{{ asset('/public/images/template/logo4.webp') }}" as="image">
+                                            
                                         
                                         </div>
 
