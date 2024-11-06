@@ -911,6 +911,12 @@
                             display: none;
                         }
 
+                        .nki-shopping-cart:before {
+                            content: "\e911";
+                            color: #fff;
+                            font-size: 20px;
+                        }
+
                         .nk-header #nk-cart ul li{
                             width: 35% !important;
                             line-height: 31px;
