@@ -368,7 +368,7 @@
                 }
 
                 #nk-searchs {
-                    width: 50% !important;
+                    width: 85% !important;
                     margin: 0 auto;
                 }
 
