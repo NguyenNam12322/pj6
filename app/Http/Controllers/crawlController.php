@@ -780,17 +780,16 @@ class crawlController extends Controller
 
     public function checkDataCrawls_tv()
     {
-        
-        $products = product::find(210);
+        $products = product::select('Detail','id')->get();
 
-        $viTri = strpos($products->Detail, 'https://cdn11.dienmaycholon.vn/');
-        if ($viTri !== false) {
-           echo "tìm thấy từ trong chuỗi";
-        } else {
-           echo "không tìm thấy từ trong chuỗi";
+        foreach ($products as  $value) {
+            $viTri = strpos($value->Detail, 'https://cdn11.dienmaycholon.vn/');
+            if ($viTri !== false) {
+               echo $value->id.'<br>';
+            } 
+
         }
-       
-           
+
     }
 
     public function checkDataCrawl()
