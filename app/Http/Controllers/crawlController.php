@@ -852,14 +852,14 @@ class crawlController extends Controller
                 // }
                 // else
                 // {
-                    echo $vls."\n";
+                    echo $vls.'<br>';
                 // }
 
                
             }
         }
 
-        
+
 
         // $new_details = str_replace($srcs, $replace, $details);
 
