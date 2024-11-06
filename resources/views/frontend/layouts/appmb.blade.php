@@ -1257,7 +1257,7 @@
                                             
                                                 <li class="icons-mobile-bar">
 
-                                                    <a class="btn  show-menu-mobile show-bar" href="javascript:void(0)"><i class="fa fa-bars"></i></a>
+                                                    <i class="fa fa-bars"></i>
                                                 </li> 
                                               
 
