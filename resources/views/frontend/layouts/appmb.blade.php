@@ -1390,7 +1390,7 @@
                                                     
                                                     <a href="javascript:void(0)" class="checkout_header" onclick="showToCart()">
                                                        
-                                                        <i class="nki-shopping-cart"></i>
+                                                        <i class=""></i>
                                                         @if($number_cart>0)
                                                         <span class="mount">{{$number_cart }}</span>
                                                         @endif
@@ -1401,10 +1401,10 @@
                                               
                                                 <li>
                                                     <a href="#">
-                                                    <i class="nki-Phone"></i>  </a>
+                                                    <i class=""></i>  </a>
                                                 </li> 
                                             
-                                                <li class="icons-mobile-bar">
+                                                <li class="">
 
                                                     <a class="btn  show-menu-mobile show-bar" href="javascript:void(0)"><i class="fa fa-bars"></i></a>
                                                 </li> 
