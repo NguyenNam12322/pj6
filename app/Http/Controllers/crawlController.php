@@ -780,22 +780,22 @@ class crawlController extends Controller
 
     public function checkDataCrawls_tv()
     {
-        $products = product::select('Detail','id','Link','crawl_link')->get();
+        // $products = product::select('Detail','id','Link','crawl_link')->get();
 
-        foreach ($products as  $value) {
+        // foreach ($products as  $value) {
 
-            if($value->id<1600){
-                $viTri = strpos($value->Detail, 'https://cdn11.dienmaycholon.vn/');
-                if ($viTri !== false) {
-                   echo $value->id.', '.trim($value->crawl_link).'<br>';
-                } 
-            }
+        //     if($value->id<1600){
+        //         $viTri = strpos($value->Detail, 'https://cdn11.dienmaycholon.vn/');
+        //         if ($viTri !== false) {
+        //            echo $value->id.', '.trim($value->crawl_link).'<br>';
+        //         } 
+        //     }
             
 
-        }
+        // }
 
-        die;
-        $values = product::find(37);
+        // die;
+        $values = product::find(51);
 
         $details = $values->Detail;
 
@@ -833,41 +833,43 @@ class crawlController extends Controller
 
             foreach ($srcs as $vls) {
 
-                $vls = 'https:'.$vls;
+                // $vls = 'https:'.$vls;
 
-                $replace_img = public_path().'/uploads/product/'.$id.'/'.basename($vls);
+                // $replace_img = public_path().'/uploads/product/'.$id.'/'.basename($vls);
 
-                $replace_imgs = '/uploads/product/'.$id.'/'.basename($vls);
+                // $replace_imgs = '/uploads/product/'.$id.'/'.basename($vls);
 
-                array_push($replace, $replace_imgs);
+                // array_push($replace, $replace_imgs);
 
                
-                $file_headers = @get_headers(trim($vls));
+                // $file_headers = @get_headers(trim($vls));
 
-                if(!empty($file_headers) && $file_headers[0] != 'HTTP/1.1 404 Not Found')
-                {
-                    file_put_contents($replace_img, file_get_contents(trim($vls)));
+                // if(!empty($file_headers) && $file_headers[0] != 'HTTP/1.1 404 Not Found')
+                // {
+                //     file_put_contents($replace_img, file_get_contents(trim($vls)));
 
                    
-                }
-                else
-                {
+                // }
+                // else
+                // {
                     echo $vls."\n";
-                }
+                // }
 
                
             }
         }
 
-        $new_details = str_replace($srcs, $replace, $details);
+        
 
-        $product = product::find($id);
+        // $new_details = str_replace($srcs, $replace, $details);
 
-        $product->Detail = $new_details;
+        // $product = product::find($id);
 
-        $product->save();
+        // $product->Detail = $new_details;
 
-        echo "update thành công product_id ". $id;
+        // $product->save();
+
+        // echo "update thành công product_id ". $id;
 
     }
 
