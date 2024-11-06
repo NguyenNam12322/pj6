@@ -323,6 +323,10 @@
                     height: 100%
                 }
 
+                 #nk-cart ul{
+                    margin-top: 20px;
+                }
+
                 .nki-Phone:before, .nki-menu{
                     font-size: 24px;
                     color: #fff;
@@ -1364,6 +1368,8 @@
                                 </div>
 
                             </div>
+
+
                         </div>
                     </div>
                 </div>
