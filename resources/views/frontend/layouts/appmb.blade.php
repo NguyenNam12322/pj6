@@ -932,7 +932,7 @@
                         }
 
                         .logo-mobile{
-                            width: auto;
+                            width: 45%;
                         }
 
                         /*.logo-mobile img{
