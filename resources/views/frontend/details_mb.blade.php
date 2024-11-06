@@ -50,6 +50,10 @@
             margin: 0 !important;
         }
 
+        .nki-shopping-cart{
+            width: 100%;
+        }
+
         .title{
             height: 58px;
             width: 450px;
