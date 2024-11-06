@@ -1317,16 +1317,11 @@
                                         <div id="nk-cart">
                                             <ul>
                                                 <li class="cart-info-box nk_tooltip" data-toggle=".nk-cart-content" data-overlay="true">
-                                                    
-                                                    <a href="javascript:void(0)" class="checkout_header" onclick="showToCart()">
+                                                    <i class="cart-info-box nk_tooltip"></i>
+                                                    @if($number_cart>0)
+                                                    <span class="mount">{{$number_cart }}</span>
+                                                    @endif
                                                        
-                                                        <i class="fa-solid fa-cart-shopping"></i>
-                                                        @if($number_cart>0)
-                                                        <span class="mount">{{$number_cart }}</span>
-                                                        @endif
-                                                       
-                                                    </a>
-                                                    
                                                 </li>
                                               
                                                 <li>
