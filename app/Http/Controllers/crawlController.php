@@ -819,6 +819,8 @@ class crawlController extends Controller
 
         $replace = [];
 
+        $error = [];
+
         if(!empty($srcs) && count($srcs)>0){
 
             $directory = public_path().'/uploads/product/'.$id;
@@ -833,43 +835,50 @@ class crawlController extends Controller
 
             foreach ($srcs as $vls) {
 
-                // $vls = 'https:'.$vls;
+                $vls = 'https:'.$vls;
 
-                // $replace_img = public_path().'/uploads/product/'.$id.'/'.basename($vls);
+                $replace_img = public_path().'/uploads/product/'.$id.'/'.basename($vls);
 
-                // $replace_imgs = '/uploads/product/'.$id.'/'.basename($vls);
+                $replace_imgs = '/uploads/product/'.$id.'/'.basename($vls);
 
-                // array_push($replace, $replace_imgs);
+                 array_push($replace, $replace_imgs);
 
                
-                // $file_headers = @get_headers(trim($vls));
+                 $file_headers = @get_headers(trim($vls));
 
-                // if(!empty($file_headers) && $file_headers[0] != 'HTTP/1.1 404 Not Found')
-                // {
-                //     file_put_contents($replace_img, file_get_contents(trim($vls)));
+                if(!empty($file_headers) && $file_headers[0] != 'HTTP/1.1 404 Not Found')
+                {
+                     file_put_contents($replace_img, file_get_contents(trim($vls)));
 
                    
-                // }
-                // else
-                // {
+                 }
+                else
+                {
+
+                    array_push($error, $vls);
                     echo $vls.'<br>';
-                // }
+                }
 
                
             }
         }
+        if(count($error)==0){   
 
+            $new_details = str_replace($srcs, $replace, $details);
 
+            $product = product::find($id);
 
-        // $new_details = str_replace($srcs, $replace, $details);
+            $product->Detail = $new_details;
 
-        // $product = product::find($id);
+            $product->save();
 
-        // $product->Detail = $new_details;
+            echo "update thành công product_id ". $id;
 
-        // $product->save();
+        }
+        else{
+            echo "có lỗi link ko crawl được";
+        }
 
-        // echo "update thành công product_id ". $id;
 
     }
 
