@@ -1239,7 +1239,7 @@
                                     <div class="div-header-cart">
 
                                         <div class="logo-mobile">
-                                            <img src="{{ asset('/images/template/logo4.webp') }}" width="167" height="61" type=""
+                                            <img src="{{ asset('/public/images/template/logo4.webp') }}" width="167" height="61" type=""
                                         >
                                         
                                         </div>
