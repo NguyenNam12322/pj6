@@ -879,7 +879,7 @@ class crawlController extends Controller
 
         }
         else{
-            echo "có lỗi link ko crawl được còn "count($data_id) " Link nữa";
+            echo 'có lỗi link ko crawl được còn '.count($data_id).' Link nữa';
         }
 
 
