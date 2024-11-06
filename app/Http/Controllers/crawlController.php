@@ -780,7 +780,7 @@ class crawlController extends Controller
 
     public function checkDataCrawls_tv()
     {
-        $products = product::select('Detail','id','Link')->get();
+        $products = product::select('Detail','id','Link','crawl_link')->get();
 
         foreach ($products as  $value) {
             $viTri = strpos($value->Detail, 'https://cdn11.dienmaycholon.vn/');
