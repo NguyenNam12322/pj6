@@ -1374,14 +1374,14 @@
                                     <div class="div-header-cart">
 
                                         <div class="logo-mobile">
-                                             <a href="/"> <amp-img
+                                             <a href="/"> <img
                                         
                                           src="{{ asset('/images/template/logo2.jpg') }}"
                                           width="156"
                                           height="52"
                                           layout="responsive"
                                         >
-                                        </amp-img> </a>
+                                         </a>
                                         </div>
 
                                         <div id="nk-cart">
