@@ -785,7 +785,7 @@ class crawlController extends Controller
         foreach ($products as  $value) {
             $viTri = strpos($value->Detail, 'https://cdn11.dienmaycholon.vn/');
             if ($viTri !== false) {
-               echo trim($value->crawl_link).'<br>';
+               echo $value->id.', '.trim($value->crawl_link).'<br>';
             } 
 
         }
