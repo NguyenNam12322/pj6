@@ -780,22 +780,26 @@ class crawlController extends Controller
 
     public function checkDataCrawls_tv()
     {
-        // $products = product::select('Detail','id','Link','crawl_link')->get();
+        $products = product::select('Detail','id','Link','crawl_link')->get();
 
-        // foreach ($products as  $value) {
+        $data_id =[];
 
-        //     if($value->id<1600){
-        //         $viTri = strpos($value->Detail, 'https://cdn11.dienmaycholon.vn/');
-        //         if ($viTri !== false) {
-        //            echo $value->id.', '.trim($value->crawl_link).'<br>';
-        //         } 
-        //     }
+        foreach ($products as  $value) {
+
+            if($value->id<1600){
+                $viTri = strpos($value->Detail, 'https://cdn11.dienmaycholon.vn/');
+                if ($viTri !== false) {
+
+                    array_push($data_id, $value->id);
+                   
+                } 
+            }
             
 
-        // }
+        }
 
         // die;
-        $values = product::find(37);
+        $values = product::find($data_id[0]);
 
         $details = $values->Detail;
 
@@ -871,11 +875,11 @@ class crawlController extends Controller
 
             $product->save();
 
-            echo "update thành công product_id ". $id;
+            echo "update thành công product_id ". $id.' còn ' count($data_id).' Link nữa';
 
         }
         else{
-            echo "có lỗi link ko crawl được";
+            echo "có lỗi link ko crawl được còn "count($data_id) "Link nữa";
         }
 
 
