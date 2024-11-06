@@ -373,7 +373,7 @@
                 }
 
                 #nk-cart{
-                    width: 100%;
+                    width: 55%;
                 }
 
                 .sugests-li{
