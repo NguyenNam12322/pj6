@@ -1307,8 +1307,8 @@
                                     <div class="div-header-cart">
 
                                         <div class="logo-mobile">
-                                            
-                                             <img src="{{ asset('/images/template/logo3.jpg') }}"
+
+                                             <img src="{{ asset('/images/template/logo4.jpg') }}"
                                           
                                         >
                                         
