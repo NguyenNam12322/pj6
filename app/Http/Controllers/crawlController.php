@@ -787,14 +787,14 @@ class crawlController extends Controller
         if($products->count()>0){
             foreach ($products as  $value) {
 
-                if($value->id<1600){
-                    $viTri = strpos($value->Detail, 'https://cdn11.dienmaycholon.vn/');
-                    if ($viTri !== false) {
+                
+                $viTri = strpos($value->Detail, 'https://cdn11.dienmaycholon.vn/');
+                if ($viTri !== false) {
 
-                        array_push($data_id, $value->id);
-                       
-                    } 
-                }
+                    array_push($data_id, $value->id);
+                   
+                } 
+               
                 
 
             }
