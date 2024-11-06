@@ -1390,7 +1390,7 @@
                                                     
                                                     <a href="javascript:void(0)" class="checkout_header" onclick="showToCart()">
                                                        
-                                                        <i class=""></i>
+                                                        <i class="fa-solid fa-cart-shopping"></i>
                                                         @if($number_cart>0)
                                                         <span class="mount">{{$number_cart }}</span>
                                                         @endif
@@ -1404,7 +1404,7 @@
                                                     <i class=""></i>  </a>
                                                 </li> 
                                             
-                                                <li class="">
+                                                <li class="icons-mobile-bar">
 
                                                     <a class="btn  show-menu-mobile show-bar" href="javascript:void(0)"><i class="fa fa-bars"></i></a>
                                                 </li> 
