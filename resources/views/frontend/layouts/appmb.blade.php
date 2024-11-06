@@ -318,7 +318,7 @@
                       display: -webkit-box;
                 }
 
-                .nki-Phone{
+                .nki-Phone, .nki-menu{
                     width: 100%;
                     height: 100%
                 }
