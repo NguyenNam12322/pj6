@@ -323,7 +323,7 @@
                     height: 100%
                 }
 
-                .nki-Phone:before{
+                .nki-Phone:before, .nki-menu{
                     font-size: 24px;
                     color: #fff;
                 }
