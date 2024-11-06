@@ -1430,7 +1430,7 @@
 
     <link rel="preload" href="{{asset('js/lib/jquery.validate.min.js')}}" as="script">
     <link rel="preload" href="{{ asset('js/lib/lazyload.js') }}" as="script">
-    <link rel="preload" href="{{ asset('js/lib/servicewk.js') }}" as="script">
+    <link rel="preload" href="{{ asset('js/servicewk.js') }}" as="script">
     <!-- <script src="{{ asset('js/lib/sweetalert2.all.min.js') }}"></script> -->
 
     @stack('script')
@@ -2161,7 +2161,7 @@
 
             if ('serviceWorker' in navigator) {
                 window.addEventListener('load', () => {
-                  navigator.serviceWorker.register('{{ asset("js/lib/servicewk.js")}}')
+                  navigator.serviceWorker.register('{{ asset("js/servicewk.js")}}')
                     .then((registration) => {
                       console.log('Service Worker registered with scope:', registration.scope);
                     })
