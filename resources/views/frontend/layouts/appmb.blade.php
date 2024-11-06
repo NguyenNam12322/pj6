@@ -1430,6 +1430,7 @@
 
     <link rel="preload" href="{{asset('js/lib/jquery.validate.min.js')}}" as="script">
     <link rel="preload" href="{{ asset('js/lib/lazyload.js') }}" as="script">
+    <link rel="preload" href="{{ asset('js/lib/servicewk.js') }}" as="script">
     <!-- <script src="{{ asset('js/lib/sweetalert2.all.min.js') }}"></script> -->
 
     @stack('script')
