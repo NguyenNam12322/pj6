@@ -979,7 +979,7 @@
                         }
 
                         .nk-header #nk-cart ul li{
-                            width: 35% !imnportant;
+                            width: 35% !important;
                             line-height: 31px;
                         }
 
@@ -1013,7 +1013,7 @@
 
                          #nk-cart ul{
                             padding: 0;
-                            width: 57%;
+                            width: 100%;
                             position: relative;
                             display: flex;
                         }
