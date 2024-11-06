@@ -1239,8 +1239,7 @@
                                     <div class="div-header-cart">
 
                                         <div class="logo-mobile">
-                                            <img src="{{ asset('/public/images/template/logo4.webp') }}" width="167" height="61" loading="lazy" 
-                                        >
+                                            <img id="image-container" >
                                         
                                         </div>
 
@@ -2159,7 +2158,45 @@
 
             });
 
-            
+            self.addEventListener('fetch', event => {
+              const request = event.request;
+
+              // Kiểm tra xem yêu cầu có phải là hình ảnh không
+              if (request.destination === 'image') {
+                event.respondWith(
+                  caches.match(request).then(cachedResponse => {
+                    if (cachedResponse) {
+                      return cachedResponse;
+                    }
+
+                    // Nếu không có trong cache, lấy ảnh qua mạng và lưu trữ vào cache
+                    return fetch(request).then(networkResponse => {
+                      return caches.open('image-cache-v1').then(cache => {
+                        cache.put(request, networkResponse.clone());
+                        return networkResponse;
+                      });
+                    });
+                  })
+                );
+              }
+            });
+
+            async function loadImage(url) {
+              try {
+                // Gửi yêu cầu tải ảnh bằng fetch API
+                const response = await fetch(url, { mode: 'no-cors' });
+                const blob = await response.blob();
+
+                // Tạo URL cho ảnh để sử dụng trong HTML
+                const imageURL = URL.createObjectURL(blob);
+                document.getElementById('image-container').src = imageURL;
+              } catch (error) {
+                console.error('Lỗi khi tải ảnh:', error);
+              }
+            }
+
+            // Ví dụ: tải một ảnh từ URL
+            loadImage('https://muasamtaikho.vn/public/images/template/logo4.webp');
         </script>
 
 
