@@ -2,7 +2,7 @@ self.addEventListener('install', event => {
   event.waitUntil(
     caches.open('image-cache-v1').then(cache => {
       return cache.addAll([
-        'public/images/template/logo4.webp',
+        '/public/images/template/logo4.webp',
         
         // Liệt kê các hình ảnh cần lưu trữ ở đây
       ]);
