@@ -835,8 +835,7 @@ class crawlController extends Controller
 
             foreach ($srcs as $vls) {
 
-                $vls = 'https:'.$vls;
-
+               
                 $replace_img = public_path().'/uploads/product/'.$id.'/'.basename($vls);
 
                 $replace_imgs = '/uploads/product/'.$id.'/'.basename($vls);
