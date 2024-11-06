@@ -979,7 +979,7 @@
                         }
 
                         .nk-header #nk-cart ul li{
-                            width: auto;
+                            width: 35% !imnportant;
                             line-height: 31px;
                         }
 
