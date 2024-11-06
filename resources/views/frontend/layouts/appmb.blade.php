@@ -1307,14 +1307,14 @@
                                     <div class="div-header-cart">
 
                                         <div class="logo-mobile">
-                                             <a href="/"> <img
+                                             <img
                                         
                                           src="{{ asset('/images/template/logo3.jpg') }}"
                                           width="156"
                                           height="52"
                                           layout="responsive"
                                         >
-                                         </a>
+                                        
                                         </div>
 
                                         <div id="nk-cart">
