@@ -795,7 +795,7 @@ class crawlController extends Controller
         // }
 
         // die;
-        $values = product::find(51);
+        $values = product::find(37);
 
         $details = $values->Detail;
 
