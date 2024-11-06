@@ -986,6 +986,7 @@
                         .nk-header #nk-cart ul li a{
                             font-size: 17px;
                             line-height: 31px;
+                            width: 100%;
                         }
 
 
