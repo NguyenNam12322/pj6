@@ -390,6 +390,10 @@
                     height: 100%
                 }
 
+                .nki-Phone:before{
+                    font-size: 15px;
+                }
+
                 #nk-cart{
                     width: 100%;
                 }
