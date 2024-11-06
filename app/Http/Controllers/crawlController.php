@@ -783,10 +783,14 @@ class crawlController extends Controller
         $products = product::select('Detail','id','Link','crawl_link')->get();
 
         foreach ($products as  $value) {
-            $viTri = strpos($value->Detail, 'https://cdn11.dienmaycholon.vn/');
-            if ($viTri !== false) {
-               echo $value->id.', '.trim($value->crawl_link).'<br>';
-            } 
+
+            if($value->id<1600){
+                $viTri = strpos($value->Detail, 'https://cdn11.dienmaycholon.vn/');
+                if ($viTri !== false) {
+                   echo $value->id.', '.trim($value->crawl_link).'<br>';
+                } 
+            }
+            
 
         }
 
