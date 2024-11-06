@@ -1376,12 +1376,12 @@
                                                 <li class="cart-info-box nk_tooltip" data-toggle=".nk-cart-content" data-overlay="true">
                                                     
                                                     <a href="javascript:void(0)" class="checkout_header" onclick="showToCart()">
-                                                        <div class="icon">
-                                                            <i class="nki-shopping-cart"></i>
-                                                            @if($number_cart>0)
-                                                            <span class="mount">{{$number_cart }}</span>
-                                                            @endif
-                                                        </div>
+                                                       
+                                                        <i class="nki-shopping-cart"></i>
+                                                        @if($number_cart>0)
+                                                        <span class="mount">{{$number_cart }}</span>
+                                                        @endif
+                                                       
                                                     </a>
                                                     
                                                 </li>
