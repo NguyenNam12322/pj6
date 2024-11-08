@@ -330,6 +330,7 @@
 
                 .logo-mobile img{
                     min-width: 100%;
+                    height: 61px;
 
                 }
 
