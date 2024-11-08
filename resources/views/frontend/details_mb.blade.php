@@ -306,12 +306,28 @@
                 background-size: 330px 330px;
             }
 
-            .tygh-top-panel, .box_main, .box_left, .scrolling_inner, .box01{
+            .tygh-top-panel, .box_main, .box_left, .scrolling_inner, .box01, .view-more-related, .view-all-salient_fratured, .box_pro-benefit{
                 width: 100%;
+            }
+
+            .box01{
+                height: 264px;
+            }
+            .scrolling_inner{
+                height: 107px;
+            }
+            .view-all-salient_fratured{
+                height: 24px;
             }
 
             .tygh-top-panel{
                 height: 130px;
+            }
+            .box_pro-benefit{
+                height: 313px;
+            }
+            .view-more-related{
+                height: 445px;
             }
 
             section.detail{
