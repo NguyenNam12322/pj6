@@ -310,6 +310,14 @@
                 height: 3098px;
             }
 
+            .pdetail-info{
+                height: 64px;    
+            }
+
+            .scroll-box{
+                height: 291px;
+            }
+
             .breadcrumb{
                 height: 120px;
             }
