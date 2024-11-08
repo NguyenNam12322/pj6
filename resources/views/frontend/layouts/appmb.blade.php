@@ -980,7 +980,7 @@
                         }
 
                         .nav-search{
-                            width: 100% !important;
+                            width: 88% !important;
                         }
 
                         .banner-ads-text{
