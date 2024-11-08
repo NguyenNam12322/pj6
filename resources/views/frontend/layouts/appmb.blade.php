@@ -967,6 +967,10 @@
                             width: 100%;
                         }*/
 
+                        .logo-mobile a{
+                            height: 100%;
+                        }
+
                         .div-header-cart{
                             height: 100%;
                         }
