@@ -1265,8 +1265,11 @@
                                     <div class="div-header-cart">
                                         <div class="logo-mobile">
                                             <a href="/">
-                                                       
-                                                <img src="{{ asset('/public/images/template/logo4.webp') }}">
+                                                 <picture>
+                                                    <source srcset="{{ asset('/public/images/template/logo4.webp') }}" type="image/webp">
+                                                    <img src="{{ asset('/public/images/template/logo4.webp') }}">
+                                                </picture>      
+                                                
                                                     
                                             </a>
                                             
