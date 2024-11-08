@@ -297,6 +297,11 @@
                 background-size: 330px 330px;
             }
 
+            .pay{
+                width: 100%;
+                height: 455px;
+            }
+
             .share-button{
                 width: 100%;
                 display: flex;
