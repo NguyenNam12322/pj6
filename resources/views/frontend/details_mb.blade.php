@@ -306,6 +306,10 @@
                 background-size: 330px 330px;
             }
 
+            .box_main, .box_left{
+                width: 100%;
+            }
+
             section.detail{
                 height: 3098px;
             }
