@@ -319,6 +319,11 @@
                       display: -webkit-box;
                 }
 
+                picture{
+                    display: block;
+                    height: 100%;
+                }
+
                 .logo-mobile img{
                     min-width: 100%;
 
