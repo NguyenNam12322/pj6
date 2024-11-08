@@ -1,4 +1,4 @@
-@extends('frontend.layouts.apps')
+@extends('frontend.layouts.appmb')
 @section('content') 
 @push('style')
 
