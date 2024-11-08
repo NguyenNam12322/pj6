@@ -939,7 +939,9 @@
                         .fluid{
                             min-height: 100%;
                         }
-
+                        .nk-header .span12{
+                            float: right !important;
+                        }
 
 
                         .row-head{
