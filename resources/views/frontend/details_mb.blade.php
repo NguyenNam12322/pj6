@@ -885,7 +885,7 @@
 
             <div class="pay mobile">
                 <div class="col-12 pdetail-des">
-                    <div class="clearfix"></div>
+                    
                     <div class="info-box">
                         <div class="pdetail-info">
                             <p class="p1">Thương hiệu: <b>{{ @$ar_groups_info[0]['name'] }}</b></p>
