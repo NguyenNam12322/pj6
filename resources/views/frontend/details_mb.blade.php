@@ -306,8 +306,12 @@
                 background-size: 330px 330px;
             }
 
-            .box_main, .box_left, .scrolling_inner, .box01{
+            .tygh-top-panel, .box_main, .box_left, .scrolling_inner, .box01{
                 width: 100%;
+            }
+
+            .tygh-top-panel{
+                height: 130px;
             }
 
             section.detail{
