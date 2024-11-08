@@ -968,6 +968,7 @@
                         }*/
 
                         .logo-mobile a{
+                            display: block;
                             height: 100%;
                         }
 
