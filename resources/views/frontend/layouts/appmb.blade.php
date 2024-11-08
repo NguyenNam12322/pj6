@@ -126,7 +126,7 @@
                 min-height: 200px;
             }
 
-            
+
         </style>
 
          <style type="text/css">
@@ -1048,7 +1048,7 @@
                         }
 
                         .search_center{
-                            height: auto !important;
+                            height: 50px !important;
                         }
 
                         .header__main{
