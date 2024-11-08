@@ -225,8 +225,8 @@
 
     <!-- <link rel="stylesheet" type="text/css" href="{{ asset('css/application.css') }}"> -->
 
-    @endif
-   
+
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/detail1fe.css') }}">
     <style type="text/css">
         .copy-button{
             position: absolute;
