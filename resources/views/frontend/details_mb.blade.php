@@ -297,6 +297,14 @@
                 background-size: 330px 330px;
             }
 
+            .breadcrumb{
+                height: 120px;
+            }
+
+            .box_main{
+                height: 2952px;
+            }
+
             .pay{
                 width: 100%;
                 height: 455px;
