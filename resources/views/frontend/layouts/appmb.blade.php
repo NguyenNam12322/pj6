@@ -321,7 +321,7 @@
 
                 .logo-mobile img{
                     min-width: 100%;
-                    min-height: 100%;
+
                 }
 
                 .nki-Phone, .nki-menu{
@@ -951,6 +951,7 @@
 
                         .logo-mobile{
                             width: 45%;
+                            height: 100%;
                         }
 
                         /*.logo-mobile img{
