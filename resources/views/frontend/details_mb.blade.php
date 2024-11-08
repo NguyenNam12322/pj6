@@ -880,12 +880,13 @@
 
         
             <div class="pay mobile">
-                @if($mobile ==1)
-                 <h1>{{ $data->Name }}</h1>
-                @endif
+
                 <div class="pdetail-des">
                     
                     <div class="info-box">
+                        @if($mobile ==1)
+                            <h1>{{ $data->Name }}</h1>
+                        @endif 
                         <div class="pdetail-info">
                             <p class="p1">Thương hiệu: <b>{{ @$ar_groups_info[0]['name'] }}</b></p>
 
