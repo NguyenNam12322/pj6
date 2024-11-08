@@ -1104,9 +1104,7 @@
                     
             </div>
 
-            <br>
-
-           
+        
             <div class="view-all-salient_fratured">
 
                 <b>Chính sách mua hàng tại MuaSamTaiKho.vn</b>
