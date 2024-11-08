@@ -376,7 +376,7 @@
             }
             .pdetail-info, .pdetail-stockavailable{
                 text-align: left;
-                display: flex;
+                display: block;
             }
 
             .p1{
