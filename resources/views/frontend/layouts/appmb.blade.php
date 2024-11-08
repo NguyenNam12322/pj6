@@ -1348,28 +1348,18 @@
                                            
                                             
                                             <div class="span12 nk-nav-right nav-search">
-                                                <div class="row-fluid ">
-                                                    <div class="span16 ">
-                                                        <div class="header-right" id="nk-holine-new">
-
-
-                                                         
-                                                            <div id="nk-searchs">
-                                                                <form action="{{ route('search-product-frontend') }}" method="get" class="cm-processed-form">
-                                                                    <div class="nk-search-box">
-                                                                        <input type="text" id="tags_mobile" name="key"  id="search_input" placeholder="Bạn cần tìm gì hôm nay ?" autocomplete="off">
-                                                                        <button>
-                                                                        <i class="nki-search"></i>
-                                                                        </button>
-                                                                        <div class="search-results">
-                                                                           
-                                                                        </div>
-                                                                    </div>
-                                                                </form>
+                                                <div id="nk-searchs">
+                                                    <form action="{{ route('search-product-frontend') }}" method="get" class="cm-processed-form">
+                                                        <div class="nk-search-box">
+                                                            <input type="text" id="tags_mobile" name="key"  id="search_input" placeholder="Bạn cần tìm gì hôm nay ?" autocomplete="off">
+                                                            <button>
+                                                            <i class="nki-search"></i>
+                                                            </button>
+                                                            <div class="search-results">
+                                                               
                                                             </div>
-
                                                         </div>
-                                                    </div>
+                                                    </form>
                                                 </div>
                                             </div>
 
