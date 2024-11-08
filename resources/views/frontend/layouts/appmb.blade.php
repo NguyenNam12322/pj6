@@ -319,9 +319,13 @@
                       display: -webkit-box;
                 }
 
-                picture, .picture{
+                picture, .figure{
                     display: block;
                     height: 100%;
+                }
+
+                .figure{
+                    margin: 0;
                 }
 
                 .logo-mobile img{
