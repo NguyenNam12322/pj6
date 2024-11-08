@@ -918,7 +918,7 @@
 
                         .search_center{
                             margin: 0;
-                            display: none;
+                            display: block;
                         }
 
                         .nki-shopping-cart:before {
