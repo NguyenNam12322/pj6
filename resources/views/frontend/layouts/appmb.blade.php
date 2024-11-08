@@ -1250,7 +1250,7 @@
                                             <figure class="image overflow-hidden cursor-pointer">
                                                 <picture>
                                                     <source srcset="{{ asset('/public/images/template/logo4.webp') }}" type="image/webp">
-                                                        <img src="{{ asset('/public/images/template/logo4.webp') }}">
+                                                        <img src="{{ asset('/public/images/template/logo4.jpg') }}">
                                                 </picture>
                                             </figure>
                                         </div>
