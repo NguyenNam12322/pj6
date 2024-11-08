@@ -1244,8 +1244,11 @@
                                     <div class="div-header-cart">
 
                                         <div class="logo-mobile">
-
-                                            <img src="{{ asset('/public/images/template/logo4.webp') }}" width="167px" height="61px">
+                                            <picture>
+                                                <source srcset="{{ asset('/public/images/template/logo4.webp') }}" type="image/webp">
+                                                    <img src="{{ asset('/public/images/template/logo4.webp') }}">
+                                            </picture>
+                                          
                                         
                                         </div>
 
