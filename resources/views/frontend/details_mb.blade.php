@@ -878,12 +878,11 @@
                 </div>
             </div>
 
-            @if($mobile ==1)
-             <h1>{{ $data->Name }}</h1>
-            @endif
-
-
+        
             <div class="pay mobile">
+                @if($mobile ==1)
+                 <h1>{{ $data->Name }}</h1>
+                @endif
                 <div class="pdetail-des">
                     
                     <div class="info-box">
