@@ -2624,14 +2624,7 @@
    
     $('.bar-top-left').hide();
 
-    $("img").each(function() {
     
-        $(this).attr("data-src",$(this).attr("src"));
-
-        $(this).addClass('lazyload');
-        
-        
-    });
 
 
     // copy image to clipbroad
@@ -2659,20 +2652,7 @@
         }
     });
 
-    // $.ajax({
-    //     type: 'POST',
-    //     url: "{{ route('show-viewed-product') }}",
-    //     data: {
-    //         product_id: view_product_id
-               
-    //     },
-    //     success: function(result){
-    //        // numberCart = result.find($("#number-product-cart").text());
-    //        $('.viewer-product').append(result);
-           
-    //     }
-    // });  
-
+   
 
 
     function addToSuport() {
@@ -2710,78 +2690,7 @@
         });
     }      
     
-    // function addToCart(id) {
 
-    //     const value = $("input[name='price-add']:checked").val();
-
-    //     ar_val = [];
-
-    //     @if(!empty($data_price_show))
-    //     @foreach($data_price_show as $val)
-
-    //         ar_val[{{ $val->id }}] = {{ $val->price }};
-    //     @endforeach
-
-    //     @endif
-
-    //     var transport_cost = ar_val[value];
-
-        
-    //     $('.form-info-cart').removeClass('hide');
-    //     $('.cart-container').addClass('hide');
-
-    //     $.ajaxSetup({
-    //         headers: {
-    //             'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-    //         }
-    //     });
-    
-    //     $.ajax({
-    //         type: 'POST',
-    //         url: "{{ route('cart') }}",
-    //         data: {
-    //             product_id: id,
-    //             gift_check:$('#gift_checked').val(),
-
-    //            transport_cost:transport_cost,
-                   
-    //         },
-    //         beforeSend: function() {
-               
-    //             $('.loader').show();
-
-    //         },
-    //         success: function(result){
-
-    //            //  numberProductCart = $(".number-cart").text();
-    
-    //            //  console.log(numberProductCart);
-               
-    //            // numberCart = result.find(numberProductCart);
-
-    //             $('#tbl_list_cartss').html('');
-    
-    //             $('#tbl_list_cartss').append(result);
-    
-    //             const numberCart = $('#number-product-cart').text();
-    
-    //             $('.number-cart').text(numberCart);
-    
-    //             $('#exampleModal').modal('show'); 
-    //             $('.loader').hide();
-                
-    //         }
-    //     });
-
-    //      $(".btn-closemenu").click(function(){
-
-    //         $('.show-menu').removeClass('active');
-    //     });
-
-       
-
-        
-    // }
 
     function isValid(p) {
         var phoneRe = /(84|0[3|5|7|8|9])+([0-9]{8})\b/;
