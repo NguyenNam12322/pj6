@@ -819,7 +819,7 @@
                         ?>
                         <div class="item img-main">
                            
-                             <a href="{{ asset($data->Image) }}" data-fancybox="gallery"><img  src ="{{ asset($data->Image) }}" alt="{{ @$data->Name }}" loading="lazyload">
+                             <a href="{{ asset($data->Image) }}" data-fancybox="gallery"><img  src ="{{ asset($data->Image) }}" alt="{{ @$data->Name }}" loading="lazyload" width="220px" height="220px">
 
                             </a>
                            
@@ -828,7 +828,7 @@
                             @if(!empty($logoSaker->maker))
 
                             <div class="saker">
-                                    <img src="{{ asset('images/saker/'.strtolower($logoSaker->maker).'.png') }}"  data-src ="{{ asset($data->Image) }}" loading="lazyload">
+                                    <img src="{{ asset('images/saker/'.strtolower($logoSaker->maker).'.png') }}"  data-src ="{{ asset($data->Image) }}" loading="lazyload" width="220px" height="220px">
                             </div>
                             @endif
                             @endif
