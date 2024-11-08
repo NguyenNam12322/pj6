@@ -330,7 +330,6 @@
 
                 .logo-mobile img{
                     min-width: 100%;
-                    height: 61px;
 
                 }
 
@@ -961,7 +960,7 @@
 
                         .logo-mobile{
                             width: 167px;
-                            height: 100%;
+                            height: 61px;
                         }
 
                         /*.logo-mobile img{
