@@ -885,8 +885,13 @@
                     
                     <div class="info-box">
                         @if($mobile ==1)
+                        <div class="title-mb">
+                            
                             <h1>{{ $data->Name }}</h1>
+                        
+                        </div>
                         @endif 
+                        
                         <div class="pdetail-info">
                             <p class="p1">Thương hiệu: <b>{{ @$ar_groups_info[0]['name'] }}</b></p>
 
