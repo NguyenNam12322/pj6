@@ -306,7 +306,7 @@
                 background-size: 330px 330px;
             }
 
-            .box_main, .box_left{
+            .box_main, .box_left, .scrolling_inner, .box01{
                 width: 100%;
             }
 
