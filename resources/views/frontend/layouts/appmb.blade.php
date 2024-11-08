@@ -1246,7 +1246,6 @@
                                 <div class="row-fluid ">
 
                                     <div class="div-header-cart">
-
                                         <div class="logo-mobile">
                                             <figure class="image overflow-hidden cursor-pointer">
                                                 <picture>
@@ -1254,7 +1253,6 @@
                                                         <img src="{{ asset('/public/images/template/logo4.webp') }}">
                                                 </picture>
                                             </figure>
-                                            
                                         </div>
 
                                         <div id="nk-cart">
@@ -1371,7 +1369,7 @@
                                 </div>
                             </div>
 
-                            <div class="span16 row flexthis search_center">
+                           <!--  <div class="span16 row flexthis search_center">
                                 <div class="row-fluid nav1-search">
                                     <div class="span12 nk-nav-right nav-search">
                                         <div class="row-fluid ">
@@ -1390,7 +1388,7 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
 
 
                         </div>
