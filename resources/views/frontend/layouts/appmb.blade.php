@@ -1106,6 +1106,7 @@
                         .div-header-cart{
                             width: 100%;
                             display: flex;
+                            height: 67px;
                         }
 
                         .d .nk-header #nk-cart{
