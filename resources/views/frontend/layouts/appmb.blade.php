@@ -321,6 +321,7 @@
 
                 .logo-mobile img{
                     min-width: 100%;
+                    min-height: 100%;
                 }
 
                 .nki-Phone, .nki-menu{
@@ -1248,12 +1249,12 @@
 
                                     <div class="div-header-cart">
                                         <div class="logo-mobile">
-                                            <figure class="image overflow-hidden cursor-pointer">
+                                            
                                                 <picture>
                                                     <source srcset="{{ asset('/public/images/template/logo4.webp') }}" type="image/webp">
                                                         <img src="{{ asset('/public/images/template/logo4.jpg') }}">
                                                 </picture>
-                                            </figure>
+                                           
                                         </div>
 
                                         <div id="nk-cart">
