@@ -326,7 +326,7 @@
             .box_pro-benefit{
                 height: 313px;
             }
-            .view-more-related{
+            .view-end{
                 height: 445px;
             }
 
@@ -1446,7 +1446,7 @@
               
             </div>
             <!-- end đánh giá -->
-            <div class="related view-more-related">
+            <div class="related view-more-related view-end">
                 <p class="related__ttl">Xem thêm sản phẩm khác</p>
                 @if(isset($other_product))
                 <div class="listproduct slider-promo owl-carousel">
