@@ -41,6 +41,12 @@
             display: none;
         }
 
+        .detail h1{
+            padding: 0;
+            margin: 0;
+
+        }
+
         .title-mb{
             height: 43px;
         }
