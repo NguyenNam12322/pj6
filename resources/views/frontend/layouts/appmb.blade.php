@@ -959,7 +959,7 @@
                         }
 
                         .logo-mobile{
-                            width: 45%;
+                            width: 167px;
                             height: 100%;
                         }
 
