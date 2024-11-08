@@ -1414,10 +1414,10 @@
 
                 @include('frontend.menu_list')
 
-            </div>
-
-             
+            </div>     
         </div>
+
+        @yield('content')
         
         <div class="global-compare-group">
             <div class="title text-22 text-white d-flex align-items-center justify-content-between font-600">
