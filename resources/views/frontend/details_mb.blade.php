@@ -41,6 +41,10 @@
             display: none;
         }
 
+        .title-mb{
+            height: 43px;
+        }
+
         .box01 .owl-carousel .owl-item img:not(.monopoly-label) {
             height: 220px !important;
 
