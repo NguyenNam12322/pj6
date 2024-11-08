@@ -773,19 +773,6 @@
 
     @endif
 
-    <div class="box02">
-        <div class="box02__left">
-            <div class="detail-rate">
-                <p>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                </p>
-            </div>
-        </div>
-    </div>
     
     <div class="box_main">
         <div class="box_left">
@@ -1359,7 +1346,7 @@
                 </div>
             </div>
             
-            <div class="border7"></div>
+            
 
                 <!-- content -->
             <div class="content" id="contents-scroll">
@@ -2009,7 +1996,7 @@
                 </div>
             </div>
         </div>
-        <div class="border7"></div>
+        
         <div class="clearfix"></div>
 
         
@@ -2062,10 +2049,7 @@
 
         
     </div>
-    <div class="border7"></div>
-    <div class="watched"></div>
-    </div>
-    <div class="errorcompare" style="display:none;"></div>
+   
     <!--#endregion-->
     <!--#region BreadcrumbList-->
     <!--#endregion-->
