@@ -306,6 +306,10 @@
                 background-size: 330px 330px;
             }
 
+            section.detail{
+                height: 3098px;
+            }
+
             .breadcrumb{
                 height: 120px;
             }
