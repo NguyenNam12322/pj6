@@ -44,6 +44,7 @@
         .detail h1{
             padding: 0 !important;
             margin: 0 !important;
+            height: 43px !important;
 
         }
 
