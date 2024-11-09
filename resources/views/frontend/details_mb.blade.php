@@ -851,7 +851,14 @@
                         $image_product = strstr(basename($data->Image), '_');
                     ?>
                     <div class="item img-main">
+                        <a href="{{ asset('uploads/product/1731128406_may-giat-invert_main_371_1020.png_with_bgc.png') }}" data-fancybox="gallery">
+                            <picture>
+                                  <source media="(min-width:300px)" srcset="{{ asset('uploads/product/1731128406_may-giat-invert_main_371_1020.png_with_bgc.png') }}">
+                                  <source media="(min-width:767px)" srcset="{{ asset('https://muasamtaikho.vn/uploads/product/may-giat-invert_main_371_1020.png.webp') }}  ">
+                                  <img   src="https://www.w3schools.com/tags/img_orange_flowers.jpg" alt="{{ @$data->Name }}" width="220px" height="220px">
+                            </picture>
                        
+                        </a>
                         
                        
                         @if($data->id>4720)
