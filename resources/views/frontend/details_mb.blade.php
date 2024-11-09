@@ -80,7 +80,7 @@
         }
 
         .title-mb{
-            height: 43px;
+            height: 50px;
         }
 
         .box01 .owl-carousel .owl-item img:not(.monopoly-label) {
