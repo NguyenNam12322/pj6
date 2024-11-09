@@ -1174,32 +1174,7 @@
         
     </head>
     <body>
-        <div class="banner-media desktop">
-            <div class="" data-size="1">
-                <div class="item" data-background-color="#CF1F2F" data-order="1">
-
-                    <?php 
-
-                        if(!Cache::has('banners12')) {
-
-                            $banners = App\Models\banners::where('option', 1)->get()->last();
-
-                            Cache::put('banners12',$banners,10000);
-                        }
-
-
-                        $banner = Cache::get('banners12');
-                    ?>
-
-                    @if(!empty($banner)&& $banner->active ==1)
-                    <a aria-label="slide" data-cate="0" data-place="1295" href="#"><img  src="{{ asset($banner->image) }}" alt="BF"  ></a>
-                    @endif
-                </div>
-            </div>
-            
-        </div>
-
-       
+        
         <?php  
             $userClient = session()->get('status-login');
 
