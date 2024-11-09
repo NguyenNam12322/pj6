@@ -349,8 +349,8 @@
                 height: 100%;
             }
 
-            .box01{
-                height: 280px;
+            .box01, #carousel{
+                height: 264px;
             }
             body{
                 height: 3228px;
