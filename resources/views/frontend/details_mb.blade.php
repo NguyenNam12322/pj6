@@ -349,6 +349,7 @@
 
             .box_main{
                 height: 2952px;
+                margin: 0;
             }
 
             .pay{
