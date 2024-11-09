@@ -1283,7 +1283,7 @@
                 </div>
             </div>
 
-            <div class="modal fade" id="modal-suport" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabels" aria-hidden="true">
+            <!-- <div class="modal fade" id="modal-suport" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabels" aria-hidden="true">
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
                         <div class="loader"></div>
@@ -1321,7 +1321,7 @@
                                             </div>
                                             <input type="hidden" name="sex" id="sexs" value="Nam">
                                         </div>
-                                        <!--option-group-->
+
                                     </div>
                                     <div class="item-form">
                                         <input type="text" name="name" id="buyer_names_call" placeholder="Họ tên" >
@@ -1342,7 +1342,7 @@
                         
                     </div>
                 </div>
-            </div>
+            </div> -->
             <div class="block-tab">
                 <div class="bt-overlay"></div>
                 <ul class="block-tab-top">
