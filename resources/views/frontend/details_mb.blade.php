@@ -43,6 +43,7 @@
 
         .img-main{
             height: 220px;
+            padding: 0 !important;
         }
 
         .li-home{
