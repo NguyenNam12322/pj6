@@ -101,6 +101,10 @@
             display: none;
         }
 
+        .breadcrumb{
+            height: 56px;
+        }
+
         .cartSPs{
             background: orange;
         }
