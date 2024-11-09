@@ -43,6 +43,10 @@
             height: 56px;
         }
 
+        .pdetail-price{
+            height: 36px;
+        }
+
 
         .img-main{
             width: 100%;
@@ -99,6 +103,7 @@
 
         .pdetail-status{
             margin-top:20px;
+            height: 235px;
         }
     }
     @media only screen and (min-width: 601px) {
