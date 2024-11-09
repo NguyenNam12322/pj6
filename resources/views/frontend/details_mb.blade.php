@@ -802,13 +802,13 @@
         
         <li>
             <a href="{{route('homeFe')}}">Trang chủ</a>
-            <meta property="position" content="1">
+           
         </li>
         @if(!empty($groupLink))
         <li>
             <span>›</span>
             <a href="{{ route('details', $groupLink??'') }}">{{ @$groupName }}</a>
-            <meta property="position" content="2">
+            
         </li>
         @endif
 
