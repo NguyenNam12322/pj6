@@ -41,6 +41,15 @@
             display: none;
         }
 
+        .li-home{
+            width: 56px;
+        }
+
+        
+        .li-child{
+            width: 281px;
+        }
+
         .detail h1{
             padding: 0 !important;
             margin: 0 !important;
@@ -808,14 +817,14 @@
 
     <ul class="breadcrumb">
         
-        <li>
+        <li class="li-home">
             <a href="{{route('homeFe')}}">Trang chủ</a>
            
         </li>
       
         @if(!empty($ar_groups_info) && !empty($ar_groups_info[0]))    
        
-        <li>
+        <li class="li-child">
             <span>›</span>
             <a href="{{ route('details',$data->Link) }}">{{ $data->Name }}</a>
             
