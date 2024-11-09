@@ -370,7 +370,7 @@
                  .nk-header #nk-searchs {
                     border-radius: .9em;
                     background-color: #FFFFFF;
-                    height: 40px;
+                    height: 100$;
                     position: relative;
                    /* width: 30%;*/
                     float: unset;
@@ -963,6 +963,7 @@
                         }
                         .nk-header .span12{
                             float: right !important;
+                            height: 100%;
                         }
 
 
@@ -1078,7 +1079,7 @@
                         }
 
                         .search_center{
-                            height: 50px !important;
+                            height: 40px !important;
                         }
 
                         nk-nav-right
