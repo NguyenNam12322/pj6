@@ -772,27 +772,7 @@
     $gift_Price = pricesPromotion($data->Price, $data->id);
 ?>
 
-<div class="locationbox__overlay"></div>
-<div class="locationbox">
-    <div class="locationbox__item locationbox__item--right" onclick="OpenLocation()">
-        <p>Chọn địa chỉ nhận hàng</p>
-        <a class="cls-location" href="javascript:void(0)">Đóng</a>
-    </div>
-    <div class="locationbox__item" id="lc_title"><i class="icondetail-address-white"></i><span> Vui lòng đợi trong giây lát...</span></div>
-    <div class="locationbox__popup" id="lc_pop--choose">
-        <div class="locationbox__popup--cnt locationbox__popup--choose">
-            <div class="locationbox__popup--chooseDefault">
-                <div class="lds-ellipsis">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <b id="h-provincename" style="display:none!important" data-provinceid="3">Hồ Chí Minh</b>
-</div>
+
 <section data-id="235791" data-cate-id="1942" class="detail ">
 
 
