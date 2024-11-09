@@ -327,6 +327,10 @@
                 width: 100%;
             }
 
+            .img-main a{
+                display: block;
+            }
+
             .box01{
                 height: 264px;
             }
