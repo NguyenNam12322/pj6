@@ -831,81 +831,81 @@
     <div class="box_main">
         <div class="box_left">
             <div class="box01">
-                <div class="box01__show">
-                    <div class="owl-carousel detail-slider" id="carousel">
+                
+                <div class="owl-carousel detail-slider" id="carousel">
 
-                        <?php 
-                            $image_product = strstr(basename($data->Image), '_');
-                        ?>
-                        <div class="item img-main">
-                            <a href="{{ asset('uploads/product/1731128406_may-giat-invert_main_371_1020.png_with_bgc.png') }}" data-fancybox="gallery">
-                                <picture>
-                                      <source media="(min-width:300px)" srcset="{{ asset('uploads/product/1731128406_may-giat-invert_main_371_1020.png_with_bgc.png') }}">
-                                      <source media="(min-width:767px)" srcset="{{ asset('https://muasamtaikho.vn/uploads/product/may-giat-invert_main_371_1020.png.webp') }}  ">
-                                      <img  src="https://www.w3schools.com/tags/img_orange_flowers.jpg" alt="{{ @$data->Name }}"   loading="eager"  sizes="(max-width: 600px) 220px, 1020px">
-                                </picture>
-                           
-                            </a>
-                            
-                           
-                            @if($data->id>4720)
-
-                            @if(!empty($logoSaker->maker))
-
-                            <div class="saker">
-                                    <img src="{{ asset('images/saker/'.strtolower($logoSaker->maker).'.png') }}"  data-src ="{{ asset('uploads/product/1731128406_may-giat-invert_main_371_1020.png_with_bgc.png') }}" loading="lazyload" width="220px" height="220px"  >
-                            </div>
-                            @endif
-                            @endif
-
-                          
-
-                        </div>
-
-                        <?php 
-                            $images_products = Cache::rememberForever('image_product'.$data->id, function() use ($data) {
-
-                                $images = App\Models\image::where('product_id', $data->id)->where('active', 1)->select('image')->get()??'';
-
-                                return $images;
-                            
-                            });
-                        
-                        ?>
-
-                        @if(isset($images_products))
+                    <?php 
+                        $image_product = strstr(basename($data->Image), '_');
+                    ?>
+                    <div class="item img-main">
+                        <a href="{{ asset('uploads/product/1731128406_may-giat-invert_main_371_1020.png_with_bgc.png') }}" data-fancybox="gallery">
+                            <picture>
+                                  <source media="(min-width:300px)" srcset="{{ asset('uploads/product/1731128406_may-giat-invert_main_371_1020.png_with_bgc.png') }}">
+                                  <source media="(min-width:767px)" srcset="{{ asset('https://muasamtaikho.vn/uploads/product/may-giat-invert_main_371_1020.png.webp') }}  ">
+                                  <img  src="https://www.w3schools.com/tags/img_orange_flowers.jpg" alt="{{ @$data->Name }}"   loading="eager"  sizes="(max-width: 600px) 220px, 1020px">
+                            </picture>
                        
-                        @foreach( $images_products as $image)
+                        </a>
+                        
+                       
+                        @if($data->id>4720)
 
-                      
+                        @if(!empty($logoSaker->maker))
 
-                        @if(!empty($image->image) && '_'.basename($image->image) != $image_product)
-
-                        @if( basename($image->image) != basename($data->Image) )
-
-                        <div class="item">
-                            <a href="{{ asset($image->image) }}" data-fancybox="gallery">
-
-                               <picture>
-                                      <source media="(min-width:300px)" srcset="{{ asset('uploads/product/1731128406_may-giat-invert_main_371_1020.png_with_bgc.png') }}">
-                                      <source media="(min-width:767px)" srcset="{{ asset('https://muasamtaikho.vn/uploads/product/may-giat-invert_main_371_1020.png.webp') }}  ">
-                                      <img src="https://www.w3schools.com/tags/img_orange_flowers.jpg" alt="{{ @$data->Name }}" loading="lazy" sizes="(max-width: 600px) 220px, 1020px">
-                                </picture>
-                            </a>
-                            
+                        <div class="saker">
+                                <img src="{{ asset('images/saker/'.strtolower($logoSaker->maker).'.png') }}"  data-src ="{{ asset('uploads/product/1731128406_may-giat-invert_main_371_1020.png_with_bgc.png') }}" loading="lazyload" width="220px" height="220px"  >
                         </div>
-                      
+                        @endif
                         @endif
 
                       
-                        @endif
 
-
-                        @endforeach
-
-                        @endif
                     </div>
+
+                    <?php 
+                        $images_products = Cache::rememberForever('image_product'.$data->id, function() use ($data) {
+
+                            $images = App\Models\image::where('product_id', $data->id)->where('active', 1)->select('image')->get()??'';
+
+                            return $images;
+                        
+                        });
+                    
+                    ?>
+
+                    @if(isset($images_products))
+                   
+                    @foreach( $images_products as $image)
+
+                  
+
+                    @if(!empty($image->image) && '_'.basename($image->image) != $image_product)
+
+                    @if( basename($image->image) != basename($data->Image) )
+
+                    <div class="item">
+                        <a href="{{ asset($image->image) }}" data-fancybox="gallery">
+
+                           <picture>
+                                  <source media="(min-width:300px)" srcset="{{ asset('uploads/product/1731128406_may-giat-invert_main_371_1020.png_with_bgc.png') }}">
+                                  <source media="(min-width:767px)" srcset="{{ asset('https://muasamtaikho.vn/uploads/product/may-giat-invert_main_371_1020.png.webp') }}  ">
+                                  <img src="https://www.w3schools.com/tags/img_orange_flowers.jpg" alt="{{ @$data->Name }}" loading="lazy" sizes="(max-width: 600px) 220px, 1020px">
+                            </picture>
+                        </a>
+                        
+                    </div>
+                  
+                    @endif
+
+                  
+                    @endif
+
+
+                    @endforeach
+
+                    @endif
                 </div>
+               
             </div>
 
 
@@ -1501,7 +1501,7 @@
                     <article class="post-sidebar-item">
                         <a href="{{ route('details', $value->Link) }}">
                             <span class="post-sidebar-img">
-                                <img  src="{{ asset($value->Image) }}">
+                                <img  src="{{ asset($value->Image) }}" loading="lazyload" sizes="(max-width: 600px) 220px, 1020px">
                             </span>
 
                             <h4 class="post-sidebar-title">{{ $value->Name }}</h4>
