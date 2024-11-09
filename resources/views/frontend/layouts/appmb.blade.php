@@ -1348,25 +1348,20 @@
 
 
                                     <div class="span16 row flexthis search_center">
-                                        <div class="row-fluid nav1-search">
-                                           
-                                            
-                                            <div class="span12 nk-nav-right nav-search">
-                                                <div id="nk-searchs">
-                                                    <form action="{{ route('search-product-frontend') }}" method="get" class="cm-processed-form">
-                                                        <div class="nk-search-box">
-                                                            <input type="text" id="tags_mobile" name="key"  id="search_input" placeholder="Bạn cần tìm gì hôm nay ?" autocomplete="off">
-                                                            <button>
-                                                            <i class="nki-search"></i>
-                                                            </button>
-                                                            <div class="search-results">
-                                                               
-                                                            </div>
+                                        <div class="span12 nk-nav-right nav-search">
+                                            <div id="nk-searchs">
+                                                <form action="{{ route('search-product-frontend') }}" method="get" class="cm-processed-form">
+                                                    <div class="nk-search-box">
+                                                        <input type="text" id="tags_mobile" name="key"  id="search_input" placeholder="Bạn cần tìm gì hôm nay ?" autocomplete="off">
+                                                        <button>
+                                                        <i class="nki-search"></i>
+                                                        </button>
+                                                        <div class="search-results">
+                                                           
                                                         </div>
-                                                    </form>
-                                                </div>
+                                                    </div>
+                                                </form>
                                             </div>
-
                                         </div>
                                     </div>
 
