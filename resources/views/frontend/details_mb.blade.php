@@ -1447,7 +1447,7 @@
                         <div class="item-label">
                         </div>
                         <div class="item-img">
-                            <img data-src="{{ asset($value->Image) }}" class="lazyload" alt="{{ $value->Name }}" width=210 height=210>
+                            <img src="{{ asset($value->Image) }}" loading="lazyload" alt="{{ $value->Name }}" width=210 height=210>
                         </div>
                         
                         <h3>{{ $value->Name }}</h3>
