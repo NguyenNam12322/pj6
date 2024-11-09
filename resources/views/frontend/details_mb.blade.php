@@ -42,7 +42,7 @@
         }
 
         .img-main{
-            height: 264px;
+            height: 220px;
         }
 
         .li-home{
