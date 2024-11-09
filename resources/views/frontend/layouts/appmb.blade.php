@@ -369,7 +369,7 @@
                     height: 40px;
                     position: relative;
                    /* width: 30%;*/
-                    float: left;
+                    float: unset;
                 }
 
                 .re-call, .help{
