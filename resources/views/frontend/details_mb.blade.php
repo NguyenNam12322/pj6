@@ -344,6 +344,7 @@
 
             .breadcrumb{
                 height: 120px;
+                margin: 0;
             }
 
             .box_main{
@@ -884,7 +885,7 @@
 
                         <div class="item">
                             <a href="{{ asset($image->image) }}" data-fancybox="gallery">
-                                
+
                                 <img  src ="{{ asset($image->image) }}"  alt="{{ @$data->Name }}" loading="lazyload" width="220px" height="220px">
                             </a>
                             
