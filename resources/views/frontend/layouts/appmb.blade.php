@@ -370,7 +370,7 @@
                  .nk-header #nk-searchs {
                     border-radius: .9em;
                     background-color: #FFFFFF;
-                    height: 100$;
+                    height: 100%;
                     position: relative;
                    /* width: 30%;*/
                     float: unset;
