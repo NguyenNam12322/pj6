@@ -882,8 +882,8 @@
                             <a href="{{ asset($image->image) }}" data-fancybox="gallery">
 
                                <picture>
-                                      <source media="(max-width:600)" srcset="{{ asset('uploads/product/1731128406_may-giat-invert_main_371_1020.png_with_bgc.png') }}">
-                                      <source media="(min-width:601)" srcset="{{ asset('https://muasamtaikho.vn/uploads/product/may-giat-invert_main_371_1020.png.webp') }}  ">
+                                      <source media="(max-width:766)" srcset="{{ asset('uploads/product/1731128406_may-giat-invert_main_371_1020.png_with_bgc.png') }}">
+                                      <source media="(min-width:767)" srcset="{{ asset('https://muasamtaikho.vn/uploads/product/may-giat-invert_main_371_1020.png.webp') }}  ">
                                       <img src="{{ asset('/uploads/product/may-giat-invert_main_371_1020.png.webp')}}" alt="{{ @$data->Name }}" style="width:auto;">
                                 </picture>
                             </a>
