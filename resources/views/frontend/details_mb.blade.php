@@ -833,10 +833,15 @@
                             $image_product = strstr(basename($data->Image), '_');
                         ?>
                         <div class="item img-main">
+                            <a href="{{ asset('uploads/product/1731128406_may-giat-invert_main_371_1020.png_with_bgc.png') }}" data-fancybox="gallery">
+                                <picture>
+                                      <source media="(max-width:600)" srcset="{{ asset('uploads/product/1731128406_may-giat-invert_main_371_1020.png_with_bgc.png') }}">
+                                      <source media="(min-width:601)" srcset="{{ asset('https://muasamtaikho.vn/uploads/product/may-giat-invert_main_371_1020.png.webp') }}  ">
+                                      <img src="{{ asset('/uploads/product/may-giat-invert_main_371_1020.png.webp')}}" alt="{{ @$data->Name }}" style="width:auto;">
+                                </picture>
                            
-                             <a href="{{ asset('uploads/product/1731128406_may-giat-invert_main_371_1020.png_with_bgc.png') }}" data-fancybox="gallery"><img  src ="{{ asset('uploads/product/1731128406_may-giat-invert_main_371_1020.png_with_bgc.png') }}" alt="{{ @$data->Name }}" loading="lazyload" width="220px" height="220px">
-
                             </a>
+                            
                            
                             @if($data->id>4720)
 
@@ -876,7 +881,11 @@
                         <div class="item">
                             <a href="{{ asset($image->image) }}" data-fancybox="gallery">
 
-                                <img  src ="{{ asset('uploads/product/1731128406_may-giat-invert_main_371_1020.png_with_bgc.png') }}"  alt="{{ @$data->Name }}" loading="lazyload" width="220px" height="220px">
+                               <picture>
+                                      <source media="(max-width:600)" srcset="{{ asset('uploads/product/1731128406_may-giat-invert_main_371_1020.png_with_bgc.png') }}">
+                                      <source media="(min-width:601)" srcset="{{ asset('https://muasamtaikho.vn/uploads/product/may-giat-invert_main_371_1020.png.webp') }}  ">
+                                      <img src="{{ asset('/uploads/product/may-giat-invert_main_371_1020.png.webp')}}" alt="{{ @$data->Name }}" style="width:auto;">
+                                </picture>
                             </a>
                             
                         </div>
