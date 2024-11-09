@@ -3,7 +3,7 @@
 @push('style')
 
    
-
+     <link rel="preload" href="{{ asset('uploads/product/1731128406_may-giat-invert_main_371_1020.png_with_bgc.png') }}" as="image">
     <style>
 
     .productSpecification_table .popup{
