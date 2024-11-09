@@ -970,14 +970,11 @@
                     <span>  @if($status==="CÒN HÀNG") <img src="{{ asset('images/template/icon-tick.png') }}" width="18px" height="18px" > @endif {{ $status }}</span>
                 </div>
                 <div class="scroll-box">
-                    <div class="pdetail-price">
+                    <div class="pdetail-price pdetail-price-box show-price-mobile">
                         @if($data->Quantily>-1)
-                        <div class="pdetail-price-box show-price-mobile">
                             {!! @$text !!}
                             <h3> {{ str_replace(',' ,'.', number_format($data->Price)) }} ₫</h3>
-                        </div>
-
-
+                       
                         @endif
                     </div>
                     <!-- <div class="discount"><p class="installment">Trả góp 0%</p></div> -->
