@@ -2469,7 +2469,7 @@
         margin:10,
         nav:false,
         autoplay:false,
-        dots:true,
+        dots:false,
         autoWidth: false,
         loop:true,
        
