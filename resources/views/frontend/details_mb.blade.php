@@ -830,7 +830,7 @@
                         ?>
                         <div class="item img-main">
                            
-                             <a href="{{ asset($data->Image) }}" data-fancybox="gallery"><img  src ="{{ asset($data->Image) }}" alt="{{ @$data->Name }}" loading="lazyload" width="220px" height="220px">
+                             <a href="{{ asset('uploads/product/1731128406_may-giat-invert_main_371_1020.png_with_bgc.png') }}" data-fancybox="gallery"><img  src ="{{ asset('uploads/product/1731128406_may-giat-invert_main_371_1020.png_with_bgc.png') }}" alt="{{ @$data->Name }}" loading="lazyload" width="220px" height="220px">
 
                             </a>
                            
@@ -839,7 +839,7 @@
                             @if(!empty($logoSaker->maker))
 
                             <div class="saker">
-                                    <img src="{{ asset('images/saker/'.strtolower($logoSaker->maker).'.png') }}"  data-src ="{{ asset($data->Image) }}" loading="lazyload" width="220px" height="220px">
+                                    <img src="{{ asset('images/saker/'.strtolower($logoSaker->maker).'.png') }}"  data-src ="{{ asset('uploads/product/1731128406_may-giat-invert_main_371_1020.png_with_bgc.png') }}" loading="lazyload" width="220px" height="220px">
                             </div>
                             @endif
                             @endif
@@ -872,7 +872,7 @@
                         <div class="item">
                             <a href="{{ asset($image->image) }}" data-fancybox="gallery">
 
-                                <img  src ="{{ asset($image->image) }}"  alt="{{ @$data->Name }}" loading="lazyload" width="220px" height="220px">
+                                <img  src ="{{ asset('uploads/product/1731128406_may-giat-invert_main_371_1020.png_with_bgc.png') }}"  alt="{{ @$data->Name }}" loading="lazyload" width="220px" height="220px">
                             </a>
                             
                         </div>
