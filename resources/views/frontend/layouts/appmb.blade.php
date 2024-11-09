@@ -320,6 +320,10 @@
                       display: -webkit-box;
                 }
 
+                #nk-searchs form, .nk-search-box{
+                    height: 40px;
+                }
+
                 .box_left{
                     padding: 0;
                 }
