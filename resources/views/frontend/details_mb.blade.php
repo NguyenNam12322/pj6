@@ -363,7 +363,7 @@
             }
 
             .tygh-top-panel{
-                height: auto;
+                height: 130px;
             }
             .box_pro-benefit{
                 height: 313px;
@@ -373,7 +373,7 @@
             }
 
             section.detail{
-                height: auto;
+                height: 3018px;
             }
 
             .pdetail-info{
