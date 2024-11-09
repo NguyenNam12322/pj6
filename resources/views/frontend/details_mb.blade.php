@@ -839,11 +839,10 @@
                         ?>
                         <div class="item img-main">
                             <a href="{{ asset('uploads/product/1731128406_may-giat-invert_main_371_1020.png_with_bgc.png') }}" data-fancybox="gallery">
-                                <picture>
-                                      <source media="(min-width:300px)" srcset="{{ asset('uploads/product/1731128406_may-giat-invert_main_371_1020.png_with_bgc.png') }}">
-                                      <source media="(min-width:767px)" srcset="{{ asset('https://muasamtaikho.vn/uploads/product/may-giat-invert_main_371_1020.png.webp') }}  ">
-                                      <img  src="https://www.w3schools.com/tags/img_orange_flowers.jpg" alt="{{ @$data->Name }}"   loading="eager"  sizes="(max-width: 600px) 220px, 1020px">
-                                </picture>
+                                
+                                      
+                                      <img  src="https://www.w3schools.com/tags/img_orange_flowers.jpg" alt="{{ @$data->Name }}"   data-src="asset('uploads/product/1731128406_may-giat-invert_main_371_1020.png_with_bgc.png')" class="lazyload blur" loading="lazy">
+                                
                            
                             </a>
                             
@@ -2098,6 +2097,28 @@
     price_add_address = 0;
    
     $('.bar-top-left').hide();
+
+    document.addEventListener("DOMContentLoaded", function() {
+        const lazyImages = document.querySelectorAll("img.lazyload");
+
+        const imageObserver = new IntersectionObserver((entries, observer) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              const img = entry.target;
+              // Thay thế ảnh placeholder bằng ảnh thật từ data-src
+              img.src = img.getAttribute("data-src");
+              img.onload = () => {
+                img.classList.remove("blur"); // Xóa hiệu ứng blur sau khi ảnh thật tải xong
+              };
+              observer.unobserve(img);
+            }
+          });
+        });
+
+        lazyImages.forEach(img => {
+          imageObserver.observe(img);
+        });
+    });
 
     
 
