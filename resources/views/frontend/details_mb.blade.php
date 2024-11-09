@@ -883,7 +883,11 @@
                         @if( basename($image->image) != basename($data->Image) )
 
                         <div class="item">
-                            <a href="{{ asset($image->image) }}" data-fancybox="gallery"><img  src ="{{ asset($image->image) }}"  alt="{{ @$data->Name }}" loading="lazyload" width="220px" height="220px"></a>
+                            <a href="{{ asset($image->image) }}" data-fancybox="gallery">
+                                <amp-img src="{{ asset($image->image) }}" width="220px" height="220px" layout="responsive" alt="Description of image">
+</amp-img>
+                                
+                            </a>
                             
                         </div>
                       
