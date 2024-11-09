@@ -321,7 +321,7 @@
                 }
 
                 #nk-searchs form, .nk-search-box{
-                    height: 40px;
+                    height: 100%;
                 }
 
                 .box_left{
