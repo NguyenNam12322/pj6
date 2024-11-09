@@ -48,6 +48,14 @@
 
         }
 
+        .breadcrumb li a{
+            font-size: 12px;
+        }
+
+        .breadcrumb li{
+            height: 32px;
+        }
+
         .title-mb{
             height: 43px;
         }
