@@ -2445,7 +2445,7 @@
     $('#carousel').owlCarousel({
         margin:10,
         nav:false,
-        autoplay:true,
+        autoplay:false,
         dots:true,
         autoWidth: false,
         loop:true,
