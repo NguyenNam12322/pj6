@@ -40,6 +40,7 @@
         }
 
         .img-main{
+            width: 100%;
             height: 220px;
             padding: 0 !important;
         }
@@ -840,7 +841,7 @@
                             <picture>
                                   <source media="(min-width:300px)" srcset="{{ asset('uploads/product/1731128406_may-giat-invert_main_371_1020.png_with_bgc.png') }}">
                                   <source media="(min-width:767px)" srcset="{{ asset('https://muasamtaikho.vn/uploads/product/may-giat-invert_main_371_1020.png.webp') }}  ">
-                                  <img  src="https://www.w3schools.com/tags/img_orange_flowers.jpg" alt="{{ @$data->Name }}"   loading="eager"  sizes="(max-width: 600px) auto, 1020px" >
+                                  <img  src="https://www.w3schools.com/tags/img_orange_flowers.jpg" alt="{{ @$data->Name }}"   loading="eager" >
                             </picture>
                        
                         </a>
