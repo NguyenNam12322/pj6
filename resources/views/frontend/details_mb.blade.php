@@ -350,7 +350,7 @@
             }
 
             .box01{
-                height: 264px;
+                height: 280px;
             }
             body{
                 height: 3228px;
