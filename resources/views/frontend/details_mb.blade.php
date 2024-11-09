@@ -330,6 +330,9 @@
             .box01{
                 height: 264px;
             }
+            body{
+                height: 328px;
+            }
             .scrolling_inner{
                 height: 107px;
             }
@@ -360,7 +363,7 @@
             }
 
             .breadcrumb{
-                height: 120px;
+                
                 margin: 0;
             }
 
