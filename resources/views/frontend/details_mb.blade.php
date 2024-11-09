@@ -41,6 +41,10 @@
             display: none;
         }
 
+        .img-main{
+            height: 264px;
+        }
+
         .li-home{
             width: 56px;
         }
