@@ -60,8 +60,7 @@
         <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
         <link rel="preload" href="https://code.jquery.com/ui/1.13.1/jquery-ui.js" as="script">
-          <script async custom-element="amp-img" src="https://cdn.ampproject.org/v0/amp-img-0.1.js"></script>
-
+        
 
         <style>
 
