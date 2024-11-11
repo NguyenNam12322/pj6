@@ -40,7 +40,7 @@
      @media only screen and (max-width: 600px) {
 
 
-        .box01 .owl-carousel .owl-item, .box01 .owl-carousel .owl-item img:not(.monopoly-label) {
+        #carousel, .box01 .owl-carousel .owl-item, .box01 .owl-carousel .owl-item img:not(.monopoly-label) {
             max-width: 600px !important;
 
         }
