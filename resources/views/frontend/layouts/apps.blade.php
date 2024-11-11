@@ -32,7 +32,7 @@
        
         @endif
 
-        <!-- <link rel="shortcut icon" href="{{ asset('uploads/icon/favicon.ico') }}"/> -->
+       
         <meta name = "google-site-verify" content = "1AH1fN3G7ygWRcOlEQWJyhginaxmT67zTMPP8wnfFD0" />
          <meta name="google-site-verification" content="KnEYNkXL593z3C--o3aQaWFzJFdcuj9qDtcnKvSy4aM" />
         
