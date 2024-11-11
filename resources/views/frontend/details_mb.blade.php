@@ -49,6 +49,7 @@
         
 
         .box01{
+            max-width: 600px;
             height: 10%  !important;
         }
         .scrolling_inner{
