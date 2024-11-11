@@ -24,6 +24,16 @@
         overflow: hidden;
     }
 
+    .lazy-image {
+            opacity: 0; /* Start transparent */
+            transition: opacity 1s ease-in; /* Fade-in effect */
+        }
+
+        /* When loaded, fade-in by changing opacity */
+        .lazy-image.loaded {
+            opacity: 1; /* Full opacity when image is loaded */
+        }
+
     
      @media (min-width: 1200px) {
         .container {
@@ -2791,13 +2801,19 @@
                 const src = img.getAttribute('data-src');
                 if (src) {
                     img.src = src; // Set the actual source to load the image
+
+                    // When the image is fully loaded, add the "loaded" class for fade-in effect
+                    img.onload = () => {
+                        img.classList.add('loaded');
+                    };
+
                     img.removeAttribute('data-src'); // Remove data-src after loading
                 }
             });
         }
 
         // Set delay (e.g., 3 seconds) before lazy loading
-        setTimeout(lazyLoadImage, 3000);  
+        setTimeout(lazyLoadImage, 3000); 
 </script>
 @endpush
 
