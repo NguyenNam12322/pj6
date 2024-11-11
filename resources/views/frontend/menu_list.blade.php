@@ -1,58 +1,10 @@
-<style type="text/css">
-    #nk-danh-muc-san-pham-left ul{
 
-        background: linear-gradient(0deg,#d1a94e,#fdf5a1,#cfac54);
-
-    }
-
-    .sub-menu ul{
-        background: #fff !important;
-    }
-
-    .delivery-free{
-        margin-left: 40px;
-    }
-    .buy-project{
-        width: 159px;
-    }
-
-    .nk-danh-muc-trang-chu h3{
-        color: #000 !important;
-    }
-
-     .nk-menu #nk-danh-muc-san-pham-left>h3 b{
-        font-weight: 700;
-     }
-
-
-
-    @media all and (max-width: 768px) {
-
-         .lst-quickfilter p{
-            width: 91px;
-        }
-
-        .nk-menu #nk-danh-muc-san-pham-left>h3{
-            color: #000;
-        }
-
-        .fa-navicon:before, .fa-reorder:before, .fa-bars:before{
-            color: #000;
-        }
-
-        .show-bar{
-            background: linear-gradient(0deg,#d1a94e,#fdf5a1,#cfac54);
-        }
-
-    }    
-
-</style>
 
 <?php 
 
     $icon_define = ['nki-menu-television', 'nki-menu-fridge', 'nki-menu-air-conditioner icon-new', 'nki-menu-washer', 'nki-menu-television','nki-menu-television','nki-menu-television','nki-menu-television','nki-menu-television'];
 ?>
-<div class="row-fluid ">
+<!-- <div class="row-fluid ">
     <div class="span16 nk-menu">
         <div class="row-fluid ">
             <div class="span16 container">
@@ -91,7 +43,7 @@
                                                     $dem++;
                                                 ?>
 
-                                                <!-- level1 -->
+                                                
 
                                                 <p>
                                                     <a href="{{route('details', $val->link)}}">{{ $val->name??'' }}</a>
@@ -111,7 +63,7 @@
                                                      @foreach($menu_level_2 as $val2) 
                                                     <div class="item row2 bg-white">
                                                        
-                                                        <!-- level2 -->
+                                                      
 
                                                         
 
@@ -132,7 +84,7 @@
                                                             
                                                             <ul>
 
-                                                                <!-- level3 -->
+                                                                
                                                                  @if(!empty($menu_level_3)  && $menu_level_3->count()>0)
                                                                 @foreach($menu_level_3 as $val_3)
                                                                 <li>
@@ -192,17 +144,7 @@
                                 <div class="" data-block="2864">
                                     <div class="header-menu head-menu">
                                         <div class="header-menu__navs">
-                                            <!-- <a class="navs-item-link delivery-free" href="javascript:void(0)">
-                                                Giao lắp chuyên nghiệp </a>
-                                            <div class="hr-vertical">|</div>
-                                            <a class="navs-item-link" href="javascript:void(0)">
-                                               Bảo hành nhanh gọn </a>
-                                            <div class="hr-vertical">|</div>
-                                            <a class="navs-item-link" href="javascript:void(0)">
-                                               Tổng hợp khuyến mãi </a>
-                                            <div class="hr-vertical">|</div>
-                                            <a class="navs-item-link buy-project" href="javascript:void(0)">
-                                                Mua hàng Dự Án </a> -->
+                                           
                                         </div>
                                     </div>
                                 </div>
@@ -213,4 +155,4 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->

@@ -320,6 +320,49 @@
                       display: -webkit-box;
                 }
 
+                
+                    #nk-danh-muc-san-pham-left ul{
+
+                        background: linear-gradient(0deg,#d1a94e,#fdf5a1,#cfac54);
+
+                    }
+
+                    .sub-menu ul{
+                        background: #fff !important;
+                    }
+
+                    .delivery-free{
+                        margin-left: 40px;
+                    }
+                    .buy-project{
+                        width: 159px;
+                    }
+
+                    .nk-danh-muc-trang-chu h3{
+                        color: #000 !important;
+                    }
+
+                     .nk-menu #nk-danh-muc-san-pham-left>h3 b{
+                        font-weight: 700;
+                     }
+                  
+                 .lst-quickfilter p{
+                    width: 91px;
+                }
+
+                .nk-menu #nk-danh-muc-san-pham-left>h3{
+                    color: #000;
+                }
+
+                .fa-navicon:before, .fa-reorder:before, .fa-bars:before{
+                    color: #000;
+                }
+
+                .show-bar{
+                    background: linear-gradient(0deg,#d1a94e,#fdf5a1,#cfac54);
+                }
+
+
                 #nk-searchs form, .nk-search-box{
                     height: 100%;
                 }
