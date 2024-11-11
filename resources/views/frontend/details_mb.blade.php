@@ -39,6 +39,13 @@
             display: none;
         }
 
+        .box-left{
+            height: 86%;
+        }
+        .box_right{
+            height: 14%;
+        }
+
         .img-main{
             width: 100%;
             height: 100%;
