@@ -1061,7 +1061,7 @@
                 @if($mobile ==1)
                 <div class="title-mb">
                     
-                    <h5>{{ $data->Name }}</h5>
+                    <h2>{{ $data->Name }}</h2>
                 
                 </div>
                 @endif 
