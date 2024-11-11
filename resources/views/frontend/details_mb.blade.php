@@ -42,7 +42,9 @@
             height: 100%;
         }
 
-        
+        .box01 .owl-carousel .owl-item img:not(.monopoly-label){
+            display: block !important;
+        }
 
         .box01{
             height: 10%  !important;
@@ -903,11 +905,11 @@
                         $image_product = strstr(basename($data->Image), '_');
                     ?>
                     <div class="item img-main">
-                        <a href="{{ asset('uploads/product/1731128406_may-giat-invert_main_371_1020.png_with_bgc.png') }}" data-fancybox="gallery">
+                        <!-- <a href="{{ asset('uploads/product/1731128406_may-giat-invert_main_371_1020.png_with_bgc.png') }}" data-fancybox="gallery">
                            
-                            <img  src="https://www.w3schools.com/tags/img_orange_flowers.jpg"  alt="{{ @$data->Name }}" width="5px" height="5px">
+                            <img  src="{{ asset('uploads/product/1731128406_may-giat-invert_main_371_1020.png_with_bgc.png') }}"  alt="{{ @$data->Name }}" width="5px" height="5px">
                            
-                        </a>
+                        </a> -->
                         
                        
                         @if($data->id>4720)
