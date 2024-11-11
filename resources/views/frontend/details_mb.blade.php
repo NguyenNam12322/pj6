@@ -42,6 +42,9 @@
         .nk-menu{
             display: none;
         }
+        .items-h{
+            max-width: 600px;
+        }
         .nk-header ._nk_main, .span16 .row-fluid {
             height: 100%;
         }
@@ -913,7 +916,7 @@
                     <div class="item img-main image-container">
                         <a href="{{ asset('uploads/product/1731128406_may-giat-invert_main_371_1020.png_with_bgc.png') }}" data-fancybox="gallery">
                            
-                            <img src="{{ asset('uploads/product/1731128406_may-giat-invert_main_371_1020.png_with_bgc.png') }}" width="220px" height="220px">
+                            <img src="{{ asset('uploads/product/1731128406_may-giat-invert_main_371_1020.png_with_bgc.png') }}" width="220px" height="220px" class="items-h">
                            
                         </a>
                         
