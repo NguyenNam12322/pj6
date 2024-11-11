@@ -45,6 +45,10 @@
             overflow: hidden;
         }
 
+        .li-child a{
+            width: 100%;
+        }
+
         /* Loading spinner */
         .image-container::before {
             content: '';
@@ -173,6 +177,8 @@
 
         .breadcrumb li a{
             font-size: 12px;
+            width: 100%;
+            padding: 0;
         }
 
         .breadcrumb li{
