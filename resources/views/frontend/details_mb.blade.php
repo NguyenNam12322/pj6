@@ -41,7 +41,7 @@
 
         .img-main{
             width: 100%;
-            height: 220px;
+            height: 100%;
             padding: 0 !important;
         }
 
@@ -840,7 +840,7 @@
                         <a href="{{ asset('uploads/product/1731128406_may-giat-invert_main_371_1020.png_with_bgc.png') }}" data-fancybox="gallery">
                            
                                   
-                            <img  data-src="https://www.w3schools.com/tags/img_orange_flowers.jpg" alt="{{ @$data->Name }}"  class="lazy-image">
+                            <img  data-src="uploads/product/1731128406_may-giat-invert_main_371_1020.png_with_bgc.png" alt="{{ @$data->Name }}"  class="lazy-image">
                            
                        
                         </a>
@@ -1953,7 +1953,7 @@
         }
 
         // Set delay (e.g., 3 seconds) before lazy loading
-        setTimeout(lazyLoadImage, 3000);
+        setTimeout(lazyLoadImage, 1000);
 
     $( document ).ready(function() {
     
