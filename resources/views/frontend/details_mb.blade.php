@@ -46,8 +46,8 @@
         }
 
         .items-h{
-            width: 220px;       
-            height: 220px;
+            width: 220px !important;       
+            height: 220px !important;
         }
         .nk-menu{
             display: none;
