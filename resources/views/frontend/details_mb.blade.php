@@ -376,10 +376,11 @@
             .breadcrumb{
                 
                 margin: 0;
+                height: 10%;
             }
 
             .box_main{
-                height: 2952px;
+                height: 90%;
                 margin: 0;
             }
 
