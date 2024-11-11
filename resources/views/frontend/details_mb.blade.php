@@ -335,6 +335,7 @@
 
             .img-main a{
                 display: block;
+                height: 100%;
             }
 
             .box01{
