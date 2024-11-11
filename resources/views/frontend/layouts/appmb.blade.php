@@ -1075,7 +1075,7 @@
                             box-shadow: none !important;
                         } 
                         .nk-header{
-                            height: 158px !important;
+                            height: 100% !important;
                         }
 
                         .search_center{
