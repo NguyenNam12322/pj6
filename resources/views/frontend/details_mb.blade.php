@@ -24,64 +24,6 @@
         overflow: hidden;
     }
 
-
-
-
-
-    /* Container for image with loading effect */
-        .image-container {
-            position: relative;
-            width: 300px;
-            height: 200px;
-            background-color: #f0f0f0; /* Placeholder color */
-            overflow: hidden;
-        }
-
-        /* Loading spinner */
-        .image-container::before {
-            content: '';
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            width: 40px;
-            height: 40px;
-            border: 5px solid #ccc;
-            border-top-color: #333;
-            border-radius: 50%;
-            animation: spin 1s linear infinite;
-            transform: translate(-50%, -50%);
-        }
-
-        /* Image styles */
-        .lazy-image {
-            opacity: 0;
-            transition: opacity 1s ease-in;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        /* Image fade-in effect when loaded */
-        .lazy-image.loaded {
-            opacity: 1;
-        }
-
-        /* Hide the spinner after the image loads */
-        .image-container.loaded::before {
-            display: none;
-        }
-
-        /* Keyframes for the spinner animation */
-        @keyframes spin {
-            0% { transform: translate(-50%, -50%) rotate(0deg); }
-            100% { transform: translate(-50%, -50%) rotate(360deg); }
-        }
-
-
-
-
-
-
     
      @media (min-width: 1200px) {
         .container {
@@ -99,7 +41,7 @@
 
         .img-main{
             width: 100%;
-            height: 100%;
+            height: 220px;
             padding: 0 !important;
         }
 
@@ -894,11 +836,11 @@
                     <?php 
                         $image_product = strstr(basename($data->Image), '_');
                     ?>
-                    <div class="item img-main image-container">
+                    <div class="item img-main">
                         <a href="{{ asset('uploads/product/1731128406_may-giat-invert_main_371_1020.png_with_bgc.png') }}" data-fancybox="gallery">
-                           
-                                  
-                            <img id="myImage" class="image"  >
+                            
+                                 
+                                  <img  src="https://www.w3schools.com/tags/img_orange_flowers.jpg" data-src="{{ asset('uploads/product/1731128406_may-giat-invert_main_371_1020.png_with_bgc.png') }}" loading="lazy" alt="{{ @$data->Name }}" >
                            
                        
                         </a>
@@ -997,7 +939,7 @@
                 @if($mobile ==1)
                 <div class="title-mb">
                     
-                    <h5>{{ $data->Name }}</h5>
+                    <h1>{{ $data->Name }}</h1>
                 
                 </div>
                 @endif 
@@ -1998,8 +1940,6 @@
         });
     @endif
 
-    
-
     $( document ).ready(function() {
     
         $('[data-fancybox]').fancybox({
@@ -2840,33 +2780,7 @@
 
               }, 1000);
         }
-    @endif  
-
-     $(document).ready(function () {
-            // Image URL (replace with your actual image URL)
-
-            
-            const imageUrl = "{{ asset('uploads/product/1731128406_may-giat-invert_main_371_1020.png_with_bgc.png') }}";
-            
-            // Function to load image and check for cache
-            function loadImageFromCache(imageElement, url) {
-                imageElement.attr("src", url); // Set the image source
-
-                // Check if the image is cached
-                if (imageElement[0].complete) {
-                    // Image is cached, apply fade-in immediately
-                    imageElement.addClass("loaded");
-                } else {
-                    // Image is not cached, fade-in when it loads
-                    imageElement.on("load", function () {
-                        $(this).addClass("loaded");
-                    });
-                }
-            }
-
-            // Call the function to load the image
-            loadImageFromCache($("#myImage"), imageUrl);
-        });
+    @endif    
 </script>
 @endpush
 
