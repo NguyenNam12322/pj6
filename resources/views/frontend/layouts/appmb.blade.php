@@ -374,6 +374,10 @@
                     margin: 0;
                 }
 
+                .box_right{
+                    display: none;
+                }
+
                 picture, .figure{
                     display: block;
                     height: 100%;
