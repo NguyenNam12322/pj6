@@ -1940,20 +1940,7 @@
         });
     @endif
 
-    function lazyLoadImage() {
-            const images = document.querySelectorAll('.lazy-image');
-
-            images.forEach(img => {
-                const src = img.getAttribute('data-src');
-                if (src) {
-                    img.src = src; // Set the actual source to load the image
-                    img.removeAttribute('data-src'); // Remove data-src after loading
-                }
-            });
-        }
-
-        // Set delay (e.g., 3 seconds) before lazy loading
-        setTimeout(lazyLoadImage, 1000);
+    
 
     $( document ).ready(function() {
     
@@ -2795,7 +2782,22 @@
 
               }, 1000);
         }
-    @endif    
+    @endif  
+
+    function lazyLoadImage() {
+            const images = document.querySelectorAll('.lazy-image');
+
+            images.forEach(img => {
+                const src = img.getAttribute('data-src');
+                if (src) {
+                    img.src = src; // Set the actual source to load the image
+                    img.removeAttribute('data-src'); // Remove data-src after loading
+                }
+            });
+        }
+
+        // Set delay (e.g., 3 seconds) before lazy loading
+        setTimeout(lazyLoadImage, 3000);  
 </script>
 @endpush
 
