@@ -23,6 +23,9 @@
     .pdetail-status{
         overflow: hidden;
     }
+    .items-h{
+            max-width: 600px;
+        }
 
     
      @media (min-width: 1200px) {
@@ -42,9 +45,7 @@
         .nk-menu{
             display: none;
         }
-        .items-h{
-            max-width: 600px;
-        }
+
         .nk-header ._nk_main, .span16 .row-fluid {
             height: 100%;
         }
