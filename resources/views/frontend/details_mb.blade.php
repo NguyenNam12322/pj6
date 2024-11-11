@@ -38,6 +38,9 @@
         .nk-menu{
             display: none;
         }
+        .span16 .row-fluid {
+            height: 100%;
+        }
 
         .img-main{
             width: 100%;
