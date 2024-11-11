@@ -840,7 +840,7 @@
                         <a href="{{ asset('uploads/product/1731128406_may-giat-invert_main_371_1020.png_with_bgc.png') }}" data-fancybox="gallery">
                            
                                   
-                            <img  data-src="uploads/product/1731128406_may-giat-invert_main_371_1020.png_with_bgc.png" alt="{{ @$data->Name }}"  class="lazy-image">
+                            <img  data-src="{{ asset('uploads/product/1731128406_may-giat-invert_main_371_1020.png_with_bgc.png') }}" alt="{{ @$data->Name }}"  class="lazy-image">
                            
                        
                         </a>
