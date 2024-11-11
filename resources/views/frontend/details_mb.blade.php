@@ -42,6 +42,10 @@
             height: 100%;
         }
 
+        .box01 .owl-carousel .owl-item img:not(.monopoly-label){
+            display: block !important;
+        }
+
         .box01{
             height: 10%;
         }
