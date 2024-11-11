@@ -898,7 +898,7 @@
                         <a href="{{ asset('uploads/product/1731128406_may-giat-invert_main_371_1020.png_with_bgc.png') }}" data-fancybox="gallery">
                            
                                   
-                            <img  data-src="{{ asset('uploads/product/1731128406_may-giat-invert_main_371_1020.png_with_bgc.png') }}" alt="{{ @$data->Name }}"  class="lazy-image">
+                            <img id="myImage" class="image"  >
                            
                        
                         </a>
@@ -2842,29 +2842,31 @@
         }
     @endif  
 
-      function lazyLoadImage() {
-            const containers = document.querySelectorAll('.image-container');
+     $(document).ready(function () {
+            // Image URL (replace with your actual image URL)
 
-            containers.forEach(container => {
-                const img = container.querySelector('.lazy-image');
-                const src = img.getAttribute('data-src');
-                
-                if (src) {
-                    img.src = src; // Start loading the actual image
+            
+            const imageUrl = "{{ asset('uploads/product/1731128406_may-giat-invert_main_371_1020.png_with_bgc.png') }}";
+            
+            // Function to load image and check for cache
+            function loadImageFromCache(imageElement, url) {
+                imageElement.attr("src", url); // Set the image source
 
-                    // Add loaded class to image and container once the image is fully loaded
-                    img.onload = () => {
-                        img.classList.add('loaded');
-                        container.classList.add('loaded'); // Hide loading spinner
-                    };
-
-                    img.removeAttribute('data-src'); // Remove data-src after setting src
+                // Check if the image is cached
+                if (imageElement[0].complete) {
+                    // Image is cached, apply fade-in immediately
+                    imageElement.addClass("loaded");
+                } else {
+                    // Image is not cached, fade-in when it loads
+                    imageElement.on("load", function () {
+                        $(this).addClass("loaded");
+                    });
                 }
-            });
-        }
+            }
 
-       
-         window.onload = lazyLoadImage;
+            // Call the function to load the image
+            loadImageFromCache($("#myImage"), imageUrl);
+        });
 </script>
 @endpush
 
