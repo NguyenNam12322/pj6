@@ -907,7 +907,7 @@
                     <div class="item img-main">
                         <a href="{{ asset('uploads/product/1731128406_may-giat-invert_main_371_1020.png_with_bgc.png') }}" data-fancybox="gallery">
                            
-                            <img  src="https://www.w3schools.com/tags/img_orange_flowers.jpg" width="100%" alt="{{ @$data->Name }}" loading="lazy">
+                            <img  src="https://www.w3schools.com/tags/img_orange_flowers.jpg" width="100%" alt="{{ @$data->Name }}">
                            
                         </a>
                         
