@@ -855,7 +855,7 @@
                             <picture>
                                   <source media="(min-width:300px)" srcset="https://www.w3schools.com/tags/img_orange_flowers.jpg">
                                   <source media="(min-width:767px)" srcset="https://www.w3schools.com/tags/img_orange_flowers.jpg  ">
-                                  <img   src="https://www.w3schools.com/tags/img_orange_flowers.jpg" alt="{{ @$data->Name }}" width="50px" height="50px">
+                                  <img   src="https://www.w3schools.com/tags/img_orange_flowers.jpg" alt="{{ @$data->Name }}" width="5px" height="5px">
                             </picture>
                        
                         </a>
@@ -902,7 +902,7 @@
                            <picture>
                                   <source media="(min-width:300px)" srcset="https://www.w3schools.com/tags/img_orange_flowers.jpg">
                                   <source media="(min-width:767px)" srcset="https://www.w3schools.com/tags/img_orange_flowers.jpg ">
-                                  <img src="https://www.w3schools.com/tags/img_orange_flowers.jpg" alt="{{ @$data->Name }}" loading="lazy" width="50px" height="50px">
+                                  <img src="https://www.w3schools.com/tags/img_orange_flowers.jpg" alt="{{ @$data->Name }}" loading="lazy" width="5px" height="5px">
                             </picture>
                         </a>
                         
