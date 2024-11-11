@@ -64,6 +64,35 @@
             height: 27%;
         }
 
+        .show-more{
+            height: 2%;
+        }
+
+        .show-more span{
+            height: 83%;
+        }
+        .related__ttl{
+            height: 7%;
+        }
+
+        .listproduct {
+            height: 93%;
+        }
+
+        .owl-stage-outer{
+            height: 100%;
+        }
+
+        .pdp-box{
+            height: 100%;
+        }
+        .nk-title{
+            height: 7%;
+        }
+        .post-sidebar-list {
+            height: 93%;
+        }
+
 
 
         .img-main{
@@ -1518,49 +1547,49 @@
   
         <div class="box_right">
 
-            <div class="pdp-box">
-                <div class="nk-title">
-                    <h2><b>Sản phẩm cùng tầm giá</b></h2>
-                </div>
-
-                @if(isset($sampe_product_price))
-
-                @foreach($sampe_product_price as  $value)
-                @if($value->active==1 && $value->id != $data->id)
-                <aside class="post-sidebar-list ">
-                    <article class="post-sidebar-item">
-                        <a href="{{ route('details', $value->Link) }}">
-                            <span class="post-sidebar-img">
-                                <img  src="{{ asset($value->Image) }}" loading="lazyload" sizes="(max-width: 600px) 220px, 1020px">
-                            </span>
-
-                            <h4 class="post-sidebar-title">{{ $value->Name }}</h4>
-
-                            
-
-                            <strong class="price"> {{ convert_price($value->Price) }} </strong>
-                        </a>
-
-                        <div class="item-rating">
-                            <p>
-                                <i class="icon-star"></i>
-                                <i class="icon-star"></i>
-                                <i class="icon-star"></i>
-                                <i class="icon-star"></i>
-                                <i class="icon-star"></i>
-                            </p>
-                            
-                        </div>  
-                    </article>
-                    
-                </aside>
-
-                @endif
-                @endforeach
-
-                @endif
-
+            
+            <div class="nk-title">
+                <h2><b>Sản phẩm cùng tầm giá</b></h2>
             </div>
+
+            @if(isset($sampe_product_price))
+
+            @foreach($sampe_product_price as  $value)
+            @if($value->active==1 && $value->id != $data->id)
+            <aside class="post-sidebar-list ">
+                <article class="post-sidebar-item">
+                    <a href="{{ route('details', $value->Link) }}">
+                        <span class="post-sidebar-img">
+                            <img  src="{{ asset($value->Image) }}" loading="lazyload" sizes="(max-width: 600px) 220px, 1020px">
+                        </span>
+
+                        <h4 class="post-sidebar-title">{{ $value->Name }}</h4>
+
+                        
+
+                        <strong class="price"> {{ convert_price($value->Price) }} </strong>
+                    </a>
+
+                    <div class="item-rating">
+                        <p>
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                        </p>
+                        
+                    </div>  
+                </article>
+                
+            </aside>
+
+            @endif
+            @endforeach
+
+            @endif
+
+           
         </div>
 
         
