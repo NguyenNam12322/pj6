@@ -435,7 +435,7 @@
             .breadcrumb{
                 
                 margin: 0;
-                height: 2%;
+                height:1%;
                 padding: 0;
             }
 
