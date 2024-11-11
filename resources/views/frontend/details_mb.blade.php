@@ -352,7 +352,7 @@
             }
 
             .tygh-top-panel{
-                height: auto;
+                height: 4%;
             }
             .box_pro-benefit{
                 height: 313px;
@@ -362,7 +362,7 @@
             }
 
             section.detail{
-                height: auto;
+                height: 96%;
             }
 
             .pdetail-info{
@@ -376,11 +376,11 @@
             .breadcrumb{
                 
                 margin: 0;
-                height: 10%;
+                height: 2%;
             }
 
             .box_main{
-                height: 90%;
+                height: 98%;
                 margin: 0;
             }
 
