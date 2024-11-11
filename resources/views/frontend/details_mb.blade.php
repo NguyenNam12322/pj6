@@ -122,7 +122,7 @@
         }
 
         .breadcrumb li{
-            height: 32px;
+            height: 100%;
         }
 
         .title-mb{
