@@ -35,6 +35,58 @@
 
      @media only screen and (max-width: 600px) {
 
+
+         /* Container for image with loading effect */
+        .image-container {
+            position: relative;
+            width: 300px;
+            height: 200px;
+            background-color: #f0f0f0; /* Placeholder color */
+            overflow: hidden;
+        }
+
+        /* Loading spinner */
+        .image-container::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 40px;
+            height: 40px;
+            border: 5px solid #ccc;
+            border-top-color: #333;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            transform: translate(-50%, -50%);
+        }
+
+        /* Image styles */
+        .lazy-image {
+            opacity: 0;
+            transition: opacity 1s ease-in;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Image fade-in effect when loaded */
+        .lazy-image.loaded {
+            opacity: 1;
+        }
+
+        /* Hide the spinner after the image loads */
+        .image-container.loaded::before {
+            display: none;
+        }
+
+        /* Keyframes for the spinner animation */
+        @keyframes spin {
+            0% { transform: translate(-50%, -50%) rotate(0deg); }
+            100% { transform: translate(-50%, -50%) rotate(360deg); }
+        }
+
+/*        lazy-load*/
+
         .nk-menu{
             display: none;
         }
@@ -904,12 +956,12 @@
                     <?php 
                         $image_product = strstr(basename($data->Image), '_');
                     ?>
-                    <div class="item img-main">
-                        <!-- <a href="{{ asset('uploads/product/1731128406_may-giat-invert_main_371_1020.png_with_bgc.png') }}" data-fancybox="gallery">
+                    <div class="item img-main image-container">
+                        <a href="{{ asset('uploads/product/1731128406_may-giat-invert_main_371_1020.png_with_bgc.png') }}" data-fancybox="gallery">
                            
-                            <img  src="{{ asset('uploads/product/1731128406_may-giat-invert_main_371_1020.png_with_bgc.png') }}"  alt="{{ @$data->Name }}" width="5px" height="5px">
+                            <img  data-src="{{ asset('uploads/product/1731128406_may-giat-invert_main_371_1020.png_with_bgc.png') }}"  alt="{{ @$data->Name }}" class="lazy-image">
                            
-                        </a> -->
+                        </a>
                         
                        
                         @if($data->id>4720)
@@ -2846,7 +2898,33 @@
 
               }, 1000);
         }
-    @endif    
+    @endif  
+
+
+    function lazyLoadImage() {
+            const containers = document.querySelectorAll('.image-container');
+
+            containers.forEach(container => {
+                const img = container.querySelector('.lazy-image');
+                const src = img.getAttribute('data-src');
+                
+                if (src) {
+                    img.src = src; // Start loading the actual image
+
+                    // Add loaded class to image and container once the image is fully loaded
+                    img.onload = () => {
+                        img.classList.add('loaded');
+                        container.classList.add('loaded'); // Hide loading spinner
+                    };
+
+                    img.removeAttribute('data-src'); // Remove data-src after setting src
+                }
+            });
+        }
+
+        // Set delay (e.g., 3 seconds) before lazy loading
+        setTimeout(lazyLoadImage, 3000);
+    
 </script>
 @endpush
 
