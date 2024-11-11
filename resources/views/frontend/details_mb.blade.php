@@ -50,8 +50,8 @@
 
 
         .img-main{
-            width: 100%;
-            height: 100%;
+            width: 50px;
+            height: 50px;
             padding: 0 !important;
         }
 
