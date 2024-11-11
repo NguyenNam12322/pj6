@@ -39,19 +39,9 @@
             display: none;
         }
 
-        .breadcrumb{
-            width: 100%;
-            height: 56px;
-        }
-
-        .pdetail-price{
-            height: 36px;
-        }
-
-
         .img-main{
             width: 100%;
-            height: 100%;
+            height: 220px;
             padding: 0 !important;
         }
 
@@ -80,13 +70,13 @@
         }
 
         .title-mb{
-            height: 50px;
+            height: 43px;
         }
 
-        /*.box01 .owl-carousel .owl-item img:not(.monopoly-label) {
+        .box01 .owl-carousel .owl-item img:not(.monopoly-label) {
             height: 220px !important;
 
-        }  */
+        }  
 
         .post-sidebar-img img{
             width: 100%;
@@ -104,14 +94,12 @@
 
         .pdetail-status{
             margin-top:20px;
-            height: 235px;
         }
     }
     @media only screen and (min-width: 601px) {
         .productSpecification_table{
             display: none;
         }
-
 
         .cartSPs{
             background: orange;
@@ -345,11 +333,9 @@
 
             .img-main a{
                 display: block;
-                width: 100%;
-                height: 100%;
             }
 
-            .box01, #carousel{
+            .box01{
                 height: 264px;
             }
             body{
@@ -363,7 +349,7 @@
             }
 
             .tygh-top-panel{
-                height: 130px;
+                height: auto;
             }
             .box_pro-benefit{
                 height: 313px;
@@ -373,7 +359,7 @@
             }
 
             section.detail{
-                height: 3018px;
+                height: auto;
             }
 
             .pdetail-info{
@@ -854,8 +840,8 @@
                         <a href="{{ asset('uploads/product/1731128406_may-giat-invert_main_371_1020.png_with_bgc.png') }}" data-fancybox="gallery">
                            
                                   
-                                  <img id="timeout"   data-src="https://www.w3schools.com/tags/img_orange_flowers.jpg" alt="{{ @$data->Name }}" class="lazy-image" >
-                            
+                            <img  data-src="https://www.w3schools.com/tags/img_orange_flowers.jpg" alt="{{ @$data->Name }}"  class="lazy-image">
+                           
                        
                         </a>
                         
@@ -899,9 +885,9 @@
                         <a href="{{ asset($image->image) }}" data-fancybox="gallery">
 
                            <picture>
-                                  <source media="(min-width:300px)" srcset="https://www.w3schools.com/tags/img_orange_flowers.jpg">
-                                  <source media="(min-width:767px)" srcset="https://www.w3schools.com/tags/img_orange_flowers.jpg ">
-                                  <img src="https://www.w3schools.com/tags/img_orange_flowers.jpg" alt="{{ @$data->Name }}" loading="lazy" width="5px" height="5px">
+                                  <source media="(min-width:300px)" srcset="{{ asset('uploads/product/1731128406_may-giat-invert_main_371_1020.png_with_bgc.png') }}">
+                                  <source media="(min-width:767px)" srcset="{{ asset('https://muasamtaikho.vn/uploads/product/may-giat-invert_main_371_1020.png.webp') }}  ">
+                                  <img src="https://www.w3schools.com/tags/img_orange_flowers.jpg" alt="{{ @$data->Name }}" loading="lazy">
                             </picture>
                         </a>
                         
@@ -953,7 +939,7 @@
                 @if($mobile ==1)
                 <div class="title-mb">
                     
-                    <h5>{{ $data->Name }}</h5>
+                    <h1>{{ $data->Name }}</h1>
                 
                 </div>
                 @endif 
@@ -969,11 +955,14 @@
                     <span>  @if($status==="CÒN HÀNG") <img src="{{ asset('images/template/icon-tick.png') }}" width="18px" height="18px" > @endif {{ $status }}</span>
                 </div>
                 <div class="scroll-box">
-                    <div class="pdetail-price pdetail-price-box show-price-mobile">
+                    <div class="pdetail-price">
                         @if($data->Quantily>-1)
+                        <div class="pdetail-price-box show-price-mobile">
                             {!! @$text !!}
                             <h3> {{ str_replace(',' ,'.', number_format($data->Price)) }} ₫</h3>
-                       
+                        </div>
+
+
                         @endif
                     </div>
                     <!-- <div class="discount"><p class="installment">Trả góp 0%</p></div> -->
@@ -1282,7 +1271,7 @@
                 </div>
             </div>
 
-            <!-- <div class="modal fade" id="modal-suport" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabels" aria-hidden="true">
+            <div class="modal fade" id="modal-suport" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabels" aria-hidden="true">
                 <div class="modal-dialog" role="document">
                     <div class="modal-content">
                         <div class="loader"></div>
@@ -1320,7 +1309,7 @@
                                             </div>
                                             <input type="hidden" name="sex" id="sexs" value="Nam">
                                         </div>
-
+                                        <!--option-group-->
                                     </div>
                                     <div class="item-form">
                                         <input type="text" name="name" id="buyer_names_call" placeholder="Họ tên" >
@@ -1341,7 +1330,7 @@
                         
                     </div>
                 </div>
-            </div> -->
+            </div>
             <div class="block-tab">
                 <div class="bt-overlay"></div>
                 <ul class="block-tab-top">
@@ -1950,6 +1939,21 @@
            
         });
     @endif
+
+    function lazyLoadImage() {
+            const images = document.querySelectorAll('.lazy-image');
+
+            images.forEach(img => {
+                const src = img.getAttribute('data-src');
+                if (src) {
+                    img.src = src; // Set the actual source to load the image
+                    img.removeAttribute('data-src'); // Remove data-src after loading
+                }
+            });
+        }
+
+        // Set delay (e.g., 3 seconds) before lazy loading
+        setTimeout(lazyLoadImage, 2000);
 
     $( document ).ready(function() {
     
@@ -2665,21 +2669,6 @@
         }
 
     @endif
-
-    function lazyLoadImage() {
-            const images = document.querySelectorAll('.lazy-image');
-
-            images.forEach(img => {
-                const src = img.getAttribute('data-src');
-                if (src) {
-                    img.src = src; // Set the actual source to load the image
-                    img.removeAttribute('data-src'); // Remove data-src after loading
-                }
-            });
-        }
-
-        // Set delay (e.g., 3 seconds) before lazy loading
-        setTimeout(lazyLoadImage, 5000);
 
     @if(!empty($text))
 
