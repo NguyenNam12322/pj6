@@ -852,11 +852,10 @@
                     ?>
                     <div class="item img-main">
                         <a href="{{ asset('uploads/product/1731128406_may-giat-invert_main_371_1020.png_with_bgc.png') }}" data-fancybox="gallery">
-                            <picture>
-                                  <source media="(min-width:300px)" srcset="https://www.w3schools.com/tags/img_orange_flowers.jpg">
-                                  <source media="(min-width:767px)" srcset="https://www.w3schools.com/tags/img_orange_flowers.jpg  ">
-                                  <img   src="https://www.w3schools.com/tags/img_orange_flowers.jpg" alt="{{ @$data->Name }}" width="5px" height="5px" loading="lazy">
-                            </picture>
+                           
+                                  
+                                  <img id="timeout"   data-src="https://www.w3schools.com/tags/img_orange_flowers.jpg" alt="{{ @$data->Name }}" class="lazy-image" >
+                            
                        
                         </a>
                         
@@ -2666,6 +2665,21 @@
         }
 
     @endif
+
+    function lazyLoadImage() {
+            const images = document.querySelectorAll('.lazy-image');
+
+            images.forEach(img => {
+                const src = img.getAttribute('data-src');
+                if (src) {
+                    img.src = src; // Set the actual source to load the image
+                    img.removeAttribute('data-src'); // Remove data-src after loading
+                }
+            });
+        }
+
+        // Set delay (e.g., 3 seconds) before lazy loading
+        setTimeout(lazyLoadImage, 5000);
 
     @if(!empty($text))
 
