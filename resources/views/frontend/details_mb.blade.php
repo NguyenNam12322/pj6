@@ -939,7 +939,7 @@
                 @if($mobile ==1)
                 <div class="title-mb">
                     
-                    <h1>{{ $data->Name }}</h1>
+                    <h5>{{ $data->Name }}</h5>
                 
                 </div>
                 @endif 
