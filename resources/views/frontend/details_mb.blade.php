@@ -436,6 +436,7 @@
                 
                 margin: 0;
                 height: 2%;
+                padding: 0;
             }
 
             .box_main{
