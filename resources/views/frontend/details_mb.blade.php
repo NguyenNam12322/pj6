@@ -2921,7 +2921,7 @@
         }
 
         // Set delay (e.g., 3 seconds) before lazy loading
-        setTimeout(lazyLoadImage, 1500);
+        setTimeout(lazyLoadImage, 2800);
     
 </script>
 @endpush
