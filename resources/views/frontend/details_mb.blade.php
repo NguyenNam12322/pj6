@@ -24,7 +24,7 @@
         overflow: hidden;
     }
     .items-h{
-            max-width: 600px;
+            max-width: 600px !important;
         }
 
     
