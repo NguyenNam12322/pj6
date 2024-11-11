@@ -52,8 +52,8 @@
         <meta property="og:description" content="" />
         <meta itemprop="name" content="">
         <meta itemprop="description" content="">
-       
-        <link rel="shortcut icon" href="{{ asset('images/template/favicon-muasamtaikho.ico') }}"> 
+      
+        <link rel="shortcut icon" href="{{ asset('images/template/faviconmuasamtaikho.png') }}"> 
         <meta name="format-detection" content="telephone=no">
         <meta name="csrf-token" content="{{ csrf_token() }}">
         <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
