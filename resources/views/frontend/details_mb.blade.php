@@ -47,29 +47,29 @@
         }
 
         .box01{
-            height: 10%;
+            height: 10%  !important;
         }
         .scrolling_inner{
-            height: 4%;
+            height: 4% !important;
         }
         .pay{
             height: 19%;
         }
         .view-all-salient_fratured{
-            height: 1%;
+            height: 1%  !important;
         }
         .box_pro-benefit{
-            height: 12%;
+            height: 12%  !important;
         }
         .scrolling_inner{
-            height: 4%;
+            height: 4%  !important;
         }
         .content{
-            height: 27%;
+            height: 27% !important;
         }
 
         .show-more{
-            height: 2%;
+            height: 2% ;
         }
 
         .show-more span{
