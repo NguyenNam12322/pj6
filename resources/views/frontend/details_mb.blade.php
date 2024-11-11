@@ -42,6 +42,28 @@
             height: 100%;
         }
 
+        .box01{
+            height: 10%;
+        }
+        .scrolling_inner{
+            height: 4%;
+        }
+        .pay{
+            height: 19%;
+        }
+        .view-all-salient_fratured{
+            height: 1%;
+        }
+        .box_pro-benefit{
+            height: 12%;
+        }
+        .scrolling_inner{
+            height: 4%;
+        }
+        .content{
+            height: 27%;
+        }
+
 
 
         .img-main{
@@ -340,6 +362,14 @@
 
             .box01{
                 height: 264px;
+            }
+
+            .box_left{
+                height: 86%;
+            }
+
+            .box_right{
+                height: 14%;
             }
             body{
                 height: 3228px;
@@ -1420,7 +1450,7 @@
                 <span>Đọc thêm</span>
             </div>
 
-            <div class="related view-more-related viewer-product"></div>
+           
             <div class="col-md-8 clearfix" id="comment_pro">
                 <div id="article-comment-213"  >
                     <?php 
