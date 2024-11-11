@@ -102,12 +102,12 @@
         }
 
         .li-home{
-            width: 56px;
+            width: 20%;
         }
 
         
         .li-child{
-            width: 281px;
+            width: 80%;
         }
 
         .detail h1{
