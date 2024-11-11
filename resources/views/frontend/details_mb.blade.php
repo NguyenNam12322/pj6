@@ -38,9 +38,11 @@
         .nk-menu{
             display: none;
         }
-        .span16 .row-fluid {
+        .nk-header ._nk_main, .span16 .row-fluid {
             height: 100%;
         }
+
+
 
         .img-main{
             width: 100%;
