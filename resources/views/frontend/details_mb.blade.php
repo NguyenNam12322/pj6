@@ -147,6 +147,7 @@
             height: 7%  !important;
         }
         .scrolling_inner{
+            width: 100%;
             height: 4% !important;
         }
         .pay{
