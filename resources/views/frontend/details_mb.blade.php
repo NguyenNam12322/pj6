@@ -29,8 +29,12 @@
         height: 100%;
         width: 100%;
     }
-    .div-carts-on, .share-button{
-        height: 30% !important;
+    .div-carts-on, {
+        height: 47% !important;
+    }
+
+    .share-button{
+        height: 50%;
     }
 
     
