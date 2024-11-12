@@ -626,6 +626,8 @@
 
             .pdetail-status{
                 height: 80%;
+                width: 100%;
+                max-width: 600px;
             }
 
             .box-select-price{
