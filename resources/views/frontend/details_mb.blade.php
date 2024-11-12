@@ -24,7 +24,7 @@
     .items-h{
         max-width: 600px !important;
     }
-    
+
 
     .show-price-mobile{
         height: 100%;
@@ -61,6 +61,7 @@
             max-width: 335px !important;
             height: 80%;
             width: auto;
+            display: inline;
 
         }
         
