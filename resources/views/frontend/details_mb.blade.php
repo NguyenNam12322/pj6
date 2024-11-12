@@ -29,10 +29,7 @@
         height: 100%;
         width: 100%;
     }
-    .div-carts-on, {
-        height: 50% !important;
-        background: #e11b1e !important;
-    }
+    
 
     .share-button{
         height: 50%;
@@ -54,7 +51,10 @@
     }
 
      @media only screen and (max-width: 600px) {
-
+        .div-carts-on, {
+            height: 50% !important;
+            background: #e11b1e !important;
+        }
 
         #carousel, .box01 .owl-carousel .owl-item, .box01 .owl-carousel .owl-item img:not(.monopoly-label) {
             max-width: 335px !important;
