@@ -31,7 +31,7 @@
     }
     .div-carts-on, {
         height: 50% !important;
-        background: #e11b1e;
+        background: #e11b1e !important;
     }
 
     .share-button{
