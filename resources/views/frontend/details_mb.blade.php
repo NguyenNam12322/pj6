@@ -980,9 +980,9 @@
                         $image_product = strstr(basename($data->Image), '_');
                     ?>
                     <div class="item img-main image-container">
-                        <a href="{{ asset('uploads/product/1731128406_may-giat-invert_main_371_1020.png_with_bgc.png') }}" data-fancybox="gallery">
+                        <a href="uploads/product/1731128406_may-giat-invert_main_371_1020.png_with_bgc.png" data-fancybox="gallery">
                            
-                            <img src="{{ asset('public/images/template/may-giat-invert_main_bgc.webp') }}" class="items-h lazy-image">
+                            <img src="{{ asset('public/images/template/may-giat-invert_main_bgc.webp') }}" data-src="uploads/product/1731128406_may-giat-invert_main_371_1020.png_with_bgc.png" class="items-h lazy-image">
                            
                         </a>
                         
@@ -2925,7 +2925,7 @@
 
 
     function lazyLoadImage() {
-            const containers = document.querySelectorAll('.image-containers');
+            const containers = document.querySelectorAll('.image-container');
 
             containers.forEach(container => {
                 const img = container.querySelector('.lazy-image');
