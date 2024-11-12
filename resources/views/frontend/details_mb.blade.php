@@ -154,7 +154,7 @@
         }
 
         .pdetail-add-to-cart{
-            height: 74%;
+            height: 66%;
             width: 100%;
             margin:0;
         }
