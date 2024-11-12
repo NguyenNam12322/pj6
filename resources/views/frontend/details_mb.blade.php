@@ -692,9 +692,9 @@
                 height: 79px;
                 margin-left: 96px;
             }
-            .pdetail-info, .pdetail-stockavailable{
+           .pdetail-stockavailable{
                 text-align: left;
-/*                display: none;*/
+                display: none;
             }
 
             .p1{
