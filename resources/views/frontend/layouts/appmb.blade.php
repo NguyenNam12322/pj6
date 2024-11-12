@@ -541,6 +541,10 @@
                 overflow-x: hidden;
             }*/
 
+            .box_main{
+                height: 3000px;
+            }
+
             .icons-shopings{
                 position: fixed;
                 top: 50%;

@@ -553,7 +553,7 @@
             }
 
             .tygh-top-panel{
-                height: 4%;
+                height: 130px;
             }
             .box_pro-benefit{
                 height: 313px;
