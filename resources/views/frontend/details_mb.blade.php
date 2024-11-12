@@ -1146,11 +1146,11 @@
             <div class="pay mobile">
 
                 @if($mobile ==1)
-                <div class="title-mb">
-                    
-                    <span >{{ $data->Name }}</span>
                 
-                </div>
+                    
+                <span >{{ $data->Name }}</span>
+                
+                
                 @endif 
                 
                 <div class="pdetail-info">
