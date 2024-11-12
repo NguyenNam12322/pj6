@@ -535,7 +535,7 @@
             }
 
             .scroll-box{
-                height: 54%;
+                height: 50%;
             }
 
             .pdetail-price{
