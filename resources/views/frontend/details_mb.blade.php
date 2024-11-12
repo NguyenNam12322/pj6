@@ -1168,7 +1168,7 @@
                         @if($data->Quantily>-1)
                         <div class="pdetail-price-box show-price-mobile">
                             {!! @$text !!}
-                            <h3> {{ str_replace(',' ,'.', number_format($data->Price)) }} ₫</h3>
+                            <span> {{ str_replace(',' ,'.', number_format($data->Price)) }} ₫</span>
                         </div>
 
 
