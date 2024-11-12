@@ -24,9 +24,13 @@
         overflow: hidden;
     }
     .items-h{
-            max-width: 600px !important;
+        max-width: 600px !important;
+    }
 
-        }
+    .show-price-mobile{
+        height: 100%;
+        width: 100%;
+    }
 
     
      @media (min-width: 1200px) {
