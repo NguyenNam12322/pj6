@@ -1051,7 +1051,7 @@
 
     @endif
 
-    <div class="box_main">
+    
         <div class="box01">
                 
             <div class="owl-carousel detail-slider" id="carousel">
@@ -1119,8 +1119,7 @@
                 @endforeach
 
                 @endif
-            </div>
-           
+            </div>       
         </div>
 
         <div class="scrolling_inner mobile">
@@ -1149,7 +1148,7 @@
             </div>
         </div>
         
-    </div>
+    
 
 
 
