@@ -56,9 +56,14 @@
             background: #e11b1e !important;
         }
 
+        #carousel{
+            margin: 0 auto;
+
+        }
+
         #carousel, .box01 .owl-carousel .owl-item, .box01 .owl-carousel .owl-item img:not(.monopoly-label) {
             max-width: 335px !important;
-            height: 80%;
+           
             width: auto;
 
         }
