@@ -85,6 +85,10 @@
 
     }
 
+     #carousel, .box01 .owl-carousel .owl-item, .box01 .owl-carousel .owl-item img:not(.monopoly-label){
+        display: inline !important;
+     }
+
      @media only screen and (max-width: 600px) {
         .div-carts-on{
             height: 50% !important;
@@ -98,6 +102,7 @@
 
         #carousel, .box01 .owl-carousel .owl-item, .box01 .owl-carousel .owl-item img:not(.monopoly-label) {
             max-width: 335px !important;
+            
            
             width: auto;
 
