@@ -1056,7 +1056,7 @@
                 ?>
                 <div class="item img-main image-containers">
 
-                    <img src="{{ asset('/public/images/template/may-giat-invert_main_bgc2.webp') }}" alt="{{ @$data->Name }}" loading="lazy" width="220px" height="220px">
+                    <img src="{{ asset('uploads/product/1731128406_may-giat-invert_main_371_1020.png_with_bgc.png') }}" alt="{{ @$data->Name }}" loading="lazy" width="220px" height="220px">
                     
                     @if($data->id>4720)
 
