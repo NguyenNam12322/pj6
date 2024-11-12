@@ -46,8 +46,8 @@
         }
 
         .items-h{
-            width: 100% !important;       
-            height: 100% !important;
+            width: 220px !important;       
+            height: 220px !important;
         }
         .nk-menu{
             display: none;
@@ -117,6 +117,7 @@
             width: 100%;
             height: 100%;
             max-width: 600px;
+            max-height: 300px;
             padding: 0 !important;
         }
 
