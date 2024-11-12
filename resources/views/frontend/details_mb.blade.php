@@ -543,7 +543,7 @@
                 height: 14%;
             }
             body{
-                display: inline;
+                height: 3228px;
             }
             .scrolling_inner{
                 height: 107px;
@@ -589,12 +589,8 @@
                 height: 98%;
                 margin: 0;
             }
-            div{
-                display: inline !important;
-            }
 
             .pay{
-                display: inline;
                 width: 100%;
                 
             }
