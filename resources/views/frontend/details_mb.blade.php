@@ -51,7 +51,7 @@
     }
 
      @media only screen and (max-width: 600px) {
-        .div-carts-on, {
+        .div-carts-on{
             height: 50% !important;
             background: #e11b1e !important;
         }
