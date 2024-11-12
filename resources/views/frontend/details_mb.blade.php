@@ -30,7 +30,7 @@
         width: 100%;
     }
     .div-carts-on, {
-        height: 47% !important;
+        height: 50% !important;
     }
 
     .share-button{
@@ -47,7 +47,7 @@
     }
     .carts-on{
         max-width: 600px;
-        height: 100%;
+        height: 90%;
         margin: 0;
 
     }
@@ -586,6 +586,7 @@
             .share-button .redirectCart{
                 width: 49%;
                 border: 0;
+                margin: 0;
             } 
 
             .share-button .right-cart{
