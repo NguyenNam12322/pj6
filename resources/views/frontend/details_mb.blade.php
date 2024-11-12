@@ -32,7 +32,7 @@
         width: 100%;
     }
     .div-carts-on, .share-button{
-        height: 50%;
+        height: 50% !important;
     }
 
     
