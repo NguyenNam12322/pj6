@@ -117,7 +117,10 @@
         .nk-header ._nk_main, .span16 .row-fluid {
             height: 100%;
         }
-
+        .redirectCart{
+            height: 46px;
+            padding: 0;
+        }
         
 
         .box01{
