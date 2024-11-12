@@ -577,7 +577,7 @@
 
             .scroll-box{
                 height: 50%;
-                display: none;
+               
             }
 
             .pdetail-price{
