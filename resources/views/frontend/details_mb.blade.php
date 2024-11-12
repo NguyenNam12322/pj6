@@ -30,7 +30,7 @@
         width: 100%;
     }
     .div-carts-on, .share-button{
-        height: 50% !important;
+        height: 30% !important;
     }
 
     
@@ -146,7 +146,7 @@
             height: 4% !important;
         }
         .pay{
-            height: 15%;
+            height: 13%;
         }
 
         .pdetail-add-to-cart{
