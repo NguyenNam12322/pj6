@@ -31,6 +31,9 @@
         height: 100%;
         width: 100%;
     }
+    .div-carts-on, .share-button{
+        height: 50%;
+    }
 
     
      @media (min-width: 1200px) {
@@ -1307,7 +1310,7 @@
                                 <!-- <div class="product-quantity">
                                     <input type="text" class="quantity-field" readonly="readonly" name="qty" value="1">
                                     </div> -->
-                                <div class="redirectCart">
+                                <div class="redirectCart div-carts-on">
                                     <button type="button" class="btn-add-cart carts-on" onclick="addToCart({{ $data->id }})"><span>MUA NGAY</span> <br>
                                         <span>(Giao hàng tận nơi - Giá tốt - An toàn)</span></button>
                                 </div>    
