@@ -130,6 +130,10 @@
         .pay{
             height: 17%;
         }
+
+        .pdetail-add-to-cart{
+            height: 70%;
+        }
         .view-all-salient_fratured{
             height: 1%  !important;
         }
