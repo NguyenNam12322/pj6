@@ -543,7 +543,7 @@
                 height: 14%;
             }
             body{
-                height: 3228px;
+                display: inline;
             }
             .scrolling_inner{
                 height: 107px;
