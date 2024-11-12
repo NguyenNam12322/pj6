@@ -116,7 +116,7 @@
             width: 100%;
             max-width: 600px;
             font-size: 12px;
-            margin: 0;
+            
         }
         .inline{
             height: 100%;
