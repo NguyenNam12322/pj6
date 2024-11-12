@@ -556,7 +556,7 @@
             }
 
             .pdetail-price{
-                height: 20%;
+                height: 26%;
             }
 
             .breadcrumb{
@@ -654,7 +654,7 @@
             } 
 
             .pdetail-status{
-                height: 80%;
+                height: 74%;
                 width: 100%;
                 max-width: 600px;
             }
