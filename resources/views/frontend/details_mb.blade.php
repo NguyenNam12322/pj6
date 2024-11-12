@@ -567,11 +567,13 @@
             }
 
             .pdetail-info{
-                height: 64px;    
+                height: 64px; 
+                display: none;   
             }
 
             .scroll-box{
                 height: 50%;
+                display: none;
             }
 
             .pdetail-price{
@@ -686,7 +688,7 @@
             }
             .pdetail-info, .pdetail-stockavailable{
                 text-align: left;
-                display: block;
+                display: none;
             }
 
             .p1{
