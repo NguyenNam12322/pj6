@@ -981,11 +981,7 @@
                         $image_product = strstr(basename($data->Image), '_');
                     ?>
                     <div class="item img-main image-containers">
-                        <a href="uploads/product/1731128406_may-giat-invert_main_371_1020.png_with_bgc.png" data-fancybox="gallery">
-                           
-                            <img src="{{ asset('public/images/template/may-giat-invert_main.webp') }}"  >
-                           
-                        </a>
+                        
                         
                        
                         @if($data->id>4720)
