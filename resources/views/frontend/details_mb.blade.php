@@ -573,7 +573,7 @@
 
             .pdetail-info{
                 height: 64px; 
-                display: none;   
+/*                display: none;   */
             }
 
             .scroll-box{
