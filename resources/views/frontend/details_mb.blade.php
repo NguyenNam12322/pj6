@@ -2611,7 +2611,7 @@
         dots:false,
         autoWidth: false,
         loop:true,
-        autoplayTimeout: 250,
+        autoplayTimeout: 1050,
        
         dotsEach:1,
 
