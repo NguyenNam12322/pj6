@@ -53,6 +53,9 @@
             background-color: #f0f0f0; /* Placeholder color */
             overflow: hidden;
         }
+        .pdetail-stockavailable{
+            height: 8%;
+        }
 
         /* Loading spinner */
         .image-container::before {
@@ -509,7 +512,11 @@
             }
 
             .scroll-box{
-                height: 291px;
+                height: 54%;
+            }
+
+            .pdetail-price{
+                height: 18%;
             }
 
             .breadcrumb{
@@ -603,8 +610,12 @@
             }   */
 
             .pdetail-price-box{
-                height: auto !important;
+                height: 100%;
             } 
+
+            .pdetail-status{
+                height: 80%;
+            }
 
             .box-select-price{
                 height: 79px;
