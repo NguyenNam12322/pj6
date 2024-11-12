@@ -136,6 +136,10 @@
                 padding: 0 !important;
             }
 
+            .breadcrumb li a{
+                display: inline;
+            }
+
 
         </style>
 

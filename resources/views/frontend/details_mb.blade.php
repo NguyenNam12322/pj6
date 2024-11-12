@@ -24,6 +24,7 @@
     .items-h{
         max-width: 600px !important;
     }
+    
 
     .show-price-mobile{
         height: 100%;
