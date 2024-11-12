@@ -44,6 +44,17 @@
             max-width: 600px !important;
 
         }
+        .blur-up {
+  filter: blur(10px);
+  transition: filter 0.3s ease, opacity 0.3s ease;
+  opacity: 0.6;
+}
+
+/* Sau khi tải xong, bỏ mờ */
+.lazyloaded.blur-up {
+  filter: blur(0);
+  opacity: 1;
+}
 
         .items-h{
             width: 220px !important;       
@@ -925,7 +936,7 @@
                     <div class="item img-main image-container">
                         <a href="{{ asset('uploads/product/1731128406_may-giat-invert_main_371_1020.png_with_bgc.png') }}" data-fancybox="gallery">
                            
-                            <img src="{{ asset('uploads/product/1731128406_may-giat-invert_main_371_1020.png_with_bgc.png') }}" class="items-h">
+                            <img src="{{ asset('uploads/product/1731128406_may-giat-invert_main_371_1020.png_with_bgc.png') }}" class="items-h lazyload blur-up">
                            
                         </a>
                         
