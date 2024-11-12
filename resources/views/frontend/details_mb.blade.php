@@ -214,8 +214,7 @@
 
 
         .img-main{
-            width: 50%;
-            height: 50%;
+           
             max-width: 600px;
 /*            max-height: 300px;*/
             padding: 0 !important;
