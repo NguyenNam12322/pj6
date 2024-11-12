@@ -20,9 +20,7 @@
         text-transform: uppercase;
     }    
 
-    .pdetail-status{
-        overflow: hidden;
-    }
+    
     .items-h{
         max-width: 600px !important;
     }
@@ -1158,8 +1156,6 @@
                     </div>
                     <!-- <div class="discount"><p class="installment">Trả góp 0%</p></div> -->
                     <div class="pdetail-status">
-                        
-                      
 
                         @if(!empty($data->promotion))
 
