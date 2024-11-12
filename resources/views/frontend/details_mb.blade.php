@@ -121,7 +121,9 @@
             height: 46px;
             padding: 0;
         }
-        
+        .inline{
+            height: 100%;
+        }
 
         .box01{
             max-width: 600px;
