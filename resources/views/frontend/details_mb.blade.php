@@ -42,7 +42,7 @@
 
         #carousel, .box01 .owl-carousel .owl-item, .box01 .owl-carousel .owl-item img:not(.monopoly-label) {
             max-width: 335px !important;
-            height: 50%;
+            height: 100%;
             width: auto;
 
         }
@@ -1014,13 +1014,7 @@
                         $image_product = strstr(basename($data->Image), '_');
                     ?>
                     <div class="item img-main image-containers">
-                        <a href="uploads/product/1731128406_may-giat-invert_main_371_1020.png_with_bgc.png" data-fancybox="gallery">
-                           
-                            <img src="{{ asset('public/images/template/may-giat-invert_main.png') }}"  >
-                           
-                        </a>
                         
-                       
                         @if($data->id>4720)
 
                         @if(!empty($logoSaker->maker))
