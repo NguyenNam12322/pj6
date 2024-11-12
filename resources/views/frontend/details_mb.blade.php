@@ -206,6 +206,11 @@
             height: 93%;
         }
 
+        .title-mb h2{
+            width: 80%;
+            margin: 0 auto;
+        }
+
 
 
         .img-main{
