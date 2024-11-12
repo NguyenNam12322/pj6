@@ -583,7 +583,7 @@
             .breadcrumb{
                 
                 margin: 0;
-                height:20px;
+                height:34px;
                 width: 100%;
                 padding: 0;
             }
