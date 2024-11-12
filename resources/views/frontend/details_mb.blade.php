@@ -1149,7 +1149,7 @@
         </div>
     </div>
 
-    <div class="pay mobile">
+    <div class="pay">
 
         @if($mobile ==1)
         <span >{{ $data->Name }}</span>
