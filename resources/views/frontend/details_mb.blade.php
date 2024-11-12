@@ -23,7 +23,24 @@
 
     .redirectCart {
         text-transform: uppercase;
-    } 
+    }
+
+    .breadcrumb{
+                
+        margin: 0;
+        height:34px;
+        width: 100%;
+        padding: 0;
+    }
+
+    .li-home {
+        width: 20%;
+    }
+
+    .li-child{
+        width: 80%;
+    }
+
     .pay{
             height: 300px;
         }  
@@ -592,13 +609,7 @@
                 height: 26%;
             }
 
-            .breadcrumb{
-                
-                margin: 0;
-                height:34px;
-                width: 100%;
-                padding: 0;
-            }
+            
 
             .box_main{
                 height: 3000px;
