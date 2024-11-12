@@ -21,8 +21,13 @@
     } 
     .pay{
             height: 300px;
-        }   
+        }  
 
+
+     .pdetail-stockavailable, .scroll-box{
+                
+                display: none;
+            }    
     
     .items-h{
         max-width: 600px !important;
@@ -692,10 +697,7 @@
                 height: 79px;
                 margin-left: 96px;
             }
-           .pdetail-stockavailable{
-                text-align: left;
-                display: none;
-            }
+          
 
             .p1{
                 margin-right: 15px;
