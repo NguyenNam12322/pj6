@@ -1011,7 +1011,7 @@
                     ?>
                     <div class="item img-main image-containers">
 
-                        <img src="{{ asset('/public/images/template/logo4.webp') }}" alt="{{ @$data->Name }}" loading="lazy" width="220px" height="220px">
+                        <img src="{{ asset('/public/images/template/may-giat-invert_main_bgc2.webp') }}" alt="{{ @$data->Name }}" loading="lazy" width="220px" height="220px">
                         
                         @if($data->id>4720)
 
