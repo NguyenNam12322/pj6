@@ -99,14 +99,6 @@
         }
 
 
-
-
-
-
-
-
-
-
         /*.items-h{
             width: 220px !important;       
             height: 220px !important;
@@ -1018,6 +1010,8 @@
                         $image_product = strstr(basename($data->Image), '_');
                     ?>
                     <div class="item img-main image-containers">
+
+                        <img src="https://www.w3schools.com/tags/img_orange_flowers.jpg" alt="{{ @$data->Name }}" loading="lazy" width="220px" height="220px">
                         
                         @if($data->id>4720)
 
