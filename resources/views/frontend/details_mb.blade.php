@@ -982,7 +982,7 @@
                     <div class="item img-main image-container">
                         <a href="{{ asset('uploads/product/1731128406_may-giat-invert_main_371_1020.png_with_bgc.png') }}" data-fancybox="gallery">
                            
-                            <img data-src="{{ asset('uploads/product/1731128406_may-giat-invert_main_371_1020.png_with_bgc.png') }}" class="items-h lazy-image">
+                            <img src="{{ asset('uploads/product/1731128406_may-giat-invert_main_371_1020.png_with_bgc.png') }}" class="items-h lazy-image">
                            
                         </a>
                         
