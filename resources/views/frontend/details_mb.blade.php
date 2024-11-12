@@ -45,7 +45,7 @@
     }
     .carts-on{
         max-width: 600px;
-        height: 90%;
+/*        height: 90%;*/
         margin: 0;
 
     }
@@ -260,7 +260,7 @@
         .btn-add-cart{
             padding: 0!important;
             margin: 0 auto;
-            width: 60% !important;
+            
            
         }
 
