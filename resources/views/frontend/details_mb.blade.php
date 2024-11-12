@@ -158,6 +158,10 @@
             width: 100%;
             margin:0;
         }
+
+        .scrolling{
+            height: 100%;
+        }
         .view-all-salient_fratured{
             height: 1%  !important;
         }
