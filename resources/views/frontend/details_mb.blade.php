@@ -86,10 +86,6 @@
     }
 
      #carousel, .box01 .owl-carousel .owl-item, .box01 .owl-carousel .owl-item img:not(.monopoly-label){
-         max-width: 335px !important;
-            
-           
-            width: 220px;
         display: inline !important;
      }
 
@@ -104,7 +100,10 @@
 
         }
 
-     
+        #carousel, .box01 .owl-carousel .owl-item, .box01 .owl-carousel .owl-item img:not(.monopoly-label) {
+            max-width: 335px !important;
+            
+        }
         
          .image-container {
             position: relative;
