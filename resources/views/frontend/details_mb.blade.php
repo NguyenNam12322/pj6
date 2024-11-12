@@ -195,6 +195,10 @@
             padding: 0 !important;
         }
 
+        .box01__tab .item{
+            width: 16%;
+        }
+
         .li-home{
             width: 20%;
         }
@@ -477,7 +481,7 @@
                 background-size: 330px 330px;
             }
 
-            .tygh-top-panel, .box_main, .box_left, .scrolling_inner, .box01, .view-more-related, .view-all-salient_fratured, .box_pro-benefit{
+            .scroll-box, .pdetail-price,.tygh-top-panel, .box_main, .box_left, .scrolling_inner, .box01, .view-more-related, .view-all-salient_fratured, .box_pro-benefit{
                 width: 100%;
             }
 
