@@ -250,7 +250,7 @@
         }
 
         .pdetail-status{
-            margin-top:20px;
+           
             width: 100%;
         }
     }
@@ -539,7 +539,7 @@
             }
 
             .pdetail-price{
-                height: 18%;
+                height: 20%;
             }
 
             .breadcrumb{
@@ -1859,7 +1859,7 @@
             height: 69px;
         }*/
         .pdetail-price-box{
-            height: 74%;
+            height: 100%;
         }
     </style>
 
