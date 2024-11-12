@@ -235,7 +235,7 @@
 
         .btn-add-cart{
             padding: 0!important;
-            font-size: unset !important;
+           
         }
 
        
