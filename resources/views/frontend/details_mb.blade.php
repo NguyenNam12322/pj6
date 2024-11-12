@@ -87,6 +87,8 @@
 
      #img-main{
         display: inline !important;
+        width: 220px;
+        height: 220px;
      }
 
      @media only screen and (max-width: 600px) {
