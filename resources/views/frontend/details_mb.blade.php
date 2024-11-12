@@ -233,6 +233,11 @@
             height: 48px;
         }
 
+        .btn-add-cart{
+            padding: 0!important;
+            font-size: unset !important;
+        }
+
        
 
         .post-sidebar-img img{
@@ -269,10 +274,7 @@
             height: 100%;
         }
 
-        .btn-add-cart{
-            padding: 0!important;
-            font-size: unset !important;
-        }
+
 
         .list_specifications{
             display: none;
