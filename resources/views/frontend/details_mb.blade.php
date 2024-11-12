@@ -2956,7 +2956,22 @@
 
               }, 1000);
         }
-    @endif  
+    @endif
+
+    if ('caches' in window) {
+        caches.match('https://muasamtaikho.vn/public/images/template/may-giat-invert_main.png').then(function(response) {
+            if (response) {
+                // response.blob().then(function(blob) {
+                //     let img = document.createElement('img');
+                //     img.src = URL.createObjectURL(blob);
+                //     document.body.appendChild(img);
+                // });
+                console.log('có tồn tại');
+            } else {
+                console.log('Không tìm thấy ảnh trong cache.');
+            }
+        });
+    }  
 
 
     function lazyLoadImage() {
