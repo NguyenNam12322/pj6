@@ -127,6 +127,10 @@
                 min-height: 200px;
             }
 
+            .breadcrumb span{
+                width: 20px;
+            }
+
 
         </style>
 
