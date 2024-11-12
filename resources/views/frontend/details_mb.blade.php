@@ -1323,7 +1323,7 @@
                                 </div> -->
                             <div class="redirectCart div-carts-on">
                                 <div type="button" class="btn-add-cart carts-on" onclick="addToCart({{ $data->id }})">MUA NGAY <br>
-                                    (Giao hàng tận nơi - Giá tốt - An toàn)</div>
+                                    </div>
                             </div>    
                             
 
