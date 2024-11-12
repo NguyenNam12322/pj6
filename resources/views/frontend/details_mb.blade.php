@@ -18,7 +18,10 @@
 
     .redirectCart {
         text-transform: uppercase;
-    }    
+    } 
+    .pay{
+            height: 300px;
+        }   
 
     
     .items-h{
@@ -156,9 +159,7 @@
             width: 100%;
             height: 110px !important;
         }
-        .pay{
-            height: 300px;
-        }
+        
 
         .pdetail-add-to-cart{
             height: 66%;
