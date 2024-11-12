@@ -116,6 +116,7 @@
             width: 100%;
             max-width: 600px;
             font-size: 12px;
+            margin: 0;
         }
         .inline{
             height: 100%;
@@ -139,6 +140,7 @@
         .pdetail-add-to-cart{
             height: 70%;
             width: 100%;
+            margin:0;
         }
         .view-all-salient_fratured{
             height: 1%  !important;
