@@ -573,7 +573,7 @@
 
             .pdetail-info{
                 height: 64px; 
-                display: none;   
+                
             }
 
             .scroll-box{
@@ -694,7 +694,7 @@
             }
             .pdetail-info, .pdetail-stockavailable{
                 text-align: left;
-                display: none;
+               
             }
 
             .p1{
