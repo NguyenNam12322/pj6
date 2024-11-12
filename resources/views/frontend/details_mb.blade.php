@@ -1322,8 +1322,8 @@
                                 <input type="text" class="quantity-field" readonly="readonly" name="qty" value="1">
                                 </div> -->
                             <div class="redirectCart div-carts-on">
-                                <button type="button" class="btn-add-cart carts-on" onclick="addToCart({{ $data->id }})">MUA NGAY <br>
-                                    (Giao hàng tận nơi - Giá tốt - An toàn)</button>
+                                <div type="button" class="btn-add-cart carts-on" onclick="addToCart({{ $data->id }})">MUA NGAY <br>
+                                    (Giao hàng tận nơi - Giá tốt - An toàn)</div>
                             </div>    
                             
 
