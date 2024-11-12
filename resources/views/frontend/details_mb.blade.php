@@ -145,7 +145,7 @@
 
         .box01{
             max-width: 600px;
-            height: 7%  !important;
+            height: 300px;
         }
         .scrolling_inner{
             width: 100%;
