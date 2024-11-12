@@ -1276,7 +1276,7 @@
 
                         @endif
 
-                        <a href="tel:02473036336"><div class="buy-button-hotline nhapnhay btn">Gọi 0123.456.789 để được giảm thêm</div></a>
+                        <!-- <a href="tel:02473036336"><div class="buy-button-hotline nhapnhay btn">Gọi 0123.456.789 để được giảm thêm</div></a> -->
 
 
                         <div class="pdetail-add-to-cart add-to-cart">
