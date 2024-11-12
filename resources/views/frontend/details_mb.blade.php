@@ -1032,7 +1032,7 @@
     
 
 
-    @if($mobile ==1)
+    
 
     <ul class="breadcrumb">
         
@@ -1052,7 +1052,7 @@
     </ul>
    
 
-    @endif
+    
 
     
     <div class="box01">
