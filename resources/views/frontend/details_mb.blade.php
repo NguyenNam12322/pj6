@@ -140,6 +140,7 @@
 
         .pdetail-add-to-cart{
             height: 70%;
+            width: 100%;
         }
         .view-all-salient_fratured{
             height: 1%  !important;
@@ -241,6 +242,7 @@
 
         .pdetail-status{
             margin-top:20px;
+            width: 100%;
         }
     }
     @media only screen and (min-width: 601px) {
