@@ -591,6 +591,7 @@
             }
 
             .pay{
+                display: inline;
                 width: 100%;
                 
             }
