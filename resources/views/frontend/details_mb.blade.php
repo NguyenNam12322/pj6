@@ -115,7 +115,7 @@
             height: 100%;
         }
         .redirectCart{
-            height: 46px;
+            height: 54px;
             padding: 0;
             width: 100%;
             max-width: 600px;
@@ -266,6 +266,7 @@
         .btn-add-carts{
             margin: 0 !important;
             width: 100% !important;
+            height: 100%;
         }
 
         .list_specifications{
