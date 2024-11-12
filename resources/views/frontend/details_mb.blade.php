@@ -4,6 +4,11 @@
 
     <style>
 
+     .box01 img{
+        width: 220px;
+        height: 220px !important;
+    }    
+
     .productSpecification_table .popup{
         display: block !important;
     }   
@@ -315,10 +320,7 @@
         .list_specifications{
             display: none;
         }
-        .box01 img{
-            width: 100%;
-            height: 300px !important;
-        }
+       
 
         .box-info-name h1{
             width: 100%;
