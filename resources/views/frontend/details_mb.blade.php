@@ -1300,25 +1300,25 @@
 
 
                         <div class="pdetail-add-to-cart add-to-cart">
-                            <div class="inline">
-                                <input type="hidden" name="productId" value="{{ $data->id }}">
-                                <input type="hidden" name="gift_checked"  id="gift_checked" value="">
-                                <!-- <div class="product-quantity">
-                                    <input type="text" class="quantity-field" readonly="readonly" name="qty" value="1">
-                                    </div> -->
-                                <div class="redirectCart div-carts-on">
-                                    <button type="button" class="btn-add-cart carts-on" onclick="addToCart({{ $data->id }})"><span>MUA NGAY</span> <br>
-                                        <span>(Giao hàng tận nơi - Giá tốt - An toàn)</span></button>
-                                </div>    
-                                
+                           
+                            <input type="hidden" name="productId" value="{{ $data->id }}">
+                            <input type="hidden" name="gift_checked"  id="gift_checked" value="">
+                            <!-- <div class="product-quantity">
+                                <input type="text" class="quantity-field" readonly="readonly" name="qty" value="1">
+                                </div> -->
+                            <div class="redirectCart div-carts-on">
+                                <button type="button" class="btn-add-cart carts-on" onclick="addToCart({{ $data->id }})"><span>MUA NGAY</span> <br>
+                                    <span>(Giao hàng tận nơi - Giá tốt - An toàn)</span></button>
+                            </div>    
+                            
 
-                                <div class="share-button">
-                                     <button type="button" class="btn-add-cart redirectCart cartSP" onclick="addToSuport(2221)">GỌI LẠI CHO TÔI <br>(Tư vấn tận tình)</button>
+                            <div class="share-button">
+                                 <button type="button" class="btn-add-cart redirectCart cartSP" onclick="addToSuport(2221)">GỌI LẠI CHO TÔI <br>(Tư vấn tận tình)</button>
 
-                                    <button type="button" class="btn-add-cart  redirectCart cartSP right-cart" onclick="addToSuport(2221)">TRẢ GÓP QUA THẺ <br></button>
-                                </div>
-                               
+                                <button type="button" class="btn-add-cart  redirectCart cartSP right-cart" onclick="addToSuport(2221)">TRẢ GÓP QUA THẺ <br></button>
                             </div>
+                               
+                            
                             <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
                                 Launch demo modal
                                 </button> -->
