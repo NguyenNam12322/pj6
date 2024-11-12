@@ -146,7 +146,7 @@
             height: 4% !important;
         }
         .pay{
-            height: 13%;
+            height: 15%;
         }
 
         .pdetail-add-to-cart{
