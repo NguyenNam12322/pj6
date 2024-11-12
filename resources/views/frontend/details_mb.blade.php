@@ -43,6 +43,7 @@
     .carts-on{
         max-width: 600px;
         height: 100%;
+        margin: 0;
 
     }
 
@@ -148,7 +149,7 @@
         }
 
         .pdetail-add-to-cart{
-            height: 70%;
+            height: 100%;
             width: 100%;
             margin:0;
         }
