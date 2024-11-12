@@ -541,7 +541,7 @@
                 height: 14%;
             }
             body{
-                height: auto;
+                height: 3228px;
             }
             .scrolling_inner{
                 height: 107px;
