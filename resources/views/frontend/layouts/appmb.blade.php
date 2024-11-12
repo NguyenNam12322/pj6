@@ -461,7 +461,7 @@
                     cursor: pointer;
                     position: absolute;
                     top: 0;
-                    right: 0;
+                    right: 10px;
                     border-top-right-radius: .9em;
                     border-bottom-right-radius: .9em;
                     outline: none;
