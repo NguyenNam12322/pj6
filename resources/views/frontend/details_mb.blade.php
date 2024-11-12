@@ -154,7 +154,7 @@
         }
         .scrolling_inner{
             width: 100%;
-            height: 4% !important;
+            height: 110px !important;
         }
         .pay{
             height: 300px;
