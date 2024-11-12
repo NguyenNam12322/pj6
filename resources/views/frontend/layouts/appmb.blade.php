@@ -545,6 +545,10 @@
                 height: 3000px;
             }
 
+            .box_left, .box_right{
+                display: none;
+            }
+
             .icons-shopings{
                 position: fixed;
                 top: 50%;
