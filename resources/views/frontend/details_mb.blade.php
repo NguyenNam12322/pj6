@@ -1302,14 +1302,14 @@
                                     <input type="text" class="quantity-field" readonly="readonly" name="qty" value="1">
                                     </div> -->
                                 <div class="redirectCart">
-                                    <button type="button" class=" btn-add-cart btn-add-cart" onclick="addToCart({{ $data->id }})">MUA NGAY <br>(Giao hàng tận nơi - Giá tốt - An toàn)</button>
+                                    <button type="button" class=" btn-add-cart" onclick="addToCart({{ $data->id }})">MUA NGAY <br>(Giao hàng tận nơi - Giá tốt - An toàn)</button>
                                 </div>    
                                 
 
                                 <div class="share-button">
-                                     <button type="button" class="btn-add-cart btn-add-cart redirectCart cartSP" onclick="addToSuport(2221)">GỌI LẠI CHO TÔI <br>(Tư vấn tận tình)</button>
+                                     <button type="button" class="btn-add-cart redirectCart cartSP" onclick="addToSuport(2221)">GỌI LẠI CHO TÔI <br>(Tư vấn tận tình)</button>
 
-                                    <button type="button" class="btn-add-cart btn-add-cart redirectCart cartSP right-cart" onclick="addToSuport(2221)">TRẢ GÓP QUA THẺ <br></button>
+                                    <button type="button" class="btn-add-cart  redirectCart cartSP right-cart" onclick="addToSuport(2221)">TRẢ GÓP QUA THẺ <br></button>
                                 </div>
                                
                             </div>
