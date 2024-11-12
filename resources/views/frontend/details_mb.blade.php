@@ -1379,7 +1379,7 @@
                         <div class="modal-body">
                             <div id="tbl_list_carts" style="text-align: center;">
                                 <div class="cart_col_1">
-                                    <a href="{{  route('details', $data->Link)}}"><img src="{{ asset($data->Image) }}" style="width: 85px;"></a>
+                                    <a href="{{  route('details', $data->Link)}}"><img src="{{ asset($data->Image) }}" style="width: 85px;" loading="lazy"></a>
                                    
                                 </div>
                                 <div class="cart_col_2">
