@@ -129,6 +129,10 @@
             height: 100%;
         }
 
+        .owl-stage{
+            height: 100%;
+        }
+
         .box01{
             max-width: 600px;
             height: 7%  !important;
