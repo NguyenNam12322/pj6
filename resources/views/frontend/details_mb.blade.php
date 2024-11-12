@@ -44,17 +44,63 @@
             max-width: 600px !important;
 
         }
-        .blur-up {
-  filter: blur(10px);
-  transition: filter 0.3s ease, opacity 0.3s ease;
-  opacity: 0.6;
-}
+        
+         .image-container {
+            position: relative;
+            width: 300px;
+            height: 200px;
+            background-color: #f0f0f0; /* Placeholder color */
+            overflow: hidden;
+        }
 
-/* Sau khi tải xong, bỏ mờ */
-.lazyloaded.blur-up {
-  filter: blur(0);
-  opacity: 1;
-}
+        /* Loading spinner */
+        .image-container::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 40px;
+            height: 40px;
+            border: 5px solid #ccc;
+            border-top-color: #333;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            transform: translate(-50%, -50%);
+        }
+
+        /* Image styles */
+        .lazy-image {
+            opacity: 0;
+            transition: opacity 1s ease-in;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Image fade-in effect when loaded */
+        .lazy-image.loaded {
+            opacity: 1;
+        }
+
+        /* Hide the spinner after the image loads */
+        .image-container.loaded::before {
+            display: none;
+        }
+
+        /* Keyframes for the spinner animation */
+        @keyframes spin {
+            0% { transform: translate(-50%, -50%) rotate(0deg); }
+            100% { transform: translate(-50%, -50%) rotate(360deg); }
+        }
+
+
+
+
+
+
+
+
+
 
         .items-h{
             width: 220px !important;       
@@ -2878,29 +2924,29 @@
     @endif  
 
 
-    // function lazyLoadImage() {
-    //         const containers = document.querySelectorAll('.image-container');
+    function lazyLoadImage() {
+            const containers = document.querySelectorAll('.image-container');
 
-    //         containers.forEach(container => {
-    //             const img = container.querySelector('.lazy-image');
-    //             const src = img.getAttribute('data-src');
+            containers.forEach(container => {
+                const img = container.querySelector('.lazy-image');
+                const src = img.getAttribute('data-src');
                 
-    //             if (src) {
-    //                 img.src = src; // Start loading the actual image
+                if (src) {
+                    img.src = src; // Start loading the actual image
 
-    //                 // Add loaded class to image and container once the image is fully loaded
-    //                 img.onload = () => {
-    //                     img.classList.add('loaded');
-    //                     container.classList.add('loaded'); // Hide loading spinner
-    //                 };
+                    // Add loaded class to image and container once the image is fully loaded
+                    img.onload = () => {
+                        img.classList.add('loaded');
+                        container.classList.add('loaded'); // Hide loading spinner
+                    };
 
-    //                 img.removeAttribute('data-src'); // Remove data-src after setting src
-    //             }
-    //         });
-    //     }
+                    img.removeAttribute('data-src'); // Remove data-src after setting src
+                }
+            });
+        }
 
-    //     // Set delay (e.g., 3 seconds) before lazy loading
-    //     setTimeout(lazyLoadImage, 2800);
+        // Set delay (e.g., 3 seconds) before lazy loading
+        setTimeout(lazyLoadImage, 2000);
     
 </script>
 @endpush
