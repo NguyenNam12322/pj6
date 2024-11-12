@@ -484,6 +484,7 @@
             .img-main a{
                 display: block;
                 height: 100%;
+                max-width: 335px;
             }
 
             .box01{
