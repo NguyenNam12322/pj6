@@ -129,6 +129,7 @@
 
             .breadcrumb span{
                 width: 20px;
+                padding: 0 !important;
             }
 
 
