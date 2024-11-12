@@ -20,6 +20,10 @@
         text-transform: uppercase;
     }    
 
+    .title-fix{
+        width: 60%;
+    }
+
     
     .items-h{
         max-width: 600px !important;
@@ -1147,8 +1151,10 @@
 
                 @if($mobile ==1)
                 <div class="title-mb">
+                    <div class="title-fix">
+                        <span>{{ $data->Name }}</span>
+                    </div>
                     
-                    <span>{{ $data->Name }}</span>
                 
                 </div>
                 @endif 
