@@ -128,7 +128,7 @@
             height: 4% !important;
         }
         .pay{
-            height: 19%;
+            height: 17%;
         }
         .view-all-salient_fratured{
             height: 1%  !important;
