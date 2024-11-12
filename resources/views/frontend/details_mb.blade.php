@@ -1148,7 +1148,7 @@
                 @if($mobile ==1)
                 <div class="title-mb">
                     
-                    <p style="width: 50%">{{ $data->Name }}</p>
+                    <p >xcdfgfdgdf</p>
                 
                 </div>
                 @endif 
