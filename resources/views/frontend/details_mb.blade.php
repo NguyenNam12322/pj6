@@ -40,10 +40,14 @@
      @media only screen and (max-width: 600px) {
 
 
-        #carousel, .box01 .owl-carousel .owl-item, .box01 .owl-carousel .owl-item img:not(.monopoly-label) {
+         .box01 .owl-carousel .owl-item, .box01 .owl-carousel .owl-item img:not(.monopoly-label) {
             max-width: 335px !important;
             height: auto;
 
+        }
+
+        #carousel{
+            height: 100%;
         }
         
          .image-container {
