@@ -589,6 +589,9 @@
                 height: 98%;
                 margin: 0;
             }
+            div{
+                display: inline !important;
+            }
 
             .pay{
                 display: inline;
