@@ -78,6 +78,10 @@
                 max-width: 33.33%;
             }
 
+            .breadcrumb span{
+                display: contents !important;
+            }
+
             .m .nk-main-content-checkout .nk-tra-gop-bang-the-tin-dung .item-content ul li img {
                 object-fit: cover;
             }
