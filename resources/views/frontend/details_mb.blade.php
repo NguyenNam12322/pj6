@@ -120,6 +120,8 @@
         .redirectCart{
             height: 46px;
             padding: 0;
+            width: 100%;
+            max-width: 100%;
         }
         .inline{
             height: 100%;
