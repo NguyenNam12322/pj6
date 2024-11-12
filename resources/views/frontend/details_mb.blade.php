@@ -441,7 +441,7 @@
 
         .monopoly_item ul li {
             width: 49%;
-            padding: 11px 0;
+            height: 48px;
         }
 
         .price{
