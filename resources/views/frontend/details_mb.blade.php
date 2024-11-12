@@ -589,7 +589,7 @@
             }
 
             .box_main{
-                height: 98%;
+                height: 3000px;
                 margin: 0;
             }
 

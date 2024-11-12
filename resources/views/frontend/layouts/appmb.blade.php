@@ -541,9 +541,9 @@
                 overflow-x: hidden;
             }*/
 
-            .box_main{
+            /*.box_main{
                 height: 3000px;
-            }
+            }*/
 
             .box_left, .box_right{
                 display: none;
