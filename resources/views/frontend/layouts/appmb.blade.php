@@ -388,7 +388,7 @@
                 }
 
                 .logo-mobile img{
-                    min-width: 100%;
+                    max-width: 167px;
 
                 }
 
