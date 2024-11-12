@@ -37,6 +37,10 @@
     .share-button{
         height: 50%;
     }
+    .scrolling_inner{
+            width: 100%;
+            height: 110px !important;
+        }
 
     
      @media (min-width: 1200px) {
@@ -46,6 +50,7 @@
 
 
     }
+
     .carts-on{
         max-width: 600px;
 /*        height: 90%;*/
@@ -155,10 +160,7 @@
             max-width: 600px;
             height: 300px;
         }
-        .scrolling_inner{
-            width: 100%;
-            height: 110px !important;
-        }
+        
         
 
         .pdetail-add-to-cart{
