@@ -1155,7 +1155,7 @@
                         @endif
                     </div>
                     <!-- <div class="discount"><p class="installment">Trả góp 0%</p></div> -->
-                    <div class="pdetail-status">
+                   
 
                         @if(!empty($data->promotion))
 
@@ -1345,7 +1345,7 @@
                            
                         </div>
                         @endif
-                    </div>
+                   
 
                     
                     
