@@ -31,6 +31,7 @@
     }
     .div-carts-on, {
         height: 50% !important;
+        background: #e11b1e;
     }
 
     .share-button{
@@ -253,6 +254,8 @@
 
         .btn-add-cart{
             padding: 0!important;
+            margin: 0 auto;
+            width: 60% !important;
            
         }
 
