@@ -152,7 +152,7 @@
             height: 4% !important;
         }
         .pay{
-            height: 13%;
+            height: 300px;
         }
 
         .pdetail-add-to-cart{
@@ -591,6 +591,7 @@
             }
 
             .pay{
+                max-width: 600px;
                 width: 100%;
                 
             }
