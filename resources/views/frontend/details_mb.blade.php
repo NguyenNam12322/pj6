@@ -41,7 +41,7 @@
 
 
         #carousel, .box01 .owl-carousel .owl-item, .box01 .owl-carousel .owl-item img:not(.monopoly-label) {
-            max-width: 600px !important;
+            max-width: 335px !important;
 
         }
         
@@ -2925,7 +2925,7 @@
 
 
     function lazyLoadImage() {
-            const containers = document.querySelectorAll('.image-container');
+            const containers = document.querySelectorAll('.image-containers');
 
             containers.forEach(container => {
                 const img = container.querySelector('.lazy-image');
