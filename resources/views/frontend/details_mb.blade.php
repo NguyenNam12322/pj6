@@ -122,7 +122,7 @@
 
         .box01{
             max-width: 600px;
-            height: 10%  !important;
+            height: 7%  !important;
         }
         .scrolling_inner{
             height: 4% !important;
