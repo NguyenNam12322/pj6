@@ -269,6 +269,10 @@
             height: 100%;
         }
 
+        .btn-add-cart{
+            padding: 0!important;
+        }
+
         .list_specifications{
             display: none;
         }
