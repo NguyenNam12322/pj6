@@ -178,9 +178,7 @@
         .box_pro-benefit{
             height: 12%  !important;
         }
-        .scrolling_inner{
-            height: 4%  !important;
-        }
+       
         .content{
             height: 27% !important;
         }
