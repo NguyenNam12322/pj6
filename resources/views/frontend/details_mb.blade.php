@@ -42,7 +42,7 @@
 
         #carousel, .box01 .owl-carousel .owl-item, .box01 .owl-carousel .owl-item img:not(.monopoly-label) {
             max-width: 335px !important;
-            height: auto;
+            height: 100%;
 
         }
         
@@ -130,7 +130,7 @@
 
         .box01{
             max-width: 600px;
-            height: 7%  !important;
+            height: 5%  !important;
         }
         .scrolling_inner{
             height: 4% !important;
