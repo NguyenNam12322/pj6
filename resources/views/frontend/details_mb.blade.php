@@ -542,6 +542,7 @@
             }
             body{
                 max-width: 600px;
+                width: 100%;
                 height: auto;
             }
             .scrolling_inner{
