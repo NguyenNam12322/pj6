@@ -694,7 +694,7 @@
             }
             .pdetail-info, .pdetail-stockavailable{
                 text-align: left;
-                display: none;
+/*                display: none;*/
             }
 
             .p1{
