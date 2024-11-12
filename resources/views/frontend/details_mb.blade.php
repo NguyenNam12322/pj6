@@ -1293,7 +1293,10 @@
                                 <!-- <div class="product-quantity">
                                     <input type="text" class="quantity-field" readonly="readonly" name="qty" value="1">
                                     </div> -->
-                                <button type="button" class=" btn-add-cart btn-add-cart redirectCart" onclick="addToCart({{ $data->id }})">MUA NGAY <br>(Giao hàng tận nơi - Giá tốt - An toàn)</button>
+                                <div class="redirectCart">
+                                    <button type="button" class=" btn-add-cart btn-add-cart" onclick="addToCart({{ $data->id }})">MUA NGAY <br>(Giao hàng tận nơi - Giá tốt - An toàn)</button>
+                                </div>    
+                                
 
                                 <div class="share-button">
                                      <button type="button" class="btn-add-cart btn-add-cart redirectCart cartSP" onclick="addToSuport(2221)">GỌI LẠI CHO TÔI <br>(Tư vấn tận tình)</button>
