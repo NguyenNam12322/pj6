@@ -979,10 +979,10 @@
                     <?php 
                         $image_product = strstr(basename($data->Image), '_');
                     ?>
-                    <div class="item img-main image-container">
+                    <div class="item img-main image-containers">
                         <a href="uploads/product/1731128406_may-giat-invert_main_371_1020.png_with_bgc.png" data-fancybox="gallery">
                            
-                            <img src="{{ asset('public/images/template/may-giat-invert_main_bgc.webp') }}" data-src="{{ asset('uploads/product/1731128406_may-giat-invert_main_371_1020.png_with_bgc.png') }}" class="items-h lazy-image" width="220px" height="220px">
+                            <img src="{{ asset('public/images/template/may-giat-invert_main_.png') }}"  width="220px" height="220px">
                            
                         </a>
                         
@@ -2607,11 +2607,11 @@
     $('#carousel').owlCarousel({
         margin:10,
         nav:false,
-        autoplay:true,
+        autoplay:false,
         dots:false,
         autoWidth: false,
         loop:true,
-        autoplayTimeout: 1050,
+       
        
         dotsEach:1,
 
