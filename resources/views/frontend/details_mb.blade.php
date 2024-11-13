@@ -10,7 +10,7 @@
     }  
 
     .div-carts-on{
-        height: 50% !important;
+       
         background: #e11b1e !important;
     }  
 
