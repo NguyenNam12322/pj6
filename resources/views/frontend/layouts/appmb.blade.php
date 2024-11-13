@@ -210,6 +210,13 @@
                 width: 77%;
             }
 
+             #nk-cart ul{
+                    padding: 0;
+                    width: 100%;
+                    position: relative;
+                    display: flex;
+                }
+
             .hotlines{
                 position:fixed; 
                 z-index:9999
@@ -400,12 +407,7 @@
                     height: 100%;
                 }
 
-                 #nk-cart ul{
-                    padding: 0;
-                    width: 100%;
-                    position: relative;
-                    display: flex;
-                }
+                
 
                 .box_left{
                     padding: 0;
