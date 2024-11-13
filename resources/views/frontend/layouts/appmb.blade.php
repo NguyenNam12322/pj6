@@ -69,6 +69,9 @@
                
                 display: flex;
             }
+            section{
+                display: inline;
+            }
 
              #nk-cart ul{
                 margin-top: 20px;

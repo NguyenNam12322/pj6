@@ -56,7 +56,7 @@
         height: 54px;
         padding: 0;
         width: 100%;
-        max-width: 600px;
+        
         font-size: 12px;
         font-weight: normal;
 
@@ -101,7 +101,7 @@
 
     body{
         display: inline;
-        max-width: 600px;
+        
         width: 100%;
         height: auto;
     }
@@ -132,7 +132,7 @@
         height:34px;
         width: 100%;
         padding: 0;
-        max-width: 600px;
+        
     }
 
     .pdetail-add-to-cart{
@@ -149,7 +149,7 @@
     }
 
     .pay{
-        max-width: 600px;
+        
         height: 320px;
         display: block;
     }  
@@ -175,7 +175,7 @@
     }
     .scrolling_inner{
 
-        max-width: 600px;
+        
         width: 100%;
         height: 110px !important;
     }
@@ -194,13 +194,13 @@
         }
 
     .box01{
-        max-width: 600px;
+        
       
        
     }
 
     .carts-on{
-        max-width: 600px;
+        
         height: 46px;
         margin: 0;
 
@@ -359,7 +359,7 @@
 
         .img-main{
            
-            max-width: 600px;
+            
 /*            max-height: 300px;*/
             padding: 0 !important;
         }
@@ -674,7 +674,7 @@
             .pdetail-status{
                 height: 74%;
                 width: 100%;
-                max-width: 600px;
+                
             }
 
             .box-select-price{
