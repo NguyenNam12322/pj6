@@ -375,11 +375,7 @@
             padding: 0 !important;
         }
 
-        .box01__tab .item{
-            width: 16%;
-           
-        }
-
+       
        
         .detail h1{
             padding: 0 !important;
