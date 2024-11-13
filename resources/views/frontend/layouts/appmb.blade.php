@@ -213,6 +213,13 @@
             .danh-muc1, .danh-muc2{
                 left: 0px !important;
             } 
+
+             .div-header-cart{
+                            width: 100%;
+                            display: flex;
+                            height: 67px;
+                        }
+
             .d .nk-header #nk-cart{
                 width: 77%;
             }
@@ -481,6 +488,10 @@
                     position: fixed;
                     z-index: 9999;
                 } 
+                 .div-header-cart{
+                            height: 100%;
+                        }
+
 
                 .re-call{
                     right: 0;
@@ -1073,10 +1084,7 @@
 
                         
 
-                        .div-header-cart{
-                            height: 100%;
-                        }
-
+                       
                         .position-fixed .share-button{
 
                             left: 0;
@@ -1215,12 +1223,7 @@
 
                        
 
-                        .div-header-cart{
-                            width: 100%;
-                            display: flex;
-                            height: 67px;
-                        }
-
+                       
                         
 
                     }
