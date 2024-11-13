@@ -32,7 +32,14 @@
         padding: 0;
     }
 
-    
+    .box01{
+        height: 222px;
+    }
+
+    #carousel{
+        height: 100%;
+    }
+
 
 
     body{
