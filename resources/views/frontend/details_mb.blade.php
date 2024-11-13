@@ -25,6 +25,13 @@
         text-transform: uppercase;
     }
 
+    .pdetail-price-box span{
+        font-size: 30px !important;
+        font-weight: 600 !important;
+        color: #c5232b;
+        
+    }
+
     .breadcrumb{
                 
         margin: 0;
