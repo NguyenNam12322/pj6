@@ -31,6 +31,7 @@
         height: auto;
     }
 
+
     .pdetail-price-box span{
         font-size: 30px !important;
         font-weight: 600 !important;
@@ -102,6 +103,10 @@
 
 
     }
+
+     .breadcrumb li{
+            height: 100%;
+        }
 
     .box01{
         max-width: 600px;
@@ -283,13 +288,7 @@
             height: 100%;
         }
 
-        .li-home{
-            width: 20%;
-        }
-
-        
-      
-
+       
         .detail h1{
             padding: 0 !important;
             margin: 0 !important;
@@ -304,9 +303,7 @@
             padding: 0;
         }
 
-        .breadcrumb li{
-            height: 100%;
-        }
+       
 
         .title-mb{
             height: 48px;
