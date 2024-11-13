@@ -71,8 +71,15 @@
             }
 
              #nk-cart ul{
-                    margin-top: 20px;
-                }
+                margin-top: 20px;
+            }
+            .logo-mobile img{
+                max-width: 167px;
+
+            }
+
+
+
             #nk-cart{
                     width: 55%;
                 }
@@ -316,6 +323,19 @@
                     margin-bottom: 5px;
                     font-size: 15px;
                 }
+                .logo-mobile{
+                            width: 167px;
+                            height: 61px;
+                        }
+
+                        /*.logo-mobile img{
+                            width: 100%;
+                        }*/
+
+                        .logo-mobile a{
+                            display: block;
+                            height: 100%;
+                        }
 
                 .hotline.position-fixed {
                     bottom: 21%;
@@ -429,11 +449,7 @@
                     margin: 0;
                 }
 
-                .logo-mobile img{
-                    max-width: 167px;
-
-                }
-
+                
                 .nki-Phone, .nki-menu{
                     width: 100%;
                     height: 100%
@@ -1055,19 +1071,7 @@
                             height: 130px;
                         }
 
-                        .logo-mobile{
-                            width: 167px;
-                            height: 61px;
-                        }
-
-                        /*.logo-mobile img{
-                            width: 100%;
-                        }*/
-
-                        .logo-mobile a{
-                            display: block;
-                            height: 100%;
-                        }
+                        
 
                         .div-header-cart{
                             height: 100%;
