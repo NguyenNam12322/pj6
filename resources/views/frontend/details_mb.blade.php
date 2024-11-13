@@ -302,7 +302,7 @@
 
         .box01__tab .item{
             width: 16%;
-            height: 100%;
+           
         }
 
        
