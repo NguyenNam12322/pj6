@@ -81,6 +81,7 @@
         height: 50%;
     }
     .scrolling_inner{
+        display: none;
         max-width: 600px;
         width: 100%;
         height: 110px !important;
