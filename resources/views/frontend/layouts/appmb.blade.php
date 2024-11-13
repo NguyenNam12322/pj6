@@ -1304,7 +1304,7 @@
                 <!-- header -->
                           
             
-                <div class="row-fluid mobile row-head">
+                <div class="row-fluid row-head">
                     <div class="span16 nk-header">
                         <div class="fluid">
                             <div class="span16 _nk_main">
