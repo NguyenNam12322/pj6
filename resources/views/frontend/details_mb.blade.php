@@ -91,6 +91,11 @@
 
     }
 
+    .box01{
+        max-width: 600px;
+       
+    }
+
     .carts-on{
         max-width: 600px;
 /*        height: 90%;*/
@@ -200,10 +205,7 @@
             height: 100%;
         }
 
-        .box01{
-            max-width: 600px;
-            height: 300px;
-        }
+       
         
 
         .scrolling{
@@ -560,9 +562,7 @@
                 max-width: 335px;
             }
 
-            .box01{
-                height: 264px;
-            }
+          
 
             .box_left{
                 height: 86%;
