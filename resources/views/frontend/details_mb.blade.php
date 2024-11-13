@@ -17,8 +17,8 @@
         width: 100%;
         display: flex;
     }
-    .pay{
-        display: none !important;
+    .scrolling_inner, #carousel{
+        display: none;
     }
     .tygh-top-panel{
                 height: 130px;
