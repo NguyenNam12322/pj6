@@ -69,6 +69,24 @@
                
                 display: flex;
             }
+
+             #nk-cart ul{
+                    margin-top: 20px;
+                }
+            #nk-cart{
+                    width: 55%;
+                }
+
+                .nk-header #nk-cart ul li{
+                    width: 35% !important;
+                    line-height: 31px;
+                }
+
+                .nk-header #nk-cart ul li a{
+                    font-size: 17px;
+                    line-height: 31px;
+                    width: 100%;
+                }
             .lp-menu ul {
                 display: inline-block;
             }
@@ -188,6 +206,9 @@
             .danh-muc1, .danh-muc2{
                 left: 0px !important;
             } 
+            .d .nk-header #nk-cart{
+                width: 77%;
+            }
 
             .hotlines{
                 position:fixed; 
@@ -379,6 +400,13 @@
                     height: 100%;
                 }
 
+                 #nk-cart ul{
+                    padding: 0;
+                    width: 100%;
+                    position: relative;
+                    display: flex;
+                }
+
                 .box_left{
                     padding: 0;
                 }
@@ -409,18 +437,14 @@
                     height: 100%
                 }
 
-                 #nk-cart ul{
-                    margin-top: 20px;
-                }
+                
 
                 .nki-Phone:before, .nki-menu{
                     font-size: 24px;
                     color: #fff;
                 }
 
-                #nk-cart{
-                    width: 55%;
-                }
+                
 
                 .sugests-li{
                     display: flex;
@@ -1015,16 +1039,7 @@
                             font-size: 24px;
                         }
 
-                        .nk-header #nk-cart ul li{
-                            width: 35% !important;
-                            line-height: 31px;
-                        }
-
-                        .nk-header #nk-cart ul li a{
-                            font-size: 17px;
-                            line-height: 31px;
-                            width: 100%;
-                        }
+                       
                         .fluid{
                             min-height: 100%;
                         }
@@ -1061,12 +1076,7 @@
                             left: 0;
                         }
 
-                         #nk-cart ul{
-                            padding: 0;
-                            width: 100%;
-                            position: relative;
-                            display: flex;
-                        }
+                        
 
                          .flexthis .row-fluid{
                             display: block !important; 
@@ -1205,9 +1215,7 @@
                             height: 67px;
                         }
 
-                        .d .nk-header #nk-cart{
-                            width: 77%;
-                        }
+                        
 
                     }
 
