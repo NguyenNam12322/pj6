@@ -77,7 +77,7 @@
 
     .pdetail-add-to-cart{
         
-        height: 153px;
+        
         width: 100%;
         margin:0;
     }
