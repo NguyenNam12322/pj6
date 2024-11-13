@@ -17,9 +17,9 @@
         width: 100%;
         display: flex;
     }
-    .scrolling_inner, #carousel{
+    /*.scrolling_inner, #carousel{
         display: none !important;
-    }
+    }*/
     .tygh-top-panel{
                 height: 130px;
             }
