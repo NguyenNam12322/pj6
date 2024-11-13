@@ -70,9 +70,7 @@
                 display: flex;
             }
 
-            .box01, .scrolling_inner{
-                display: none;
-            }
+            
             section{
                 display: inline;
             }
