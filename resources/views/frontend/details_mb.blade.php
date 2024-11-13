@@ -5,8 +5,8 @@
     <style>
 
      .box01 img{
-        width: 100% !important;
-        height: auto !important;
+        width: 220px;
+        height: 220px !important;
     }    
 
     .productSpecification_table .popup{
