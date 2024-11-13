@@ -212,7 +212,7 @@
         height: 220px;
      }
 
-    @media only screen and (max-width: 600px) {
+   
         
 
         #carousel{
@@ -399,65 +399,8 @@
            
             width: 100%;
         }
-    }
-    @media only screen and (min-width: 601px) {
-        .productSpecification_table{
-            display: none;
-        }
-
-        .cartSPs{
-            background: orange;
-        }
-
-        .btn-add-carts{
-            margin: 0 !important;
-            width: 100% !important;
-            height: 100%;
-        }
-
-
-
-        .list_specifications{
-            display: none;
-        }
-       
-
-        .box-info-name h1{
-            width: 100%;
-        }
-
-      /*  .box-info-name{
-            height: 20px !important;
-        }*/
-
-        .box-compare{
-            height: 30px !imporant;
-        }
-        hr{
-            margin: 0;
-        }
-
-        .crazy-deal-details pc{
-            height: 38px;
-        }
-
-        .post-sidebar-img img{
-            width: 100%;
-            
-        }
-
-        .pdetail-installment{
-            height: 150px !important;
-        }
-       
-
-        .box01, .box01__show{
-            margin-bottom: 0 !important;
-        }
-        /*h3 a{
-            font-size: 16px !important;
-        }*/
-    }   
+   
+    
 
     
                 
