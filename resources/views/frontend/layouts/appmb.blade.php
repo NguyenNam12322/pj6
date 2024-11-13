@@ -104,6 +104,10 @@
             .m .custom-dot-carousel.trang-chu.active {
                 min-height: auto;
             }
+
+            .show-menu{
+                display: none;
+            }
         </style>
 
         <style type="text/css">
