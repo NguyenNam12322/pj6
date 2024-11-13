@@ -89,7 +89,7 @@
 
 
     .box01{
-        height: 222px;
+        height: 278px;
     }
 
     #carousel{
