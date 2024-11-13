@@ -4,7 +4,7 @@
 
     $icon_define = ['nki-menu-television', 'nki-menu-fridge', 'nki-menu-air-conditioner icon-new', 'nki-menu-washer', 'nki-menu-television','nki-menu-television','nki-menu-television','nki-menu-television','nki-menu-television'];
 ?>
-<div class="row-fluid ">
+<div class="row-fluid nk-menu-div">
     <div class="span16 nk-menu">
         <div class="row-fluid ">
             <div class="span16 container">

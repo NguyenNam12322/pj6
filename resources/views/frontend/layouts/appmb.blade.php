@@ -108,6 +108,9 @@
             .show-menu{
                 display: none;
             }
+            .nk-menu-div{
+                display: none;
+            }
         </style>
 
         <style type="text/css">
