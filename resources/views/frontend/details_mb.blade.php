@@ -33,6 +33,12 @@
         padding: 0;
     }
 
+    .pdetail-add-to-cart{
+        height: 100px;
+        width: 100%;
+        margin:0;
+    }
+
     .li-home {
         width: 20%;
     }
@@ -48,7 +54,7 @@
 
      .pdetail-stockavailable, .scroll-box{
                 
-                display: none;
+                display: block;
             }    
     
     .items-h{
@@ -192,13 +198,6 @@
             height: 300px;
         }
         
-        
-
-        .pdetail-add-to-cart{
-            height: 66%;
-            width: 100%;
-            margin:0;
-        }
 
         .scrolling{
             height: 100%;
@@ -606,7 +605,7 @@
 
             .scroll-box{
                 height: 50%;
-                display: none;
+               
             }
 
             .pdetail-price{
