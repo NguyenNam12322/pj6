@@ -53,7 +53,7 @@
     }
 
     .li-child{
-        width: 354px;
+        width: 270px;
     }
 
     .pay{
