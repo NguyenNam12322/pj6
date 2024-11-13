@@ -81,7 +81,7 @@
         height: 50%;
     }
     .scrolling_inner{
-       
+
         max-width: 600px;
         width: 100%;
         height: 110px !important;
@@ -1170,11 +1170,11 @@
         </div>
     </div>
 
-    <div class="pay">
+    <div class="clearfix"></div>
 
-        @if($mobile ==1)
+    <div class="pay">
         <span >{{ $data->Name }}</span>
-        @endif 
+        
         
         <div class="pdetail-info">
             <p class="p1">Thương hiệu: <b>{{ @$ar_groups_info[0]['name'] }}</b></p>
