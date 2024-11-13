@@ -41,6 +41,7 @@
     }
 
     .pdetail-add-to-cart{
+        display: none;
         height: 100px;
         width: 100%;
         margin:0;
