@@ -32,6 +32,16 @@
         padding: 0;
     }
 
+     .scroll-box{
+        height: 215px;
+       
+    }
+
+    .pdetail-price{
+        height: 62px;
+    }
+
+
     .box01{
         height: 222px;
     }
@@ -614,15 +624,7 @@
 /*                display: none;   */
             }
 
-            .scroll-box{
-                height: 215px;
-               
-            }
-
-            .pdetail-price{
-                height: 62px;
-            }
-
+           
             
 
             .box_main{
