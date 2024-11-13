@@ -27,9 +27,9 @@
     .scrolling, .box01 .owl-carousel .item{
         text-align: left !important;
     } 
-    .box01, .scrolling_inner {
+    /*.box01, .scrolling_inner {
         display: none;
-    }       
+    }     */  
 
     .share-button .redirectCart{
         width: 49%;
