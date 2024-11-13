@@ -70,7 +70,7 @@
                 display: flex;
             }
 
-            
+
             section{
                 display: inline;
             }
@@ -257,131 +257,7 @@
                 min-width: 300px;
             }
 
-             @media only screen and (min-width: 768px) {
-                .hotlines{
-                   
-                    bottom:93px; 
-                    right:8px; 
-                    display: none;   
-                }
-                .nk-banner-main{
-                    padding: 0 !important;
-                }
 
-                .theme-xmas.header:after {
-                content: '';
-                background-size: 90%;
-                width: 12%;
-                height: 18%;
-                position: absolute;
-                z-index: 2;
-                background-image:  url('{{ asset("images/template/header-rope-right-23.png")  }}');
-                top: 0;
-                right: 0;
-                background-repeat: no-repeat;
-            }
-
-            .theme-xmas.header:before {
-                content: '';
-                background-size: 90%;
-                width: 12%;
-                height: 18%;
-                position: absolute;
-                z-index: 2;
-                background-image: url('{{ asset("images/template/header-rope-left-23.png")  }}');
-                left: 0;
-                top: 0;
-                background-repeat: no-repeat;
-            }   
-            .header-pc{
-                height: 80px;
-            } 
-
-
-                .zalo-chat-widget{  
-/*                    bottom: 28% !important;  */
-                    right: 1%!important;  
-                }  
-
-                .hotline{
-                    width: 237px;
-                }
-
-                .hotline p{
-
-                    margin-bottom: 1em;
-                }
-                .global-compare-group{
-                    height: 300px;
-                }
-                .list-menu{
-                    margin-bottom: 0;
-                }
-
-                .submenu {
-
-                    left:240px !important;
-
-               }
-
-               .hotline{
-                    position: absolute;
-                    
-               }
-
-                a.hotline-fix {
-                    background: #FCEF41;
-                    border-radius: 7px 0px 0px 0px;
-                    margin-bottom: 5px;
-                    font-size: 15px;
-                }
-                .logo-mobile{
-                            width: 167px;
-                            height: 61px;
-                        }
-
-                        /*.logo-mobile img{
-                            width: 100%;
-                        }*/
-
-                        .logo-mobile a{
-                            display: block;
-                            height: 100%;
-                        }
-
-                .hotline.position-fixed {
-                    bottom: 21%;
-                    right: 0;
-                    padding: 0.5rem 0.3rem 0.5rem 0.8rem;
-                    border-radius: 13px 0px 0px 13px;
-                    background-color: transparent;
-                    z-index: 99;
-                    transition: 0.3s;
-                }
-
-                .hotline.position-fixed a i {
-                    width: 35px;
-                    height: 35px;
-                    border: 1px solid #002069;
-                    border-radius: 50%;
-                    text-align: center;
-                    line-height: 35px;
-                    margin-right: 10px;
-                    color: #002069;
-                }
-
-                .text-white {
-                    color: #fff!important;
-                }
-
-               /* .zalo-mobile{
-                    display: none;
-                }*/
-
-              /*  .zalo-icon{
-                    left: 73%;
-                }*/
-            }
 
             
                 .menus-banner .strongtitle {
