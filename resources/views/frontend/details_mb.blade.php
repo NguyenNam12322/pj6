@@ -18,6 +18,10 @@
                 height: 130px;
             }
 
+    .scrolling, .box01 .owl-carousel .item{
+        text-align: left !important;
+    }        
+
     .share-button .redirectCart{
         width: 49%;
         border: 0;
