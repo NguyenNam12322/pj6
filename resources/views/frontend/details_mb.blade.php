@@ -99,7 +99,7 @@
 
     .box01{
         max-width: 600px;
-        height: 345px;
+        height: 100%;
        
     }
 
