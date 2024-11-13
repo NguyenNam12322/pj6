@@ -9,7 +9,7 @@
         height: 220px !important;
     }  
     .owl-carousel .owl-item.active img{
-        with:auto !important;
+        width:auto !important;
     }
 
    
