@@ -1079,12 +1079,9 @@
 
 
                         .row-head{
-                            height: 130px;
+                            height: 67px;
                         }
 
-                        
-
-                       
                         .position-fixed .share-button{
 
                             left: 0;
@@ -1277,22 +1274,7 @@
 
         <div class="tygh-top-panel clearfix">
             <div class="container-fluid ">
-                <div class="row-fluid ">
-                    <!-- <div class="span16 nk-banner-top">
-                        <script>
-                            let _cdp365JourneySetting = {
-                                jrequest_events: [{
-                                    event_category: "pageview",
-                                    event_action: "view"
-                                }],
-                                jrequest_zones: "none"
-                            }
-                        </script>
-                        
-                                                                                                                                                                                                                                    
-                        <span class="close_top_banner">✕</span>
-                    </div> -->
-                </div>
+              
                 <!-- header -->
                           
             
