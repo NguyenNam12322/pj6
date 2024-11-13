@@ -549,7 +549,7 @@
         
 
 
-         @media only screen and (max-width: 767px) {
+      
 
             .monopoly_item ul li .icon_change, .monopoly_item ul li .icon_genuine {
                 width: 30px;
@@ -706,34 +706,9 @@
                 margin-top: 15px;
             }
        
-        }
+       
 
-        @media only screen and (min-width: 768px) {
-            .copy-button{
-
-                display: none;
-            }    
-
-            .option-price{
-                height: 30px;
-                width: 40%;
-            }
-
-            .option-price select{
-                height: 30px;
-            }
-
-            .show-price-desktop{
-                height: 30px !important;
-            }
-
-            .theme-xmas.header:before, .theme-xmas.header:after{
-                height: 90% !important;
-            }
-
-
-        }    
-
+      
         .post-sidebar-list {
             margin: 16px 0 0;
             padding: 0;
