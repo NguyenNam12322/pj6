@@ -100,6 +100,18 @@
         width: 100%;
         height: auto;
     }
+    .monopoly_item ul li {
+        list-style: none;
+        font-family: Arial, Tahoma, sans-serif;
+        font-size: 13px;
+        font-weight: 500;
+        padding: 6px 0;
+        color: #333;
+        line-height: 25px;
+        border-bottom: 1px solid #eee;
+        display: flex;
+        align-items: center;
+    }
 
 
     .pdetail-price-box span{
@@ -308,6 +320,11 @@
 
         .listproduct {
             height: 93%;
+        }
+
+        .monopoly_item ul {
+            display: block;
+            flex-wrap: wrap;
         }
 
         .owl-stage-outer{
@@ -579,18 +596,7 @@
             background-position: 1.2% 60%;
         }
 
-        .monopoly_item ul li {
-            list-style: none;
-            font-family: Arial, Tahoma, sans-serif;
-            font-size: 13px;
-            font-weight: 500;
-            padding: 6px 0;
-            color: #333;
-            line-height: 25px;
-            border-bottom: 1px solid #eee;
-            display: flex;
-            align-items: center;
-        }
+        
 
 
          @media only screen and (max-width: 767px) {
