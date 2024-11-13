@@ -18,7 +18,7 @@
         display: flex;
     }
     .pay{
-        display: none;
+        display: none !important;
     }
     .tygh-top-panel{
                 height: 130px;
