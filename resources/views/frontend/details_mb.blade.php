@@ -14,6 +14,9 @@
         width: 100%;
         display: flex;
     }
+    .tygh-top-panel{
+                height: 130px;
+            }
 
     .share-button .redirectCart{
         width: 49%;
@@ -563,6 +566,7 @@
             top: 0;
             right: 0;
         }
+
         .img-main .saker{
             max-width: 100px;
         }
@@ -640,9 +644,7 @@
                 height: 24px;
             }
 
-            .tygh-top-panel{
-                height: 130px;
-            }
+            
             
             .view-end{
                 height: 445px;
