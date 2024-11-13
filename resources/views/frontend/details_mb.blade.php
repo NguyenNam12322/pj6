@@ -75,6 +75,11 @@
        
     }
 
+    .box_pro-benefit{
+        height: 288px;
+        width: 100%;
+    }
+
     .pdetail-price{
         height: 62px;
     }
@@ -130,7 +135,7 @@
 
     .pay{
         max-width: 600px;
-        height: 300px;
+        height: 320px;
         display: block;
     }  
 
@@ -192,7 +197,7 @@
         height: 220px;
      }
 
-     @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 600px) {
         
 
         #carousel{
@@ -284,9 +289,7 @@
             height: 100%;
         }
        
-        .box_pro-benefit{
-            height: 12%  !important;
-        }
+       
        
         .content{
             height: 27% !important;
@@ -431,11 +434,9 @@
         }*/
     }   
 
-    }
+    
                 
-    .box_pro-benefit{
-        width: 100%;
-    }
+   
     .app img{
         width: 100%;
     }
