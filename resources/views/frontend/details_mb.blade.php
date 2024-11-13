@@ -21,6 +21,11 @@
         margin: 0;
     } 
 
+     .view-all-salient_fratured{
+            width: 100%;
+            height: 24px;
+        }
+
     .share-button .right-cart{
         margin-left: 10px;
         background: #ffde00;
@@ -278,9 +283,7 @@
         .scrolling{
             height: 100%;
         }
-        .view-all-salient_fratured{
-            height: 1%  !important;
-        }
+       
         .box_pro-benefit{
             height: 12%  !important;
         }
@@ -588,6 +591,7 @@
             align-items: center;
         }
 
+
          @media only screen and (max-width: 767px) {
 
             .monopoly_item ul li .icon_change, .monopoly_item ul li .icon_genuine {
@@ -600,7 +604,7 @@
                 background-size: 330px 330px;
             }
 
-            .scroll-box, .pdetail-price,.tygh-top-panel, .box_main, .box_left, .scrolling_inner, .box01, .view-more-related, .view-all-salient_fratured, .box_pro-benefit{
+            .scroll-box, .pdetail-price,.tygh-top-panel, .box_main, .box_left, .scrolling_inner, .box01, .view-more-related, .box_pro-benefit{
                 width: 100%;
             }
 
