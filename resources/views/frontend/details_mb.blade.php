@@ -176,7 +176,7 @@
 
     .carts-on{
         max-width: 600px;
-/*        height: 90%;*/
+        height: 50px;
         margin: 0;
 
     }
