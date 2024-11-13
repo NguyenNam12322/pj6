@@ -47,11 +47,11 @@
     }
 
     .li-home {
-        width: 20%;
+        width: 34px;
     }
 
     .li-child{
-        width: 80%;
+        width: 354px;
     }
 
     .pay{
