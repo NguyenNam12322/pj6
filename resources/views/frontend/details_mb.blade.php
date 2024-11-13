@@ -38,6 +38,7 @@
         height:34px;
         width: 100%;
         padding: 0;
+        max-width: 600px;
     }
 
     .pdetail-add-to-cart{
