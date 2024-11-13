@@ -57,6 +57,7 @@
     }
 
     .pay{
+            max-width: 600px;
             height: 300px;
             display: none;
         }  
@@ -622,11 +623,7 @@
                 margin: 0;
             }
 
-            .pay{
-                max-width: 600px;
-                width: 100%;
-                
-            }
+           
 
             .share-button{
                 width: 100%;
