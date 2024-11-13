@@ -63,7 +63,7 @@
     }
 
     .box-cart{
-        height: 250px;
+        height: 108px;
     }
 
     .breadcrumb li a{
@@ -134,8 +134,6 @@
     }
 
     .pdetail-add-to-cart{
-        
-        
         width: 100%;
         margin:0;
     }
