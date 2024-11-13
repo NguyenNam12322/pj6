@@ -18,7 +18,7 @@
         display: flex;
     }
     .pay{
-        display: inline;
+        display: none;
     }
     .tygh-top-panel{
                 height: 130px;
@@ -27,9 +27,7 @@
     .scrolling, .box01 .owl-carousel .item{
         text-align: left !important;
     } 
-    .pay {
-        display: none;
-    }       
+    
 
     .share-button .redirectCart{
         width: 49%;
