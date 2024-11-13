@@ -1408,14 +1408,47 @@
         </div>
             
     </div>
+    <span>Chính sách mua hàng tại MuaSamTaiKho.vn</span>
+
+    <div class="box_pro-benefit">
+        <div class="monopoly">
+            <!-- <span class="ttl"> Độc quyền tại Siêu Thị Điện Máy - Nội Thất Chợ Lớn</span> -->
+            <div class="monopoly_item">
+                <ul>
+                    <?php 
+
+                        $data_cs = DB::table('chinh_sach')->where('id', 1)->get()->first();
+                    ?>
+                    <li>
+                        <i class="icon_genuine"></i>
+                        <div class="monopoly-title">{{  $data_cs->input1 }}</div>
+                    </li>
+                    <li>
+                        <i class="icon_change"></i>
+                        <div class="monopoly-title">{{  $data_cs->input2 }} </div>
+                    </li>
+                    <li>
+                        <i class="icon_refund"></i>
+                        <div class="monopoly-title">{{  $data_cs->input3 }}</div>
+                    </li>
+                    <li>
+                        <i class="icon_guarantee_mb"></i>
+                        <div class="monopoly-title">{{  $data_cs->input4 }} </div>
+                    </li>
+                    <li>
+                        <i class="icon_delivery"></i>
+                        <div class="monopoly-title">{{  $data_cs->input5 }}</div>
+                    </li>
+                    <li>
+                        <i class="icon_thung"></i>
+                        <div class="monopoly-title">{{  $data_cs->input6 }}</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
         
     
-
-
-
-    
-    
-   
     <!--#endregion-->
     <!--#region BreadcrumbList-->
     <!--#endregion-->
