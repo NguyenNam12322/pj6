@@ -1408,8 +1408,11 @@
         </div>
             
     </div>
-    <span>Chính sách mua hàng tại MuaSamTaiKho.vn</span>
+    <div class="view-all-salient_fratured">
+        
+        <b>Chính sách mua hàng tại MuaSamTaiKho.vn</b>
 
+    </div>
     <div class="box_pro-benefit">
         <div class="monopoly">
             <!-- <span class="ttl"> Độc quyền tại Siêu Thị Điện Máy - Nội Thất Chợ Lớn</span> -->
