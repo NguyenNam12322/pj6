@@ -7,7 +7,12 @@
      .box01 img{
         width: 220px;
         height: 220px !important;
-    }    
+    }  
+
+    .div-carts-on{
+        height: 50% !important;
+        background: #e11b1e !important;
+    }  
 
     .productSpecification_table .popup{
         display: block !important;
@@ -23,6 +28,16 @@
 
     .redirectCart {
         text-transform: uppercase;
+    }
+
+    .redirectCart{
+        height: 54px;
+        padding: 0;
+        width: 100%;
+        max-width: 600px;
+        font-size: 12px;
+        font-weight: normal;
+
     }
 
     .box-cart{
@@ -159,10 +174,7 @@
      }
 
      @media only screen and (max-width: 600px) {
-        .div-carts-on{
-            height: 50% !important;
-            background: #e11b1e !important;
-        }
+        
 
         #carousel{
             margin: 0 auto;
@@ -237,15 +249,7 @@
         .nk-header ._nk_main, .span16 .row-fluid {
             height: 100%;
         }
-        .redirectCart{
-            height: 54px;
-            padding: 0;
-            width: 100%;
-            max-width: 600px;
-            font-size: 12px;
-            font-weight: normal;
-
-        }
+        
         .inline{
             height: 100%;
         }
