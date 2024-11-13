@@ -21,7 +21,7 @@
     .scrolling, .box01 .owl-carousel .item{
         text-align: left !important;
     } 
-    .box01 .owl-carousel .item{
+    .box01 {
         display: none;
     }       
 
