@@ -345,6 +345,11 @@
             width: 80%;
             margin: 0 auto;
         }
+        .monopoly_item ul li {
+                width: 100%;
+                padding: 11px 0;
+            }
+
 
 
 
@@ -578,10 +583,7 @@
             font-weight: 700;
         }
 
-        .monopoly_item ul li {
-            width: 49%;
-            height: 48px;
-        }
+       
 
         .price{
             color:#D82A20 !important
@@ -707,11 +709,7 @@
                 flex-wrap: wrap;
             }
 
-            .monopoly_item ul li {
-                width: 100%;
-                padding: 11px 0;
-            }
-
+            
             .option-price-mobile select{
                 width: 55%;
             } 
