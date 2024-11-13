@@ -32,9 +32,7 @@
         padding: 0;
     }
 
-    .tygh-top-panel{
-        display: none;
-    }
+    
 
 
     body{
