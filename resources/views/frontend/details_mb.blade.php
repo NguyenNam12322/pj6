@@ -604,7 +604,7 @@
             }
 
             .scroll-box{
-                height: 50%;
+                height: 215px;
                
             }
 
