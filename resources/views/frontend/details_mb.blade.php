@@ -9,11 +9,7 @@
         height: 220px !important;
     }  
 
-    .div-carts-on{
-       
-        background: #e11b1e !important;
-    }  
-
+   
     .share-button{
         width: 100%;
         display: flex;
