@@ -299,15 +299,7 @@
             height: 48px;
         }
 
-        .btn-add-cart{
-            padding: 0!important;
-            margin: 0 auto;
-            
-           
-        }
-
-       
-
+     
         .post-sidebar-img img{
             width: 100%;
         }  
@@ -616,7 +608,7 @@
             }
 
             .pdetail-price{
-                height: 26%;
+                height: 62px;
             }
 
             
