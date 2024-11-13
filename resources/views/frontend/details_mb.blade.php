@@ -1073,11 +1073,9 @@
             <div class="item">
                 <a href="{{ asset($image->image) }}" data-fancybox="gallery">
 
-                   <picture>
-                          <source media="(min-width:300px)" srcset="{{ asset('uploads/product/1731128406_may-giat-invert_main_371_1020.png_with_bgc.png') }}">
-                          <source media="(min-width:767px)" srcset="{{ asset('https://muasamtaikho.vn/uploads/product/may-giat-invert_main_371_1020.png.webp') }}  ">
-                          <img src="https://www.w3schools.com/tags/img_orange_flowers.jpg" alt="{{ @$data->Name }}" loading="lazy" width="220px" height="220px">
-                    </picture>
+                  
+                    <img src="{{ asset('uploads/product/1731128406_may-giat-invert_main_371_1020.png_with_bgc.png') }}" alt="{{ @$data->Name }}" loading="lazy" width="220px" height="220px">
+                    
                 </a>
                 
             </div>
