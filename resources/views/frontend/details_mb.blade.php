@@ -25,6 +25,14 @@
         text-transform: uppercase;
     }
 
+    .breadcrumb li a{
+        font-size: 12px !important;
+        width: 100%;
+        height: 100%;
+        padding: 0;
+    }
+
+
     body{
         max-width: 600px;
         width: 100%;
@@ -295,15 +303,6 @@
             height: 43px !important;
 
         }
-
-        .breadcrumb li a{
-            font-size: 12px;
-            width: 100%;
-            height: 100%;
-            padding: 0;
-        }
-
-       
 
         .title-mb{
             height: 48px;
