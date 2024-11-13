@@ -81,10 +81,10 @@
     }
 
     .pay{
-            max-width: 600px;
-            height: 300px;
-            display: none;
-        }  
+        max-width: 600px;
+        height: 300px;
+        display: block;
+    }  
 
 
      .pdetail-stockavailable, .scroll-box{
