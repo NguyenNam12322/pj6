@@ -100,6 +100,7 @@
 
 
     body{
+        display: inline;
         max-width: 600px;
         width: 100%;
         height: auto;
