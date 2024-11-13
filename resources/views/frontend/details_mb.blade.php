@@ -58,7 +58,7 @@
 
     .pay{
             height: 300px;
-            display: none;
+            display: block;
         }  
 
 
