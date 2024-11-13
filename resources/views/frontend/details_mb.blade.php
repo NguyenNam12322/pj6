@@ -32,6 +32,10 @@
         padding: 0;
     }
 
+    .tygh-top-panel .row-fluid{
+        display: none;
+    }
+
 
     body{
         max-width: 600px;
