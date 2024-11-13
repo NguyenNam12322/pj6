@@ -25,6 +25,10 @@
         text-transform: uppercase;
     }
 
+    .box-cart{
+        height: 250px;
+    }
+
     .breadcrumb li a{
         font-size: 12px !important;
         width: 100%;
@@ -1348,7 +1352,7 @@
                 <!-- <a href="tel:02473036336"><div class="buy-button-hotline nhapnhay btn">Gọi 0123.456.789 để được giảm thêm</div></a> -->
 
 
-                <div class="pdetail-add-to-cart add-to-cart">
+                <div class="pdetail-add-to-cart add-to-cart box-cart">
                    
                     <input type="hidden" name="productId" value="{{ $data->id }}">
                     <input type="hidden" name="gift_checked"  id="gift_checked" value="">
