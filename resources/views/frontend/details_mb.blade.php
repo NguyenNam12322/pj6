@@ -25,6 +25,12 @@
         text-transform: uppercase;
     }
 
+    body{
+        max-width: 600px;
+        width: 100%;
+        height: auto;
+    }
+
     .pdetail-price-box span{
         font-size: 30px !important;
         font-weight: 600 !important;
@@ -576,11 +582,7 @@
             .box_right{
                 height: 14%;
             }
-            body{
-                max-width: 600px;
-                width: 100%;
-                height: auto;
-            }
+           
             .scrolling_inner{
                 height: 107px;
             }
