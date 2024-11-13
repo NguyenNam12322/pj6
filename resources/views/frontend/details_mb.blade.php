@@ -32,7 +32,7 @@
         padding: 0;
     }
 
-    .tygh-top-panel .row-fluid{
+    .tygh-top-panel{
         display: none;
     }
 
