@@ -14,6 +14,24 @@
         background: #e11b1e !important;
     }  
 
+    .share-button{
+        width: 100%;
+        display: flex;
+    }
+
+    .share-button .redirectCart{
+        width: 49%;
+        border: 0;
+        margin: 0;
+    } 
+
+    .share-button .right-cart{
+        margin-left: 10px;
+        background: #ffde00;
+        color: #000;
+        border: 0;
+    }
+
     .productSpecification_table .popup{
         display: block !important;
     }   
@@ -642,23 +660,7 @@
 
            
 
-            .share-button{
-                width: 100%;
-                display: flex;
-            }
-
-            .share-button .redirectCart{
-                width: 49%;
-                border: 0;
-                margin: 0;
-            } 
-
-            .share-button .right-cart{
-                margin-left: 10px;
-                background: #ffde00;
-                color: #000;
-                border: 0;
-            }
+            
 
             .monopoly_item ul li .icon_refund {
                 width: 30px;
