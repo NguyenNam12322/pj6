@@ -635,9 +635,7 @@
             .tygh-top-panel{
                 height: 130px;
             }
-            .box_pro-benefit{
-                height: 313px;
-            }
+            
             .view-end{
                 height: 445px;
             }
