@@ -76,8 +76,8 @@
     }
 
     .pdetail-add-to-cart{
-        display: none;
-        height: 100px;
+        
+        height: 153px;
         width: 100%;
         margin:0;
     }
