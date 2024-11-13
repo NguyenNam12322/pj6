@@ -215,10 +215,10 @@
             } 
 
              .div-header-cart{
-                            width: 100%;
-                            display: flex;
-                            height: 67px;
-                        }
+                width: 100%;
+                display: flex;
+                height: 67px;
+            }
 
             .d .nk-header #nk-cart{
                 width: 77%;
@@ -1055,7 +1055,7 @@
                      }
 
                     
-                    @media only screen and (max-width: 600px) {
+                  
                         
 
                         .search_center{
@@ -1221,40 +1221,8 @@
 
                         }
 
-                       
 
-                       
-                        
-
-                    }
-
-                 @media only screen and (min-width: 601px) {
-                    .mobile{
-                        display: none;
-                    }
-
-                    .nk-danh-muc-trang-chu h3 b{
-                        color: #000;
-                    }
-
-                    .nk-nav-right .row-fluid{
-                        padding: 24px 0;
-                    }
-
-                    .fas-phones{
-                        border: 0;
-                    }
-
-                    .search-order{
-                        width: 47% !important;
-                    }
-
-                    .wrap-grid-menu-right{
-                        background:linear-gradient(0deg,#d1a94e,#fdf5a1,#cfac54);
-                    }
-
-
-                 }   
+                 
                     </style>
 
                 @stack('style')
