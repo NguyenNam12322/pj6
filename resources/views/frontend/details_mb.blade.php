@@ -215,6 +215,10 @@
         margin-right: 0px !important;
     }
 
+    .icondetail-noibat{
+        min-height: 28px;
+    }
+
     
      @media (min-width: 1200px) {
         .container {
