@@ -172,6 +172,9 @@
    
     .pay{
         width: 100%;
+        
+    display: inline-block;
+
 
 /*        margin: 0 auto;*/
         height: 337px;
