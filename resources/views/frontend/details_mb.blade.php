@@ -154,7 +154,7 @@
     }
 
     .breadcrumb{
-                
+        min-height: 34px;        
         margin: 0;
         height:34px;
         width: 100%;
