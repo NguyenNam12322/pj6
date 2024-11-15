@@ -25,7 +25,7 @@
     }
 
 
-    .nav-search{
+    .nav-search, .scroll-box{
         display: inline;
     }
 
