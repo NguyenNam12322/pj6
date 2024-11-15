@@ -159,7 +159,7 @@
     .pdetail-add-to-cart{
         width: 100%;
         margin:0;
-        display: block;
+        display: inline;
     }
 
     .li-home {
