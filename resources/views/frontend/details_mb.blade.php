@@ -2323,7 +2323,7 @@
     })
 
 
-    $('#carousel').owlCarousel({
+    $('#carousels').owlCarousel({
         margin:10,
         nav:false,
         autoplay:false,
