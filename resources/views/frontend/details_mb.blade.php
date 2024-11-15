@@ -180,11 +180,6 @@
         height: 337px;
     }
 
-
-     .pdetail-stockavailable, .scroll-box{
-                
-                display: block;
-            }    
     
     .items-h{
         max-width: 600px !important;
