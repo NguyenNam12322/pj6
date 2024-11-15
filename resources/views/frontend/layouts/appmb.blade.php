@@ -226,7 +226,7 @@
             } 
 
              .div-header-cart{
-                width: 373px;
+                width: 100%;
                 display: flex;
                 height: 67px;
                 margin: 0 auto;
@@ -947,7 +947,7 @@
                         
 
                         .search_center{
-                            width: 373px;
+                            width: 100%;
                             margin: 0;
                             display: block;
                         }
