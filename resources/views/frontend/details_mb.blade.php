@@ -8,7 +8,7 @@
         width: 220px;
         height: 220px !important;
     }  
-    .owl-carousel .owl-item.active img{
+    .owl-carousel .owl-item. img{
         width:auto !important;
         margin: 0 auto;
         display: none;
