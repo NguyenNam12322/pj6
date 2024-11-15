@@ -176,6 +176,7 @@
    
     .pay{
         width: 373px;
+        margin: 0 auto;
     }
 
 
