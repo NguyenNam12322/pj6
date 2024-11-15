@@ -246,7 +246,7 @@
         
 
         #carousel{
-            margin: 0 auto;
+            display: none;
 
         }
 
