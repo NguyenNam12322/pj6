@@ -214,6 +214,7 @@
 
         max-width: 768px;
         width: 100%;
+        min-height: 110px;
         height: 110px !important;
         display: block;
     }
