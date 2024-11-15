@@ -222,6 +222,7 @@
     .box01__tab .item{
         height: 110px;
         margin-right: 0px !important;
+        min-height: 110px;
     }
 
     .icondetail-noibat{
