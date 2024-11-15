@@ -31,9 +31,10 @@
     .pays{
         width: 100%;
         height: 320px;
+         max-width: 768px !important;
     }
 
-    .pay, .box_pro-benefit{
+    .box_pro-benefit{
         max-width: 768px !important;
        
     }
