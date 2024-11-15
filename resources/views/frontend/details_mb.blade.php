@@ -619,20 +619,16 @@
             .pdetail-info{
                 height: 64px; 
                 width: 100%;
-/*                display: none;   */
+                display: block;   
             }
 
-           
-            
 
             .box_main{
                 height: 3000px;
                 margin: 0;
             }
 
-           
-
-            
+        
 
             .monopoly_item ul li .icon_refund {
                 width: 30px;
