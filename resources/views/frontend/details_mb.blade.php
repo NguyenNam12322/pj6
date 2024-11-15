@@ -121,6 +121,7 @@
 
     #carousel, .item{
         min-height: 220px;
+         aspect-ratio: 16 / 9;
         height: 220px;
         width: 220px;
     }
