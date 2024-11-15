@@ -30,9 +30,9 @@
         display: inline;
     }
 
-    .scrolling, .box01 .owl-carousel .item{
-        text-align: left !important;
-    } 
+  /*  .scrolling, .box01 .owl-carousel .item{
+        text-align: center !important;
+    } */
     
 
     .share-button .redirectCart{
