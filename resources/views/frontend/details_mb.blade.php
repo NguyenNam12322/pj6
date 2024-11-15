@@ -119,7 +119,7 @@
         height: 278px;
     }
 
-    #carousel{
+    #carousel, .item{
         height: 220px;
         width: 220px;
     }
