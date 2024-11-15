@@ -173,7 +173,7 @@
         width: 270px;
     }
 
-    .pay{
+    .pay, .div-carts-on, .redirectCart{
         display: inline;
         width: 100%;
        
