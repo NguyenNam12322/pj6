@@ -1297,8 +1297,7 @@
                         Launch demo modal
                         </button> -->
                 </div>
-                <div class="clearfix"></div>
-
+                
                 @if((int)$data['Price']>=3000000)
                 <!-- <div class="installment-purchase pdetail-installment">
                    
@@ -1323,7 +1322,7 @@
 
             
             
-            <div class="clearfix"></div>
+            
         </div>
             
     </div>
