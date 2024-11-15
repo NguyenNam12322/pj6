@@ -162,6 +162,10 @@
         
     }
 
+    .box01__tab .item-border{
+        height: 55px;
+    }
+
     .pdetail-add-to-cart{
         width: 100%;
         margin:0;
