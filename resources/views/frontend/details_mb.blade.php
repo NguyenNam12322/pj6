@@ -1133,14 +1133,14 @@
             <div id="thumb-featured-images-gallery-0" class="item itemTab active " data-gallery-id="featured-images-gallery" data-color-id="0" data-is-full-spec="False" data-color-order-id="0" data-isfeatureimage="True" data-toggle="modal" data-target="#Salient_Features" class="read-full" data-gallery-id="featured-images-gallery">
                 <div class="item-border">
                     <!-- <i class="icondetail-noibat"></i> -->
-                    <p>Điểm nổi bật</p>
+                    <span>Điểm nổi bật</span>
                 </div>
                 
             </div>
             <div id="thumb-specification-gallery-0" class="item itemTab  is-show-popup" data-gallery-id="specification-gallery" data-color-id="0" data-is-full-spec="True" data-color-order-id="0" data-isfeatureimage="True">
                 <div class="item-border">
                     <!-- <i class="icondetail-thongso" data-toggle="modal" data-target="#specifications"></i> -->
-                     <p data-toggle="modal" data-target="#specifications">Thông số kỹ thuật</p>
+                     <span data-toggle="modal" data-target="#specifications">Thông số kỹ thuật</span>
                 </div>
                
             </div>
@@ -1150,7 +1150,7 @@
             <div id="thumb-article-gallery-0" class="item itemTab  is-show-popup scroll-content" data-color-id="0" data-is-full-spec="False" data-color-order-id="0" data-isfeatureimage="True">
                 <div class="item-border">
                     <!-- <i class="icondetail-danhgia"></i> -->
-                    <p>Thông tin sản phẩm</p>
+                    <span>Thông tin sản phẩm</span>
                 </div>
                 
             </div>
