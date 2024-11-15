@@ -29,7 +29,7 @@
     }
 
     .pays{
-        width: 100%;
+        width: 100vw;
         height: 309px;
          max-width: 768px !important;
     }
@@ -176,7 +176,7 @@
    
     .pay{
         width: 373px;
-       
+
         margin: 0 auto;
     }
 
