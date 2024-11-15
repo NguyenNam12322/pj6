@@ -214,8 +214,8 @@
 
         max-width: 768px;
         width: 100%;
-        min-height: 110px;
-        height: 110px !important;
+        min-height: 55px;
+        height: 55px !important;
         display: block;
     }
 
@@ -352,15 +352,7 @@
             height: 100%;
         }
 
-       
-        
-
-        .scrolling{
-            height: 100%;
-        }
-       
-       
-       
+  
         .content{
             height: 27% !important;
         }
@@ -637,7 +629,7 @@
             }
            
             .scrolling_inner{
-                height: 107px;
+                height: 55px;
             }
             .view-all-salient_fratured{
                 height: 24px;
