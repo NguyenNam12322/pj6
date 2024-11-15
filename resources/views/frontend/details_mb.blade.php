@@ -170,7 +170,7 @@
     }
 
    
-    .pay, .scroll-box{
+    .pay, .scroll-box, .scrolling_inner{
         width: 100%;
 
     display: inline;
