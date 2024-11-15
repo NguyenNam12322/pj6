@@ -60,6 +60,36 @@
         <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
         <link rel="preload" href="https://code.jquery.com/ui/1.13.1/jquery-ui.js" as="script">
+        <script type="text/javascript">
+            $('#carousel').owlCarousel({
+                margin:10,
+                nav:false,
+                autoplay:false,
+                dots:false,
+                autoWidth: false,
+                loop:true,
+               
+               
+                dotsEach:1,
+
+                
+                navText: ["<i class='fa fa-angle-left'></i>","<i class='fa fa fa-angle-right'></i>"],
+               
+                responsive:{
+                    0:{
+                        items:1
+            
+                    },
+                    600:{
+                        items:1
+                    },
+                    
+                    1000:{
+                        items:1
+                    }
+                }
+            });
+        </script>
 
 
         <style>
