@@ -226,7 +226,7 @@
             } 
 
              .div-header-cart{
-                width: 100%;
+                width: 373px;
                 display: flex;
                 height: 67px;
             }
