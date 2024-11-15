@@ -248,6 +248,10 @@
             display:  !important;
             
         }
+
+        .box01__tab .item{
+            height: 100%;
+        }
         
          .image-container {
             position: relative;
