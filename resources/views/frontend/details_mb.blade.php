@@ -241,13 +241,6 @@
         height: 220px;
      }
 
-   
-        
-
-        #carousel{
-            margin: 0 auto;
-
-        }
 
         #carousel, .box01 .owl-carousel .owl-item, .box01 .owl-carousel .owl-item img:not(.monopoly-label) {
             
