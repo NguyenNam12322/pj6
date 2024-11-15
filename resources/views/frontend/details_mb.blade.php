@@ -218,9 +218,12 @@
         height: 55px !important;
         display: block;
     }
+    .box01__tab{
+        height: 55px;
+    }    
 
     .box01__tab .item{
-        height: 110px;
+        height: 55px;
         margin-right: 0px !important;
         min-height: 110px;
     }
