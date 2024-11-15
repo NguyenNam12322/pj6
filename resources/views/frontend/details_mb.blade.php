@@ -85,11 +85,6 @@
         display: inline !important;
     }
 
-     .scroll-box{
-        height: 215px;
-       
-    }
-
     .box_pro-benefit{
         height: 288px;
         width: 100%;
