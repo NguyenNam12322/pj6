@@ -170,10 +170,10 @@
     }
 
    
-    .pay{
+    .pay, .scroll-box{
         width: 100%;
 
-    display: contents;
+    display: inline;
 
 
 /*        margin: 0 auto;*/
