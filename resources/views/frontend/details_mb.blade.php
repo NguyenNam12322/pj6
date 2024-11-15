@@ -613,6 +613,11 @@
                 width: 100%;
             }
 
+            .scroll-box{
+                min-height: 170px;
+                height: 170px;
+            }
+
             .img-main a{
                 display: block;
                 height: 100%;

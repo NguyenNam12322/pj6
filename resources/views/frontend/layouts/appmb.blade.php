@@ -942,14 +942,11 @@
                         color: #fff;
                      }
 
-                    
-                  
-                        
-
                         .search_center{
                             width: 100%;
                             margin: 0;
                             display: block;
+                            min-height: 40px;
                         }
 
                         .nki-shopping-cart:before {
