@@ -251,6 +251,7 @@
 
         .box01__tab .item{
             height: 100%;
+            display: none;
         }
         
          .image-container {
