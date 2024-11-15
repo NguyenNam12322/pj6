@@ -28,11 +28,7 @@
         display: inline;
     }
 
-    .pays{
-        min-width: 300px;
-        height: 309px;
-         max-width: 768px !important;
-    }
+    
 
     .box_pro-benefit{
         max-width: 768px !important;
@@ -1122,7 +1118,7 @@
     </div>
 
 
-    <div class="pays">
+   
         <div class="pay">
         
             <span >{{ $data->Name }}</span>
@@ -1344,7 +1340,7 @@
                     
             
         </div>
-    </div>
+    
     
 
     
