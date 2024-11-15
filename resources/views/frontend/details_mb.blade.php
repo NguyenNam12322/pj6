@@ -210,6 +210,11 @@
         display: block;
     }
 
+    .box01__tab .item{
+        height: 110px;
+        margin-right: 0px !important;
+    }
+
     
      @media (min-width: 1200px) {
         .container {
