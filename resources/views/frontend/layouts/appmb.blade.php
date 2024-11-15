@@ -946,6 +946,7 @@
                         
 
                         .search_center{
+                            width: 373px;
                             margin: 0;
                             display: block;
                         }
