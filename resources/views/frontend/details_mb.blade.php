@@ -1089,7 +1089,7 @@
             @endif
     </div>       
    
-    <div class="scrolling_inner">
+    <span class="scrolling_inner">
         <div class="box01__tab scrolling">
             <div id="thumb-featured-images-gallery-0" class="item itemTab active " data-gallery-id="featured-images-gallery" data-color-id="0" data-is-full-spec="False" data-color-order-id="0" data-isfeatureimage="True" data-toggle="modal" data-target="#Salient_Features" class="read-full" data-gallery-id="featured-images-gallery">
                 <div class="item-border">
@@ -1113,7 +1113,7 @@
                 <p>Thông tin sản phẩm</p>
             </div>
         </div>
-    </div>
+    </span>
 
 
    
