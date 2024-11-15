@@ -229,6 +229,7 @@
                 width: 373px;
                 display: flex;
                 height: 67px;
+                margin: 0 auto;
             }
 
             .d .nk-header #nk-cart{
