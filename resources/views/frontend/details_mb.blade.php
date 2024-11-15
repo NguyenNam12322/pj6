@@ -28,6 +28,11 @@
         display: inline;
     }
 
+    .scroll-box, .box_pro-benefit{
+        max-width: 768px !important;
+        width:100%;
+    }
+
     /*.nav-search, .scroll-box{
         display: inline;
     }*/
