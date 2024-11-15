@@ -83,14 +83,14 @@
 
             }
 
-            .tygh-top-panel, .breadcrumb, .pay, .view-all-salient_fratured, .box_pro-benefit{
+            /*.tygh-top-panel, .breadcrumb, .pay, .view-all-salient_fratured, .box_pro-benefit{
                 max-width: 600px;   
                 width: 100%;
             }
 
             .scrolling_inner{
                 display: none;
-            }
+            }*/
 
 
 
