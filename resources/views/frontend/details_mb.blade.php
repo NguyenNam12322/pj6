@@ -172,8 +172,8 @@
    
     .pay{
         width: 100%;
-        
-    display: inline-block;
+
+    display: contents;
 
 
 /*        margin: 0 auto;*/
