@@ -29,7 +29,7 @@
     }
 
     .pays{
-       
+        min-width: 300px;
         height: 309px;
          max-width: 768px !important;
     }
