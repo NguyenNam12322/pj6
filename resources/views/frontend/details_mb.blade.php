@@ -120,7 +120,8 @@
     }
 
     #carousel{
-        height: 100%;
+        height: 220px;
+        width: 220px;
     }
 
 
