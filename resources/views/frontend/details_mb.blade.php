@@ -26,9 +26,9 @@
     }
 
 
-    .nav-search, .scroll-box{
-        display: inline !important;
-    }
+    /*.nav-search, .scroll-box{
+        display: inline;
+    }*/
 
   /*  .scrolling, .box01 .owl-carousel .item{
         text-align: center !important;
