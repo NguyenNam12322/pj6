@@ -173,11 +173,10 @@
         width: 270px;
     }
 
-    .pay, .div-carts-on, .redirectCart{
-        display: inline;
-        width: 100%;
-       
-    }  
+   
+    .pay{
+        width: 373px;
+    }
 
 
      .pdetail-stockavailable, .scroll-box{
