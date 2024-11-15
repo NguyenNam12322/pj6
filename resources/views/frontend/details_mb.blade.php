@@ -29,6 +29,10 @@
         height: 100%;
     }
 
+    .nav-search{
+        display: inline;
+    }
+
     .scrolling, .box01 .owl-carousel .item{
         text-align: left !important;
     } 
