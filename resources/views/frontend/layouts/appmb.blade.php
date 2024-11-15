@@ -88,9 +88,9 @@
                 width: 100%;
             }
 
-            .scrolling_inner{
+           /* .scrolling_inner{
                 display: none;
-            }
+            }*/
 
 
 
