@@ -11,6 +11,7 @@
     .owl-carousel .owl-item.active img{
         width:auto !important;
         margin: 0 auto;
+        display: none;
     }
 
    
@@ -251,7 +252,6 @@
 
         .box01__tab .item{
             height: 100%;
-            display: none;
         }
         
          .image-container {
