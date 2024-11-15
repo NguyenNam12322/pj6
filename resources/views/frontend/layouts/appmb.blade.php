@@ -88,6 +88,10 @@
                 width: 100%;
             }
 
+            .scrolling_inner{
+                display: none;
+            }
+
 
 
             #nk-cart{
