@@ -1296,8 +1296,8 @@
                             <input type="text" class="quantity-field" readonly="readonly" name="qty" value="1">
                             </div> -->
                         <div class="redirectCart div-carts-on">
-                            <div type="button" class="btn-add-cart carts-on" onclick="addToCart({{ $data->id }})">MUA NGAY <br>
-                                </div>
+                            <span type="button" class="btn-add-cart carts-on" onclick="addToCart({{ $data->id }})">MUA NGAY 
+                                </span>
                         </div>    
                         
 
