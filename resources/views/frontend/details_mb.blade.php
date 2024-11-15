@@ -174,6 +174,7 @@
         width: 373px;
 
         margin: 0 auto;
+        height: 315px;
     }
 
 
