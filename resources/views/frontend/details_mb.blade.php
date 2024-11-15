@@ -163,7 +163,7 @@
     }
 
     .item-border i{
-        min-height: 28px;
+        min-height: 19px;
     }
 
     .box01__tab .item-border{
