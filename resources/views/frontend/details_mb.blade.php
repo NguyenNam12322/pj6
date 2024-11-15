@@ -189,6 +189,8 @@
 
 /*        margin: 0 auto;*/
         height: 309px;
+        min-width: 373px;
+        min-height: 309px;
     }
 
 
