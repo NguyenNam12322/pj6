@@ -119,9 +119,7 @@
         height: 278px;
     }
 
-    #carousel, .item{
-        min-height: 220px;
-         aspect-ratio: 16 / 9;
+    #carousel{
         height: 220px;
         width: 220px;
     }
@@ -209,6 +207,7 @@
         max-width: 768px;
         width: 100%;
         height: 110px !important;
+        display: none;
     }
 
     
@@ -243,6 +242,13 @@
         height: 220px;
      }
 
+   
+        
+
+        #carousel{
+            margin: 0 auto;
+
+        }
 
         #carousel, .box01 .owl-carousel .owl-item, .box01 .owl-carousel .owl-item img:not(.monopoly-label) {
             
@@ -2323,7 +2329,7 @@
     })
 
 
-    $('#carousels').owlCarousel({
+    $('#carousel').owlCarousel({
         margin:10,
         nav:false,
         autoplay:false,
