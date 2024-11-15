@@ -194,7 +194,7 @@
     }
     .scrolling_inner{
 
-        
+        max-width: 768px;
         width: 100%;
         height: 110px !important;
     }
