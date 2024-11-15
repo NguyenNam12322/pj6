@@ -78,19 +78,19 @@
              #nk-cart ul{
                 margin-top: 20px;
             }
-            .logo-mobile img{
+/*            .logo-mobile img{*/
                 max-width: 167px;
 
             }
 
-            /*.tygh-top-panel, .breadcrumb, .pay, .view-all-salient_fratured, .box_pro-benefit{
-                max-width: 600px;   
+            .tygh-top-panel, .breadcrumb, .pay, .view-all-salient_fratured, .box_pro-benefit{
+                max-width: 767px;   
                 width: 100%;
             }
 
             .scrolling_inner{
                 display: none;
-            }*/
+            }
 
 
 
