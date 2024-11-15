@@ -84,7 +84,7 @@
             }
 
             .tygh-top-panel, .breadcrumb, .pay, .view-all-salient_fratured, .box_pro-benefit{
-                max-width: 768px;   
+                max-width: 768px !important;   
                 width: 100%;
             }
 
