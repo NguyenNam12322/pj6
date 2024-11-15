@@ -30,7 +30,7 @@
 
     .pays{
         width: 100%;
-       
+        height: 309px;
          max-width: 768px !important;
     }
 
