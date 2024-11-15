@@ -1117,28 +1117,28 @@
 
 
    
-        <div class="pay">
+        <span class="pay">
         
             <span >{{ $data->Name }}</span>
             
             
-            <div class="pdetail-info">
+            <span class="pdetail-info">
                 <p class="p1">Thương hiệu: <b>{{ @$ar_groups_info[0]['name'] }}</b></p>
 
                 <p>Model: <b>{{ @$data->ProductSku  }}</b></p>
                
-            </div>
+            </span>
 
-            <div class="pdetail-stockavailable">
+            <span class="pdetail-stockavailable">
                 <span>  @if($status==="CÒN HÀNG") <img src="{{ asset('images/template/icon-tick.png') }}" width="18px" height="18px" > @endif {{ $status }}</span>
-            </div>
-            <div class="scroll-box">
+            </span>
+            <span class="scroll-box">
                 <span class="pdetail-price">
                     @if($data->Quantily>-1)
-                    <div class="pdetail-price-box show-price-mobile">
+                    <span class="pdetail-price-box show-price-mobile">
                         {!! @$text !!}
                         <span> {{ str_replace(',' ,'.', number_format($data->Price)) }} ₫</span>
-                    </div>
+                    </span>
 
 
                     @endif
@@ -1288,30 +1288,30 @@
                     <!-- <a href="tel:02473036336"><div class="buy-button-hotline nhapnhay btn">Gọi 0123.456.789 để được giảm thêm</div></a> -->
 
 
-                    <div class="pdetail-add-to-cart add-to-cart box-cart">
+                    <span class="pdetail-add-to-cart add-to-cart box-cart">
                        
                         <input type="hidden" name="productId" value="{{ $data->id }}">
                         <input type="hidden" name="gift_checked"  id="gift_checked" value="">
                         <!-- <div class="product-quantity">
                             <input type="text" class="quantity-field" readonly="readonly" name="qty" value="1">
                             </div> -->
-                        <div class="redirectCart div-carts-on">
+                        <span class="redirectCart div-carts-on">
                             <span type="button" class="btn-add-cart carts-on" onclick="addToCart({{ $data->id }})">MUA NGAY 
                                 </span>
-                        </div>    
+                        </span>    
                         
 
-                        <div class="share-button">
+                        <span class="share-button">
                              <button type="button" class="btn-add-cart redirectCart cartSP" onclick="addToSuport(2221)">GỌI LẠI CHO TÔI <br>(Tư vấn tận tình)</button>
 
                             <button type="button" class="btn-add-cart  redirectCart cartSP right-cart" onclick="addToSuport(2221)">TRẢ GÓP QUA THẺ <br></button>
-                        </div>
+                        </span>
                            
                         
                         <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
                             Launch demo modal
                             </button> -->
-                    </div>
+                    </span>
                     
                     @if((int)$data['Price']>=3000000)
                     <!-- <div class="installment-purchase pdetail-installment">
@@ -1326,18 +1326,18 @@
 
                     @else
 
-                    <div class="pdetail-add-to-cart add-to-cart">
-                        <div class="inline">
+                    <span class="pdetail-add-to-cart add-to-cart">
+                        <span class="inline">
                             <button type="button" class="btn btn-lg btn-add-cart btn-add-cart redirectCart">Liên hệ</button>
-                        </div>
+                        </span>
                        
-                    </div>
+                    </span>
                     @endif
             
-            </div>
+            </span>
                     
             
-        </div>
+        </span>
     
     
 
