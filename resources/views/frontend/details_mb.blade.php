@@ -27,7 +27,7 @@
 
 
     .nav-search, .scroll-box{
-        display: inline;
+        display: inline !important;
     }
 
   /*  .scrolling, .box01 .owl-carousel .item{
