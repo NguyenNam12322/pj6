@@ -1133,7 +1133,7 @@
                 <span>  @if($status==="CÒN HÀNG") <img src="{{ asset('images/template/icon-tick.png') }}" width="18px" height="18px" > @endif {{ $status }}</span>
             </div>
             <div class="scroll-box">
-                <div class="pdetail-price">
+                <span class="pdetail-price">
                     @if($data->Quantily>-1)
                     <div class="pdetail-price-box show-price-mobile">
                         {!! @$text !!}
@@ -1142,7 +1142,7 @@
 
 
                     @endif
-                </div>
+                </span>
                 <!-- <div class="discount"><p class="installment">Trả góp 0%</p></div> -->
                
 
