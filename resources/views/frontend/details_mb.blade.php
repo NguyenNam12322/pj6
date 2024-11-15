@@ -24,7 +24,9 @@
     .tygh-top-panel{
         height: 130px;
     }
-
+    .owl-stage-outer{
+        display: inline;
+    }
 
     /*.nav-search, .scroll-box{
         display: inline;
