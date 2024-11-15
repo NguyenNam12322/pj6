@@ -168,7 +168,7 @@
     }
 
     .pay{
-        
+        width: 373px;
         height: 320px;
        
     }  
