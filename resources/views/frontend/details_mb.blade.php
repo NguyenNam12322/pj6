@@ -620,7 +620,7 @@
             .pdetail-info{
                 height: 64px; 
                 width: 100%;
-                display: block;   
+                display: inline;   
             }
 
 
