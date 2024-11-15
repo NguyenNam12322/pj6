@@ -27,7 +27,7 @@
     .pays{
         width: 100%;
         height: 100%;
-        display: inline;
+
     }
 
     .nav-search{
@@ -167,7 +167,7 @@
     .pay{
         
         height: 320px;
-        display: block;
+        display: inline;
     }  
 
 
