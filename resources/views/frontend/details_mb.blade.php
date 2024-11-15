@@ -159,7 +159,6 @@
     .pdetail-add-to-cart{
         width: 100%;
         margin:0;
-        display: inline;
     }
 
     .li-home {
@@ -171,16 +170,17 @@
     }
 
    
-    .pay, .scroll-box, .scrolling_inner{
-        width: 100%;
+    .pay{
+        width: 373px;
 
-    display: inline;
-
-
-/*        margin: 0 auto;*/
-        height: 337px;
+        margin: 0 auto;
     }
 
+
+     .pdetail-stockavailable, .scroll-box{
+                
+                display: block;
+            }    
     
     .items-h{
         max-width: 600px !important;
@@ -256,7 +256,6 @@
             overflow: hidden;
         }
         .pdetail-stockavailable{
-            width: 100%;
             height: 8%;
         }
 
@@ -619,17 +618,20 @@
 
             .pdetail-info{
                 height: 64px; 
-                width: 100%;
-                display: inline;   
+/*                display: none;   */
             }
 
+           
+            
 
             .box_main{
                 height: 3000px;
                 margin: 0;
             }
 
-        
+           
+
+            
 
             .monopoly_item ul li .icon_refund {
                 width: 30px;
@@ -1037,7 +1039,7 @@
             <?php 
                 $image_product = strstr(basename($data->Image), '_');
             ?>
-            <span class="item">
+            <div class="item">
 
                 <img src="{{ asset('uploads/product/1731128406_may-giat-invert_main_371_1020.png_with_bgc.png') }}" alt="{{ @$data->Name }}" width="220px" height="220px">
                 
@@ -1053,7 +1055,7 @@
 
               
 
-            </span>
+            </div>
 
             <?php 
                 $images_products = Cache::rememberForever('image_product'.$data->id, function() use ($data) {
@@ -1089,8 +1091,8 @@
             @endif
     </div>       
    
-    <span class="scrolling_inner">
-        <span class="box01__tab scrolling">
+    <div class="scrolling_inner">
+        <div class="box01__tab scrolling">
             <div id="thumb-featured-images-gallery-0" class="item itemTab active " data-gallery-id="featured-images-gallery" data-color-id="0" data-is-full-spec="False" data-color-order-id="0" data-isfeatureimage="True" data-toggle="modal" data-target="#Salient_Features" class="read-full" data-gallery-id="featured-images-gallery">
                 <div class="item-border">
                     <i class="icondetail-noibat"></i>
@@ -1112,37 +1114,37 @@
                 </div>
                 <p>Thông tin sản phẩm</p>
             </div>
-        </span>
-    </span>
+        </div>
+    </div>
 
 
    
-        <span class="pay">
+        <div class="pay">
         
             <span >{{ $data->Name }}</span>
             
             
-            <span class="pdetail-info">
+            <div class="pdetail-info">
                 <p class="p1">Thương hiệu: <b>{{ @$ar_groups_info[0]['name'] }}</b></p>
 
                 <p>Model: <b>{{ @$data->ProductSku  }}</b></p>
                
-            </span>
+            </div>
 
-            <span class="pdetail-stockavailable">
+            <div class="pdetail-stockavailable">
                 <span>  @if($status==="CÒN HÀNG") <img src="{{ asset('images/template/icon-tick.png') }}" width="18px" height="18px" > @endif {{ $status }}</span>
-            </span>
-            <span class="scroll-box">
-                <span class="pdetail-price">
+            </div>
+            <div class="scroll-box">
+                <div class="pdetail-price">
                     @if($data->Quantily>-1)
-                    <span class="pdetail-price-box show-price-mobile">
+                    <div class="pdetail-price-box show-price-mobile">
                         {!! @$text !!}
                         <span> {{ str_replace(',' ,'.', number_format($data->Price)) }} ₫</span>
-                    </span>
+                    </div>
 
 
                     @endif
-                </span>
+                </div>
                 <!-- <div class="discount"><p class="installment">Trả góp 0%</p></div> -->
                
 
@@ -1288,30 +1290,30 @@
                     <!-- <a href="tel:02473036336"><div class="buy-button-hotline nhapnhay btn">Gọi 0123.456.789 để được giảm thêm</div></a> -->
 
 
-                    <span class="pdetail-add-to-cart add-to-cart box-cart">
+                    <div class="pdetail-add-to-cart add-to-cart box-cart">
                        
                         <input type="hidden" name="productId" value="{{ $data->id }}">
                         <input type="hidden" name="gift_checked"  id="gift_checked" value="">
                         <!-- <div class="product-quantity">
                             <input type="text" class="quantity-field" readonly="readonly" name="qty" value="1">
                             </div> -->
-                        <span class="redirectCart div-carts-on">
-                            <span type="button" class="btn-add-cart carts-on" onclick="addToCart({{ $data->id }})">MUA NGAY 
-                                </span>
-                        </span>    
+                        <div class="redirectCart div-carts-on">
+                            <div type="button" class="btn-add-cart carts-on" onclick="addToCart({{ $data->id }})">MUA NGAY <br>
+                                </div>
+                        </div>    
                         
 
-                        <span class="share-button">
+                        <div class="share-button">
                              <button type="button" class="btn-add-cart redirectCart cartSP" onclick="addToSuport(2221)">GỌI LẠI CHO TÔI <br>(Tư vấn tận tình)</button>
 
                             <button type="button" class="btn-add-cart  redirectCart cartSP right-cart" onclick="addToSuport(2221)">TRẢ GÓP QUA THẺ <br></button>
-                        </span>
+                        </div>
                            
                         
                         <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
                             Launch demo modal
                             </button> -->
-                    </span>
+                    </div>
                     
                     @if((int)$data['Price']>=3000000)
                     <!-- <div class="installment-purchase pdetail-installment">
@@ -1326,18 +1328,18 @@
 
                     @else
 
-                    <span class="pdetail-add-to-cart add-to-cart">
-                        <span class="inline">
+                    <div class="pdetail-add-to-cart add-to-cart">
+                        <div class="inline">
                             <button type="button" class="btn btn-lg btn-add-cart btn-add-cart redirectCart">Liên hệ</button>
-                        </span>
+                        </div>
                        
-                    </span>
+                    </div>
                     @endif
             
-            </span>
+            </div>
                     
             
-        </span>
+        </div>
     
     
 
