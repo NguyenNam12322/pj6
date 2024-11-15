@@ -162,6 +162,10 @@
         
     }
 
+    .item-border i{
+        min-height: 28px;
+    }
+
     .box01__tab .item-border{
         height: 55px;
     }
