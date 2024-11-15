@@ -257,6 +257,7 @@
             overflow: hidden;
         }
         .pdetail-stockavailable{
+            width: 100%;
             height: 8%;
         }
 
@@ -619,6 +620,7 @@
 
             .pdetail-info{
                 height: 64px; 
+                width: 100%;
 /*                display: none;   */
             }
 
