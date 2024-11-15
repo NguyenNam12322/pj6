@@ -170,7 +170,7 @@
     .pay{
         
         height: 320px;
-        display: inline;
+       
     }  
 
 
