@@ -21,8 +21,13 @@
         display: none !important;
     }*/
     .tygh-top-panel{
-                height: 130px;
-            }
+        height: 130px;
+    }
+
+    .pays{
+        width: 100%;
+        height: 100%;
+    }
 
     .scrolling, .box01 .owl-carousel .item{
         text-align: left !important;
@@ -1104,228 +1109,228 @@
     <div class="clearfix"></div>
 
     <div class="pay">
-        <span >{{ $data->Name }}</span>
-        
-        
-        <div class="pdetail-info">
-            <p class="p1">Thương hiệu: <b>{{ @$ar_groups_info[0]['name'] }}</b></p>
+        <div class="pays">
+            <span >{{ $data->Name }}</span>
+            
+            
+            <div class="pdetail-info">
+                <p class="p1">Thương hiệu: <b>{{ @$ar_groups_info[0]['name'] }}</b></p>
 
-            <p>Model: <b>{{ @$data->ProductSku  }}</b></p>
-           
-        </div>
-
-        <div class="pdetail-stockavailable">
-            <span>  @if($status==="CÒN HÀNG") <img src="{{ asset('images/template/icon-tick.png') }}" width="18px" height="18px" > @endif {{ $status }}</span>
-        </div>
-        <div class="scroll-box">
-            <div class="pdetail-price">
-                @if($data->Quantily>-1)
-                <div class="pdetail-price-box show-price-mobile">
-                    {!! @$text !!}
-                    <span> {{ str_replace(',' ,'.', number_format($data->Price)) }} ₫</span>
-                </div>
-
-
-                @endif
+                <p>Model: <b>{{ @$data->ProductSku  }}</b></p>
+               
             </div>
-            <!-- <div class="discount"><p class="installment">Trả góp 0%</p></div> -->
-           
 
-                @if(!empty($data->promotion))
-
-                <div class="gift_pro">
-
-                    <span class="ttl"><i class="fa-solid fa-gift"></i> Ưu đãi tặng kèm  @if(!empty($data->GiftPrice)) trị giá {{ str_replace(',' ,'.', number_format($data->GiftPrice)) }}  @endif</span>
-                   
-                    <div class="gift_item">
-                        <ul>
-                            <li>
-                                
-                                <div class="gift_info">
-                                   {!! @$data->promotion !!}
-                                </div>
-                            </li>
-                        </ul>
+            <div class="pdetail-stockavailable">
+                <span>  @if($status==="CÒN HÀNG") <img src="{{ asset('images/template/icon-tick.png') }}" width="18px" height="18px" > @endif {{ $status }}</span>
+            </div>
+            <div class="scroll-box">
+                <div class="pdetail-price">
+                    @if($data->Quantily>-1)
+                    <div class="pdetail-price-box show-price-mobile">
+                        {!! @$text !!}
+                        <span> {{ str_replace(',' ,'.', number_format($data->Price)) }} ₫</span>
                     </div>
+
+
+                    @endif
                 </div>
-                        
-                
-                @endif
+                <!-- <div class="discount"><p class="installment">Trả góp 0%</p></div> -->
+               
 
-                
+                    @if(!empty($data->promotion))
 
-               <!--  @if($data_cate==4)
+                    <div class="gift_pro">
 
-                <div class="gift_pro">
-                    <span class="ttl"><i class="fa-solid fa-hand-point-right"></i> Bảng giá lắp đặt điều hòa</span> 
-                    <div class="gift_item">
-                        <ul>
-                            <li>
-                                <div class="gift_info">
-                                    <p><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:16px">(<a href="https://dienmaynguoiviet.vn/bang-gia-vat-tu-lap-dat" target="_blank">Xem chi tiết</a>)</span></span></p>
-                                </div>
-                            </li>
-                        </ul>
+                        <span class="ttl"><i class="fa-solid fa-gift"></i> Ưu đãi tặng kèm  @if(!empty($data->GiftPrice)) trị giá {{ str_replace(',' ,'.', number_format($data->GiftPrice)) }}  @endif</span>
+                       
+                        <div class="gift_item">
+                            <ul>
+                                <li>
+                                    
+                                    <div class="gift_info">
+                                       {!! @$data->promotion !!}
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-
-                
-                @endif -->
-
-                @if($checkSharp>-1)
-                <div class="gift_pro">
-                    <span class="ttl"><i class="fa-solid fa-hand-point-right"></i> Hướng dẫn kích hoạt</span> 
-                    <div class="gift_item">
-                        <ul>
-                            <li>
-                                <div class="gift_info">
-                                    <p><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:16px">Hướng dẫn khách hàng tự kích hoạt bảo hành sản phẩm Sharp (<a href="https://dienmaynguoiviet.vn/huong-dan-khach-hang-tu-kich-hoat-bao-hanh-san-pham-sharp" target="_blank">Xem chi tiết</a>)</span></span></p>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                @endif
-
-                @if($checkDaikin===true)
-
-                 <div class="gift_pro">
-                    <span class="ttl"><i class="fa-solid fa-hand-point-right"></i> Hướng dẫn kích hoạt</span> 
-                    <div class="gift_item">
-                        <ul>
-                            <li>
-                                <div class="gift_info">
-                                    <p><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:16px">Hướng dẫn khách hàng tự kích hoạt bảo hành sản phẩm Daikin (<a href="https://dienmaynguoiviet.vn/huong-dan-tu-kich-hoat-bao-hanh-dieu-hoa-daikin" target="_blank">Xem chi tiết</a>)</span></span></p>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                @endif
-
-                <!-- nếu tồn tại gift_price thì hiển thị -->
-
-                @if(!empty($gift_Price) && $data_cate !=8 && $data->Quantily>-1)
-
-                <?php 
-
-                    $image_gift_promotion = definePrice($gift_Price);
-                ?>
-                
-                <div class="gift_pro">
+                            
                     
-                    <span class="ttl"><i class="fa-solid fa-gift"></i> Quà tặng giảm ngay {{ $gift_Price }} đ <img src="{{ asset($image_gift_promotion) }}" height="30px" width="30px"></span>
+                    @endif
 
-                </div>
+                    
 
-                @endif
+                   <!--  @if($data_cate==4)
+
+                    <div class="gift_pro">
+                        <span class="ttl"><i class="fa-solid fa-hand-point-right"></i> Bảng giá lắp đặt điều hòa</span> 
+                        <div class="gift_item">
+                            <ul>
+                                <li>
+                                    <div class="gift_info">
+                                        <p><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:16px">(<a href="https://dienmaynguoiviet.vn/bang-gia-vat-tu-lap-dat" target="_blank">Xem chi tiết</a>)</span></span></p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    
+                    @endif -->
+
+                    @if($checkSharp>-1)
+                    <div class="gift_pro">
+                        <span class="ttl"><i class="fa-solid fa-hand-point-right"></i> Hướng dẫn kích hoạt</span> 
+                        <div class="gift_item">
+                            <ul>
+                                <li>
+                                    <div class="gift_info">
+                                        <p><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:16px">Hướng dẫn khách hàng tự kích hoạt bảo hành sản phẩm Sharp (<a href="https://dienmaynguoiviet.vn/huong-dan-khach-hang-tu-kich-hoat-bao-hanh-san-pham-sharp" target="_blank">Xem chi tiết</a>)</span></span></p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    @endif
+
+                    @if($checkDaikin===true)
+
+                     <div class="gift_pro">
+                        <span class="ttl"><i class="fa-solid fa-hand-point-right"></i> Hướng dẫn kích hoạt</span> 
+                        <div class="gift_item">
+                            <ul>
+                                <li>
+                                    <div class="gift_info">
+                                        <p><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:16px">Hướng dẫn khách hàng tự kích hoạt bảo hành sản phẩm Daikin (<a href="https://dienmaynguoiviet.vn/huong-dan-tu-kich-hoat-bao-hanh-dieu-hoa-daikin" target="_blank">Xem chi tiết</a>)</span></span></p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    @endif
+
+                    <!-- nếu tồn tại gift_price thì hiển thị -->
+
+                    @if(!empty($gift_Price) && $data_cate !=8 && $data->Quantily>-1)
+
+                    <?php 
+
+                        $image_gift_promotion = definePrice($gift_Price);
+                    ?>
+                    
+                    <div class="gift_pro">
+                        
+                        <span class="ttl"><i class="fa-solid fa-gift"></i> Quà tặng giảm ngay {{ $gift_Price }} đ <img src="{{ asset($image_gift_promotion) }}" height="30px" width="30px"></span>
+
+                    </div>
+
+                    @endif
 
 
-                @if(!empty($gift) &&  $data->Quantily>0 &&  $data['Price']>0)
+                    @if(!empty($gift) &&  $data->Quantily>0 &&  $data['Price']>0)
 
-                <fieldset class="p-gift">
-                    <legend id="data-pricetotal" style="color: #ff0000;font-size: 18px; font-weight: bold" data-pricetotal="0">
-                        Khuyến mãi kèm theo
-                    </legend>
+                    <fieldset class="p-gift">
+                        <legend id="data-pricetotal" style="color: #ff0000;font-size: 18px; font-weight: bold" data-pricetotal="0">
+                            Khuyến mãi kèm theo
+                        </legend>
+
+                      
+                        <!---->
+                        <div class="detail-offer">
+                           
+                            {{ $gifts->type ==1?'Lựa chọn 1 trong 2 sản phẩm sau':'' }}
+                            @foreach($gift as $key => $valuegift)
+                            <div class="select-gift">
+                                
+
+                                <input type="checkbox" name="gift" value="{{ $valuegift->name }}" class="gift-check">
+                                
+                                <img data-src="{{ asset($valuegift->image) }}" height="30px" width="30px" class="lazyload">
+
+                                @if($valuegift->id ==5)
+                                <a href="https://dienmaynguoiviet.vn/khau-trang-loc-khi-lg-puricare-the-he-2-ap551awfa-ajp-may-trang"><h4>{{ $valuegift->name }}</h4></a>
+                                @else
+                                <h4>{{ $valuegift->name }}</h4>
+                                @endif
+                            </div>
+                            @endforeach
+                           
+                        </div>
+                        <div class="img-gift clearfix">
+                        </div>
+                    </fieldset>
+
+                     @endif    
 
                   
-                    <!---->
-                    <div class="detail-offer">
+                    <!-- mobile -->
+                    @if($data->Quantily>0)
+
+                    @if(!empty($data_price_show))
+
+                    @foreach($data_price_show as $key=> $val)
+                         <input type="radio" id="age{{ $val->id }}" name="price-add-mobile" class="price-add-mobile" value="{{ $val->id }}" {{ $key===0?'checked':'' }}>
+                        <label for="age1" > {{  $val->name }} : {{str_replace(',' ,'.', number_format($val->price))  }}đ</label><br>
+                    @endforeach
+
+                    @endif
+
+                    <!-- <a href="tel:02473036336"><div class="buy-button-hotline nhapnhay btn">Gọi 0123.456.789 để được giảm thêm</div></a> -->
+
+
+                    <div class="pdetail-add-to-cart add-to-cart box-cart">
                        
-                        {{ $gifts->type ==1?'Lựa chọn 1 trong 2 sản phẩm sau':'' }}
-                        @foreach($gift as $key => $valuegift)
-                        <div class="select-gift">
-                            
+                        <input type="hidden" name="productId" value="{{ $data->id }}">
+                        <input type="hidden" name="gift_checked"  id="gift_checked" value="">
+                        <!-- <div class="product-quantity">
+                            <input type="text" class="quantity-field" readonly="readonly" name="qty" value="1">
+                            </div> -->
+                        <div class="redirectCart div-carts-on">
+                            <div type="button" class="btn-add-cart carts-on" onclick="addToCart({{ $data->id }})">MUA NGAY <br>
+                                </div>
+                        </div>    
+                        
 
-                            <input type="checkbox" name="gift" value="{{ $valuegift->name }}" class="gift-check">
-                            
-                            <img data-src="{{ asset($valuegift->image) }}" height="30px" width="30px" class="lazyload">
+                        <div class="share-button">
+                             <button type="button" class="btn-add-cart redirectCart cartSP" onclick="addToSuport(2221)">GỌI LẠI CHO TÔI <br>(Tư vấn tận tình)</button>
 
-                            @if($valuegift->id ==5)
-                            <a href="https://dienmaynguoiviet.vn/khau-trang-loc-khi-lg-puricare-the-he-2-ap551awfa-ajp-may-trang"><h4>{{ $valuegift->name }}</h4></a>
-                            @else
-                            <h4>{{ $valuegift->name }}</h4>
-                            @endif
+                            <button type="button" class="btn-add-cart  redirectCart cartSP right-cart" onclick="addToSuport(2221)">TRẢ GÓP QUA THẺ <br></button>
                         </div>
-                        @endforeach
+                           
+                        
+                        <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                            Launch demo modal
+                            </button> -->
+                    </div>
+                    
+                    @if((int)$data['Price']>=3000000)
+                    <!-- <div class="installment-purchase pdetail-installment">
+                       
+                        <a target="_blank"  href="{{ route('details', $data->Link)  }}?show=tra-gop" admicro-data-event="101725" admicro-data-auto="1" admicro-data-order="false" class="but-1-gop">
+                        <strong>TRẢ GÓP QUA THẺ</strong>
+                        <br>
+                        (Visa, Master, JCB)
+                        </a>
+                    </div>  -->
+                    @endif
+
+                    @else
+
+                    <div class="pdetail-add-to-cart add-to-cart">
+                        <div class="inline">
+                            <button type="button" class="btn btn-lg btn-add-cart btn-add-cart redirectCart">Liên hệ</button>
+                        </div>
                        
                     </div>
-                    <div class="img-gift clearfix">
-                    </div>
-                </fieldset>
-
-                 @endif    
-
-              
-                <!-- mobile -->
-                @if($data->Quantily>0)
-
-                @if(!empty($data_price_show))
-
-                @foreach($data_price_show as $key=> $val)
-                     <input type="radio" id="age{{ $val->id }}" name="price-add-mobile" class="price-add-mobile" value="{{ $val->id }}" {{ $key===0?'checked':'' }}>
-                    <label for="age1" > {{  $val->name }} : {{str_replace(',' ,'.', number_format($val->price))  }}đ</label><br>
-                @endforeach
-
-                @endif
-
-                <!-- <a href="tel:02473036336"><div class="buy-button-hotline nhapnhay btn">Gọi 0123.456.789 để được giảm thêm</div></a> -->
-
-
-                <div class="pdetail-add-to-cart add-to-cart box-cart">
-                   
-                    <input type="hidden" name="productId" value="{{ $data->id }}">
-                    <input type="hidden" name="gift_checked"  id="gift_checked" value="">
-                    <!-- <div class="product-quantity">
-                        <input type="text" class="quantity-field" readonly="readonly" name="qty" value="1">
-                        </div> -->
-                    <div class="redirectCart div-carts-on">
-                        <div type="button" class="btn-add-cart carts-on" onclick="addToCart({{ $data->id }})">MUA NGAY <br>
-                            </div>
-                    </div>    
-                    
-
-                    <div class="share-button">
-                         <button type="button" class="btn-add-cart redirectCart cartSP" onclick="addToSuport(2221)">GỌI LẠI CHO TÔI <br>(Tư vấn tận tình)</button>
-
-                        <button type="button" class="btn-add-cart  redirectCart cartSP right-cart" onclick="addToSuport(2221)">TRẢ GÓP QUA THẺ <br></button>
-                    </div>
-                       
-                    
-                    <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-                        Launch demo modal
-                        </button> -->
-                </div>
+                    @endif
+            
+            </div>
                 
-                @if((int)$data['Price']>=3000000)
-                <!-- <div class="installment-purchase pdetail-installment">
-                   
-                    <a target="_blank"  href="{{ route('details', $data->Link)  }}?show=tra-gop" admicro-data-event="101725" admicro-data-auto="1" admicro-data-order="false" class="but-1-gop">
-                    <strong>TRẢ GÓP QUA THẺ</strong>
-                    <br>
-                    (Visa, Master, JCB)
-                    </a>
-                </div>  -->
-                @endif
-
-                @else
-
-                <div class="pdetail-add-to-cart add-to-cart">
-                    <div class="inline">
-                        <button type="button" class="btn btn-lg btn-add-cart btn-add-cart redirectCart">Liên hệ</button>
-                    </div>
-                   
-                </div>
-                @endif
-           
-
-            
-            
-            
         </div>
-            
     </div>
+
+    
     <div class="view-all-salient_fratured">
         
         <b>Chính sách mua hàng tại MuaSamTaiKho.vn</b>
