@@ -240,6 +240,7 @@
 
      .breadcrumb li{
             height: 100%;
+            min-height: 34px;
         }
 
     .box01{
