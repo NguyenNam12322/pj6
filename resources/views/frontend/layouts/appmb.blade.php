@@ -84,7 +84,7 @@
             }
 
             .tygh-top-panel, .breadcrumb, .pay, .view-all-salient_fratured, .box_pro-benefit{
-                max-width: 767px;   
+                max-width: 768px;   
                 width: 100%;
             }
 
@@ -1162,7 +1162,7 @@
         
         @endif
 
-        <div class="tygh-top-panel clearfix">
+        <div class="tygh-top-panel">
             <div class="container-fluid ">
               
                 <!-- header -->
