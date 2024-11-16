@@ -1060,10 +1060,10 @@
 
     
     <div style="width: 400px; height: 34px; overflow: hidden; border: 1px solid #ddd;">
-        <ul class="breadcrumb">
+        <ul class="breadcrumbs">
         
             <li class="li-home">
-                <a href="{{route('homeFe')}}">Trang chủ</a>
+                <a href="{{route('homeFe')}}">Trang chủ 1234565</a>
                
             </li>
           
