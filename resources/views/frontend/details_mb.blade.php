@@ -8,14 +8,9 @@
         width: 220px;
         height: 220px !important;
     }  
-    .owl-carousel .owl-item. img{
+    .owl-carousel .owl-item.active img{
         width:auto !important;
         margin: 0 auto;
-        display: none;
-    }
-
-    .owl-carousel .owl-item img{
-        display: none;
     }
 
    
@@ -120,8 +115,7 @@
     }
 
     #carousel{
-        height: 220px;
-        width: 220px;
+        height: 100%;
     }
 
 
@@ -154,20 +148,12 @@
     }
 
     .breadcrumb{
-        min-height: 34px;        
+                
         margin: 0;
         height:34px;
         width: 100%;
         padding: 0;
         
-    }
-
-    .item-border i{
-        min-height: 19px;
-    }
-
-    .box01__tab .item-border{
-        height: 55px;
     }
 
     .pdetail-add-to-cart{
@@ -214,22 +200,7 @@
 
         max-width: 768px;
         width: 100%;
-        min-height: 55px;
-        height: 55px !important;
-        display: block;
-    }
-    .box01__tab{
-        height: 55px;
-    }    
-
-    .box01__tab .item{
-        height: 55px;
-        margin-right: 0px !important;
-        min-height: 55px;
-    }
-
-    .icondetail-noibat{
-        min-height: 28px;
+        height: 110px !important;
     }
 
     
@@ -243,7 +214,6 @@
 
      .breadcrumb li{
             height: 100%;
-            min-height: 34px;
         }
 
     .box01{
@@ -269,22 +239,14 @@
         
 
         #carousel{
-            display: none;
+            margin: 0 auto;
 
-        }
-
-        .item-border{
-            padding: 0 !important;
         }
 
         #carousel, .box01 .owl-carousel .owl-item, .box01 .owl-carousel .owl-item img:not(.monopoly-label) {
             
-            display:  !important;
+            display: inline !important;
             
-        }
-
-        .box01__tab .item{
-            height: 100%;
         }
         
          .image-container {
@@ -359,7 +321,15 @@
             height: 100%;
         }
 
-  
+       
+        
+
+        .scrolling{
+            height: 100%;
+        }
+       
+       
+       
         .content{
             height: 27% !important;
         }
@@ -614,11 +584,6 @@
                 width: 100%;
             }
 
-            .scroll-box{
-                min-height: 170px;
-                height: 170px;
-            }
-
             .img-main a{
                 display: block;
                 height: 100%;
@@ -636,7 +601,7 @@
             }
            
             .scrolling_inner{
-                height: 55px;
+                height: 107px;
             }
             .view-all-salient_fratured{
                 height: 24px;
@@ -1131,27 +1096,24 @@
         <div class="box01__tab scrolling">
             <div id="thumb-featured-images-gallery-0" class="item itemTab active " data-gallery-id="featured-images-gallery" data-color-id="0" data-is-full-spec="False" data-color-order-id="0" data-isfeatureimage="True" data-toggle="modal" data-target="#Salient_Features" class="read-full" data-gallery-id="featured-images-gallery">
                 <div class="item-border">
-                    <!-- <i class="icondetail-noibat"></i> -->
-                    <span>Điểm nổi bật</span>
+                    <i class="icondetail-noibat"></i>
                 </div>
-                
+                <p>Điểm nổi bật</p>
             </div>
             <div id="thumb-specification-gallery-0" class="item itemTab  is-show-popup" data-gallery-id="specification-gallery" data-color-id="0" data-is-full-spec="True" data-color-order-id="0" data-isfeatureimage="True">
                 <div class="item-border">
-                    <!-- <i class="icondetail-thongso" data-toggle="modal" data-target="#specifications"></i> -->
-                     <span data-toggle="modal" data-target="#specifications">Thông số kỹ thuật</span>
+                    <i class="icondetail-thongso" data-toggle="modal" data-target="#specifications"></i>
                 </div>
-               
+                <p data-toggle="modal" data-target="#specifications">Thông số kỹ thuật</p>
             </div>
 
           
 
             <div id="thumb-article-gallery-0" class="item itemTab  is-show-popup scroll-content" data-color-id="0" data-is-full-spec="False" data-color-order-id="0" data-isfeatureimage="True">
                 <div class="item-border">
-                    <!-- <i class="icondetail-danhgia"></i> -->
-                    <span>Thông tin sản phẩm</span>
+                    <i class="icondetail-danhgia"></i>
                 </div>
-                
+                <p>Thông tin sản phẩm</p>
             </div>
         </div>
     </div>
