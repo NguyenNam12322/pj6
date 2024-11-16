@@ -116,6 +116,7 @@
 
     #carousel{
         height: 100%;
+        display: none;
     }
 
 
