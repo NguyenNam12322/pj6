@@ -356,7 +356,7 @@
             min-height: 67px;
         }
 
-        .span16 _nk_main{
+        ._nk_main{
             display: none !important;
         }
         
