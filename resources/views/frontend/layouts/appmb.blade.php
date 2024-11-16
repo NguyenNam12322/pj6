@@ -75,6 +75,10 @@
                 display: inline;
             }
 
+            .pay, .view-all-salient_fratured, .box_pro-benefit{
+                display: none;
+            }
+
              #nk-cart ul{
                 margin-top: 20px;
             }
