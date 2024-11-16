@@ -1074,17 +1074,17 @@
         <ul class="breadcrumbs">
         
             <li class="li-homes">
-                <a href="{{route('homeFe')}}">Trang chủ 1234565</a>
+                <a href="{{route('homeFe')}}">Trang chủ</a>
                
             </li>
           
             @if(!empty($ar_groups_info) && !empty($ar_groups_info[0]))    
            
-           <!--  <li class="li-child">
+            <li class="li-child">
                 <span>›</span>
                 <a href="{{ route('details',$data->Link) }}">{{ $data->Name }}</a>
                 
-            </li> -->
+            </li>
             @endif
         </ul>
     </div>
