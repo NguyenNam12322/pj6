@@ -72,7 +72,7 @@
 
 
             section{
-                display: none;
+                display: inline;
             }
 
              #nk-cart ul{
