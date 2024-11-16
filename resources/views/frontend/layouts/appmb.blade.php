@@ -72,7 +72,7 @@
 
 
             section{
-                display: inline;
+                display: block;
             }
 
             .pay, .view-all-salient_fratured, .box_pro-benefit{
