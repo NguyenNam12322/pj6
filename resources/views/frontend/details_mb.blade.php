@@ -10,7 +10,7 @@
     }  
     .owl-carousel .owl-item.active img{
         width:auto !important;
-        margin: 0 auto;
+        
     }
 
    
