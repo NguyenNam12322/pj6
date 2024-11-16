@@ -189,8 +189,6 @@
 
 /*        margin: 0 auto;*/
         height: 309px;
-        min-width: 373px;
-        min-height: 309px;
     }
 
 
@@ -235,10 +233,11 @@
     }
 
     
-     @media (min-width: 769px) {
-        body{
-            display: none;
+     @media (min-width: 1200px) {
+        .container {
+            max-width: 1270px !important;
         }
+
 
     }
 
