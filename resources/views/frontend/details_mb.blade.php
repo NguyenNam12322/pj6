@@ -222,6 +222,7 @@
     }
     .box01__tab{
         height: 55px;
+        min-height: 55px;
     }    
 
     .box01__tab .item{
@@ -651,9 +652,7 @@
                 height: 445px;
             }
 
-            section.detail{
-                height: 96%;
-            }
+           
 
             .pdetail-info{
                 height: 64px; 
