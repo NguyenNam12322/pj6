@@ -236,6 +236,8 @@
         #carousel{
             margin: 0 auto;
             overflow: hidden;
+            width: 220px;
+            height: 220px;
 
         }
 
