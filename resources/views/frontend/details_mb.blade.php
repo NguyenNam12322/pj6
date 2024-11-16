@@ -79,6 +79,7 @@
     }
 
     .redirectCart::before{
+        content: '';
         height: 54px;
         padding: 0;
         width: 100%;
