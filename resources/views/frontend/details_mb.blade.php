@@ -1062,7 +1062,7 @@
             width: 100%;
 
         }
-        .breadcrumb ul{
+        .breadcrumbs ul{
             margin: 0 !important;
         }
     </style>
