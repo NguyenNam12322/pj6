@@ -1075,7 +1075,7 @@
             @if( basename($image->image) != basename($data->Image) )
 
             <div class="item">
-                <a href="{{ asset($image->image) }}" data-fancybox="gallery"><img  data-src ="{{ asset($image->image) }}"  alt="{{ @$data->Name }}" class="lazyload"></a>
+                <a href="{{ asset($image->image) }}" data-fancybox="gallery"><img  data-src ="{{ asset('images/saker/'.strtolower($logoSaker->maker).'.png') }}"  alt="{{ @$data->Name }}" class="lazyload"></a>
                 
             </div>
           
