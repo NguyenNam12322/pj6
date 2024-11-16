@@ -1042,6 +1042,9 @@
             margin: 0 !important;
 
         }
+        .breadcrumbs, .breadcrumbs li{
+            height: 100%;
+        }
        
     </style>
 
