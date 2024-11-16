@@ -70,17 +70,7 @@
                 display: flex;
             }
 
-            .nk-header::before {
-                content: "";
-                background: #000;
-                width: 100%;
-                height: 150px;
-                position: absolute;
-                left: 0;
-                z-index: 0;
-            }
-
-
+            
             section{
                 display: inline;
             }
