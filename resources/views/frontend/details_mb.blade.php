@@ -235,11 +235,10 @@
     }
 
     
-     @media (min-width: 1200px) {
-        .container {
-            max-width: 1270px !important;
+     @media (min-width: 769) {
+        body{
+            display: none;
         }
-
 
     }
 
