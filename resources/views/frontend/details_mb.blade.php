@@ -235,7 +235,7 @@
     }
 
     
-     @media (min-width: 769) {
+     @media (min-width: 769px) {
         body{
             display: none;
         }
