@@ -1039,11 +1039,10 @@
     <style type="text/css">
         .breadcrumbs{
             width: 100%;
+            margin: 0 !important;
 
         }
-        .breadcrumbs ul{
-            margin: 0 !important;
-        }
+       
     </style>
 
 
