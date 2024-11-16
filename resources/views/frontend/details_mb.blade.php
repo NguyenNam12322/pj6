@@ -160,6 +160,7 @@
         height:34px;
         width: 100%;
         padding: 0;
+        display: none;
         
     }
 
@@ -1058,7 +1059,7 @@
 
 
     
-    <div style="width: 400px; height: 34px; overflow: hidden;">
+    <div style="width: 400px; height: 34px; overflow: hidden; border: 1px solid #ddd;">
         <ul class="breadcrumb">
         
             <li class="li-home">
