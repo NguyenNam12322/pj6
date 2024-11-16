@@ -51,7 +51,7 @@
         <link rel="preload" type="text/css" href="{{ asset('css/detail1fe.css') }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
 
         <!-- <link rel="preload" type="text/css" href="{{ asset('css/details.css') }}" as="style" onload="this.onload=null;this.rel='stylesheet'"> -->
-        <link rel="preload" type="text/css" href="{{ asset('css/detailscs.css') }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <!-- <link rel="preload" type="text/css" href="{{ asset('css/detailscs.css') }}" as="style" onload="this.onload=null;this.rel='stylesheet'"> -->
 
         <link rel="preload" href="{{asset('css/lib/owl.carousel.min.css')}}" as="style" onload="this.onload=null;this.rel='stylesheet'">
         <link rel="preload" href="{{asset('css/lib/owl.theme.default.min.css')}}" as="style" onload="this.onload=null;this.rel='stylesheet'">
