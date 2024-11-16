@@ -56,7 +56,7 @@
         }
 
     .share-button .right-cart{
-        margin-left: 10px;
+        
         background: #ffde00;
         color: #000;
         border: 0;
@@ -298,6 +298,7 @@
 
         /*.items-h{
             width: 220px !important;       
+
             height: 220px !important;
         }*/
         .nk-menu{
