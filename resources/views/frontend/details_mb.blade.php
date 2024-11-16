@@ -28,6 +28,7 @@
     }*/
     .tygh-top-panel{
         height: 130px;
+        border: 1px solid #ddd;
     }
     .owl-stage-outer{
         display: inline;
