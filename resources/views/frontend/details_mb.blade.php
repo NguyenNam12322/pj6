@@ -82,7 +82,7 @@
     }
 
     .redirectCart{
-        height: 54px;
+/*        height: 54px;*/
         padding: 0;
         width: 100%;
         
