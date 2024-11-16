@@ -1044,8 +1044,14 @@
 
         }
         .breadcrumbs, .breadcrumbs li{
-            width: 100%;
             height: 100%;
+        }
+
+        .li-homes{
+            width: 70px;
+        }
+        .li-child{
+            width: 270px;
         }
        
     </style>
