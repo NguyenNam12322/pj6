@@ -359,6 +359,10 @@
         ._nk_main{
             display: none !important;
         }
+
+        .container-fluid{
+            display: none;
+        }
         
         .inline{
             height: 100%;
