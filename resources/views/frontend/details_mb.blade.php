@@ -357,7 +357,7 @@
         }
 
         .span16 _nk_main{
-            display: none;
+            display: none !important;
         }
         
         .inline{
