@@ -274,7 +274,7 @@
         
 
         #carousel{
-            display: none;
+            display: block;
 
         }
 
