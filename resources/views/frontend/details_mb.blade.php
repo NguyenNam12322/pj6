@@ -1036,6 +1036,15 @@
 
 
 <section data-id="235791" data-cate-id="1942" class="detail ">
+    <style type="text/css">
+        .breadcrumbs{
+            width: 100%;
+
+        }
+        .breadcrumbs ul{
+            margin: 0 !important;
+        }
+    </style>
 
 
     <?php 
@@ -1057,15 +1066,7 @@
 
     
 
-    <style type="text/css">
-        .breadcrumbs{
-            width: 100%;
-
-        }
-        .breadcrumbs ul{
-            margin: 0 !important;
-        }
-    </style>
+    
     
     <div style="width: 400px; height: 34px; overflow: hidden; border: 1px solid #ddd;">
         <ul class="breadcrumbs">
