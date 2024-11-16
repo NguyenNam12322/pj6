@@ -352,7 +352,8 @@
         }
 
         .nk-header ._nk_main, .span16 .row-fluid {
-            height: 100%;
+            height: 67px;
+            min-height: 67px;
         }
         
         .inline{
