@@ -78,8 +78,7 @@
         text-transform: uppercase;
     }
 
-    .redirectCart::before{
-        content: '';
+    .redirectCart{
         height: 54px;
         padding: 0;
         width: 100%;
