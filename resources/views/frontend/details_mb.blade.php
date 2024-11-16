@@ -14,10 +14,7 @@
         display: none;
     }
 
-    .owl-carousel .owl-item img{
-        display: none;
-    }
-
+   
    
     .share-button{
         width: 100%;
