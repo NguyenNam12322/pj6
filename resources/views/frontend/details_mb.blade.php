@@ -224,7 +224,6 @@
 
     .carts-on{
         
-        height: 46px;
         margin: 0;
 
     }
