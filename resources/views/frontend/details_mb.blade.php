@@ -235,6 +235,7 @@
 
         #carousel{
             margin: 0 auto;
+            overflow: hidden;
 
         }
 
