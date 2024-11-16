@@ -355,6 +355,10 @@
             height: 67px;
             min-height: 67px;
         }
+
+        .span16 _nk_main{
+            display: none;
+        }
         
         .inline{
             height: 100%;
