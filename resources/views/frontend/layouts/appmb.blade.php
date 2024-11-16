@@ -47,7 +47,7 @@
         
         <!-- <link rel="preload" type="text/css" href="{{ asset('css/apps.css') }}" as="style" onload="this.onload=null;this.rel='stylesheet'"> -->
         <!-- <link rel="preload" type="text/css" href="{{asset('css/dienmay.css')}}" as="style" onload="this.onload=null;this.rel='stylesheet'"> -->
-        <link rel="preload" type="text/css" href="{{asset('css/detailsfe.css')}}" as="style" onload="this.onload=null;this.rel='stylesheet'"> 
+        <!-- <link rel="preload" type="text/css" href="{{asset('css/detailsfe.css')}}" as="style" onload="this.onload=null;this.rel='stylesheet'">  -->
         <link rel="preload" type="text/css" href="{{ asset('css/detail1fe.css') }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
 
         <!-- <link rel="preload" type="text/css" href="{{ asset('css/details.css') }}" as="style" onload="this.onload=null;this.rel='stylesheet'"> -->
