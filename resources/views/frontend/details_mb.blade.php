@@ -1058,7 +1058,7 @@
 
 
     
-    <div style="width: 300px; height: 34px;">
+    <div style="width: 400px; height: 34px; overflow: hidden;">
         <ul class="breadcrumb">
         
             <li class="li-home">
