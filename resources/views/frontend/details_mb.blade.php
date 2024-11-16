@@ -2381,7 +2381,7 @@
         autoplay:false,
         dots:false,
         autoWidth: false,
-        loop:true,
+        loop:false,
        
        
         dotsEach:1,
