@@ -1057,7 +1057,11 @@
 
     
 
-
+    <style type="text/css">
+        .breadcrumbs{
+            width: 100%;
+        }
+    </style>
     
     <div style="width: 400px; height: 34px; overflow: hidden; border: 1px solid #ddd;">
         <ul class="breadcrumbs">
