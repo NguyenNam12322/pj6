@@ -975,9 +975,7 @@
 
     
     ?>
-@push('style')
-<link rel="stylesheet" type="text/css" href="{{ asset('css/detailsfe.css') }}">
-@endpush
+
 
 
 <?php
