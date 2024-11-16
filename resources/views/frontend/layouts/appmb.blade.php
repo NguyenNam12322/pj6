@@ -72,7 +72,7 @@
 
             .nk-header::before {
                 content: "";
-                background: #0000;
+                background: #000;
                 width: 100%;
                 height: 150px;
                 position: absolute;
