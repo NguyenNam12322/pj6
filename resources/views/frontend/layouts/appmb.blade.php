@@ -75,7 +75,7 @@
                 display: block;
             }
 
-            .pay{
+            .pay, .box01__tab{
                 display: none;
             }
 
