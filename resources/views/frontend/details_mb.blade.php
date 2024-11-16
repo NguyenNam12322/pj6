@@ -1058,23 +1058,25 @@
 
 
     
-
-    <ul class="breadcrumb">
+    <div style="width: 300px; height: 34px;">
+        <ul class="breadcrumb">
         
-        <li class="li-home">
-            <a href="{{route('homeFe')}}">Trang chủ</a>
+            <li class="li-home">
+                <a href="{{route('homeFe')}}">Trang chủ</a>
+               
+            </li>
+          
+            @if(!empty($ar_groups_info) && !empty($ar_groups_info[0]))    
            
-        </li>
-      
-        @if(!empty($ar_groups_info) && !empty($ar_groups_info[0]))    
-       
-        <li class="li-child">
-            <span>›</span>
-            <a href="{{ route('details',$data->Link) }}">{{ $data->Name }}</a>
-            
-        </li>
-        @endif
-    </ul>
+            <li class="li-child">
+                <span>›</span>
+                <a href="{{ route('details',$data->Link) }}">{{ $data->Name }}</a>
+                
+            </li>
+            @endif
+        </ul>
+    </div>
+    
    
 
     
