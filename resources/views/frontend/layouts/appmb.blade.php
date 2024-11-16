@@ -41,7 +41,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         
-        <link  rel="preload" type="text/css" href="{{ asset('css/appsmb.css') }} " as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <link  rel="preload" type="text/css" href="{{ asset('css/app.css') }} " as="style" onload="this.onload=null;this.rel='stylesheet'">
 
         <link rel="preload" type="text/css" href="{{ asset('css/main.css') }}" as="style" onload="this.onload=null;this.rel='stylesheet'"> 
         
