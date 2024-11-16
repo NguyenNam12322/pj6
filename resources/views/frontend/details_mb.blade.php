@@ -8,13 +8,10 @@
         width: 220px;
         height: 220px !important;
     }  
-    .owl-carousel .owl-item. img{
+    .owl-carousel .owl-item.active img{
         width:auto !important;
-        margin: 0 auto;
-        display: none;
     }
 
-   
    
     .share-button{
         width: 100%;
@@ -24,27 +21,12 @@
         display: none !important;
     }*/
     .tygh-top-panel{
-        height: 130px;
-        border: 1px solid #ddd;
-    }
-    .owl-stage-outer{
-        display: inline;
-    }
+                height: 130px;
+            }
 
-    
-
-    .box_pro-benefit{
-        max-width: 768px !important;
-       
-    }
-
-    /*.nav-search, .scroll-box{
-        display: inline;
-    }*/
-
-  /*  .scrolling, .box01 .owl-carousel .item{
-        text-align: center !important;
-    } */
+    .scrolling, .box01 .owl-carousel .item{
+        text-align: left !important;
+    } 
     
 
     .share-button .redirectCart{
@@ -82,7 +64,7 @@
     }
 
     .redirectCart{
-/*        height: 54px;*/
+        height: 54px;
         padding: 0;
         width: 100%;
         
@@ -118,8 +100,7 @@
     }
 
     #carousel{
-        
-        width: 220px;
+        height: 100%;
     }
 
 
@@ -152,21 +133,12 @@
     }
 
     .breadcrumb{
-        min-height: 34px;        
+                
         margin: 0;
         height:34px;
         width: 100%;
         padding: 0;
-        display: none;
         
-    }
-
-    .item-border i{
-        min-height: 19px;
-    }
-
-    .box01__tab .item-border{
-        height: 55px;
     }
 
     .pdetail-add-to-cart{
@@ -182,15 +154,11 @@
         width: 270px;
     }
 
-   
     .pay{
-        width: 373px;
-
-/*        margin: 0 auto;*/
-        height: 309px;
-        min-width: 373px;
-        min-height: 309px;
-    }
+        
+        height: 320px;
+        display: block;
+    }  
 
 
      .pdetail-stockavailable, .scroll-box{
@@ -213,25 +181,9 @@
     }
     .scrolling_inner{
 
-        max-width: 768px;
+        
         width: 100%;
-        min-height: 55px;
-        height: 55px !important;
-        display: block;
-    }
-    .box01__tab{
-        height: 55px;
-        min-height: 55px;
-    }    
-
-    .box01__tab .item{
-        height: 55px;
-        margin-right: 0px !important;
-        min-height: 55px;
-    }
-
-    .icondetail-noibat{
-        min-height: 28px;
+        height: 110px !important;
     }
 
     
@@ -245,7 +197,6 @@
 
      .breadcrumb li{
             height: 100%;
-            min-height: 34px;
         }
 
     .box01{
@@ -271,23 +222,14 @@
         
 
         #carousel{
-            display: block;
+            margin: 0 auto;
 
-        }
-
-        .item-border{
-            padding: 0 !important;
-            min-height: 55px;
         }
 
         #carousel, .box01 .owl-carousel .owl-item, .box01 .owl-carousel .owl-item img:not(.monopoly-label) {
             
-            display:  !important;
+            display: none !important;
             
-        }
-
-        .box01__tab .item{
-            height: 100%;
         }
         
          .image-container {
@@ -351,16 +293,7 @@
         }
 
         .nk-header ._nk_main, .span16 .row-fluid {
-            height: 67px;
-            min-height: 67px;
-        }
-
-        ._nk_main{
-            display: none !important;
-        }
-
-        .container-fluid{
-            display: none;
+            height: 100%;
         }
         
         .inline{
@@ -371,7 +304,15 @@
             height: 100%;
         }
 
-  
+       
+        
+
+        .scrolling{
+            height: 100%;
+        }
+       
+       
+       
         .content{
             height: 27% !important;
         }
@@ -626,11 +567,6 @@
                 width: 100%;
             }
 
-            .scroll-box{
-                min-height: 170px;
-                height: 170px;
-            }
-
             .img-main a{
                 display: block;
                 height: 100%;
@@ -648,7 +584,7 @@
             }
            
             .scrolling_inner{
-                height: 55px;
+                height: 107px;
             }
             .view-all-salient_fratured{
                 height: 24px;
@@ -660,7 +596,9 @@
                 height: 445px;
             }
 
-           
+            section.detail{
+                height: 96%;
+            }
 
             .pdetail-info{
                 height: 64px; 
@@ -1033,25 +971,6 @@
 
 
 <section data-id="235791" data-cate-id="1942" class="detail ">
-    <style type="text/css">
-        .breadcrumbs{
-            width: 100%;
-            margin: 0 !important;
-            display: flex;
-
-        }
-        .breadcrumbs, .breadcrumbs li{
-            height: 100%;
-        }
-
-        .li-homes{
-            width: 70px;
-        }
-        .li-child{
-            width: 270px;
-        }
-       
-    </style>
 
 
     <?php 
@@ -1073,27 +992,25 @@
 
     
 
+
     
-    
-    <div style="width: 400px; height: 34px; overflow: hidden; border: 1px solid #ddd;">
-        <ul class="breadcrumbs">
+
+    <ul class="breadcrumb">
         
-            <li class="li-homes">
-                <a href="{{route('homeFe')}}">Trang chủ</a>
-               
-            </li>
-          
-            @if(!empty($ar_groups_info) && !empty($ar_groups_info[0]))    
+        <li class="li-home">
+            <a href="{{route('homeFe')}}">Trang chủ</a>
            
-            <li class="li-child">
-                <span>›</span>
-                <a href="{{ route('details',$data->Link) }}">{{ $data->Name }}</a>
-                
-            </li>
-            @endif
-        </ul>
-    </div>
-    
+        </li>
+      
+        @if(!empty($ar_groups_info) && !empty($ar_groups_info[0]))    
+       
+        <li class="li-child">
+            <span>›</span>
+            <a href="{{ route('details',$data->Link) }}">{{ $data->Name }}</a>
+            
+        </li>
+        @endif
+    </ul>
    
 
     
@@ -1110,6 +1027,17 @@
 
                 <img src="{{ asset('uploads/product/1731128406_may-giat-invert_main_371_1020.png_with_bgc.png') }}" alt="{{ @$data->Name }}" width="220px" height="220px">
                 
+                @if($data->id>4720)
+
+                @if(!empty($logoSaker->maker))
+
+                <div class="saker">
+                        <img src="{{ asset('images/saker/'.strtolower($logoSaker->maker).'.png') }}"  data-src ="{{ asset('uploads/product/1731128406_may-giat-invert_main_371_1020.png_with_bgc.png') }}" loading="lazyload" width="220px" height="220px"  >
+                </div>
+                @endif
+                @endif
+
+              
 
             </div>
 
@@ -1127,7 +1055,8 @@
             @if(isset($images_products))
            
             @foreach( $images_products as $image)
-           
+
+          
 
             @if(!empty($image->image) && '_'.basename($image->image) != $image_product)
 
@@ -1146,260 +1075,255 @@
             @endif
     </div>       
    
-   
+    <div class="scrolling_inner">
         <div class="box01__tab scrolling">
-            <div id="thumb-featured-images-gallery-0" class="item itemTab active " >
+            <div id="thumb-featured-images-gallery-0" class="item itemTab active " data-gallery-id="featured-images-gallery" data-color-id="0" data-is-full-spec="False" data-color-order-id="0" data-isfeatureimage="True" data-toggle="modal" data-target="#Salient_Features" class="read-full" data-gallery-id="featured-images-gallery">
                 <div class="item-border">
-                    <!-- <i class="icondetail-noibat"></i> -->
-                    <span>Điểm nổi bật</span>
+                    <i class="icondetail-noibat"></i>
                 </div>
-                
+                <p>Điểm nổi bật</p>
             </div>
-            <div id="thumb-specification-gallery-0" class="item itemTab  is-show-popup">
+            <div id="thumb-specification-gallery-0" class="item itemTab  is-show-popup" data-gallery-id="specification-gallery" data-color-id="0" data-is-full-spec="True" data-color-order-id="0" data-isfeatureimage="True">
                 <div class="item-border">
-                    <!-- <i class="icondetail-thongso" data-toggle="modal" data-target="#specifications"></i> -->
-                     <span data-toggle="modal" data-target="#specifications">Thông số kỹ thuật</span>
+                    <i class="icondetail-thongso" data-toggle="modal" data-target="#specifications"></i>
                 </div>
-               
+                <p data-toggle="modal" data-target="#specifications">Thông số kỹ thuật</p>
             </div>
 
           
 
-            <div id="thumb-article-gallery-0" class="item itemTab  is-show-popup scroll-content" >
+            <div id="thumb-article-gallery-0" class="item itemTab  is-show-popup scroll-content" data-color-id="0" data-is-full-spec="False" data-color-order-id="0" data-isfeatureimage="True">
                 <div class="item-border">
-                    <!-- <i class="icondetail-danhgia"></i> -->
-                    <span>Thông tin sản phẩm</span>
+                    <i class="icondetail-danhgia"></i>
                 </div>
-                
+                <p>Thông tin sản phẩm</p>
             </div>
         </div>
-   
+    </div>
 
+    <div class="clearfix"></div>
 
-   
+    <div>
         <div class="pay">
+        <span >{{ $data->Name }}</span>
         
-            <span >{{ $data->Name }}</span>
-            
-            
-            <div class="pdetail-info">
-                <p class="p1">Thương hiệu: <b>{{ @$ar_groups_info[0]['name'] }}</b></p>
+        
+        <div class="pdetail-info">
+            <p class="p1">Thương hiệu: <b>{{ @$ar_groups_info[0]['name'] }}</b></p>
 
-                <p>Model: <b>{{ @$data->ProductSku  }}</b></p>
-               
-            </div>
+            <p>Model: <b>{{ @$data->ProductSku  }}</b></p>
+           
+        </div>
 
-            <div class="pdetail-stockavailable">
-                <span>  @if($status==="CÒN HÀNG") <img src="{{ asset('images/template/icon-tick.png') }}" width="18px" height="18px" > @endif {{ $status }}</span>
-            </div>
-            <div class="scroll-box">
-                <div class="pdetail-price">
-                    @if($data->Quantily>-1)
-                    <div class="pdetail-price-box show-price-mobile">
-                        {!! @$text !!}
-                        <span> {{ str_replace(',' ,'.', number_format($data->Price)) }} ₫</span>
-                    </div>
-
-
-                    @endif
+        <div class="pdetail-stockavailable">
+            <span>  @if($status==="CÒN HÀNG") <img src="{{ asset('images/template/icon-tick.png') }}" width="18px" height="18px" > @endif {{ $status }}</span>
+        </div>
+        <div class="scroll-box">
+            <div class="pdetail-price">
+                @if($data->Quantily>-1)
+                <div class="pdetail-price-box show-price-mobile">
+                    {!! @$text !!}
+                    <span> {{ str_replace(',' ,'.', number_format($data->Price)) }} ₫</span>
                 </div>
-                <!-- <div class="discount"><p class="installment">Trả góp 0%</p></div> -->
-               
 
-                    @if(!empty($data->promotion))
 
-                    <div class="gift_pro">
+                @endif
+            </div>
+            <!-- <div class="discount"><p class="installment">Trả góp 0%</p></div> -->
+           
 
-                        <span class="ttl"><i class="fa-solid fa-gift"></i> Ưu đãi tặng kèm  @if(!empty($data->GiftPrice)) trị giá {{ str_replace(',' ,'.', number_format($data->GiftPrice)) }}  @endif</span>
-                       
-                        <div class="gift_item">
-                            <ul>
-                                <li>
-                                    
-                                    <div class="gift_info">
-                                       {!! @$data->promotion !!}
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
+                @if(!empty($data->promotion))
+
+                <div class="gift_pro">
+
+                    <span class="ttl"><i class="fa-solid fa-gift"></i> Ưu đãi tặng kèm  @if(!empty($data->GiftPrice)) trị giá {{ str_replace(',' ,'.', number_format($data->GiftPrice)) }}  @endif</span>
+                   
+                    <div class="gift_item">
+                        <ul>
+                            <li>
+                                
+                                <div class="gift_info">
+                                   {!! @$data->promotion !!}
+                                </div>
+                            </li>
+                        </ul>
                     </div>
-                            
-                    
-                    @endif
-
-                    
-
-                   <!--  @if($data_cate==4)
-
-                    <div class="gift_pro">
-                        <span class="ttl"><i class="fa-solid fa-hand-point-right"></i> Bảng giá lắp đặt điều hòa</span> 
-                        <div class="gift_item">
-                            <ul>
-                                <li>
-                                    <div class="gift_info">
-                                        <p><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:16px">(<a href="https://dienmaynguoiviet.vn/bang-gia-vat-tu-lap-dat" target="_blank">Xem chi tiết</a>)</span></span></p>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    
-                    @endif -->
-
-                    @if($checkSharp>-1)
-                    <div class="gift_pro">
-                        <span class="ttl"><i class="fa-solid fa-hand-point-right"></i> Hướng dẫn kích hoạt</span> 
-                        <div class="gift_item">
-                            <ul>
-                                <li>
-                                    <div class="gift_info">
-                                        <p><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:16px">Hướng dẫn khách hàng tự kích hoạt bảo hành sản phẩm Sharp (<a href="https://dienmaynguoiviet.vn/huong-dan-khach-hang-tu-kich-hoat-bao-hanh-san-pham-sharp" target="_blank">Xem chi tiết</a>)</span></span></p>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    @endif
-
-                    @if($checkDaikin===true)
-
-                     <div class="gift_pro">
-                        <span class="ttl"><i class="fa-solid fa-hand-point-right"></i> Hướng dẫn kích hoạt</span> 
-                        <div class="gift_item">
-                            <ul>
-                                <li>
-                                    <div class="gift_info">
-                                        <p><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:16px">Hướng dẫn khách hàng tự kích hoạt bảo hành sản phẩm Daikin (<a href="https://dienmaynguoiviet.vn/huong-dan-tu-kich-hoat-bao-hanh-dieu-hoa-daikin" target="_blank">Xem chi tiết</a>)</span></span></p>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    @endif
-
-                    <!-- nếu tồn tại gift_price thì hiển thị -->
-
-                    @if(!empty($gift_Price) && $data_cate !=8 && $data->Quantily>-1)
-
-                    <?php 
-
-                        $image_gift_promotion = definePrice($gift_Price);
-                    ?>
-                    
-                    <div class="gift_pro">
+                </div>
                         
-                        <span class="ttl"><i class="fa-solid fa-gift"></i> Quà tặng giảm ngay {{ $gift_Price }} đ <img src="{{ asset($image_gift_promotion) }}" height="30px" width="30px"></span>
+                
+                @endif
 
+                
+
+               <!--  @if($data_cate==4)
+
+                <div class="gift_pro">
+                    <span class="ttl"><i class="fa-solid fa-hand-point-right"></i> Bảng giá lắp đặt điều hòa</span> 
+                    <div class="gift_item">
+                        <ul>
+                            <li>
+                                <div class="gift_info">
+                                    <p><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:16px">(<a href="https://dienmaynguoiviet.vn/bang-gia-vat-tu-lap-dat" target="_blank">Xem chi tiết</a>)</span></span></p>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
+                </div>
 
-                    @endif
+                
+                @endif -->
+
+                @if($checkSharp>-1)
+                <div class="gift_pro">
+                    <span class="ttl"><i class="fa-solid fa-hand-point-right"></i> Hướng dẫn kích hoạt</span> 
+                    <div class="gift_item">
+                        <ul>
+                            <li>
+                                <div class="gift_info">
+                                    <p><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:16px">Hướng dẫn khách hàng tự kích hoạt bảo hành sản phẩm Sharp (<a href="https://dienmaynguoiviet.vn/huong-dan-khach-hang-tu-kich-hoat-bao-hanh-san-pham-sharp" target="_blank">Xem chi tiết</a>)</span></span></p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                @endif
+
+                @if($checkDaikin===true)
+
+                 <div class="gift_pro">
+                    <span class="ttl"><i class="fa-solid fa-hand-point-right"></i> Hướng dẫn kích hoạt</span> 
+                    <div class="gift_item">
+                        <ul>
+                            <li>
+                                <div class="gift_info">
+                                    <p><span style="font-family:Arial,Helvetica,sans-serif"><span style="font-size:16px">Hướng dẫn khách hàng tự kích hoạt bảo hành sản phẩm Daikin (<a href="https://dienmaynguoiviet.vn/huong-dan-tu-kich-hoat-bao-hanh-dieu-hoa-daikin" target="_blank">Xem chi tiết</a>)</span></span></p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                @endif
+
+                <!-- nếu tồn tại gift_price thì hiển thị -->
+
+                @if(!empty($gift_Price) && $data_cate !=8 && $data->Quantily>-1)
+
+                <?php 
+
+                    $image_gift_promotion = definePrice($gift_Price);
+                ?>
+                
+                <div class="gift_pro">
+                    
+                    <span class="ttl"><i class="fa-solid fa-gift"></i> Quà tặng giảm ngay {{ $gift_Price }} đ <img src="{{ asset($image_gift_promotion) }}" height="30px" width="30px"></span>
+
+                </div>
+
+                @endif
 
 
-                    @if(!empty($gift) &&  $data->Quantily>0 &&  $data['Price']>0)
+                @if(!empty($gift) &&  $data->Quantily>0 &&  $data['Price']>0)
 
-                    <fieldset class="p-gift">
-                        <legend id="data-pricetotal" style="color: #ff0000;font-size: 18px; font-weight: bold" data-pricetotal="0">
-                            Khuyến mãi kèm theo
-                        </legend>
-
-                      
-                        <!---->
-                        <div class="detail-offer">
-                           
-                            {{ $gifts->type ==1?'Lựa chọn 1 trong 2 sản phẩm sau':'' }}
-                            @foreach($gift as $key => $valuegift)
-                            <div class="select-gift">
-                                
-
-                                <input type="checkbox" name="gift" value="{{ $valuegift->name }}" class="gift-check">
-                                
-                                <img data-src="{{ asset($valuegift->image) }}" height="30px" width="30px" class="lazyload">
-
-                                @if($valuegift->id ==5)
-                                <a href="https://dienmaynguoiviet.vn/khau-trang-loc-khi-lg-puricare-the-he-2-ap551awfa-ajp-may-trang"><h4>{{ $valuegift->name }}</h4></a>
-                                @else
-                                <h4>{{ $valuegift->name }}</h4>
-                                @endif
-                            </div>
-                            @endforeach
-                           
-                        </div>
-                        <div class="img-gift clearfix">
-                        </div>
-                    </fieldset>
-
-                     @endif    
+                <fieldset class="p-gift">
+                    <legend id="data-pricetotal" style="color: #ff0000;font-size: 18px; font-weight: bold" data-pricetotal="0">
+                        Khuyến mãi kèm theo
+                    </legend>
 
                   
-                    <!-- mobile -->
-                    @if($data->Quantily>0)
-
-                    @if(!empty($data_price_show))
-
-                    @foreach($data_price_show as $key=> $val)
-                         <input type="radio" id="age{{ $val->id }}" name="price-add-mobile" class="price-add-mobile" value="{{ $val->id }}" {{ $key===0?'checked':'' }}>
-                        <label for="age1" > {{  $val->name }} : {{str_replace(',' ,'.', number_format($val->price))  }}đ</label><br>
-                    @endforeach
-
-                    @endif
-
-                    <!-- <a href="tel:02473036336"><div class="buy-button-hotline nhapnhay btn">Gọi 0123.456.789 để được giảm thêm</div></a> -->
-
-
-                    <div class="pdetail-add-to-cart add-to-cart box-cart">
+                    <!---->
+                    <div class="detail-offer">
                        
-                        <input type="hidden" name="productId" value="{{ $data->id }}">
-                        <input type="hidden" name="gift_checked"  id="gift_checked" value="">
-                        <!-- <div class="product-quantity">
-                            <input type="text" class="quantity-field" readonly="readonly" name="qty" value="1">
-                            </div> -->
-                        <div class="redirectCart div-carts-on">
-                            <div type="button" class="btn-add-cart carts-on" onclick="addToCart({{ $data->id }})">MUA NGAY <br>
-                                </div>
-                        </div>    
-                        
+                        {{ $gifts->type ==1?'Lựa chọn 1 trong 2 sản phẩm sau':'' }}
+                        @foreach($gift as $key => $valuegift)
+                        <div class="select-gift">
+                            
 
-                        <div class="share-button">
-                             <button type="button" class="btn-add-cart redirectCart cartSP" onclick="addToSuport(2221)">GỌI LẠI CHO TÔI <br>(Tư vấn tận tình)</button>
+                            <input type="checkbox" name="gift" value="{{ $valuegift->name }}" class="gift-check">
+                            
+                            <img data-src="{{ asset($valuegift->image) }}" height="30px" width="30px" class="lazyload">
 
-                            <button type="button" class="btn-add-cart  redirectCart cartSP right-cart" onclick="addToSuport(2221)">TRẢ GÓP QUA THẺ <br></button>
+                            @if($valuegift->id ==5)
+                            <a href="https://dienmaynguoiviet.vn/khau-trang-loc-khi-lg-puricare-the-he-2-ap551awfa-ajp-may-trang"><h4>{{ $valuegift->name }}</h4></a>
+                            @else
+                            <h4>{{ $valuegift->name }}</h4>
+                            @endif
                         </div>
-                           
-                        
-                        <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-                            Launch demo modal
-                            </button> -->
-                    </div>
-                    
-                    @if((int)$data['Price']>=3000000)
-                    <!-- <div class="installment-purchase pdetail-installment">
-                       
-                        <a target="_blank"  href="{{ route('details', $data->Link)  }}?show=tra-gop" admicro-data-event="101725" admicro-data-auto="1" admicro-data-order="false" class="but-1-gop">
-                        <strong>TRẢ GÓP QUA THẺ</strong>
-                        <br>
-                        (Visa, Master, JCB)
-                        </a>
-                    </div>  -->
-                    @endif
-
-                    @else
-
-                    <div class="pdetail-add-to-cart add-to-cart">
-                        <div class="inline">
-                            <button type="button" class="btn btn-lg btn-add-cart btn-add-cart redirectCart">Liên hệ</button>
-                        </div>
+                        @endforeach
                        
                     </div>
-                    @endif
-            
-            </div>
+                    <div class="img-gift clearfix">
+                    </div>
+                </fieldset>
+
+                 @endif    
+
+              
+                <!-- mobile -->
+                @if($data->Quantily>0)
+
+                @if(!empty($data_price_show))
+
+                @foreach($data_price_show as $key=> $val)
+                     <input type="radio" id="age{{ $val->id }}" name="price-add-mobile" class="price-add-mobile" value="{{ $val->id }}" {{ $key===0?'checked':'' }}>
+                    <label for="age1" > {{  $val->name }} : {{str_replace(',' ,'.', number_format($val->price))  }}đ</label><br>
+                @endforeach
+
+                @endif
+
+                <!-- <a href="tel:02473036336"><div class="buy-button-hotline nhapnhay btn">Gọi 0123.456.789 để được giảm thêm</div></a> -->
+
+
+                <div class="pdetail-add-to-cart add-to-cart box-cart">
+                   
+                    <input type="hidden" name="productId" value="{{ $data->id }}">
+                    <input type="hidden" name="gift_checked"  id="gift_checked" value="">
+                    <!-- <div class="product-quantity">
+                        <input type="text" class="quantity-field" readonly="readonly" name="qty" value="1">
+                        </div> -->
+                    <div class="redirectCart div-carts-on">
+                        <div type="button" class="btn-add-cart carts-on" onclick="addToCart({{ $data->id }})">MUA NGAY <br>
+                            </div>
+                    </div>    
                     
-            
+
+                    <div class="share-button">
+                         <button type="button" class="btn-add-cart redirectCart cartSP" onclick="addToSuport(2221)">GỌI LẠI CHO TÔI <br>(Tư vấn tận tình)</button>
+
+                        <button type="button" class="btn-add-cart  redirectCart cartSP right-cart" onclick="addToSuport(2221)">TRẢ GÓP QUA THẺ <br></button>
+                    </div>
+                       
+                    
+                    <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                        Launch demo modal
+                        </button> -->
+                </div>
+                
+                @if((int)$data['Price']>=3000000)
+                <!-- <div class="installment-purchase pdetail-installment">
+                   
+                    <a target="_blank"  href="{{ route('details', $data->Link)  }}?show=tra-gop" admicro-data-event="101725" admicro-data-auto="1" admicro-data-order="false" class="but-1-gop">
+                    <strong>TRẢ GÓP QUA THẺ</strong>
+                    <br>
+                    (Visa, Master, JCB)
+                    </a>
+                </div>  -->
+                @endif
+
+                @else
+
+                <div class="pdetail-add-to-cart add-to-cart">
+                    <div class="inline">
+                        <button type="button" class="btn btn-lg btn-add-cart btn-add-cart redirectCart">Liên hệ</button>
+                    </div>
+                   
+                </div>
+                @endif
+        
         </div>
-    
-    
+            
+    </div>
+    </div>
 
     
     <div class="view-all-salient_fratured">
@@ -2381,7 +2305,7 @@
         autoplay:false,
         dots:false,
         autoWidth: false,
-        loop:false,
+        loop:true,
        
        
         dotsEach:1,

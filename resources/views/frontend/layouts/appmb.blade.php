@@ -41,7 +41,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         
-        <!-- <link  rel="preload" type="text/css" href="{{ asset('css/app.css') }} " as="style" onload="this.onload=null;this.rel='stylesheet'"> -->
+        <link  rel="preload" type="text/css" href="{{ asset('css/app.css') }} " as="style" onload="this.onload=null;this.rel='stylesheet'">
 
         <link rel="preload" type="text/css" href="{{ asset('css/main.css') }}" as="style" onload="this.onload=null;this.rel='stylesheet'"> 
         
@@ -72,24 +72,16 @@
 
 
             section{
-                display: block;
+                display: inline;
             }
-
-           
 
              #nk-cart ul{
                 margin-top: 20px;
             }
+            .logo-mobile img{
+                max-width: 167px;
 
-
-            .tygh-top-panel, .breadcrumb, .pay, .view-all-salient_fratured, .box_pro-benefit{
-                max-width: 768px !important;   
-                width: 100%;
             }
-
-           /* .scrolling_inner{
-                display: none;
-            }*/
 
 
 
@@ -231,7 +223,6 @@
                 width: 100%;
                 display: flex;
                 height: 67px;
-                margin: 0 auto;
             }
 
             .d .nk-header #nk-cart{
@@ -944,11 +935,13 @@
                         color: #fff;
                      }
 
+                    
+                  
+                        
+
                         .search_center{
-                            width: 100%;
                             margin: 0;
                             display: block;
-                            min-height: 40px;
                         }
 
                         .nki-shopping-cart:before {
@@ -1160,7 +1153,7 @@
         
         @endif
 
-        <div class="tygh-top-panel">
+        <div class="tygh-top-panel clearfix">
             <div class="container-fluid ">
               
                 <!-- header -->
