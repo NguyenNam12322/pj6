@@ -240,7 +240,7 @@
 
         #carousel, .box01 .owl-carousel .owl-item, .box01 .owl-carousel .owl-item img:not(.monopoly-label) {
             
-            display: none !important;
+            display: block !important;
             
         }
         
@@ -2317,7 +2317,7 @@
         autoplay:false,
         dots:false,
         autoWidth: false,
-        loop:true,
+        loop:false,
        
        
         dotsEach:1,
