@@ -1040,6 +1040,7 @@
         .breadcrumbs{
             width: 100%;
             margin: 0 !important;
+            display: flex;
 
         }
         .breadcrumbs, .breadcrumbs li{
