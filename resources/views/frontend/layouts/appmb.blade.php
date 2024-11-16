@@ -75,9 +75,7 @@
                 display: block;
             }
 
-            .pay, .box01__tab{
-                display: none;
-            }
+           
 
              #nk-cart ul{
                 margin-top: 20px;
