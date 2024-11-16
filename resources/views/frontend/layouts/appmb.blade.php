@@ -75,9 +75,9 @@
                 display: block;
             }
 
-           /* .pay, .view-all-salient_fratured, .box_pro-benefit, .box01__tab{
+            .pay{
                 display: none;
-            }*/
+            }
 
              #nk-cart ul{
                 margin-top: 20px;
