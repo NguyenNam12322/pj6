@@ -114,11 +114,6 @@
         height: 278px;
     }
 
-    #carousel{
-        height: 100%;
-        display: none;
-    }
-
 
 
     body{
@@ -245,7 +240,7 @@
 
         #carousel, .box01 .owl-carousel .owl-item, .box01 .owl-carousel .owl-item img:not(.monopoly-label) {
             
-            display: inline !important;
+            display: none !important;
             
         }
         
