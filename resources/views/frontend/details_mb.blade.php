@@ -1060,6 +1060,9 @@
     <style type="text/css">
         .breadcrumbs{
             width: 100%;
+
+        }
+        .breadcrumb ul{
             margin: 0;
         }
     </style>
