@@ -61,7 +61,7 @@ class bannerController extends AppBaseController
 
             $file_upload = $request->file('image');
 
-            $name = time() . '_' . $file_upload->getClientOriginalName();
+            $name = time() . '_' . preg_replace('/\s+/', '', $file_upload->getClientOriginalName());
 
             $filePath = $file_upload->storeAs('uploads/banner', $name, 'public');
 
@@ -143,7 +143,7 @@ class bannerController extends AppBaseController
 
             $file_upload = $request->file('image');
 
-            $name = time() . '_' . $file_upload->getClientOriginalName();
+            $name = time() . '_' . preg_replace('/\s+/', '', $file_upload->getClientOriginalName());
 
             $filePath = $file_upload->storeAs('uploads/banner', $name, 'public');
 

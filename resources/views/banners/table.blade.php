@@ -1,5 +1,5 @@
 <?php 
-    $option[0] = ['name'=>'Banner slide home', 'size'=>'500px - 388px'];
+    $option[0] = ['name'=>'Banner slide home', 'size'=>'914px - 291px'];
     $option[1] = ['name'=>'Banner top', 'size'=>'1920px - 44px'];
     $option[2] = ['name'=>'Banner bên phải slider home', 'size'=>'254px - 254px'];
     $option[3] = ['name'=>'Banner dưới slider home', 'size'=>'170px - 87px'];
