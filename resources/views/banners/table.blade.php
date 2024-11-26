@@ -73,7 +73,7 @@
                        
                         <tr>
                             <td>File</td>
-                            <td>: <input type="text" readonly="" size="80" value="/media/banner/15_Aprd99119ca42e35bfa7fbc7fba9ab1d88a.jpg"></td>
+                            <td>: <input type="text" readonly="" size="80" value="{{ asset($banner->image) }}"></td>
                         </tr>
                         <tr>
                             <td>Kích thước</td>
