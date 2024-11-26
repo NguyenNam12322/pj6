@@ -249,7 +249,8 @@
                     active:active
                 },
                 success: function(result){
-                     location.reload();
+                    consolelog(result);
+                     // location.reload();
                 }
             });
 
