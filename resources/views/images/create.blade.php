@@ -214,7 +214,9 @@
                 },
                 success: function(result){
 
-                     location.reload();
+                    console.log("{{ route('image-ajax-product') }}");
+
+                     // location.reload();
                 }
             });
            
