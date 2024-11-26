@@ -205,20 +205,22 @@
         $('.show-image-product').on('change', function() {
            $('.show-image-product').not(this).prop('checked', false);
 
-            $.ajax({
-                type: 'GET',
-                url: "{{ route('image-ajax-product') }}",
-                data: {
-                    product_id: '{{ $product_id }}',
-                    image:$(this).val()
-                },
-                success: function(result){
+           console.log('{{ route('image-ajax-product') }}');
 
-                    console.log("{{ route('image-ajax-product') }}");
+            // $.ajax({
+            //     type: 'GET',
+            //     url: "{{ route('image-ajax-product') }}",
+            //     data: {
+            //         product_id: '{{ $product_id }}',
+            //         image:$(this).val()
+            //     },
+            //     success: function(result){
 
-                     // location.reload();
-                }
-            });
+            //         console.log("{{ route('image-ajax-product') }}");
+
+            //          // location.reload();
+            //     }
+            // });
            
         });
 
