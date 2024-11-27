@@ -200,6 +200,11 @@
 
         })
 
+        <?php 
+
+
+        ?>
+
         function showChild(id, classs, product_id) {
 
             if($('.'+id).is(":visible") ){
@@ -212,7 +217,7 @@
 
                 $.ajax({
                     type: 'GET',
-                    url: "{{ route('filter-child-click') }}",
+                    url: "{{   str_replace('http', 'https', route('filter-child-click')) }}",
                     data: {
                         id: id,
                         product_id: product_id
