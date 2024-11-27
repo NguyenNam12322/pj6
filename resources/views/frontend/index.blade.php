@@ -760,7 +760,7 @@
                 ?>
 
                 @if($data->count()>0  && !empty($check_id_group_product))
-                <div class="lst-cate-title header-block"><a href="/{{ $value['link'] }}"><span>{{ $value['name'] }}</span></a>  </div>
+                <div class="lst-cate-title header-block title-name"><a href="/{{ $value['link'] }}"><span>{{ $value['name'] }}</span></a>  </div>
 
                 <div class="div-group">
                      <div class="w100p show-group-data  desktop">
