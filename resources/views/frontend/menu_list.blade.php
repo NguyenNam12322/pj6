@@ -106,8 +106,8 @@
                                                                 <?php 
                                                                     $dempd3 = 0;
 
-                                                                    if(!empty(json_decode($val3->product_id))){
-                                                                        $dempd3 = count(json_decode($val3->product_id));
+                                                                    if(!empty(json_decode($val_3->product_id))){
+                                                                        $dempd3 = count(json_decode($val_3->product_id));
                                                                     }
                                                                 ?>
                                                                 @if($dempd3>0)
