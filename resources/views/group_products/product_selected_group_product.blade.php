@@ -217,7 +217,7 @@
 
                 $.ajax({
                     type: 'GET',
-                    url: "{{   str_replace('http', 'https', route('filter-child-click')) }}",
+                    url: "{{   route('filter-child-click') }}",
                     data: {
                         id: id,
                         product_id: product_id

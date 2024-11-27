@@ -209,7 +209,7 @@
 
             $.ajax({
                 type: 'GET',
-                url: "{{  str_replace('http', 'https', route('image-ajax-product'))  }}",
+                url: "{{  route('image-ajax-product') }}",
                 data: {
                     product_id: '{{ $product_id }}',
                     image:$(this).val()
