@@ -746,7 +746,7 @@
                     $hot = DB::table('hot')->select('product_id')->where('group_id', $value['parent_id'])->orderBy('orders', 'asc')->get()->pluck('product_id');
 
                     // dd($hot);
-                    $data = App\Models\product::whereIn('id', $hot->toArray())->Orderby('orders_hot', 'desc')->get();
+                    $data = App\Models\product::whereIn('id', $hot->toArray())->where('active', 1)->Orderby('orders_hot', 'desc')->get();
 
                     $check_id_group_product = App\Models\groupProduct::where('id', $value['id'])->select('product_id')->first();
 
