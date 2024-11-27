@@ -31,7 +31,7 @@
                                         ?>
 
                                         @foreach($menu_lv_1 as $val)
-                                        @if($val->id !=7 && $val->id !=71 && count(json_decode($val-> product_id))>0)
+                                        @if($val->id !=7 && $val->id !=71)
                                         <li class="left-menu">
                                             <div class="menu-item">
                                                 <div class="icon">
