@@ -31,17 +31,7 @@
                                         ?>
 
                                         @foreach($menu_lv_1 as $val)
-                                        <?php 
-                                            $dempd1 = 0;
-
-                                            if(!empty(json_decode($val->product_id))){
-                                                $dempd1 = count(json_decode($val->product_id));
-                                            }
-                                        ?>
-                                        
-                                        @if($val->id !=7 && $val->id !=71  && $dempd1>0)
-
-
+                                        @if($val->id !=7 && $val->id !=71)
                                         <li class="left-menu">
                                             <div class="menu-item">
                                                 <div class="icon">
@@ -56,7 +46,7 @@
                                                 
 
                                                 <p>
-                                                    <a href="{{route('details', $val->link)}}"  data-id="{{ @count(json_decode($val-> product_id)) }}">{{ $val->name??'' }}</a>
+                                                    <a href="{{route('details', $val->link)}}">{{ $val->name??'' }}</a>
                                                     
                                                 </p>
                                             </div>
@@ -68,25 +58,15 @@
                                             ?>
                                             @if(!empty($menu_level_2)  && $menu_level_2->count()>0)
 
-                                                
-
-
-
                                              <div class="sub-menu tivi-loa-amthanh" style="display: none;">
                                                 <div class=" menu-tivi children_sort">
                                                      @foreach($menu_level_2 as $val2) 
-
-                                                    <?php
-
-                                                        $dempd2 = 0;
-
-                                                        if(!empty(json_decode($val2->product_id))){
-                                                            $dempd2 = count(json_decode($val2->product_id));
-                                                        }
-                                                    ?>
-                                                    
                                                     <div class="item row2 bg-white">
                                                        
+                                                      
+
+                                                        
+
                                                         <?php 
 
                                                             $menu_level_3 = $menu->where('active', 1)->where('parent_id', $val2->id);
@@ -95,7 +75,7 @@
                                                         <div class="links">
                                                             <h5 title="Thương hiệu">
 
-                                                                <a class="a-links" href="{{ route('details', $val2->link) }}" >{{ $val2->name??'' }} <span class="nk-sticker">
+                                                                <a class="a-links" href="{{ route('details', $val2->link) }}">{{ $val2->name??'' }} <span class="nk-sticker">
                                                                         <span class="path1"></span>
                                                                         <span class="path2"></span>
                                                                     </span>
@@ -105,19 +85,8 @@
                                                             <ul>
 
                                                                 
-                                                                @if(!empty($menu_level_3)  && $menu_level_3->count()>0)
+                                                                 @if(!empty($menu_level_3)  && $menu_level_3->count()>0)
                                                                 @foreach($menu_level_3 as $val_3)
-
-                                                                <?php
-
-                                                                    $dempd3 = 0;
-
-                                                                    if(!empty(json_decode($val3->product_id))){
-                                                                        $dempd3 = count(json_decode($val3->product_id));
-                                                                    }
-                                                                ?>
-
-                                                                @if($dempd3>0)
                                                                 <li>
                                                                     <p style="">
                                                                         <a title="{{ $val_3->name??'' }}" class="a-links" href="{{ route('details', $val_3->link) }}">
@@ -127,8 +96,6 @@
                                                                             </span>{{ $val_3->name??'' }} </a>
                                                                     </p>
                                                                 </li>
-
-                                                                @endif
                                                                 @endforeach
                                                                 @endif
                                                                
