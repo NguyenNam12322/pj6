@@ -1118,8 +1118,8 @@
 
             <br>
 
-           
-            <div class="view-all-salient_fratured">
+            
+           <!--  <div class="view-all-salient_fratured">
 
                 <b>Chính sách mua hàng tại MuaSamTaiKho.vn</b>
             </div> 
@@ -1140,7 +1140,7 @@
             </style>
             <div class="box_pro-benefit">
                 <div class="monopoly">
-                    <!-- <span class="ttl"> Độc quyền tại Siêu Thị Điện Máy - Nội Thất Chợ Lớn</span> -->
+                  
                     <div class="monopoly_item">
                         <ul>
                             <?php 
@@ -1174,7 +1174,7 @@
                         </ul>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
            
 
