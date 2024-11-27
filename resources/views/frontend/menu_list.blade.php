@@ -31,7 +31,7 @@
                                         ?>
 
                                         @foreach($menu_lv_1 as $val)
-                                        @if($val->id !=7 && $val->id !=71)
+                                        @if($val->id !=7 && $val->id !=71 && count(json_decode($val-> product_id))>0)
                                         <li class="left-menu">
                                             <div class="menu-item">
                                                 <div class="icon">
@@ -75,7 +75,7 @@
                                                         <div class="links">
                                                             <h5 title="Thương hiệu">
 
-                                                                <a class="a-links" href="{{ route('details', $val2->link) }}">{{ $val2->name??'' }} <span class="nk-sticker">
+                                                                <a class="a-links" href="{{ route('details', $val2->link) }}" data-id="{{ @count(json_decode($val2-> product_id)) }}">{{ $val2->name??'' }} <span class="nk-sticker">
                                                                         <span class="path1"></span>
                                                                         <span class="path2"></span>
                                                                     </span>
