@@ -39,6 +39,8 @@
                                                 $dempd1 = count(json_decode($val->product_id));
                                             }
                                         ?>
+
+                                        @if($dempd1>0)
                                         <li class="left-menu">
                                             <div class="menu-item">
                                                 <div class="icon">
@@ -120,6 +122,7 @@
                                             @endif
                                                 
                                         </li>
+                                        @endif
                                         @endif
 
                                         
