@@ -32,6 +32,13 @@
 
                                         @foreach($menu_lv_1 as $val)
                                         @if($val->id !=7 && $val->id !=71)
+                                        <?php 
+                                            $dempd1 = 0;
+
+                                            if(!empty(json_decode($val->product_id))){
+                                                $dempd1 = count(json_decode($val->product_id));
+                                            }
+                                        ?>
                                         <li class="left-menu">
                                             <div class="menu-item">
                                                 <div class="icon">
