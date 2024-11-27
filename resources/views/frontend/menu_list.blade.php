@@ -46,7 +46,7 @@
                                                 
 
                                                 <p>
-                                                    <a href="{{route('details', $val->link)}}">{{ $val->name??'' }}</a>
+                                                    <a href="{{route('details', $val->link)}}"  data-id="{{ @count(json_decode($val-> product_id)) }}">{{ $val->name??'' }}</a>
                                                     
                                                 </p>
                                             </div>
