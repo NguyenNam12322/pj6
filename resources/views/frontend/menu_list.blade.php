@@ -70,6 +70,16 @@
                                              <div class="sub-menu tivi-loa-amthanh" style="display: none;">
                                                 <div class=" menu-tivi children_sort">
                                                      @foreach($menu_level_2 as $val2) 
+
+                                                     <?php 
+                                                        $dempd2 = 0;
+
+                                                        if(!empty(json_decode($val2->product_id))){
+                                                            $dempd2 = count(json_decode($val->product_id));
+                                                        }
+                                                    ?>
+
+                                                    @if($dempd2>0)
                                                     <div class="item row2 bg-white">
                                                        
                                                       
@@ -113,6 +123,7 @@
                                                         </div>
                                                         
                                                     </div>
+                                                    @endif
                                                     @endforeach
 
                                                    
