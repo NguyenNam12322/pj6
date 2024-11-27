@@ -38,7 +38,7 @@
                                                     <i class="{{ $icon_define[$dem] }}"></i>
                                                 </div>
 
-                                                 <?php 
+                                                <?php 
 
                                                     $dem++;
                                                 ?>
@@ -46,7 +46,7 @@
                                                 
 
                                                 <p>
-                                                    <a href="{{route('details', $val->link)}}">{{ $val->name??'' }}</a>
+                                                    <a href="{{route('details', $val->link)}}" data-id="{{ count(json_decode($val-> product_id)) }}">{{ $val->name??'' }}</a>
                                                     
                                                 </p>
                                             </div>
@@ -75,7 +75,7 @@
                                                         <div class="links">
                                                             <h5 title="Thương hiệu">
 
-                                                                <a class="a-links" href="{{ route('details', $val2->link) }}">{{ $val2->name??'' }} <span class="nk-sticker">
+                                                                <a class="a-links" href="{{ route('details', $val2->link) }}" data-id="{{ count(json_decode($val2-> product_id)) }}">{{ $val2->name??'' }} <span class="nk-sticker">
                                                                         <span class="path1"></span>
                                                                         <span class="path2"></span>
                                                                     </span>
@@ -89,7 +89,7 @@
                                                                 @foreach($menu_level_3 as $val_3)
                                                                 <li>
                                                                     <p style="">
-                                                                        <a title="{{ $val_3->name??'' }}" class="a-links" href="{{ route('details', $val_3->link) }}">
+                                                                        <a title="{{ $val_3->name??'' }}" class="a-links" href="{{ route('details', $val_3->link) }}" data-id="{{ count(json_decode($val3-> product_id)) }}">
                                                                             <span class="nki-sort-next ">
                                                                                 <span class="path1"></span>
                                                                                 <span class="path2"></span>
