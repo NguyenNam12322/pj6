@@ -82,10 +82,6 @@
                                                     @if($dempd2>0)
                                                     <div class="item row2 bg-white">
                                                        
-                                                      
-
-                                                        
-
                                                         <?php 
 
                                                             $menu_level_3 = $menu->where('active', 1)->where('parent_id', $val2->id);
@@ -104,8 +100,17 @@
                                                             <ul>
 
                                                                 
-                                                                 @if(!empty($menu_level_3)  && $menu_level_3->count()>0)
+                                                                @if(!empty($menu_level_3)  && $menu_level_3->count()>0)
                                                                 @foreach($menu_level_3 as $val_3)
+
+                                                                <?php 
+                                                                    $dempd3 = 0;
+
+                                                                    if(!empty(json_decode($val3->product_id))){
+                                                                        $dempd3 = count(json_decode($val3->product_id));
+                                                                    }
+                                                                ?>
+                                                                @if($dempd3>0)
                                                                 <li>
                                                                     <p style="">
                                                                         <a title="{{ $val_3->name??'' }}" class="a-links" href="{{ route('details', $val_3->link) }}">
@@ -115,6 +120,7 @@
                                                                             </span>{{ $val_3->name??'' }} </a>
                                                                     </p>
                                                                 </li>
+                                                                @endif
                                                                 @endforeach
                                                                 @endif
                                                                
