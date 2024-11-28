@@ -1188,7 +1188,7 @@
                         <div class="item-border">
                             <i class="icondetail-noibat"></i>
                         </div>
-                        <p>Điểm nổi bật</p>
+                        <p>Điểm nổi bật11</p>
                     </div>
                      @endif
 
@@ -1198,9 +1198,9 @@
                         <div class="item-border">
                             <i class="icondetail-thongso" data-toggle="modal" data-target="#specifications"></i>
                         </div>
-                        <p data-toggle="modal" data-target="#specifications">Thông số kỹ thuật</p>
+                        <p data-toggle="modal" data-target="#specifications">Thông số kỹ thuật11</p>
 
-                        {{ $data->Specifications }}11
+                        {{ $data->Specifications }}
                     </div>
 
                     @endif
