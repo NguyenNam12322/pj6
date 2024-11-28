@@ -1188,7 +1188,7 @@
                         <div class="item-border">
                             <i class="icondetail-noibat"></i>
                         </div>
-                        <p>Điểm nổi bật11</p>
+                        <p>Điểm nổi bật</p>
                     </div>
                      @endif
 
@@ -1200,7 +1200,7 @@
                         </div>
                         <p data-toggle="modal" data-target="#specifications">Thông số kỹ thuật</p>
 
-                    <?php   dd($data->Specifications); ?> 
+                        
                     </div>
 
                     @endif
