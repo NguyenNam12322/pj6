@@ -1200,7 +1200,7 @@
                         </div>
                         <p data-toggle="modal" data-target="#specifications">Thông số kỹ thuật</p>
 
-                        {{ $data->Specifications }}
+                        {{ $data->Specifications }}11
                     </div>
 
                     @endif
