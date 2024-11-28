@@ -1200,7 +1200,7 @@
                         </div>
                         <p data-toggle="modal" data-target="#specifications">Thông số kỹ thuật</p>
 
-                        
+
                     </div>
 
                     @endif
@@ -1246,7 +1246,7 @@
 
                         
                         <div class="modal-body" id="thong-so">
-                            {!!  $data->Specifications  !!} 
+                            11
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
