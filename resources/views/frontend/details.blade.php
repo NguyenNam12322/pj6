@@ -1198,9 +1198,9 @@
                         <div class="item-border">
                             <i class="icondetail-thongso" data-toggle="modal" data-target="#specifications"></i>
                         </div>
-                        <p data-toggle="modal" data-target="#specifications">Thông số kỹ thuật11</p>
+                        <p data-toggle="modal" data-target="#specifications">Thông số kỹ thuật</p>
 
-                        {{ $data->Specifications }}
+                    <?php   dd($data->Specifications); ?> 
                     </div>
 
                     @endif
