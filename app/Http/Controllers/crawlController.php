@@ -310,6 +310,9 @@ class crawlController extends Controller
                     array_push($check_ar, $value->id);
                 }
             }
+            else{
+                 array_push($check_ar, $value->id);
+            }
 
         }
 
