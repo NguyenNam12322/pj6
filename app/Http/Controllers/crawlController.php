@@ -296,7 +296,15 @@ class crawlController extends Controller
             
             $list = $value->product_id;
 
-            dd(json_decode($list));
+            $ar_list = json_decode($list);
+
+            $check = product::whereIn('id', $ar_list)->where('active', 1)->get();
+
+            dd($check);
+
+            // dd(json_decode($list));
+
+
 
             // if(!empty(json_decode(json))){
 
