@@ -88,6 +88,7 @@
 
                                                         ?>
                                                         <div class="links">
+
                                                             <h5 title="Thương hiệu">
 
                                                                 <a class="a-links" href="{{ route('details', $val2->link) }}">{{ $val2->name??'' }} <span class="nk-sticker">
@@ -113,7 +114,7 @@
                                                                 @if($dempd3>0)
                                                                 <li>
                                                                     <p style="">
-                                                                        <a title="{{ $val_3->name??'' }}" class="a-links" href="{{ route('details', $val_3->link) }}">
+                                                                        <a title="{{ $val_3->name??'' }}" class="a-links" href="{{ route('details', $val_3->link) }}" data-id="{{ $dempd3 }}">
                                                                             <span class="nki-sort-next ">
                                                                                 <span class="path1"></span>
                                                                                 <span class="path2"></span>
@@ -149,7 +150,7 @@
                                         @endif
                                         
 
-                                        <li class="left-menu">
+                                       <!--  <li class="left-menu">
                                             <div class="menu-item">
                                                 <div class="icon">
                                                     <img src="{{ asset('images/template/hoptac.png') }}" width="18px" height="18px" alt="Gia dụng">
@@ -161,7 +162,7 @@
                                             </div>
                                            
                                         </li>
-
+ -->
                                     </ul>
                                 </div>
 
