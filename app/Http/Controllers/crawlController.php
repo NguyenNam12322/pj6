@@ -288,6 +288,28 @@ class crawlController extends Controller
       
     }
 
+    public function check_gd_pd_ac()
+    {
+        $data = groupProduct::select('product_id')->get();
+
+        foreach ($data as $key => $value) {
+            
+            $list = $value->product_id;
+
+            dd(json_decode($list));
+
+            // if(!empty(json_decode(json))){
+
+            //     foreach ($variable as $key => $value) {
+            //         // code...
+            //     }
+            // }
+
+            
+        }
+
+    }
+
     public function crawlNagaKawa()
     {
 

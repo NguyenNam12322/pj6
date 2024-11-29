@@ -44,6 +44,7 @@ Route::get('/ckfinder.html', 'mainController@ckfinder')->middleware('auth');
 
 Route::get('/crawl', 'crawlController@removeLinkinDetails');
 
+Route::get('data-group-show-list', 'crawlController@check_gd_pd_ac');
 
 Route::get('/landingpage', 'mainController@landingpage')->name('landingpageFe');
 
