@@ -298,16 +298,17 @@ class crawlController extends Controller
             
             $list = $value->product_id;
 
-            $ar_list = json_decode($list);
+            if(!empty($list)){
+                $ar_list = json_decode($list);
 
            
 
-            $check = product::whereIn('id', $ar_list)->where('active', 1)->get();
+                $check = product::whereIn('id', $ar_list)->where('active', 1)->get();
 
-            if($check->count()==0){
-                array_push($check_ar, $value->id);
+                if($check->count()==0){
+                    array_push($check_ar, $value->id);
+                }
             }
-
 
         }
 
