@@ -26,8 +26,6 @@
                                             $dem = 0;
 
 
-
-
                                         ?>
                                         @if(!empty($menu)  && $menu->count()>0 )
 
@@ -46,7 +44,7 @@
                                             }
                                         ?>
 
-                                        @if($dempd1>0)
+                                        @if($dempd1>0  &&  !in_array($val->id, $data_skip))
                                         <li class="left-menu">
                                             <div class="menu-item">
                                                 <div class="icon">
@@ -85,7 +83,7 @@
                                                         }
                                                     ?>
 
-                                                    @if($dempd2>0)
+                                                    @if($dempd2>0 && !in_array($val2->id, $data_skip))
                                                     <div class="item row2 bg-white">
                                                        
                                                         <?php 
@@ -117,7 +115,7 @@
                                                                         $dempd3 = count(json_decode($val_3->product_id));
                                                                     }
                                                                 ?>
-                                                                @if($dempd3>0)
+                                                                @if($dempd3>0 && !in_array($val_3->id, $data_skip))
                                                                 <li>
                                                                     <p style="">
                                                                         <a title="{{ $val_3->name??'' }}" class="a-links" href="{{ route('details', $val_3->link) }}" data-id="{{ $dempd3 }}">
