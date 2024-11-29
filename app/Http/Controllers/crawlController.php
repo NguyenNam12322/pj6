@@ -292,15 +292,19 @@ class crawlController extends Controller
     {
         $data = groupProduct::select('product_id')->get();
 
+        $check_ar = [];
+
         foreach ($data as $key => $value) {
             
             $list = $value->product_id;
 
             $ar_list = json_decode($list);
 
+           
+
             $check = product::whereIn('id', $ar_list)->where('active', 1)->get();
 
-            dd($check);
+            dd($check->count());
 
             // dd(json_decode($list));
 
