@@ -29,7 +29,7 @@
 
 
                                         ?>
-                                        @if(!empty($menu)  && $menu->count()>0 &&  !in_array($menu->id, $data_skip))
+                                        @if(!empty($menu)  && $menu->count()>0 )
 
                                         <?php 
 
