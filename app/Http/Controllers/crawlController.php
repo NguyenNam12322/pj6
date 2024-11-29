@@ -290,7 +290,7 @@ class crawlController extends Controller
 
     public function check_gd_pd_ac()
     {
-        $data = groupProduct::select('product_id')->get();
+        $data = groupProduct::select('product_id', 'id')->get();
 
         $check_ar = [];
 
@@ -304,21 +304,14 @@ class crawlController extends Controller
 
             $check = product::whereIn('id', $ar_list)->where('active', 1)->get();
 
-            dd($check->count());
+            if($check->count()==0){
+                array_push($check_ar, $value->id);
+            }
 
-            // dd(json_decode($list));
 
-
-
-            // if(!empty(json_decode(json))){
-
-            //     foreach ($variable as $key => $value) {
-            //         // code...
-            //     }
-            // }
-
-            
         }
+
+        print_r($check_ar);
 
     }
 
