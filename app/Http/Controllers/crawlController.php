@@ -288,6 +288,7 @@ class crawlController extends Controller
       
     }
 
+    
     public function check_gd_pd_ac()
     {
         $data = groupProduct::select('product_id', 'id')->get();

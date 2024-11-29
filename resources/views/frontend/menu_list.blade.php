@@ -20,10 +20,16 @@
                                     <ul>
                                         <?php 
 
+                                            $data_skip = [38, 66, 76,80,135,181,194,323];
+
                                             $menu = DB::table('group_product')->get();
                                             $dem = 0;
+
+
+
+
                                         ?>
-                                        @if(!empty($menu)  && $menu->count()>0)
+                                        @if(!empty($menu)  && $menu->count()>0 &&  !in_array($menu->id, $data_skip))
 
                                         <?php 
 
