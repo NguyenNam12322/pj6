@@ -1512,6 +1512,13 @@
                 $details = str_replace(['http://dienmaynguoiviet.net', 'https://dienmaynguoiviet.net'], 'https://dienmaynguoiviet.vn', $details);
                 $details = preg_replace("/<a(.*?)>/", "<a$1 target=\"_blank\">",  $details);
 
+                $details = preg_replace('/<p\b[^>]*>/', '<span>', $details);
+
+                // Replace closing </p> tags with </span>
+                $details = preg_replace('/<\/p>/', '</span>', $details);
+
+                
+
             }
            
         ?>
