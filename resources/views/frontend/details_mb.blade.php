@@ -230,7 +230,7 @@
         width: 373px;
 
 /*        margin: 0 auto;*/
-        height: 329px;
+        height: auto;
     }
 
 
