@@ -1551,52 +1551,50 @@
         @endif
     </div>
 
-     <div class="box_right">
-
-        <div class="pdp-box">
-            <div class="nk-title">
-                <h2><b>Sản phẩm cùng tầm giá</b></h2>
-            </div>
-
-            @if(isset($sampe_product_price))
-
-            @foreach($sampe_product_price as  $value)
-            @if($value->active==1 && $value->id != $data->id)
-            <aside class="post-sidebar-list ">
-                <article class="post-sidebar-item">
-                    <a href="{{ route('details', $value->Link) }}">
-                        <span class="post-sidebar-img">
-                            <img  src="{{ asset($value->Image) }}">
-                        </span>
-
-                        <h4 class="post-sidebar-title">{{ $value->Name }}</h4>
-
-                        
-
-                        <strong class="price"> {{ convert_price($value->Price) }} </strong>
-                    </a>
-
-                    <div class="item-rating">
-                        <p>
-                            <i class="icon-star"></i>
-                            <i class="icon-star"></i>
-                            <i class="icon-star"></i>
-                            <i class="icon-star"></i>
-                            <i class="icon-star"></i>
-                        </p>
-                        
-                    </div>  
-                </article>
-                
-            </aside>
-
-            @endif
-            @endforeach
-
-            @endif
-
+    <div class="pdp-box">
+        <div class="nk-title">
+            <h2><b>Sản phẩm cùng tầm giá</b></h2>
         </div>
+
+        @if(isset($sampe_product_price))
+
+        @foreach($sampe_product_price as  $value)
+        @if($value->active==1 && $value->id != $data->id)
+        <aside class="post-sidebar-list ">
+            <article class="post-sidebar-item">
+                <a href="{{ route('details', $value->Link) }}">
+                    <span class="post-sidebar-img">
+                        <img  src="{{ asset($value->Image) }}">
+                    </span>
+
+                    <h4 class="post-sidebar-title">{{ $value->Name }}</h4>
+
+                    
+
+                    <strong class="price"> {{ convert_price($value->Price) }} </strong>
+                </a>
+
+                <div class="item-rating">
+                    <p>
+                        <i class="icon-star"></i>
+                        <i class="icon-star"></i>
+                        <i class="icon-star"></i>
+                        <i class="icon-star"></i>
+                        <i class="icon-star"></i>
+                    </p>
+                    
+                </div>  
+            </article>
+            
+        </aside>
+
+        @endif
+        @endforeach
+
+        @endif
+
     </div>
+    
 
         
     
