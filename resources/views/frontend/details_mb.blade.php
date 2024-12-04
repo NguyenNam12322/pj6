@@ -233,6 +233,10 @@
         height: auto;
     }
 
+    .owl-carousel .item{
+        width: 100%;
+    }
+
 
      .pdetail-stockavailable, .scroll-box{
                 
