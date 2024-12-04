@@ -164,6 +164,11 @@
         margin: 0;
     }
 
+    .pdetail-stockavailable span {
+        color: #55A245;
+        font-weight: bold !important;
+
+    }    
 
     .box01{
         height: 278px;
