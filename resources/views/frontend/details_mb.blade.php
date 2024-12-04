@@ -39,6 +39,15 @@
         display: flex;
     }
 
+    .box01__tab .item {
+        cursor: pointer;
+        display: inline-block;
+        margin-right: 10px;
+        text-align: center;
+        vertical-align: top;
+        width: 55px;
+    }
+
     /*.nav-search, .scroll-box{
         display: inline;
     }*/
