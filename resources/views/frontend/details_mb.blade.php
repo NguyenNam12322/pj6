@@ -154,7 +154,14 @@
     }
 
     .pdetail-price{
-        height: 39px;
+        height: 50px;
+    }
+
+    .carts-on{
+        height: 50px;
+        line-height: 50px;
+        padding: 0;
+        margin: 0;
     }
 
 
