@@ -1615,7 +1615,7 @@
 
 <script>
 
-    $('.content img').attr('loading', 'lazy');
+    $('.des_pro img').attr('loading', 'lazy');
 
     function formatMoney(number, decPlaces, decSep, thouSep) {
         decPlaces = isNaN(decPlaces = Math.abs(decPlaces)) ? 2 : decPlaces,
