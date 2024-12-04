@@ -272,26 +272,21 @@
             height: 100%;
         }
 
-    .box01{
-        
-      
-       
-    }
-
+   
     .carts-on{
         
         margin: 0;
 
     }
 
-     #img-main{
+    #img-main{
         display: inline !important;
         width: 220px;
         height: 220px;
-     }
+    }
 
     .right-cart{
-        margin-left: 6px;
+        margin-left: 6px !important;
     }
 
    
