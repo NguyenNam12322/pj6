@@ -584,6 +584,25 @@
             font-size: 18px;
         }
 
+        .btn-add-cart {
+            margin-top: 10px;
+            color: #fff;
+            font-size: 14px;
+            padding: 8px 5px;
+            line-height: 18px;
+            width: 100%;
+            border-radius: 5px;
+            display: block;
+            text-align: center;
+            cursor: pointer;
+            background: #e11b1e;
+            background: -webkit-linear-gradient(#f52f32, #e11b1e);
+            background: -o-linear-gradient(#f52f32, #e11b1e);
+            background: -moz-linear-gradient(#f52f32, #e11b1e);
+            background: linear-gradient(#f52f32, #e11b1e);
+            border: solid 1px #e11b1e;
+        }
+
         .img-main .saker{
             max-width: 100px;
         }
