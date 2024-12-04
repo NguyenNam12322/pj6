@@ -290,6 +290,10 @@
         height: 220px;
      }
 
+    .right-cart{
+        margin-left: 6px;
+    }
+
    
         
 
