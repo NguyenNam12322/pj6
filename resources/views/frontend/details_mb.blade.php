@@ -61,7 +61,7 @@
     }
 
     [class ^="icondetail-"], [class *="icondetail-"] {
-        background-image: url(icon-chitiet.png);
+        background-image: url({{ asset('css/icon-chitiet.png') }});
         background-repeat: no-repeat;
         display: inline-block;
         height: 30px;
@@ -232,7 +232,7 @@
 
         max-width: 768px;
         width: 100%;
-        height: 110px !important;
+        height: 153px !important;
     }
 
     
