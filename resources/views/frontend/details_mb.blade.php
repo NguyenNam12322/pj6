@@ -37,6 +37,8 @@
 
     .box01__tab{
         display: flex;
+        width: 60%;
+        margin: 0 auto;
     }
 
     .box01__tab .item {
@@ -45,7 +47,7 @@
         margin-right: 10px;
         text-align: center;
         vertical-align: top;
-        width: 55px;
+        width: 100%;
     }
 
     /*.nav-search, .scroll-box{
