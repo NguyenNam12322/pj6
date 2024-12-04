@@ -1493,8 +1493,7 @@
         </div>
     </div>
 
-    <div class="content" id="contents-scroll">
-                
+  
         <?php
 
              $minutes = 1000;
@@ -1519,7 +1518,7 @@
 
          {!! html_entity_decode(str_replace('gallery ','galerys',$details))   !!}
         
-    </div>
+    
 
     <div class="related view-more-related">
         <p class="related__ttl">Xem thêm sản phẩm khác</p>
