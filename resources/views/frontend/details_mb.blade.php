@@ -1521,6 +1521,83 @@
         
     </div>
 
+    <div class="related view-more-related">
+        <p class="related__ttl">Xem thêm sản phẩm khác</p>
+        @if(isset($other_product))
+        <div class="listproduct slider-promo owl-carousel">
+            @foreach($other_product as  $value)
+            @if($value->active==1 && $value->id != $data->id)
+            <div class="item">
+                <a href='{{ route('details', $value->Link) }}' class=" main-contain">
+                <div class="item-label">
+                </div>
+                <div class="item-img">
+                    <img data-src="{{ asset($value->Image) }}" class="lazyload" alt="{{ $value->Name }}" width=210 height=210>
+                </div>
+                
+                <h3>{{ $value->Name }}</h3>
+
+                <strong class="price">{{  str_replace(',' ,'.', number_format($value->Price))  }}&#x20AB;</strong>
+                </a>
+               <!--  <a href="javascript:void(0)" class="compare-show" onclick="compareShow({{ $value->id }})">
+                    <i class="fa-solid fa-plus"></i>
+                        so sánh
+                </a> -->
+            </div>
+
+            @endif
+            @endforeach
+        </div>
+        @endif
+    </div>
+
+     <div class="box_right">
+
+        <div class="pdp-box">
+            <div class="nk-title">
+                <h2><b>Sản phẩm cùng tầm giá</b></h2>
+            </div>
+
+            @if(isset($sampe_product_price))
+
+            @foreach($sampe_product_price as  $value)
+            @if($value->active==1 && $value->id != $data->id)
+            <aside class="post-sidebar-list ">
+                <article class="post-sidebar-item">
+                    <a href="{{ route('details', $value->Link) }}">
+                        <span class="post-sidebar-img">
+                            <img  src="{{ asset($value->Image) }}">
+                        </span>
+
+                        <h4 class="post-sidebar-title">{{ $value->Name }}</h4>
+
+                        
+
+                        <strong class="price"> {{ convert_price($value->Price) }} </strong>
+                    </a>
+
+                    <div class="item-rating">
+                        <p>
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                        </p>
+                        
+                    </div>  
+                </article>
+                
+            </aside>
+
+            @endif
+            @endforeach
+
+            @endif
+
+        </div>
+    </div>
+
         
     
     <!--#endregion-->
