@@ -50,6 +50,27 @@
         width: 100%;
     }
 
+    .box01__tab .item-border {
+        align-items: center;
+        border: 1px solid #e0e0e0;
+        border-radius: 2px;
+        display: flex;
+        justify-content: center;
+        min-height: 55px;
+        padding: 4px;
+    }
+
+    [class ^="icondetail-"], [class *="icondetail-"] {
+        background-image: url(icon-chitiet.png);
+        background-repeat: no-repeat;
+        display: inline-block;
+        height: 30px;
+        width: 30px;
+        line-height: 30px;
+        vertical-align: middle;
+        background-size: 300px 180px;
+    }
+
     /*.nav-search, .scroll-box{
         display: inline;
     }*/
