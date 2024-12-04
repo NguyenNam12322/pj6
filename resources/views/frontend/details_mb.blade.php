@@ -35,6 +35,10 @@
        
     }
 
+    .box01__tab{
+        display: flex;
+    }
+
     /*.nav-search, .scroll-box{
         display: inline;
     }*/
