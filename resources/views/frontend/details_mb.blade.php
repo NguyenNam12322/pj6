@@ -577,6 +577,13 @@
             right: 0;
         }
 
+        .span-title{
+            font-weight: bold;
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 18px;
+        }
+
         .img-main .saker{
             max-width: 100px;
         }
@@ -1170,7 +1177,7 @@
    
         <div class="pay">
         
-            <span >{{ $data->Name }}</span>
+            <span class="span-title">{{ $data->Name }}</span>
             
             
             <div class="pdetail-info">
