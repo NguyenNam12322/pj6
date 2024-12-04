@@ -154,7 +154,7 @@
     }
 
     .pdetail-price{
-        height: 62px;
+        height: 39px;
     }
 
 
