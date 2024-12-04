@@ -71,6 +71,18 @@
         background-size: 300px 180px;
     }
 
+    .icondetail-danhgia {
+        background-position: -140px 0;
+        height: 19px;
+        width: 23px;
+    }
+
+    .icondetail-thongso {
+        background-position: -105px 0;
+        height: 30px;
+        width: 30px;
+    }
+
     /*.nav-search, .scroll-box{
         display: inline;
     }*/
