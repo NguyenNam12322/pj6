@@ -592,6 +592,14 @@
             right: 0;
         }
 
+        .des_pro{
+            width: 100%;
+        }
+
+        .des_pro img{
+            width: 100%;
+        }
+ 
         .span-title{
             font-weight: bold;
             display: inline-block;
