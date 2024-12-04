@@ -218,7 +218,7 @@
         width: 373px;
 
 /*        margin: 0 auto;*/
-        height: 309px;
+        height: 329px;
     }
 
 
