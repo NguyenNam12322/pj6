@@ -594,11 +594,12 @@
 
         .des_pro{
             width: 100% !important;
+             padding: 0 15px;
         }
 
         .des_pro img{
             width: 100% !important;
-            padding: 0 15px;
+
         }
  
         .span-title{
