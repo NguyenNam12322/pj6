@@ -1512,7 +1512,7 @@
                 $details = str_replace(['http://dienmaynguoiviet.net', 'https://dienmaynguoiviet.net'], 'https://dienmaynguoiviet.vn', $details);
                 $details = preg_replace("/<a(.*?)>/", "<a$1 target=\"_blank\">",  $details);
 
-                
+                $details = preg_replace('/<\/?span\b[^>]*>/', '', $details);
 
             }
            
