@@ -593,11 +593,11 @@
         }
 
         .des_pro{
-            width: 100%;
+            width: 100% !important;
         }
 
         .des_pro img{
-            width: 100%;
+            width: 100% !important;
         }
  
         .span-title{
