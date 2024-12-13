@@ -2270,7 +2270,7 @@
 
 </div>
 @push('style')
-<link rel="stylesheet" type="text/css" href="{{ asset('css/details.css') }}?ver=2">
+<link rel="stylesheet" type="text/css" href="{{ asset('css/details.css') }}?ver=3">
 @endpush
 
 
