@@ -120,6 +120,29 @@
        box-sizing: inherit;
    }
 
+   @font-face {
+                   font-family: nk-font;
+                   font-display: swap;
+                   src: url(https://cdn.nguyenkimmall.com/design/themes/responsive/media/fonts/nki-icon-font.eot?11062020);
+                   src: url(https://cdn.nguyenkimmall.com/design/themes/responsive/media/fonts/nki-icon-font.eot?11062020) format("embedded-opentype"), url(https://cdn.nguyenkimmall.com/design/themes/responsive/media/fonts/nki-icon-font.ttf?11062020) format("truetype"), url(https://cdn.nguyenkimmall.com/design/themes/responsive/media/fonts/nki-icon-font.woff?11062020) format("woff"), url(https://cdn.nguyenkimmall.com/design/themes/responsive/media/fonts/nki-icon-font.svg?11062020) format("svg");
+                   font-weight: 400;
+                   font-style: normal
+               }
+
+               [class*=" nki-"],
+               [class^=nki-] {
+                   font-family: nk-font !important;
+                   speak: none;
+                   font-style: normal;
+                   font-weight: 400;
+                   font-variant: normal;
+                   text-transform: none;
+                   line-height: 1;
+                   -webkit-font-smoothing: antialiased;
+                   -moz-osx-font-smoothing: grayscale
+               }
+
+
    .container {
        width: 100%;
        margin-right: auto;
