@@ -41,7 +41,296 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         
-        <link  rel="preload" type="text/css" href="{{ asset('css/app.css') }} " as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <!-- <link  rel="preload" type="text/css" href="{{ asset('css/app.css') }} " as="style" onload="this.onload=null;this.rel='stylesheet'"> -->
+
+        <style type="text/css">
+            html,
+   body,
+   div,
+   span,
+   applet,
+   object,
+   iframe,
+   h1,
+   h2,
+   h3,
+   h4,
+   h5,
+   h6,
+   p,
+   blockquote,
+   pre,
+   a,
+   abbr,
+   acronym,
+   address,
+   big,
+   cite,
+   code,
+   del,
+   dfn,
+   em,
+   img,
+   ins,
+   kbd,
+   q,
+   s,
+   samp,
+   small,
+   strike,
+   strong,
+   sub,
+   sup,
+   tt,
+   var,
+   b,
+   u,
+   i,
+   center,
+   dl,
+   dt,
+   dd,
+   ol,
+   ul,
+   li,
+   fieldset,
+   form,
+   label,
+   legend,
+   table,
+   caption,
+   tbody,
+   tfoot,
+   thead,
+   tr,
+   th,
+   td,
+   article,
+   aside,
+   canvas,
+   details,
+   embed,
+   figure,
+   figcaption,
+   footer,
+   header,
+   hgroup,
+   menu,
+   nav,
+   output,
+   ruby,
+   section,
+   summary,
+   time,
+   mark,
+   audio,
+   video {
+       margin: 0;
+       padding: 0;
+       border: 0;
+       font-size: 100%;
+       font: inherit;
+       vertical-align: baseline;
+   }
+
+   article,
+   aside,
+   details,
+   figcaption,
+   figure,
+   footer,
+   header,
+   hgroup,
+   menu,
+   nav,
+   section {
+       display: block;
+   }
+
+   body {
+       line-height: 1;
+   }
+
+   ol,
+   ul {
+       list-style: none;
+   }
+   html {
+       box-sizing: border-box;
+       -ms-overflow-style: scrollbar;
+   }
+
+   *,
+   *::before,
+   *::after {
+       box-sizing: inherit;
+   }
+
+   .container {
+       width: 100%;
+       margin-right: auto;
+       margin-left: auto;
+   }
+   .row {
+       display: flex;
+       flex-wrap: wrap;
+       margin-right: -15px;
+       margin-left: -15px;
+   }
+
+   * {
+       box-sizing: border-box;
+   }
+
+   html {
+       overflow-y: scroll;
+   }
+
+   body {
+       background: #f3f5f7;
+       font-size: 12px;
+       min-width: 1346px;
+   }
+
+   .row-fluid,
+   .ty-wysiwyg-content {
+       width: 100%;
+   }
+
+   .flexthis {
+       display: -webkit-flex;
+       display: -ms-flexbox;
+       display: flex;
+       -webkit-flex-wrap: wrap;
+       -ms-flex-wrap: wrap;
+       flex-wrap: wrap;
+   }
+    .clearfix {
+       clear: both;
+   }
+
+   .nk-header {
+       width: 100%;
+       position: relative;
+       height: 88px;
+   }
+
+   .nk-header::before {
+       content: "";
+       background: #800015;
+       width: 100%;
+       height: 0px;
+       position: absolute;
+       left: 0;
+       z-index: 0;
+   }
+
+   .nk-header::after {
+       content: "";
+       position: absolute;
+       left: 0;
+       background: #000000;
+       height: 88px;
+       width: 100%;
+       top: 0px;
+       z-index: 0;
+   }
+
+   .nk-header ._nk_main {
+       position: absolute;
+       z-index: 9;
+       left: 0;
+       right: 0;
+   }
+
+   .nk-header .span4,.nk-header .span12 {
+       float: left;
+   }
+
+   .nk-header i {
+       display: block;
+   }
+
+   .nk-header .nk-nav-right {
+       width: 78.7%;
+       width: calc(100% - 256px);
+       width: -moz-calc(100% - 256px);
+       width: -webkit-calc(100% - 256px);
+   }
+   .nk-header #nk-cart ul li {
+       box-sizing: border-box;
+       width: auto;
+       margin: 0 2%;
+       display: flex;
+       align-items: center;
+       font-size: 12px;
+   }
+
+   .nk-header #nk-cart ul li:last-child {
+       width: fit-content;
+   }
+
+   .owl-carousel {
+       display: none;
+       width: 100%;
+       -webkit-tap-highlight-color: transparent;
+       position: relative;
+       z-index: 1;
+   }
+   html {
+       font-size: 100% !important;
+       overflow-x: hidden;
+       overflow-y: scroll
+   }
+   body {
+       font-family: Roboto, sans-serif;
+       font-size: 1rem;
+       background: #f5f6f8
+   }
+
+   .nk-title {
+       font-weight: 700;
+       position: relative;
+       color: #3f3f3f;
+       margin-bottom: 2rem;
+       display: inline-flex;
+       text-transform: uppercase;
+       filter: drop-shadow(0 4px 4px rgba(0, 0, 0, .15))
+   }
+
+   .nki-menu:before {
+       content: "\e925";
+       font-weight: 700
+   }
+    .nki-Phone:before {
+       content: "\e915"
+   }
+
+   [class*=" nki-"],
+               [class^=nki-] {
+                   font-family: nk-font !important;
+                   speak: none;
+                   font-style: normal;
+                   font-weight: 400;
+                   font-variant: normal;
+                   text-transform: none;
+                   line-height: 1;
+                   -webkit-font-smoothing: antialiased;
+                   -moz-osx-font-smoothing: grayscale
+               }
+
+   .nki-menu:before {
+       content: "\e987"
+   }
+   .nki-Phone:before {
+       content: "\e9e2";
+       font-size: 22px;
+
+   }             
+
+
+
+        </style>
 
         <link rel="preload" type="text/css" href="{{ asset('css/main.css') }}" as="style" onload="this.onload=null;this.rel='stylesheet'"> 
         
