@@ -1234,8 +1234,10 @@
 
    
     <div class="pay">
-    
-        <span class="span-title">{{ $data->Name }}</span>
+        <div style="height: 54px;">
+             <span class="span-title">{{ $data->Name }}</span>
+        </div>
+       
         
         
         <div class="pdetail-info">
