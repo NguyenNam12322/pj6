@@ -1235,7 +1235,7 @@
    
     <div class="pay">
         <div style="height: 54px;">
-             <span class="span-title">{{ $data->Name }}</span>
+            
         </div>
        
         
