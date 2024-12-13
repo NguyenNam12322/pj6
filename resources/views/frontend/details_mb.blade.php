@@ -28,6 +28,10 @@
         display: inline;
     }
 
+    .view-more-related{
+        overflow: hidden;
+    }
+
     
 
     .box_pro-benefit{
