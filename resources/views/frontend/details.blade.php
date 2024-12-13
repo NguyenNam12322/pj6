@@ -1232,9 +1232,9 @@
 
                             {!!  str_replace(['Xem thêm', 'Đặc điểm nổi bật'], '', html_entity_decode($data->Salient_Features))  !!} 
                         </div>
-                        <div class="modal-footer">
+                       <!--  <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -1257,66 +1257,7 @@
                 </div>
             </div>
 
-            <div class="modal fade" id="modal-suport" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabels" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="loader"></div>
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabels">Thông tin khách hàng</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <div id="tbl_list_carts" style="text-align: center;">
-                                <div class="cart_col_1">
-                                    <a href="{{  route('details', $data->Link)}}"><img src="{{ asset($data->Image) }}" style="width: 85px;"></a>
-                                   
-                                </div>
-                                <div class="cart_col_2">
-                                    <a href="{{  route('details', $data->Link)}}"><span class="name">{{ $data->Name }}</span></a>
-                                    
-                                    
-                                </div>
-                                
-                            </div>
-
-                            <div class="c3_col_1">
-                                <form class="c3_box" id="form-subs">
-                                   
-                                    <div class="title_box_cart"> Thông tin khách hàng</div>
-                                    <div class="item-form">
-                                        <div class="option-group clearfix">
-                                            <div class="step_option">
-                                                <span class="st_opt st_opt_active" data-value="Anh" data-name="sex"></span><span>Anh</span>
-                                            </div>
-                                            <div class="step_option">
-                                                <span class="st_opt" data-value="Chị" data-name="sex"></span><span>Chị</span>
-                                            </div>
-                                            <input type="hidden" name="sex" id="sexs" value="Nam">
-                                        </div>
-                                        <!--option-group-->
-                                    </div>
-                                    <div class="item-form">
-                                        <input type="text" name="name" id="buyer_names_call" placeholder="Họ tên" >
-                                    </div>
-                                    <div class="item-form">
-                                        <input type="text" name="phone_numbers" id="buyer_tels" value="" placeholder="Số điện thoại" >
-                                    </div>
-                                   
-                                    <div class="modal-footer">
-                                        <div  class="btn btn-primary click-sp" onclick="addCallPhone({{ $data->id }})">Gửi thông tin </div>
-                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                        
-                                    </div>
-
-                                </form>
-                            </div>
-                        </div>
-                        
-                    </div>
-                </div>
-            </div>
+            
             <div class="block-tab">
                 <div class="bt-overlay"></div>
                 <ul class="block-tab-top">
@@ -2270,7 +2211,7 @@
 
 </div>
 @push('style')
-<link rel="stylesheet" type="text/css" href="{{ asset('css/details.css') }}?ver=4">
+<link rel="stylesheet" type="text/css" href="{{ asset('css/details.css') }}?ver=1">
 @endpush
 
 
