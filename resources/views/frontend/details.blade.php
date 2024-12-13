@@ -1248,7 +1248,7 @@
 
                         
                         <div class="modal-body" id="thong-so">
-                            {!!  str_replace(['gallery', 'CHI TIẾT SẢN PHẨM'], ' ', $data->Specifications)  !!} 
+                            {!!  str_replace('gallery', ' ', $data->Specifications)  !!} 
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
@@ -1336,7 +1336,10 @@
                     }
                    
                 ?>
+                <?php 
 
+                    $details = str_replace('CHI TIẾT SẢN PHẨM', '', $details);
+                ?>
                  {!! html_entity_decode(str_replace('gallery ','galerys',$details))   !!}
                 
             </div>
