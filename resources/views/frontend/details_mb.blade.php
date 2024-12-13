@@ -1144,8 +1144,8 @@
                 $image_product = strstr(basename($data->Image), '_');
             ?>
             <div class="item">
-                
-                <img src="https://icdn.24h.com.vn/upload/4-2024/images/2024-12-13/255x170/untitled-1-1734054577-588-width740height495.jpg" alt="{{ @$data->Name }}" width="220px" height="220px">
+
+                <img src="{{ asset($data->Image) }}" alt="{{ @$data->Name }}" width="220px" height="220px">
                 
                 @if($data->id>4720)
 
@@ -1183,7 +1183,7 @@
             @if( basename($image->image) != basename($data->Image) )
 
             <div class="item">
-                <a href="{{ asset($image->image) }}" data-fancybox="gallery"><img  data-src ="https://icdn.24h.com.vn/upload/4-2024/images/2024-12-13/255x170/untitled-1-1734054577-588-width740height495.jpg"  alt="{{ @$data->Name }}" class="lazyload"></a>
+                <a href="{{ asset($image->image) }}" data-fancybox="gallery"><img  data-src ="{{ asset($image->image) }}"  alt="{{ @$data->Name }}" class="lazyload"></a>
                 
             </div>
           
