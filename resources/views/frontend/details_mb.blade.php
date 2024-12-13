@@ -1145,7 +1145,7 @@
             ?>
             <div class="item">
 
-                <img src="{{ asset($image_product) }}" alt="{{ @$data->Name }}" width="220px" height="220px">
+                <img src="{{ asset($data->Image) }}" alt="{{ @$data->Name }}" width="220px" height="220px">
                 
                 @if($data->id>4720)
 
