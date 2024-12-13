@@ -872,10 +872,7 @@
                         <p data-toggle="modal" data-target="#specifications">Thông số kỹ thuật</p>
                     </div>
 
-                    <?php 
-
-                        dd($data->Specifications);
-                    ?>
+                   
 
                     @endif
 
