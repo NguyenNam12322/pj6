@@ -1144,10 +1144,8 @@
                 $image_product = strstr(basename($data->Image), '_');
             ?>
             <div class="item">
-                <div style="width: 220px; height: 220px;">
-                    
-                </div>
-                <!-- <img src="https://icdn.24h.com.vn/upload/4-2024/images/2024-12-13/255x170/untitled-1-1734054577-588-width740height495.jpg" alt="{{ @$data->Name }}" width="220px" height="220px"> -->
+                
+                <img src="https://icdn.24h.com.vn/upload/4-2024/images/2024-12-13/255x170/untitled-1-1734054577-588-width740height495.jpg" alt="{{ @$data->Name }}" width="220px" height="220px">
                 
                 @if($data->id>4720)
 
@@ -1185,7 +1183,7 @@
             @if( basename($image->image) != basename($data->Image) )
 
             <div class="item">
-                <!-- <a href="{{ asset($image->image) }}" data-fancybox="gallery"><img  data-src ="https://icdn.24h.com.vn/upload/4-2024/images/2024-12-13/255x170/untitled-1-1734054577-588-width740height495.jpg"  alt="{{ @$data->Name }}" class="lazyload"></a> -->
+                <a href="{{ asset($image->image) }}" data-fancybox="gallery"><img  data-src ="https://icdn.24h.com.vn/upload/4-2024/images/2024-12-13/255x170/untitled-1-1734054577-588-width740height495.jpg"  alt="{{ @$data->Name }}" class="lazyload"></a>
                 
             </div>
           
@@ -1234,10 +1232,8 @@
 
    
     <div class="pay">
-        <div style="height: 54px;">
-            
-        </div>
-       
+    
+        <span class="span-title">{{ $data->Name }}</span>
         
         
         <div class="pdetail-info">
@@ -1375,7 +1371,11 @@
                             
                             <img data-src="{{ asset($valuegift->image) }}" height="30px" width="30px" class="lazyload">
 
-                           
+                            @if($valuegift->id ==5)
+                            <a href="https://dienmaynguoiviet.vn/khau-trang-loc-khi-lg-puricare-the-he-2-ap551awfa-ajp-may-trang"><h4>{{ $valuegift->name }}</h4></a>
+                            @else
+                            <h4>{{ $valuegift->name }}</h4>
+                            @endif
                         </div>
                         @endforeach
                        
