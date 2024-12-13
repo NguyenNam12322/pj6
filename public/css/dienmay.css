@@ -9657,7 +9657,7 @@ h1 {
 
 .gallery {
 	background-color: #fff;
-	display: none;
+	display: block;
 	height: 637px;
 	left: 50%;
 	max-width: 760px;

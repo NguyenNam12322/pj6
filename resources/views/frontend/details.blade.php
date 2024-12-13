@@ -872,7 +872,7 @@
                         <p data-toggle="modal" data-target="#specifications">Thông số kỹ thuật</p>
                     </div>
 
-                   
+
 
                     @endif
 
@@ -2270,7 +2270,7 @@
 
 </div>
 @push('style')
-<link rel="stylesheet" type="text/css" href="{{ asset('css/details.css') }}?ver=1">
+<link rel="stylesheet" type="text/css" href="{{ asset('css/details.css') }}?ver=2">
 @endpush
 
 
