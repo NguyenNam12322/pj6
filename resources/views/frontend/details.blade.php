@@ -882,7 +882,7 @@
                         <div class="item-border">
                             <i class="icondetail-danhgia"></i>
                         </div>
-                        <p>Thông tin sản phẩm</p>
+                        <p>chi tiết sản phẩm</p>
                     </div>
                 </div>
             </div>
@@ -1215,7 +1215,7 @@
                         <div class="item-border">
                             <i class="icondetail-danhgia"></i>
                         </div>
-                        <p>Thông tin sản phẩm</p>
+                        <p>chi tiết sản phẩm</p>
                     </div>
                 </div>
             </div>
