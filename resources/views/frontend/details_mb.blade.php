@@ -1145,7 +1145,7 @@
             ?>
             <div class="item">
 
-                <img src="https://icdn.24h.com.vn/upload/4-2024/images/2024-12-13/255x170/untitled-1-1734054577-588-width740height495.jpg" alt="{{ @$data->Name }}">
+                <img src="https://icdn.24h.com.vn/upload/4-2024/images/2024-12-13/255x170/untitled-1-1734054577-588-width740height495.jpg" alt="{{ @$data->Name }}" width="220px" height="220px">
                 
                 @if($data->id>4720)
 
