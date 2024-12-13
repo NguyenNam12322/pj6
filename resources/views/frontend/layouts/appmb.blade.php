@@ -1336,6 +1336,8 @@
                 
             </div>
         </div>
+
+         @include('frontend.footer')
       
         <script>
             window.dataLayer = window.dataLayer || [];
