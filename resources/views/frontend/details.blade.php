@@ -66,7 +66,7 @@
     }
     @media only screen and (min-width: 601px) {
         .productSpecification_table{
-            display: none;
+            display: block;
         }
 
         .cartSPs{
