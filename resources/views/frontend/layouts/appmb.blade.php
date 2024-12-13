@@ -43,6 +43,162 @@
         
         <link  rel="preload" type="text/css" href="{{ asset('css/app.css') }} " as="style" onload="this.onload=null;this.rel='stylesheet'">
 
+        <link rel="preload" type="text/css" href="{{ asset('css/main.css') }}" as="style" onload="this.onload=null;this.rel='stylesheet'"> 
+        
+        <!-- <link rel="preload" type="text/css" href="{{ asset('css/apps.css') }}" as="style" onload="this.onload=null;this.rel='stylesheet'"> -->
+        <!-- <link rel="preload" type="text/css" href="{{asset('css/dienmay.css')}}" as="style" onload="this.onload=null;this.rel='stylesheet'"> -->
+        <!-- <link rel="preload" type="text/css" href="{{asset('css/detailsfe.css')}}" as="style" onload="this.onload=null;this.rel='stylesheet'">  -->
+        <link rel="preload" type="text/css" href="{{ asset('css/detail1fe.css') }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+        <!-- <link rel="preload" type="text/css" href="{{ asset('css/details.css') }}" as="style" onload="this.onload=null;this.rel='stylesheet'"> -->
+        <!-- <link rel="preload" type="text/css" href="{{ asset('css/detailscs.css') }}" as="style" onload="this.onload=null;this.rel='stylesheet'"> -->
+
+        <link rel="preload" href="{{asset('css/lib/owl.carousel.min.css')}}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <link rel="preload" href="{{asset('css/lib/owl.theme.default.min.css')}}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <link rel="preload" href="{{ asset('css/lib/bootstrap.min.css') }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+        <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+        <link rel="preload" href="https://code.jquery.com/ui/1.13.1/jquery-ui.js" as="script">
+
+
+        <style>
+
+            .position-fixed .share-button{
+                position: fixed;
+               
+                display: flex;
+            }
+
+            
+            section{
+                display: inline;
+            }
+
+             #nk-cart ul{
+                margin-top: 20px;
+            }
+            .logo-mobile img{
+                max-width: 167px;
+
+            }
+
+
+
+            #nk-cart{
+                    width: 55%;
+                }
+
+                .nk-header #nk-cart ul li{
+                    width: 35% !important;
+                    line-height: 31px;
+                }
+
+                .nk-header #nk-cart ul li a{
+                    font-size: 17px;
+                    line-height: 31px;
+                    width: 100%;
+                }
+            .lp-menu ul {
+                display: inline-block;
+            }
+
+            .m .lp-menu.menu-type-4 ul li {
+                min-width: 33.33%;
+                max-width: 33.33%;
+            }
+
+            .m .nk-main-content-checkout .nk-tra-gop-bang-the-tin-dung .item-content ul li img {
+                object-fit: cover;
+            }
+
+            .m .nk-main-content-checkout .nk-tra-gop-bang-the-tin-dung .item-content ul li {
+                height: 46px;
+            }
+
+            .m .flash-product .position-top-left {
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+
+            .m .flash-product .position-top-left img {
+                height: 41px;
+                object-fit: contain;
+            }
+
+            .m #nk-banner-home {
+                margin-top: 6px;
+            }
+
+            .m .custom-dot-carousel.trang-chu.active {
+                min-height: auto;
+            }
+
+            .show-menu{
+                display: none;
+            }
+            .nk-menu-div{
+                display: none;
+            }
+        </style>
+
+        <style type="text/css">
+            .cart-container {
+                text-align: center;
+                padding: 20px;
+/*                                    border: 1px solid #ccc;*/
+                border-radius: 8px;
+                background-color: #fff;
+            }
+            .empty-cart-message {
+                font-size: 18px;
+                color: #555;
+                margin-top: 30px;
+            }
+            .cart-icon {
+                font-size: 40px;
+                color: #ccc;
+            }
+            #exampleModal .modal-body{
+                min-height: 200px;
+            }
+
+            .breadcrumb span{
+                width: 20px;
+                padding: 0 !important;
+            }
+
+
+        </style>
+
+         <style type="text/css">
+            .nk-nav-right ul{
+                display: flex;
+            }
+
+            .nki-menu-air-conditioner{
+                margin-top: -4px !important;
+            }
+
+            .flexthis .row-fluid{
+                display: flex;
+            }
+
+
+
+           /* .nk-header #nk-search{
+                width: 27% !important;
+            }*/
+
+            .header-menu__navs .navs-item-link {
+                font-size: 13px !important;
+            }    
+
+            .nk-menu #nk-danh-muc-san-pham-left>h3{
+                font-weight: inherit !important;
+            }
+         </style>
         <?php 
             $show_meta = $_GET['show']??'';
         ?>
@@ -1180,8 +1336,6 @@
                 
             </div>
         </div>
-
-         @include('frontend.footer')
       
         <script>
             window.dataLayer = window.dataLayer || [];
