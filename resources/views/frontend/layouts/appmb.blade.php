@@ -1110,23 +1110,6 @@
 
         
     </head>
-
-   
-       
-            
-                <i class="nki-Phone"></i>  
-           
-        
-           
-                <i class="nki-menu"></i>
-         
- 
-
-    <?php 
-
-    die;
-
-    ?>
     <body>
         
         <?php  
