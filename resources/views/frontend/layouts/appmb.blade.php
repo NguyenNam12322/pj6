@@ -1317,6 +1317,11 @@
             </div>     
         </div>
 
+        <?php 
+
+            die;
+        ?>
+
         @yield('content')
         
         <div class="global-compare-group">
