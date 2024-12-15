@@ -251,6 +251,10 @@
                 font-size: 14px;
             } 
 
+            .nki-shopping-cart:before {
+                content: "\e911";
+            }
+
             .submenu h3{
                 font-size: 14px;
             } 
