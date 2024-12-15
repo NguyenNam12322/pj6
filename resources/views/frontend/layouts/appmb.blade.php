@@ -1317,10 +1317,7 @@
             </div>     
         </div>
 
-        <?php 
-
-            die;
-        ?>
+        
 
         @yield('content')
         
