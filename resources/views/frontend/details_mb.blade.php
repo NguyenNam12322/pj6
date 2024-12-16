@@ -222,7 +222,7 @@
     }
 
     .li-home {
-        width: 34px;
+        width: 51px;
     }
 
     .li-child{
