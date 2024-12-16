@@ -2067,7 +2067,7 @@
 
         $(".show-menu-mobile").click(function(){
 
-        
+            alert('ok');
             $('.show-menu').addClass('active');
 
         });  
