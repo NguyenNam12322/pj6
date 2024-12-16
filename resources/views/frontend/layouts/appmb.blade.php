@@ -137,9 +137,9 @@
                 min-height: auto;
             }
 
-            .show-menu{
+           /* .show-menu{
                 display: none;
-            }
+            }*/
             .nk-menu-div{
                 display: none;
             }
@@ -2067,7 +2067,7 @@
 
         $(".show-menu-mobile").click(function(){
 
-            alert('ok');
+            
             $('.show-menu').addClass('active');
 
         });  
