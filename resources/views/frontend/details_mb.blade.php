@@ -2428,6 +2428,7 @@
     
     $('.listproduct').owlCarousel({
         loop:false,
+        dots:false,
     
         margin:10,
         nav:false,
