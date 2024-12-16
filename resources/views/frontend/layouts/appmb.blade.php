@@ -1433,8 +1433,8 @@
 
     $('.loader').hide();
 
-
-
+    $('#specifications').modal('show'); 
+    
 
     $("#exampleModal").on("hidden.bs.modal", function () {
             $('#tbl_list_cartss').html('');
