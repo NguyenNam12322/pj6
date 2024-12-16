@@ -1197,7 +1197,7 @@
                                             
                                                 <li class="icons-mobile-bar">
 
-                                                    <i class="nki-menu"></i>
+                                                    <i class="nki-menu show-menu-mobile"></i>
                                                 </li> 
                                               
 
