@@ -2373,6 +2373,8 @@
         }
     });
 
+    $('.tab-panels img').attr('loading', 'lazy');
+
     document.addEventListener("DOMContentLoaded", function() {
         // Lấy tất cả các thẻ img trên trang
         const images = document.querySelectorAll('img');
