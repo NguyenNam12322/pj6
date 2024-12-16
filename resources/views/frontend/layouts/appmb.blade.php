@@ -1433,7 +1433,7 @@
 
     $('.loader').hide();
 
-    $('#specifications').modal('show'); 
+  
     
 
     $("#exampleModal").on("hidden.bs.modal", function () {
