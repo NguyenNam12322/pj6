@@ -1599,6 +1599,41 @@
 
     </div>
 
+    <div class="modal fade" id="Salient_Features" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5>Đặc điểm nổi bật</h5>
+                        </div>
+
+                        <div class="modal-body" style="padding:0 15px">
+
+                            {!!  str_replace(['Xem thêm', 'Đặc điểm nổi bật'], '', html_entity_decode($data->Salient_Features))  !!} 
+                        </div>
+                       <!--  <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="specifications" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5>Thông số kỹ thuật</h5>
+                            <button type="button" class="btn btn-secondary mobiles" data-dismiss="modal">x</button>
+                        </div>
+
+                        
+                        <div class="modal-body" id="thong-so">
+                            {!!  str_replace('gallery', ' ', $data->Specifications)  !!} 
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
 
     
@@ -1620,7 +1655,7 @@
 
 
 <script>
-
+    $('#Salient_Features').modal('show');
     $('.des_pro img').attr('loading', 'lazy');
 
     function formatMoney(number, decPlaces, decSep, thouSep) {
