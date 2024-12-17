@@ -2728,8 +2728,6 @@
                         var items = data;
         
                         response(items);
-
-                        console.log(data)
                         
                         $('#ui-id-1').hide();
 
@@ -2737,8 +2735,7 @@
         
                         $('.search-results').html(data);
 
-        
-                     
+    
                     }
                 });
             },
