@@ -1573,7 +1573,7 @@
             ?>
 
     $(function() {
-        $("#skw").autocomplete({
+        $("#tags_mobile").autocomplete({
             minLength: 2,
             source: function(request, response) {
                 $.ajaxSetup({
@@ -1589,7 +1589,7 @@
                     type: "POST",
                     data: {
                         _token: "{{ csrf_token() }}",
-                        product:$('#skw').val()
+                        product:$('#tags_mobile').val()
                     },
                     dataType: "json",
                     success: function (data) {
