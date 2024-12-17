@@ -1367,7 +1367,7 @@
 
     <!-- <link rel="preload" href="{{ asset('js/layout1.js') }}" as="script"> -->
 
-    <script src="{{ asset('js/layout1.js') }}" ></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
     <link rel="preload" href="{{asset('js/lib/owl.carousel.min.js')}}" as="script">
   
