@@ -1395,56 +1395,6 @@
     }
     setTimeout(showPopup, 3000);
 
-    $(function() {
-        $("#tags_mobile").autocomplete({
-        
-            minLength: 2,
-            
-            source: function(request, response) {
-
-                console.log(1);
-        
-                $.ajaxSetup({
-                headers: {
-                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                }
-        
-        
-                });
-                $.ajax({
-        
-                    url: "{{  route('sugest-click')}}",
-                    type: "POST",
-                    data: {
-                        "_token": "{{ csrf_token() }}",
-                        product:$('#tags_mobile').val()
-                    },
-                    dataType: "json",
-                    success: function (data) {
-
-                        var items = data;
-        
-                        response(items);
-
-                        console.log(1)
-                        
-                        $('#ui-id-1').hide();
-
-                        $('.search-results').html();
-        
-                        $('.search-results').html(data);
-
-        
-                     
-                    }
-                });
-            },
-        
-            
-            html:true,
-        });
-    });
-
     function closePopup() {
 
         $('.icons-shopings').addClass('hide');
