@@ -2729,7 +2729,7 @@
                     
                                     response(items);
 
-                                    // console.log(data)
+                                    console.log(1)
                                     
                                     $('#ui-id-1').hide();
 
