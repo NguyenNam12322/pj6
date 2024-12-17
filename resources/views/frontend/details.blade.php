@@ -2642,7 +2642,7 @@
           $('#modal-suport').modal('show'); 
       }  
 
-      $('#specifications').modal('show');   
+     
     function addToCart(id) {
     
         $.ajaxSetup({
