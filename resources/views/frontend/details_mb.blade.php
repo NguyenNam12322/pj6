@@ -222,7 +222,7 @@
     }
 
     .li-home {
-        width: 34px;
+        width: 51px;
     }
 
     .li-child{
@@ -1131,12 +1131,11 @@
         </li>
         @endif
     </ul>
-   
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-    
 
-    
-   
             
     <div class="owl-carousel detail-slider" id="carousel">
 
@@ -1225,10 +1224,7 @@
                 </div>
             </div>
         </div>
-    </div>     
-   
-        
-
+    </div>   
 
    
     <div class="pay">
@@ -1599,9 +1595,46 @@
         @endif
 
     </div>
-    
 
-        
+     <!-- Modal -->
+    <div class="modal fade" id="specifications" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5>Thông số kỹ thuật</h5>
+                    <button type="button" class="btn btn-secondary mobiles" data-dismiss="modal">x</button>
+                </div>
+
+                
+                <div class="modal-body" id="thong-so">
+                    {!!  str_replace('gallery', ' ', $data->Specifications)  !!} 
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                </div>
+            </div>
+        </div>
+   
+    </div>
+
+    <div class="modal fade" id="Salient_Features" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5>Đặc điểm nổi bật</h5>
+                </div>
+
+                <div class="modal-body" style="padding:0 15px">
+
+                    {!!  str_replace(['Xem thêm', 'Đặc điểm nổi bật'], '', html_entity_decode($data->Salient_Features))  !!} 
+                </div>
+               <!--  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
     
     <!--#endregion-->
     <!--#region BreadcrumbList-->
@@ -1618,7 +1651,7 @@
 
 
 <script>
-
+    $('#Salient_Features').modal('show');
     $('.des_pro img').attr('loading', 'lazy');
 
     function formatMoney(number, decPlaces, decSep, thouSep) {
@@ -2373,6 +2406,8 @@
         }
     });
 
+    $('.tab-panels img').attr('loading', 'lazy');
+
     document.addEventListener("DOMContentLoaded", function() {
         // Lấy tất cả các thẻ img trên trang
         const images = document.querySelectorAll('img');
@@ -2393,6 +2428,7 @@
     
     $('.listproduct').owlCarousel({
         loop:false,
+        dots:false,
     
         margin:10,
         nav:false,

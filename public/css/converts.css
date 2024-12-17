@@ -288,15 +288,15 @@
    
    
 
-   .nki-menu:before {
+   /*.nki-menu:before {
        content: "\e987"
-   }
-   .nki-Phone:before {
+   }*/
+  /* .nki-Phone:before {
        content: "\e9e2";
        font-size: 22px;
 
    }   
-
+*/
 
    
 

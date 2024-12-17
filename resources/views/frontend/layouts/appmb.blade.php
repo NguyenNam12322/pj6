@@ -137,9 +137,9 @@
                 min-height: auto;
             }
 
-            .show-menu{
+           /* .show-menu{
                 display: none;
-            }
+            }*/
             .nk-menu-div{
                 display: none;
             }
@@ -250,6 +250,10 @@
             .submenu strong{
                 font-size: 14px;
             } 
+
+            .nki-shopping-cart:before {
+                content: "\e911";
+            }
 
             .submenu h3{
                 font-size: 14px;
@@ -1193,7 +1197,7 @@
                                             
                                                 <li class="icons-mobile-bar">
 
-                                                    <i class="nki-menu"></i>
+                                                    <i class="nki-menu show-menu-mobile"></i>
                                                 </li> 
                                               
 
@@ -1316,6 +1320,8 @@
 
             </div>     
         </div>
+
+        
 
         @yield('content')
         
@@ -2061,7 +2067,7 @@
 
         $(".show-menu-mobile").click(function(){
 
-        
+            
             $('.show-menu').addClass('active');
 
         });  
