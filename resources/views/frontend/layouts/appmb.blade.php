@@ -397,7 +397,7 @@
                     color: #111;
                     font-size: 15px;
                     border-radius: .9em;
-                    width: 281.5px;
+                    width: 100%;
                 }
 
                 .nk-header #nk-searchs .nk-search-box button {
