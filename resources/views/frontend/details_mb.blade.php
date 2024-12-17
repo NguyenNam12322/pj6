@@ -2700,7 +2700,53 @@
         }
     @endif
 
-    
+    $(function() {
+                    $("#tags_mobile").autocomplete({
+                    
+                        minLength: 2,
+                        
+                        source: function(request, response) {
+                    
+                            $.ajaxSetup({
+                            headers: {
+                                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                            }
+                    
+                    
+                            });
+                            $.ajax({
+                    
+                                url: "{{  route('sugest-click')}}",
+                                type: "POST",
+                                data: {
+                                    "_token": "{{ csrf_token() }}",
+                                    product:$('#tags_mobile').val()
+                                },
+                                dataType: "json",
+                                success: function (data) {
+
+                                    var items = data;
+                    
+                                    response(items);
+
+                                    // console.log(data)
+                                    
+                                    $('#ui-id-1').hide();
+
+                                    $('.search-results').html();
+                    
+                                    $('.search-results').html(data);
+
+                    
+                                 
+                                }
+                            });
+                        },
+                    
+                        
+                        html:true,
+                    });
+                });
 
 
     function lazyLoadImage() {
