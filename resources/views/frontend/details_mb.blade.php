@@ -2706,8 +2706,6 @@
             minLength: 2,
             
             source: function(request, response) {
-
-                console.log(1);
         
                 $.ajaxSetup({
                 headers: {
@@ -2731,7 +2729,7 @@
         
                         response(items);
 
-                        console.log(1)
+                        console.log(data)
                         
                         $('#ui-id-1').hide();
 
