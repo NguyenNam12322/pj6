@@ -61,7 +61,7 @@
 
         <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
-        <!-- <link rel="preload" href="https://code.jquery.com/ui/1.13.1/jquery-ui.js" as="script"> -->
+        <link rel="preload" href="https://code.jquery.com/ui/1.13.1/jquery-ui.js" as="script">
 
 
         <style>
