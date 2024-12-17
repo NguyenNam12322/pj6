@@ -1651,7 +1651,7 @@
 
 
 <script>
-    $('#Salient_Features').modal('show');
+    
     $('.des_pro img').attr('loading', 'lazy');
 
     function formatMoney(number, decPlaces, decSep, thouSep) {
