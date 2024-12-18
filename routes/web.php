@@ -28,7 +28,7 @@ Route::post('/check-unique-cate', 'productController@filterProduct')->name('chec
 
 Route::get('/random-deal', 'crawlController@randomOrderDeal');
 
-Route::get('/demo/{slug}', 'Frontend\categoryController@pageMobile');
+Route::get('/demo/{slug}', 'Frontend\categoryController@pageMobile')->middleware('cache.headers:public;max_age=14400;etag');;
 
 Route::post('get-compare-pd-viewer', 'productController@getPDviewer')->name('ajax-compare-viewerPd');
 
