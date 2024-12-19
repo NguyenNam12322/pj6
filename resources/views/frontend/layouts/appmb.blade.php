@@ -72,6 +72,10 @@
                 display: flex;
             }
 
+            .cont-menu{
+                padding: 0;
+            }
+
             
             section{
                 display: inline;
@@ -1160,7 +1164,7 @@
         @endif
 
         <div class="tygh-top-panel clearfix">
-            <div class="container-fluid ">
+            <div class="container-fluid cont-menu">
               
                 <!-- header -->
                           

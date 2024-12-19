@@ -1368,11 +1368,7 @@
                                                 <i class="nki-Phone"></i>  </a>
                                             </li> 
 
-                                             <li id="login_form">
-                                                <a href="#" class="nk-text-login"> Tin tức </a>
-                                            </li>
-
-                                        
+                                    
                                             <li class="icons-mobile-bar">
 
                                                 <a class="btn  show-menu-mobile show-bar" href="javascript:void(0)"><i class="fa fa-bars"></i></a>
