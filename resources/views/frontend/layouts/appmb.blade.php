@@ -1164,7 +1164,7 @@
         @endif
 
         <div class="tygh-top-panel clearfix">
-            <div class="container-fluid cont-menu">
+            <div class="cont-menu container-fluid">
               
                 <!-- header -->
                           
