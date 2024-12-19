@@ -1048,6 +1048,8 @@ class categoryController extends Controller
                 $actives_pages_blog = 0;
             }
 
+            $useragent=$_SERVER['HTTP_USER_AGENT']??'';
+
             $smart_phone = false;
 
             if(!empty($useragent)){
