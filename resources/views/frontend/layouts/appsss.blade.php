@@ -1048,14 +1048,11 @@
                                             </li>
                                           
                                             <li>
-                                                <a href="#">
+                                                <a href="tel:0987874334">
                                                 <i class="nki-Phone"></i>  </a>
                                             </li> 
 
-                                             <li id="login_form">
-                                                <a href="#" class="nk-text-login">
-                                                <i class="fa fa-newspaper"></i> Tin tức </a>
-                                            </li>
+                                             
 
                                         
                                             <li class="icons-mobile-bar">
