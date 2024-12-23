@@ -13,6 +13,11 @@
         
     }
 
+    .tab-panels p img{
+        height: auto!important;
+        width: 100% !important;
+    }
+
    
     .share-button{
         width: 100%;
