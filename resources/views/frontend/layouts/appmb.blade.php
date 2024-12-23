@@ -1332,7 +1332,8 @@
         <div class="global-compare-group">
             <div class="title text-22 text-white d-flex align-items-center justify-content-between font-600">
                 <p>SO SÁNH SẢN PHẨM</p>
-                <a href="javascript:void(0)" class="close-compare text-white fa fa-times" onclick="compare_close()"></a>
+                <button class="close-compare text-white fa fa-times" onclick="compare_close()"></button>
+                <!-- <a href="javascript:void(0)" class="close-compare text-white fa fa-times" onclick="compare_close()"></a> -->
             </div>
             <div class="text-center red mt-2 text-18 font-500" id="js-alert"></div>
             <div class="pro-compare-holder">
@@ -1341,9 +1342,11 @@
 
                 </div>
                 <div>
-                    <a href="javascript:void(0)" class="btn-compare btn-compare" onclick="compare_link()">SO SÁNH</a>
+                    <button class="btn-compare btn-compare" onclick="compare_link()">SO SÁNH</button>
+                    <!-- <a href="javascript:void(0)" class="btn-compare btn-compare" onclick="compare_link()">SO SÁNH</a> -->
                     <br>
-                    <a href="javascript:void(0)" class="btn-compare btn-remove-all-compare" onclick="compare_close()">XÓA TOÀN BỘ </a>
+                     <button class="btn-compare btn-remove-all-compare" onclick="compare_close()">XÓA TOÀN BỘ</button>
+                    
                 </div>
                 
             </div>
