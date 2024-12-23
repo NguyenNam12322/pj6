@@ -1358,8 +1358,8 @@
         <div class="zalo-mobile">
 
             <a href="https://zalo.me/0987874334" target="_blank">
-                <div style="position: fixed; bottom: 52px; right: 52px; transform: translate(0px, 0px) !important; z-index: 2147483644; border: none; visibility: visible; right: 0px; width: 10px; height: 10px;" class="zalo-chat-widget" data-welcome-message="Điện Máy Người Việt rất vui khi được hỗ trợ bạn!" data-autopopup="0" data-width="" data-height="">
-                    <img class="lazyload" src="{{ asset('public/images/template/image.png') }}" width="10" height="10"  data-src="{{ asset('public/images/template/Logo.svg') }}" >
+                <div style="position: fixed; bottom: 80px; right: 80px; transform: translate(0px, 0px) !important; z-index: 2147483644; border: none; visibility: visible; right: 0px; width: 40px; height: 40px;" class="zalo-chat-widget" data-welcome-message="muasamtaikho" data-autopopup="0" data-width="" data-height="">
+                    <img class="lazyload" src="{{ asset('public/images/template/image.png') }}" width="40" height="40"  data-src="{{ asset('public/images/template/Logo.svg') }}" alt="zalo muasamtaikho.vn">
                 </div>
             </a>
         </div> 

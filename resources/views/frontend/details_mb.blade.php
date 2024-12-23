@@ -1249,7 +1249,7 @@
         </div>
 
         <div class="pdetail-stockavailable">
-            <span>  @if($status==="CÒN HÀNG") <img src="{{ asset('images/template/icon-tick.png') }}" width="18px" height="18px" > @endif {{ $status }}</span>
+            <span>  @if($status==="CÒN HÀNG") <img src="{{ asset('images/template/icon-tick.png') }}" width="18px" height="18px" alt="con hang"> @endif {{ $status }}</span>
         </div>
         <div class="scroll-box">
             <div class="pdetail-price">
