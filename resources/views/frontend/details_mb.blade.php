@@ -1569,7 +1569,7 @@
             <article class="post-sidebar-item">
                 <a href="{{ route('details', $value->Link) }}">
                     <span class="post-sidebar-img">
-                        <img  src="{{ asset($value->Image) }}">
+                        <img  src="{{ asset($value->Image) }}" alt="{{ $value->Name }}">
                     </span>
 
                     <h4 class="post-sidebar-title">{{ $value->Name }}</h4>

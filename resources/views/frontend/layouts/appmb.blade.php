@@ -1178,7 +1178,7 @@
                                     <div class="div-header-cart">
                                         <div class="logo-mobile">
                                             <a href="/">
-                                                <img src="{{ asset('/public/images/template/logo4.webp') }}" loading="lazyload" width="167" height="61px">
+                                                <img src="{{ asset('/public/images/template/logo4.webp') }}" alt="muasamtaikho.vn" loading="lazyload" width="167" height="61px">
                                             </a>
                                             
                                                 
