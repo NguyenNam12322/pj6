@@ -1215,7 +1215,8 @@
 
                                     <div class="show-menu">
                                         <div class="box-fixed active">
-                                            <a href="javascript:void(0)" class="btn-closemenu">Đóng</a>
+                                            <button  class="btn-closemenu">Đóng</button>
+                                            <!-- <a href="javascript:void(0)" class="btn-closemenu">Đóng</a> -->
                                         </div>
                                         <div class="show-menu__main">
                                             <nav class="nav-list nav-list--dynamic">
