@@ -59,6 +59,7 @@
 
 
 
+
            /* .nk-header #nk-search{
                 width: 27% !important;
             }*/
@@ -200,6 +201,11 @@
                     right:8px; 
                     display: none;   
                 }
+
+                #nk-logo{
+                    margin: 0 !important;
+                }
+
                 .nk-banner-main{
                     padding: 0 !important;
                 }
