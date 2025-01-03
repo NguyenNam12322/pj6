@@ -126,7 +126,7 @@ class metaSeoController extends AppBaseController
 
         $metaSeo = $this->metaSeoRepository->update($request->all(), $id);
 
-
+        dd(1);
 
         Flash::success('Meta Seo updated successfully.');
 
