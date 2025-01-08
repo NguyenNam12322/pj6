@@ -576,7 +576,7 @@
 
     <?php
     if($data->Quantily==0||$data['Price']==0){
-        $status ='Đang cập nhật giá';
+        $status ='Tạm thời hết hàng';
     
     }
     elseif($data->Quantily<=-1){
