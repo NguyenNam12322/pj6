@@ -522,39 +522,39 @@
                                 <!-- menu show bar --> 
                                 <div class="show-menu">
                                     <div class="box-fixed active"> <a href="javascript:void(0)" class="btn-closemenu">Đóng</a> </div>
-                                    <div class="show-menu__main">
-                                        <nav class="nav-list nav-list--dynamic">
-                                            <a href="/ti-vi">Tivi</a> 
-                                            <a href="/may-giat">Máy giặt</a> 
-                                            <a href="/tu-lanh">Tủ lạnh</a> 
-                                            <a href="/may-lanh">Điều hòa (Máy lạnh)</a> 
-                                            <a href="/tu-dong">Tủ đông</a> 
-                                            <a href="/may-loc-nuoc">A.O.Smith</a> 
-                                         
-                                            <a href="/deal" class="promotion-menu"> Giảm giá <br>đặc biệt <span class="item__label">- 5%</span> </a>
-                                            <!-- <a href="/may-loc-nuoc">Máy lọc nước</a> --> 
-                                            
-                                            
-                                        </nav>
-                                        <div class="show-menu__link clearfix">
-                                            <div class="link-item">
-                                                <p>Thông tin</p>
-                                                <ul>
-                                                    <li> <a href="gioi-thieu">Giới thiệu </a> </li>
-                                                    <li> <a href="lien-he">Liên hệ </a> </li>
-                                                    
-                                                </ul>
-                                            </div>
-                                            <div class="link-item">
-                                                <p>Hỗ trợ mua hàng</p>
-                                                <ul>
-                                                    <li> <a href="{{ route('details', 'huong-dan-mua-hang') }}">Hướng dẫn mua hàng </a> </li>
-                                                    <li> <a href="{{ route('details', 'quy-dinh-thanh-toan') }}">Cách thức thanh toán </a> </li>
-                                                    
-                                                </ul>
+                                        <div class="show-menu__main">
+                                            <nav class="nav-list nav-list--dynamic">
+                                                <a href="/ti-vi">Tivi</a> 
+                                                <a href="/may-giat">Máy giặt</a> 
+                                                <a href="/tu-lanh">Tủ lạnh</a> 
+                                                <a href="/may-lanh">Điều hòa (Máy lạnh)</a> 
+                                                <a href="/tu-dong">Tủ đông</a> 
+                                                <a href="/may-loc-nuoc">A.O.Smith</a> 
+                                             
+                                                <a href="/deal" class="promotion-menu"> Giảm giá <br>đặc biệt <span class="item__label">- 5%</span> </a>
+                                                <!-- <a href="/may-loc-nuoc">Máy lọc nước</a> --> 
+                                                
+                                                
+                                            </nav>
+                                            <div class="show-menu__link clearfix">
+                                                <div class="link-item">
+                                                    <p>Thông tin</p>
+                                                    <ul>
+                                                        <li> <a href="gioi-thieu">Giới thiệu </a> </li>
+                                                        <li> <a href="lien-he">Liên hệ </a> </li>
+                                                        
+                                                    </ul>
+                                                </div>
+                                                <div class="link-item">
+                                                    <p>Hỗ trợ mua hàng</p>
+                                                    <ul>
+                                                        <li> <a href="{{ route('details', 'huong-dan-mua-hang') }}">Hướng dẫn mua hàng </a> </li>
+                                                        <li> <a href="{{ route('details', 'quy-dinh-thanh-toan') }}">Cách thức thanh toán </a> </li>
+                                                        
+                                                    </ul>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
                                 </div>
                                 <!-- end menu show --> 
                                 <div class="span16 row flexthis search_center">
