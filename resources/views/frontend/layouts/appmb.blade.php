@@ -1224,14 +1224,9 @@
                                                 <a href="/may-giat">Máy giặt</a> 
                                                 <a href="/tu-lanh">Tủ lạnh</a> 
                                                 <a href="/may-lanh">Điều hòa</a> 
-                                                <a href="/tu-dong">Tủ đông</a> 
-                                                <a href="/tu-mat">Tủ Mát</a> 
-                                                <a href="/gia-dung">Gia Dụng</a> 
-                                                <a href="/lo-nuong">Lò Nướng</a> <!-- <a href="/may-loc-nuoc">Máy lọc nước</a> --> 
-                                                <a href="/may-say-quan-ao">Máy sấy quần áo</a> 
+                                                
                                                 <a href="/may-loc-nuoc">A.O.Smith</a> 
-                                                <a href="/quat">Quạt</a> 
-                                                <a href="/may-cu-trung-bay">Máy cũ, Trưng bày</a> 
+                                               
                                                 <a href="/deal" class="promotion-menu"> Giảm giá <br>đặc biệt <span class="item__label">- 5%</span> </a> 
                                             </nav>
                                             <div class="show-menu__link clearfix">
