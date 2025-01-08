@@ -581,62 +581,10 @@
                     <a href="/tin-tuc">Tin tức</a>
                 </div>
             </div>
-
-
-            <div class="item-n item-st">
-                <div class="title">Chính sách và quy định <i class="fa fa-caret-right" aria-hidden="true"></i></div>
-                <div class="list">
-
-
-                    <a rel="nofollow" href="/tin-cong-ty/chinh-sach-bao-mat-thong-tin-truc-tuyen-cua-digicity/a245.html">Chính
-                    sách bảo mật</a>
-                    <a rel="nofollow" href="/page/chinh-sach-giao-hang">Chính sách vận chuyển</a>
-                    <a rel="nofollow" href="/page/bao-duong-tron-doi">Chính sách bảo hành</a>
-                    <a rel="nofollow" href="/tin-cong-ty/quy-trinh-doi-tra-hang-hoa-mua-tai-digicity/a89.html">Chính sách đổi
-                    hàng</a>
-                    <a rel="nofollow" href="/tin-cong-ty/quy-trinh-doi-tra-hang-hoa-mua-tai-digicity/a89.html">Chính sách đổi
-                    hàng</a>
-                </div>
-            </div>
-            <div class="item-n item-st">
-                <div class="title">Hướng dẫn sử dụng <i class="fa fa-caret-right" aria-hidden="true"></i></div>
-                <div class="list">
-                    <a href="/huong-dan-tieu-dung.html">Hướng dẫn tiêu dùng</a>
-                    <a rel="nofollow" href="/page/huong-dan-mua-hang-online">Hướng dẫn mua hàng</a>
-                    <a rel="nofollow" href="/lien-he">Hướng dẫn thanh toán</a>
-                   
-                </div>
-            </div>
+            
         </div>
         
-        <div class="ft-new-info">
-            <div class="title-if">HỆ THỐNG SIÊU THỊ MUA SẮM TẠI KHO 
-            </div>
-            <p>
-                <b>Hệ thống 1 (HEAD OFFICE)</b><br>
-               
-            </p>
-            <p>
-                <b>Hệ thống 2</b><br>
-                
-            </p>
-            <p>
-                <b>Hệ thống 3</b><br>
-               
-            </p>
-            <p>
-                Hotline: <a href="tel:{{ @$info->tdht }}"><b>{{ @$info->tdht }}</b>
-                </a> 
-              
-                Tiếp nhận bảo hành, chăm sóc khách hàng:  
-                <a href="tel:{{ @$info->kn }}"><b>{{ @$info->kn }}</b></a><br>
-               
-                <a href="tel:{{ @$info->tdht }}"><b>{{ @$info->tdht }}</b></a><br>
-                Hỗ trợ kĩ thuật:  <a href="tel:{{ @$info->tdht }}">
-                    <b>{{ @$info->tdht }}</b></a><br>
-               
-            </p>
-        </div>
+       
     </div>
     <div class="ring-phone">
         <div class="coccoc-alo-phone coccoc-alo-green coccoc-alo-show">
