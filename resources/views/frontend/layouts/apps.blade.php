@@ -1399,28 +1399,25 @@
                                             <a href="/may-giat">Máy giặt</a> 
                                             <a href="/tu-lanh">Tủ lạnh</a> 
                                             <a href="/may-lanh">Điều hòa</a> 
-                                            <a href="/tu-dong">Tủ đông</a> 
-                                            <a href="/tu-mat">Tủ Mát</a> 
-                                            <a href="/gia-dung">Gia Dụng</a> 
-                                            <a href="/lo-nuong">Lò Nướng</a> <!-- <a href="/may-loc-nuoc">Máy lọc nước</a> --> 
-                                            <a href="/may-say-quan-ao">Máy sấy quần áo</a> 
+                                        
+                                           
                                             <a href="/may-loc-nuoc">A.O.Smith</a> 
-                                            <a href="/quat">Quạt</a> 
-                                            <a href="/may-cu-trung-bay">Máy cũ, Trưng bày</a> 
+                                         
                                             <a href="/deal" class="promotion-menu"> Giảm giá <br>đặc biệt <span class="item__label">- 5%</span> </a> 
                                         </nav>
+
+                                     <!--    <div class="readmore-menu">
+                                            <a href="/danh-muc-nhom-hang" class="txt-readmore"> Xem tất cả nhóm hàng</a>
+                                        </div> -->
                                         <div class="show-menu__link clearfix">
                                             <div class="link-item">
                                                 <p>Thông tin</p>
                                                 <ul>
                                                     <li>
-                                                        <a href="#">Giới thiệu </a>
+                                                        <a href="{{ route('details', 'gioi-thieu') }}">Giới thiệu </a>
                                                     </li>
                                                     <li>
-                                                        <a href="#">Liên hệ  </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">Dự án bán buôn </a>
+                                                        <a href="{{ route('details', 'lien-he') }}">Liên hệ  </a>
                                                     </li>
                                                    
                                                 </ul>
@@ -1439,10 +1436,9 @@
                                                 </ul>
                                             </div>
                                         </div>
-                                        
+                                       
                                     </div>
                                 </div>
-
                                 <!-- end menu show -->
 
 
