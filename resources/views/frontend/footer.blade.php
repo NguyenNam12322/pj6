@@ -579,6 +579,8 @@
                 <div class="list">
                     
                     <a href="/tin-tuc">Tin tức</a>
+                    <a href="/huong-dan-mua-hang">Hướng dẫn mua hàng</a>
+                    <a href="/quy-dinh-thanh-toan">Quy định thanh toán</a>
                 </div>
             </div>
             
