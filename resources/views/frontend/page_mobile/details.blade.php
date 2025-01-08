@@ -524,15 +524,15 @@
                                     <div class="box-fixed active"> <a href="javascript:void(0)" class="btn-closemenu">Đóng</a> </div>
                                     <div class="show-menu__main">
                                         <nav class="nav-list nav-list--dynamic">
-                                            <a href="/ti-vi">Tivi</a> <a href="/may-giat">Máy giặt</a> <a href="/tu-lanh">Tủ lạnh</a> <a href="/dieu-hoa">Điều hòa</a> <a href="/tu-dong">Tủ đông</a> <a href="/tu-mat">Tủ Mát</a> <a href="/gia-dung">Gia Dụng</a> <a href="/lo-nuong">Lò Nướng</a> <!-- <a href="/may-loc-nuoc">Máy lọc nước</a> --> <a href="/may-say-quan-ao">Máy sấy quần áo</a> <a href="/may-loc-nuoc">A.O.Smith</a> <a href="/quat">Quạt</a> <a href="/may-cu-trung-bay">Máy cũ, Trưng bày</a> <a href="/deal" class="promotion-menu"> Giảm giá <br>đặc biệt <span class="item__label">- 5%</span> </a> 
+                                            <a href="/ti-vi">Tivi</a> <a href="/may-giat">Máy giặt</a> <a href="/tu-lanh">Tủ lạnh</a> <a href="/may-lanh">Điều hòa</a> <a href="/tu-dong">Tủ đông</a> <a href="/tu-mat">Tủ Mát</a> <a href="/gia-dung">Gia Dụng</a> <a href="/lo-nuong">Lò Nướng</a> <!-- <a href="/may-loc-nuoc">Máy lọc nước</a> --> <a href="/may-say-quan-ao">Máy sấy quần áo</a> <a href="/may-loc-nuoc">A.O.Smith</a> <a href="/quat">Quạt</a> <a href="/may-cu-trung-bay">Máy cũ, Trưng bày</a> <a href="/deal" class="promotion-menu"> Giảm giá <br>đặc biệt <span class="item__label">- 5%</span> </a> 
                                         </nav>
                                         <div class="show-menu__link clearfix">
                                             <div class="link-item">
                                                 <p>Thông tin</p>
                                                 <ul>
-                                                    <li> <a href="#">Giới thiệu </a> </li>
-                                                    <li> <a href="#">Liên hệ </a> </li>
-                                                    <li> <a href="#">Dự án bán buôn </a> </li>
+                                                    <li> <a href="gioi-thieu">Giới thiệu </a> </li>
+                                                    <li> <a href="lien-he">Liên hệ </a> </li>
+                                                    
                                                 </ul>
                                             </div>
                                             <div class="link-item">
