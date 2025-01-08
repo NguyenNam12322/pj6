@@ -1398,7 +1398,7 @@
                                             <a href="/ti-vi">Tivi</a> 
                                             <a href="/may-giat">Máy giặt</a> 
                                             <a href="/tu-lanh">Tủ lạnh</a> 
-                                            <a href="/dieu-hoa">Điều hòa</a> 
+                                            <a href="/may-lanh">Điều hòa</a> 
                                             <a href="/tu-dong">Tủ đông</a> 
                                             <a href="/tu-mat">Tủ Mát</a> 
                                             <a href="/gia-dung">Gia Dụng</a> 
