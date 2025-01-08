@@ -577,7 +577,7 @@
             <div class="item-n item-st">
                 <div class="title">Thông tin chung <i class="fa fa-caret-right" aria-hidden="true"></i></div>
                 <div class="list">
-                    <a href="/page/gioi-thieu-digicity">Giới thiệu</a>
+                    
                     <a href="/tin-tuc">Tin tức</a>
                 </div>
             </div>
