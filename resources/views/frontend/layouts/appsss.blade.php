@@ -1114,9 +1114,7 @@
                                                     <li>
                                                         <a href="{{ route('details', 'quy-dinh-thanh-toan') }}">Cách thức thanh toán </a>
                                                     </li>
-                                                    <li>
-                                                        <a href="#">Bảng giá lắp đặt </a>
-                                                    </li>
+                                                    
                                                     
                                                 </ul>
                                             </div>

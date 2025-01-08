@@ -1252,14 +1252,12 @@
                                                     <p>Hỗ trợ mua hàng</p>
                                                     <ul>
                                                         <li>
-                                                            <a href="#">Hướng dẫn mua hàng </a>
+                                                            <a href="{{ route('details', 'huong-dan-mua-hang') }}">Hướng dẫn mua hàng </a>
                                                         </li>
                                                         <li>
-                                                            <a href="#">Cách thức thanh toán </a>
+                                                            <a href="{{ route('details', 'quy-dinh-thanh-toan') }}">Cách thức thanh toán </a>
                                                         </li>
-                                                        <li>
-                                                            <a href="#">Bảng giá lắp đặt </a>
-                                                        </li>
+                                                       
                                                         
                                                     </ul>
                                                 </div>

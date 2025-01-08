@@ -538,9 +538,9 @@
                                             <div class="link-item">
                                                 <p>Hỗ trợ mua hàng</p>
                                                 <ul>
-                                                    <li> <a href="#">Hướng dẫn mua hàng </a> </li>
-                                                    <li> <a href="#">Cách thức thanh toán </a> </li>
-                                                    <li> <a href="#">Bảng giá lắp đặt </a> </li>
+                                                    <li> <a href="{{ route('details', 'huong-dan-mua-hang') }}">Hướng dẫn mua hàng </a> </li>
+                                                    <li> <a href="{{ route('details', 'quy-dinh-thanh-toan') }}">Cách thức thanh toán </a> </li>
+                                                    
                                                 </ul>
                                             </div>
                                         </div>
