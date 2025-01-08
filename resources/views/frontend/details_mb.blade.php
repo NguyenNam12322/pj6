@@ -1253,7 +1253,7 @@
         </div>
         <div class="scroll-box">
             <div class="pdetail-price">
-                @if($data->Quantily>-1)
+                @if($data->Quantily>0)
                 <div class="pdetail-price-box show-price-mobile">
                     {!! @$text !!}
                     <span> {{ str_replace(',' ,'.', number_format($data->Price)) }} ₫</span>
