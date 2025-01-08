@@ -1097,10 +1097,10 @@
                                                 <p>Thông tin</p>
                                                 <ul>
                                                     <li>
-                                                        <a href="#">Giới thiệu </a>
+                                                        <a href="{{ route('details', 'gioi-thieu') }}">Giới thiệu </a>
                                                     </li>
                                                     <li>
-                                                        <a href="#">Liên hệ  </a>
+                                                        <a href="{{ route('details', 'lien-he') }}">Liên hệ  </a>
                                                     </li>
                                                    
                                                 </ul>
