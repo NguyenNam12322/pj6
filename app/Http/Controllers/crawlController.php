@@ -2069,6 +2069,8 @@ class crawlController extends Controller
 
         $link = $html->find('.pro-name a');
 
+        dd($link);
+
         foreach ($link as $key => $value) {
 
             array_push($check, $value->href);
