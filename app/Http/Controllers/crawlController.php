@@ -2076,7 +2076,6 @@ class crawlController extends Controller
             array_push($check, $value->href);
             
         }
-        dd($check);
 
         foreach ($check as $key => $value) {
 
@@ -2131,7 +2130,7 @@ class crawlController extends Controller
     }
 
 
-     public function crawlAO($url)
+    public function crawlAO($url)
     {
         
         $now = Carbon::now();
