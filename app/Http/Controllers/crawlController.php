@@ -2063,7 +2063,7 @@ class crawlController extends Controller
 
         $check = [];
 
-        $url = 'https://www.aosmith.com.vn/collections/may-loc-nuoc-ro-side-stream?page=2';
+        $url = 'https://www.aosmith.com.vn/collections/may-loc-nuoc-ro-side-stream';
 
         $html = file_get_html(trim($url));
 
