@@ -471,11 +471,11 @@
           
             const numberProduct =  parseInt($('#number-product-cart').text()) ;
 
-            if($('#ship_to_province').val()==0){
+            // if($('#ship_to_province').val()==0){
 
-                alert('vui lòng lựa chọn thành phố');
-                event.preventDefault();   
-            }
+            //     alert('vui lòng lựa chọn thành phố');
+            //     event.preventDefault();   
+            // }
             else if($('#buyer_tel').val().length<10){
                 alert('vui kiểm tra lại trường số điện thoai');
                 event.preventDefault();  
