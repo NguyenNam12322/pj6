@@ -10,7 +10,7 @@
  @endpush  
 
     
-<div class="category">
+<div class="row">
     <div class="container">
         <h1>Liên Hệ</h1>
         @if(session()->has('success'))
