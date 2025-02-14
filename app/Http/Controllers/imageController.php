@@ -157,13 +157,17 @@ class imageController extends AppBaseController
 
             $file_upload = $request->file('image');
 
-            $name = time() . '_' . $file_upload->getClientOriginalName();
+            foreach ($file_upload as $key => $value) {
 
-            $filePath = $file_upload->storeAs('uploads/product', $name, 'public');
+                $name = time() . '_' . $value->getClientOriginalName();
 
-            $input['image'] = $filePath;
+                $filePath = $value->storeAs('uploads/product', $name, 'public');
 
-            $input['link'] = $filePath;
+
+                $input['image'] = $filePath;
+
+                $input['link'] = $filePath;
+            }    
         }
 
         $image = $this->imageRepository->update($input, $id);
