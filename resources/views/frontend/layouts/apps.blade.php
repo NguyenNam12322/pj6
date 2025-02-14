@@ -1912,11 +1912,11 @@
     if(!empty($_SERVER["HTTP_USER_AGENT"])){
         $ismobile = preg_match("/(android|avantgo|blackberry|bolt|boost|cricket|docomo|fone|hiptop|mini|mobi|palm|phone|pie|tablet|up\.browser|up\.link|webos|wos)/i", $_SERVER["HTTP_USER_AGENT"]);
 
-        ?>
+        
     }   
      
    
-
+?>
  <script src="{{ asset('js/layout1.js') }}" type="text/javascript"></script>
    
     <script type="text/javascript" src="{{asset('js/lib/owl.carousel.min.js')}}"></script>
