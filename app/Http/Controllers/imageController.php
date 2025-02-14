@@ -172,7 +172,7 @@ class imageController extends AppBaseController
 
         unset($input["product_id"]);
 
-        dd($input);
+        
 
         $image = $this->imageRepository->update($input, $id);
 
