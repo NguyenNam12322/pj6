@@ -169,6 +169,7 @@ class imageController extends AppBaseController
                 $input['link'] = $filePath;
             }    
         }
+        dd($input);
 
         $image = $this->imageRepository->update($input, $id);
 
